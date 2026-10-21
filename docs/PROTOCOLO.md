@@ -68,3 +68,15 @@ Vale checar estas antes de reimplementar o Pine inteiro:
 - Risco/retorno abaixo de 1 com acerto perto de 50% — perda aritmética garantida.
 - "ML"/"rede neural" que na verdade são constantes cravadas no código.
 - Acerto alto obtido por saída assimétrica sem stop.
+
+## Melhorias de infraestrutura
+
+Regra do usuário: durante os testes, qualquer melhoria na infra que acelere a varredura ou que
+descarte uma estratégia mais cedo pode ser implementada direto, sem pedir. Registrar a mudança
+no commit e, se mudar o método, nesta página.
+
+## Triagem rápida antes de rodar a grade
+
+- **Versão do Pine ≤ 2 (ou sem `//@version`) com `security()`** → o histórico olha o futuro
+  mesmo sem `lookahead` no código. Rodar só a versão honesta (candle HTF fechado); a publicada
+  serve apenas para medir o tamanho do vazamento (ver [ZIGZAG_PA](ZIGZAG_PA.md)).
