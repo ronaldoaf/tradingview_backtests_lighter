@@ -1,0 +1,85 @@
+
+================= xau =================
+  M1 2017-09-01 -> 2026-10-04  (2.66M barras)
+
+### 5min/1h peek: 22904 pivos, barras com padrao de alta 10% / baixa 11%
+  5min/1h peek default               3743 tr (411.4/ano,   0.07d) | bruto   +16.4bp liq   +14.9bp (win 89%) | CAGR  +70.4% vs B&H  +13.4% | Sh +13.06 DD    -1% expo   9% | ctl    -1.5bp t=+37.85
+
+### 5min/1h honesto: 22903 pivos, barras com padrao de alta 10% / baixa 11%
+  5min/1h honesto default            3761 tr (413.4/ano,   0.04d) | bruto    -0.2bp liq    -1.6bp (win 39%) | CAGR   -6.9% vs B&H  +13.4% | Sh -2.79 DD   -67% expo   5% | ctl    -1.5bp t=-0.35
+  5min/1h honesto so long            1659 tr (182.3/ano,   0.04d) | bruto    -0.4bp liq    -2.0bp (win 40%) | CAGR   -3.6% vs B&H  +13.4% | Sh -2.80 DD   -37% expo   2% | ctl    -1.4bp t=-1.67
+  5min/1h honesto so short           2102 tr (231.0/ano,   0.04d) | bruto    +0.0bp liq    -1.3bp (win 38%) | CAGR   -3.4% vs B&H  +13.4% | Sh -2.19 DD   -32% expo   3% | ctl    -1.5bp t=+0.51
+
+### 15min/1h peek: 22904 pivos, barras com padrao de alta 10% / baixa 11%
+  15min/1h peek default              2722 tr (299.2/ano,   0.08d) | bruto   +15.2bp liq   +13.7bp (win 83%) | CAGR  +26.1% vs B&H  +13.4% | Sh +7.01 DD    -2% expo   7% | ctl    -1.3bp t=+31.27
+
+### 15min/1h honesto: 22903 pivos, barras com padrao de alta 10% / baixa 11%
+  15min/1h honesto default           2566 tr (282.0/ano,   0.04d) | bruto    -0.4bp liq    -1.9bp (win 41%) | CAGR   -3.9% vs B&H  +13.4% | Sh -1.70 DD   -37% expo   4% | ctl    -1.6bp t=-0.73
+  15min/1h honesto so long           1125 tr (123.6/ano,   0.04d) | bruto    -0.4bp liq    -2.0bp (win 40%) | CAGR   -2.2% vs B&H  +13.4% | Sh -1.85 DD   -24% expo   2% | ctl    -1.5bp t=-1.04
+  15min/1h honesto so short          1441 tr (158.4/ano,   0.05d) | bruto    -0.4bp liq    -1.8bp (win 41%) | CAGR   -1.7% vs B&H  +13.4% | Sh -1.27 DD   -16% expo   2% | ctl    -1.7bp t=-0.08
+
+### 15min/4h peek: 6023 pivos, barras com padrao de alta 9% / baixa 10%
+  15min/4h peek default              1042 tr (114.5/ano,   0.30d) | bruto   +28.5bp liq   +27.2bp (win 88%) | CAGR  +32.4% vs B&H  +13.4% | Sh +7.93 DD    -9% expo   9% | ctl    -1.1bp t=+22.22
+
+### 15min/4h honesto: 6022 pivos, barras com padrao de alta 9% / baixa 10%
+  15min/4h honesto default           1075 tr (118.2/ano,   0.18d) | bruto    -0.9bp liq    -2.1bp (win 43%) | CAGR   -1.4% vs B&H  +13.4% | Sh -0.56 DD   -27% expo   5% | ctl    -1.2bp t=-1.03
+  15min/4h honesto so long            550 tr ( 60.4/ano,   0.10d) | bruto    +1.0bp liq    -0.9bp (win 45%) | CAGR   -0.2% vs B&H  +13.4% | Sh -0.23 DD    -8% expo   2% | ctl    -1.8bp t=+0.62
+  15min/4h honesto so short           525 tr ( 57.7/ano,   0.27d) | bruto    -2.9bp liq    -3.4bp (win 41%) | CAGR   -1.2% vs B&H  +13.4% | Sh -0.73 DD   -20% expo   3% | ctl    -2.1bp t=-0.66
+
+### 30min/4h peek: 6023 pivos, barras com padrao de alta 9% / baixa 10%
+  30min/4h peek default               899 tr ( 98.8/ano,   0.33d) | bruto   +29.7bp liq   +28.4bp (win 86%) | CAGR  +24.2% vs B&H  +13.4% | Sh +6.51 DD   -11% expo   8% | ctl    -2.4bp t=+25.71
+
+### 30min/4h honesto: 6022 pivos, barras com padrao de alta 9% / baixa 10%
+  30min/4h honesto default            823 tr ( 90.5/ano,   0.23d) | bruto    -0.0bp liq    -1.1bp (win 45%) | CAGR   -2.5% vs B&H  +13.4% | Sh -1.03 DD   -28% expo   5% | ctl    -1.7bp t=+0.41
+  30min/4h honesto so long            403 tr ( 44.3/ano,   0.13d) | bruto    +1.7bp liq    -0.3bp (win 46%) | CAGR   -0.5% vs B&H  +13.4% | Sh -0.58 DD    -7% expo   2% | ctl    -1.1bp t=+0.54
+  30min/4h honesto so short           420 tr ( 46.2/ano,   0.33d) | bruto    -1.7bp liq    -2.0bp (win 44%) | CAGR   -2.0% vs B&H  +13.4% | Sh -1.26 DD   -24% expo   3% | ctl    -1.7bp t=-0.13
+
+### 1h/1D peek: 1220 pivos, barras com padrao de alta 10% / baixa 9%
+  1h/1D peek default                  210 tr ( 23.1/ano,   1.52d) | bruto   +89.6bp liq   +87.9bp (win 94%) | CAGR  +19.8% vs B&H  +13.4% | Sh +9.22 DD    -2% expo   9% | ctl    -1.6bp t=+13.04
+
+### 1h/1D honesto: 1219 pivos, barras com padrao de alta 9% / baixa 9%
+  1h/1D honesto default               217 tr ( 23.9/ano,   0.96d) | bruto    -1.8bp liq    -3.7bp (win 41%) | CAGR   -0.7% vs B&H  +13.4% | Sh -0.58 DD   -21% expo   6% | ctl    -1.0bp t=-0.48
+  1h/1D honesto so long                94 tr ( 10.3/ano,   1.23d) | bruto    +1.6bp liq    -4.5bp (win 40%) | CAGR   -0.1% vs B&H  +13.4% | Sh -0.25 DD    -6% expo   2% | ctl    -1.7bp t=-0.37
+  1h/1D honesto so short              123 tr ( 13.5/ano,   0.75d) | bruto    -4.5bp liq    -3.1bp (win 41%) | CAGR   -0.6% vs B&H  +13.4% | Sh -0.80 DD   -16% expo   3% | ctl    -3.5bp t=+0.05
+
+### 15min/- honesto: 92014 pivos, barras com padrao de alta 11% / baixa 11%
+  15min/- honesto default            3143 tr (345.4/ano,   0.03d) | bruto    -0.5bp liq    -2.0bp (win 33%) | CAGR   -5.3% vs B&H  +13.4% | Sh -2.87 DD   -51% expo   3% | ctl    -1.5bp t=-1.64
+  15min/- honesto so long            1413 tr (155.3/ano,   0.03d) | bruto    -0.5bp liq    -2.1bp (win 33%) | CAGR   -1.8% vs B&H  +13.4% | Sh -1.84 DD   -19% expo   1% | ctl    -1.5bp t=-1.23
+  15min/- honesto so short           1730 tr (190.1/ano,   0.02d) | bruto    -0.5bp liq    -1.9bp (win 34%) | CAGR   -3.6% vs B&H  +13.4% | Sh -2.87 DD   -34% expo   2% | ctl    -1.5bp t=-1.06
+
+### 1h/- honesto: 22904 pivos, barras com padrao de alta 10% / baixa 11%
+  1h/- honesto default                681 tr ( 74.8/ano,   0.12d) | bruto    -0.2bp liq    -1.6bp (win 36%) | CAGR   -1.7% vs B&H  +13.4% | Sh -1.36 DD   -15% expo   2% | ctl    -1.2bp t=-0.27
+  1h/- honesto so long                287 tr ( 31.5/ano,   0.11d) | bruto    +0.5bp liq    -1.5bp (win 37%) | CAGR   -1.0% vs B&H  +13.4% | Sh -2.10 DD    -9% expo   1% | ctl    -0.6bp t=-0.53
+  1h/- honesto so short               394 tr ( 43.3/ano,   0.12d) | bruto    -0.7bp liq    -1.7bp (win 35%) | CAGR   -0.7% vs B&H  +13.4% | Sh -0.88 DD    -8% expo   1% | ctl    -1.4bp t=-0.21
+
+### 4h/- honesto: 6023 pivos, barras com padrao de alta 9% / baixa 10%
+  4h/- honesto default                246 tr ( 27.0/ano,   0.43d) | bruto    -3.9bp liq    -5.0bp (win 36%) | CAGR   +0.3% vs B&H  +13.4% | Sh +0.19 DD   -14% expo   4% | ctl    -1.7bp t=-1.05
+  4h/- honesto so long                104 tr ( 11.4/ano,   0.35d) | bruto    +0.4bp liq    -2.4bp (win 40%) | CAGR   +0.5% vs B&H  +13.4% | Sh +1.30 DD    -6% expo   2% | ctl    -1.0bp t=-0.36
+  4h/- honesto so short               142 tr ( 15.6/ano,   0.48d) | bruto    -7.1bp liq    -6.8bp (win 32%) | CAGR   -0.2% vs B&H  +13.4% | Sh -0.23 DD   -11% expo   2% | ctl    -3.5bp t=-0.84
+
+### 1D/- honesto: 1220 pivos, barras com padrao de alta 10% / baixa 9%
+  1D/- honesto default                 56 tr (  6.2/ano,   2.52d) | bruto    +2.4bp liq    -0.1bp (win 32%) | CAGR   -0.8% vs B&H  +13.4% | Sh -1.17 DD   -12% expo   3% | ctl    -4.2bp t=+0.31
+  1D/- honesto so long                 16 tr (  1.8/ano,   4.88d) | bruto   +39.9bp liq   +20.0bp (win 44%) | CAGR   -0.0% vs B&H  +13.4% | Sh -0.01 DD    -3% expo   1% | ctl   +14.5bp t=+0.20
+  1D/- honesto so short                40 tr (  4.4/ano,   1.58d) | bruto   -12.6bp liq    -8.1bp (win 28%) | CAGR   -0.8% vs B&H  +13.4% | Sh -1.85 DD   -12% expo   2% | ctl    +0.3bp t=-0.51
+
+=== resumo xau: 423 celulas honestas ===
+  liq>0 36 | liq>0 e t>2 0 | CAGR>B&H 0 | Sharpe>0 17
+  peek: 5 celulas, CAGR medio +34.6%, liq medio +34.4bp
+
+  top 15 honestas por CAGR:
+     est TF alt                      cfg  trades  por_ano  bp_bruto  bp_liq   win  cagr    bh  sharpe     dd  expo  ctl_bp      t
+   grade 1h  1D   ew0.0 tp1.618 sl-0.236     137   15.057     1.140  -0.725 0.401 0.007 0.134   1.777 -0.045 0.016  -0.233 -0.084
+   grade 1h  1D     ew0.0 tp1.618 sl-1.0      69    7.584     5.800   3.610 0.435 0.006 0.134   1.648 -0.045 0.018  -1.576  0.560
+   grade 1h  1D     ew0.0 tp1.0 sl-0.236     137   15.057     0.707  -1.075 0.401 0.006 0.134   1.714 -0.045 0.015  -2.029  0.176
+   grade 1h  1D       ew0.0 tp1.0 sl-1.0      69    7.584     4.940   2.915 0.435 0.006 0.134   1.586 -0.045 0.017  -3.334  0.650
+   grade 1h  1D   ew0.0 tp0.618 sl-0.236     137   15.057     0.401  -1.336 0.401 0.006 0.134   1.609 -0.045 0.015  -0.318 -0.230
+hon_long 4h   -    ew.236 tp.618 sl-.236     104   11.431     0.382  -2.439 0.404 0.005 0.134   1.300 -0.056 0.015  -0.968 -0.357
+   grade 1h  1D     ew0.0 tp0.618 sl-1.0      69    7.584     4.332   2.396 0.435 0.005 0.134   1.475 -0.044 0.017  -7.663  1.294
+   grade 1h  1D     ew0.0 tp1.618 sl-0.5      82    9.012     5.458   3.278 0.476 0.005 0.134   1.163 -0.048 0.018  -1.283  0.463
+   grade 1h  1D       ew0.0 tp1.0 sl-0.5      82    9.012     4.735   2.693 0.476 0.004 0.134   1.098 -0.048 0.017  -0.863  0.431
+   grade 1h  1D     ew0.0 tp0.618 sl-0.5      82    9.012     4.223   2.256 0.476 0.004 0.134   0.965 -0.047 0.016  -4.071  0.665
+   grade 1h  1D   ew0.0 tp0.382 sl-0.236     137   15.057    -0.794  -2.524 0.401 0.004 0.134   1.098 -0.046 0.013  -1.842 -0.162
+   grade 1h  1D     ew0.0 tp0.382 sl-1.0      70    7.694     2.998   1.086 0.443 0.003 0.134   1.022 -0.044 0.015  -2.825  0.529
+ honesto 4h   -    ew.236 tp.618 sl-.236     246   27.038    -3.943  -4.951 0.358 0.003 0.134   0.195 -0.143 0.035  -1.714 -1.053
+   grade 4h   - ew0.236 tp0.618 sl-0.236     246   27.038    -3.943  -4.951 0.358 0.003 0.134   0.195 -0.143 0.035  -4.072 -0.224
+   grade 1h  1D     ew0.0 tp0.382 sl-0.5      83    9.122     3.099   1.153 0.482 0.002 0.134   0.515 -0.047 0.015  -2.917  0.466

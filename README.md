@@ -6,7 +6,7 @@ o Pine Script em Python/NumPy, roda uma grade de parâmetros em vários timefram
 o resultado contra dois benchmarks: **buy & hold** e um **controle aleatório** com o mesmo
 lado, a mesma duração e a mesma gestão de saída.
 
-Resultado até agora: **nenhuma das 23 estratégias testadas passou**. Os relatórios em
+Resultado até agora: **nenhuma das 24 estratégias testadas passou**. Os relatórios em
 [`docs/`](docs/) explicam o motivo de cada reprovação — o que costuma ser mais útil que o
 veredito, porque o mesmo punhado de falhas se repete (sempre-no-mercado disfarçado de
 sinal, `lookahead_on`, risco/retorno impossível por construção, ilha de parâmetros que
@@ -96,6 +96,7 @@ Todas reprovadas. Ordem cronológica inversa.
 
 | # | Estratégia (autor, id do script) | Doc | Diagnóstico |
 | --- | --- | --- | --- |
+| 24 | [STRATEGY][RS]ZigZag PA Strategy V4.1 (RicardoSantos, `NEDEDcsP`) | [ZIGZAG_PA](docs/ZIGZAG_PA.md) | Pine v2: `security()` sem `lookahead` olha o futuro (+70% a.a., win 89%); honesta 0/423 batem o B&H |
 | 23 | MACD ReLoaded (Kivanc, `VO6DY8s1`) | [LOTE3_TV](docs/LOTE3_TV.md) | 1/60 células acima do B&H, só no terço final |
 | 22 | ANN Strategy v2 (sirolf2009, `oY725jQw`) | [LOTE3_TV](docs/LOTE3_TV.md) | a "rede neural" é `sign(variação do ohlc4)`; −70% a.a. no 15m |
 | 21 | Twin Optimized Trend Tracker / TOTT (Kivanc, `eENf7NpJ`) | [LOTE3_TV](docs/LOTE3_TV.md) | melhor do lote e ainda abaixo do B&H nos defaults |
@@ -120,7 +121,8 @@ pullback, Engolfo + PSAR, rompimento de NQ H1.
 ## Armadilhas que já custaram tempo
 
 - **`lookahead_on`** em `security()` é a causa número um de curva publicada boa. Sempre
-  conferir antes de reimplementar.
+  conferir antes de reimplementar. Em Pine v1/v2 ele é **implícito**: o `security()` histórico
+  já devolve o candle HTF corrente, sem nenhum parâmetro no código.
 - **Sempre-no-mercado** (Hull, Ichimoku, Bollinger) não é estratégia: é beta com custo de
   giro. O benchmark certo é buy & hold, não zero.
 - **Acerto alto sem stop** (RSI Divergence) vem da saída assimétrica, não do sinal.
