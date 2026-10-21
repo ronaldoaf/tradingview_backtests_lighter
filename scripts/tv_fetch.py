@@ -29,7 +29,7 @@ def fetch(slug):
 
 
 def triage(src):
-    v = re.search(r'//@version=(\d+)', src)
+    v = re.search(r'//\s*@version\s*=\s*(\d+)', src)
     ver = int(v.group(1)) if v else 1
     sec = len(re.findall(r'\b(?:request\.)?security\s*\(', src))
     la = 'lookahead_on' in src
