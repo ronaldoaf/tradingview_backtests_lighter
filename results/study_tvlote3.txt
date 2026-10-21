@@ -1,0 +1,84 @@
+
+-- ANN v2: a rede 1-5-33-1 e funcao de UMA variavel (a variacao do ohlc4); verificacao
+   |variacao| <=    2%: sinal(rede) == sinal(variacao) em 100.00% dos pontos | estritamente crescente: True
+   |variacao| <=    5%: sinal(rede) == sinal(variacao) em 100.00% dos pontos | estritamente crescente: True
+   |variacao| <=   20%: sinal(rede) == sinal(variacao) em  90.66% dos pontos | estritamente crescente: False
+   |variacao| <=  100%: sinal(rede) == sinal(variacao) em  18.13% dos pontos | estritamente crescente: False
+   rede em -1% / 0 / +1%: [-0.002636  0.        0.002636]  (impar e minuscula)
+   => na faixa util a rede e so o SINAL da variacao: 'comprado se ohlc4 > ohlc4[1]'.
+      Fora de +-20% (nunca num candle diario) ela inverte, por saturacao do peso 41,3.
+
+================= xau =================
+  M1 2017-09-01 -> 2026-10-04  (2.66M barras)
+
+### 1. Open Close Cross R5.1 (SMMA 8, resolucao alternativa 3x)
+  -- como publicado: lookahead_on (NAO e negociavel, so mostra o tamanho do vies)
+  15min OCC peek(3x)                 8933 tr (981.8/ano,   0.37d) | bruto   +25.1bp liq   +23.5bp (win 75%) | CAGR +215.5% vs B&H  +13.4% | Sh +7.38 DD   -10% expo 100% | ctl    -1.6bp t=+44.30
+  30min OCC peek(3x)                 4393 tr (482.8/ano,   0.76d) | bruto   +38.6bp liq   +36.8bp (win 75%) | CAGR +154.8% vs B&H  +13.4% | Sh +5.97 DD   -13% expo 100% | ctl    -1.7bp t=+50.35
+  1h OCC peek(3x)                    2082 tr (228.8/ano,   1.59d) | bruto   +59.1bp liq   +57.2bp (win 77%) | CAGR +113.2% vs B&H  +13.4% | Sh +5.06 DD    -8% expo 100% | ctl    -1.4bp t=+28.78
+  4h OCC peek(3x)                     570 tr ( 62.6/ano,   5.79d) | bruto  +117.8bp liq  +115.9bp (win 75%) | CAGR  +47.5% vs B&H  +13.4% | Sh +2.46 DD   -13% expo  99% | ctl    -3.2bp t=+12.18
+  1D OCC peek(3x)                     108 tr ( 11.9/ano,  29.78d) | bruto  +304.1bp liq  +272.2bp (win 72%) | CAGR  +18.2% vs B&H  +13.4% | Sh +1.00 DD   -16% expo  98% | ctl    +5.5bp t=+6.02
+  -- honesto: mesma regra com o candido HTF ja fechado
+  15min OCC honesto(3x)              8933 tr (981.8/ano,   0.37d) | bruto    +0.9bp liq    -0.7bp (win 29%) | CAGR   -9.1% vs B&H  +13.4% | Sh -0.57 DD  -109% expo 100% | ctl    -1.4bp t=+1.14
+  30min OCC honesto(3x)              4393 tr (482.8/ano,   0.76d) | bruto    +3.1bp liq    +1.4bp (win 32%) | CAGR   +4.1% vs B&H  +13.4% | Sh +0.24 DD   -48% expo 100% | ctl    -1.3bp t=+2.45
+  1h OCC honesto(3x)                 2082 tr (228.8/ano,   1.59d) | bruto    +5.4bp liq    +3.2bp (win 32%) | CAGR   +6.7% vs B&H  +13.4% | Sh +0.39 DD   -34% expo 100% | ctl    -0.7bp t=+1.79
+  4h OCC honesto(3x)                  570 tr ( 62.6/ano,   5.79d) | bruto   +12.4bp liq   +10.0bp (win 35%) | CAGR   +4.4% vs B&H  +13.4% | Sh +0.25 DD   -50% expo  99% | ctl    -1.5bp t=+1.28
+  1D OCC honesto(3x)                  108 tr ( 11.9/ano,  29.79d) | bruto   +65.4bp liq   +34.7bp (win 40%) | CAGR   +0.3% vs B&H  +13.4% | Sh +0.02 DD   -42% expo  98% | ctl   +20.7bp t=+0.25
+  -- honesto, grade de MA x periodo x multiplicador
+
+### 2. UT Bot Strategy (a x ATR(c), flip)
+  15min UT a=1 ATR10                 21765 tr (2392.1/ano,   0.15d) | bruto    -0.3bp liq    -1.9bp (win 33%) | CAGR  -33.5% vs B&H  +13.4% | Sh -2.49 DD  -376% expo 100% | ctl    -1.4bp t=-2.06
+  30min UT a=1 ATR10                 10380 tr (1140.8/ano,   0.32d) | bruto    +0.4bp liq    -1.2bp (win 34%) | CAGR  -13.9% vs B&H  +13.4% | Sh -0.92 DD  -146% expo 100% | ctl    -1.5bp t=+0.64
+  1h UT a=1 ATR10                    5061 tr (556.2/ano,   0.66d) | bruto    +1.6bp liq    -0.1bp (win 36%) | CAGR   +6.3% vs B&H  +13.4% | Sh +0.37 DD   -32% expo 100% | ctl    -1.6bp t=+1.99
+  4h UT a=1 ATR10                    1360 tr (149.5/ano,   2.44d) | bruto    +4.1bp liq    +1.4bp (win 37%) | CAGR   -1.1% vs B&H  +13.4% | Sh -0.06 DD   -51% expo 100% | ctl    -1.7bp t=+0.84
+  1D UT a=1 ATR10                     272 tr ( 29.9/ano,  12.12d) | bruto   +12.6bp liq   +13.7bp (win 39%) | CAGR   +3.7% vs B&H  +13.4% | Sh +0.21 DD   -34% expo  99% | ctl    +0.0bp t=+0.77
+  -- grade a x c
+
+### 3. TOTT (VAR MA 40, 1%, twin 0,1%)
+  15min TOTT VAR40 1%                 358 tr ( 39.3/ano,   9.21d) | bruto   +32.0bp liq   +28.5bp (win 39%) | CAGR  +12.0% vs B&H  +13.4% | Sh +0.66 DD   -29% expo  99% | ctl    +4.4bp t=+2.57
+  30min TOTT VAR40 1%                 230 tr ( 25.3/ano,  14.26d) | bruto   +53.4bp liq   +46.4bp (win 43%) | CAGR  +12.3% vs B&H  +13.4% | Sh +0.72 DD   -25% expo  99% | ctl    +3.3bp t=+2.07
+  1h TOTT VAR40 1%                    156 tr ( 17.1/ano,  20.86d) | bruto   +24.6bp liq   +14.8bp (win 35%) | CAGR   +0.6% vs B&H  +13.4% | Sh +0.04 DD   -62% expo  98% | ctl   +10.0bp t=+0.22
+  4h TOTT VAR40 1%                     58 tr (  6.4/ano,  54.94d) | bruto   +80.1bp liq   +57.4bp (win 47%) | CAGR   +4.1% vs B&H  +13.4% | Sh +0.24 DD   -30% expo  97% | ctl   +20.3bp t=+0.60
+  1D TOTT VAR40 1%                     14 tr (  1.5/ano, 212.21d) | bruto  +910.2bp liq  +538.4bp (win 43%) | CAGR   +2.7% vs B&H  +13.4% | Sh +0.16 DD   -45% expo  92% | ctl  +381.8bp t=+0.36
+  -- grade periodo x percent x coeff
+
+### 4. ANN Strategy v2
+  15min ANN                          66157 tr (7271.1/ano,   0.05d) | bruto    -0.1bp liq    -1.6bp (win 31%) | CAGR  -69.9% vs B&H  +13.4% | Sh -7.49 DD -1095% expo 100% | ctl    -1.5bp t=-1.42
+  30min ANN                          33399 tr (3670.8/ano,   0.10d) | bruto    -0.2bp liq    -1.7bp (win 32%) | CAGR  -48.7% vs B&H  +13.4% | Sh -4.05 DD  -610% expo 100% | ctl    -1.5bp t=-1.32
+  1h ANN                             16763 tr (1842.4/ano,   0.20d) | bruto    +0.0bp liq    -1.5bp (win 34%) | CAGR  -19.0% vs B&H  +13.4% | Sh -1.29 DD  -193% expo 100% | ctl    -1.5bp t=-0.02
+  4h ANN                             4423 tr (486.1/ano,   0.75d) | bruto    +2.5bp liq    +0.7bp (win 37%) | CAGR   -1.3% vs B&H  +13.4% | Sh -0.08 DD   -61% expo 100% | ctl    -0.8bp t=+1.35
+  1D ANN                              863 tr ( 94.9/ano,   3.84d) | bruto    -3.2bp liq    -4.9bp (win 37%) | CAGR   +3.4% vs B&H  +13.4% | Sh +0.19 DD   -40% expo 100% | ctl    -0.4bp t=-0.89
+  -- so long / so short (a rede e um sinal de 1 barra de momento)
+
+### 5. MACD ReLoaded (VAR 12/26/9, cruzamento do histograma)
+  15min MACDre VAR                   6754 tr (742.3/ano,   0.49d) | bruto    +0.1bp liq    -1.5bp (win 33%) | CAGR   -7.7% vs B&H  +13.4% | Sh -0.47 DD  -109% expo 100% | ctl    -1.5bp t=+0.05
+  30min MACDre VAR                   3479 tr (382.4/ano,   0.95d) | bruto    +1.9bp liq    +0.2bp (win 33%) | CAGR   +4.2% vs B&H  +13.4% | Sh +0.25 DD   -37% expo 100% | ctl    -1.8bp t=+1.44
+  1h MACDre VAR                      1731 tr (190.3/ano,   1.92d) | bruto    +6.4bp liq    +4.6bp (win 35%) | CAGR  +11.3% vs B&H  +13.4% | Sh +0.65 DD   -30% expo 100% | ctl    -1.6bp t=+2.55
+  4h MACDre VAR                       464 tr ( 51.0/ano,   7.15d) | bruto   +10.2bp liq   +10.8bp (win 36%) | CAGR   +3.7% vs B&H  +13.4% | Sh +0.22 DD   -60% expo 100% | ctl    +0.1bp t=+0.95
+  1D MACDre VAR                       101 tr ( 11.1/ano,  32.61d) | bruto   -42.7bp liq   -37.8bp (win 32%) | CAGR   -0.6% vs B&H  +13.4% | Sh -0.04 DD   -36% expo  99% | ctl   +16.2bp t=-1.14
+  -- grade tipo de MA x comprimentos
+
+=== resumo xau (467 celulas) ===
+  ann        5 cel | liq>0    1 | liq>0 e t>2   0 | CAGR>B&H   0 | melhor liq    +0.7bp
+  macdre    60 cel | liq>0   33 | liq>0 e t>2   9 | CAGR>B&H   1 | melhor liq   +76.4bp
+  occ      185 cel | liq>0  117 | liq>0 e t>2  37 | CAGR>B&H   1 | melhor liq  +134.4bp
+  tott     127 cel | liq>0  106 | liq>0 e t>2  16 | CAGR>B&H   6 | melhor liq  +599.7bp
+  ut        85 cel | liq>0   45 | liq>0 e t>2   9 | CAGR>B&H   0 | melhor liq   +35.5bp
+
+  top 15 por retorno liquido/trade (sem a versao peek):
+ est    TF               cfg  trades  por_ano  bp_bruto  bp_liq   win   cagr    bh  sharpe  expo   ctl_bp      t
+tott    1D VAR40 p2.0 c0.001      10    1.099  1183.406 599.659 0.400  0.007 0.134   0.045 0.848  321.948  0.656
+tott 15min VAR40 p0.5 c0.005      12    1.319   238.975 559.275 0.417  0.055 0.134   0.354 0.929 -234.859  1.216
+tott    1D   VAR40 p1.0 c0.0      14    1.539   924.353 555.843 0.429  0.036 0.134   0.217 0.919  373.521  0.404
+tott    1D VAR40 p1.0 c0.001      14    1.539   910.192 538.441 0.429  0.027 0.134   0.164 0.919  206.595  0.787
+tott    1D   VAR40 p1 c0.001      14    1.539   910.192 538.441 0.429  0.027 0.134   0.164 0.919  381.823  0.361
+tott    1D VAR40 p1.0 c0.005      12    1.319   966.648 524.367 0.417  0.008 0.134   0.052 0.918  293.081  0.465
+tott    1D VAR20 p2.0 c0.005      16    1.759   767.858 478.070 0.438  0.023 0.134   0.140 0.930  256.178  0.711
+tott    4h VAR80 p2.0 c0.005      18    1.978   636.943 452.634 0.500  0.038 0.134   0.231 0.931   46.857  1.258
+tott    1D VAR20 p2.0 c0.001      18    1.979   675.302 435.610 0.500  0.039 0.134   0.233 0.930  226.691  0.587
+tott    1D VAR20 p1.0 c0.005      18    1.979   636.775 431.320 0.500  0.032 0.134   0.191 0.930  130.136  1.114
+tott    1D VAR40 p0.5 c0.001      16    1.759   688.909 380.453 0.375  0.022 0.134   0.137 0.920  338.153  0.118
+tott    1D   VAR40 p2.0 c0.0      14    1.539   755.620 379.279 0.357  0.007 0.134   0.045 0.910  425.583 -0.088
+tott 30min VAR40 p0.5 c0.005      17    1.868   286.445 365.695 0.529  0.054 0.134   0.334 0.956 -114.559  1.700
+tott    1D VAR40 p2.0 c0.005      10    1.099   974.305 347.079 0.300 -0.010 0.134  -0.069 0.847  359.476 -0.023
+tott    1D   VAR40 p0.5 c0.0      20    2.199   577.054 324.507 0.350  0.018 0.134   0.114 0.916  165.231  0.634
