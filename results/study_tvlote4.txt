@@ -1,0 +1,73 @@
+
+================= xau =================
+  M1 2017-09-01 -> 2026-10-04
+
+### 1. AI SuperTrend x Pivot Percentile
+  15min 6h/12h f3.5/3.0 adx1          173 tr ( 19.0/ano,  14.04d) | bruto   +21.2bp liq   +17.3bp (win 36%) | CAGR   +2.1% vs B&H  +13.4% | Sh +0.16 DD   -31% expo  77% | ctl    +3.1bp t=+0.53
+  15min 6h/12h f3.5/3.0 adx1 so long   92 tr ( 10.1/ano,  13.80d) | bruto   +82.1bp liq   +28.4bp (win 34%) | CAGR   +1.5% vs B&H  +13.4% | Sh +0.20 DD   -27% expo  43% | ctl   +15.1bp t=+0.40
+  1h 6h/12h f3.5/3.0 adx1             160 tr ( 17.6/ano,  15.84d) | bruto   +26.2bp liq   +19.2bp (win 40%) | CAGR   +2.7% vs B&H  +13.4% | Sh +0.19 DD   -27% expo  76% | ctl    +4.7bp t=+0.55
+  1h 6h/12h f3.5/3.0 adx1 so long      84 tr (  9.2/ano,  16.47d) | bruto   +90.4bp liq   +26.6bp (win 36%) | CAGR   +2.1% vs B&H  +13.4% | Sh +0.27 DD   -32% expo  42% | ctl   +45.4bp t=-0.57
+  15min 1h/4h f3.5/3.0 adx1           558 tr ( 61.3/ano,   2.55d) | bruto    +4.6bp liq    +3.2bp (win 34%) | CAGR   +1.4% vs B&H  +13.4% | Sh +0.15 DD   -19% expo  51% | ctl    -3.2bp t=+1.32
+  15min 1h/4h f3.5/3.0 adx1 so long   283 tr ( 31.1/ano,   2.48d) | bruto   +12.8bp liq    +1.9bp (win 34%) | CAGR   -0.1% vs B&H  +13.4% | Sh -0.03 DD   -20% expo  26% | ctl    +0.1bp t=+0.18
+  1h 4h/1D f3.5/3.0 adx1              168 tr ( 18.5/ano,  10.24d) | bruto   +18.8bp liq   +19.6bp (win 41%) | CAGR   +3.3% vs B&H  +13.4% | Sh +0.32 DD   -24% expo  52% | ctl    +0.6bp t=+1.12
+  1h 4h/1D f3.5/3.0 adx1 so long       84 tr (  9.2/ano,   9.63d) | bruto   +72.7bp liq   +34.7bp (win 42%) | CAGR   +2.6% vs B&H  +13.4% | Sh +0.49 DD   -22% expo  28% | ctl   +23.9bp t=+0.37
+
+### 2. Pivot Point SuperTrend (2, 3, 10)
+  15min PPST default                 2884 tr (317.0/ano,   1.15d) | bruto    +3.0bp liq    +1.1bp (win 34%) | CAGR   +7.3% vs B&H  +13.4% | Sh +0.41 DD   -37% expo 100% | ctl    -1.8bp t=+1.86
+  15min PPST so long                 1442 tr (158.5/ano,   1.25d) | bruto    +7.4bp liq    +1.1bp (win 35%) | CAGR   +3.0% vs B&H  +13.4% | Sh +0.26 DD   -38% expo  53% | ctl    +1.2bp t=-0.04
+  30min PPST default                 1420 tr (156.1/ano,   2.33d) | bruto    +7.4bp liq    +5.1bp (win 37%) | CAGR  +13.1% vs B&H  +13.4% | Sh +0.72 DD   -22% expo 100% | ctl    -0.1bp t=+1.32
+  30min PPST so long                  710 tr ( 78.0/ano,   2.57d) | bruto   +16.3bp liq    +5.1bp (win 37%) | CAGR   +5.6% vs B&H  +13.4% | Sh +0.51 DD   -25% expo  54% | ctl    +2.5bp t=+0.43
+  1h PPST default                     716 tr ( 78.7/ano,   4.62d) | bruto    +8.9bp liq    +6.3bp (win 38%) | CAGR   +5.6% vs B&H  +13.4% | Sh +0.31 DD   -34% expo 100% | ctl    +0.2bp t=+0.83
+  1h PPST so long                     358 tr ( 39.3/ano,   4.91d) | bruto   +26.3bp liq    +6.2bp (win 39%) | CAGR   +2.1% vs B&H  +13.4% | Sh +0.20 DD   -31% expo  54% | ctl    +6.8bp t=-0.05
+  4h PPST default                     196 tr ( 21.5/ano,  16.70d) | bruto    +8.0bp liq    +0.0bp (win 40%) | CAGR   -0.1% vs B&H  +13.4% | Sh -0.01 DD   -54% expo  98% | ctl    +2.1bp t=-0.08
+  4h PPST so long                      98 tr ( 10.8/ano,  18.41d) | bruto   +75.6bp liq    +4.5bp (win 37%) | CAGR   -0.2% vs B&H  +13.4% | Sh -0.02 DD   -38% expo  57% | ctl   +42.4bp t=-1.02
+  1D PPST default                      32 tr (  3.5/ano, 102.63d) | bruto  +280.6bp liq  +168.3bp (win 44%) | CAGR   +1.0% vs B&H  +13.4% | Sh +0.06 DD   -53% expo  99% | ctl   +85.9bp t=+0.59
+  1D PPST so long                      16 tr (  1.8/ano, 131.94d) | bruto  +724.7bp liq  +224.4bp (win 25%) | CAGR   +0.2% vs B&H  +13.4% | Sh +0.02 DD   -49% expo  62% | ctl  +301.3bp t=-0.32
+
+### 3. Trend Direction Helper (RISK 10, SMA 7/20)
+  15min TDH default                  31147 tr (3423.3/ano,   0.09d) | bruto    +0.1bp liq    -1.5bp (win 39%) | CAGR  -40.9% vs B&H  +13.4% | Sh -3.37 DD  -483% expo  88% | ctl    -1.4bp t=-0.62
+  15min TDH so long                  4695 tr (516.0/ano,   0.54d) | bruto    +2.3bp liq    -1.3bp (win 41%) | CAGR   -5.4% vs B&H  +13.4% | Sh -0.37 DD   -68% expo  78% | ctl    -0.6bp t=-0.78
+  30min TDH default                  14348 tr (1577.0/ano,   0.20d) | bruto    +0.2bp liq    -1.6bp (win 41%) | CAGR  -24.1% vs B&H  +13.4% | Sh -1.74 DD  -257% expo  85% | ctl    -1.2bp t=-1.12
+  30min TDH so long                  2269 tr (249.4/ano,   1.11d) | bruto    +4.2bp liq    -1.5bp (win 41%) | CAGR   -4.4% vs B&H  +13.4% | Sh -0.31 DD   -66% expo  76% | ctl    +0.6bp t=-1.15
+  1h TDH default                     6815 tr (749.0/ano,   0.40d) | bruto    +0.4bp liq    -1.8bp (win 41%) | CAGR   -5.5% vs B&H  +13.4% | Sh -0.37 DD   -94% expo  84% | ctl    -1.1bp t=-1.61
+  1h TDH so long                     1127 tr (123.9/ano,   2.21d) | bruto    +5.9bp liq    -3.9bp (win 43%) | CAGR   -3.7% vs B&H  +13.4% | Sh -0.26 DD   -64% expo  76% | ctl    +2.7bp t=-1.61
+  4h TDH default                     1632 tr (179.4/ano,   1.63d) | bruto    +0.2bp liq    -5.0bp (win 41%) | CAGR   -8.8% vs B&H  +13.4% | Sh -0.67 DD  -117% expo  79% | ctl    -0.2bp t=-1.83
+  4h TDH so long                      289 tr ( 31.8/ano,   8.30d) | bruto   +22.4bp liq   -10.5bp (win 39%) | CAGR   -4.3% vs B&H  +13.4% | Sh -0.33 DD   -60% expo  71% | ctl    +9.1bp t=-2.35
+  1D TDH default                      227 tr ( 25.0/ano,   9.08d) | bruto    +1.2bp liq   -21.1bp (win 42%) | CAGR   +3.1% vs B&H  +13.4% | Sh +0.28 DD   -36% expo  66% | ctl    +3.2bp t=-1.29
+  1D TDH so long                       51 tr (  5.6/ano,  34.45d) | bruto  +144.0bp liq   +12.3bp (win 37%) | CAGR   +0.2% vs B&H  +13.4% | Sh +0.03 DD   -42% expo  57% | ctl   +49.1bp t=-0.55
+
+=== resumo xau (353 celulas) ===
+  aist    48 cel | liq>0   42 | liq>0 e t>2   3 | CAGR>B&H   0 | melhor CAGR +11.4%
+  ppst   185 cel | liq>0  176 | liq>0 e t>2  16 | CAGR>B&H   2 | melhor CAGR +13.4%
+  tdh    120 cel | liq>0   22 | liq>0 e t>2   0 | CAGR>B&H   0 | melhor CAGR +5.6%
+
+  top 15 por CAGR:
+ est    TF                  cfg  trades  por_ano  bp_bruto  bp_liq   win  cagr    bh  sharpe     dd  expo  ctl_bp     t
+ppst    1h          p5 f4.0 a20     375   41.216    27.549  26.870 0.384 0.134 0.134   0.749 -0.258 0.996  -7.637 3.619
+ppst 30min          p5 f2.0 a20    1524  167.499     8.175   5.725 0.337 0.134 0.134   0.736 -0.188 0.999  -0.957 2.181
+ppst 30min          p3 f2.0 a20    1778  195.415     6.531   4.273 0.352 0.131 0.134   0.718 -0.284 0.999  -1.260 2.143
+ppst 30min          p2 f3.0 a10    1420  156.068     7.449   5.062 0.365 0.131 0.134   0.725 -0.218 0.999  -1.830 2.862
+ppst 30min            p2 f3 a10    1420  156.068     7.449   5.062 0.365 0.131 0.134   0.725 -0.218 0.999  -0.130 1.317
+ppst    1h          p5 f2.0 a10     762   83.750    18.325  15.483 0.353 0.129 0.134   0.711 -0.222 0.998  -0.361 2.482
+ppst 15min          p2 f3.0 a20    2632  289.275     3.753   1.919 0.348 0.126 0.134   0.695 -0.272 0.999  -2.029 2.133
+ppst 30min          p2 f3.0 a20    1304  143.319     8.462   6.062 0.373 0.122 0.134   0.675 -0.186 0.999  -1.880 1.998
+ppst    1h          p3 f4.0 a20     432   47.480    20.353  19.089 0.382 0.120 0.134   0.666 -0.273 0.997   4.173 1.305
+ppst    1h          p5 f4.0 a10     404   44.403    23.773  22.861 0.379 0.118 0.134   0.657 -0.260 0.996   0.323 1.524
+ppst 15min          p5 f4.0 a20    1556  171.015     9.067   6.737 0.362 0.115 0.134   0.630 -0.221 0.999  -1.460 3.431
+aist 15min 6h/12h f2.0/2.0 adx0     374   41.105    24.309  24.139 0.390 0.114 0.134   0.827 -0.218 0.745  -1.578 2.584
+ppst    1h          p5 f2.0 a20     738   81.112    17.548  14.221 0.337 0.112 0.134   0.623 -0.246 0.998   0.002 2.378
+ppst 30min          p3 f2.0 a10    1902  209.044     5.550   3.301 0.346 0.111 0.134   0.610 -0.232 1.000  -1.392 1.549
+ppst 30min          p3 f3.0 a10    1320  145.078     7.058   4.555 0.361 0.110 0.134   0.614 -0.234 0.999  -0.152 1.077
+
+  top 10 por t:
+ est    TF                  cfg  trades  por_ano  bp_bruto  bp_liq   win  cagr    bh  sharpe     dd  expo  ctl_bp     t
+ppst    1h          p5 f4.0 a20     375   41.216    27.549  26.870 0.384 0.134 0.134   0.749 -0.258 0.996  -7.637 3.619
+ppst 15min          p5 f4.0 a20    1556  171.015     9.067   6.737 0.362 0.115 0.134   0.630 -0.221 0.999  -1.460 3.431
+ppst 30min          p2 f3.0 a10    1420  156.068     7.449   5.062 0.365 0.131 0.134   0.725 -0.218 0.999  -1.830 2.862
+ppst 15min          p5 f4.0 a10    1736  190.799     6.885   4.545 0.347 0.086 0.134   0.472 -0.259 0.999  -1.423 2.759
+aist 15min 6h/12h f2.0/2.0 adx0     374   41.105    24.309  24.139 0.390 0.114 0.134   0.827 -0.218 0.745  -1.578 2.584
+ppst 30min          p5 f3.0 a10    1140  125.294     7.967   5.414 0.355 0.074 0.134   0.426 -0.264 0.999  -1.679 2.514
+ppst    1h          p5 f2.0 a10     762   83.750    18.325  15.483 0.353 0.129 0.134   0.711 -0.222 0.998  -0.361 2.482
+aist 15min  1h/4h f3.5/3.0 adx0     653   71.769    15.374  13.681 0.398 0.095 0.134   0.672 -0.189 0.693  -2.455 2.476
+ppst    1h          p5 f2.0 a20     738   81.112    17.548  14.221 0.337 0.112 0.134   0.623 -0.246 0.998   0.002 2.378
+ppst 15min          p2 f4.0 a10    2060  226.408     5.476   3.479 0.364 0.103 0.134   0.571 -0.248 0.999  -2.045 2.223
