@@ -16,7 +16,7 @@ buy & hold (+13,4% a.a.). Nenhuma foi estendida aos outros ativos.
 | 32 | Hammers & Stars v1.2 (ZenAndTheArtOfTrading, `t776tkZv`) | 545 | 125 | 1 | 0 | +7,3% |
 | 33 | Iron Support Resistance / Scalping S/R (HPotter, `gp332Dao`) | 365 | 67 | 2 | 0 | +5,6% |
 | 34 | Bollinger Band with RSI (`pKOaIHpb`) | 304 | 26 | 0 | 0 | +1,1% |
-| 35 | ICT Master Suite (Trading IQ, `ABYnIcdl`) | — | — | — | — | não reproduzida |
+| 35 | ICT Master Suite (Trading IQ, `ABYnIcdl`) | — | — | — | — | testada depois: ver [ICT2022](ICT2022.md) |
 | 36 | SUPERTREND ATR with Trailing Stop Loss (`L9GkARD2`) | 250 | 145 | 16 | 0 | +6,2% |
 
 ---

@@ -6,7 +6,7 @@ o Pine Script em Python/NumPy, roda uma grade de parâmetros em vários timefram
 o resultado contra dois benchmarks: **buy & hold** e um **controle aleatório** com o mesmo
 lado, a mesma duração e a mesma gestão de saída.
 
-Resultado até agora: **nenhuma das 35 estratégias testadas passou** (mais 1 não reproduzida). A única candidata é o
+Resultado até agora: **nenhuma das 36 estratégias testadas passou**. A única candidata é o
 **Pivot Point SuperTrend no ETH** (ver [LOTE4_TV](docs/LOTE4_TV.md)), ainda dependente de medir o custo real do ETH. Os relatórios em
 [`docs/`](docs/) explicam o motivo de cada reprovação — o que costuma ser mais útil que o
 veredito, porque o mesmo punhado de falhas se repete (sempre-no-mercado disfarçado de
@@ -99,7 +99,7 @@ Todas reprovadas, exceto a candidata indicada. Ordem cronológica inversa.
 | # | Estratégia (autor, id do script) | Doc | Diagnóstico |
 | --- | --- | --- | --- |
 | 36 | SUPERTREND ATR with Trailing Stop Loss (`L9GkARD2`) | [LOTE6_TV](docs/LOTE6_TV.md) | ATR(1) = true range; os t>2 são shorts vivendo do funding; 0/250 batem o B&H |
-| 35 | ICT Master Suite (Trading IQ, `ABYnIcdl`) | [LOTE6_TV](docs/LOTE6_TV.md) | **não reproduzida**: 3,4 mil linhas + biblioteca de 2,8 mil |
+| 35 | ICT Master Suite, 2022 Model (Trading IQ, `ABYnIcdl`) | [ICT2022](docs/ICT2022.md) | positiva por trade no 15m/1h, mas 3–4% de exposição: +1–3% a.a.; 0/52 batem o B&H |
 | 34 | Bollinger Band with RSI (`pKOaIHpb`) | [LOTE6_TV](docs/LOTE6_TV.md) | pirâmide de 50 e stop de 25%: acerto 77%, 0/304 batem o B&H |
 | 33 | Iron Support Resistance / Scalping S/R (HPotter, `gp332Dao`) | [LOTE6_TV](docs/LOTE6_TV.md) | publicado com o backtest desligado; ligado, 0/365 batem o B&H |
 | 32 | Hammers & Stars v1.2 (ZenAndTheArtOfTrading, `t776tkZv`) | [LOTE6_TV](docs/LOTE6_TV.md) | acerto 50% com RR 1:1; 0/545 batem o B&H |
