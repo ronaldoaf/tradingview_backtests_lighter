@@ -6,7 +6,7 @@ o Pine Script em Python/NumPy, roda uma grade de parâmetros em vários timefram
 o resultado contra dois benchmarks: **buy & hold** e um **controle aleatório** com o mesmo
 lado, a mesma duração e a mesma gestão de saída.
 
-Resultado até agora: **nenhuma das 28 estratégias testadas passou**. A única candidata é o
+Resultado até agora: **nenhuma das 31 estratégias testadas passou**. A única candidata é o
 **Pivot Point SuperTrend no ETH** (ver [LOTE4_TV](docs/LOTE4_TV.md)), ainda dependente de medir o custo real do ETH. Os relatórios em
 [`docs/`](docs/) explicam o motivo de cada reprovação — o que costuma ser mais útil que o
 veredito, porque o mesmo punhado de falhas se repete (sempre-no-mercado disfarçado de
@@ -98,6 +98,9 @@ Todas reprovadas, exceto a candidata indicada. Ordem cronológica inversa.
 
 | # | Estratégia (autor, id do script) | Doc | Diagnóstico |
 | --- | --- | --- | --- |
+| 31 | Full CRYPTO pack macd-rsi-obv-ema (SoftKill21, `DbRYTl6G`) | [LOTE5_TV](docs/LOTE5_TV.md) | o RSI é `< 100` (sempre verdadeiro); 0/128 batem o B&H |
+| 30 | QQE MOD + SSL Hybrid + Waddah Attar Explosion (`YCob5r03`) | [LOTE5_TV](docs/LOTE5_TV.md) | "só sai no lucro" infla o acerto; 0/640 batem o B&H |
+| 29 | Price and Volume Breakout Buy (TradeDots, `jc2hs2qK`) | [LOTE5_TV](docs/LOTE5_TV.md) | o filtro de volume piora; 0/334 batem o B&H |
 | 28 | Trend Direction Helper (Daveatt, `dzpmnane`) | [LOTE4_TV](docs/LOTE4_TV.md) | é %R de 1 barra; 0/120 batem o B&H |
 | 27 | Pivot Point SuperTrend (LonesomeTheBlue, `DwdC6FT4`) | [LOTE4_TV](docs/LOTE4_TV.md) | empata com o B&H no ouro; **candidata no ETH** (+81% vs +57% a.a., estável nos terços) |
 | 26 | AI SuperTrend x Pivot Percentile (PresentTrading, `eC3qAYNQ`) | [LOTE4_TV](docs/LOTE4_TV.md) | o "KNN" é o rótulo da barra atual; 0/48 batem o B&H |
