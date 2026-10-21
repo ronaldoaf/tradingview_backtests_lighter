@@ -99,7 +99,7 @@ Todas reprovadas, exceto a candidata indicada. Ordem cronológica inversa.
 | # | Estratégia (autor, id do script) | Doc | Diagnóstico |
 | --- | --- | --- | --- |
 | 36 | SUPERTREND ATR with Trailing Stop Loss (`L9GkARD2`) | [LOTE6_TV](docs/LOTE6_TV.md) | ATR(1) = true range; os t>2 são shorts vivendo do funding; 0/250 batem o B&H |
-| 35 | ICT Master Suite, 2022 Model (Trading IQ, `ABYnIcdl`) | [ICT2022](docs/ICT2022.md) | positiva por trade no 15m/1h, mas 3–4% de exposição: +1–3% a.a.; 0/52 batem o B&H |
+| 35 | ICT Master Suite, todos os modelos (Trading IQ, `ABYnIcdl`) | [ICT2022](docs/ICT2022.md), [ICT_SUITE](docs/ICT_SUITE.md) | 2022/Unicorn/OTE/Silver Bullet/Liquidity Raid × XAU/US100/WTI/BTC/ETH: nenhum bate o B&H com risco aceitável |
 | 34 | Bollinger Band with RSI (`pKOaIHpb`) | [LOTE6_TV](docs/LOTE6_TV.md) | pirâmide de 50 e stop de 25%: acerto 77%, 0/304 batem o B&H |
 | 33 | Iron Support Resistance / Scalping S/R (HPotter, `gp332Dao`) | [LOTE6_TV](docs/LOTE6_TV.md) | publicado com o backtest desligado; ligado, 0/365 batem o B&H |
 | 32 | Hammers & Stars v1.2 (ZenAndTheArtOfTrading, `t776tkZv`) | [LOTE6_TV](docs/LOTE6_TV.md) | acerto 50% com RR 1:1; 0/545 batem o B&H |
