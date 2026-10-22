@@ -42,6 +42,10 @@ Convenções: sinal no fechamento, ordem na abertura seguinte, custo de spread +
 
 `scripts/study_eth_corr.py` → `results/study_eth_corr.txt`. Correlação dos retornos diários entre as cinco candidatas do ETH vai de 0,29 a 0,72; com o B&H do ETH fica perto de zero. Ficam na mesma direção 62% a 81% do tempo. Pares mais parecidos: RSI-MA × Ichimoku (0,72) e RSI-MA × Pivot ST (0,66). UT Bot e Scalping são os mais diferentes. A carteira com peso igual nas cinco cai o DD para cerca de −39% (vs −55% a −74% de cada uma, na marcação diária aproximada).
 
+## Referência: cruzamento simples de médias no ETH
+
+No lote 16, o EMA Cross 50/200 no ETH 15m fez +111% a.a. (B&H +57%), mas fraco na 2ª metade (+19% vs +13%, t 0,6). Ou seja, bater o B&H do ETH é fácil para qualquer seguidor de tendência; as candidatas acima valem pelo que fazem a mais que isso (RSI-MA +171% e passa em todos os terços; UT Bot 30m +131%). Ver [LOTE16_TV](LOTE16_TV.md).
+
 ## Pendências comuns
 
 - Medir o spread real do ETH na Lighter (afeta as candidatas 2 e 3).

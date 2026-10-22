@@ -1,0 +1,76 @@
+
+================= xau =================
+  M1 2017-09-01 -> 2026-10-04
+
+### 1. QQE Cross v6.0 (XC, fecha XQ, filtro de direcao)
+  15min QQE default                  3937 tr (432.7/ano,   0.25d) | bruto    +1.1bp liq    -0.6bp (win 36%) | CAGR   -2.3% vs B&H  +13.4% | Sh -0.26 DD   -36% expo  30% | ctl    -1.5bp t=+1.06
+  30min QQE default                  1976 tr (217.2/ano,   0.49d) | bruto    +3.0bp liq    +1.1bp (win 36%) | CAGR   +3.4% vs B&H  +13.4% | Sh +0.39 DD   -17% expo  30% | ctl    -1.6bp t=+2.22
+  1h QQE default                     1018 tr (111.9/ano,   1.11d) | bruto    +8.9bp liq    +6.9bp (win 39%) | CAGR   +8.5% vs B&H  +13.4% | Sh +0.99 DD   -12% expo  33% | ctl    -1.9bp t=+3.23
+  4h QQE default                      295 tr ( 32.4/ano,   3.66d) | bruto   +11.1bp liq    +7.6bp (win 40%) | CAGR   +0.6% vs B&H  +13.4% | Sh +0.08 DD   -28% expo  35% | ctl    -0.6bp t=+0.82
+  1D QQE default                       57 tr (  6.3/ano,  19.47d) | bruto   +32.4bp liq    +0.6bp (win 40%) | CAGR   +0.0% vs B&H  +13.4% | Sh +0.00 DD   -32% expo  35% | ctl    +9.4bp t=-0.19
+
+### 2. PMax (VAR12, ATR10x3, MACD/PSAR/CCI, SL1% TP35%)
+  15min PMAX default                  902 tr ( 99.1/ano,   3.11d) | bruto    +2.9bp liq    -0.0bp (win 34%) | CAGR   -0.2% vs B&H  +13.4% | Sh -0.02 DD   -22% expo  84% | ctl    -0.7bp t=+0.15
+  30min PMAX default                  483 tr ( 53.1/ano,   5.43d) | bruto   +17.1bp liq   +12.5bp (win 35%) | CAGR   +5.1% vs B&H  +13.4% | Sh +0.40 DD   -30% expo  79% | ctl    +3.0bp t=+1.55
+  1h PMAX default                     227 tr ( 24.9/ano,  10.81d) | bruto   +53.0bp liq   +49.5bp (win 33%) | CAGR  +12.6% vs B&H  +13.4% | Sh +0.98 DD   -15% expo  72% | ctl    +2.4bp t=+2.73
+  4h PMAX default                      80 tr (  8.8/ano,  18.24d) | bruto   +22.0bp liq    +0.9bp (win 20%) | CAGR   +0.1% vs B&H  +13.4% | Sh +0.02 DD   -15% expo  42% | ctl   -12.8bp t=+0.32
+  1D PMAX default                      13 tr (  1.4/ano,  27.54d) | bruto  +176.9bp liq   +99.2bp (win 8%) | CAGR   +1.0% vs B&H  +13.4% | Sh +0.49 DD    -8% expo  13% | ctl    +0.7bp t=+0.83
+
+### 3. AI Volume SuperTrend (10, 3; rotulo WMA20 vs WMA100 do ST)
+  15min AIVST default                3028 tr (332.8/ano,   0.96d) | bruto    +2.3bp liq    +0.4bp (win 33%) | CAGR   +3.5% vs B&H  +13.4% | Sh +0.22 DD   -55% expo  81% | ctl    -1.2bp t=+1.05
+  30min AIVST default                1522 tr (167.3/ano,   1.83d) | bruto    +4.8bp liq    +2.7bp (win 34%) | CAGR   +6.7% vs B&H  +13.4% | Sh +0.42 DD   -26% expo  81% | ctl    -2.2bp t=+2.09
+  1h AIVST default                    792 tr ( 87.0/ano,   3.28d) | bruto    +6.7bp liq    +4.3bp (win 34%) | CAGR   +3.8% vs B&H  +13.4% | Sh +0.25 DD   -33% expo  80% | ctl    -1.3bp t=+1.32
+  4h AIVST default                    222 tr ( 24.4/ano,  11.58d) | bruto   +12.6bp liq    +9.1bp (win 38%) | CAGR   +1.4% vs B&H  +13.4% | Sh +0.10 DD   -48% expo  79% | ctl    -4.1bp t=+0.66
+  1D AIVST default                     36 tr (  4.0/ano,  71.19d) | bruto  +240.2bp liq  +164.3bp (win 44%) | CAGR   +5.5% vs B&H  +13.4% | Sh +0.41 DD   -25% expo  77% | ctl   -15.2bp t=+1.68
+
+### 4. EMA Cross 10/20
+  15min EMAX default                 7802 tr (857.5/ano,   0.43d) | bruto    +0.7bp liq    -1.0bp (win 27%) | CAGR   -9.8% vs B&H  +13.4% | Sh -0.62 DD  -119% expo 100% | ctl    -1.3bp t=+0.59
+  30min EMAX default                 3854 tr (423.6/ano,   0.86d) | bruto    +1.8bp liq    -0.0bp (win 27%) | CAGR   +1.3% vs B&H  +13.4% | Sh +0.08 DD   -68% expo 100% | ctl    -1.0bp t=+0.56
+  1h EMAX default                    1890 tr (207.7/ano,   1.76d) | bruto    +7.0bp liq    +5.0bp (win 29%) | CAGR  +12.8% vs B&H  +13.4% | Sh +0.71 DD   -24% expo 100% | ctl    -0.7bp t=+1.86
+  4h EMAX default                     476 tr ( 52.3/ano,   6.95d) | bruto   +15.5bp liq   +14.0bp (win 30%) | CAGR   +7.7% vs B&H  +13.4% | Sh +0.44 DD   -34% expo 100% | ctl    +0.2bp t=+1.62
+  1D EMAX default                      95 tr ( 10.4/ano,  34.65d) | bruto   +64.4bp liq   +38.8bp (win 39%) | CAGR   +1.1% vs B&H  +13.4% | Sh +0.06 DD   -32% expo  99% | ctl   +18.6bp t=+0.52
+
+### 5. EDMA Scalping (EMA20 x EDMA20)
+  15min EDMA default                 4125 tr (453.4/ano,   0.80d) | bruto    +0.9bp liq    +0.2bp (win 32%) | CAGR   -0.1% vs B&H  +13.4% | Sh -0.01 DD   -82% expo 100% | ctl    -1.8bp t=+1.82
+  30min EDMA default                 2013 tr (221.2/ano,   1.65d) | bruto    +6.1bp liq    +5.9bp (win 34%) | CAGR  +11.9% vs B&H  +13.4% | Sh +0.67 DD   -28% expo 100% | ctl    -2.5bp t=+2.92
+  1h EDMA default                     978 tr (107.5/ano,   3.39d) | bruto   +11.9bp liq   +13.7bp (win 36%) | CAGR  +12.8% vs B&H  +13.4% | Sh +0.69 DD   -28% expo 100% | ctl    -3.5bp t=+3.57
+  4h EDMA default                     302 tr ( 33.2/ano,  10.92d) | bruto   -29.9bp liq   -20.3bp (win 32%) | CAGR   -8.7% vs B&H  +13.4% | Sh -0.54 DD  -104% expo  99% | ctl    -4.6bp t=-1.08
+  1D EDMA default                      47 tr (  5.2/ano,  67.62d) | bruto   -16.1bp liq    -0.4bp (win 32%) | CAGR   +1.5% vs B&H  +13.4% | Sh +0.09 DD   -45% expo  96% | ctl   -20.5bp t=+0.26
+
+=== resumo xau (235 celulas) ===
+  aivst    60 cel | liq>0   55 | liq>0 e t>2   5 | CAGR>B&H   0 | melhor CAGR +13.3%
+  edma     40 cel | liq>0   31 | liq>0 e t>2  11 | CAGR>B&H   1 | melhor CAGR +14.5%
+  emax     29 cel | liq>0   26 | liq>0 e t>2   1 | CAGR>B&H   0 | melhor CAGR +12.8%
+  pmax     46 cel | liq>0   38 | liq>0 e t>2   6 | CAGR>B&H   3 | melhor CAGR +13.5%
+  qqe      60 cel | liq>0   36 | liq>0 e t>2   6 | CAGR>B&H   0 | melhor CAGR +8.5%
+
+  top 15 por CAGR:
+  est    TF                        cfg  trades  por_ano  bp_bruto  bp_liq   win  cagr    bh  sharpe     dd  expo  ctl_bp     t
+ edma 30min              l50 e40 ambos     819   90.014    10.270  13.661 0.348 0.145 0.134   0.796 -0.356 0.994  -2.692 3.213
+ pmax    1h   sl0% tp35% filtros ambos     196   21.542    62.748  61.538 0.434 0.135 0.134   0.766 -0.262 0.984   4.262 2.234
+ pmax    1h sl3% tp35% sofiltro0 ambos     333   36.599    37.057  34.873 0.393 0.135 0.134   0.758 -0.267 0.995  -2.308 2.522
+ pmax    1h sl0% tp35% sofiltro0 ambos     333   36.599    37.010  34.833 0.393 0.134 0.134   0.750 -0.275 0.996   0.875 2.756
+aivst    1h               l20 f5 ambos     399   43.853    24.090  23.885 0.361 0.133 0.134   0.794 -0.214 0.917   0.068 1.986
+ edma 15min              l50 e40 ambos    1671  183.655     5.540   6.205 0.346 0.129 0.134   0.728 -0.230 0.999  -2.732 2.778
+ emax    1h                10/20 ambos    1890  207.726     7.013   5.034 0.285 0.128 0.134   0.712 -0.241 1.000  -0.675 1.855
+ edma    1h              l20 e20 ambos     978  107.490    11.897  13.749 0.364 0.128 0.134   0.694 -0.276 0.998  -3.545 3.574
+ pmax    1h   sl1% tp35% filtros ambos     227   24.949    52.996  49.507 0.330 0.126 0.134   0.976 -0.149 0.721   2.412 2.731
+ pmax    1h   sl3% tp35% filtros ambos     209   22.971    56.740  54.452 0.407 0.125 0.134   0.757 -0.257 0.924   4.432 2.790
+ edma 15min              l50 e20 ambos    2241  246.302     4.230   4.007 0.326 0.121 0.134   0.680 -0.302 0.999  -2.586 2.802
+ edma 30min              l20 e20 ambos    2013  221.243     6.054   5.863 0.344 0.119 0.134   0.668 -0.278 0.999  -2.540 2.921
+ emax 30min                20/50 ambos    1674  183.985     8.162   6.048 0.282 0.114 0.134   0.632 -0.272 1.000  -0.737 2.783
+ edma 30min              l50 e20 ambos    1079  118.590     7.945   8.750 0.335 0.110 0.134   0.618 -0.355 0.999  -3.530 2.441
+aivst 15min               l10 f5 ambos    1839  202.119     6.123   4.085 0.334 0.105 0.134   0.605 -0.283 0.914  -0.748 1.831
+
+  top 10 por t:
+ est    TF                      cfg  trades  por_ano  bp_bruto  bp_liq   win  cagr    bh  sharpe     dd  expo  ctl_bp     t
+edma    1h            l20 e20 ambos     978  107.490    11.897  13.749 0.364 0.128 0.134   0.694 -0.276 0.998  -3.545 3.574
+ qqe    1h       XC f5 semfil ambos    1047  115.074     8.408   6.449 0.391 0.082 0.134   0.940 -0.119 0.336  -0.416 3.279
+ qqe    1h         XC f5 dfil ambos    1018  111.886     8.890   6.916 0.393 0.085 0.134   0.993 -0.119 0.329  -1.946 3.230
+edma 30min            l50 e40 ambos     819   90.014    10.270  13.661 0.348 0.145 0.134   0.796 -0.356 0.994  -2.692 3.213
+edma 30min            l20 e40 ambos    2533  278.395     0.761   1.465 0.353 0.044 0.134   0.258 -0.589 0.998  -3.346 2.975
+edma 30min            l20 e20 ambos    2013  221.243     6.054   5.863 0.344 0.119 0.134   0.668 -0.278 0.999  -2.540 2.921
+edma 15min            l50 e20 ambos    2241  246.302     4.230   4.007 0.326 0.121 0.134   0.680 -0.302 0.999  -2.586 2.802
+pmax    1h sl3% tp35% filtros ambos     209   22.971    56.740  54.452 0.407 0.125 0.134   0.757 -0.257 0.924   4.432 2.790
+emax 30min              20/50 ambos    1674  183.985     8.162   6.048 0.282 0.114 0.134   0.632 -0.272 1.000  -0.737 2.783
+edma 15min            l50 e40 ambos    1671  183.655     5.540   6.205 0.346 0.129 0.134   0.728 -0.230 0.999  -2.732 2.778

@@ -100,6 +100,15 @@ Todas reprovadas, exceto a candidata indicada. Ordem cronológica inversa.
 
 | # | Estratégia (autor, id do script) | Doc | Diagnóstico |
 | --- | --- | --- | --- |
+| 95 | EDMA Scalping Strategy (`CJesxF5m`) | [LOTE16_TV](docs/LOTE16_TV.md) | quase no WTI 1D (+64%, passa terços) mas só 53 trades e t 1,6; ETH perde no 1º terço |
+| 94 | EMA Cross Strategy (`fAxX6kbm`) | [LOTE16_TV](docs/LOTE16_TV.md) | o 50/200 bate o B&H do ETH (+111%), mas 2ª metade fraca; serve de referência para as candidatas do ETH |
+| 93 | Stepped trailing strategy example (`jjhUHcje`) | [LOTE16_TV](docs/LOTE16_TV.md) | ignorado (exemplo) |
+| 92 | Strategy Designer (`Hp05f5Dq`) | [LOTE16_TV](docs/LOTE16_TV.md) | ignorado (template) |
+| 91 | Ultimate Strategy Template (`XIJrNXQc`) | [LOTE16_TV](docs/LOTE16_TV.md) | ignorado (template) |
+| 90 | DCA Bot Long/Short (`LTcMeU50`) | [LOTE16_TV](docs/LOTE16_TV.md) | ignorado (utilitário) |
+| 89 | AI Volume SuperTrend (`eaTIyEty`) | [LOTE16_TV](docs/LOTE16_TV.md) | ETH 4h +103% mas terço do meio negativo |
+| 88 | Profit Maximizer PMax (`7yn5dteO`) | [LOTE16_TV](docs/LOTE16_TV.md) | BTC e XAU perto do B&H; 2ª metade abaixo |
+| 87 | [Backtest] QQE Cross v6.0 (`H0TR67ED`) | [LOTE16_TV](docs/LOTE16_TV.md) | só WTI acima do B&H; melhor ETH +59% ≈ B&H |
 | 86 | BTC bot (`DPBeZbMP`) | [LOTE15_TV](docs/LOTE15_TV.md) | 0 células acima do B&H; melhor +17% a.a. (US100) |
 | 85 | Crypto BOT lower timeframes (`IS7yz9s4`) | [LOTE15_TV](docs/LOTE15_TV.md) | 0 células acima do B&H |
 | 84 | AUTOMATIC GRID BOT (`6qZpzElZ`) | [LOTE15_TV](docs/LOTE15_TV.md) | ignorado (utilitário) |

@@ -1,0 +1,9 @@
+
+### edma 30min {'ln': 50, 'e1': 40}
+  tudo 2017-09-01..2026-10-04         819 tr ( 90.0/ano,   4.03d) | bruto   +10.3bp liq   +13.7bp (win 35%) | CAGR  +14.5% vs B&H  +13.4% | Sh +0.80 DD   -36% expo  99% | ctl    -4.4bp t=+3.28
+  terco1 2017-09-01..2021-05-05       269 tr ( 73.2/ano,   4.98d) | bruto   +21.5bp liq   +26.5bp (win 36%) | CAGR  +22.8% vs B&H   +8.5% | Sh +1.56 DD   -12% expo 100% | ctl    -6.6bp t=+4.18
+  terco2 2021-05-05..2024-02-23       278 tr ( 99.1/ano,   3.66d) | bruto    -1.2bp liq    +3.0bp (win 30%) | CAGR   +4.1% vs B&H   +4.7% | Sh +0.29 DD   -14% expo  99% | ctl    +0.6bp t=+0.29
+  terco3 2024-02-23..2026-10-04       270 tr (103.3/ano,   3.47d) | bruto   +10.8bp liq   +11.8bp (win 38%) | CAGR  +14.8% vs B&H  +31.5% | Sh +0.56 DD   -36% expo  98% | ctl    -6.2bp t=+1.78
+  2a metade 2022-11-21..2026-10-04    415 tr (107.2/ano,   3.37d) | bruto    +3.5bp liq    +4.8bp (win 35%) | CAGR   +7.5% vs B&H  +25.1% | Sh +0.33 DD   -36% expo  99% | ctl    -0.2bp t=+0.68
+  custo 2x                            819 tr ( 90.0/ano,   4.03d) | bruto   +10.3bp liq   +12.2bp (win 34%) | CAGR  +12.9% vs B&H  +13.4% | Sh +0.71 DD   -36% expo  99% | ctl    -5.3bp t=+2.48
+  custo 4x                            819 tr ( 90.0/ano,   4.03d) | bruto   +10.3bp liq    +9.2bp (win 33%) | CAGR   +9.9% vs B&H  +13.4% | Sh +0.55 DD   -37% expo  99% | ctl    -7.7bp t=+2.70
