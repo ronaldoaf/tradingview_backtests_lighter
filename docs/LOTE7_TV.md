@@ -144,3 +144,42 @@ Verificou-se: a reimplementação reproduz os valores do documento com precisão
 estratégia: o documento diz que no OOS o CAGR "empatou ou ficou abaixo" do B&H, e aqui a
 segunda metade ficou acima (+27,7% vs +25,1%); e o documento compara com o ouro à vista em
 vez do perp com funding, que é o benchmark operacionalmente relevante.
+
+## Modo sombra na VPS (desde 2026-10-22)
+
+Rodando sem capital no paper da VPS (`src/trailsl.js`, aba Sombra, `/api/shadow` → `tsl`,
+dados em `data/shadow/trail_sl/`). Casos de paridade: `scripts/export_trailsl_cases.py` →
+`test/trailsl.test.js` (16 testes, paridade bit a bit com `study_tvlote7._run` em 4 fatias
+reais do ouro, 34 viradas).
+
+Duas trilhas do mesmo sinal:
+- **T (teórico)** = preço no nível da linha, ou na abertura do minuto se ele abriu além dela —
+  a convenção do backtest, medida nos candles de 1m da Lighter.
+- **R (real)** = mid do livro, varredura de US$1k/5k e o funding real de cada hora.
+
+A diferença entre as duas é o que a sombra existe para medir: o backtest supõe o stop
+preenchido **no nível**, e o livro do ouro na Lighter pode não entregar isso. É o mesmo tipo
+de gap que derrubou o fade de −0,094R por operação.
+
+### Uma divergência de instrumento que foi preciso resolver
+
+O backtest usou Dukascopy, que **não tem fim de semana** (2,66 M de minutos em 9,1 anos =
+56% do calendário). O perp de XAU da Lighter negocia **24/7, com volume real no sábado e no
+domingo** — verificado nos candles de 16–19/10/2026.
+
+Deixar a regra rodar 24/7 faria a sombra testar uma regra diferente da aprovada. Então a
+sessão do backtest foi derivada da cobertura hora a hora dos próprios dados e congelada na
+regra: pausa diária 17:00–18:00 ET e fechado de sexta 17:00 ET a domingo 18:00 ET — a sessão
+do ouro no CME, 115h de 168 (68,5%). Expressa em horário de Nova York, não em UTC fixo, para
+o horário de verão entrar sozinho.
+
+Os toques que acontecem com a sessão fechada **não viram posição**; vão para
+`fora_sessao.csv` para dimensionar quanto o perp 24/7 difere da regra testada. Se esse
+arquivo crescer muito, a regra de 30m no ouro não sobrevive ao instrumento e isso precisa
+entrar na conta antes de qualquer capital.
+
+### Critério para avaliar
+
+Não julgar por poucas viradas: a esperança é ~36/ano, então um trimestre dá ~9. Avaliar por
+`real − teórico` por virada (se ficar abaixo de ~−10 bp, a execução come o edge de +44,8 bp)
+e pelo acumulado contra `n × 44,8 bp`.
