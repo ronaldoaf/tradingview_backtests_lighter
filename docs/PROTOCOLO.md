@@ -19,6 +19,12 @@ Até o lote 11 a regra era outra: ouro primeiro e só estender aos outros 4 se o
 Antes de começar um teste novo, conferir a tabela do README para não repetir uma
 estratégia já reprovada.
 
+## Exemplos e templates
+
+**Regra do usuário (2026-10-22):** script publicado como exemplo, template ou utilitário (ex.:
+"Strategy Code Example", "Template Trailing Strategy", "Monthly Returns") não é testado. Entra na
+tabela do README como *ignorado (template)* e o lote pega o próximo da lista no lugar.
+
 ## Execução
 
 - Sinal no fechamento da barra, ordem na abertura da barra seguinte
