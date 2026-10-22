@@ -1,0 +1,53 @@
+
+================= xau =================
+  M1 2017-09-01 -> 2026-10-04
+
+### 5min
+  5min ICT2022 default                657 tr ( 72.2/ano,   0.36d) | bruto    -2.0bp liq    -3.8bp (win 51%) | CAGR   -2.3% vs B&H  +13.4% | Sh -1.01 DD   -28% expo   7% | ctl    -1.9bp t=-0.79
+      varreduras: 642 de alta, 580 de baixa
+  5min ICT2022 so long                331 tr ( 36.4/ano,   0.45d) | bruto    -0.8bp liq    -4.0bp (win 53%) | CAGR   -0.9% vs B&H  +13.4% | Sh -0.76 DD   -18% expo   3% | ctl    -0.1bp t=-1.36
+      varreduras: 642 de alta, 580 de baixa
+  5min ICT2022 so short               334 tr ( 36.7/ano,   0.28d) | bruto    -2.8bp liq    -3.2bp (win 49%) | CAGR   -1.3% vs B&H  +13.4% | Sh -1.10 DD   -18% expo   3% | ctl    -1.8bp t=-0.43
+      varreduras: 642 de alta, 580 de baixa
+
+### 15min
+  15min ICT2022 default               159 tr ( 17.5/ano,   1.03d) | bruto    +8.4bp liq    +7.2bp (win 54%) | CAGR   +1.2% vs B&H  +13.4% | Sh +0.98 DD    -9% expo   4% | ctl    -2.8bp t=+1.90
+      varreduras: 192 de alta, 167 de baixa
+  15min ICT2022 so long                80 tr (  8.8/ano,   0.96d) | bruto    +3.8bp liq    -1.3bp (win 50%) | CAGR   -0.0% vs B&H  +13.4% | Sh -0.08 DD    -7% expo   2% | ctl    -0.8bp t=-0.06
+      varreduras: 192 de alta, 167 de baixa
+  15min ICT2022 so short               80 tr (  8.8/ano,   1.09d) | bruto   +13.1bp liq   +15.7bp (win 59%) | CAGR   +1.2% vs B&H  +13.4% | Sh +1.68 DD    -6% expo   2% | ctl    -6.0bp t=+2.13
+      varreduras: 192 de alta, 167 de baixa
+
+### 1h
+  1h ICT2022 default                   32 tr (  3.5/ano,   3.66d) | bruto   +22.9bp liq   +26.6bp (win 53%) | CAGR   +1.5% vs B&H  +13.4% | Sh +2.29 DD    -4% expo   3% | ctl   -14.5bp t=+1.65
+      varreduras: 39 de alta, 38 de baixa
+  1h ICT2022 so long                   12 tr (  1.3/ano,   3.03d) | bruto    -1.8bp liq   -14.7bp (win 50%) | CAGR   +0.1% vs B&H  +13.4% | Sh +0.72 DD    -2% expo   1% | ctl    +5.9bp t=-0.50
+      varreduras: 39 de alta, 38 de baixa
+  1h ICT2022 so short                  20 tr (  2.2/ano,   4.04d) | bruto   +37.7bp liq   +51.4bp (win 55%) | CAGR   +1.4% vs B&H  +13.4% | Sh +2.71 DD    -2% expo   3% | ctl    +7.7bp t=+1.03
+      varreduras: 39 de alta, 38 de baixa
+
+### 4h
+  4h ICT2022 default                 (menos de 10 trades)
+      varreduras: 15 de alta, 12 de baixa
+  4h ICT2022 so long                 (menos de 10 trades)
+      varreduras: 15 de alta, 12 de baixa
+  4h ICT2022 so short                (menos de 10 trades)
+      varreduras: 15 de alta, 12 de baixa
+
+=== resumo xau (52 celulas) ===
+  liq>0 30 | liq>0 e t>2 2 | CAGR>B&H 0 | melhor CAGR +2.8%
+
+  top 12 por CAGR:
+   TF                 cfg  trades  por_ano  bp_bruto  bp_liq   win  cagr    bh  sharpe     dd  expo  ctl_bp     t
+   1h         agg8 fib0.5     261   28.686     7.230   7.961 0.559 0.028 0.134   0.686 -0.198 0.173  -2.496 1.081
+   1h       agg8 fib0.786     357   39.237     4.203   3.232 0.751 0.020 0.134   0.560 -0.240 0.165  -0.353 0.635
+   1h       agg5 fib0.618      15    1.649    98.817 108.932 0.800 0.019 0.134   4.455 -0.023 0.021 -10.130 2.184
+   1h       agg5 fib0.786      22    2.418    62.575  68.386 0.909 0.018 0.134   3.670 -0.035 0.025   4.677 1.543
+   1h          agg6 fib.5      32    3.517    22.880  26.633 0.531 0.015 0.134   2.289 -0.038 0.033 -14.516 1.653
+   1h         agg5 fib0.5      10    1.099   101.549 114.385 0.700 0.014 0.134   3.766 -0.023 0.017  -1.535 1.602
+   1h agg6 fib.5 so short      20    2.198    37.662  51.443 0.550 0.014 0.134   2.711 -0.024 0.025   7.699 1.034
+   4h       agg7 fib0.618      24    2.638    24.094  33.516 0.667 0.014 0.134   2.438 -0.051 0.045  25.119 0.160
+15min agg6 fib.5 so short      80    8.793    13.103  15.706 0.588 0.012 0.134   1.685 -0.061 0.023  -5.969 2.127
+15min       agg6 fib0.382     133   14.618     9.065   7.635 0.466 0.012 0.134   1.204 -0.080 0.028  -2.453 1.568
+15min          agg6 fib.5     159   17.475     8.406   7.158 0.541 0.012 0.134   0.979 -0.089 0.038  -2.839 1.896
+   4h       agg8 fib0.786      91   10.002     0.533   5.182 0.725 0.011 0.134   0.357 -0.156 0.149  -4.920 0.483

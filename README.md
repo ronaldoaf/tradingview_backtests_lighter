@@ -6,7 +6,8 @@ o Pine Script em Python/NumPy, roda uma grade de parâmetros em vários timefram
 o resultado contra dois benchmarks: **buy & hold** e um **controle aleatório** com o mesmo
 lado, a mesma duração e a mesma gestão de saída.
 
-Resultado até agora: **nenhuma das 23 estratégias testadas passou**. Os relatórios em
+Resultado até agora: **nenhuma das 41 estratégias testadas passou**. As candidatas são o
+**Trailing SL [QuantNomad] no ouro** (ver [LOTE7_TV](docs/LOTE7_TV.md)) e o **Pivot Point SuperTrend no ETH** (ver [LOTE4_TV](docs/LOTE4_TV.md)), ainda dependente de medir o custo real do ETH. Os relatórios em
 [`docs/`](docs/) explicam o motivo de cada reprovação — o que costuma ser mais útil que o
 veredito, porque o mesmo punhado de falhas se repete (sempre-no-mercado disfarçado de
 sinal, `lookahead_on`, risco/retorno impossível por construção, ilha de parâmetros que
@@ -33,6 +34,7 @@ morre no out-of-sample).
 | `scripts/` | Os estudos (`study_*.py`) e a infra comum (`tvlib.py`) |
 | `docs/` | Um relatório Markdown por estratégia/lote, com veredito e diagnóstico |
 | `results/` | Saídas brutas: grades (`*_grid.csv`), trades (`*_trades.csv`), logs (`*.txt`) |
+| `pine/` | Fontes Pine baixadas por `scripts/tv_fetch.py` |
 | `data/` | Candles de 1 minuto em Parquet (zstd) — ver abaixo |
 
 ## Dados
@@ -92,10 +94,38 @@ aqui porque é onde vivem as constantes `CUSTO` e `FUND`, importadas por todos.
 
 ## Estratégias testadas
 
-Todas reprovadas. Ordem cronológica inversa.
+Todas reprovadas, exceto a candidata indicada. Ordem cronológica inversa.
 
 | # | Estratégia (autor, id do script) | Doc | Diagnóstico |
 | --- | --- | --- | --- |
+| 51 | ICT Entry V2 (TS_Indie, `wm9e7Wca`) | [LOTE9_TV](docs/LOTE9_TV.md) | núcleo varredura + iFVG; 7/188 células com líquido positivo, melhor +0,3% a.a. |
+| 50 | Hull Moving Average Swing Trader (`j60hYGuY`) | [LOTE9_TV](docs/LOTE9_TV.md) | sempre no mercado; t>2 em 9 células, mas 0/44 batem o B&H |
+| 49 | RSI versus SMA (`wDLCPh1I`) | [LOTE9_TV](docs/LOTE9_TV.md) | o default (reversão) perde 3–18% a.a.; invertido bate o B&H no 30m mas morre no terço do meio e com custo 2× |
+| 48 | UT Bot alerts strategy (`R9nsvSZR`) | [LOTE9_TV](docs/LOTE9_TV.md) | acerto 15–34% com BE + 3R; 0/312 batem o B&H |
+| 47 | [RS] MicuRobert EMA cross V2 (`6YthKHw1`) | [LOTE9_TV](docs/LOTE9_TV.md) | stop de 22 pips = ruído; −3% a −53% a.a. no default |
+| 46 | Bollinger Bands Breakout (`GKgxKjlC`) | [LOTE8_TV](docs/LOTE8_TV.md) | sempre no mercado; +14,8% no 30m, mas perde no terço do meio, no OOS e com custo 2× |
+| 45 | BEST Engulfing + MA (`ROM3crig`) | [LOTE8_TV](docs/LOTE8_TV.md) | acerto 26–31%; 0/165 batem o B&H |
+| 44 | VWAP Trendfollow (wbburgin, `XoR8rQaW`) | [LOTE8_TV](docs/LOTE8_TV.md) | default perde 2–18% a.a.; a única célula acima do B&H é ilha |
+| 43 | Backtesting 3commas DCA Bot v2 (`8d6Auyst`) | [LOTE8_TV](docs/LOTE8_TV.md) | martingale long sem stop; usa ~17% do capital, −4% a +0,9% a.a. |
+| 42 | TrendMaster Pro 2.3 (`mVkDf8qh`) | [LOTE8_TV](docs/LOTE8_TV.md) | filtros cortam tudo (+1% a.a.); sem eles é um SMA 9/21 que morre no terço do meio |
+| 41 | SR TREND / Support Resistance breakout (`hwHKYkE0`) | [LOTE7_TV](docs/LOTE7_TV.md) | 90% do tempo posicionado; 0/40 batem o B&H |
+| 40 | 72s Adaptive HMA+ pt.1 (`FrjeeWdl`) | [LOTE7_TV](docs/LOTE7_TV.md) | t>2 em 53 células, mas exposição de 30%: 0/292 batem o B&H |
+| 39 | Captain Backtest Model (TFO, `tOQ8gnxj`) | [LOTE7_TV](docs/LOTE7_TV.md) | modelo de sessão NY; bruto ~0 bp, 0/130 com líquido positivo |
+| 38 | Super Trend Daily 2.0 BF (`c4Cj7H2y`) | [LOTE7_TV](docs/LOTE7_TV.md) | 0/138 batem o B&H |
+| 37 | Trailing SL Strategy (QuantNomad, `n3vj0MIi`) | [LOTE7_TV](docs/LOTE7_TV.md) | **candidata no ouro** com stop de 2% (+15% a +20% vs +13% a.a., Sharpe 1,1, OOS t>2); reprova nos outros 4 ativos |
+| 36 | SUPERTREND ATR with Trailing Stop Loss (`L9GkARD2`) | [LOTE6_TV](docs/LOTE6_TV.md) | ATR(1) = true range; os t>2 são shorts vivendo do funding; 0/250 batem o B&H |
+| 35 | ICT Master Suite, todos os modelos (Trading IQ, `ABYnIcdl`) | [ICT2022](docs/ICT2022.md), [ICT_SUITE](docs/ICT_SUITE.md) | 2022/Unicorn/OTE/Silver Bullet/Liquidity Raid × XAU/US100/WTI/BTC/ETH: nenhum bate o B&H com risco aceitável |
+| 34 | Bollinger Band with RSI (`pKOaIHpb`) | [LOTE6_TV](docs/LOTE6_TV.md) | pirâmide de 50 e stop de 25%: acerto 77%, 0/304 batem o B&H |
+| 33 | Iron Support Resistance / Scalping S/R (HPotter, `gp332Dao`) | [LOTE6_TV](docs/LOTE6_TV.md) | publicado com o backtest desligado; ligado, 0/365 batem o B&H |
+| 32 | Hammers & Stars v1.2 (ZenAndTheArtOfTrading, `t776tkZv`) | [LOTE6_TV](docs/LOTE6_TV.md) | acerto 50% com RR 1:1; 0/545 batem o B&H |
+| 31 | Full CRYPTO pack macd-rsi-obv-ema (SoftKill21, `DbRYTl6G`) | [LOTE5_TV](docs/LOTE5_TV.md) | o RSI é `< 100` (sempre verdadeiro); 0/128 batem o B&H |
+| 30 | QQE MOD + SSL Hybrid + Waddah Attar Explosion (`YCob5r03`) | [LOTE5_TV](docs/LOTE5_TV.md) | "só sai no lucro" infla o acerto; 0/640 batem o B&H |
+| 29 | Price and Volume Breakout Buy (TradeDots, `jc2hs2qK`) | [LOTE5_TV](docs/LOTE5_TV.md) | o filtro de volume piora; 0/334 batem o B&H |
+| 28 | Trend Direction Helper (Daveatt, `dzpmnane`) | [LOTE4_TV](docs/LOTE4_TV.md) | é %R de 1 barra; 0/120 batem o B&H |
+| 27 | Pivot Point SuperTrend (LonesomeTheBlue, `DwdC6FT4`) | [LOTE4_TV](docs/LOTE4_TV.md) | empata com o B&H no ouro; **candidata no ETH** (+81% vs +57% a.a., estável nos terços) |
+| 26 | AI SuperTrend x Pivot Percentile (PresentTrading, `eC3qAYNQ`) | [LOTE4_TV](docs/LOTE4_TV.md) | o "KNN" é o rótulo da barra atual; 0/48 batem o B&H |
+| 25 | Vix FIX / StochRSI Strategy (`TDxSLJRA`) | [VIX_FIX_STOCHRSI](docs/VIX_FIX_STOCHRSI.md) | só long, sai só em sobrecompra; 0/752 batem o B&H, o RSI do nome nem é usado |
+| 24 | [STRATEGY][RS]ZigZag PA Strategy V4.1 (RicardoSantos, `NEDEDcsP`) | [ZIGZAG_PA](docs/ZIGZAG_PA.md) | Pine v2: `security()` sem `lookahead` olha o futuro (+70% a.a., win 89%); honesta 0/423 batem o B&H |
 | 23 | MACD ReLoaded (Kivanc, `VO6DY8s1`) | [LOTE3_TV](docs/LOTE3_TV.md) | 1/60 células acima do B&H, só no terço final |
 | 22 | ANN Strategy v2 (sirolf2009, `oY725jQw`) | [LOTE3_TV](docs/LOTE3_TV.md) | a "rede neural" é `sign(variação do ohlc4)`; −70% a.a. no 15m |
 | 21 | Twin Optimized Trend Tracker / TOTT (Kivanc, `eENf7NpJ`) | [LOTE3_TV](docs/LOTE3_TV.md) | melhor do lote e ainda abaixo do B&H nos defaults |
@@ -120,7 +150,8 @@ pullback, Engolfo + PSAR, rompimento de NQ H1.
 ## Armadilhas que já custaram tempo
 
 - **`lookahead_on`** em `security()` é a causa número um de curva publicada boa. Sempre
-  conferir antes de reimplementar.
+  conferir antes de reimplementar. Em Pine v1/v2 ele é **implícito**: o `security()` histórico
+  já devolve o candle HTF corrente, sem nenhum parâmetro no código.
 - **Sempre-no-mercado** (Hull, Ichimoku, Bollinger) não é estratégia: é beta com custo de
   giro. O benchmark certo é buy & hold, não zero.
 - **Acerto alto sem stop** (RSI Divergence) vem da saída assimétrica, não do sinal.
