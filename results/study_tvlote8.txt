@@ -1,0 +1,165 @@
+
+================= xau =================
+  M1 2017-09-01 -> 2026-10-04
+
+### 1. TrendMaster Pro (SMA 9/21 + filtros, stop 1% alvo 2R, fecha 18h NY)
+  5min TM default                    1587 tr (174.4/ano,   1.63d) | bruto    -0.4bp liq    -1.8bp (win 42%) | CAGR   -3.0% vs B&H  +13.4% | Sh -0.24 DD   -68% expo  78% | ctl    -1.2bp t=-0.28
+  15min TM default                    664 tr ( 73.0/ano,   2.97d) | bruto    -3.1bp liq    -4.4bp (win 37%) | CAGR   -0.9% vs B&H  +13.4% | Sh -0.10 DD   -26% expo  58% | ctl    -3.0bp t=-0.25
+  30min TM default                    391 tr ( 43.0/ano,   3.84d) | bruto    +2.4bp liq    -0.2bp (win 37%) | CAGR   +1.6% vs B&H  +13.4% | Sh +0.25 DD   -29% expo  42% | ctl    -0.6bp t=+0.05
+  1h TM default                       222 tr ( 24.4/ano,   4.38d) | bruto    +7.5bp liq    +5.1bp (win 36%) | CAGR   +1.2% vs B&H  +13.4% | Sh +0.27 DD   -17% expo  29% | ctl    -0.1bp t=+0.53
+  4h TM default                        76 tr (  8.4/ano,   1.23d) | bruto    -2.5bp liq    -3.1bp (win 33%) | CAGR   +0.1% vs B&H  +13.4% | Sh +0.17 DD    -6% expo   2% | ctl    -0.5bp t=-0.43
+
+### 3. VWAP Trendfollow (sessao, 0.88 desvio, saida na banda 2)
+  5min VWAP default                  19275 tr (2118.5/ano,   0.10d) | bruto    +0.4bp liq    -1.1bp (win 46%) | CAGR  -18.1% vs B&H  +13.4% | Sh -1.51 DD  -188% expo  57% | ctl    -1.5bp t=+2.10
+  15min VWAP default                 13209 tr (1451.8/ano,   0.13d) | bruto    +0.4bp liq    -1.1bp (win 44%) | CAGR  -12.9% vs B&H  +13.4% | Sh -1.08 DD  -147% expo  55% | ctl    -1.6bp t=+1.72
+  30min VWAP default                 9649 tr (1060.5/ano,   0.17d) | bruto    +1.0bp liq    -0.6bp (win 44%) | CAGR   -6.4% vs B&H  +13.4% | Sh -0.53 DD  -101% expo  53% | ctl    -1.2bp t=+1.81
+  1h VWAP default                    6723 tr (738.9/ano,   0.25d) | bruto    +1.2bp liq    -0.3bp (win 42%) | CAGR   -2.1% vs B&H  +13.4% | Sh -0.18 DD   -57% expo  52% | ctl    -1.6bp t=+3.02
+
+### 4. Engulfing + SMA32
+  15min ENG default (sem stop)       10377 tr (1140.5/ano,   0.23d) | bruto    +0.5bp liq    -1.1bp (win 26%) | CAGR  -11.4% vs B&H  +13.4% | Sh -0.88 DD  -136% expo  71% | ctl    -1.4bp t=+0.70
+  30min ENG default (sem stop)       5095 tr (560.0/ano,   0.47d) | bruto    +0.0bp liq    -1.6bp (win 26%) | CAGR   -7.4% vs B&H  +13.4% | Sh -0.56 DD  -101% expo  70% | ctl    -1.6bp t=-0.10
+  1h ENG default (sem stop)          2457 tr (270.0/ano,   0.96d) | bruto    +3.2bp liq    +1.4bp (win 29%) | CAGR   +2.3% vs B&H  +13.4% | Sh +0.18 DD   -25% expo  71% | ctl    -1.0bp t=+1.22
+  4h ENG default (sem stop)           607 tr ( 66.7/ano,   4.07d) | bruto   +12.8bp liq   +10.1bp (win 31%) | CAGR   +3.5% vs B&H  +13.4% | Sh +0.26 DD   -26% expo  76% | ctl    +2.1bp t=+1.37
+  1D ENG default (sem stop)           126 tr ( 13.9/ano,  19.12d) | bruto    +0.7bp liq    -9.8bp (win 30%) | CAGR   -0.2% vs B&H  +13.4% | Sh -0.02 DD   -40% expo  74% | ctl    +0.9bp t=-0.33
+
+### 5. BB Breakout (SMA55 +- 1 desvio)
+  15min BBB default                  3459 tr (380.2/ano,   0.96d) | bruto    +4.0bp liq    +2.3bp (win 31%) | CAGR   +9.6% vs B&H  +13.4% | Sh +0.54 DD   -56% expo 100% | ctl    -1.2bp t=+2.34
+  30min BBB default                  1621 tr (178.2/ano,   2.05d) | bruto    +8.7bp liq    +6.7bp (win 34%) | CAGR  +14.8% vs B&H  +13.4% | Sh +0.82 DD   -28% expo 100% | ctl    -1.2bp t=+2.38
+  1h BBB default                      785 tr ( 86.3/ano,   4.22d) | bruto   +13.8bp liq   +11.1bp (win 35%) | CAGR  +10.6% vs B&H  +13.4% | Sh +0.61 DD   -28% expo 100% | ctl    -2.3bp t=+1.95
+  4h BBB default                      194 tr ( 21.3/ano,  16.87d) | bruto   +31.6bp liq   +20.6bp (win 37%) | CAGR   +2.6% vs B&H  +13.4% | Sh +0.15 DD   -39% expo  98% | ctl    +8.4bp t=+0.63
+  1D BBB default                       32 tr (  3.5/ano, 100.34d) | bruto  +284.0bp liq  +185.0bp (win 44%) | CAGR   +4.8% vs B&H  +13.4% | Sh +0.28 DD   -33% expo  97% | ctl   +68.7bp t=+0.68
+
+=== resumo xau (894 celulas) ===
+  bbb     116 cel | liq>0  106 | liq>0 e t>2  16 | CAGR>B&H   6 | melhor CAGR +14.9%
+  eng     165 cel | liq>0   89 | liq>0 e t>2   3 | CAGR>B&H   0 | melhor CAGR +9.6%
+  tm      449 cel | liq>0  125 | liq>0 e t>2  15 | CAGR>B&H   4 | melhor CAGR +14.8%
+  vwap    164 cel | liq>0   72 | liq>0 e t>2  37 | CAGR>B&H   1 | melhor CAGR +15.5%
+
+  top 15 por CAGR:
+ est    TF                            cfg  trades  por_ano  bp_bruto  bp_liq   win  cagr    bh  sharpe     dd  expo  ctl_bp     t
+vwap    1h        m2.0 match1 tp0.0 ambos    2303  253.118     6.955   5.020 0.351 0.155 0.134   0.853 -0.350 0.999  -1.354 3.832
+ bbb    1h               len20 m1.0 ambos    2013  221.245     8.623   6.474 0.361 0.149 0.134   0.817 -0.237 0.999  -2.307 3.917
+ bbb 30min               len55 m1.0 ambos    1621  178.160     8.709   6.675 0.340 0.148 0.134   0.819 -0.275 0.999  -2.104 2.580
+ bbb 30min                       len55 m1    1621  178.160     8.709   6.675 0.340 0.148 0.134   0.819 -0.275 0.999  -1.208 2.384
+  tm    1h  sl0.02 rr2.0 eod1 filt0 ambos    2352  258.504     7.911   5.836 0.357 0.148 0.134   0.885 -0.208 0.970  -1.558 3.964
+  tm    1h  sl0.02 rr2.0 eod0 filt0 ambos    2352  258.504     7.911   5.836 0.357 0.148 0.134   0.885 -0.208 0.970  -2.012 4.511
+ bbb    1h              len100 m1.0 ambos     443   48.689    24.143  22.020 0.350 0.147 0.134   0.824 -0.349 0.998   2.355 1.355
+  tm    1h  sl0.02 rr0.0 eod0 filt0 ambos    2352  258.504     7.200   5.138 0.357 0.141 0.134   0.807 -0.222 0.995  -1.161 2.922
+  tm    1h  sl0.02 rr0.0 eod1 filt0 ambos    2352  258.504     7.200   5.138 0.357 0.141 0.134   0.807 -0.222 0.995  -1.299 3.081
+ bbb 30min               len20 m2.0 ambos    2073  227.838     7.039   4.855 0.373 0.137 0.134   0.783 -0.351 1.000  -0.910 2.152
+ bbb    1h               len20 m0.5 ambos    2859  314.227     4.869   3.093 0.300 0.134 0.134   0.752 -0.284 0.999  -1.743 2.328
+ bbb 15min              len100 m1.0 ambos    1917  210.692     7.507   5.472 0.332 0.129 0.134   0.703 -0.236 0.999  -1.275 2.508
+  tm    1h sl0.005 rr0.0 eod0 filt0 ambos    2352  258.504     6.034   4.031 0.324 0.129 0.134   0.852 -0.179 0.876  -1.371 2.772
+  tm    1h sl0.005 rr0.0 eod1 filt0 ambos    2352  258.504     6.034   4.031 0.324 0.129 0.134   0.852 -0.179 0.876  -1.079 2.761
+vwap    1h        m2.0 match1 tp3.0 ambos    2795  307.193     5.531   3.775 0.405 0.122 0.134   0.748 -0.352 0.846  -1.458 4.005
+
+  top 10 por t:
+ est    TF                           cfg  trades  por_ano  bp_bruto  bp_liq   win   cagr    bh  sharpe     dd  expo  ctl_bp     t
+  tm    1h sl0.02 rr2.0 eod0 filt0 ambos    2352  258.504     7.911   5.836 0.357  0.148 0.134   0.885 -0.208 0.970  -2.012 4.511
+vwap    1h       m2.0 match1 tp3.0 ambos    2795  307.193     5.531   3.775 0.405  0.122 0.134   0.748 -0.352 0.846  -1.458 4.005
+  tm    1h sl0.02 rr2.0 eod1 filt0 ambos    2352  258.504     7.911   5.836 0.357  0.148 0.134   0.885 -0.208 0.970  -1.558 3.964
+ bbb    1h              len20 m1.0 ambos    2013  221.245     8.623   6.474 0.361  0.149 0.134   0.817 -0.237 0.999  -2.307 3.917
+vwap    1h       m2.0 match1 tp0.0 ambos    2303  253.118     6.955   5.020 0.351  0.155 0.134   0.853 -0.350 0.999  -1.354 3.832
+vwap  5min      m0.88 match0 tp0.0 ambos   11568 1271.402     1.242  -0.383 0.202 -0.045 0.134  -0.276 -0.972 1.000  -1.541 3.813
+vwap 30min      m0.88 match1 tp0.0 ambos    5540  608.887     2.794   1.095 0.276  0.053 0.134   0.308 -0.562 1.000  -1.726 3.795
+vwap  5min       m1.5 match1 tp2.0 ambos    9452 1038.839     1.653   0.002 0.365 -0.001 0.134  -0.008 -0.774 0.865  -1.561 3.645
+vwap 30min      m0.88 match0 tp2.0 ambos   11387 1251.515     0.863  -0.706 0.415 -0.070 0.134  -0.568 -1.136 0.542  -1.503 3.589
+vwap  5min       m1.5 match0 tp2.0 ambos   11010 1210.074     1.443  -0.188 0.352 -0.031 0.134  -0.205 -0.924 0.860  -1.389 3.541
+
+### 2. 3commas DCA Bot v2 (RSI7<30, 6 SO, alvo 4,5%, sem stop; capital = 3009)
+  15min rsi<30 tp0.015 dev0.005 sl0.0     191 deals ( 21.0/a,  16.1d) win 92% SO med 1.7 max 6 uso 18% | a.a.  -3.3% vs B&H +13.4% | queda max -26% expo 94% | ctl  -2.4% t=-0.52
+  15min rsi<30 tp0.015 dev0.005 sl0.5     191 deals ( 21.0/a,  16.1d) win 92% SO med 1.7 max 6 uso 18% | a.a.  -3.3% vs B&H +13.4% | queda max -26% expo 94% | ctl  -2.4% t=-0.52
+  15min rsi<30 tp0.015 dev0.015 sl0.0     181 deals ( 19.9/a,  17.1d) win 91% SO med 0.8 max 5 uso 8% | a.a.  -0.6% vs B&H +13.4% | queda max -23% expo 95% | ctl  -0.4% t=-0.92
+  15min rsi<30 tp0.015 dev0.015 sl0.5     181 deals ( 19.9/a,  17.1d) win 91% SO med 0.8 max 5 uso 8% | a.a.  -0.6% vs B&H +13.4% | queda max -23% expo 95% | ctl  -0.4% t=-0.92
+  15min rsi<30 tp0.045 dev0.005 sl0.0      49 deals (  5.4/a,  66.9d) win 82% SO med 2.4 max 6 uso 29% | a.a.  -3.7% vs B&H +13.4% | queda max -26% expo 99% | ctl  -1.6% t=-1.30
+  15min rsi<30 tp0.045 dev0.005 sl0.5      49 deals (  5.4/a,  66.9d) win 82% SO med 2.4 max 6 uso 29% | a.a.  -3.7% vs B&H +13.4% | queda max -26% expo 99% | ctl  -1.6% t=-1.30
+  15min rsi<30 tp0.045 dev0.015 sl0.0      51 deals (  5.6/a,  64.3d) win 80% SO med 1.4 max 5 uso 14% | a.a.  -0.4% vs B&H +13.4% | queda max -23% expo 99% | ctl  -0.4% t=+0.13
+  15min rsi<30 tp0.045 dev0.015 sl0.5      51 deals (  5.6/a,  64.3d) win 80% SO med 1.4 max 5 uso 14% | a.a.  -0.4% vs B&H +13.4% | queda max -23% expo 99% | ctl  -0.4% t=+0.13
+  15min rsi<20 tp0.015 dev0.005 sl0.0     179 deals ( 19.7/a,  16.4d) win 92% SO med 1.7 max 6 uso 18% | a.a.  -3.5% vs B&H +13.4% | queda max -26% expo 89% | ctl  -2.2% t=-0.77
+  15min rsi<20 tp0.015 dev0.005 sl0.5     179 deals ( 19.7/a,  16.4d) win 92% SO med 1.7 max 6 uso 18% | a.a.  -3.5% vs B&H +13.4% | queda max -26% expo 89% | ctl  -2.2% t=-0.77
+  15min rsi<20 tp0.015 dev0.015 sl0.0     163 deals ( 17.9/a,  18.1d) win 90% SO med 0.8 max 5 uso 8% | a.a.  -0.6% vs B&H +13.4% | queda max -23% expo 89% | ctl  -0.3% t=-1.19
+  15min rsi<20 tp0.015 dev0.015 sl0.5     163 deals ( 17.9/a,  18.1d) win 90% SO med 0.8 max 5 uso 8% | a.a.  -0.6% vs B&H +13.4% | queda max -23% expo 89% | ctl  -0.3% t=-1.19
+  15min rsi<20 tp0.045 dev0.005 sl0.0      49 deals (  5.4/a,  65.9d) win 84% SO med 2.7 max 6 uso 32% | a.a.  -3.2% vs B&H +13.4% | queda max -26% expo 96% | ctl  -1.6% t=-1.01
+  15min rsi<20 tp0.045 dev0.005 sl0.5      49 deals (  5.4/a,  65.9d) win 84% SO med 2.7 max 6 uso 32% | a.a.  -3.2% vs B&H +13.4% | queda max -26% expo 96% | ctl  -1.6% t=-1.01
+  15min rsi<20 tp0.045 dev0.015 sl0.0      50 deals (  5.5/a,  64.3d) win 82% SO med 1.5 max 5 uso 15% | a.a.  -0.2% vs B&H +13.4% | queda max -23% expo 96% | ctl  -0.4% t=+0.36
+  15min rsi<20 tp0.045 dev0.015 sl0.5      50 deals (  5.5/a,  64.3d) win 82% SO med 1.5 max 5 uso 15% | a.a.  -0.2% vs B&H +13.4% | queda max -23% expo 96% | ctl  -0.4% t=+0.36
+  15min rsi<101 tp0.015 dev0.005 sl0.0    234 deals ( 25.7/a,  14.2d) win 93% SO med 1.6 max 6 uso 17% | a.a.  -3.0% vs B&H +13.4% | queda max -27% expo 100% | ctl  -2.7% t=-0.18
+  15min rsi<101 tp0.015 dev0.005 sl0.5    234 deals ( 25.7/a,  14.2d) win 93% SO med 1.6 max 6 uso 17% | a.a.  -3.0% vs B&H +13.4% | queda max -27% expo 100% | ctl  -2.7% t=-0.18
+  15min rsi<101 tp0.015 dev0.015 sl0.0    225 deals ( 24.7/a,  14.7d) win 92% SO med 0.7 max 5 uso 8% | a.a.  -0.2% vs B&H +13.4% | queda max -24% expo 100% | ctl  -0.5% t=+1.03
+  15min rsi<101 tp0.015 dev0.015 sl0.5    225 deals ( 24.7/a,  14.7d) win 92% SO med 0.7 max 5 uso 8% | a.a.  -0.2% vs B&H +13.4% | queda max -24% expo 100% | ctl  -0.5% t=+1.03
+  15min rsi<101 tp0.045 dev0.005 sl0.0     52 deals (  5.7/a,  63.9d) win 85% SO med 2.5 max 6 uso 29% | a.a.  -3.7% vs B&H +13.4% | queda max -27% expo 100% | ctl  -1.6% t=-1.37
+  15min rsi<101 tp0.045 dev0.005 sl0.5     52 deals (  5.7/a,  63.9d) win 85% SO med 2.5 max 6 uso 29% | a.a.  -3.7% vs B&H +13.4% | queda max -27% expo 100% | ctl  -1.6% t=-1.37
+  15min rsi<101 tp0.045 dev0.015 sl0.0     52 deals (  5.7/a,  63.9d) win 83% SO med 1.4 max 5 uso 14% | a.a.  -0.4% vs B&H +13.4% | queda max -22% expo 100% | ctl  -0.4% t=+0.05
+  15min rsi<101 tp0.045 dev0.015 sl0.5     52 deals (  5.7/a,  63.9d) win 83% SO med 1.4 max 5 uso 14% | a.a.  -0.4% vs B&H +13.4% | queda max -22% expo 100% | ctl  -0.4% t=+0.05
+  1h    rsi<30 tp0.015 dev0.005 sl0.0     172 deals ( 18.9/a,  16.3d) win 91% SO med 1.8 max 6 uso 19% | a.a.  -1.4% vs B&H +13.4% | queda max -21% expo 84% | ctl  -1.0% t=-0.31
+  1h    rsi<30 tp0.015 dev0.005 sl0.5     172 deals ( 18.9/a,  16.3d) win 91% SO med 1.8 max 6 uso 19% | a.a.  -1.4% vs B&H +13.4% | queda max -21% expo 84% | ctl  -1.0% t=-0.31
+  1h    rsi<30 tp0.015 dev0.015 sl0.0     154 deals ( 16.9/a,  18.3d) win 90% SO med 0.8 max 4 uso 9% | a.a.  -0.6% vs B&H +13.4% | queda max -21% expo 85% | ctl  -0.1% t=-1.93
+  1h    rsi<30 tp0.015 dev0.015 sl0.5     154 deals ( 16.9/a,  18.3d) win 90% SO med 0.8 max 4 uso 9% | a.a.  -0.6% vs B&H +13.4% | queda max -21% expo 85% | ctl  -0.1% t=-1.93
+  1h    rsi<30 tp0.045 dev0.005 sl0.0      51 deals (  5.6/a,  62.8d) win 86% SO med 2.5 max 6 uso 29% | a.a.  -3.3% vs B&H +13.4% | queda max -25% expo 95% | ctl  -1.1% t=-1.68
+  1h    rsi<30 tp0.045 dev0.005 sl0.5      51 deals (  5.6/a,  62.8d) win 86% SO med 2.5 max 6 uso 29% | a.a.  -3.3% vs B&H +13.4% | queda max -25% expo 95% | ctl  -1.1% t=-1.68
+  1h    rsi<30 tp0.045 dev0.015 sl0.0      52 deals (  5.7/a,  61.4d) win 83% SO med 1.4 max 5 uso 14% | a.a.  -0.2% vs B&H +13.4% | queda max -23% expo 95% | ctl  -0.1% t=-0.18
+  1h    rsi<30 tp0.045 dev0.015 sl0.5      52 deals (  5.7/a,  61.4d) win 83% SO med 1.4 max 5 uso 14% | a.a.  -0.2% vs B&H +13.4% | queda max -23% expo 95% | ctl  -0.1% t=-0.18
+  1h    rsi<20 tp0.015 dev0.005 sl0.0     150 deals ( 16.5/a,  15.4d) win 91% SO med 1.5 max 6 uso 16% | a.a.  -1.0% vs B&H +13.4% | queda max -20% expo 67% | ctl  -1.0% t=+0.06
+  1h    rsi<20 tp0.015 dev0.005 sl0.5     150 deals ( 16.5/a,  15.4d) win 91% SO med 1.5 max 6 uso 16% | a.a.  -1.0% vs B&H +13.4% | queda max -20% expo 67% | ctl  -1.0% t=+0.06
+  1h    rsi<20 tp0.015 dev0.015 sl0.0     139 deals ( 15.3/a,  17.2d) win 92% SO med 0.7 max 4 uso 8% | a.a.  -0.3% vs B&H +13.4% | queda max -20% expo 70% | ctl  -0.1% t=-0.63
+  1h    rsi<20 tp0.015 dev0.015 sl0.5     139 deals ( 15.3/a,  17.2d) win 92% SO med 0.7 max 4 uso 8% | a.a.  -0.3% vs B&H +13.4% | queda max -20% expo 70% | ctl  -0.1% t=-0.63
+  1h    rsi<20 tp0.045 dev0.005 sl0.0      47 deals (  5.2/a,  64.9d) win 85% SO med 2.4 max 6 uso 27% | a.a.  -3.5% vs B&H +13.4% | queda max -23% expo 90% | ctl  -0.4% t=-2.12
+  1h    rsi<20 tp0.045 dev0.005 sl0.5      47 deals (  5.2/a,  64.9d) win 85% SO med 2.4 max 6 uso 27% | a.a.  -3.5% vs B&H +13.4% | queda max -23% expo 90% | ctl  -0.4% t=-2.12
+  1h    rsi<20 tp0.045 dev0.015 sl0.0      48 deals (  5.3/a,  63.7d) win 83% SO med 1.2 max 5 uso 12% | a.a.  -0.7% vs B&H +13.4% | queda max -23% expo 90% | ctl  -0.0% t=-1.36
+  1h    rsi<20 tp0.045 dev0.015 sl0.5      48 deals (  5.3/a,  63.7d) win 83% SO med 1.2 max 5 uso 12% | a.a.  -0.7% vs B&H +13.4% | queda max -23% expo 90% | ctl  -0.0% t=-1.36
+  1h    rsi<101 tp0.015 dev0.005 sl0.0    225 deals ( 24.7/a,  14.7d) win 92% SO med 1.6 max 6 uso 17% | a.a.  -3.3% vs B&H +13.4% | queda max -27% expo 100% | ctl  -1.6% t=-1.48
+  1h    rsi<101 tp0.015 dev0.005 sl0.5    225 deals ( 24.7/a,  14.7d) win 92% SO med 1.6 max 6 uso 17% | a.a.  -3.3% vs B&H +13.4% | queda max -27% expo 100% | ctl  -1.6% t=-1.48
+  1h    rsi<101 tp0.015 dev0.015 sl0.0    206 deals ( 22.6/a,  16.1d) win 92% SO med 0.7 max 5 uso 8% | a.a.  -0.4% vs B&H +13.4% | queda max -24% expo 100% | ctl  -0.2% t=-0.91
+  1h    rsi<101 tp0.015 dev0.015 sl0.5    206 deals ( 22.6/a,  16.1d) win 92% SO med 0.7 max 5 uso 8% | a.a.  -0.4% vs B&H +13.4% | queda max -24% expo 100% | ctl  -0.2% t=-0.91
+  1h    rsi<101 tp0.045 dev0.005 sl0.0     52 deals (  5.7/a,  63.8d) win 85% SO med 2.4 max 6 uso 29% | a.a.  -3.7% vs B&H +13.4% | queda max -27% expo 100% | ctl  -1.1% t=-1.99
+  1h    rsi<101 tp0.045 dev0.005 sl0.5     52 deals (  5.7/a,  63.8d) win 85% SO med 2.4 max 6 uso 29% | a.a.  -3.7% vs B&H +13.4% | queda max -27% expo 100% | ctl  -1.1% t=-1.99
+  1h    rsi<101 tp0.045 dev0.015 sl0.0     50 deals (  5.5/a,  66.4d) win 82% SO med 1.4 max 5 uso 14% | a.a.  -0.4% vs B&H +13.4% | queda max -24% expo 100% | ctl  -0.1% t=-0.82
+  1h    rsi<101 tp0.045 dev0.015 sl0.5     50 deals (  5.5/a,  66.4d) win 82% SO med 1.4 max 5 uso 14% | a.a.  -0.4% vs B&H +13.4% | queda max -24% expo 100% | ctl  -0.1% t=-0.82
+  4h    rsi<30 tp0.015 dev0.005 sl0.0     141 deals ( 15.5/a,  14.3d) win 89% SO med 1.6 max 6 uso 16% | a.a.  +0.5% vs B&H +13.4% | queda max -19% expo 59% | ctl  -1.7% t=+1.39
+  4h    rsi<30 tp0.015 dev0.005 sl0.5     141 deals ( 15.5/a,  14.3d) win 89% SO med 1.6 max 6 uso 16% | a.a.  +0.5% vs B&H +13.4% | queda max -19% expo 59% | ctl  -1.7% t=+1.39
+  4h    rsi<30 tp0.015 dev0.015 sl0.0     128 deals ( 14.1/a,  16.7d) win 89% SO med 0.7 max 4 uso 8% | a.a.  -0.1% vs B&H +13.4% | queda max -19% expo 62% | ctl  -0.2% t=+0.59
+  4h    rsi<30 tp0.015 dev0.015 sl0.5     128 deals ( 14.1/a,  16.7d) win 89% SO med 0.7 max 4 uso 8% | a.a.  -0.1% vs B&H +13.4% | queda max -19% expo 62% | ctl  -0.2% t=+0.59
+  4h    rsi<30 tp0.045 dev0.005 sl0.0      47 deals (  5.2/a,  60.9d) win 83% SO med 2.6 max 6 uso 29% | a.a.  -2.2% vs B&H +13.4% | queda max -23% expo 85% | ctl  -2.4% t=+0.30
+  4h    rsi<30 tp0.045 dev0.005 sl0.5      47 deals (  5.2/a,  60.9d) win 83% SO med 2.6 max 6 uso 29% | a.a.  -2.2% vs B&H +13.4% | queda max -23% expo 85% | ctl  -2.4% t=+0.30
+  4h    rsi<30 tp0.045 dev0.015 sl0.0      48 deals (  5.3/a,  59.9d) win 81% SO med 1.3 max 5 uso 13% | a.a.  -0.2% vs B&H +13.4% | queda max -23% expo 85% | ctl  -0.4% t=+0.55
+  4h    rsi<30 tp0.045 dev0.015 sl0.5      48 deals (  5.3/a,  59.9d) win 81% SO med 1.3 max 5 uso 13% | a.a.  -0.2% vs B&H +13.4% | queda max -23% expo 85% | ctl  -0.4% t=+0.55
+  4h    rsi<20 tp0.015 dev0.005 sl0.0      72 deals (  7.9/a,  18.5d) win 90% SO med 1.8 max 6 uso 18% | a.a.  -0.0% vs B&H +13.4% | queda max -17% expo 39% | ctl  -0.9% t=+0.61
+  4h    rsi<20 tp0.015 dev0.005 sl0.5      72 deals (  7.9/a,  18.5d) win 90% SO med 1.8 max 6 uso 18% | a.a.  -0.0% vs B&H +13.4% | queda max -17% expo 39% | ctl  -0.9% t=+0.61
+  4h    rsi<20 tp0.015 dev0.015 sl0.0      74 deals (  8.1/a,  18.4d) win 88% SO med 0.8 max 4 uso 8% | a.a.  +0.2% vs B&H +13.4% | queda max -17% expo 39% | ctl  -0.2% t=+1.26
+  4h    rsi<20 tp0.015 dev0.015 sl0.5      74 deals (  8.1/a,  18.4d) win 88% SO med 0.8 max 4 uso 8% | a.a.  +0.2% vs B&H +13.4% | queda max -17% expo 39% | ctl  -0.2% t=+1.26
+  4h    rsi<20 tp0.045 dev0.005 sl0.0      37 deals (  4.1/a,  61.9d) win 78% SO med 2.9 max 6 uso 33% | a.a.  +0.3% vs B&H +13.4% | queda max -17% expo 68% | ctl  -2.4% t=+3.04
+  4h    rsi<20 tp0.045 dev0.005 sl0.5      37 deals (  4.1/a,  61.9d) win 78% SO med 2.9 max 6 uso 33% | a.a.  +0.3% vs B&H +13.4% | queda max -17% expo 68% | ctl  -2.4% t=+3.04
+  4h    rsi<20 tp0.045 dev0.015 sl0.0      35 deals (  3.8/a,  66.2d) win 77% SO med 1.4 max 4 uso 13% | a.a.  +0.0% vs B&H +13.4% | queda max -17% expo 69% | ctl  -0.4% t=+1.64
+  4h    rsi<20 tp0.045 dev0.015 sl0.5      35 deals (  3.8/a,  66.2d) win 77% SO med 1.4 max 4 uso 13% | a.a.  +0.0% vs B&H +13.4% | queda max -17% expo 69% | ctl  -0.4% t=+1.64
+  4h    rsi<101 tp0.015 dev0.005 sl0.0    219 deals ( 24.1/a,  14.8d) win 92% SO med 1.6 max 6 uso 17% | a.a.  -3.2% vs B&H +13.4% | queda max -27% expo 99% | ctl  -2.4% t=-0.60
+  4h    rsi<101 tp0.015 dev0.005 sl0.5    219 deals ( 24.1/a,  14.8d) win 92% SO med 1.6 max 6 uso 17% | a.a.  -3.2% vs B&H +13.4% | queda max -27% expo 99% | ctl  -2.4% t=-0.60
+  4h    rsi<101 tp0.015 dev0.015 sl0.0    204 deals ( 22.4/a,  16.1d) win 92% SO med 0.8 max 5 uso 8% | a.a.  -0.4% vs B&H +13.4% | queda max -24% expo 99% | ctl  -0.4% t=-0.15
+  4h    rsi<101 tp0.015 dev0.015 sl0.5    204 deals ( 22.4/a,  16.1d) win 92% SO med 0.8 max 5 uso 8% | a.a.  -0.4% vs B&H +13.4% | queda max -24% expo 99% | ctl  -0.4% t=-0.15
+  4h    rsi<101 tp0.045 dev0.005 sl0.0     50 deals (  5.5/a,  66.3d) win 82% SO med 2.4 max 6 uso 29% | a.a.  -4.0% vs B&H +13.4% | queda max -27% expo 100% | ctl  -2.4% t=-1.58
+  4h    rsi<101 tp0.045 dev0.005 sl0.5     50 deals (  5.5/a,  66.3d) win 82% SO med 2.4 max 6 uso 29% | a.a.  -4.0% vs B&H +13.4% | queda max -27% expo 100% | ctl  -2.4% t=-1.58
+  4h    rsi<101 tp0.045 dev0.015 sl0.0     50 deals (  5.5/a,  66.3d) win 82% SO med 1.4 max 5 uso 14% | a.a.  -0.4% vs B&H +13.4% | queda max -24% expo 100% | ctl  -0.4% t=-0.05
+  4h    rsi<101 tp0.045 dev0.015 sl0.5     50 deals (  5.5/a,  66.3d) win 82% SO med 1.4 max 5 uso 14% | a.a.  -0.4% vs B&H +13.4% | queda max -24% expo 100% | ctl  -0.4% t=-0.05
+  1D    rsi<30 tp0.015 dev0.005 sl0.0      47 deals (  5.2/a,  15.6d) win 94% SO med 1.7 max 6 uso 17% | a.a.  +0.3% vs B&H +13.4% | queda max -15% expo 22% | ctl  -1.4% t=+2.23
+  1D    rsi<30 tp0.015 dev0.005 sl0.5      47 deals (  5.2/a,  15.6d) win 94% SO med 1.7 max 6 uso 17% | a.a.  +0.3% vs B&H +13.4% | queda max -15% expo 22% | ctl  -1.4% t=+2.23
+  1D    rsi<30 tp0.015 dev0.015 sl0.0      42 deals (  4.6/a,  20.5d) win 88% SO med 0.7 max 4 uso 8% | a.a.  +0.1% vs B&H +13.4% | queda max -15% expo 27% | ctl  -0.3% t=+1.25
+  1D    rsi<30 tp0.015 dev0.015 sl0.5      42 deals (  4.6/a,  20.5d) win 88% SO med 0.7 max 4 uso 8% | a.a.  +0.1% vs B&H +13.4% | queda max -15% expo 27% | ctl  -0.3% t=+1.25
+  1D    rsi<30 tp0.045 dev0.005 sl0.0      23 deals (  2.5/a,  64.5d) win 83% SO med 2.6 max 6 uso 30% | a.a.  +0.5% vs B&H +13.4% | queda max -15% expo 48% | ctl  -1.0% t=+1.06
+  1D    rsi<30 tp0.045 dev0.005 sl0.5      23 deals (  2.5/a,  64.5d) win 83% SO med 2.6 max 6 uso 30% | a.a.  +0.5% vs B&H +13.4% | queda max -15% expo 48% | ctl  -1.0% t=+1.06
+  1D    rsi<30 tp0.045 dev0.015 sl0.0      22 deals (  2.4/a,  68.5d) win 77% SO med 1.5 max 4 uso 14% | a.a.  +0.1% vs B&H +13.4% | queda max -15% expo 48% | ctl  -0.0% t=+0.58
+  1D    rsi<30 tp0.045 dev0.015 sl0.5      22 deals (  2.4/a,  68.5d) win 77% SO med 1.5 max 4 uso 14% | a.a.  +0.1% vs B&H +13.4% | queda max -15% expo 48% | ctl  -0.0% t=+0.58
+  1D    rsi<20 tp0.015 dev0.005 sl0.0      17 deals (  1.9/a,  14.8d) win 94% SO med 2.1 max 5 uso 22% | a.a.  +0.2% vs B&H +13.4% | queda max -9% expo 8% | ctl  -0.7% t=+0.88
+  1D    rsi<20 tp0.015 dev0.005 sl0.5      17 deals (  1.9/a,  14.8d) win 94% SO med 2.1 max 5 uso 22% | a.a.  +0.2% vs B&H +13.4% | queda max -9% expo 8% | ctl  -0.7% t=+0.88
+  1D    rsi<20 tp0.015 dev0.015 sl0.0      17 deals (  1.9/a,  15.5d) win 94% SO med 0.8 max 3 uso 8% | a.a.  +0.1% vs B&H +13.4% | queda max -9% expo 8% | ctl  -0.1% t=+0.70
+  1D    rsi<20 tp0.015 dev0.015 sl0.5      17 deals (  1.9/a,  15.5d) win 94% SO med 0.8 max 3 uso 8% | a.a.  +0.1% vs B&H +13.4% | queda max -9% expo 8% | ctl  -0.1% t=+0.70
+  1D    rsi<20 tp0.045 dev0.005 sl0.0      13 deals (  1.4/a,  56.1d) win 85% SO med 3.1 max 5 uso 32% | a.a.  +0.9% vs B&H +13.4% | queda max -12% expo 22% | ctl  -0.7% t=+1.02
+  1D    rsi<20 tp0.045 dev0.005 sl0.5      13 deals (  1.4/a,  56.1d) win 85% SO med 3.1 max 5 uso 32% | a.a.  +0.9% vs B&H +13.4% | queda max -12% expo 22% | ctl  -0.7% t=+1.02
+  1D    rsi<20 tp0.045 dev0.015 sl0.0      13 deals (  1.4/a,  59.0d) win 85% SO med 1.5 max 3 uso 13% | a.a.  +0.3% vs B&H +13.4% | queda max -12% expo 23% | ctl  +0.0% t=+0.80
+  1D    rsi<20 tp0.045 dev0.015 sl0.5      13 deals (  1.4/a,  59.0d) win 85% SO med 1.5 max 3 uso 13% | a.a.  +0.3% vs B&H +13.4% | queda max -12% expo 23% | ctl  +0.0% t=+0.80
+  1D    rsi<101 tp0.015 dev0.005 sl0.0    189 deals ( 20.8/a,  16.3d) win 90% SO med 1.6 max 6 uso 18% | a.a.  -3.7% vs B&H +13.4% | queda max -26% expo 96% | ctl  -2.6% t=-0.79
+  1D    rsi<101 tp0.015 dev0.005 sl0.5    189 deals ( 20.8/a,  16.3d) win 90% SO med 1.6 max 6 uso 18% | a.a.  -3.7% vs B&H +13.4% | queda max -26% expo 96% | ctl  -2.6% t=-0.79
+  1D    rsi<101 tp0.015 dev0.015 sl0.0    175 deals ( 19.2/a,  17.7d) win 90% SO med 0.8 max 5 uso 8% | a.a.  -0.4% vs B&H +13.4% | queda max -24% expo 96% | ctl  -0.6% t=+1.28
+  1D    rsi<101 tp0.015 dev0.015 sl0.5    175 deals ( 19.2/a,  17.7d) win 90% SO med 0.8 max 5 uso 8% | a.a.  -0.4% vs B&H +13.4% | queda max -24% expo 96% | ctl  -0.6% t=+1.28
+  1D    rsi<101 tp0.045 dev0.005 sl0.0     50 deals (  5.5/a,  65.3d) win 84% SO med 2.6 max 6 uso 30% | a.a.  -3.6% vs B&H +13.4% | queda max -27% expo 99% | ctl  -1.7% t=-1.77
+  1D    rsi<101 tp0.045 dev0.005 sl0.5     50 deals (  5.5/a,  65.3d) win 84% SO med 2.6 max 6 uso 30% | a.a.  -3.6% vs B&H +13.4% | queda max -27% expo 99% | ctl  -1.7% t=-1.77
+  1D    rsi<101 tp0.045 dev0.015 sl0.0     51 deals (  5.6/a,  64.0d) win 82% SO med 1.5 max 5 uso 14% | a.a.  -0.1% vs B&H +13.4% | queda max -24% expo 98% | ctl  -0.3% t=+0.35
+  1D    rsi<101 tp0.045 dev0.015 sl0.5     51 deals (  5.6/a,  64.0d) win 82% SO med 1.5 max 5 uso 14% | a.a.  -0.1% vs B&H +13.4% | queda max -24% expo 98% | ctl  -0.3% t=+0.35
