@@ -100,6 +100,14 @@ Todas reprovadas, exceto a candidata indicada. Ordem cronológica inversa.
 
 | # | Estratégia (autor, id do script) | Doc | Diagnóstico |
 | --- | --- | --- | --- |
+| 103 | Wolfe Strategy (`EGvQ2nLb`) | [LOTE17_TV](docs/LOTE17_TV.md) | ignorado (sem ordens) |
+| 102 | Band-Zigzag TrendFollower (`9FsHYtrq`) | [LOTE17_TV](docs/LOTE17_TV.md) | ETH 1h +123% mas terço do meio ≈ 0 |
+| 101 | HULLTSIBOT (`gf21APTn`) | [LOTE17_TV](docs/LOTE17_TV.md) | ETH 30m e WTI 1h passam nos testes, mas só na célula 100/50; vizinhos negativos |
+| 100 | FTSMA (`wffJotUo`) | [LOTE17_TV](docs/LOTE17_TV.md) | **candidata no ETH 30m** (+149%, passa terços, 2ª metade e custo 4×; vizinhança boa); BTC quase |
+| 99 | Grid Like Strategy (`oxvR5vMy`) | [LOTE17_TV](docs/LOTE17_TV.md) | nenhuma célula robusta; t ≈ 0 |
+| 98 | ZigZag PA Strategy V4 (`DYONEypp`) | [LOTE17_TV](docs/LOTE17_TV.md) | ignorado (repetido e com lookahead) |
+| 97 | Best Supertrend CCI (`YsWWsOGs`) | [LOTE17_TV](docs/LOTE17_TV.md) | ETH 30m +133% mas empata com o B&H com custo 4× |
+| 96 | SMA (`soKH38lY`) | [LOTE17_TV](docs/LOTE17_TV.md) | ignorado (sem ordens) |
 | 95 | EDMA Scalping Strategy (`CJesxF5m`) | [LOTE16_TV](docs/LOTE16_TV.md) | quase no WTI 1D (+64%, passa terços) mas só 53 trades e t 1,6; ETH perde no 1º terço |
 | 94 | EMA Cross Strategy (`fAxX6kbm`) | [LOTE16_TV](docs/LOTE16_TV.md) | o 50/200 bate o B&H do ETH (+111%), mas 2ª metade fraca; serve de referência para as candidatas do ETH |
 | 93 | Stepped trailing strategy example (`jjhUHcje`) | [LOTE16_TV](docs/LOTE16_TV.md) | ignorado (exemplo) |

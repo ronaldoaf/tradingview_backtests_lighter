@@ -38,6 +38,15 @@ Convenções: sinal no fechamento, ordem na abertura seguinte, custo de spread +
 - **Robustez:** os três batem o B&H nos três terços e na 2ª metade; custo 4× ainda +98% a +122%.
 - **Ressalvas:** DD −90% a −95% (log). Mesma aposta das candidatas 2 e 3: seguir tendência no ETH, cujo B&H é quase zero desde 2022, então quase toda regra de tendência long/short passa. Não são vantagens independentes. Custo do ETH estimado. Reprovam no BTC, XAU, US100 e WTI.
 
+## 5. FTSMA — ETH 30m (lote 17)
+
+- **Script:** `wffJotUo` · [LOTE17_TV](LOTE17_TV.md) · `scripts/study_tvlote17.py`
+- **Regra:** EMA5 e EMA20 do close (mais um termo de Fourier de 64 barras que quase não muda nada) e EMA200. Comprado com EMA5 > EMA20 e close > EMA200; vendido no espelho; o sinal contrário inverte.
+- **Configuração:** 30m, 5/20/200, long e short.
+- **Resultado:** +149% a.a. vs +56,8% do B&H; t = 4,6.
+- **Robustez:** terços +614/+50/+30% vs B&H +330/+0,7/−11%; 2ª metade +26% vs +13%; custo 4× +126%; vizinhança 15m, 1h e 4h também acima do B&H com t > 2.
+- **Ressalvas:** DD −82% (log). Outro seguidor de tendência no ETH (mesma família de 2 a 4). Custo do ETH estimado. No BTC 30m quase passa (perde na 2ª metade).
+
 ## Correlação entre as candidatas do ETH
 
 `scripts/study_eth_corr.py` → `results/study_eth_corr.txt`. Correlação dos retornos diários entre as cinco candidatas do ETH vai de 0,29 a 0,72; com o B&H do ETH fica perto de zero. Ficam na mesma direção 62% a 81% do tempo. Pares mais parecidos: RSI-MA × Ichimoku (0,72) e RSI-MA × Pivot ST (0,66). UT Bot e Scalping são os mais diferentes. A carteira com peso igual nas cinco cai o DD para cerca de −39% (vs −55% a −74% de cada uma, na marcação diária aproximada).
