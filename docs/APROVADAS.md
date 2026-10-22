@@ -38,6 +38,10 @@ Convenções: sinal no fechamento, ordem na abertura seguinte, custo de spread +
 - **Robustez:** os três batem o B&H nos três terços e na 2ª metade; custo 4× ainda +98% a +122%.
 - **Ressalvas:** DD −90% a −95% (log). Mesma aposta das candidatas 2 e 3: seguir tendência no ETH, cujo B&H é quase zero desde 2022, então quase toda regra de tendência long/short passa. Não são vantagens independentes. Custo do ETH estimado. Reprovam no BTC, XAU, US100 e WTI.
 
+## Correlação entre as candidatas do ETH
+
+`scripts/study_eth_corr.py` → `results/study_eth_corr.txt`. Correlação dos retornos diários entre as cinco candidatas do ETH vai de 0,29 a 0,72; com o B&H do ETH fica perto de zero. Ficam na mesma direção 62% a 81% do tempo. Pares mais parecidos: RSI-MA × Ichimoku (0,72) e RSI-MA × Pivot ST (0,66). UT Bot e Scalping são os mais diferentes. A carteira com peso igual nas cinco cai o DD para cerca de −39% (vs −55% a −74% de cada uma, na marcação diária aproximada).
+
 ## Pendências comuns
 
 - Medir o spread real do ETH na Lighter (afeta as candidatas 2 e 3).
