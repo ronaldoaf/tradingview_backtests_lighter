@@ -38,9 +38,7 @@ NAN = np.nan
 
 
 def summary(g, name):
-    _summary(g, name, '')
-    os.replace(os.path.join(D, 'results', f'study_tvlote9_{name}_grid.csv'),
-               os.path.join(D, 'results', f'study_tvlote10_{name}_grid.csv'))
+    _summary(g, name, 'tvlote10')
 
 
 def shift(x, k):

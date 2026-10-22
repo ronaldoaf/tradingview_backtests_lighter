@@ -43,8 +43,8 @@ def zlema(x, n):
     return 2 * e1 - e2
 
 
-def summary(g, name, tag):
-    g.to_csv(os.path.join(D, 'results', f'study_tvlote9_{name}_grid.csv'), index=False)
+def summary(g, name, tag='tvlote9'):
+    g.to_csv(os.path.join(D, 'results', f'study_{tag}_{name}_grid.csv'), index=False)
     print(f"\n=== resumo {name} ({len(g)} celulas) ===")
     for est, h in g.groupby('est'):
         print(f"  {est:6s} {len(h):4d} cel | liq>0 {int((h.bp_liq > 0).sum()):4d} | "
@@ -409,7 +409,7 @@ def main(nomes):
                 run_ict(name, df, mm, '', rows, False, plen=pl, rr=rr, trend=tr, short_ok=side == 'ambos', est='ict',
                         TF=tf, cfg=f'p{pl} rr{rr} trend{int(tr)} {side}')
 
-        summary(pd.DataFrame(rows).drop_duplicates(['est', 'TF', 'cfg']), name, '')
+        summary(pd.DataFrame(rows).drop_duplicates(['est', 'TF', 'cfg']), name)
 
 
 if __name__ == '__main__':
