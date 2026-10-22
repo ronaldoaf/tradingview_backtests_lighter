@@ -98,6 +98,11 @@ Todas reprovadas, exceto a candidata indicada. Ordem cronológica inversa.
 
 | # | Estratégia (autor, id do script) | Doc | Diagnóstico |
 | --- | --- | --- | --- |
+| 61 | Easy System 420 (`zBaDqbla`) | [LOTE11_TV](docs/LOTE11_TV.md) | placar de 14 indicadores; com SuperTrend largo bate o B&H no 15m, mas perde no terço do meio e com custo 2× |
+| 60 | Grab Trading System (`1HAKnNRc`) | [LOTE11_TV](docs/LOTE11_TV.md) | acerto 52% e bruto ≈ 0; melhor +4,8% a.a. |
+| 59 | Heikin Ashi Supertrend (`9z16eauD`) | [LOTE11_TV](docs/LOTE11_TV.md) | alvo 47%/stop 21% nunca disparam; é um SuperTrend sempre no mercado, melhor +12,8% |
+| 58 | Strategy Code Example (`zgn9pUcQ`) | [LOTE11_TV](docs/LOTE11_TV.md) | template EMA14/21; uma célula empata com o B&H e morre em custo 2× |
+| 57 | EVWMA VWAP MACD (QuantNomad, `ZguF6GBo`) | [LOTE11_TV](docs/LOTE11_TV.md) | sempre no mercado; −22% a +7% a.a. no default |
 | 56 | Moving Average Cross and/or Bbands bot (`Nb7PYc7W`) | [LOTE10_TV](docs/LOTE10_TV.md) | SMA 50/200 sempre no mercado; 0/77 batem o B&H |
 | 55 | Scalping Williams %R + MACD + SMA 1m (`975ByLQ5`) | [LOTE10_TV](docs/LOTE10_TV.md) | 4600 trades/ano no 1m, bruto negativo; −52% a.a. |
 | 54 | Monthly Returns in PineScript Strategies (`kzp8e4X3`) | [LOTE10_TV](docs/LOTE10_TV.md) | é utilitário de tabela; o exemplo é o Pivot Reversal, 0/108 batem o B&H |
