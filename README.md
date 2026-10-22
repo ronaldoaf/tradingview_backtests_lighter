@@ -98,6 +98,11 @@ Todas reprovadas, exceto a candidata indicada. Ordem cronológica inversa.
 
 | # | Estratégia (autor, id do script) | Doc | Diagnóstico |
 | --- | --- | --- | --- |
+| 51 | ICT Entry V2 (TS_Indie, `wm9e7Wca`) | [LOTE9_TV](docs/LOTE9_TV.md) | núcleo varredura + iFVG; 7/188 células com líquido positivo, melhor +0,3% a.a. |
+| 50 | Hull Moving Average Swing Trader (`j60hYGuY`) | [LOTE9_TV](docs/LOTE9_TV.md) | sempre no mercado; t>2 em 9 células, mas 0/44 batem o B&H |
+| 49 | RSI versus SMA (`wDLCPh1I`) | [LOTE9_TV](docs/LOTE9_TV.md) | o default (reversão) perde 3–18% a.a.; invertido bate o B&H no 30m mas morre no terço do meio e com custo 2× |
+| 48 | UT Bot alerts strategy (`R9nsvSZR`) | [LOTE9_TV](docs/LOTE9_TV.md) | acerto 15–34% com BE + 3R; 0/312 batem o B&H |
+| 47 | [RS] MicuRobert EMA cross V2 (`6YthKHw1`) | [LOTE9_TV](docs/LOTE9_TV.md) | stop de 22 pips = ruído; −3% a −53% a.a. no default |
 | 46 | Bollinger Bands Breakout (`GKgxKjlC`) | [LOTE8_TV](docs/LOTE8_TV.md) | sempre no mercado; +14,8% no 30m, mas perde no terço do meio, no OOS e com custo 2× |
 | 45 | BEST Engulfing + MA (`ROM3crig`) | [LOTE8_TV](docs/LOTE8_TV.md) | acerto 26–31%; 0/165 batem o B&H |
 | 44 | VWAP Trendfollow (wbburgin, `XoR8rQaW`) | [LOTE8_TV](docs/LOTE8_TV.md) | default perde 2–18% a.a.; a única célula acima do B&H é ilha |
