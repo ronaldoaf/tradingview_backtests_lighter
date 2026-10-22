@@ -100,6 +100,12 @@ Todas reprovadas, exceto a candidata indicada. Ordem cronológica inversa.
 
 | # | Estratégia (autor, id do script) | Doc | Diagnóstico |
 | --- | --- | --- | --- |
+| 78 | HullMA Strategy (`qQ0MJCVL`) | [LOTE14_TV](docs/LOTE14_TV.md) | substituto do V Pattern; ETH 30m n100 +151% mas 2ª metade fraca (t 1,7) |
+| 77 | Delta-RSI with filters (`0OdCms2T`) | [LOTE14_TV](docs/LOTE14_TV.md) | quase no ETH (+168%, 2022-26 muito acima do B&H) mas perde no 1º terço; BTC falha na 2ª metade; WTI célula isolada |
+| 76 | Forex Master v4.0 (`AIZqyS45`) | [LOTE14_TV](docs/LOTE14_TV.md) | só WTI acima do B&H; melhor +16% a.a. |
+| 75 | V Bottom/V Top Pattern [Misu] (`6qmzhNzi`) | [LOTE14_TV](docs/LOTE14_TV.md) | ignorado: ordens comentadas, não opera |
+| 74 | Heikin-Ashi PSAR [QuantNomad] (`0iKy7lyG`) | [LOTE14_TV](docs/LOTE14_TV.md) | XAU 1h empata com o B&H e perde com custo 2× |
+| 73 | Crypto Scalper (`84YDnJ9V`) | [LOTE14_TV](docs/LOTE14_TV.md) | ETH 15m +110% mas terço do meio ≈ 0 |
 | 72 | Ichimoku Kinko Hyo Basic (`XZcsLIEW`) | [LOTE13_TV](docs/LOTE13_TV.md) | **candidata no ETH 15m** (20/60/120): passa terços, 2ª metade e custo 4×; DD −90% |
 | 71 | Squeeze Momentum [LazyBear] (`qp9BoNyS`) | [LOTE13_TV](docs/LOTE13_TV.md) | nenhuma célula acima do B&H fora do WTI (e lá com DD enorme) |
 | 70 | UT Bot v5 (`2wkJx7Ix`) | [LOTE13_TV](docs/LOTE13_TV.md) | **candidata no ETH 30m** (a=5, long/short); BTC falha no último terço |
