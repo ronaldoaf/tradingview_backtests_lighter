@@ -100,6 +100,14 @@ Todas reprovadas, exceto a candidata indicada. Ordem cronológica inversa.
 
 | # | Estratégia (autor, id do script) | Doc | Diagnóstico |
 | --- | --- | --- | --- |
+| 86 | BTC bot (`DPBeZbMP`) | [LOTE15_TV](docs/LOTE15_TV.md) | 0 células acima do B&H; melhor +17% a.a. (US100) |
+| 85 | Crypto BOT lower timeframes (`IS7yz9s4`) | [LOTE15_TV](docs/LOTE15_TV.md) | 0 células acima do B&H |
+| 84 | AUTOMATIC GRID BOT (`6qZpzElZ`) | [LOTE15_TV](docs/LOTE15_TV.md) | ignorado (utilitário) |
+| 83 | Autoview Build-a-bot (`iVHq4EFG`) | [LOTE15_TV](docs/LOTE15_TV.md) | ignorado (template) |
+| 82 | Trendline Breaks Multi Fibonacci Supertrend (`aVzNdTMg`) | [LOTE15_TV](docs/LOTE15_TV.md) | quase no ETH 4h (+100%, custo 4× ok) mas perde no 1º terço; WTI falha no último terço |
+| 81 | Fixed Percent SL/TP (`00WHGEoc`) | [LOTE15_TV](docs/LOTE15_TV.md) | ignorado (exemplo) |
+| 80 | Simple profitable trading strategy (`QoNKoXwW`) | [LOTE15_TV](docs/LOTE15_TV.md) | ETH 15m +89% mas empata com o B&H com custo 4× |
+| 79 | [RS] Spot/Binary Scalper V0 (`PMqutqKQ`) | [LOTE15_TV](docs/LOTE15_TV.md) | XAU 30m +14,8% mas perde com custo 2×; ETH perde com custo 4× |
 | 78 | HullMA Strategy (`qQ0MJCVL`) | [LOTE14_TV](docs/LOTE14_TV.md) | substituto do V Pattern; ETH 30m n100 +151% mas 2ª metade fraca (t 1,7) |
 | 77 | Delta-RSI with filters (`0OdCms2T`) | [LOTE14_TV](docs/LOTE14_TV.md) | quase no ETH (+168%, 2022-26 muito acima do B&H) mas perde no 1º terço; BTC falha na 2ª metade; WTI célula isolada |
 | 76 | Forex Master v4.0 (`AIZqyS45`) | [LOTE14_TV](docs/LOTE14_TV.md) | só WTI acima do B&H; melhor +16% a.a. |
