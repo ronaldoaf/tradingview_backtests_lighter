@@ -98,6 +98,11 @@ Todas reprovadas, exceto a candidata indicada. Ordem cronológica inversa.
 
 | # | Estratégia (autor, id do script) | Doc | Diagnóstico |
 | --- | --- | --- | --- |
+| 56 | Moving Average Cross and/or Bbands bot (`Nb7PYc7W`) | [LOTE10_TV](docs/LOTE10_TV.md) | SMA 50/200 sempre no mercado; 0/77 batem o B&H |
+| 55 | Scalping Williams %R + MACD + SMA 1m (`975ByLQ5`) | [LOTE10_TV](docs/LOTE10_TV.md) | 4600 trades/ano no 1m, bruto negativo; −52% a.a. |
+| 54 | Monthly Returns in PineScript Strategies (`kzp8e4X3`) | [LOTE10_TV](docs/LOTE10_TV.md) | é utilitário de tabela; o exemplo é o Pivot Reversal, 0/108 batem o B&H |
+| 53 | Full strategy AllinOne MACD-RSI-PSAR-ATR-MA (`l7ELtgmb`) | [LOTE10_TV](docs/LOTE10_TV.md) | feito para EURUSD 1m; −26% a.a. no 1m, melhor +8% |
+| 52 | [UL] Price Divergence Strategy v1.1 (`IDoY5LgE`) | [LOTE10_TV](docs/LOTE10_TV.md) | 440/501 com líquido positivo, mas exposição ~55%: melhor +7,5% a.a. |
 | 51 | ICT Entry V2 (TS_Indie, `wm9e7Wca`) | [LOTE9_TV](docs/LOTE9_TV.md) | núcleo varredura + iFVG; 7/188 células com líquido positivo, melhor +0,3% a.a. |
 | 50 | Hull Moving Average Swing Trader (`j60hYGuY`) | [LOTE9_TV](docs/LOTE9_TV.md) | sempre no mercado; t>2 em 9 células, mas 0/44 batem o B&H |
 | 49 | RSI versus SMA (`wDLCPh1I`) | [LOTE9_TV](docs/LOTE9_TV.md) | o default (reversão) perde 3–18% a.a.; invertido bate o B&H no 30m mas morre no terço do meio e com custo 2× |
