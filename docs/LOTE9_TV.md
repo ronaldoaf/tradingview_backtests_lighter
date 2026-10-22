@@ -46,8 +46,8 @@ lote 3.)
 ## 49. RSI versus SMA (`wDLCPh1I`, Pine v2)
 
 RSI8 do open − 50 e sua SMA34; o default **compra quando a SMA fica ≤ 0** (reversão) e vende quando
-volta acima; sempre no mercado. O trailing publicado (120 ticks sem offset) não arma; os stops
-testados não ajudaram. Default: −3% a −18% a.a., t até −4,2 contra o controle. É um sinal anti-edge, e
+volta acima; sempre no mercado. O trailing publicado (120 ticks sem offset) não arma (testado sem stop).
+Default: −3% a −18% a.a., t até −4,2 contra o controle. É um sinal anti-edge, e
 a versão **invertida** (seguir a SMA do RSI) é a única célula do lote acima do B&H:
 
 | Célula | 2017-21 (B&H 8,5%) | 2021-24 (4,7%) | 2024-26 (31,5%) | 2ª metade (25,1%) | custo 2× | custo 4× |
