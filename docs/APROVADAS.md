@@ -30,7 +30,16 @@ Convenções: sinal no fechamento, ordem na abertura seguinte, custo de spread +
 - **Robustez:** terços +83/+83/+72% vs B&H +330/+1/−11%, estável e quase independente da direção do ETH.
 - **Ressalvas:** custo do ETH estimado; com 640 trades/ano, custo 4× já tira a vantagem. Falta walk-forward. DD −69% (log). Não funciona em US100 e WTI.
 
+## 4. Seguidores de tendência no ETH (lote 13) — UT Bot v5, Ichimoku básico, Scalping System
+
+- **Scripts:** `2wkJx7Ix`, `XZcsLIEW`, `YotdMm0M` · [LOTE13_TV](LOTE13_TV.md) · `scripts/study_tvlote13.py`
+- **Configurações:** UT Bot 30m (a=5, ATR 11, HMA2 do open, long e short); Ichimoku 15m (20/60/120, deslocamento 60, long e short); Scalping 30m (SMA25 do low, sem EMA200, long e short).
+- **Resultado:** +131%, +120% e +125% a.a. vs +56,8% do B&H; t = 2,4 a 2,6.
+- **Robustez:** os três batem o B&H nos três terços e na 2ª metade; custo 4× ainda +98% a +122%.
+- **Ressalvas:** DD −90% a −95% (log). Mesma aposta das candidatas 2 e 3: seguir tendência no ETH, cujo B&H é quase zero desde 2022, então quase toda regra de tendência long/short passa. Não são vantagens independentes. Custo do ETH estimado. Reprovam no BTC, XAU, US100 e WTI.
+
 ## Pendências comuns
 
 - Medir o spread real do ETH na Lighter (afeta as candidatas 2 e 3).
 - Walk-forward e paper/forward test antes de qualquer uso real.
+- Para o ETH: comparar as candidatas 2, 3 e 4 entre si e com um seguidor de tendência simples (ex.: cruzamento de médias) para saber se alguma acrescenta algo além do efeito comum.

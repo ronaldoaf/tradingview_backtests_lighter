@@ -100,6 +100,11 @@ Todas reprovadas, exceto a candidata indicada. Ordem cronológica inversa.
 
 | # | Estratégia (autor, id do script) | Doc | Diagnóstico |
 | --- | --- | --- | --- |
+| 72 | Ichimoku Kinko Hyo Basic (`XZcsLIEW`) | [LOTE13_TV](docs/LOTE13_TV.md) | **candidata no ETH 15m** (20/60/120): passa terços, 2ª metade e custo 4×; DD −90% |
+| 71 | Squeeze Momentum [LazyBear] (`qp9BoNyS`) | [LOTE13_TV](docs/LOTE13_TV.md) | nenhuma célula acima do B&H fora do WTI (e lá com DD enorme) |
+| 70 | UT Bot v5 (`2wkJx7Ix`) | [LOTE13_TV](docs/LOTE13_TV.md) | **candidata no ETH 30m** (a=5, long/short); BTC falha no último terço |
+| 69 | Scalping Trading System (`YotdMm0M`) | [LOTE13_TV](docs/LOTE13_TV.md) | **candidata no ETH 30m**; BTC 1D com 54 trades e t baixo |
+| 68 | Fibonacci + RSI (`Ouv7XVfc`) | [LOTE13_TV](docs/LOTE13_TV.md) | 0 células acima do B&H em 4 ativos; melhor +11% a.a. |
 | 67 | Solution Zigma (`k1GLeZco`) | [LOTE12_TV](docs/LOTE12_TV.md) | substituto do template; só WTI bate o B&H e falha nos terços |
 | 66 | Simple RSI-MA Algo (`qSoZRbX7`) | [LOTE12_TV](docs/LOTE12_TV.md) | **candidata no ETH 15m**: passa terços, 2ª metade e custo 4×; DD enorme, custo ETH estimado; BTC falha no recente |
 | 65 | Acrypto Weighted v1.4.8 (`OF3TzrNS`) | [LOTE12_TV](docs/LOTE12_TV.md) | só WTI acima do B&H, com terços negativos |
