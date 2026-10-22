@@ -9,9 +9,12 @@ O usuário passa só o final da URL do script; a URL completa é
 
 ## Ordem dos ativos
 
-Ativo padrão: **ouro (XAUUSD)**. Só se o resultado no ouro for positivo a estratégia é
-estendida para **US100, BTC, WTI e ETH**. O objetivo é varrer muitas estratégias publicadas
-sem gastar 5 ativos numa ideia que já morre no primeiro.
+**Regra do usuário (2026-10-22, a partir do lote 12): toda estratégia é testada nos 5 ativos —
+ouro (XAUUSD), US100, WTI, BTC e ETH — sem esperar o resultado do ouro.** Os scripts de lote rodam
+com `python scripts/study_tvloteN.py xau us100 wti btc eth` e o doc do lote traz uma tabela por
+ativo. Robustez (terços, OOS, custo, vizinhança) continua só para as células que batem o B&H.
+
+Até o lote 11 a regra era outra: ouro primeiro e só estender aos outros 4 se o ouro passasse.
 
 Antes de começar um teste novo, conferir a tabela do README para não repetir uma
 estratégia já reprovada.
