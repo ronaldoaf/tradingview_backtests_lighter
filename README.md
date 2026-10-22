@@ -6,7 +6,8 @@ o Pine Script em Python/NumPy, roda uma grade de parâmetros em vários timefram
 o resultado contra dois benchmarks: **buy & hold** e um **controle aleatório** com o mesmo
 lado, a mesma duração e a mesma gestão de saída.
 
-Resultado até agora: **nenhuma das 23 estratégias testadas passou**. Os relatórios em
+Resultado até agora: **1 das 24 estratégias testadas passou** — Trailing SL (QuantNomad),
+e só no ouro. Os relatórios em
 [`docs/`](docs/) explicam o motivo de cada reprovação — o que costuma ser mais útil que o
 veredito, porque o mesmo punhado de falhas se repete (sempre-no-mercado disfarçado de
 sinal, `lookahead_on`, risco/retorno impossível por construção, ilha de parâmetros que
@@ -92,10 +93,11 @@ aqui porque é onde vivem as constantes `CUSTO` e `FUND`, importadas por todos.
 
 ## Estratégias testadas
 
-Todas reprovadas. Ordem cronológica inversa.
+Ordem cronológica inversa. Uma aprovada (no ouro), 23 reprovadas.
 
 | # | Estratégia (autor, id do script) | Doc | Diagnóstico |
 | --- | --- | --- | --- |
+| 24 | **Trailing SL Strategy (QuantNomad, `n3vj0MIi`)** | [LOTE7_TV](docs/LOTE7_TV.md) | **aprovada no ouro**: +20,4% a.a. vs +13,4% do B&H, Sharpe 1,10 vs 0,73, sobrevive a terços/OOS/custo ×4/controle. Reprovada em US100, BTC, ETH e WTI |
 | 23 | MACD ReLoaded (Kivanc, `VO6DY8s1`) | [LOTE3_TV](docs/LOTE3_TV.md) | 1/60 células acima do B&H, só no terço final |
 | 22 | ANN Strategy v2 (sirolf2009, `oY725jQw`) | [LOTE3_TV](docs/LOTE3_TV.md) | a "rede neural" é `sign(variação do ohlc4)`; −70% a.a. no 15m |
 | 21 | Twin Optimized Trend Tracker / TOTT (Kivanc, `eENf7NpJ`) | [LOTE3_TV](docs/LOTE3_TV.md) | melhor do lote e ainda abaixo do B&H nos defaults |
