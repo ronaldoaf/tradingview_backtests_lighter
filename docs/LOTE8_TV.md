@@ -19,7 +19,7 @@ dele com custo 2×. Nenhuma foi estendida aos outros ativos.
 | # | Estratégia | Células | liq>0 | t>2 | CAGR>B&H | Melhor CAGR |
 |---|---|---|---|---|---|---|
 | 42 | TrendMaster Pro 2.3 (`mVkDf8qh`) | 449 | 125 | 15 | 4 | +14,8% (sem filtros) |
-| 43 | Backtesting 3commas DCA Bot v2 (`8d6Auyst`) | 64 | 0 | 0 | 0 | −0,2% |
+| 43 | Backtesting 3commas DCA Bot v2 (`8d6Auyst`) | 96 | — | 0 | 0 | +0,9% |
 | 44 | VWAP Trendfollow [wbburgin] (`XoR8rQaW`) | 164 | 72 | 37 | 1 | +15,5% |
 | 45 | BEST Engulfing + MA (`ROM3crig`) | 165 | 89 | 3 | 0 | +9,6% |
 | 46 | Bollinger Bands Breakout (`GKgxKjlC`) | 116 | 106 | 16 | 6 | +14,9% |
@@ -46,7 +46,7 @@ segurança limite em −1,5%, −3,9%, −7,7% ... com volume ×1,5 (total 3009 
 +4,5% sobre o preço médio. Simulado minuto a minuto. Grade: RSI < 20/30/sempre × alvo 1,5/4,5% ×
 desvio 0,5/1,5% × stop nenhum/50%, em 15m/1h/4h/1D.
 
-Acerto de 80–93%, como prometido, mas o retorno é **−4% a 0% a.a.**: o bot usa em média ~15% do
+Acerto de 80–93%, como prometido, mas o retorno é **−4% a +0,9% a.a.**: o bot usa em média ~15% do
 capital (o resto fica parado esperando quedas que o ouro quase não deu) e paga funding de long o
 tempo todo. O gatilho de RSI não difere de abrir a deal em hora sorteada (t entre −2 e +1). É
 estrutural: mesmo com custo zero o teto seria uma fração do B&H.

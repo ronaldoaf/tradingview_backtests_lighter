@@ -101,7 +101,7 @@ Todas reprovadas, exceto a candidata indicada. Ordem cronológica inversa.
 | 46 | Bollinger Bands Breakout (`GKgxKjlC`) | [LOTE8_TV](docs/LOTE8_TV.md) | sempre no mercado; +14,8% no 30m, mas perde no terço do meio, no OOS e com custo 2× |
 | 45 | BEST Engulfing + MA (`ROM3crig`) | [LOTE8_TV](docs/LOTE8_TV.md) | acerto 26–31%; 0/165 batem o B&H |
 | 44 | VWAP Trendfollow (wbburgin, `XoR8rQaW`) | [LOTE8_TV](docs/LOTE8_TV.md) | default perde 2–18% a.a.; a única célula acima do B&H é ilha |
-| 43 | Backtesting 3commas DCA Bot v2 (`8d6Auyst`) | [LOTE8_TV](docs/LOTE8_TV.md) | martingale long sem stop; usa ~15% do capital, −4% a 0% a.a. |
+| 43 | Backtesting 3commas DCA Bot v2 (`8d6Auyst`) | [LOTE8_TV](docs/LOTE8_TV.md) | martingale long sem stop; usa ~17% do capital, −4% a +0,9% a.a. |
 | 42 | TrendMaster Pro 2.3 (`mVkDf8qh`) | [LOTE8_TV](docs/LOTE8_TV.md) | filtros cortam tudo (+1% a.a.); sem eles é um SMA 9/21 que morre no terço do meio |
 | 41 | SR TREND / Support Resistance breakout (`hwHKYkE0`) | [LOTE7_TV](docs/LOTE7_TV.md) | 90% do tempo posicionado; 0/40 batem o B&H |
 | 40 | 72s Adaptive HMA+ pt.1 (`FrjeeWdl`) | [LOTE7_TV](docs/LOTE7_TV.md) | t>2 em 53 células, mas exposição de 30%: 0/292 batem o B&H |
