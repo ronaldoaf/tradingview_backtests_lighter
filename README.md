@@ -6,8 +6,8 @@ o Pine Script em Python/NumPy, roda uma grade de parâmetros em vários timefram
 o resultado contra dois benchmarks: **buy & hold** e um **controle aleatório** com o mesmo
 lado, a mesma duração e a mesma gestão de saída.
 
-Resultado até agora: **nenhuma das 36 estratégias testadas passou**. A única candidata é o
-**Pivot Point SuperTrend no ETH** (ver [LOTE4_TV](docs/LOTE4_TV.md)), ainda dependente de medir o custo real do ETH. Os relatórios em
+Resultado até agora: **nenhuma das 41 estratégias testadas passou**. As candidatas são o
+**Trailing SL [QuantNomad] no ouro** (ver [LOTE7_TV](docs/LOTE7_TV.md)) e o **Pivot Point SuperTrend no ETH** (ver [LOTE4_TV](docs/LOTE4_TV.md)), ainda dependente de medir o custo real do ETH. Os relatórios em
 [`docs/`](docs/) explicam o motivo de cada reprovação — o que costuma ser mais útil que o
 veredito, porque o mesmo punhado de falhas se repete (sempre-no-mercado disfarçado de
 sinal, `lookahead_on`, risco/retorno impossível por construção, ilha de parâmetros que
@@ -98,6 +98,11 @@ Todas reprovadas, exceto a candidata indicada. Ordem cronológica inversa.
 
 | # | Estratégia (autor, id do script) | Doc | Diagnóstico |
 | --- | --- | --- | --- |
+| 41 | SR TREND / Support Resistance breakout (`hwHKYkE0`) | [LOTE7_TV](docs/LOTE7_TV.md) | 90% do tempo posicionado; 0/40 batem o B&H |
+| 40 | 72s Adaptive HMA+ pt.1 (`FrjeeWdl`) | [LOTE7_TV](docs/LOTE7_TV.md) | t>2 em 53 células, mas exposição de 30%: 0/292 batem o B&H |
+| 39 | Captain Backtest Model (TFO, `tOQ8gnxj`) | [LOTE7_TV](docs/LOTE7_TV.md) | modelo de sessão NY; bruto ~0 bp, 0/130 com líquido positivo |
+| 38 | Super Trend Daily 2.0 BF (`c4Cj7H2y`) | [LOTE7_TV](docs/LOTE7_TV.md) | 0/138 batem o B&H |
+| 37 | Trailing SL Strategy (QuantNomad, `n3vj0MIi`) | [LOTE7_TV](docs/LOTE7_TV.md) | **candidata no ouro** com stop de 2% (+15% a +20% vs +13% a.a., Sharpe 1,1, OOS t>2); reprova nos outros 4 ativos |
 | 36 | SUPERTREND ATR with Trailing Stop Loss (`L9GkARD2`) | [LOTE6_TV](docs/LOTE6_TV.md) | ATR(1) = true range; os t>2 são shorts vivendo do funding; 0/250 batem o B&H |
 | 35 | ICT Master Suite, todos os modelos (Trading IQ, `ABYnIcdl`) | [ICT2022](docs/ICT2022.md), [ICT_SUITE](docs/ICT_SUITE.md) | 2022/Unicorn/OTE/Silver Bullet/Liquidity Raid × XAU/US100/WTI/BTC/ETH: nenhum bate o B&H com risco aceitável |
 | 34 | Bollinger Band with RSI (`pKOaIHpb`) | [LOTE6_TV](docs/LOTE6_TV.md) | pirâmide de 50 e stop de 25%: acerto 77%, 0/304 batem o B&H |
