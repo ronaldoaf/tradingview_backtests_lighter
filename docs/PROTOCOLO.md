@@ -92,3 +92,5 @@ no commit e, se mudar o método, nesta página.
 - **`scripts/tv_fetch.py <final-da-url> ...`** baixa o Pine para `pine/` (com fallback no
   pine-facade para scripts cujo HTML vem sem fonte) e já imprime versão, nº de `security()` e o
   alerta de vazamento. Rodar antes de ler o código.
+
+- Toda estratégia que passar na robustez entra em `docs/APROVADAS.md` (configuração, resultado, robustez e ressalvas).

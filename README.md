@@ -13,6 +13,8 @@ veredito, porque o mesmo punhado de falhas se repete (sempre-no-mercado disfarç
 sinal, `lookahead_on`, risco/retorno impossível por construção, ilha de parâmetros que
 morre no out-of-sample).
 
+Lista das candidatas aprovadas: [docs/APROVADAS.md](docs/APROVADAS.md).
+
 ## Protocolo de teste
 
 1. A partir do lote 12, toda estratégia é testada nos **5 ativos** (XAU, US100, WTI, BTC, ETH).
