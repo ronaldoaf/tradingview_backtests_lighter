@@ -98,6 +98,12 @@ Todas reprovadas, exceto a candidata indicada. Ordem cronológica inversa.
 
 | # | Estratégia (autor, id do script) | Doc | Diagnóstico |
 | --- | --- | --- | --- |
+| 67 | Solution Zigma (`k1GLeZco`) | [LOTE12_TV](docs/LOTE12_TV.md) | substituto do template; só WTI bate o B&H e falha nos terços |
+| 66 | Simple RSI-MA Algo (`qSoZRbX7`) | [LOTE12_TV](docs/LOTE12_TV.md) | **candidata no ETH 15m**: passa terços, 2ª metade e custo 4×; DD enorme, custo ETH estimado; BTC falha no recente |
+| 65 | Acrypto Weighted v1.4.8 (`OF3TzrNS`) | [LOTE12_TV](docs/LOTE12_TV.md) | só WTI acima do B&H, com terços negativos |
+| 64 | Template Trailing Strategy (`n8bgynWl`) | [LOTE12_TV](docs/LOTE12_TV.md) | ignorado (template) |
+| 63 | Powertrend Volume Range Filter (`45FlB2qH`) | [LOTE12_TV](docs/LOTE12_TV.md) | poucas operações; nenhuma célula acima do B&H |
+| 62 | TK Cross > EMA200 (`88TwdvFZ`) | [LOTE12_TV](docs/LOTE12_TV.md) | ETH 30m +104% mas DD −97%; demais ativos falham |
 | 61 | Easy System 420 (`zBaDqbla`) | [LOTE11_TV](docs/LOTE11_TV.md) | placar de 14 indicadores; com SuperTrend largo bate o B&H no 15m, mas perde no terço do meio e com custo 2× |
 | 60 | Grab Trading System (`1HAKnNRc`) | [LOTE11_TV](docs/LOTE11_TV.md) | acerto 52% e bruto ≈ 0; melhor +4,8% a.a. |
 | 59 | Heikin Ashi Supertrend (`9z16eauD`) | [LOTE11_TV](docs/LOTE11_TV.md) | alvo 47%/stop 21% nunca disparam; é um SuperTrend sempre no mercado, melhor +12,8% |
