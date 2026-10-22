@@ -15,8 +15,8 @@ morre no out-of-sample).
 
 ## Protocolo de teste
 
-1. O ativo padrão é **ouro (XAUUSD)**. Só se o ouro for positivo a estratégia é estendida
-   para US100, BTC, WTI e ETH. Não vale gastar 5 ativos numa ideia que já morre no primeiro.
+1. A partir do lote 12, toda estratégia é testada nos **5 ativos** (XAU, US100, WTI, BTC, ETH).
+   Até o lote 11 o ouro vinha primeiro e só quem passava nele era estendido aos outros 4.
 2. Sinal no **fechamento** da barra, ordem na **abertura da barra seguinte**
    (equivalente a Pine com `calc_on_every_tick=false`). Stops e alvos intrabar são
    resolvidos no M1; quando stop e alvo caem no mesmo minuto, **o stop executa primeiro**.
