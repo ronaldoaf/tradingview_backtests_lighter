@@ -100,6 +100,26 @@ Todas reprovadas, exceto a candidata indicada. Ordem cronológica inversa.
 
 | # | Estratégia (autor, id do script) | Doc | Diagnóstico |
 | --- | --- | --- | --- |
+| 283 | Triple CCI + MFI (long-only) (`PETNavGq`) | [LOTE26_TV](docs/LOTE26_TV.md) | nada robusto |
+| 282 | London BreakOut Classic (`Fh42LHOM`) | [LOTE26_TV](docs/LOTE26_TV.md) | nada robusto |
+| 281 | DEMA + MACD (`xeqJN1KH`) | [LOTE26_TV](docs/LOTE26_TV.md) | quase: ETH 1D d50 (perde o 1º terço) |
+| 280 | Kozlod Heikin-Ashi (`eHfnBW5S`) | [LOTE26_TV](docs/LOTE26_TV.md) | nada robusto |
+| 279 | Pivot Point Reversal + RSI (`3UcIwSrE`) | [LOTE26_TV](docs/LOTE26_TV.md) | nada robusto |
+| 278 | Dual Moving Average (angulo) (`WEALnfiN`) | [LOTE26_TV](docs/LOTE26_TV.md) | nada robusto |
+| 277 | MACD, RSI & RVOL (long-only) (`7GmXKfig`) | [LOTE26_TV](docs/LOTE26_TV.md) | nada robusto |
+| 276 | Previous Day High/Low Breakout (`dn6ogsKO`) | [LOTE26_TV](docs/LOTE26_TV.md) | nada robusto |
+| 275 | RSI Crossover (`ZINSYeR8`) | [LOTE26_TV](docs/LOTE26_TV.md) | nada robusto |
+| 274 | NSDT HAMA (EMA55) (`B4dBAINf`) | [LOTE26_TV](docs/LOTE26_TV.md) | nada robusto |
+| 273 | KAMA Strategy (long-only) (`h8cfMnVH`) | [LOTE26_TV](docs/LOTE26_TV.md) | quase: ETH 1h (perde o 1º terço e o custo 4×) |
+| 272 | KSR (EMA 10/20) (`N2c1PkLs`) | [LOTE26_TV](docs/LOTE26_TV.md) | nada robusto |
+| 271 | QuantCat Intraday (`68EaMFyt`) | [LOTE26_TV](docs/LOTE26_TV.md) | quase: ETH 15m (perde o 1º terço) |
+| 270 | Hull + Ichimoku + MACD (`jSXWoUXz`) | [LOTE26_TV](docs/LOTE26_TV.md) | nada robusto |
+| 269 | B-Xtrender (`uCWPAPT2`) | [LOTE26_TV](docs/LOTE26_TV.md) | nada robusto |
+| 268 | SuperTrend STRATEGY (`VLRj2sG9`) | [LOTE26_TV](docs/LOTE26_TV.md) | quase: ETH 4h ambos (perde o 1º terço) |
+| 267 | MACD + EMA (long-only) (`o97VVZNr`) | [LOTE26_TV](docs/LOTE26_TV.md) | nada robusto |
+| 266 | Crypto Squeeze (`I3YaZmDO`) | [LOTE26_TV](docs/LOTE26_TV.md) | quase: ETH 4h (mfi14, perde o 1º terço) |
+| 265 | Vegas SuperTrend Enhanced (`ec57c7xL`) | [LOTE26_TV](docs/LOTE26_TV.md) | nada robusto |
+| 264 | 5 EMA (`EaZHR7q6`) | [LOTE26_TV](docs/LOTE26_TV.md) | **aprovada: ETH 4h (alvo 3R)** |
 | 263 | Smart Money Pivot (`IMTwV7U8`) | [LOTE25_TV](docs/LOTE25_TV.md) | **aprovada: ETH 15m (sem stop/alvo)** |
 | 262 | Awesome Oscillator (`fSHXMVey`) | [LOTE25_TV](docs/LOTE25_TV.md) | nada robusto |
 | 261 | Multi-MA (4MA) (`C1hyNDWO`) | [LOTE25_TV](docs/LOTE25_TV.md) | nada robusto |

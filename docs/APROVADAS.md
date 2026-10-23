@@ -136,6 +136,14 @@ Convenções: sinal no fechamento, ordem na abertura seguinte, custo de spread +
 - **Robustez:** terços +403/+51/+23% vs +330/+1/−11%; 2ª metade +29% vs +13%; custo 4× +101%.
 - **Ressalvas:** sem os alvos o resultado é igual; o terço 1 passa por pouco; mais um seguidor de tendência no ETH, provavelmente muito correlacionado com as outras aprovadas do ETH.
 
+## 17. 5 EMA — ETH 4h (lote 26, aprovada com ressalva)
+
+- **Script:** `EaZHR7q6` · [LOTE26_TV](LOTE26_TV.md) · `scripts/study_tvlote26.py`
+- **Regra:** A última barra toda abaixo da EMA5 marca a máxima de gatilho (toda acima marca a mínima); o rompimento entra se estiver fora; stop na menor mínima das 2 últimas barras (maior máxima no short), alvo 3R (o script usa 1,5R).
+- **Resultado:** +133% a.a. vs +56,6%; t = 2,0; 80 trades/ano.
+- **Robustez:** terços +372/+181/+81% vs +328/+0/−11%; 2ª metade +59% vs +13%; custo 4× +131%.
+- **Ressalvas:** só o alvo 3R passa (com 1,5R fica em +61%, perto do B&H); DD alto; mais um seguidor de tendência no ETH, provavelmente correlacionado com as outras aprovadas do ETH.
+
 ## Correlação entre as candidatas do ETH
 
 `scripts/study_eth_corr.py` → `results/study_eth_corr.txt`. Correlação dos retornos diários entre as cinco candidatas do ETH vai de 0,29 a 0,72; com o B&H do ETH fica perto de zero. Ficam na mesma direção 62% a 81% do tempo. Pares mais parecidos: RSI-MA × Ichimoku (0,72) e RSI-MA × Pivot ST (0,66). UT Bot e Scalping são os mais diferentes. A carteira com peso igual nas cinco cai o DD para cerca de −39% (vs −55% a −74% de cada uma, na marcação diária aproximada).
