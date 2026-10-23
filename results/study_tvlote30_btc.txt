@@ -1,0 +1,196 @@
+
+================= btc =================
+  M1 2020-01-01 -> 2026-09-30
+
+### 1. Hull MA and Candle cross
+  15min HUL default                  21394 tr (3167.9/ano,   0.12d) | bruto    +0.7bp liq    -0.3bp (win 37%) | CAGR  -16.1% vs B&H  +43.8% | Sh -0.25 DD  -264% expo 100% | ctl    -1.1bp t=+1.11
+  30min HUL default                  10672 tr (1580.2/ano,   0.23d) | bruto    -1.6bp liq    -2.6bp (win 37%) | CAGR  -40.2% vs B&H  +43.9% | Sh -0.74 DD  -389% expo 100% | ctl    -0.7bp t=-1.57
+  1h HUL default                     5181 tr (767.2/ano,   0.48d) | bruto    +3.2bp liq    +2.2bp (win 38%) | CAGR  +48.4% vs B&H  +43.9% | Sh +0.55 DD   -82% expo 100% | ctl    +0.2bp t=+0.67
+  4h HUL default                     1277 tr (189.1/ano,   1.92d) | bruto    +7.3bp liq    +6.1bp (win 39%) | CAGR   +7.5% vs B&H  +43.7% | Sh +0.10 DD  -188% expo 100% | ctl    -5.2bp t=+1.39
+  1D HUL default                      211 tr ( 31.3/ano,  11.36d) | bruto   +80.1bp liq   +77.1bp (win 40%) | CAGR  +23.9% vs B&H  +43.8% | Sh +0.30 DD   -85% expo  97% | ctl   +44.4bp t=+0.35
+
+### 2. TrendShift Supertrend + ADX
+  15min TSH default                  5433 tr (804.5/ano,   0.45d) | bruto    +1.2bp liq    +0.2bp (win 41%) | CAGR  +19.2% vs B&H  +43.8% | Sh +0.26 DD  -213% expo 100% | ctl    +0.2bp t=-0.02
+  30min TSH default                  2730 tr (404.2/ano,   0.90d) | bruto   -12.6bp liq   -13.6bp (win 39%) | CAGR  -31.5% vs B&H  +43.9% | Sh -0.51 DD  -299% expo 100% | ctl    +1.1bp t=-2.97
+  1h TSH default                     1368 tr (202.6/ano,   1.80d) | bruto   -16.7bp liq   -17.7bp (win 40%) | CAGR  -37.8% vs B&H  +43.9% | Sh -0.63 DD  -389% expo 100% | ctl    +6.8bp t=-2.56
+  4h TSH default                      361 tr ( 53.5/ano,   6.80d) | bruto   -15.9bp liq   -18.3bp (win 36%) | CAGR  -15.3% vs B&H  +43.7% | Sh -0.23 DD  -246% expo 100% | ctl    +4.9bp t=-0.66
+  1D TSH default                       64 tr (  9.5/ano,  38.11d) | bruto  -231.3bp liq  -217.8bp (win 36%) | CAGR  -12.5% vs B&H  +43.8% | Sh -0.18 DD  -266% expo  99% | ctl  -169.7bp t=-0.11
+
+### 3. Multi-MA
+  15min MMA default                  4306 tr (637.6/ano,   0.57d) | bruto    +8.3bp liq    +7.2bp (win 25%) | CAGR  +70.6% vs B&H  +43.8% | Sh +0.74 DD   -64% expo 100% | ctl    -1.4bp t=+2.77
+  30min MMA default                  1918 tr (284.0/ano,   1.28d) | bruto   +23.4bp liq   +22.2bp (win 27%) | CAGR  +86.9% vs B&H  +43.9% | Sh +0.86 DD   -78% expo 100% | ctl    +0.2bp t=+2.70
+  1h MMA default                      926 tr (137.1/ano,   2.66d) | bruto   +47.0bp liq   +45.6bp (win 28%) | CAGR  +65.2% vs B&H  +43.9% | Sh +0.70 DD   -84% expo 100% | ctl    +2.8bp t=+1.88
+  4h MMA default                      222 tr ( 32.9/ano,  11.00d) | bruto  +147.2bp liq  +143.1bp (win 27%) | CAGR  +46.9% vs B&H  +43.7% | Sh +0.53 DD   -57% expo  99% | ctl    -9.3bp t=+2.24
+  1D MMA default                       25 tr (  3.7/ano,  94.04d) | bruto +2025.5bp liq +1979.9bp (win 44%) | CAGR  +46.5% vs B&H  +43.8% | Sh +0.57 DD   -60% expo  95% | ctl  +427.2bp t=+1.20
+
+### 4. MAster Gold
+  15min GOLD default                 2954 tr (437.4/ano,   0.83d) | bruto   +10.0bp liq    +9.0bp (win 23%) | CAGR  +40.8% vs B&H  +43.8% | Sh +0.46 DD  -129% expo 100% | ctl    -1.4bp t=+2.46
+  30min GOLD default                 1229 tr (182.0/ano,   2.00d) | bruto   +22.4bp liq   +21.5bp (win 24%) | CAGR  +40.1% vs B&H  +43.9% | Sh +0.46 DD   -67% expo 100% | ctl    -3.0bp t=+1.91
+  1h GOLD default                     617 tr ( 91.4/ano,   3.99d) | bruto   +19.9bp liq   +19.4bp (win 25%) | CAGR   +7.6% vs B&H  +43.9% | Sh +0.10 DD  -147% expo 100% | ctl    -0.4bp t=+0.82
+  4h GOLD default                     106 tr ( 15.7/ano,  22.58d) | bruto  +319.3bp liq  +321.3bp (win 38%) | CAGR  +46.4% vs B&H  +43.7% | Sh +0.53 DD  -130% expo  97% | ctl   +44.4bp t=+1.43
+  1D GOLD default                      17 tr (  2.5/ano, 118.18d) | bruto +2371.8bp liq +2222.7bp (win 29%) | CAGR  +22.8% vs B&H  +43.8% | Sh +0.36 DD  -100% expo  82% | ctl +1135.3bp t=+0.57
+
+### 5. RSI Divergence x Ichimoku x 200EMA
+  15min RDI default                  1935 tr (286.5/ano,   0.99d) | bruto    +0.8bp liq    -0.3bp (win 53%) | CAGR   +0.4% vs B&H  +43.8% | Sh +0.01 DD  -126% expo  77% | ctl    +0.9bp t=-0.20
+  30min RDI default                  1022 tr (151.3/ano,   1.83d) | bruto    +4.4bp liq    +3.4bp (win 55%) | CAGR  +15.8% vs B&H  +43.9% | Sh +0.26 DD   -77% expo  76% | ctl    -8.0bp t=+1.09
+  1h RDI default                      547 tr ( 81.0/ano,   3.30d) | bruto    +4.1bp liq    +2.5bp (win 56%) | CAGR   +0.3% vs B&H  +43.9% | Sh +0.00 DD  -136% expo  73% | ctl    +1.3bp t=+0.04
+  4h RDI default                      136 tr ( 20.1/ano,  12.16d) | bruto  +173.9bp liq  +171.8bp (win 63%) | CAGR  +35.4% vs B&H  +43.7% | Sh +0.65 DD   -76% expo  67% | ctl    -7.5bp t=+1.72
+  1D RDI default                       25 tr (  3.7/ano,  63.52d) | bruto  +791.8bp liq  +700.5bp (win 72%) | CAGR  +34.0% vs B&H  +43.8% | Sh +0.61 DD   -69% expo  64% | ctl  +408.3bp t=+0.35
+
+### 6. Percent Trailing Stop
+  15min PTR default                  13914 tr (2060.3/ano,   0.18d) | bruto    -1.2bp liq    -2.2bp (win 35%) | CAGR  -28.4% vs B&H  +43.8% | Sh -0.46 DD  -346% expo 100% | ctl    -0.9bp t=-1.40
+  30min PTR default                  7127 tr (1055.3/ano,   0.35d) | bruto    +0.5bp liq    -0.6bp (win 35%) | CAGR   -0.4% vs B&H  +43.9% | Sh -0.01 DD  -134% expo 100% | ctl    -0.8bp t=+0.12
+  1h PTR default                     3441 tr (509.5/ano,   0.71d) | bruto    +6.3bp liq    +5.2bp (win 36%) | CAGR  +52.9% vs B&H  +43.9% | Sh +0.57 DD  -136% expo 100% | ctl    -1.4bp t=+1.50
+  4h PTR default                      841 tr (124.5/ano,   2.85d) | bruto   +15.7bp liq   +14.1bp (win 38%) | CAGR  +41.2% vs B&H  +43.7% | Sh +0.49 DD  -127% expo  97% | ctl    +3.1bp t=+0.58
+  1D PTR default                      127 tr ( 18.8/ano,  13.94d) | bruto  +119.4bp liq  +112.3bp (win 35%) | CAGR  +20.9% vs B&H  +43.8% | Sh +0.37 DD  -101% expo  72% | ctl   -18.9bp t=+1.28
+
+### 7. Multiple MACD RSI
+  15min MMR default                  7490 tr (1109.1/ano,   0.33d) | bruto    -3.9bp liq    -5.0bp (win 37%) | CAGR  -44.6% vs B&H  +43.8% | Sh -0.85 DD  -418% expo 100% | ctl    -0.7bp t=-2.09
+  30min MMR default                  3678 tr (544.6/ano,   0.67d) | bruto    +5.9bp liq    +4.7bp (win 39%) | CAGR  +22.0% vs B&H  +43.9% | Sh +0.28 DD  -140% expo 100% | ctl    +0.4bp t=+1.28
+  1h MMR default                     1812 tr (268.3/ano,   1.36d) | bruto    +7.3bp liq    +5.9bp (win 40%) | CAGR   +7.8% vs B&H  +43.9% | Sh +0.11 DD  -238% expo 100% | ctl    +0.3bp t=+1.02
+  4h MMR default                      451 tr ( 66.8/ano,   5.45d) | bruto   +39.2bp liq   +36.2bp (win 41%) | CAGR  +38.5% vs B&H  +43.7% | Sh +0.47 DD   -81% expo 100% | ctl   -11.1bp t=+1.70
+  1D MMR default                       68 tr ( 10.1/ano,  35.74d) | bruto  +234.7bp liq  +218.2bp (win 43%) | CAGR  +16.7% vs B&H  +43.8% | Sh +0.21 DD  -136% expo  99% | ctl   +31.6bp t=+0.68
+
+### 8. Gann Swing Oscillator
+  15min GSO default                  14000 tr (2073.0/ano,   0.18d) | bruto    +1.1bp liq    +0.1bp (win 39%) | CAGR   -9.3% vs B&H  +43.8% | Sh -0.14 DD  -187% expo 100% | ctl    -1.2bp t=+1.01
+  30min GSO default                  7127 tr (1055.3/ano,   0.35d) | bruto    -1.8bp liq    -2.8bp (win 38%) | CAGR   -7.5% vs B&H  +43.9% | Sh -0.11 DD  -145% expo 100% | ctl    -0.9bp t=-0.97
+  1h GSO default                     3656 tr (541.4/ano,   0.67d) | bruto    -1.2bp liq    -2.2bp (win 38%) | CAGR   +9.9% vs B&H  +43.9% | Sh +0.13 DD  -188% expo 100% | ctl    -0.5bp t=-0.41
+  4h GSO default                      923 tr (136.7/ano,   2.67d) | bruto    +6.3bp liq    +4.9bp (win 40%) | CAGR   +9.2% vs B&H  +43.7% | Sh +0.12 DD  -187% expo 100% | ctl    +0.5bp t=+0.25
+  1D GSO default                      141 tr ( 20.9/ano,  17.16d) | bruto    +1.4bp liq    -0.7bp (win 35%) | CAGR  +11.9% vs B&H  +43.8% | Sh +0.15 DD  -125% expo  98% | ctl   -11.3bp t=+0.07
+
+### 9. RSI of MACD (long-only)
+  15min ROM default                  1100 tr (162.9/ano,   1.43d) | bruto   +25.5bp liq   +20.3bp (win 42%) | CAGR  +29.5% vs B&H  +43.8% | Sh +0.49 DD   -96% expo  64% | ctl   +17.1bp t=+0.31
+  30min ROM default                   567 tr ( 84.0/ano,   2.77d) | bruto   +41.1bp liq   +31.8bp (win 42%) | CAGR  +16.0% vs B&H  +43.9% | Sh +0.30 DD   -97% expo  64% | ctl   +36.6bp t=-0.22
+  1h ROM default                      283 tr ( 41.9/ano,   5.13d) | bruto  +119.2bp liq  +102.9bp (win 44%) | CAGR  +43.2% vs B&H  +43.9% | Sh +0.84 DD   -76% expo  59% | ctl   +54.0bp t=+1.20
+  4h ROM default                       73 tr ( 10.8/ano,  21.39d) | bruto  +370.5bp liq  +305.6bp (win 52%) | CAGR  +22.1% vs B&H  +43.7% | Sh +0.46 DD  -113% expo  63% | ctl  +289.7bp t=+0.10
+  1D ROM default                       11 tr (  1.6/ano, 118.45d) | bruto +2850.7bp liq +2496.0bp (win 45%) | CAGR  +16.7% vs B&H  +43.8% | Sh +0.43 DD  -108% expo  53% | ctl +2918.5bp t=-0.19
+
+### 10. Optimized Trend Tracker
+  15min OTT default                  29013 tr (4296.1/ano,   0.08d) | bruto    -1.5bp liq    -2.5bp (win 34%) | CAGR  -56.1% vs B&H  +43.8% | Sh -1.20 DD  -573% expo 100% | ctl    -0.8bp t=-3.47
+  30min OTT default                  16153 tr (2391.8/ano,   0.15d) | bruto    -1.4bp liq    -2.4bp (win 34%) | CAGR  -50.1% vs B&H  +43.9% | Sh -1.01 DD  -498% expo 100% | ctl    -1.0bp t=-2.14
+  1h OTT default                     8899 tr (1317.7/ano,   0.28d) | bruto    -3.3bp liq    -4.3bp (win 33%) | CAGR  -45.7% vs B&H  +43.9% | Sh -0.87 DD  -426% expo 100% | ctl    -1.4bp t=-1.67
+  4h OTT default                     2500 tr (370.2/ano,   0.98d) | bruto    +8.0bp liq    +6.9bp (win 34%) | CAGR  +32.7% vs B&H  +43.7% | Sh +0.39 DD  -127% expo 100% | ctl    +0.7bp t=+0.98
+  1D OTT default                      469 tr ( 69.5/ano,   5.23d) | bruto   +35.0bp liq   +33.4bp (win 33%) | CAGR  +10.8% vs B&H  +43.8% | Sh +0.14 DD  -130% expo 100% | ctl   +15.7bp t=+0.46
+
+### 11. SuperIchi
+  15min SICH default                 1751 tr (259.3/ano,   0.49d) | bruto    +7.5bp liq    +6.4bp (win 36%) | CAGR  +16.0% vs B&H  +43.8% | Sh +0.42 DD   -88% expo  35% | ctl    -1.3bp t=+1.34
+  30min SICH default                  851 tr (126.0/ano,   0.96d) | bruto    +3.7bp liq    +2.6bp (win 36%) | CAGR   +6.8% vs B&H  +43.9% | Sh +0.20 DD  -160% expo  33% | ctl    -7.2bp t=+0.98
+  1h SICH default                     413 tr ( 61.2/ano,   2.09d) | bruto   +12.4bp liq   +10.9bp (win 35%) | CAGR  +10.8% vs B&H  +43.9% | Sh +0.35 DD   -56% expo  35% | ctl    +8.1bp t=+0.14
+  4h SICH default                      94 tr ( 13.9/ano,   8.52d) | bruto   +53.7bp liq   +47.0bp (win 36%) | CAGR   +4.8% vs B&H  +43.7% | Sh +0.18 DD  -126% expo  32% | ctl   -16.3bp t=+0.77
+  1D SICH default                      16 tr (  2.4/ano,  39.63d) | bruto  +333.0bp liq  +267.4bp (win 31%) | CAGR   +2.8% vs B&H  +43.8% | Sh +0.16 DD   -93% expo  26% | ctl  +207.9bp t=+0.10
+
+### 12. KALKI TFXBOT
+  15min KAL default                  3351 tr (496.2/ano,   0.16d) | bruto    +3.7bp liq    +2.7bp (win 27%) | CAGR   +3.0% vs B&H  +43.8% | Sh +0.12 DD   -57% expo  21% | ctl    -0.5bp t=+1.19
+  30min KAL default                  1651 tr (244.5/ano,   0.35d) | bruto    +6.7bp liq    +5.8bp (win 28%) | CAGR   +8.4% vs B&H  +43.9% | Sh +0.32 DD   -65% expo  24% | ctl    -2.1bp t=+1.91
+  1h KAL default                      742 tr (109.9/ano,   0.64d) | bruto    +1.3bp liq    +0.3bp (win 27%) | CAGR   -2.9% vs B&H  +43.9% | Sh -0.16 DD   -94% expo  19% | ctl    -0.9bp t=+0.13
+  4h KAL default                      184 tr ( 27.2/ano,   2.00d) | bruto   +10.4bp liq   +11.2bp (win 27%) | CAGR   +4.9% vs B&H  +43.7% | Sh +0.42 DD   -54% expo  15% | ctl    +3.3bp t=+0.22
+  1D KAL default                       44 tr (  6.5/ano,   8.50d) | bruto   -31.0bp liq   -36.1bp (win 25%) | CAGR   -4.7% vs B&H  +43.8% | Sh -0.47 DD   -62% expo  15% | ctl   +62.1bp t=-0.57
+
+### 13. 2x Universelle Linien
+  15min LIN default                  5919 tr (876.4/ano,   0.42d) | bruto    +2.6bp liq    +1.6bp (win 29%) | CAGR  +17.7% vs B&H  +43.8% | Sh +0.22 DD   -93% expo 100% | ctl    -1.0bp t=+1.68
+  30min LIN default                  2858 tr (423.2/ano,   0.86d) | bruto    +9.4bp liq    +8.3bp (win 31%) | CAGR  +41.1% vs B&H  +43.9% | Sh +0.48 DD  -124% expo 100% | ctl    +1.5bp t=+1.45
+  1h LIN default                     1398 tr (207.0/ano,   1.76d) | bruto   +17.1bp liq   +15.7bp (win 31%) | CAGR  +31.1% vs B&H  +43.9% | Sh +0.37 DD  -111% expo 100% | ctl    +0.2bp t=+1.19
+  4h LIN default                      358 tr ( 53.0/ano,   6.82d) | bruto   +41.1bp liq   +38.9bp (win 31%) | CAGR  +17.6% vs B&H  +43.7% | Sh +0.22 DD   -99% expo  99% | ctl    -4.1bp t=+0.91
+  1D LIN default                       57 tr (  8.4/ano,  40.88d) | bruto  +747.3bp liq  +739.2bp (win 42%) | CAGR  +37.0% vs B&H  +43.8% | Sh +0.44 DD   -94% expo  95% | ctl   -40.1bp t=+2.13
+
+### 14. Supertrend pullback
+  15min STPB default                  775 tr (114.8/ano,   0.24d) | bruto    +9.4bp liq    +8.4bp (win 55%) | CAGR   -3.1% vs B&H  +43.8% | Sh -0.37 DD   -64% expo   7% | ctl    -0.5bp t=+1.83
+  30min STPB default                  455 tr ( 67.4/ano,   0.23d) | bruto   +13.0bp liq   +11.8bp (win 56%) | CAGR   +0.8% vs B&H  +43.9% | Sh +0.16 DD   -31% expo   4% | ctl    -3.2bp t=+2.32
+  1h STPB default                     250 tr ( 37.0/ano,   0.29d) | bruto   +19.2bp liq   +18.1bp (win 60%) | CAGR   +5.4% vs B&H  +43.9% | Sh +1.78 DD    -9% expo   3% | ctl    +1.1bp t=+1.78
+  4h STPB default                      54 tr (  8.0/ano,   0.27d) | bruto   +11.1bp liq    +9.9bp (win 56%) | CAGR   +5.5% vs B&H  +43.7% | Sh +5.86 DD    -7% expo   1% | ctl    -0.9bp t=+0.44
+  1D STPB default                    (menos de 10 trades)
+
+### 15. Scalping Dips On Trend (long-only)
+  15min DIP default                   153 tr ( 22.7/ano,   2.39d) | bruto   +80.3bp liq   +72.1bp (win 80%) | CAGR   +7.9% vs B&H  +43.8% | Sh +0.44 DD   -84% expo  15% | ctl   +28.5bp t=+0.89
+  30min DIP default                   181 tr ( 26.8/ano,   2.89d) | bruto   +81.4bp liq   +71.8bp (win 81%) | CAGR  +15.6% vs B&H  +43.9% | Sh +0.66 DD   -71% expo  21% | ctl   +37.4bp t=+0.71
+  1h DIP default                      213 tr ( 31.5/ano,   3.58d) | bruto   +20.7bp liq    +9.0bp (win 76%) | CAGR   -6.1% vs B&H  +43.9% | Sh -0.23 DD  -127% expo  31% | ctl   +51.3bp t=-1.14
+  4h DIP default                      197 tr ( 29.2/ano,   5.16d) | bruto   +40.5bp liq   +24.1bp (win 76%) | CAGR   +0.3% vs B&H  +43.7% | Sh +0.01 DD   -78% expo  41% | ctl   +55.0bp t=-0.46
+  1D DIP default                      104 tr ( 15.4/ano,   8.54d) | bruto  +135.6bp liq  +109.1bp (win 79%) | CAGR  +14.0% vs B&H  +43.8% | Sh +0.49 DD   -47% expo  36% | ctl   +78.9bp t=+0.24
+
+### 16. Momentum BF
+  15min MBF default                  29036 tr (4299.5/ano,   0.08d) | bruto    -0.1bp liq    -1.1bp (win 30%) | CAGR  -36.4% vs B&H  +43.8% | Sh -0.63 DD  -420% expo 100% | ctl    -1.0bp t=-0.13
+  30min MBF default                  14588 tr (2160.1/ano,   0.17d) | bruto    +0.3bp liq    -0.7bp (win 31%) | CAGR   -0.6% vs B&H  +43.9% | Sh -0.01 DD  -105% expo 100% | ctl    -0.8bp t=+0.04
+  1h MBF default                     6843 tr (1013.3/ano,   0.36d) | bruto    +5.4bp liq    +4.4bp (win 33%) | CAGR  +11.0% vs B&H  +43.9% | Sh +0.14 DD  -239% expo 100% | ctl    -1.5bp t=+2.49
+  4h MBF default                     1645 tr (243.6/ano,   1.49d) | bruto   +11.1bp liq    +9.8bp (win 34%) | CAGR  +38.0% vs B&H  +43.7% | Sh +0.44 DD  -125% expo 100% | ctl    -1.6bp t=+1.07
+  1D MBF default                      300 tr ( 44.4/ano,   7.93d) | bruto   +69.2bp liq   +66.2bp (win 29%) | CAGR  +30.4% vs B&H  +43.8% | Sh +0.37 DD  -140% expo  97% | ctl   +25.0bp t=+0.63
+
+### 17. 1 min forex scalping
+  15min SCL default                  4624 tr (684.7/ano,   0.53d) | bruto    +4.5bp liq    +3.4bp (win 31%) | CAGR  +20.2% vs B&H  +43.8% | Sh +0.24 DD   -90% expo 100% | ctl    -0.2bp t=+1.77
+  30min SCL default                  2320 tr (343.5/ano,   1.06d) | bruto    +5.0bp liq    +3.9bp (win 33%) | CAGR  +19.8% vs B&H  +43.9% | Sh +0.25 DD  -129% expo 100% | ctl    +0.1bp t=+0.57
+  1h SCL default                     1108 tr (164.1/ano,   2.22d) | bruto   +11.2bp liq    +9.9bp (win 33%) | CAGR  +13.8% vs B&H  +43.9% | Sh +0.18 DD  -146% expo 100% | ctl    -1.7bp t=+0.92
+  4h SCL default                      290 tr ( 42.9/ano,   8.42d) | bruto   +53.9bp liq   +51.3bp (win 34%) | CAGR  +11.1% vs B&H  +43.7% | Sh +0.14 DD  -133% expo  99% | ctl   +23.5bp t=+0.48
+  1D SCL default                       43 tr (  6.4/ano,  54.26d) | bruto  +926.6bp liq  +927.0bp (win 47%) | CAGR  +39.4% vs B&H  +43.8% | Sh +0.47 DD  -120% expo  95% | ctl   +87.6bp t=+1.47
+
+### 18. LunaOwl suporte/resistencia
+  15min LSR default                  1884 tr (279.0/ano,   1.31d) | bruto    -6.5bp liq    -7.7bp (win 33%) | CAGR  -15.5% vs B&H  +43.8% | Sh -0.23 DD  -250% expo 100% | ctl    -1.3bp t=-0.84
+  30min LSR default                   862 tr (127.6/ano,   2.85d) | bruto    +9.0bp liq    +7.4bp (win 34%) | CAGR   +6.2% vs B&H  +43.9% | Sh +0.08 DD  -148% expo 100% | ctl    +0.6bp t=+0.38
+  1h LSR default                      408 tr ( 60.4/ano,   6.03d) | bruto   +79.5bp liq   +76.5bp (win 38%) | CAGR  +52.8% vs B&H  +43.9% | Sh +0.58 DD  -106% expo 100% | ctl   +19.4bp t=+1.50
+  4h LSR default                      100 tr ( 14.8/ano,  24.25d) | bruto  +297.4bp liq  +289.5bp (win 37%) | CAGR  +29.0% vs B&H  +43.7% | Sh +0.35 DD  -107% expo  98% | ctl    -8.1bp t=+1.77
+  1D LSR default                       14 tr (  2.1/ano, 163.93d) | bruto +3644.1bp liq +3511.9bp (win 43%) | CAGR  +29.5% vs B&H  +43.8% | Sh +0.40 DD  -148% expo  93% | ctl  +153.9bp t=+1.98
+
+### 19. RSI Buy and Sell (long-only)
+  15min RBS default                   800 tr (118.5/ano,   1.56d) | bruto   +30.2bp liq   +24.5bp (win 37%) | CAGR  +19.0% vs B&H  +43.8% | Sh +0.41 DD   -84% expo  51% | ctl   +18.3bp t=+0.49
+  30min RBS default                   442 tr ( 65.4/ano,   2.93d) | bruto   +60.8bp liq   +51.0bp (win 38%) | CAGR  +27.3% vs B&H  +43.9% | Sh +0.60 DD   -93% expo  53% | ctl   +32.8bp t=+0.73
+  1h RBS default                      221 tr ( 32.7/ano,   5.66d) | bruto  +156.5bp liq  +138.6bp (win 43%) | CAGR  +38.5% vs B&H  +43.9% | Sh +0.87 DD   -67% expo  51% | ctl   +72.3bp t=+1.53
+  4h RBS default                       68 tr ( 10.1/ano,  18.82d) | bruto  +347.9bp liq  +290.7bp (win 35%) | CAGR  +18.6% vs B&H  +43.7% | Sh +0.48 DD   -86% expo  52% | ctl  +136.6bp t=+0.98
+  1D RBS default                       10 tr (  1.5/ano, 144.60d) | bruto +4359.0bp liq +3926.1bp (win 40%) | CAGR  +17.4% vs B&H  +43.8% | Sh +0.36 DD   -98% expo  59% | ctl +1598.5bp t=+1.28
+
+### 20. Harmonic System
+  15min HMS default                  29890 tr (4425.9/ano,   0.08d) | bruto    -0.6bp liq    -1.5bp (win 40%) | CAGR  -36.9% vs B&H  +43.8% | Sh -0.65 DD  -324% expo 100% | ctl    -1.1bp t=-0.65
+  30min HMS default                  15102 tr (2236.2/ano,   0.16d) | bruto    -1.4bp liq    -2.2bp (win 41%) | CAGR  -29.1% vs B&H  +43.9% | Sh -0.49 DD  -336% expo 100% | ctl    -1.9bp t=-0.40
+  1h HMS default                     7577 tr (1122.0/ano,   0.33d) | bruto    -0.7bp liq    -1.4bp (win 41%) | CAGR   -6.0% vs B&H  +43.9% | Sh -0.08 DD  -176% expo 100% | ctl    -2.9bp t=+0.74
+  4h HMS default                     1885 tr (279.1/ano,   1.31d) | bruto   -11.0bp liq   -10.7bp (win 40%) | CAGR  -28.3% vs B&H  +43.7% | Sh -0.45 DD  -295% expo 100% | ctl    -8.0bp t=-0.43
+  1D HMS default                      292 tr ( 43.3/ano,   8.36d) | bruto  -107.0bp liq  -100.0bp (win 34%) | CAGR  -25.8% vs B&H  +43.8% | Sh -0.41 DD  -246% expo  99% | ctl   -44.3bp t=-1.21
+
+=== resumo btc (391 celulas) ===
+  dip      20 cel | liq>0   20 | liq>0 e t>2   3 | CAGR>B&H   0 | melhor CAGR +17.1%
+  gold     19 cel | liq>0   19 | liq>0 e t>2   3 | CAGR>B&H   2 | melhor CAGR +46.4%
+  gso      20 cel | liq>0   16 | liq>0 e t>2   0 | CAGR>B&H   0 | melhor CAGR +24.3%
+  hms      20 cel | liq>0    5 | liq>0 e t>2   0 | CAGR>B&H   0 | melhor CAGR +12.5%
+  hul      20 cel | liq>0   16 | liq>0 e t>2   1 | CAGR>B&H   3 | melhor CAGR +56.3%
+  kal      20 cel | liq>0   13 | liq>0 e t>2   0 | CAGR>B&H   0 | melhor CAGR +8.4%
+  lin      19 cel | liq>0   19 | liq>0 e t>2   2 | CAGR>B&H   1 | melhor CAGR +50.1%
+  lsr      17 cel | liq>0   16 | liq>0 e t>2   0 | CAGR>B&H   1 | melhor CAGR +52.8%
+  mbf      20 cel | liq>0   16 | liq>0 e t>2   2 | CAGR>B&H   3 | melhor CAGR +63.3%
+  mma      19 cel | liq>0   19 | liq>0 e t>2   8 | CAGR>B&H  13 | melhor CAGR +86.9%
+  mmr      20 cel | liq>0   16 | liq>0 e t>2   0 | CAGR>B&H   0 | melhor CAGR +38.5%
+  ott      20 cel | liq>0   11 | liq>0 e t>2   0 | CAGR>B&H   0 | melhor CAGR +39.3%
+  ptr      20 cel | liq>0   14 | liq>0 e t>2   0 | CAGR>B&H   1 | melhor CAGR +52.9%
+  rbs      20 cel | liq>0   20 | liq>0 e t>2   1 | CAGR>B&H   0 | melhor CAGR +38.8%
+  rdi      20 cel | liq>0   18 | liq>0 e t>2   0 | CAGR>B&H   1 | melhor CAGR +46.5%
+  rom      20 cel | liq>0   19 | liq>0 e t>2   0 | CAGR>B&H   0 | melhor CAGR +43.2%
+  scl      19 cel | liq>0   19 | liq>0 e t>2   0 | CAGR>B&H   0 | melhor CAGR +39.4%
+  sich     20 cel | liq>0   19 | liq>0 e t>2   0 | CAGR>B&H   0 | melhor CAGR +26.2%
+  stpb     18 cel | liq>0   18 | liq>0 e t>2   1 | CAGR>B&H   0 | melhor CAGR +5.5%
+  tsh      20 cel | liq>0   12 | liq>0 e t>2   0 | CAGR>B&H   2 | melhor CAGR +66.5%
+
+  top 15 por CAGR:
+est    TF          cfg  trades  por_ano  bp_bruto   bp_liq   win  cagr    bh  sharpe     dd  expo  ctl_bp     t
+mma 30min    l66 ambos    1918  284.006    23.427   22.238 0.265 0.869 0.439   0.861 -0.785 0.999   0.171 2.699
+mma    4h   l150 ambos      86   12.735   729.266  722.530 0.326 0.836 0.437   0.844 -0.986 0.972  85.123 3.257
+mma 15min    l66 ambos    4306  637.605     8.262    7.199 0.247 0.706 0.438   0.744 -0.638 1.000  -1.409 2.767
+tsh    4h     m3 ambos     163   24.138   246.947  244.497 0.509 0.665 0.437   0.700 -1.166 0.996  17.351 1.568
+mma    1h    l66 ambos     926  137.118    47.014   45.620 0.276 0.652 0.439   0.697 -0.836 0.999   2.798 1.881
+mma 15min   l150 ambos    1922  284.598    23.554   22.349 0.255 0.643 0.438   0.671 -0.737 0.999  -1.760 3.840
+mbf 30min    l36 ambos    9899 1465.787     3.314    2.288 0.310 0.633 0.439   0.682 -1.121 0.999  -0.795 2.469
+mbf    1D    l36 ambos     180   26.664   316.788  311.143 0.361 0.624 0.438   0.681 -0.825 0.957  65.612 1.737
+hul    1h   z100 ambos    3544  524.780     8.263    7.235 0.365 0.563 0.439   0.618 -0.887 0.998  -0.918 1.504
+mma 30min     l66 long     959  142.003    42.782   37.758 0.269 0.553 0.439   1.033 -0.967 0.524  16.315 2.392
+ptr    1h   t10% ambos    3441  509.528     6.257    5.174 0.363 0.529 0.439   0.575 -1.359 0.997  -1.384 1.502
+lsr    1h   lb50 ambos     408   60.415    79.524   76.463 0.377 0.528 0.439   0.580 -1.059 0.998  19.388 1.504
+lin    4h 50/200 ambos      87   12.883   465.264  460.832 0.333 0.501 0.437   0.569 -0.792 0.960  11.341 1.615
+mma    4h    l150 long      43    6.368  1334.198 1244.245 0.349 0.495 0.437   1.135 -0.828 0.520 267.531 3.139
+hul    1h    z50 ambos    5181  767.179     3.177    2.160 0.383 0.484 0.439   0.554 -0.821 0.999   0.179 0.669
+
+  top 10 por t:
+ est    TF          cfg  trades  por_ano  bp_bruto   bp_liq   win  cagr    bh  sharpe     dd  expo  ctl_bp     t
+ mma 15min   l150 ambos    1922  284.598    23.554   22.349 0.255 0.643 0.438   0.671 -0.737 0.999  -1.760 3.840
+ mma    4h   l150 ambos      86   12.735   729.266  722.530 0.326 0.836 0.437   0.844 -0.986 0.972  85.123 3.257
+ mma    4h    l150 long      43    6.368  1334.198 1244.245 0.349 0.495 0.437   1.135 -0.828 0.520 267.531 3.139
+ dip 15min      d4 tp3%      34    5.035   194.041  189.370 0.824 0.060 0.438   1.784 -0.207 0.017   8.343 3.101
+ mma 15min    l66 ambos    4306  637.605     8.262    7.199 0.247 0.706 0.438   0.744 -0.638 1.000  -1.409 2.767
+ mma 30min    l66 ambos    1918  284.006    23.427   22.238 0.265 0.869 0.439   0.861 -0.785 0.999   0.171 2.699
+ hul 30min   z100 ambos    7357 1089.382     4.315    3.312 0.352 0.330 0.439   0.399 -0.847 0.999  -1.354 2.519
+ mbf    1h    l18 ambos    6843 1013.281     5.406    4.367 0.325 0.110 0.439   0.143 -2.385 0.999  -1.489 2.488
+ mbf 30min    l36 ambos    9899 1465.787     3.314    2.288 0.310 0.633 0.439   0.682 -1.121 0.999  -0.795 2.469
+gold 15min 182/60 ambos    2954  437.410     9.973    9.039 0.230 0.408 0.438   0.464 -1.290 0.999  -1.407 2.459

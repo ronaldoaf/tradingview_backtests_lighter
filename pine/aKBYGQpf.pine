@@ -1,0 +1,185 @@
+// This source code is subject to the terms of the Mozilla Public License 2.0 at https://mozilla.org/MPL/2.0/
+// © thequantscience
+
+//@version=6
+strategy("Ichimoku Backtesting Algorithm | Tenkan-Kijun | Price-Kijun| Kumo Breakout | Kumo Twist [The Quant Science]", 
+             overlay = true,
+             default_qty_type = strategy.percent_of_equity, 
+             default_qty_value = 10,
+             currency = currency.USDT, 
+             initial_capital = 10000, 
+             commission_type = strategy.commission.percent, 
+             commission_value = 0.10,
+             slippage = 3,
+             process_orders_on_close = true)
+
+tenkan_sen_length = input.int(9, minval=1, title="Tenkan Sen Length", group = "Settings")
+kijun_sen_length = input.int(26, minval=1, title="Kjun Sen Length", group = "Settings")
+leading_span_length = input.int(52, minval=1, title="Leading Span B Length", group = "Settings")
+lagging_span_lenght = input.int(26, minval=1, title="Lagging Span", group = "Settings")
+position_sizing = input.int(10, minval=1, maxval = 90, title="Position Sizing %", group = "Settings")
+
+tenkan_sen_kijun_sen = input.bool(true, title = "Tenkan Sen - Kijun Sen Strategy", group = "Tenkan Sen - Kijun Sen Strategy Configuration")
+price_kijun = input.bool(false, title = "Price - Kijun Sen Strategy", group = "Price - Kijun Sen Strategy Configuration")
+kumo_breakout = input.bool(false, title = "Kumo Breakout Strategy", group = "Kumo Breakout Strategy Configuration")
+kumo_twist = input.bool(false, title = "Kumo Twist Strategy", group = "Kumo Twist Strategy Configuration")
+stop_loss = input.float(defval = 1, minval = 0.01, step = 0.01, maxval = 500, title = "Stop Loss", group = "Kumo Breakout Strategy Configuration" )
+take_profit = input.float(defval = 1, minval = 0.01, step = 0.01, maxval = 500, title = "Take Profit", group = "Kumo Breakout Strategy Configuration")
+
+donchian(len) => math.avg(ta.lowest(len), ta.highest(len))
+
+tenkan_sen = donchian(tenkan_sen_length)
+kjun_sen = donchian(kijun_sen_length)
+leading_span = math.avg(tenkan_sen, kjun_sen)
+lagging_span = donchian(leading_span_length)
+
+adj_leading_span = leading_span[lagging_span_lenght -1]
+adj_lagging_span = lagging_span[lagging_span_lenght -1]
+
+// 1. Crossover Tenkan Sen - Kijun Sen 
+price_over_kumo = close > adj_leading_span
+price_under_kumo = close < adj_lagging_span
+price_in_kumo = close > adj_leading_span and close < adj_lagging_span
+
+strong_xover_tenkan_kijun = ta.crossover(tenkan_sen, kjun_sen) and price_over_kumo
+neutro_xover_tenkan_kijun = ta.crossover(tenkan_sen, kjun_sen) and price_in_kumo
+light_xover_tenkan_kijun = ta.crossover(tenkan_sen, kjun_sen) and price_under_kumo
+
+SelectTenkanKijun(type) =>
+
+	switch type 
+		"Strong Crossover Tenkan Sen - Kijun Sen" => strong_xover_tenkan_kijun
+		"Neutro Crossover Tenkan Sen - Kijun Sen" => neutro_xover_tenkan_kijun
+		"Weak Crossover Tenkan Sen - Kijun Sen"  => light_xover_tenkan_kijun		
+
+type_input = input.string(
+     "Strong Crossover Tenkan Sen - Kijun Sen",
+     title = "Select strategy: ",
+     options = ["Strong Crossover Tenkan Sen - Kijun Sen", "Neutro Crossover Tenkan Sen - Kijun Sen", "Weak Crossover Tenkan Sen - Kijun Sen" ],
+     tooltip = "",
+     group = "Tenkan Sen - Kijun Sen Strategy Configuration"
+     )
+
+select_tenkan_kijun = SelectTenkanKijun(type_input)
+
+// 2. Crossover Price - Kijun Sen 
+strong_xover_price_kijun = ta.crossover(close, kjun_sen) and price_over_kumo
+neutro_xover_price_kijun = ta.crossover(close, kjun_sen) and price_in_kumo
+light_xover_price_kijun = ta.crossover(close, kjun_sen) and price_under_kumo
+
+SelectPriceKijun(type) =>
+
+	switch type 
+		"Strong Crossover Price - Kijun Sen" => strong_xover_price_kijun
+		"Neutro Crossover Price - Kijun Sen" => neutro_xover_price_kijun
+		"Weak Crossover Price - Kijun Sen"  => light_xover_price_kijun		
+
+type_input_2 = input.string(
+     "Strong Crossover Price - Kijun Sen",
+     title = "Select strategy: ",
+     options = ["Strong Crossover Price - Kijun Sen", "Neutro Crossover Price - Kijun Sen", "Weak Crossover Price - Kijun Sen" ],
+     tooltip = "",
+     group = "Price - Kijun Sen Strategy Configuration"
+     )
+
+select_price_kijun = SelectPriceKijun(type_input_2)
+
+// 4. Kumo Twist 
+strong_kumo_twist = ta.crossover(adj_leading_span, adj_lagging_span) and price_over_kumo
+light_kumo_twist = ta.crossover(adj_leading_span, adj_lagging_span) and price_under_kumo
+
+SelectKumoTwist(type) =>
+
+	switch type 
+		"Strong Crossover Kumo Twist" => strong_kumo_twist
+		"Weak Crossover Kumo Twist" => light_kumo_twist		
+
+type_input_3 = input.string(
+     "Strong Crossover Kumo Twist",
+     title = "Select strategy: ",
+     options = ["Strong Crossover Kumo Twist", "Weak Crossover Kumo Twist" ],
+     tooltip = "",
+     group = "Kumo Twist Strategy Configuration"
+     )
+
+select_kumo_twist = SelectKumoTwist(type_input_3)
+
+capital_invested = ((strategy.initial_capital * position_sizing) / 100)
+
+var float entry_price_tenkan_kijun = 0
+var float exit_price_tenkan_kijun = 0
+close_tenkan_kijun = ta.crossunder(tenkan_sen, kjun_sen)
+if (select_tenkan_kijun and tenkan_sen_kijun_sen == true and strategy.opentrades == 0)
+    entry_price_tenkan_kijun := close 
+    strategy.entry(id = "Tenkan Kijun Open", direction = strategy.long, qty = capital_invested / entry_price_tenkan_kijun, limit = entry_price_tenkan_kijun)
+if (close_tenkan_kijun and tenkan_sen_kijun_sen == true)
+    exit_price_tenkan_kijun := close
+    strategy.exit(id = "Tenkan Kijun Closing", from_entry = "Tenkan Kijun Open", stop = exit_price_tenkan_kijun)
+
+var float entry_price_tenkan_price = 0
+var float exit_price_tenkan_price = 0
+close_price_kijun = ta.crossunder(close,kjun_sen)
+if (select_price_kijun and price_kijun == true and strategy.opentrades == 0)
+    entry_price_tenkan_price := close 
+    strategy.entry(id = "Price Kijun Open", direction = strategy.long, qty = capital_invested / entry_price_tenkan_price, limit = entry_price_tenkan_price)
+if (close_price_kijun and price_kijun == true)
+    exit_price_tenkan_price := close 
+    strategy.exit(id = "Price Kijun Closing", from_entry = "Price Kijun Open", limit = exit_price_tenkan_price)
+
+var float entry_price_kumobrk = 0
+var float take_profit_kumobrk_price = 0
+var float stop_loss_kumobrk_price = 0
+kumo_breakout_ = (ta.crossover(close, adj_leading_span) and close > adj_leading_span and close > adj_lagging_span)
+if (kumo_breakout_ and kumo_breakout == true and strategy.opentrades == 0)
+    entry_price_kumobrk := close
+    strategy.entry(id = "Kumo Breakout Open", direction = strategy.long, qty = capital_invested / entry_price_kumobrk, limit = entry_price_kumobrk)
+    take_profit_kumobrk_price := (entry_price_kumobrk + ((entry_price_kumobrk * take_profit) / 100))
+    stop_loss_kumobrk_price := (entry_price_kumobrk - ((entry_price_kumobrk * stop_loss) / 100))
+kumo_breakout_exit_condition_take_profit = ta.crossover(close, take_profit_kumobrk_price)
+kumo_breakout_exit_condition_stop_loss = ta.crossunder(close, stop_loss_kumobrk_price)
+if (kumo_breakout == true and kumo_breakout_exit_condition_take_profit)
+    strategy.exit(id = "Kumo Breakout Take Profit", from_entry = "Kumo Breakout Open", limit = take_profit_kumobrk_price, stop = take_profit_kumobrk_price)
+if (kumo_breakout == true and kumo_breakout_exit_condition_stop_loss)
+    strategy.exit(id = "Kumo Breakout Stop Loss", from_entry = "Kumo Breakout Open", limit = stop_loss_kumobrk_price, stop = stop_loss_kumobrk_price)
+
+var float entry_price_kumo_twist = 0
+var float exit_price_kumo_twist = 0
+close_kumo_twist = (ta.crossunder(adj_leading_span, adj_lagging_span) and adj_leading_span < adj_lagging_span)
+if (select_kumo_twist and kumo_twist == true and strategy.opentrades == 0)
+    entry_price_kumo_twist := close 
+    strategy.entry(id = "Kumo Twist Open", direction = strategy.long, qty = capital_invested / entry_price_kumo_twist, limit = entry_price_kumo_twist)
+if (close_kumo_twist and kumo_twist == true)
+    exit_price_kumo_twist := close 
+    strategy.exit(id = "Kumo Twist Close", from_entry = "Kumo Twist Open", stop = exit_price_kumo_twist)
+
+color COLOR_GREEN_FLUO = #00FF66
+color COLOR_RED_FLUO   = #FF0055
+color color_tenkan_dyn = tenkan_sen > kjun_sen ? COLOR_GREEN_FLUO : COLOR_RED_FLUO
+color color_kijun_dyn  = kjun_sen > tenkan_sen ? COLOR_RED_FLUO : COLOR_GREEN_FLUO
+
+plot(tenkan_sen, color=color_tenkan_dyn, linewidth=tenkan_sen_kijun_sen ? 3 : 2, title="Tenkan Sen")
+plot(kjun_sen, color=color.new(color_kijun_dyn, 30), linewidth=(tenkan_sen_kijun_sen or price_kijun) ? 3 : 1, title="Kijun Sen")
+plot(close, offset=-lagging_span_lenght + 1, color=color.new(COLOR_GREEN_FLUO, 85), linewidth=1, title="Chikou Span")
+
+bool kumo_bull = leading_span > lagging_span
+float kumo_spread = math.abs(leading_span - lagging_span)
+float max_spread   = ta.sma(kumo_spread, 100) * 5
+color kumo_green_grad = color.from_gradient(kumo_spread, 0, max_spread, color.new(COLOR_GREEN_FLUO, 90), color.new(COLOR_GREEN_FLUO, 50))
+color kumo_red_grad   = color.from_gradient(kumo_spread, 0, max_spread, color.new(COLOR_RED_FLUO, 90), color.new(COLOR_RED_FLUO, 50))
+color kumo_fill = kumo_bull ? kumo_green_grad : kumo_red_grad
+
+p1 = plot(leading_span, offset=lagging_span_lenght - 1, color=color.new(COLOR_GREEN_FLUO, 40), linewidth=1, title="Senkou Span A")
+p2 = plot(lagging_span, offset=lagging_span_lenght - 1, color=color.new(COLOR_RED_FLUO, 40), linewidth=1, title="Senkou Span B")
+fill(p1, p2, color=kumo_fill, title="Kumo Cloud Gradient")
+
+counter_error = 0
+if tenkan_sen_kijun_sen == true 
+    counter_error := counter_error + 1
+if price_kijun == true 
+    counter_error := counter_error + 1
+if kumo_breakout == true 
+    counter_error := counter_error + 1
+if kumo_twist == true 
+    counter_error := counter_error + 1
+if (counter_error >= 2)
+    runtime.error("Too much activated strategies, please activate only one strategy at time.")

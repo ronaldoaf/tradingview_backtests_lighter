@@ -100,6 +100,26 @@ Todas reprovadas, exceto a candidata indicada. Ordem cronológica inversa.
 
 | # | Estratégia (autor, id do script) | Doc | Diagnóstico |
 | --- | --- | --- | --- |
+| 363 | Harmonic System (`WG8oLdFX`) | [LOTE30_TV](docs/LOTE30_TV.md) | nada robusto |
+| 362 | RSI Buy and Sell (long-only) (`Z59QoZWN`) | [LOTE30_TV](docs/LOTE30_TV.md) | nada robusto |
+| 361 | LunaOwl suporte/resistencia (`dC2MG4Dj`) | [LOTE30_TV](docs/LOTE30_TV.md) | nada robusto |
+| 360 | 1 min forex scalping (`WlJVt2vS`) | [LOTE30_TV](docs/LOTE30_TV.md) | nada robusto |
+| 359 | Momentum BF (`xd2U2Gho`) | [LOTE30_TV](docs/LOTE30_TV.md) | nada robusto |
+| 358 | Scalping Dips On Trend (long-only) (`iHHO0PJA`) | [LOTE30_TV](docs/LOTE30_TV.md) | nada robusto |
+| 357 | Supertrend pullback (`kRMAa3JF`) | [LOTE30_TV](docs/LOTE30_TV.md) | nada robusto |
+| 356 | 2x Universelle Linien (`mpwbMiL9`) | [LOTE30_TV](docs/LOTE30_TV.md) | quase (ETH 30m, terço 1) |
+| 355 | KALKI TFXBOT (`gFMT7BUb`) | [LOTE30_TV](docs/LOTE30_TV.md) | nada robusto |
+| 354 | SuperIchi (`hTdfAu3p`) | [LOTE30_TV](docs/LOTE30_TV.md) | nada robusto |
+| 353 | Optimized Trend Tracker (`ycDUERPO`) | [LOTE30_TV](docs/LOTE30_TV.md) | nada robusto |
+| 352 | RSI of MACD (long-only) (`WfaaCqaN`) | [LOTE30_TV](docs/LOTE30_TV.md) | nada robusto |
+| 351 | Gann Swing Oscillator (`FTT9zMVm`) | [LOTE30_TV](docs/LOTE30_TV.md) | quase (WTI 1h, terço 2) |
+| 350 | Multiple MACD RSI (`0bqo8tHC`) | [LOTE30_TV](docs/LOTE30_TV.md) | nada robusto |
+| 349 | Percent Trailing Stop (`bVkqAx0s`) | [LOTE30_TV](docs/LOTE30_TV.md) | quase (ETH 1h, terço 1) |
+| 348 | RSI Divergence x Ichimoku x 200EMA (`IDBU7W3o`) | [LOTE30_TV](docs/LOTE30_TV.md) | quase (WTI 4h, terço 2) |
+| 347 | MAster Gold (`9morbD5t`) | [LOTE30_TV](docs/LOTE30_TV.md) | nada robusto |
+| 346 | Multi-MA (`34lAHcyo`) | [LOTE30_TV](docs/LOTE30_TV.md) | **aprovada (ETH 15m e 4h, BTC 4h)** |
+| 345 | TrendShift Supertrend + ADX (`TbK1rB5B`) | [LOTE30_TV](docs/LOTE30_TV.md) | quase (BTC e ETH 4h, terço 1) |
+| 344 | Hull MA and Candle cross (`PDt7xwn2`) | [LOTE30_TV](docs/LOTE30_TV.md) | nada robusto |
 | 343 | Channel Break (free bot) (`8vuKM6ZP`) | [LOTE29_TV](docs/LOTE29_TV.md) | nada robusto |
 | 342 | Volume fight (`alrI0TBw`) | [LOTE29_TV](docs/LOTE29_TV.md) | nada robusto |
 | 341 | BTC WaveTrend R:R (long-only) (`P1BEGIzN`) | [LOTE29_TV](docs/LOTE29_TV.md) | nada robusto |

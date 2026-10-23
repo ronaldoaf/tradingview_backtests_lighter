@@ -176,6 +176,30 @@ Convenções: sinal no fechamento, ordem na abertura seguinte, custo de spread +
 - **Robustez:** terços −16/+115/+32% vs −19/+35/+8%; 2ª metade +25% vs +3%; custo 4× +21%.
 - **Ressalvas:** parâmetros diferentes do padrão (EMA 3/33 também fica acima do B&H, +18%); o ganho se concentra no 2º terço; t baixo.
 
+## 22. Multi-MA — ETH 15m (lote 30, aprovada com ressalva)
+
+- **Script:** `34lAHcyo` · [LOTE30_TV](LOTE30_TV.md) · `scripts/study_tvlote30.py`
+- **Regra:** VWMA, RMA, SMA, WMA e EMA do mesmo período todas subindo compra, todas caindo vende; inverte. Período 150 (o padrão é 66).
+- **Resultado:** +152% a.a. vs +57%; t = 3,9; 284 trades/ano.
+- **Robustez:** terços +496/+29/+106% vs +330/+1/−11%; 2ª metade +76% vs +13%; custo 4× +132%.
+- **Ressalvas:** sempre posicionado; parâmetro diferente do padrão; correlacionada com as §23 e §24.
+
+## 23. Multi-MA — ETH 4h (lote 30, aprovada com ressalva)
+
+- **Script:** `34lAHcyo` · [LOTE30_TV](LOTE30_TV.md) · `scripts/study_tvlote30.py`
+- **Regra:** VWMA, RMA, SMA, WMA e EMA do mesmo período todas subindo compra, todas caindo vende; inverte. Período 66 (o padrão do script).
+- **Resultado:** +129% a.a. vs +57%; t = 3,0; 30 trades/ano.
+- **Robustez:** terços +338/+67/+38% vs +328/+0/−11%; 2ª metade +30% vs +13%; custo 4× +127%.
+- **Ressalvas:** o 1º terço passa por apenas 10 p.p.; mesma ideia da §22.
+
+## 24. Multi-MA — BTC 4h (lote 30, aprovada com ressalva)
+
+- **Script:** `34lAHcyo` · [LOTE30_TV](LOTE30_TV.md) · `scripts/study_tvlote30.py`
+- **Regra:** VWMA, RMA, SMA, WMA e EMA do mesmo período todas subindo compra, todas caindo vende; inverte. Período 150 (o padrão é 66).
+- **Resultado:** +84% a.a. vs +44%; t = 3,3; 13 trades/ano.
+- **Robustez:** terços +189/+69/+18% vs +129/+15/+14%; 2ª metade +47% vs +40%; custo 4× +83%.
+- **Ressalvas:** poucos trades (86 no total); o 3º terço e a 2ª metade passam por pouco.
+
 ## Correlação entre as candidatas do ETH
 
 `scripts/study_eth_corr.py` → `results/study_eth_corr.txt`. Correlação dos retornos diários entre as cinco candidatas do ETH vai de 0,29 a 0,72; com o B&H do ETH fica perto de zero. Ficam na mesma direção 62% a 81% do tempo. Pares mais parecidos: RSI-MA × Ichimoku (0,72) e RSI-MA × Pivot ST (0,66). UT Bot e Scalping são os mais diferentes. A carteira com peso igual nas cinco cai o DD para cerca de −39% (vs −55% a −74% de cada uma, na marcação diária aproximada).

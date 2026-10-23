@@ -1,0 +1,36 @@
+
+strategy(title = "Inverse Fisher RSI-MTF2", shorttitle="INRSIM2",overlay=true)
+//Inputs
+RSI_pm = input(5, title="RSI Main Period",minval=2)
+RSI_ps = input(1, title="RSI Smooth Period",minval=0)
+
+//Functions
+IF(input)=>(exp(2*input)-1)/(exp(2*input)+1)
+
+//RSI Calculation
+raw_RSI=0.1*(rsi(close,RSI_pm)-50)
+wma_RSI=wma(raw_RSI,RSI_ps)*100
+IF_RSI = IF(wma_RSI)
+
+resCustom = input(title="Timeframe", type=resolution, defval="1440" )
+v=security(tickerid, resCustom,IF_RSI)
+a=v>0.8
+b=v<-0.8
+
+z=0.8
+buy = crossover(v,z)
+sell=crossunder(v,b)
+ 
+plotshape(sell, title="sell", style=shape.triangledown,location=location.abovebar, color=red, transp=0, size=size.small)
+plotshape(buy,  title="buy", style=shape.triangleup,location=location.belowbar, color=green, transp=0, size=size.small)
+
+
+//Strategy
+golong =  crossover(v,z)
+goshort =  crossunder(v,b)
+
+strategy.entry("Buy",strategy.long,when = golong)
+strategy.entry("Sell",strategy.short,when = goshort)
+
+
+
