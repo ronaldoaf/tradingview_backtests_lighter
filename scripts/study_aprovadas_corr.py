@@ -58,14 +58,22 @@ EST = [
 
 
 def daily(tr, base):
-    """Retorno diario de uma lista de trades marcada nas barras de base (close a close)."""
-    idx = base.index; p = np.zeros(len(idx) + 1)
-    a = idx.searchsorted(pd.DatetimeIndex(tr.t_in)); b = idx.searchsorted(pd.DatetimeIndex(tr.t_out))
-    np.add.at(p, a, tr.d.to_numpy(float)); np.add.at(p, b, -tr.d.to_numpy(float))
-    pos = pd.Series(np.cumsum(p)[:-1], idx)
-    r = (pos * base.pct_change().fillna(0)).resample('1D').sum()
+    """Retorno diario de uma lista de trades marcada nas barras de base: na barra da entrada conta do preco de
+    entrada ao close, nas do meio close a close e na da saida do close anterior ao preco de saida (sem olhar o
+    movimento antes do fill nas entradas por stop)."""
+    idx = base.index; c = base.to_numpy(float); n = len(c); pct = np.r_[0, c[1:] / c[:-1] - 1]
+    a = np.minimum(idx.searchsorted(pd.DatetimeIndex(tr.t_in)), n - 1)
+    b = np.minimum(idx.searchsorted(pd.DatetimeIndex(tr.t_out)), n - 1)
+    d = tr.d.to_numpy(float); en = tr.entry.to_numpy(float); ex = tr.exit.to_numpy(float)
+    p = np.zeros(n + 1); m = b > a
+    np.add.at(p, a[m] + 1, d[m]); np.add.at(p, b[m], -d[m])
+    r = np.cumsum(p)[:-1] * pct
+    np.add.at(r, a[m], d[m] * (c[a[m]] / en[m] - 1))
+    np.add.at(r, b[m], d[m] * (ex[m] / c[b[m] - 1] - 1))
+    np.add.at(r, a[~m], d[~m] * (ex[~m] / en[~m] - 1))
+    r = pd.Series(r, idx).resample('1D').sum()
     cost = (tr.ret - tr.bruto).groupby(pd.DatetimeIndex(tr.t_out).floor('1D')).sum()
-    return r.add(cost.reindex(r.index).fillna(0), fill_value=0), pos
+    return r.add(cost.reindex(r.index).fillna(0), fill_value=0), None
 
 
 def main():
