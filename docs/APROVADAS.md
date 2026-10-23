@@ -168,6 +168,14 @@ Convenções: sinal no fechamento, ordem na abertura seguinte, custo de spread +
 - **Robustez:** terços +38/+41/+39% vs −21/+40/+8%; 2ª metade +35% vs +3%; custo 4× +25%.
 - **Ressalvas:** a variante não é a do autor; o 2º terço passa por 1,3 p.p.; t baixo.
 
+## 21. PTS Golden Edge — WTI 30m (lote 29, aprovada com ressalva)
+
+- **Script:** `SD5jYZuC` · [LOTE29_TV](LOTE29_TV.md) · `scripts/study_tvlote29.py`
+- **Regra:** EMA9 cruza a EMA50 para cima com RSI12 > 56, HMA66 subindo e faixa de 14 barras > 0,5 ATR14 compra; espelho com RSI < 45 vende; inverte (o script usa EMA 3/33).
+- **Resultado:** +31% a.a. vs +5,4%; t = 1,8; 143 trades/ano.
+- **Robustez:** terços −16/+115/+32% vs −19/+35/+8%; 2ª metade +25% vs +3%; custo 4× +21%.
+- **Ressalvas:** parâmetros diferentes do padrão (EMA 3/33 também fica acima do B&H, +18%); o ganho se concentra no 2º terço; t baixo.
+
 ## Correlação entre as candidatas do ETH
 
 `scripts/study_eth_corr.py` → `results/study_eth_corr.txt`. Correlação dos retornos diários entre as cinco candidatas do ETH vai de 0,29 a 0,72; com o B&H do ETH fica perto de zero. Ficam na mesma direção 62% a 81% do tempo. Pares mais parecidos: RSI-MA × Ichimoku (0,72) e RSI-MA × Pivot ST (0,66). UT Bot e Scalping são os mais diferentes. A carteira com peso igual nas cinco cai o DD para cerca de −39% (vs −55% a −74% de cada uma, na marcação diária aproximada).

@@ -100,6 +100,26 @@ Todas reprovadas, exceto a candidata indicada. Ordem cronológica inversa.
 
 | # | Estratégia (autor, id do script) | Doc | Diagnóstico |
 | --- | --- | --- | --- |
+| 343 | Channel Break (free bot) (`8vuKM6ZP`) | [LOTE29_TV](docs/LOTE29_TV.md) | nada robusto |
+| 342 | Volume fight (`alrI0TBw`) | [LOTE29_TV](docs/LOTE29_TV.md) | nada robusto |
+| 341 | BTC WaveTrend R:R (long-only) (`P1BEGIzN`) | [LOTE29_TV](docs/LOTE29_TV.md) | nada robusto |
+| 340 | MACD_RSI (`pjNTFYox`) | [LOTE29_TV](docs/LOTE29_TV.md) | nada robusto |
+| 339 | Bull and Bear Fear (`B85sdNEB`) | [LOTE29_TV](docs/LOTE29_TV.md) | nada robusto |
+| 338 | Rob Booker ADX Breakout (`qoaam9SI`) | [LOTE29_TV](docs/LOTE29_TV.md) | nada robusto |
+| 337 | BotBot (`3ODyRfFl`) | [LOTE29_TV](docs/LOTE29_TV.md) | quase: WTI 1D k0.02 (perde o 2º terço) |
+| 336 | Crossing MAs + ADX (`gHYXDzo7`) | [LOTE29_TV](docs/LOTE29_TV.md) | quase: BTC 1h (perde o 1º terço, empata na 2ª metade) |
+| 335 | Linear Regression Channel Breakout (`7USLDe0j`) | [LOTE29_TV](docs/LOTE29_TV.md) | nada robusto |
+| 334 | Scalping against trapped countertrend (`mEJH90Q5`) | [LOTE29_TV](docs/LOTE29_TV.md) | nada robusto |
+| 333 | RSI and SMA (Coinrule) (`Clpg5ju2`) | [LOTE29_TV](docs/LOTE29_TV.md) | nada robusto |
+| 332 | RSI2 + medias (pullback) (`H4ciolWP`) | [LOTE29_TV](docs/LOTE29_TV.md) | nada robusto |
+| 331 | KAMA TradeDots (`rm6K3yV6`) | [LOTE29_TV](docs/LOTE29_TV.md) | quase: ETH 4h r5 (perde o 1º terço) |
+| 330 | PTS Golden Edge (`SD5jYZuC`) | [LOTE29_TV](docs/LOTE29_TV.md) | **aprovada: WTI 30m (EMA 9/50)** |
+| 329 | Bollinger Bands + EMA 9 (`Ff0DNTh1`) | [LOTE29_TV](docs/LOTE29_TV.md) | nada robusto |
+| 328 | Breakout Scalper (`kX8dnXYH`) | [LOTE29_TV](docs/LOTE29_TV.md) | nada robusto |
+| 327 | Chandelier Exit + ZLSMA (`QJRHUWcF`) | [LOTE29_TV](docs/LOTE29_TV.md) | nada robusto |
+| 326 | Donchian Breakout (long-only) (`fF9nC8iP`) | [LOTE29_TV](docs/LOTE29_TV.md) | nada robusto |
+| 325 | High/Low channel swing (`UXKktYt6`) | [LOTE29_TV](docs/LOTE29_TV.md) | nada robusto |
+| 324 | ATR Trailing Stoploss (`NsD6sRKu`) | [LOTE29_TV](docs/LOTE29_TV.md) | nada robusto |
 | 323 | Babypips Inside Bar Momentum (`Y2e6lEXw`) | [LOTE28_TV](docs/LOTE28_TV.md) | nada robusto |
 | 322 | Tres medias (SMA 7/25/99) (`sPAROdDQ`) | [LOTE28_TV](docs/LOTE28_TV.md) | nada robusto |
 | 321 | Gaussian Channel (`erJi1tWf`) | [LOTE28_TV](docs/LOTE28_TV.md) | nada robusto |

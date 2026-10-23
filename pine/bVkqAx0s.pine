@@ -1,0 +1,41 @@
+// © theCrypster
+
+//@version=4
+strategy("Percent Trailing Stop %", overlay=true)
+
+//ENTER SOME SETUP TRADES FOR TSL EXAMPLE
+longCondition = crossover(sma(close, 10), sma(close, 20))
+if (longCondition)
+    strategy.entry("My Long Entry Id", strategy.long)
+
+shortCondition = crossunder(sma(close, 10), sma(close, 20))
+if (shortCondition)
+    strategy.entry("My Short Entry Id", strategy.short)
+    
+
+//TRAILING STOP CODE
+trailStop = input(title="Long Trailing Stop (%)", type=input.float, minval=0.0, step=0.1, defval=10) * 0.01
+
+longStopPrice = 0.0
+shortStopPrice = 0.0
+longStopPrice := if strategy.position_size > 0
+    stopValue = close * (1 - trailStop)
+    max(stopValue, longStopPrice[1])
+else
+    0
+shortStopPrice := if strategy.position_size < 0
+    stopValue = close * (1 + trailStop)
+    min(stopValue, shortStopPrice[1])
+else
+    999999
+
+//PLOT TSL LINES
+plot(series=strategy.position_size > 0 ? longStopPrice : na, color=color.red, style=plot.style_linebr, linewidth=1, title="Long Trail Stop", offset=1, title="Long Trail Stop")
+plot(series=strategy.position_size < 0 ? shortStopPrice : na, color=color.red, style=plot.style_linebr, linewidth=1, title="Short Trail Stop", offset=1, title="Short Trail Stop")
+
+
+//EXIT TRADE @ TSL
+if strategy.position_size > 0
+    strategy.exit(id="Close Long", stop=longStopPrice)
+if strategy.position_size < 0
+    strategy.exit(id="Close Short", stop=shortStopPrice)
