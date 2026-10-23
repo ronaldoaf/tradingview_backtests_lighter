@@ -100,6 +100,26 @@ Todas reprovadas, exceto a candidata indicada. Ordem cronológica inversa.
 
 | # | Estratégia (autor, id do script) | Doc | Diagnóstico |
 | --- | --- | --- | --- |
+| 133 | World Cycle ATH/ATL Logarithmic (`824WmIi7`) | [LOTE20_TV](docs/LOTE20_TV.md) | poucos trades; nada acima do B&H |
+| 132 | FRAMA Supertrend strategy (`y81orwSC`) | [LOTE20_TV](docs/LOTE20_TV.md) | 0 células robustas acima do B&H |
+| 131 | [DS] Entry_Exit TRADE V01 (`RO4rB2HF`) | [LOTE20_TV](docs/LOTE20_TV.md) | ETH/BTC 30m acima do B&H no total mas morrem em 2024-26; WTI 1h falha no custo 4× |
+| 130 | ATR GOD Strategy (`Je04kGO0`) | [LOTE20_TV](docs/LOTE20_TV.md) | WTI 1D com só 32 trades; reprovada |
+| 129 | PMARP + Madrid MA Ribbon (`T4rBZCvC`) | [LOTE20_TV](docs/LOTE20_TV.md) | ETH 15m +94% mas perde na 2ª metade |
+| 128 | Y-Profit Maximizer (Y-PMax) (`6ZFa2t7o`) | [LOTE20_TV](docs/LOTE20_TV.md) | ETH 15m/30m +122%/+133% mas perde o terço 1: quase |
+| 127 | Extreme Scalping (`qVTgdPBT`) | [LOTE20_TV](docs/LOTE20_TV.md) | nada com t > 0 acima do B&H |
+| 126 | Nadaraya-Watson Envelope Strategy (`HrZicISx`) | [LOTE20_TV](docs/LOTE20_TV.md) | WTI 1D +22% mas perde em 2020-23 e na 2ª metade |
+| 125 | CamarillaStrategy V1 (`tBJNISwj`) | [LOTE20_TV](docs/LOTE20_TV.md) | 0 células robustas acima do B&H |
+| 124 | Scalping with Bill Williams Alligator (`b2ShO5Fv`) | [LOTE20_TV](docs/LOTE20_TV.md) | 0 células acima do B&H |
+| 123 | RSI and ATR Trend Reversal SL/TP (`hZLgJ29l`) | [LOTE20_TV](docs/LOTE20_TV.md) | XAU 30m empata com o B&H; reprovada |
+| 122 | Double AI Super Trend (`hLZPT7it`) | [LOTE20_TV](docs/LOTE20_TV.md) | ETH acima do B&H no total; não passou na grade |
+| 121 | Moving Regression Band Breakout (`Tls8Y2hc`) | [LOTE20_TV](docs/LOTE20_TV.md) | ETH/BTC acima do B&H só no total; não passou na grade |
+| 120 | RSI-Adaptive T3 & SAR (`bldXp6gY`) | [LOTE20_TV](docs/LOTE20_TV.md) | 0 células robustas acima do B&H |
+| 119 | 3x SuperTrend Strategy (Mel0nTek) (`FUnOi1Nx`) | [LOTE20_TV](docs/LOTE20_TV.md) | 0 células robustas acima do B&H |
+| 118 | MACD Strategy with trailing ATR stop (`2jDHQAJc`) | [LOTE20_TV](docs/LOTE20_TV.md) | BTC 30m +65% mas morre em 2024-26 |
+| 117 | Strategy Follow Line MTF (`6lhyIPGA`) | [LOTE20_TV](docs/LOTE20_TV.md) | **ETH 30m (21, 1 desvio) aprovada**: +118% vs +57%, todos os terços, custo 4× |
+| 116 | 3C QFL Mean reversal (`SDRM0bBY`) | [LOTE20_TV](docs/LOTE20_TV.md) | 0 células acima do B&H (sem DCA) |
+| 115 | ATR Trailing Stop by ceyhun (`cj3MJWNz`) | [LOTE20_TV](docs/LOTE20_TV.md) | ETH 4h +103% mas perde o terço 1: quase; BTC perde na 2ª metade |
+| 114 | Keltner Channel ETH/USDT 1H (`ezSBm5MS`) | [LOTE20_TV](docs/LOTE20_TV.md) | 0 células robustas acima do B&H |
 | 113 | Cipher B+ Divergence EMA Pullback (`ywcSiaaV`) | [LOTE19_TV](docs/LOTE19_TV.md) | quase não opera; nenhum ativo acima do B&H |
 | 112 | 3EMA (`9bA3Z56w`) | [LOTE19_TV](docs/LOTE19_TV.md) | 0 células acima do B&H |
 | 111 | UT Bot v2 (`lDGmh7ou`) | [LOTE19_TV](docs/LOTE19_TV.md) | ETH 30m ATR×3 +107% mas perde o terço 1 e t < 2: quase |

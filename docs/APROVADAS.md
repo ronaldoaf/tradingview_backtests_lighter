@@ -55,6 +55,15 @@ Convenções: sinal no fechamento, ordem na abertura seguinte, custo de spread +
 - **Robustez:** terços +132/+31/+62% vs B&H +130/+15/+14%; 2ª metade +69% vs +40%; custo 4× +62,6% (t 3,0).
 - **Ressalvas:** terço 1 só empata; vizinhança estreita (só 1h com SL 4%, RR 5 ou 2, bate o B&H no BTC); DD −87% (log). Primeira candidata do BTC; precisa de walk-forward.
 
+## 7. Follow Line — ETH 30m (lote 20)
+
+- **Script:** `6lhyIPGA` · [LOTE20_TV](LOTE20_TV.md) · `scripts/study_tvlote20.py`
+- **Regra:** EMA21 ± 1 desvio padrão (21) do close. Close acima da banda de cima: linha = low − ATR5, que só sobe; abaixo da de baixo: high + ATR5, que só desce. A virada da linha compra ou vende; o sinal contrário inverte. Calculado no próprio TF.
+- **Configuração:** 30m, 21 / 1 desvio / ATR5, long e short.
+- **Resultado:** +118% a.a. vs +56,8% do B&H; t = 3,1; cerca de 330 trades/ano.
+- **Robustez:** terços +403/+18/+60% vs B&H +330/+0,7/−11%; 2ª metade +35% vs +13%; custo 4× +98% (t 2,5). Vizinhança: 15m (21/1 e 50/1), 1h 50/1 e 4h 50/2 também acima do B&H.
+- **Ressalvas:** DD −103% (log), cerca de −64%. Outro seguidor de tendência no ETH, da mesma família de 2 a 5. Custo do ETH estimado. No BTC e nos outros ativos não passa.
+
 ## Correlação entre as candidatas do ETH
 
 `scripts/study_eth_corr.py` → `results/study_eth_corr.txt`. Correlação dos retornos diários entre as cinco candidatas do ETH vai de 0,29 a 0,72; com o B&H do ETH fica perto de zero. Ficam na mesma direção 62% a 81% do tempo. Pares mais parecidos: RSI-MA × Ichimoku (0,72) e RSI-MA × Pivot ST (0,66). UT Bot e Scalping são os mais diferentes. A carteira com peso igual nas cinco cai o DD para cerca de −39% (vs −55% a −74% de cada uma, na marcação diária aproximada).
