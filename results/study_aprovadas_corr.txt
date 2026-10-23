@@ -35,36 +35,36 @@ Correlacao dos retornos diarios (Pearson, par a par nos dias comuns)
 
 Correlacao com o B&H de cada ativo
                            B&H XAU  B&H WTI  B&H BTC  B&H ETH
-§1 Trailing SL XAU 30m        0.18     0.04     0.04     0.04
-§9 MA Band WTI 4h            -0.05    -0.02    -0.01    -0.03
-§20 HA PA WTI 4h             -0.10    -0.23    -0.07    -0.07
-§21 Golden Edge WTI 30m      -0.09     0.13    -0.04    -0.06
-§25 MACD+Stoch WTI 4h         0.03     0.21     0.05     0.05
-§6 ABCD BTC 1h                0.05    -0.04     0.01     0.02
-§19 HA MACD BTC 1h           -0.03    -0.04    -0.06    -0.08
-§24 Multi-MA BTC 4h          -0.05    -0.01    -0.11    -0.16
+§1 Trailing SL XAU 30m        0.27     0.06     0.04     0.04
+§9 MA Band WTI 4h            -0.06    -0.14    -0.01    -0.03
+§20 HA PA WTI 4h             -0.11    -0.37    -0.07    -0.07
+§21 Golden Edge WTI 30m      -0.08     0.04    -0.04    -0.06
+§25 MACD+Stoch WTI 4h         0.02     0.26     0.05     0.05
+§6 ABCD BTC 1h                0.05    -0.03     0.01     0.02
+§19 HA MACD BTC 1h           -0.05    -0.02    -0.06    -0.08
+§24 Multi-MA BTC 4h          -0.05    -0.02    -0.11    -0.16
 §2 RSI-MA ETH 15m            -0.01     0.01    -0.13    -0.05
-§3 Pivot ST ETH 15m          -0.03     0.00    -0.10     0.01
-§4a UT Bot ETH 30m           -0.03    -0.05    -0.18    -0.10
-§4b Ichimoku ETH 15m         -0.05    -0.03    -0.14    -0.05
-§4c Scalping ETH 30m          0.07     0.02     0.14     0.25
-§5 FTSMA ETH 30m             -0.04     0.01    -0.18    -0.10
-§7 Follow Line ETH 30m       -0.04     0.00    -0.13    -0.05
-§8 MA Consec ETH 4h          -0.07    -0.04     0.07     0.17
-§10 Super trend V ETH 15m    -0.03     0.01    -0.17    -0.10
-§11 BEST ST ETH 1h           -0.04    -0.02    -0.14    -0.03
-§12 VWAPStrategy ETH 30m     -0.03    -0.01    -0.08    -0.01
-§13 Chandelier ETH 30m       -0.05     0.02    -0.04     0.03
-§14 THMA ETH 15m             -0.05    -0.03    -0.16    -0.06
-§15 SM Pivot ETH 15m         -0.06    -0.00    -0.14    -0.06
-§16 HULL+T3 ETH 1h            0.01    -0.02    -0.15    -0.10
-§17 5 EMA ETH 4h              0.04     0.01     0.09     0.17
-§18 Wyckoff ETH 4h            0.06    -0.08    -0.24    -0.21
-§22 Multi-MA ETH 15m         -0.05    -0.01    -0.19    -0.11
-§23 Multi-MA ETH 4h          -0.02    -0.04    -0.13    -0.05
-§26 TSI ST ETH 15m           -0.02    -0.04    -0.13    -0.04
-§27 TSI ST ETH 30m           -0.00    -0.02    -0.15    -0.06
-§28 VWAP X EMA ETH 30m       -0.07    -0.03    -0.29    -0.24
+§3 Pivot ST ETH 15m          -0.02     0.01    -0.10     0.01
+§4a UT Bot ETH 30m           -0.02    -0.03    -0.18    -0.10
+§4b Ichimoku ETH 15m         -0.04    -0.03    -0.14    -0.05
+§4c Scalping ETH 30m          0.08     0.07     0.14     0.25
+§5 FTSMA ETH 30m             -0.03    -0.01    -0.18    -0.10
+§7 Follow Line ETH 30m       -0.04     0.02    -0.13    -0.05
+§8 MA Consec ETH 4h          -0.06    -0.04     0.07     0.17
+§10 Super trend V ETH 15m    -0.01    -0.01    -0.17    -0.10
+§11 BEST ST ETH 1h           -0.03    -0.02    -0.14    -0.03
+§12 VWAPStrategy ETH 30m     -0.04     0.01    -0.08    -0.01
+§13 Chandelier ETH 30m       -0.03     0.02    -0.04     0.03
+§14 THMA ETH 15m             -0.04    -0.03    -0.16    -0.06
+§15 SM Pivot ETH 15m         -0.07    -0.01    -0.14    -0.06
+§16 HULL+T3 ETH 1h            0.04    -0.00    -0.15    -0.10
+§17 5 EMA ETH 4h              0.03     0.02     0.09     0.17
+§18 Wyckoff ETH 4h            0.06    -0.07    -0.24    -0.21
+§22 Multi-MA ETH 15m         -0.02    -0.02    -0.19    -0.11
+§23 Multi-MA ETH 4h          -0.00    -0.07    -0.13    -0.05
+§26 TSI ST ETH 15m           -0.03    -0.01    -0.13    -0.04
+§27 TSI ST ETH 30m           -0.01     0.01    -0.15    -0.06
+§28 VWAP X EMA ETH 30m       -0.06    -0.03    -0.29    -0.24
 
 Pares mais correlacionados
 §26 TSI ST ETH 15m         §27 TSI ST ETH 30m           0.94

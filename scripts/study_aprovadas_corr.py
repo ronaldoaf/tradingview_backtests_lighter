@@ -82,7 +82,7 @@ def main():
         sel = [e for e in EST if e[1] == ativo]
         m1 = T.load_m1v(ativo); mm = M1(m1); cache = {}
         base = T.resample(m1, '15min').close; corte = pd.Timestamp(CORTE[ativo], tz=base.index.tz)
-        bh = base.resample('1D').last().pct_change().fillna(0); BH[f'B&H {ativo.upper()}'] = bh[bh.index < corte]
+        bh = base.resample('1D').last().dropna().pct_change().fillna(0); BH[f'B&H {ativo.upper()}'] = bh[bh.index < corte]
         for rot, _, tf, fn in sel:
             df = cache.setdefault(tf, T.resample(m1, tf))
             tr = fn(ativo, df, mm)[1]

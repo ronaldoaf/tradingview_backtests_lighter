@@ -8,7 +8,7 @@ Escolhidas (|corr| media entre os pares antes do OOS = 0.063):
   §8 MA Consec ETH 4h
   §13 Chandelier ETH 30m
 
-Matriz das 8 (antes do OOS)
+Matriz das escolhidas (antes do OOS)
                          §1 Trailing SL XAU 30m  §21 Golden Edge WTI 30m  §25 MACD+Stoch WTI 4h  §6 ABCD BTC 1h  §19 HA MACD BTC 1h  §24 Multi-MA BTC 4h  §8 MA Consec ETH 4h  §13 Chandelier ETH 30m
 §1 Trailing SL XAU 30m                     1.00                    -0.05                  -0.02           -0.04               -0.04                -0.01                 0.02                    0.01
 §21 Golden Edge WTI 30m                   -0.05                     1.00                   0.09           -0.04               -0.01                 0.04                 0.02                    0.03
@@ -21,9 +21,9 @@ Matriz das 8 (antes do OOS)
 
 === Antes do OOS: 2020-01-01..2023-05-16
   Carteira 8 (pesos iguais)      CAGR  +99.4%  Sharpe +2.55  DD  -18%  vol  29%
-  B&H 4 ativos (pesos iguais)    CAGR  +54.2%  Sharpe +1.20  DD  -49%  vol  44%
-  B&H XAU                        CAGR   +3.4%  Sharpe +0.30  DD  -21%  vol  15%
-  B&H WTI                        CAGR   +4.6%  Sharpe +0.35  DD  -67%  vol  51%
+  B&H 4 ativos (pesos iguais)    CAGR  +57.7%  Sharpe +1.23  DD  -48%  vol  45%
+  B&H XAU                        CAGR   +9.6%  Sharpe +0.63  DD  -21%  vol  17%
+  B&H WTI                        CAGR   +4.3%  Sharpe +0.38  DD  -81%  vol  60%
   B&H BTC                        CAGR  +48.1%  Sharpe +0.92  DD  -77%  vol  72%
   B&H ETH                        CAGR +118.6%  Sharpe +1.31  DD  -79%  vol  95%
   §1 Trailing SL XAU 30m         CAGR  +11.1%  Sharpe +0.68  DD  -15%  vol  18%
@@ -38,9 +38,9 @@ Matriz das 8 (antes do OOS)
 
 === Depois do OOS: 2023-05-17..2026-10-04
   Carteira 8 (pesos iguais)      CAGR  +42.7%  Sharpe +1.98  DD  -12%  vol  19%
-  B&H 4 ativos (pesos iguais)    CAGR  +26.9%  Sharpe +0.97  DD  -31%  vol  29%
-  B&H XAU                        CAGR  +22.8%  Sharpe +1.13  DD  -23%  vol  20%
-  B&H WTI                        CAGR   +8.1%  Sharpe +0.40  DD  -43%  vol  34%
+  B&H 4 ativos (pesos iguais)    CAGR  +27.7%  Sharpe +0.99  DD  -31%  vol  29%
+  B&H XAU                        CAGR  +24.2%  Sharpe +1.16  DD  -28%  vol  21%
+  B&H WTI                        CAGR   +7.4%  Sharpe +0.38  DD  -41%  vol  39%
   B&H BTC                        CAGR  +39.6%  Sharpe +0.95  DD  -53%  vol  46%
   B&H ETH                        CAGR  +12.1%  Sharpe +0.49  DD  -68%  vol  64%
   §1 Trailing SL XAU 30m         CAGR  +25.3%  Sharpe +1.21  DD  -20%  vol  20%
@@ -55,9 +55,9 @@ Matriz das 8 (antes do OOS)
 
 === Periodo todo: 2020-01-01..2026-10-04
   Carteira 8 (pesos iguais)      CAGR  +68.6%  Sharpe +2.28  DD  -18%  vol  24%
-  B&H 4 ativos (pesos iguais)    CAGR  +39.8%  Sharpe +1.09  DD  -49%  vol  37%
-  B&H XAU                        CAGR  +12.7%  Sharpe +0.76  DD  -23%  vol  18%
-  B&H WTI                        CAGR   +6.4%  Sharpe +0.36  DD  -67%  vol  44%
+  B&H 4 ativos (pesos iguais)    CAGR  +41.8%  Sharpe +1.11  DD  -48%  vol  38%
+  B&H XAU                        CAGR  +16.7%  Sharpe +0.92  DD  -28%  vol  19%
+  B&H WTI                        CAGR   +5.9%  Sharpe +0.37  DD  -81%  vol  50%
   B&H BTC                        CAGR  +43.7%  Sharpe +0.91  DD  -77%  vol  60%
   B&H ETH                        CAGR  +56.4%  Sharpe +0.96  DD  -79%  vol  81%
   §1 Trailing SL XAU 30m         CAGR  +18.0%  Sharpe +0.96  DD  -20%  vol  19%
