@@ -100,6 +100,26 @@ Todas reprovadas, exceto a candidata indicada. Ordem cronológica inversa.
 
 | # | Estratégia (autor, id do script) | Doc | Diagnóstico |
 | --- | --- | --- | --- |
+| 383 | Combo 123 Reversal & Stochastic (`IYPg1Xjt`) | [LOTE31_TV](docs/LOTE31_TV.md) | quase (BTC 1h, ETH 4h) |
+| 382 | VIP (long-only) (`4OYdIrWk`) | [LOTE31_TV](docs/LOTE31_TV.md) | nada robusto |
+| 381 | Smoothed Heiken Ashi (long-only) (`4JDTWBH3`) | [LOTE31_TV](docs/LOTE31_TV.md) | quase (ETH 30m) |
+| 380 | Parabolic SAR w/ EMA (`6OEvKyvN`) | [LOTE31_TV](docs/LOTE31_TV.md) | nada robusto |
+| 379 | Market Dynamics HH/LL breakout (`xyov8Du1`) | [LOTE31_TV](docs/LOTE31_TV.md) | nada robusto |
+| 378 | OKX MA Crossover (`BeDjJdpx`) | [LOTE31_TV](docs/LOTE31_TV.md) | nada robusto |
+| 377 | FXFUNDINGMATE Trend (`k0LMZo1H`) | [LOTE31_TV](docs/LOTE31_TV.md) | nada robusto |
+| 376 | LunaOwl SuperTrend 2 (`eF9EN1ag`) | [LOTE31_TV](docs/LOTE31_TV.md) | nada robusto |
+| 375 | Tendency EMA + RSI (`X6K0ARDV`) | [LOTE31_TV](docs/LOTE31_TV.md) | nada robusto |
+| 374 | Golden X BF (`ob4p8rLf`) | [LOTE31_TV](docs/LOTE31_TV.md) | quase (ETH 15m) |
+| 373 | Crypto Price Scalper (long-only) (`2Rx9y2VQ`) | [LOTE31_TV](docs/LOTE31_TV.md) | nada robusto |
+| 372 | AK Trend ID (long-only) (`ztKUkLYL`) | [LOTE31_TV](docs/LOTE31_TV.md) | nada robusto |
+| 371 | Swing Parabolic SAR (`Kf33o8g5`) | [LOTE31_TV](docs/LOTE31_TV.md) | nada robusto |
+| 370 | Sequence Snap (`49jNhJXM`) | [LOTE31_TV](docs/LOTE31_TV.md) | nada robusto |
+| 369 | MACD + Stochastic (`sqDK1npx`) | [LOTE31_TV](docs/LOTE31_TV.md) | **aprovada** no WTI 4h st14 (ambos) |
+| 368 | Linear Channel (long-only) (`loS16r1z`) | [LOTE31_TV](docs/LOTE31_TV.md) | nada robusto |
+| 367 | Heikin Ashi Wick (long-only) (`NWUYjOxI`) | [LOTE31_TV](docs/LOTE31_TV.md) | nada robusto |
+| 366 | Advanced Ichimoku (long-only) (`uycyVpIq`) | [LOTE31_TV](docs/LOTE31_TV.md) | nada robusto |
+| 365 | TTM scalper (`k79YeNBc`) | [LOTE31_TV](docs/LOTE31_TV.md) | nada robusto |
+| 364 | ALMA/EMA (`As3pijB6`) | [LOTE31_TV](docs/LOTE31_TV.md) | nada robusto |
 | 363 | Harmonic System (`WG8oLdFX`) | [LOTE30_TV](docs/LOTE30_TV.md) | nada robusto |
 | 362 | RSI Buy and Sell (long-only) (`Z59QoZWN`) | [LOTE30_TV](docs/LOTE30_TV.md) | nada robusto |
 | 361 | LunaOwl suporte/resistencia (`dC2MG4Dj`) | [LOTE30_TV](docs/LOTE30_TV.md) | nada robusto |

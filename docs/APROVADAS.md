@@ -200,6 +200,14 @@ Convenções: sinal no fechamento, ordem na abertura seguinte, custo de spread +
 - **Robustez:** terços +189/+69/+18% vs +129/+15/+14%; 2ª metade +47% vs +40%; custo 4× +83%.
 - **Ressalvas:** poucos trades (86 no total); o 3º terço e a 2ª metade passam por pouco.
 
+## 25. MACD + Stochastic — WTI 4h (lote 31, aprovada com ressalva)
+
+- **Script:** `sqDK1npx` · [LOTE31_TV](LOTE31_TV.md) · `scripts/study_tvlote31.py`
+- **Regra:** EMA8−EMA24 subindo com Stoch(14) D<25 subindo compra; EMA8−EMA24 caindo com D>75 caindo vende; inverte. Stoch 14 (o padrão é 7).
+- **Resultado:** +39% a.a. vs +5%; t = 1,4; 37 trades/ano.
+- **Robustez:** terços +2/+47/+46% vs −21/+40/+8%; 2ª metade +60% vs +3%; custo 4× +36%.
+- **Ressalvas:** t baixo; 1º terço perto de zero; parte do ganho vem do funding/carry (líquido acima do bruto); parâmetro diferente do padrão.
+
 ## Correlação entre as candidatas do ETH
 
 `scripts/study_eth_corr.py` → `results/study_eth_corr.txt`. Correlação dos retornos diários entre as cinco candidatas do ETH vai de 0,29 a 0,72; com o B&H do ETH fica perto de zero. Ficam na mesma direção 62% a 81% do tempo. Pares mais parecidos: RSI-MA × Ichimoku (0,72) e RSI-MA × Pivot ST (0,66). UT Bot e Scalping são os mais diferentes. A carteira com peso igual nas cinco cai o DD para cerca de −39% (vs −55% a −74% de cada uma, na marcação diária aproximada).
