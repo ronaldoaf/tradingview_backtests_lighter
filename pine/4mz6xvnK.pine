@@ -1,0 +1,34 @@
+// This source code is subject to the terms of the Mozilla Public License 2.0 at https://mozilla.org/MPL/2.0/
+// © ceyhun
+
+//@version=4
+strategy("KPL Swing Strategy", overlay=true)
+
+
+no = input(20, title="Length")
+res = highest(high, no)
+sup = lowest(low, no)
+avd = iff(close > res[1], 1, iff(close < sup[1], -1, 0))
+avn = valuewhen(avd != 0, avd, 0)
+tsl = iff(avn == 1, sup, res)
+sl = iff(close > tsl, highest(lowest(low, no / 2), no / 2), lowest(highest(high, no / 2), no / 2))
+
+Buy = crossover(close, tsl)
+Sell = crossover(tsl, close)
+
+Barcolor=input(true,title="Barcolor")
+Bgcolor=input(true,title="Bgcolor")
+
+colors=iff(close>tsl,color.green,iff(tsl<close,color.yellow,color.red))
+barcolor(Barcolor ? colors:na)
+bgcolor(Bgcolor ? colors:na)
+
+plot(tsl,color=colors)
+plot(sl,color=color.white,title="Stoploss")
+
+if crossover(close, tsl)
+    strategy.entry("Long", strategy.long, comment="Long")
+
+if crossunder(close,tsl)
+    strategy.entry("Short", strategy.short, comment="Short")
+     

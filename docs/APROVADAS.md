@@ -104,6 +104,38 @@ Convenções: sinal no fechamento, ordem na abertura seguinte, custo de spread +
 - **Robustez:** terços +549/+103/+54% vs B&H +330/+1/−11%; 2ª metade +59% vs +13%; custo 2× +130%; custo 4× +61,5% (passa por pouco).
 - **Ressalvas:** muito sensível a custo (no 15m o custo 4× já reprova); DD −86% (log); depende do volume da Binance para a VWAP. Só vale com custo de execução baixo.
 
+## 13. Chandelier Exit — ETH 30m (lote 25, aprovada com ressalva)
+
+- **Script:** `yca6gmSk` · [LOTE25_TV](LOTE25_TV.md) · `scripts/study_tvlote25.py`
+- **Regra:** Chandelier Exit (ATR22 × 3, extremos do close): virada para cima compra, para baixo vende (inverte). Stop de 5% pelo close, alvo de 20% pela máxima e trailing de 5 pontos percentuais depois de +10%.
+- **Resultado:** +153% a.a. vs +56,8% do B&H; t = 2,5; 493 trades/ano.
+- **Robustez:** terços +408/+95/+59% vs B&H +330/+1/−11%; 2ª metade +47% vs +13%; custo 4× +118%.
+- **Ressalvas:** sem o stop/alvo também fica acima do B&H (+125%); o terço 1 passa por pouco; mais um seguidor de tendência no ETH, provavelmente muito correlacionado com as outras aprovadas do ETH.
+
+## 14. Triangular Hull MA — ETH 15m (lote 25, aprovada com ressalva)
+
+- **Script:** `gMeYb8Dp` · [LOTE25_TV](LOTE25_TV.md) · `scripts/study_tvlote25.py`
+- **Regra:** THMA de 100 (WMA de 3·WMA(n/3) − WMA(n/2) − WMA(n)) cruzando ela mesma de 2 barras atrás; inverte.
+- **Resultado:** +155% a.a. vs +56,8%; t = 4,3; 531 trades/ano.
+- **Robustez:** terços +338/+157/+33% vs +330/+1/−11%; 2ª metade +41% vs +13%; custo 4× +117%.
+- **Ressalvas:** a THMA40 no 30m também passa em quase tudo (perde o terço 1); o terço 1 passa por pouco; mais um seguidor de tendência no ETH, provavelmente muito correlacionado com as outras aprovadas do ETH.
+
+## 15. Smart Money Pivot — ETH 15m (lote 25, aprovada com ressalva)
+
+- **Script:** `IMTwV7U8` · [LOTE25_TV](LOTE25_TV.md) · `scripts/study_tvlote25.py`
+- **Regra:** Pivô de topo 20/20: quando a máxima rompe o último pivô ainda ativo, compra; quando a mínima perde o último pivô de fundo, vende; inverte. Sem o stop de 1% e o alvo de 1,5% do script.
+- **Resultado:** +130% a.a. vs +56,8%; t = 3,8; 288 trades/ano.
+- **Robustez:** terços +355/+24/+110% vs +330/+1/−11%; 2ª metade +61% vs +13%; custo 4× +111%.
+- **Ressalvas:** com o stop/alvo original de 1%/1,5% não passa; o terço 1 passa por pouco; mais um seguidor de tendência no ETH, provavelmente muito correlacionado com as outras aprovadas do ETH.
+
+## 16. Swing HULL + T3 — ETH 1h (lote 25, aprovada com ressalva)
+
+- **Script:** `YgRqvCGx` · [LOTE25_TV](LOTE25_TV.md) · `scripts/study_tvlote25.py`
+- **Regra:** Média de HMA100 e T3(100, 0,7): subindo compra, caindo vende (inverte); alvo 8% no long, alvo 3% e stop 6% no short.
+- **Resultado:** +115% a.a. vs +56,8%; t = 3,8; 420 trades/ano.
+- **Robustez:** terços +403/+51/+23% vs +330/+1/−11%; 2ª metade +29% vs +13%; custo 4× +101%.
+- **Ressalvas:** sem os alvos o resultado é igual; o terço 1 passa por pouco; mais um seguidor de tendência no ETH, provavelmente muito correlacionado com as outras aprovadas do ETH.
+
 ## Correlação entre as candidatas do ETH
 
 `scripts/study_eth_corr.py` → `results/study_eth_corr.txt`. Correlação dos retornos diários entre as cinco candidatas do ETH vai de 0,29 a 0,72; com o B&H do ETH fica perto de zero. Ficam na mesma direção 62% a 81% do tempo. Pares mais parecidos: RSI-MA × Ichimoku (0,72) e RSI-MA × Pivot ST (0,66). UT Bot e Scalping são os mais diferentes. A carteira com peso igual nas cinco cai o DD para cerca de −39% (vs −55% a −74% de cada uma, na marcação diária aproximada).

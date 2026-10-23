@@ -100,6 +100,56 @@ Todas reprovadas, exceto a candidata indicada. Ordem cronológica inversa.
 
 | # | Estratégia (autor, id do script) | Doc | Diagnóstico |
 | --- | --- | --- | --- |
+| 263 | Smart Money Pivot (`IMTwV7U8`) | [LOTE25_TV](docs/LOTE25_TV.md) | **aprovada: ETH 15m (sem stop/alvo)** |
+| 262 | Awesome Oscillator (`fSHXMVey`) | [LOTE25_TV](docs/LOTE25_TV.md) | nada robusto |
+| 261 | Multi-MA (4MA) (`C1hyNDWO`) | [LOTE25_TV](docs/LOTE25_TV.md) | nada robusto |
+| 260 | Reversal Trading Bot (`cXVnf1WH`) | [LOTE25_TV](docs/LOTE25_TV.md) | nada robusto |
+| 259 | NR7ID (short-only) (`abjeWQD5`) | [LOTE25_TV](docs/LOTE25_TV.md) | nada robusto |
+| 258 | BEST ATR Stop Multiple (`UA83Q4Je`) | [LOTE25_TV](docs/LOTE25_TV.md) | ETH 15m quase (terço 1); BTC reprovada |
+| 257 | Double Bottom/Top Hunter (`tkyuZRbN`) | [LOTE25_TV](docs/LOTE25_TV.md) | nada robusto |
+| 256 | Fractal Breakout (`Mwu4JMaQ`) | [LOTE25_TV](docs/LOTE25_TV.md) | nada robusto |
+| 255 | Trendline Breakout KedArc (`grMQIRAr`) | [LOTE25_TV](docs/LOTE25_TV.md) | WTI 4h quase (terço 2) |
+| 254 | Gianno Nano (`M7e4uwLN`) | [LOTE25_TV](docs/LOTE25_TV.md) | nada robusto |
+| 253 | KPL Swing (`4mz6xvnK`) | [LOTE25_TV](docs/LOTE25_TV.md) | nada robusto |
+| 252 | SPY Master (`4c9zIvHX`) | [LOTE25_TV](docs/LOTE25_TV.md) | nada robusto |
+| 251 | Stoch + ATR (`OK4OIiJ2`) | [LOTE25_TV](docs/LOTE25_TV.md) | WTI 4h quase (terço 3) |
+| 250 | TASC One Percent A Week (long-only) (`nVECqIQx`) | [LOTE25_TV](docs/LOTE25_TV.md) | nada robusto |
+| 249 | Swing HULL + T3 (`YgRqvCGx`) | [LOTE25_TV](docs/LOTE25_TV.md) | **aprovada: ETH 1h (100)** |
+| 248 | Uhl MA System (`4S9Yz3DB`) | [LOTE25_TV](docs/LOTE25_TV.md) | nada robusto |
+| 247 | MACD + CCI (`l7eeKNis`) | [LOTE25_TV](docs/LOTE25_TV.md) | nada robusto |
+| 246 | Trend Reversal Alerts (long-only) (`2DxTUzED`) | [LOTE25_TV](docs/LOTE25_TV.md) | nada robusto |
+| 245 | Multi-X (long-only) (`LZ1KzR4f`) | [LOTE25_TV](docs/LOTE25_TV.md) | nada robusto |
+| 244 | EMA Cross + RSI + ADX (`e7XQPek8`) | [LOTE25_TV](docs/LOTE25_TV.md) | BTC 4h quase (terço 1) |
+| 243 | Stoch/EMA Cross (`PPKWNyyw`) | [LOTE25_TV](docs/LOTE25_TV.md) | nada robusto |
+| 242 | VWAP Breakout (`39HGmmqK`) | [LOTE25_TV](docs/LOTE25_TV.md) | nada robusto |
+| 241 | Grover Llorens Activator (`VuYM89Tw`) | [LOTE25_TV](docs/LOTE25_TV.md) | BTC 30m reprovada |
+| 240 | MA Scalper Coinrule (long-only) (`PfBSgqMw`) | [LOTE25_TV](docs/LOTE25_TV.md) | nada robusto |
+| 239 | Davin 10/200 MA Pullback (long-only) (`Gkib6KgL`) | [LOTE25_TV](docs/LOTE25_TV.md) | nada robusto |
+| 238 | RSI mensal (long-only) (`rHDrnos6`) | [LOTE25_TV](docs/LOTE25_TV.md) | nada robusto |
+| 237 | BEST Trailing Stop (`NOGqbIcu`) | [LOTE25_TV](docs/LOTE25_TV.md) | ETH 30m quase (terço 1) |
+| 236 | Mov Avg Speed (3 sinais) (`pCxvfqFv`) | [LOTE25_TV](docs/LOTE25_TV.md) | nada robusto |
+| 235 | Pivot of Pivot Reversal (`mXygJWkv`) | [LOTE25_TV](docs/LOTE25_TV.md) | BTC 4h reprovada (51 trades, perde 2023-26) |
+| 234 | Mutanabby AI Algo Pro (long-only) (`t3UuM5DI`) | [LOTE25_TV](docs/LOTE25_TV.md) | nada robusto |
+| 233 | EMA Long Only (`yeBIG7oZ`) | [LOTE25_TV](docs/LOTE25_TV.md) | nada robusto |
+| 232 | RSI Bull Div (long-only) (`NC603cui`) | [LOTE25_TV](docs/LOTE25_TV.md) | nada robusto |
+| 231 | Combo 123 Reversal + RSI (`IuTkaU1w`) | [LOTE25_TV](docs/LOTE25_TV.md) | nada robusto |
+| 230 | Hybrid RSI + Breakout (`aAszLZWi`) | [LOTE25_TV](docs/LOTE25_TV.md) | nada robusto |
+| 229 | Ichimoku + MACD/CMF/TSI (`Pjsgs9JO`) | [LOTE25_TV](docs/LOTE25_TV.md) | ETH 30m quase (terço 1) |
+| 228 | Forex Fractal EMA Scalper (`pgsJGhIg`) | [LOTE25_TV](docs/LOTE25_TV.md) | nada robusto |
+| 227 | Range Strat MACD/RSI (`XWgu79vU`) | [LOTE25_TV](docs/LOTE25_TV.md) | nada robusto |
+| 226 | Dynamic RSI Momentum (`08eSyDlq`) | [LOTE25_TV](docs/LOTE25_TV.md) | nada robusto |
+| 225 | State-aware MA Cross (long-only) (`FgwP9BhA`) | [LOTE25_TV](docs/LOTE25_TV.md) | nada robusto |
+| 224 | Master Supertrend (`YexkkFy8`) | [LOTE25_TV](docs/LOTE25_TV.md) | nada robusto |
+| 223 | DAX Shooter (`CfgKji30`) | [LOTE25_TV](docs/LOTE25_TV.md) | nada robusto |
+| 222 | Triangular Hull MA (`gMeYb8Dp`) | [LOTE25_TV](docs/LOTE25_TV.md) | **aprovada: ETH 15m (THMA100)** |
+| 221 | Moon Phases (`BAc77VfD`) | [LOTE25_TV](docs/LOTE25_TV.md) | nada robusto |
+| 220 | CMO TradeDots (`MNBZqC72`) | [LOTE25_TV](docs/LOTE25_TV.md) | nada robusto |
+| 219 | Hull MA TimeFrame CrossOver (`KdC6xqb8`) | [LOTE25_TV](docs/LOTE25_TV.md) | nada robusto |
+| 218 | FlexiSuperTrend (`y9noW915`) | [LOTE25_TV](docs/LOTE25_TV.md) | WTI 15m reprovada |
+| 217 | MA Displaced Envelope + ATRTS (`n45eXKBG`) | [LOTE25_TV](docs/LOTE25_TV.md) | nada robusto |
+| 216 | Support Resistance (`6GeSAYfE`) | [LOTE25_TV](docs/LOTE25_TV.md) | XAU 1h reprovada |
+| 215 | Bollinger Bands Enhanced (long-only) (`V4B5nKIx`) | [LOTE25_TV](docs/LOTE25_TV.md) | nada robusto |
+| 214 | Chandelier Exit (`yca6gmSk`) | [LOTE25_TV](docs/LOTE25_TV.md) | **aprovada: ETH 30m** |
 | 213 | AlphaTrend (`uvkI3QJC`) | [LOTE24_TV](docs/LOTE24_TV.md) | BTC 30m reprovada |
 | 212 | EMA Crossover with TP (`B7umqU7W`) | [LOTE24_TV](docs/LOTE24_TV.md) | nada robusto |
 | 211 | Bullish Engulfing [Quant Science] (`0moOi6G5`) | [LOTE24_TV](docs/LOTE24_TV.md) | nada acima do B&H |

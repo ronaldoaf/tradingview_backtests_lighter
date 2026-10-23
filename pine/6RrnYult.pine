@@ -1,0 +1,187 @@
+//Created by moneros
+//Based on CM_Ultimate_MA_MTF_V2, SlingShot by ChrisMoody and Open Close Cross Strategy by JayRogers
+strategy(title='SlingShot + MTF + Open Close Cross Strategy', shorttitle='SlingShot+MTF+OCC Strategy',commission_type=strategy.commission.percent,commission_value=0.02 ,overlay=true, pyramiding=0, initial_capital=1000, currency=currency.USD)
+
+
+ae = input(true, title="Show Aggressive Entry?, Or Use as Alert To Potential Conservative Entry?")
+sce = input(true, title="Show Conservative Entry?")
+st = input(true, title="Show Trend Arrows at Top and Bottom of Screen?")
+def = input(false, title="Only Choose 1 - Either Conservative Entry Arrows or 'B'-'S' Letters")
+pa = input(true, title="Show Conservative Entry Arrows?")
+sl = input(false, title="Show 'B'-'S' Letters?")
+
+// === INPUTS ===
+useRes      = input(defval = true, title = "Use Alternate Resolution? ( recommended )")
+stratRes    = input(defval = "120", title = "Set Resolution ( should not be lower than chart )", type = resolution)
+useMA       = input(defval = true, title = "Use MA? ( otherwise use simple Open/Close data )")
+basisType   = input(defval = "DEMA", title = "MA Type: SMA, EMA, DEMA, TEMA, WMA, VWMA, SMMA, HullMA, LSMA, ALMA ( case sensitive )", type = string)
+basisLen    = input(defval = 14, title = "MA Period", minval = 1)
+offsetSigma = input(defval = 6, title = "Offset for LSMA / Sigma for ALMA", minval = 0)
+offsetALMA  = input(defval = 0.85, title = "Offset for ALMA", minval = 0, step = 0.01)
+useStop     = input(defval = true, title = "Use Trailing Stop?")
+slPoints    = input(defval = 200, title = "Stop Loss Trail Points", minval = 1)
+slOffset    = input(defval = 400, title = "Stop Loss Trail Offset", minval = 1)
+// === /INPUTS ===
+
+
+//EMA Definitions
+emaSlow = ema(close, 62)
+emaFast = ema(close, 38)
+//Color definition for Moving Averages
+col = emaFast > emaSlow ? lime : emaFast < emaSlow ? red : yellow
+//Moving Average Plots and Fill
+p1 = plot(emaSlow, title="Slow MA", style=linebr, linewidth=4, color=col, transp=70)
+p2 = plot(emaFast, title="Slow MA", style=linebr, linewidth=2, color=col, transp=70)
+fill(p1, p2, color=silver, transp=70)
+
+bgcolor(crossover(emaFast, emaSlow) ? lime : na, transp=30)
+bgcolor(crossunder(emaFast, emaSlow) ? red : na, transp=30)
+
+
+bgcolor(emaFast < emaSlow? red : na, transp=85)
+bgcolor(emaFast > emaSlow? lime : na, transp=97)
+
+strategy.entry("enter long", true, 1, when = crossover(emaFast, emaSlow))
+strategy.entry("enter short", false, 1, when = crossunder(emaFast, emaSlow))
+
+
+
+
+
+
+src = close
+useCurrentRes = input(true, title="Use Current Chart Resolution?")
+resCustom = input(title="Use Different Timeframe? Uncheck Box Above", type=resolution, defval="D")
+len = input(20, title="Moving Average Length - LookBack Period")
+//periodT3 = input(defval=7, title="Tilson T3 Period", minval=1) 
+factorT3 = input(defval=7, title="Tilson T3 Factor - *.10 - so 7 = .7 etc.", minval=0) 
+atype = input(1,minval=1,maxval=8,title="1=SMA, 2=EMA, 3=WMA, 4=HullMA, 5=VWMA, 6=RMA, 7=TEMA, 8=Tilson T3")
+spc=input(false, title="Show Price Crossing 1st Mov Avg - Highlight Bar?")
+cc = input(true,title="Change Color Based On Direction?")
+smoothe = input(2, minval=1, maxval=10, title="Color Smoothing - Setting 1 = No Smoothing")
+doma2 = input(false, title="Optional 2nd Moving Average")
+spc2=input(false, title="Show Price Crossing 2nd Mov Avg?")
+len2 = input(50, title="Moving Average Length - Optional 2nd MA")
+sfactorT3 = input(defval=7, title="Tilson T3 Factor - *.10 - so 7 = .7 etc.", minval=0)
+atype2 = input(1,minval=1,maxval=8,title="1=SMA, 2=EMA, 3=WMA, 4=HullMA, 5=VWMA, 6=RMA, 7=TEMA, 8=Tilson T3")
+cc2 = input(true,title="Change Color Based On Direction 2nd MA?")
+warn = input(false, title="***You Can Turn On The Show Dots Parameter Below Without Plotting 2nd MA to See Crosses***")
+warn2 = input(false, title="***If Using Cross Feature W/O Plotting 2ndMA - Make Sure 2ndMA Parameters are Set Correctly***")
+sd = input(false, title="Show Dots on Cross of Both MA's")
+
+res = useCurrentRes ? period : resCustom
+//hull ma definition
+hullma = wma(2*wma(src, len/2)-wma(src, len), round(sqrt(len)))
+//TEMA definition
+ema1 = ema(src, len)
+ema2 = ema(ema1, len)
+ema3 = ema(ema2, len)
+tema = 3 * (ema1 - ema2) + ema3
+
+//Tilson T3
+factor = factorT3 *.10
+gd(src, len, factor) => ema(src, len) * (1 + factor) - ema(ema(src, len), len) * factor 
+t3(src, len, factor) => gd(gd(gd(src, len, factor), len, factor), len, factor) 
+tilT3 = t3(src, len, factor) 
+ 
+
+avg = atype == 1 ? sma(src,len) : atype == 2 ? ema(src,len) : atype == 3 ? wma(src,len) : atype == 4 ? hullma : atype == 5 ? vwma(src, len) : atype == 6 ? rma(src,len) : atype == 7 ? 3 * (ema1 - ema2) + ema3 : tilT3
+//2nd Ma - hull ma definition
+hullma2 = wma(2*wma(src, len2/2)-wma(src, len2), round(sqrt(len2)))
+//2nd MA TEMA definition
+sema1 = ema(src, len2)
+sema2 = ema(sema1, len2)
+sema3 = ema(sema2, len2)
+stema = 3 * (sema1 - sema2) + sema3
+
+//2nd MA Tilson T3
+sfactor = sfactorT3 *.10
+sgd(src, len2, sfactor) => ema(src, len2) * (1 + sfactor) - ema(ema(src, len2), len2) * sfactor 
+st3(src, len2, sfactor) => sgd(sgd(gd(src, len2, sfactor), len2, sfactor), len2, sfactor) 
+stilT3 = st3(src, len2, sfactor) 
+
+avg2 = atype2 == 1 ? sma(src,len2) : atype2 == 2 ? ema(src,len2) : atype2 == 3 ? wma(src,len2) : atype2 == 4 ? hullma2 : atype2 == 5 ? vwma(src, len2) : atype2 == 6 ? rma(src,len2) : atype2 == 7 ? 3 * (ema1 - ema2) + ema3 : stilT3
+
+out = avg 
+out_two = avg2
+
+out1 = security(tickerid, res, out)
+out2 = security(tickerid, res, out_two)
+
+//Formula for Price Crossing Moving Average #1
+cr_up = open < out1 and close > out1
+cr_Down = open > out1 and close < out1
+//Formula for Price Crossing Moving Average #2
+cr_up2 = open < out2 and close > out2
+cr_Down2 = open > out2 and close < out2
+//barcolor Criteria for Price Crossing Moving Average #1
+iscrossUp() => cr_up
+iscrossDown() => cr_Down
+//barcolor Criteria for Price Crossing Moving Average #2
+iscrossUp2() => cr_up2
+iscrossDown2() => cr_Down2
+
+ma_up = out1 >= out1[smoothe]
+ma_down = out1 < out1[smoothe]
+
+colour = cc ? ma_up ? lime : ma_down ? red : aqua : aqua
+col2 = cc2 ? ma_up ? lime : ma_down ? red : aqua : white
+
+circleYPosition = out2
+
+
+// === BASE FUNCTIONS ===
+// Returns MA input selection variant, default to SMA if blank or typo.
+variant(type, src, len, offSig, offALMA) =>
+    v1 = sma(src, len)                                                  // Simple
+    v2 = ema(src, len)                                                  // Exponential
+    v3 = 2 * v2 - ema(v2, len)                                          // Double Exponential
+    v4 = 3 * (v2 - ema(v2, len)) + ema(ema(v2, len), len)               // Triple Exponential
+    v5 = wma(src, len)                                                  // Weighted
+    v6 = vwma(src, len)                                                 // Volume Weighted
+    v7 = na(v5[1]) ? sma(src, len) : (v5[1] * (len - 1) + src) / len    // Smoothed
+    v8 = wma(2 * wma(src, len / 2) - wma(src, len), round(sqrt(len)))   // Hull
+    v9 = linreg(src, len, offSig)                                       // Least Squares
+    v10 = alma(src, len, offALMA, offSig)                               // Arnaud Legoux
+    type=="EMA"?v2 : type=="DEMA"?v3 : type=="TEMA"?v4 : type=="WMA"?v5 : type=="VWMA"?v6 : type=="SMMA"?v7 : type=="HullMA"?v8 : type=="LSMA"?v9 : type=="ALMA"?v10 : v1
+// security wrapper for repeat calls
+reso(exp, use, res) => use ? security(tickerid, res, exp) : exp
+// === /BASE FUNCTIONS ===
+
+// === SERIES SETUP ===
+// open/close
+closeSeries = useMA ? reso(variant(basisType, close, basisLen, offsetSigma, offsetALMA), useRes, stratRes) : reso(close, useRes, stratRes)
+openSeries  = useMA ? reso(variant(basisType, open, basisLen, offsetSigma, offsetALMA), useRes, stratRes) : reso(open, useRes, stratRes)
+trendState  = closeSeries > openSeries ? true : closeSeries < openSeries ? false : trendState[1]
+// === /SERIES ===
+
+// === PLOTTING ===
+barcolor(color = closeSeries > openSeries ? #006600 : #990000, title = "Bar Colours")
+// channel outline
+closePlot   = plot(closeSeries, title = "Close Line", color = #009900, linewidth = 2, style = line, transp = 90)
+openPlot    = plot(openSeries, title = "Open Line", color = #CC0000, linewidth = 2, style = line, transp = 90)
+// channel fill
+closePlotU  = plot(trendState ? closeSeries : na, transp = 100, editable = false)
+openPlotU   = plot(trendState ? openSeries : na, transp = 100, editable = false)
+closePlotD  = plot(trendState ? na : closeSeries, transp = 100, editable = false)
+openPlotD   = plot(trendState ? na : openSeries, transp = 100, editable = false)
+fill(openPlotU, closePlotU, title = "Up Trend Fill", color = #009900, transp = 40)
+fill(openPlotD, closePlotD, title = "Down Trend Fill", color = #CC0000, transp = 40)
+// === /PLOTTING ===
+
+
+
+plot(out1, title="Multi-Timeframe Moving Avg", style=line, linewidth=4, color = colour)
+
+
+bgcolor(emaFast > emaSlow and ma_down and not trendState ? yellow : na, transp=80)
+
+
+//
+
+//plotchar(crossover(emaFast, emaSlow) ? close:na, char='❄', size=size.normal, color=lime, textcolor=lime)
+
+
+
+
+
