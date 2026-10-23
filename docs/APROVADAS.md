@@ -152,6 +152,22 @@ Convenções: sinal no fechamento, ordem na abertura seguinte, custo de spread +
 - **Robustez:** terços +461/+23/+16% vs +328/+0/−11%; 2ª metade +21% vs +13%; custo 4× +98%.
 - **Ressalvas:** com o stop original de 10% falha no 3º terço e na 2ª metade; boa parte do ganho vem de 2020–2022; poucos trades por ano.
 
+## 19. Heikin Ashi MACD — BTC 1h (lote 28, aprovada com ressalva)
+
+- **Script:** `YfPnKE22` · [LOTE28_TV](LOTE28_TV.md) · `scripts/study_tvlote28.py`
+- **Regra:** MACD de DEMAs feitas com SMA (12, 25, sinal SMA15) sobre o close Heikin Ashi: delta cruza 0 para cima compra, para baixo vende; inverte; alvo 10% e stop 3%.
+- **Resultado:** +94% a.a. vs +43,9%; t = 3,4; 571 trades/ano.
+- **Robustez:** terços +154/+99/+49% vs +130/+15/+14%; 2ª metade +70% vs +40%; custo 4× +63%. Sem SL/TP: +120% a.a., também passa em tudo.
+- **Ressalvas:** giro alto (depende de custo baixo); DD alto; no ETH 1h a mesma regra perde o 1º terço.
+
+## 20. HA Price Action com velas comuns — WTI 4h (lote 28, aprovada com ressalva)
+
+- **Script:** `FEJvYRkw` · [LOTE28_TV](LOTE28_TV.md) · `scripts/study_tvlote28.py`
+- **Regra:** Close acima da máxima anterior, vela de alta e máxima anterior acima da de 2 barras atrás compra; vela de baixa fechando abaixo da mínima anterior vende; inverte. O original usa velas Heikin Ashi e só compra; aqui são velas comuns e os dois lados.
+- **Resultado:** +41% a.a. vs +5,4%; t = 1,6; 200 trades/ano.
+- **Robustez:** terços +38/+41/+39% vs −21/+40/+8%; 2ª metade +35% vs +3%; custo 4× +25%.
+- **Ressalvas:** a variante não é a do autor; o 2º terço passa por 1,3 p.p.; t baixo.
+
 ## Correlação entre as candidatas do ETH
 
 `scripts/study_eth_corr.py` → `results/study_eth_corr.txt`. Correlação dos retornos diários entre as cinco candidatas do ETH vai de 0,29 a 0,72; com o B&H do ETH fica perto de zero. Ficam na mesma direção 62% a 81% do tempo. Pares mais parecidos: RSI-MA × Ichimoku (0,72) e RSI-MA × Pivot ST (0,66). UT Bot e Scalping são os mais diferentes. A carteira com peso igual nas cinco cai o DD para cerca de −39% (vs −55% a −74% de cada uma, na marcação diária aproximada).

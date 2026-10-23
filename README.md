@@ -100,6 +100,26 @@ Todas reprovadas, exceto a candidata indicada. Ordem cronológica inversa.
 
 | # | Estratégia (autor, id do script) | Doc | Diagnóstico |
 | --- | --- | --- | --- |
+| 323 | Babypips Inside Bar Momentum (`Y2e6lEXw`) | [LOTE28_TV](docs/LOTE28_TV.md) | nada robusto |
+| 322 | Tres medias (SMA 7/25/99) (`sPAROdDQ`) | [LOTE28_TV](docs/LOTE28_TV.md) | nada robusto |
+| 321 | Gaussian Channel (`erJi1tWf`) | [LOTE28_TV](docs/LOTE28_TV.md) | nada robusto |
+| 320 | Heikin Ashi MACD (`YfPnKE22`) | [LOTE28_TV](docs/LOTE28_TV.md) | **aprovada: BTC 1h**; quase no ETH 1h |
+| 319 | RCI (`BsqKKqyq`) | [LOTE28_TV](docs/LOTE28_TV.md) | nada robusto |
+| 318 | Bollinger Breakout (long-only, stop) (`EBlgYNEe`) | [LOTE28_TV](docs/LOTE28_TV.md) | quase: ETH 15m (perde o 1º terço) |
+| 317 | Hull MA vs Candle (`lc6FSl0Z`) | [LOTE28_TV](docs/LOTE28_TV.md) | nada robusto |
+| 316 | Moving Average (BiznesFilosof) (`GFqaQvbX`) | [LOTE28_TV](docs/LOTE28_TV.md) | quase: BTC 1D sma50 (2ª metade empata) |
+| 315 | SuperTrend Cloud (`sO5mkXTE`) | [LOTE28_TV](docs/LOTE28_TV.md) | nada robusto |
+| 314 | L2 Reversal Labels (`FH1VyeNT`) | [LOTE28_TV](docs/LOTE28_TV.md) | nada robusto |
+| 313 | Heikin Ashi Price Action (`FEJvYRkw`) | [LOTE28_TV](docs/LOTE28_TV.md) | **aprovada: WTI 4h (velas comuns, comprado e vendido)** |
+| 312 | Golden Vector Trend Orchestrator (`dxhgQwyI`) | [LOTE28_TV](docs/LOTE28_TV.md) | quase: ETH 4h long (perde o 1º terço) |
+| 311 | PMax (`v6Ws9H9j`) | [LOTE28_TV](docs/LOTE28_TV.md) | quase: ETH 4h (perde o 1º terço) |
+| 310 | FX Sniper T3-CCI (`tfkYcvBX`) | [LOTE28_TV](docs/LOTE28_TV.md) | nada robusto |
+| 309 | Price Action + Bollinger (`ExBZnqPc`) | [LOTE28_TV](docs/LOTE28_TV.md) | nada robusto |
+| 308 | Bitcoin SuperFlip (`NgSIfKQx`) | [LOTE28_TV](docs/LOTE28_TV.md) | nada robusto |
+| 307 | Crypto Crew University (MFI/RSI/StochRSI) (`pVHd5BHO`) | [LOTE28_TV](docs/LOTE28_TV.md) | nada robusto |
+| 306 | PlanB Quant Investing 101 (`Tz02ikOo`) | [LOTE28_TV](docs/LOTE28_TV.md) | nada robusto |
+| 305 | Kozlod 3 MA (`pJS1gX7O`) | [LOTE28_TV](docs/LOTE28_TV.md) | nada robusto |
+| 304 | Stochastic (BiznesFilosof) (`V5PHO3OM`) | [LOTE28_TV](docs/LOTE28_TV.md) | nada robusto |
 | 303 | OBV Oscillator (`VQjItUaK`) | [LOTE27_TV](docs/LOTE27_TV.md) | nada robusto |
 | 302 | Combo 2/20 EMA + AC (`Cfz1HMO1`) | [LOTE27_TV](docs/LOTE27_TV.md) | nada robusto |
 | 301 | SSL Channel Cross (`jds0DHEd`) | [LOTE27_TV](docs/LOTE27_TV.md) | quase: ETH 30m l50 (perde o 1º terço) |
