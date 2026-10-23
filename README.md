@@ -100,6 +100,26 @@ Todas reprovadas, exceto a candidata indicada. Ordem cronológica inversa.
 
 | # | Estratégia (autor, id do script) | Doc | Diagnóstico |
 | --- | --- | --- | --- |
+| 153 | Multi Timeframe RSI [TradeDots] (`kfj6EdjQ`) | [LOTE21_TV](docs/LOTE21_TV.md) | nada acima do B&H |
+| 152 | Super Guppy Strategy (`vPStjyWz`) | [LOTE21_TV](docs/LOTE21_TV.md) | ETH 30m +98% perde o terço 1 |
+| 151 | MACD + Stochastic + RSI (`2BIMZDGk`) | [LOTE21_TV](docs/LOTE21_TV.md) | nada acima do B&H |
+| 150 | RSI Binary Strategy (`1jTE6hJz`) | [LOTE21_TV](docs/LOTE21_TV.md) | nada acima do B&H |
+| 149 | LUBE (`i9tJOtjl`) | [LOTE21_TV](docs/LOTE21_TV.md) | nada acima do B&H |
+| 148 | Keltner bounce from border (`mQKGzLMD`) | [LOTE21_TV](docs/LOTE21_TV.md) | nada robusto |
+| 147 | Renko Strategy Open_Close (`e6mDSPPe`) | [LOTE21_TV](docs/LOTE21_TV.md) | nada acima do B&H |
+| 146 | Liquidity Sweep Filter [AlgoAlpha] (`gx7267BR`) | [LOTE21_TV](docs/LOTE21_TV.md) | ETH 1h +101% perde o terço 1; BTC 1h morre em 2024-26 |
+| 145 | 5min MACD scalp by Joel (`qN11DuKy`) | [LOTE21_TV](docs/LOTE21_TV.md) | nada acima do B&H |
+| 144 | Bollinger Bands - Breakout (`sTFw2fOj`) | [LOTE21_TV](docs/LOTE21_TV.md) | nada robusto |
+| 143 | MACD + BB + RSI [Alorse] (`6xo9yMmT`) | [LOTE21_TV](docs/LOTE21_TV.md) | nada acima do B&H |
+| 142 | Gold-Silver 30m Only (`lx4O1PPu`) | [LOTE21_TV](docs/LOTE21_TV.md) | WTI 4h +75% (todos os terços) com só 52 trades: quase |
+| 141 | BB+AO STRAT (`ibq1TYLX`) | [LOTE21_TV](docs/LOTE21_TV.md) | nada acima do B&H |
+| 140 | ATR Strategy Back-test (`DW1GWSWQ`) | [LOTE21_TV](docs/LOTE21_TV.md) | nada robusto |
+| 139 | SuperTREX strategy (`K3U9opwQ`) | [LOTE21_TV](docs/LOTE21_TV.md) | BTC 1h +83% (18 células > B&H) mas perde em 2024-26 |
+| 138 | Hulk Scalper x35 (`oGUYuz4N`) | [LOTE21_TV](docs/LOTE21_TV.md) | nada acima do B&H |
+| 137 | RSI Trend Crypto (`Ru7qOVtp`) | [LOTE21_TV](docs/LOTE21_TV.md) | nada acima do B&H |
+| 136 | Moving Average Consecutive Up/Down (ChartArt) (`7KXy9NNJ`) | [LOTE21_TV](docs/LOTE21_TV.md) | **ETH 4h aprovada com ressalva** (+134% vs +57%, todos os terços, custo 4×) |
+| 135 | Squeeze Momentum Strategy v2 (`lEQZl0vE`) | [LOTE21_TV](docs/LOTE21_TV.md) | nada robusto |
+| 134 | Trend Surfers - Premium Breakout (`w91kwvnX`) | [LOTE21_TV](docs/LOTE21_TV.md) | ETH 4h (55) +100% mas perde o terço 1 |
 | 133 | World Cycle ATH/ATL Logarithmic (`824WmIi7`) | [LOTE20_TV](docs/LOTE20_TV.md) | poucos trades; nada acima do B&H |
 | 132 | FRAMA Supertrend strategy (`y81orwSC`) | [LOTE20_TV](docs/LOTE20_TV.md) | 0 células robustas acima do B&H |
 | 131 | [DS] Entry_Exit TRADE V01 (`RO4rB2HF`) | [LOTE20_TV](docs/LOTE20_TV.md) | ETH/BTC 30m acima do B&H no total mas morrem em 2024-26; WTI 1h falha no custo 4× |
