@@ -1,0 +1,75 @@
+As 10 de menor |corr| media antes do OOS entre as 94 aprovadas (0.014):
+  §18 Wyckoff ETH 4h
+  L20 nw WTI 1D {'hlen': 8, 'x0': 25, 'shorts': True}
+  L29 bot WTI 1D {'k': 0.02}
+  L31 lch ETH 15min v2% hma400  [resgate]
+  L21 lube BTC 30min 500 tl-0.1 ambos  [resgate]
+  L31 lch ETH 1h v4% hma200  [resgate]
+  L20 cam US100 15min sl1% tp2% ambos  [resgate]
+  L20 atrgod XAU 4h sl4.5 rr1.5 semfiltros ambos  [resgate]
+  L19 abcd BTC 4h sl2.0% rr2 ambos  [resgate]
+  L19 cipher US100 4h wt tp4 sl2 ambos  [resgate]
+                                                     §18 Wyckoff ETH 4h  L20 nw WTI 1D {'hlen': 8, 'x0': 25, 'shorts': True}  L29 bot WTI 1D {'k': 0.02}  L31 lch ETH 15min v2% hma400  L21 lube BTC 30min 500 tl-0.1 ambos  L31 lch ETH 1h v4% hma200  L20 cam US100 15min sl1% tp2% ambos  L20 atrgod XAU 4h sl4.5 rr1.5 semfiltros ambos  L19 abcd BTC 4h sl2.0% rr2 ambos  L19 cipher US100 4h wt tp4 sl2 ambos
+§18 Wyckoff ETH 4h                                                 1.00                                                 0.00                        0.01                          0.04                                 0.05                       0.01                                 0.02                                           -0.02                             -0.01                                 -0.00
+L20 nw WTI 1D {'hlen': 8, 'x0': 25, 'shorts': True}                0.00                                                 1.00                       -0.01                         -0.01                                -0.02                      -0.01                                 0.04                                           -0.01                             -0.01                                 -0.02
+L29 bot WTI 1D {'k': 0.02}                                         0.01                                                -0.01                        1.00                          0.00                                 0.01                       0.03                                 0.00                                            0.00                             -0.05                                  0.01
+L31 lch ETH 15min v2% hma400                                       0.04                                                -0.01                        0.00                          1.00                                -0.01                      -0.00                                -0.03                                           -0.00                              0.01                                 -0.01
+L21 lube BTC 30min 500 tl-0.1 ambos                                0.05                                                -0.02                        0.01                         -0.01                                 1.00                       0.01                                 0.01                                            0.00                             -0.00                                 -0.00
+L31 lch ETH 1h v4% hma200                                          0.01                                                -0.01                        0.03                         -0.00                                 0.01                       1.00                                -0.05                                            0.02                             -0.01                                 -0.00
+L20 cam US100 15min sl1% tp2% ambos                                0.02                                                 0.04                        0.00                         -0.03                                 0.01                      -0.05                                 1.00                                           -0.03                              0.02                                 -0.00
+L20 atrgod XAU 4h sl4.5 rr1.5 semfiltros ambos                    -0.02                                                -0.01                        0.00                         -0.00                                 0.00                       0.02                                -0.03                                            1.00                              0.00                                 -0.02
+L19 abcd BTC 4h sl2.0% rr2 ambos                                  -0.01                                                -0.01                       -0.05                          0.01                                -0.00                      -0.01                                 0.02                                            0.00                              1.00                                  0.01
+L19 cipher US100 4h wt tp4 sl2 ambos                              -0.00                                                -0.02                        0.01                         -0.01                                -0.00                      -0.00                                -0.00                                           -0.02                              0.01                                  1.00
+
+Carteira 8 das 34 (0.027): L22 force BTC 4h {'fast': 5, 'slow': 50, 'short_ok': False}, L23 tema ETH 15min {'short_ok': True}, L26 csq ETH 4h {'mfl': 14}, L28 hamacd ETH 1h {'sltp': False}, L23 crazy WTI 1h {'sll': 30}, L25 tlb WTI 4h {'maf': False}, L29 bot WTI 1D {'k': 0.02}, L3 occ HULL13 x5 XAU 1h
+
+=== Antes do OOS: 2020-01-01..2023-05-16
+  Carteira 10 (das 94)           CAGR  +47.7%  Sharpe +3.62  DD   -5%  vol  11%
+  Carteira 8 (das 34)            CAGR +110.5%  Sharpe +3.82  DD  -16%  vol  20%
+  Carteira 94                    CAGR  +83.2%  Sharpe +4.08  DD   -4%  vol  15%
+  Carteira 34                    CAGR +140.1%  Sharpe +3.67  DD   -7%  vol  25%
+  B&H 4 ativos                   CAGR  +57.7%  Sharpe +1.23  DD  -48%  vol  45%
+    §18 Wyckoff ETH 4h                               CAGR +110.0%  Sharpe +1.53  DD  -50%  vol  60%
+    L20 nw WTI 1D {'hlen': 8, 'x0': 25, 'shorts': True} CAGR  +31.3%  Sharpe +0.75  DD  -53%  vol  58%
+    L29 bot WTI 1D {'k': 0.02}                       CAGR  +70.4%  Sharpe +1.33  DD  -36%  vol  49%
+    L31 lch ETH 15min v2% hma400                     CAGR  +60.1%  Sharpe +2.03  DD  -25%  vol  25%
+    L21 lube BTC 30min 500 tl-0.1 ambos              CAGR  +40.0%  Sharpe +1.50  DD  -23%  vol  24%
+    L31 lch ETH 1h v4% hma200                        CAGR  +36.0%  Sharpe +1.67  DD  -12%  vol  19%
+    L20 cam US100 15min sl1% tp2% ambos              CAGR  +33.6%  Sharpe +1.81  DD  -15%  vol  17%
+    L20 atrgod XAU 4h sl4.5 rr1.5 semfiltros ambos   CAGR   +6.6%  Sharpe +0.70  DD  -10%  vol  10%
+    L19 abcd BTC 4h sl2.0% rr2 ambos                 CAGR  +39.0%  Sharpe +1.52  DD  -18%  vol  23%
+    L19 cipher US100 4h wt tp4 sl2 ambos             CAGR   +3.4%  Sharpe +1.08  DD   -1%  vol   3%
+
+=== Depois do OOS: 2023-05-17..2026-10-04
+  Carteira 10 (das 94)           CAGR  +13.7%  Sharpe +1.51  DD   -7%  vol   9%
+  Carteira 8 (das 34)            CAGR  +41.6%  Sharpe +2.43  DD  -11%  vol  15%
+  Carteira 94                    CAGR  +32.0%  Sharpe +2.79  DD   -4%  vol  10%
+  Carteira 34                    CAGR  +43.1%  Sharpe +2.42  DD   -7%  vol  15%
+  B&H 4 ativos                   CAGR  +27.7%  Sharpe +0.99  DD  -31%  vol  29%
+    §18 Wyckoff ETH 4h                               CAGR  +29.8%  Sharpe +0.79  DD  -31%  vol  45%
+    L20 nw WTI 1D {'hlen': 8, 'x0': 25, 'shorts': True} CAGR   -0.2%  Sharpe +0.22  DD  -58%  vol  45%
+    L29 bot WTI 1D {'k': 0.02}                       CAGR  +11.8%  Sharpe +0.48  DD  -47%  vol  38%
+    L31 lch ETH 15min v2% hma400                     CAGR  +13.7%  Sharpe +1.19  DD  -13%  vol  11%
+    L21 lube BTC 30min 500 tl-0.1 ambos              CAGR  +18.6%  Sharpe +0.98  DD  -19%  vol  19%
+    L31 lch ETH 1h v4% hma200                        CAGR   +2.7%  Sharpe +0.40  DD   -9%  vol   7%
+    L20 cam US100 15min sl1% tp2% ambos              CAGR   +1.9%  Sharpe +0.20  DD  -23%  vol  14%
+    L20 atrgod XAU 4h sl4.5 rr1.5 semfiltros ambos   CAGR  +19.9%  Sharpe +1.65  DD  -12%  vol  11%
+    L19 abcd BTC 4h sl2.0% rr2 ambos                 CAGR   +5.8%  Sharpe +0.37  DD  -24%  vol  21%
+    L19 cipher US100 4h wt tp4 sl2 ambos             CAGR   +3.3%  Sharpe +1.26  DD   -1%  vol   3%
+
+=== Periodo todo: 2020-01-01..2026-10-04
+  Carteira 10 (das 94)           CAGR  +29.6%  Sharpe +2.66  DD   -7%  vol  10%
+  Carteira 8 (das 34)            CAGR  +72.6%  Sharpe +3.19  DD  -16%  vol  18%
+  Carteira 94                    CAGR  +55.5%  Sharpe +3.49  DD   -4%  vol  13%
+  Carteira 34                    CAGR  +85.2%  Sharpe +3.10  DD   -7%  vol  21%
+  B&H 4 ativos                   CAGR  +41.8%  Sharpe +1.11  DD  -48%  vol  38%
+    §18 Wyckoff ETH 4h                               CAGR  +65.0%  Sharpe +1.20  DD  -50%  vol  53%
+    L20 nw WTI 1D {'hlen': 8, 'x0': 25, 'shorts': True} CAGR  +14.4%  Sharpe +0.51  DD  -74%  vol  52%
+    L29 bot WTI 1D {'k': 0.02}                       CAGR  +37.9%  Sharpe +0.95  DD  -47%  vol  44%
+    L31 lch ETH 15min v2% hma400                     CAGR  +34.9%  Sharpe +1.65  DD  -25%  vol  19%
+    L21 lube BTC 30min 500 tl-0.1 ambos              CAGR  +28.8%  Sharpe +1.26  DD  -23%  vol  22%
+    L31 lch ETH 1h v4% hma200                        CAGR  +18.2%  Sharpe +1.20  DD  -12%  vol  15%
+    L20 cam US100 15min sl1% tp2% ambos              CAGR  +16.6%  Sharpe +1.07  DD  -23%  vol  16%
+    L20 atrgod XAU 4h sl4.5 rr1.5 semfiltros ambos   CAGR  +13.0%  Sharpe +1.21  DD  -12%  vol  11%
+    L19 abcd BTC 4h sl2.0% rr2 ambos                 CAGR  +21.2%  Sharpe +0.98  DD  -24%  vol  22%
+    L19 cipher US100 4h wt tp4 sl2 ambos             CAGR   +3.4%  Sharpe +1.16  DD   -1%  vol   3%
