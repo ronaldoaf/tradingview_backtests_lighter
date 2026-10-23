@@ -1,0 +1,727 @@
+Resgate lotes 3 a 33: 3235 celulas das grades com t > 2 e bp_liq > 0 (265 sem captura); 458 novas passam em CAGR > 0, Sharpe >= B&H e t > 2 no periodo todo com a conta corrigida; 254 passam no criterio novo; 60 entram com |corr| < 0,5 contra as 34 aprovadas e entre si.
+
+L20 cam ETH 1h sl0.5% tp1% ambos                     ENTRA      CAGR  +25.2% (B&H  +56.8%) Sh +1.87 (+0.96) DD -14% t +4.92 tercos  +29%/ +31%/ +16% 2a  +16% sp4  +15% f0  +25% corr +0.19 (L12 rsima ETH 15min {'rl': 5, 'ml': 50}) 
+L28 hamacd ETH 1h tp10 sl3 ambos                     redundante CAGR +159.6% (B&H  +56.8%) Sh +1.76 (+0.96) DD -80% t +5.32 tercos +200%/+114%/+153% 2a +155% sp4 +119% f0 +159% corr +0.84 (L28 hamacd ETH 1h {'sltp': False}) 
+L20 cam ETH 15min sl1% tp2% ambos                    ENTRA      CAGR  +49.9% (B&H  +56.8%) Sh +1.76 (+0.96) DD -27% t +4.48 tercos +125%/ +19%/ +26% 2a  +14% sp4  +36% f0  +50% corr +0.44 (L20 cam ETH 1h sl0.5% tp1% ambos) 
+L14 drsi ETH 1h r21 w50 d3 zero ambos                redundante CAGR +171.3% (B&H  +56.8%) Sh +1.72 (+0.96) DD -54% t +4.26 tercos +281%/+145%/+106% 2a  +61% sp4 +132% f0 +171% corr +0.61 (L28 hamacd ETH 1h {'sltp': False}) 
+L14 drsi ETH 1h r21 w50 d3 zero long                 redundante CAGR +123.7% (B&H  +56.8%) Sh +1.70 (+0.96) DD -42% t +2.32 tercos +368%/ +61%/ +45% 2a  +39% sp4 +107% f0 +136% corr +0.57 (L24 best ETH 1h {'short_ok': False}) 
+L23 tema BTC 4h adx43 long                           ENTRA      CAGR  +34.7% (B&H  +43.7%) Sh +1.69 (+0.91) DD -12% t +3.87 tercos  +54%/ +40%/ +14% 2a  +26% sp4  +34% f0  +37% corr +0.47 (L22 force BTC 4h {'fast': 5, 'slow': 50, 'short_ok': False}) 
+L20 cam ETH 15min sl0.5% tp1% ambos                  redundante CAGR  +25.7% (B&H  +56.8%) Sh +1.69 (+0.96) DD -18% t +3.83 tercos  +32%/ +15%/ +30% 2a  +23% sp4  +11% f0  +26% corr +0.55 (L20 cam ETH 15min sl1% tp2% ambos) 
+L31 lch ETH 15min v2% hma400                         ENTRA      CAGR  +34.9% (B&H  +56.8%) Sh +1.65 (+0.96) DD -27% t +7.71 tercos  +84%/ +17%/ +14% 2a  +14% sp4  +33% f0  +35% corr +0.25 (§4c Scalping ETH 30m) 
+L15 tmfs ETH 1h sw20 sl8atr tp1% long                reprova    CAGR  +23.7% (B&H  +56.8%) Sh +1.65 (+0.96) DD -17% t +1.81 tercos  +45%/ +15%/ +13% 2a  +14% sp4  +20% f0  +25% corr +nan () t2
+L26 pprs ETH 15min pv6/3 ambos                       ENTRA      CAGR +159.2% (B&H  +56.8%) Sh +1.64 (+0.96) DD -62% t +4.80 tercos +197%/ +13%/+409% 2a +189% sp4  +78% f0 +160% corr +0.47 (L12 rsima ETH 15min {'rl': 5, 'ml': 50}) 
+L12 rsima ETH 15min r10 m50 long                     redundante CAGR +116.6% (B&H  +56.8%) Sh +1.63 (+0.96) DD -49% t +3.49 tercos +422%/ +35%/ +40% 2a  +34% sp4  +99% f0 +129% corr +0.73 (L24 best ETH 1h {'short_ok': False}) 
+L24 best ETH 1h m1.5 long                            redundante CAGR  +84.6% (B&H  +56.8%) Sh +1.61 (+0.96) DD -33% t +2.33 tercos +229%/ +33%/ +40% 2a  +33% sp4  +77% f0  +90% corr +0.86 (L24 best ETH 1h {'short_ok': False}) 
+L24 dcf ETH 15min tp2.5% ambos                       reprova    CAGR +104.6% (B&H  +56.8%) Sh +1.61 (+0.96) DD -42% t +5.22 tercos +245%/ +33%/ +86% 2a  +58% sp4  -14% f0 +105% corr +nan () sp4_pos
+L15 sbs ETH 15min sl1.00% sessao ambos               ENTRA      CAGR  +72.3% (B&H  +56.8%) Sh +1.61 (+0.96) DD -40% t +3.68 tercos +136%/ +50%/ +44% 2a  +49% sp4  +12% f0  +72% corr +0.36 (L15 sbs ETH 30min {'sl': 0.02, 'session': False}) 
+L14 drsi BTC 1h r21 w50 d3 zero long                 reprova    CAGR  +80.7% (B&H  +43.9%) Sh +1.60 (+0.91) DD -41% t +1.97 tercos +243%/ +44%/ +21% 2a  +36% sp4  +67% f0  +91% corr +nan () t2
+L24 vwap ETH 15min sma3 long                         redundante CAGR +113.4% (B&H  +56.8%) Sh +1.59 (+0.96) DD -53% t +3.29 tercos +599%/  +3%/ +31% 2a  +35% sp4  +48% f0 +126% corr +0.59 (L24 best ETH 1h {'short_ok': False}) 
+L24 dcf ETH 15min semtp long                         ENTRA      CAGR  +76.4% (B&H  +56.8%) Sh +1.58 (+0.96) DD -38% t +3.98 tercos +202%/ +14%/ +57% 2a  +45% sp4   +2% f0  +82% corr +0.46 (L24 best ETH 1h {'short_ok': False}) 
+L14 drsi ETH 30min r21 w100 d3 zero long             redundante CAGR +111.5% (B&H  +56.8%) Sh +1.58 (+0.96) DD -61% t +3.08 tercos +274%/ +51%/ +66% 2a  +54% sp4  +94% f0 +123% corr +0.54 (L24 dcf ETH 15min semtp long) 
+L14 drsi BTC 30min r21 w100 d3 zero long             redundante CAGR  +77.6% (B&H  +43.9%) Sh +1.58 (+0.91) DD -47% t +4.07 tercos +213%/ +60%/ +11% 2a  +32% sp4  +63% f0  +87% corr +0.62 (L14 drsi BTC 1h {'rl': 21, 'window': 50, 'mode': 'zero'}) 
+L26 pprs ETH 15min pv3/3 ambos                       redundante CAGR +138.2% (B&H  +56.8%) Sh +1.57 (+0.96) DD -69% t +4.84 tercos  +75%/ +48%/+409% 2a +214% sp4  +41% f0 +139% corr +0.77 (L26 pprs ETH 15min pv6/3 ambos) 
+L31 lch BTC 15min v2% hma200                         ENTRA      CAGR  +18.3% (B&H  +43.8%) Sh +1.56 (+0.91) DD -14% t +6.87 tercos  +40%/ +16%/  +2% 2a   +5% sp4  +18% f0  +18% corr +0.47 (L31 lch ETH 15min v2% hma400) 
+L20 cam BTC 15min sl1% tp2% ambos                    ENTRA      CAGR  +41.6% (B&H  +43.8%) Sh +1.56 (+0.91) DD -25% t +3.05 tercos  +65%/ +33%/ +30% 2a  +29% sp4  +30% f0  +42% corr +0.31 (L20 cam ETH 15min sl1% tp2% ambos) 
+L20 cam ETH 1h sl1% tp2% ambos                       redundante CAGR  +40.1% (B&H  +56.8%) Sh +1.55 (+0.96) DD -27% t +3.90 tercos  +64%/  +9%/ +53% 2a  +28% sp4  +30% f0  +40% corr +0.71 (L20 cam ETH 15min sl1% tp2% ambos) 
+L17 ftsma ETH 30min 5/20/200 semft long              redundante CAGR  +99.2% (B&H  +56.8%) Sh +1.53 (+0.96) DD -47% t +2.66 tercos +402%/ +32%/ +18% 2a  +28% sp4  +90% f0 +110% corr +0.71 (L24 best ETH 1h {'short_ok': False}) 
+L12 rsima ETH 15min r5 m50 long                      redundante CAGR +104.8% (B&H  +56.8%) Sh +1.53 (+0.96) DD -54% t +2.97 tercos +374%/ +29%/ +36% 2a  +34% sp4  +81% f0 +117% corr +0.73 (L24 best ETH 1h {'short_ok': False}) 
+L20 cam BTC 1h sl1% tp2% ambos                       redundante CAGR  +38.3% (B&H  +43.9%) Sh +1.52 (+0.91) DD -28% t +2.88 tercos  +79%/ +15%/ +29% 2a  +20% sp4  +29% f0  +39% corr +0.78 (L20 cam BTC 15min sl1% tp2% ambos) 
+L20 cam BTC 30min sl1% tp2% ambos                    redundante CAGR  +39.2% (B&H  +43.9%) Sh +1.52 (+0.91) DD -20% t +3.43 tercos  +69%/ +25%/ +28% 2a  +28% sp4  +29% f0  +39% corr +0.87 (L20 cam BTC 15min sl1% tp2% ambos) 
+L17 ftsma ETH 30min 5/20/200 ft long                 redundante CAGR  +97.5% (B&H  +56.8%) Sh +1.51 (+0.96) DD -54% t +2.49 tercos +399%/ +39%/ +10% 2a  +26% sp4  +88% f0 +108% corr +0.71 (L24 best ETH 1h {'short_ok': False}) 
+L26 pprs ETH 1h pv3/3 ambos                          redundante CAGR +134.9% (B&H  +56.8%) Sh +1.50 (+0.96) DD -43% t +4.29 tercos +244%/ +76%/+106% 2a  +67% sp4 +107% f0 +135% corr +0.66 (L12 rsima ETH 15min {'rl': 5, 'ml': 50}) 
+L24 dcf ETH 1h semtp ambos                           redundante CAGR +106.0% (B&H  +56.8%) Sh +1.49 (+0.96) DD -33% t +4.35 tercos +164%/ +98%/ +63% 2a  +59% sp4  +69% f0 +107% corr +0.68 (L12 rsima ETH 15min {'rl': 5, 'ml': 50}) 
+L20 cam BTC 15min sl1% tp2% long                     redundante CAGR  +28.0% (B&H  +43.8%) Sh +1.49 (+0.91) DD -17% t +2.64 tercos  +50%/ +24%/ +12% 2a  +19% sp4  +23% f0  +30% corr +0.70 (L20 cam BTC 15min sl1% tp2% ambos) 
+L21 hulk BTC 15min thr0.1 adx33 tp1.35% sl1.1% ambos ENTRA      CAGR  +22.3% (B&H  +43.8%) Sh +1.48 (+0.91) DD -12% t +3.19 tercos  +29%/ +24%/ +14% 2a  +13% sp4  +17% f0  +22% corr +0.16 (§16 HULL+T3 ETH 1h) 
+L20 cam BTC 30min sl1% tp2% long                     redundante CAGR  +27.2% (B&H  +43.9%) Sh +1.47 (+0.91) DD -18% t +2.04 tercos  +47%/ +17%/ +20% 2a  +23% sp4  +22% f0  +29% corr +0.61 (L20 cam BTC 15min sl1% tp2% ambos) 
+L24 vwap ETH 30min sma3 long                         reprova    CAGR +100.5% (B&H  +56.8%) Sh +1.47 (+0.96) DD -63% t +2.70 tercos +438%/  -1%/ +47% 2a  +58% sp4  +54% f0 +112% corr +nan () pos_t2
+L21 hulk BTC 15min thr0.3 adx33 tp1.35% sl1.1% ambos redundante CAGR  +15.4% (B&H  +43.8%) Sh +1.45 (+0.91) DD -11% t +3.12 tercos  +19%/ +21%/  +6% 2a  +13% sp4  +13% f0  +15% corr +0.70 (L21 hulk BTC 15min thr0.1 adx33 tp1.35% sl1.1% ambos) 
+L26 pprs ETH 30min pv3/3 ambos                       redundante CAGR +127.4% (B&H  +56.8%) Sh +1.45 (+0.96) DD -66% t +3.67 tercos +171%/ +54%/+174% 2a  +86% sp4  +75% f0 +127% corr +0.78 (L26 pprs ETH 15min pv6/3 ambos) 
+L20 cam BTC 15min sl0.5% tp1% ambos                  redundante CAGR  +20.9% (B&H  +43.8%) Sh +1.44 (+0.91) DD -21% t +2.52 tercos  +23%/ +25%/ +15% 2a  +17% sp4   +8% f0  +21% corr +0.59 (L20 cam BTC 15min sl1% tp2% ambos) 
+L31 lch BTC 15min v2% hma400                         redundante CAGR  +21.4% (B&H  +43.8%) Sh +1.43 (+0.91) DD -22% t +7.08 tercos  +45%/ +21%/  +2% 2a   +3% sp4  +20% f0  +22% corr +0.74 (L31 lch BTC 15min v2% hma200) 
+L26 pprs ETH 30min pv6/3 ambos                       redundante CAGR +124.5% (B&H  +56.8%) Sh +1.43 (+0.96) DD -53% t +2.89 tercos +218%/ +37%/+150% 2a  +82% sp4  +87% f0 +125% corr +0.67 (L12 rsima ETH 15min {'rl': 5, 'ml': 50}) 
+L24 dcf ETH 15min semtp ambos                        reprova    CAGR  +93.6% (B&H  +56.8%) Sh +1.43 (+0.96) DD -43% t +5.59 tercos +150%/ +25%/+130% 2a  +72% sp4  -13% f0  +94% corr +nan () sp4_pos
+L24 best ETH 4h m3 long                              redundante CAGR  +71.0% (B&H  +56.6%) Sh +1.43 (+0.96) DD -38% t +3.25 tercos +216%/ +28%/ +25% 2a  +33% sp4  +69% f0  +77% corr +0.72 (L24 best ETH 1h {'short_ok': False}) 
+L18 slope ETH 30min 130 9/21 filtro long             redundante CAGR  +68.7% (B&H  +56.8%) Sh +1.42 (+0.96) DD -31% t +3.20 tercos +173%/ +52%/ +14% 2a  +32% sp4  +54% f0  +74% corr +0.65 (L24 best ETH 1h {'short_ok': False}) 
+L23 stv ETH 30min m1 long                            redundante CAGR  +86.8% (B&H  +56.8%) Sh +1.42 (+0.96) DD -48% t +2.59 tercos +453%/  +8%/  +7% 2a  +16% sp4  +81% f0  +97% corr +0.69 (L24 best ETH 1h {'short_ok': False}) 
+L24 dcf ETH 15min tp2.5% long                        reprova    CAGR  +61.3% (B&H  +56.8%) Sh +1.41 (+0.96) DD -37% t +3.15 tercos +157%/  +8%/ +51% 2a  +41% sp4  -10% f0  +66% corr +nan () sp4_pos
+L24 vwap ETH 1h sma3 long                            reprova    CAGR  +92.6% (B&H  +56.8%) Sh +1.41 (+0.96) DD -49% t +1.96 tercos +414%/ +29%/  +5% 2a  +29% sp4  +59% f0 +104% corr +nan () t2
+L20 ypmax ETH 1D 30 3 ambos                          reprova    CAGR +110.4% (B&H  +56.5%) Sh +1.40 (+0.96) DD -56% t +2.28 tercos +287%/ -11%/+100% 2a  +83% sp4 +110% f0 +110% corr +nan () pos_t2
+L15 sbs ETH 4h sl2.00% 24h ambos                     ENTRA      CAGR  +59.9% (B&H  +56.6%) Sh +1.39 (+0.96) DD -41% t +2.67 tercos +103%/ +50%/ +27% 2a  +50% sp4  +48% f0  +60% corr +0.38 (§16 HULL+T3 ETH 1h) 
+L13 ut ETH 30min a5.0 atr11 hma2 long                redundante CAGR  +84.3% (B&H  +56.8%) Sh +1.38 (+0.96) DD -54% t +2.12 tercos +312%/ +40%/  +8% 2a  +21% sp4  +81% f0  +94% corr +0.64 (L24 best ETH 1h {'short_ok': False}) 
+L33 snr ETH 30min l42 long                           reprova    CAGR  +86.3% (B&H  +56.8%) Sh +1.38 (+0.96) DD -51% t +1.79 tercos +412%/  +9%/ +14% 2a  +12% sp4  +71% f0  +97% corr +nan () t2
+L12 rsima ETH 30min r10 m20 long                     reprova    CAGR  +88.3% (B&H  +56.8%) Sh +1.38 (+0.96) DD -48% t +1.90 tercos +353%/ +13%/ +27% 2a  +22% sp4  +75% f0  +99% corr +nan () t2
+L14 hull ETH 30min n100 long                         reprova    CAGR  +86.0% (B&H  +56.8%) Sh +1.38 (+0.96) DD -45% t +1.54 tercos +265%/ +43%/ +19% 2a  +23% sp4  +72% f0  +97% corr +nan () t2
+L21 bbb BTC 4h bb15 vol sl0% tp0% long               redundante CAGR  +51.4% (B&H  +43.7%) Sh +1.38 (+0.91) DD -36% t +2.53 tercos +123%/ +33%/ +18% 2a  +26% sp4  +50% f0  +57% corr +0.66 (L22 force BTC 4h {'fast': 5, 'slow': 50, 'short_ok': False}) 
+L33 vxe BTC 4h ema20 long                            redundante CAGR  +51.9% (B&H  +43.7%) Sh +1.37 (+0.91) DD -40% t +3.46 tercos +174%/ +18%/ +10% 2a  +17% sp4  +49% f0  +58% corr +0.71 (L22 force BTC 4h {'fast': 5, 'slow': 50, 'short_ok': False}) 
+L24 d3 ETH 1D x1 ambos                               ENTRA      CAGR +108.8% (B&H  +56.5%) Sh +1.37 (+0.96) DD -64% t +3.07 tercos +154%/ +36%/+117% 2a  +81% sp4 +108% f0 +110% corr +0.46 (L24 best ETH 1h {'short_ok': False}) 
+L14 drsi ETH 1h r21 w50 d3 signal long               redundante CAGR  +83.0% (B&H  +56.8%) Sh +1.36 (+0.96) DD -59% t +2.08 tercos +252%/ +30%/ +33% 2a  +49% sp4  +66% f0  +93% corr +0.69 (L14 drsi ETH 1h {'rl': 21, 'window': 50, 'mode': 'signal'}) 
+L18 slope ETH 1h 130 9/21 filtro long                redundante CAGR  +66.1% (B&H  +56.8%) Sh +1.36 (+0.96) DD -39% t +2.92 tercos +217%/ +38%/  +7% 2a  +17% sp4  +59% f0  +72% corr +0.73 (L24 best ETH 1h {'short_ok': False}) 
+L13 ichi ETH 15min 20/60/120 long                    reprova    CAGR  +83.8% (B&H  +56.8%) Sh +1.35 (+0.96) DD -55% t +1.75 tercos +419%/  -3%/ +21% 2a  +29% sp4  +76% f0  +95% corr +nan () pos_t2,t2
+L24 dcf ETH 30min semtp ambos                        redundante CAGR  +87.3% (B&H  +56.8%) Sh +1.34 (+0.96) DD -54% t +3.93 tercos +112%/ +45%/+110% 2a  +76% sp4  +26% f0  +88% corr +0.71 (L26 pprs ETH 15min pv6/3 ambos) 
+L15 sbs ETH 30min sl1.00% sessao ambos               redundante CAGR  +47.1% (B&H  +56.8%) Sh +1.34 (+0.96) DD -45% t +3.79 tercos  +70%/ +19%/ +60% 2a  +54% sp4  +12% f0  +47% corr +0.53 (L15 sbs ETH 30min {'sl': 0.02, 'session': False}) 
+L32 tss ETH 15min p64 long                           redundante CAGR  +83.7% (B&H  +56.8%) Sh +1.34 (+0.96) DD -56% t +3.06 tercos +294%/ +27%/ +19% 2a  +28% sp4  +66% f0  +94% corr +0.71 (L24 best ETH 1h {'short_ok': False}) 
+L15 tmfs ETH 1h sw20 sl8atr tp0% long                reprova    CAGR  +58.4% (B&H  +56.8%) Sh +1.34 (+0.96) DD -28% t +1.82 tercos +175%/ +19%/ +14% 2a  +17% sp4  +55% f0  +63% corr +nan () t2
+L33 vxe ETH 30min ema20 long                         redundante CAGR  +68.7% (B&H  +56.8%) Sh +1.33 (+0.96) DD -36% t +2.28 tercos +218%/ +20%/ +22% 2a  +31% sp4  +43% f0  +76% corr +0.70 (L24 best ETH 1h {'short_ok': False}) 
+L16 aivst ETH 4h l10 f5 long                         reprova    CAGR  +78.3% (B&H  +56.6%) Sh +1.33 (+0.96) DD -43% t +1.12 tercos +255%/ +37%/ +15% 2a  +19% sp4  +78% f0  +87% corr +nan () t2
+L31 vip ETH 30min tp1% stop no close                 ENTRA      CAGR  +13.2% (B&H  +56.8%) Sh +1.32 (+0.96) DD -15% t +2.47 tercos  +23%/ +12%/  +5% 2a   +4% sp4  +11% f0  +14% corr +0.19 (L24 dcf ETH 15min semtp long) 
+L24 dcf ETH 30min tp2.5% ambos                       redundante CAGR  +78.1% (B&H  +56.8%) Sh +1.32 (+0.96) DD -46% t +4.84 tercos +123%/ +38%/ +83% 2a  +58% sp4  +13% f0  +79% corr +0.61 (L26 pprs ETH 15min pv6/3 ambos) 
+L14 drsi BTC 4h r21 w100 d3 zero long                redundante CAGR  +58.0% (B&H  +43.7%) Sh +1.32 (+0.91) DD -37% t +2.26 tercos  +94%/ +68%/ +21% 2a  +49% sp4  +57% f0  +67% corr +0.70 (L14 drsi BTC 4h {'rl': 21, 'window': 100, 'mode': 'zero'}) 
+L18 slope BTC 1h 50 9/21 filtro long                 redundante CAGR  +45.7% (B&H  +43.9%) Sh +1.32 (+0.91) DD -37% t +3.04 tercos +134%/ +28%/  +4% 2a  +17% sp4  +39% f0  +50% corr +0.58 (L22 force BTC 4h {'fast': 5, 'slow': 50, 'short_ok': False}) 
+L14 cs ETH 4h e200 tp/sl default long                reprova    CAGR  +60.4% (B&H  +56.6%) Sh +1.32 (+0.96) DD -64% t +1.63 tercos +312%/ +38%/  +6% 2a  +19% sp4  +60% f0  +63% corr +nan () t2
+L24 dcf ETH 4h semtp long                            redundante CAGR  +66.5% (B&H  +56.6%) Sh +1.32 (+0.96) DD -50% t +3.32 tercos +229%/ +30%/  +6% 2a  +18% sp4  +61% f0  +72% corr +0.62 (L24 best ETH 1h {'short_ok': False}) 
+L15 sbs ETH 15min sl0.50% sessao ambos               reprova    CAGR  +33.3% (B&H  +56.8%) Sh +1.31 (+0.96) DD -29% t +2.60 tercos  +32%/ +16%/ +54% 2a  +43% sp4  -25% f0  +33% corr +nan () sp4_pos
+L21 hulk BTC 15min thr0.3 adx25 tp1.35% sl1.1% ambos reprova    CAGR  +19.8% (B&H  +43.8%) Sh +1.31 (+0.91) DD -25% t +2.45 tercos  +41%/ +26%/  -4% 2a   +6% sp4  +15% f0  +20% corr +nan () pos_t3
+L20 cam ETH 30min sl0.5% tp1% ambos                  redundante CAGR  +17.7% (B&H  +56.8%) Sh +1.31 (+0.96) DD -17% t +2.83 tercos  +32%/  +6%/ +17% 2a   +9% sp4   +6% f0  +18% corr +0.65 (L20 cam ETH 1h sl0.5% tp1% ambos) 
+L21 hulk ETH 15min thr0.3 adx33 tp1.35% sl1.1% ambos ENTRA      CAGR  +14.6% (B&H  +56.8%) Sh +1.31 (+0.96) DD -16% t +2.40 tercos  +27%/  +5%/ +12% 2a   +7% sp4  +12% f0  +15% corr +0.21 (L21 hulk BTC 15min thr0.1 adx33 tp1.35% sl1.1% ambos) 
+L14 cs ETH 4h e60 tp/sl default long                 ENTRA      CAGR  +60.4% (B&H  +56.6%) Sh +1.31 (+0.96) DD -64% t +2.53 tercos +312%/ +52%/  +6% 2a  +19% sp4  +60% f0  +63% corr +0.42 (L24 best ETH 1h {'short_ok': False}) 
+L32 prv ETH 1h f2.618 long                           redundante CAGR  +75.9% (B&H  +56.8%) Sh +1.30 (+0.96) DD -64% t +2.02 tercos +213%/ +34%/ +28% 2a  +39% sp4  +73% f0  +85% corr +0.64 (L24 best ETH 1h {'short_ok': False}) 
+L12 tk ETH 30min 9/26 ema200 long                    reprova    CAGR  +66.4% (B&H  +56.8%) Sh +1.30 (+0.96) DD -42% t +1.93 tercos +217%/ +36%/  +4% 2a  +23% sp4  +51% f0  +73% corr +nan () t2
+L30 mma ETH 15min l66 long                           redundante CAGR  +78.1% (B&H  +56.8%) Sh +1.30 (+0.96) DD -45% t +2.18 tercos +305%/ +30%/  +4% 2a   +9% sp4  +62% f0  +88% corr +0.71 (L24 best ETH 1h {'short_ok': False}) 
+L22 slopes ETH 30min 50/200 filtro long              redundante CAGR  +63.7% (B&H  +56.8%) Sh +1.29 (+0.96) DD -41% t +2.12 tercos +179%/ +30%/ +19% 2a  +25% sp4  +49% f0  +70% corr +0.68 (L24 best ETH 1h {'short_ok': False}) 
+L24 tq BTC 4h p1% ambos                              ENTRA      CAGR  +20.4% (B&H  +43.7%) Sh +1.29 (+0.91) DD -18% t +4.91 tercos  +11%/ +21%/ +32% 2a  +27% sp4  +19% f0  +20% corr +0.20 (L20 cam BTC 15min sl1% tp2% ambos) 
+L13 sqz BTC 1D bb14 kc20 long                        redundante CAGR  +27.5% (B&H  +43.8%) Sh +1.29 (+0.91) DD -18% t +3.01 tercos  +69%/ +18%/  +4% 2a   +7% sp4  +27% f0  +29% corr +0.52 (L22 force BTC 4h {'fast': 5, 'slow': 50, 'short_ok': False}) 
+L33 vct ETH 4h adx30/vp50                            reprova    CAGR  +48.9% (B&H  +56.6%) Sh +1.28 (+0.96) DD -47% t +1.85 tercos  +92%/ +34%/ +29% 2a  +33% sp4  +48% f0  +53% corr +nan () t2
+L23 stv ETH 30min m1 ambos                           redundante CAGR  +93.1% (B&H  +56.8%) Sh +1.28 (+0.96) DD -61% t +2.55 tercos +460%/  +7%/ +19% 2a  +14% sp4  +80% f0  +94% corr +0.79 (§16 HULL+T3 ETH 1h) 
+L15 tmfs ETH 15min sw8 sl8atr tp1% ambos             reprova    CAGR  +49.2% (B&H  +56.8%) Sh +1.28 (+0.96) DD -50% t +3.56 tercos  +15%/ +73%/ +64% 2a  +57% sp4   -2% f0  +49% corr +nan () sp4_pos
+L12 rsima ETH 30min r5 m20 long                      reprova    CAGR  +77.4% (B&H  +56.8%) Sh +1.28 (+0.96) DD -48% t +1.72 tercos +252%/ +22%/ +26% 2a  +27% sp4  +60% f0  +88% corr +nan () t2
+L16 pmax BTC 1h sl1% tp35% sofiltro0 ambos           ENTRA      CAGR  +44.5% (B&H  +43.9%) Sh +1.28 (+0.91) DD -29% t +3.54 tercos  +39%/ +66%/ +22% 2a  +39% sp4  +42% f0  +45% corr +0.42 (L31 cmb BTC 1h) 
+L24 best ETH 1h m1.5 ambos                           redundante CAGR  +84.2% (B&H  +56.8%) Sh +1.28 (+0.96) DD -47% t +3.29 tercos +171%/ +54%/ +49% 2a  +31% sp4  +70% f0  +85% corr +0.67 (L12 rsima ETH 15min {'rl': 5, 'ml': 50}) 
+L33 hcx ETH 1h h28 long                              reprova    CAGR  +77.4% (B&H  +56.8%) Sh +1.27 (+0.96) DD -71% t +1.51 tercos +295%/ +21%/ +13% 2a  +24% sp4  +63% f0  +87% corr +nan () t2
+L18 slope BTC 4h 130 9/21 filtro long                redundante CAGR  +41.7% (B&H  +43.7%) Sh +1.27 (+0.91) DD -31% t +2.57 tercos  +76%/ +48%/ +11% 2a  +25% sp4  +40% f0  +46% corr +0.66 (L22 force BTC 4h {'fast': 5, 'slow': 50, 'short_ok': False}) 
+L22 slopes ETH 30min 130/400 filtro long             reprova    CAGR  +66.9% (B&H  +56.8%) Sh +1.27 (+0.96) DD -51% t +1.89 tercos +260%/ +19%/  +8% 2a  +13% sp4  +57% f0  +74% corr +nan () t2
+L33 vct ETH 1h adx30/vp50                            reprova    CAGR  +49.5% (B&H  +56.8%) Sh +1.27 (+0.96) DD -48% t +1.92 tercos +141%/ +24%/ +14% 2a  +14% sp4  +47% f0  +53% corr +nan () t2
+L30 mma ETH 1h l66 long                              reprova    CAGR  +72.4% (B&H  +56.8%) Sh +1.27 (+0.96) DD -54% t +1.80 tercos +347%/ +19%/  -3% 2a  +10% sp4  +69% f0  +82% corr +nan () pos_t3,t2
+L26 bx ETH 30min trl5% long                          redundante CAGR  +50.0% (B&H  +56.8%) Sh +1.27 (+0.96) DD -34% t +3.14 tercos  +82%/ +29%/ +43% 2a  +44% sp4  +34% f0  +54% corr +0.59 (L24 best ETH 1h {'short_ok': False}) 
+L22 force BTC 4h 3/20 long                           reprova    CAGR  +55.0% (B&H  +43.7%) Sh +1.27 (+0.91) DD -38% t +1.43 tercos +133%/ +42%/  +9% 2a  +14% sp4  +54% f0  +63% corr +nan () t2
+L12b zig ETH 15min lb6 dmi1 cond long                ENTRA      CAGR  +35.5% (B&H  +56.8%) Sh +1.26 (+0.96) DD -22% t +2.95 tercos  +38%/ +27%/ +42% 2a  +29% sp4  +30% f0  +37% corr +0.36 (L24 dcf ETH 15min semtp long) 
+L21 lube BTC 30min 500 tl-0.1 ambos                  ENTRA      CAGR  +28.9% (B&H  +43.9%) Sh +1.26 (+0.91) DD -28% t +3.77 tercos  +53%/ +12%/ +24% 2a  +19% sp4  +27% f0  +29% corr +0.27 (L16 pmax BTC 1h sl1% tp35% sofiltro0 ambos) 
+L15 sbs BTC 1h sl1.00% 24h ambos                     reprova    CAGR  +42.8% (B&H  +43.9%) Sh +1.26 (+0.91) DD -43% t +2.64 tercos +116%/  -3%/ +39% 2a  +17% sp4  +10% f0  +43% corr +nan () pos_t2
+L20 kelt ETH 4h 81 2.5 tp6% sl2% tend                ENTRA      CAGR  +17.6% (B&H  +56.6%) Sh +1.26 (+0.96) DD -11% t +3.20 tercos  +22%/ +20%/ +11% 2a  +16% sp4  +17% f0  +18% corr +0.24 (L24 best ETH 1h {'short_ok': False}) 
+L31 pse ETH 1h off0% long                            redundante CAGR  +64.0% (B&H  +56.8%) Sh +1.26 (+0.96) DD -48% t +2.05 tercos +245%/ +22%/  +3% 2a  +18% sp4  +58% f0  +71% corr +0.69 (L24 best ETH 1h {'short_ok': False}) 
+L20 cam BTC 4h sl1% tp2% ambos                       redundante CAGR  +29.6% (B&H  +43.7%) Sh +1.26 (+0.91) DD -24% t +2.72 tercos  +26%/ +23%/ +41% 2a  +31% sp4  +23% f0  +30% corr +0.53 (L20 cam BTC 15min sl1% tp2% ambos) 
+L20 cam ETH 15min sl2.0% tp6% ambos                  redundante CAGR  +65.6% (B&H  +56.8%) Sh +1.26 (+0.96) DD -44% t +3.04 tercos +128%/ +14%/ +69% 2a  +36% sp4  +55% f0  +66% corr +0.53 (L20 cam ETH 15min sl1% tp2% ambos) 
+L24 btcm ETH 4h atr1                                 redundante CAGR  +55.7% (B&H  +56.6%) Sh +1.26 (+0.96) DD -37% t +3.24 tercos +186%/  +6%/ +34% 2a  +21% sp4  +52% f0  +60% corr +0.68 (L24 best ETH 1h {'short_ok': False}) 
+L21 lsf ETH 4h 30 2 long                             redundante CAGR  +72.9% (B&H  +56.6%) Sh +1.25 (+0.96) DD -50% t +3.06 tercos +315%/ +17%/ +10% 2a  +19% sp4  +73% f0  +81% corr +0.72 (L24 best ETH 1h {'short_ok': False}) 
+L28 hapa BTC 4h ha long                              reprova    CAGR  +46.1% (B&H  +43.7%) Sh +1.25 (+0.91) DD -36% t +1.78 tercos +117%/ +32%/ +10% 2a  +13% sp4  +43% f0  +52% corr +nan () t2
+L20 cam ETH 30min sl1% tp2% ambos                    redundante CAGR  +30.8% (B&H  +56.8%) Sh +1.25 (+0.96) DD -32% t +2.60 tercos  +59%/  +6%/ +32% 2a  +14% sp4  +20% f0  +31% corr +0.82 (L20 cam ETH 15min sl1% tp2% ambos) 
+L16 edma ETH 30min l20 e20 long                      redundante CAGR  +61.3% (B&H  +56.8%) Sh +1.24 (+0.96) DD -43% t +2.46 tercos +218%/  +9%/ +19% 2a  +24% sp4  +52% f0  +67% corr +0.69 (L24 best ETH 1h {'short_ok': False}) 
+L12 rsima ETH 15min r20 m50 ambos                    redundante CAGR  +93.3% (B&H  +56.8%) Sh +1.24 (+0.96) DD -67% t +3.06 tercos +293%/ +20%/ +42% 2a  +25% sp4  +69% f0  +94% corr +0.74 (L12 rsima ETH 15min {'rl': 5, 'ml': 50}) 
+L26 bx ETH 30min trl20% long                         redundante CAGR  +48.8% (B&H  +56.8%) Sh +1.24 (+0.96) DD -34% t +2.45 tercos  +78%/ +29%/ +43% 2a  +44% sp4  +32% f0  +52% corr +0.59 (L24 best ETH 1h {'short_ok': False}) 
+L21 lsf BTC 1h 30 2 long                             redundante CAGR  +52.3% (B&H  +43.9%) Sh +1.24 (+0.91) DD -56% t +2.77 tercos +148%/ +38%/  +2% 2a  +25% sp4  +51% f0  +61% corr +0.74 (L22 force BTC 4h {'fast': 5, 'slow': 50, 'short_ok': False}) 
+L29 dbo ETH 1h d55 basis                             redundante CAGR  +55.2% (B&H  +56.8%) Sh +1.23 (+0.96) DD -45% t +2.84 tercos +185%/ +12%/ +17% 2a  +19% sp4  +52% f0  +60% corr +0.64 (L24 best ETH 1h {'short_ok': False}) 
+L24 vwap ETH 1h sma3 ambos                           redundante CAGR  +94.5% (B&H  +56.8%) Sh +1.23 (+0.96) DD -58% t +3.50 tercos +334%/ +51%/  +8% 2a  +37% sp4  +32% f0  +95% corr +0.56 (L12 rsima ETH 15min {'rl': 5, 'ml': 50}) 
+L21 hulk BTC 1h thr0.1 adx33 tp3.00% sl2.0% ambos    reprova    CAGR  +18.8% (B&H  +43.9%) Sh +1.23 (+0.91) DD -14% t +1.98 tercos  +23%/ +15%/ +19% 2a  +16% sp4  +18% f0  +19% corr +nan () t2
+L18 slope ETH 4h 50 9/21 filtro ambos                redundante CAGR  +73.1% (B&H  +56.6%) Sh +1.23 (+0.96) DD -56% t +3.02 tercos +125%/ +73%/ +38% 2a  +48% sp4  +70% f0  +74% corr +0.64 (§16 HULL+T3 ETH 1h) 
+L16 edma ETH 30min l50 e40 long                      redundante CAGR  +55.4% (B&H  +56.8%) Sh +1.23 (+0.96) DD -45% t +2.05 tercos +217%/ +18%/  +1% 2a   +7% sp4  +52% f0  +61% corr +0.65 (L24 best ETH 1h {'short_ok': False}) 
+L24 btcm BTC 4h atr2                                 reprova    CAGR  +40.5% (B&H  +43.7%) Sh +1.23 (+0.91) DD -28% t +1.77 tercos +113%/  +9%/ +19% 2a  +18% sp4  +37% f0  +45% corr +nan () t2
+L24 btcm BTC 4h atr3                                 redundante CAGR  +40.5% (B&H  +43.7%) Sh +1.23 (+0.91) DD -28% t +2.73 tercos +113%/  +9%/ +19% 2a  +18% sp4  +37% f0  +45% corr +0.60 (L22 force BTC 4h {'fast': 5, 'slow': 50, 'short_ok': False}) 
+L14 drsi ETH 1h r21 w100 d3 signal long              reprova    CAGR  +74.3% (B&H  +56.8%) Sh +1.23 (+0.96) DD -56% t +1.85 tercos +264%/ +57%/  -6% 2a   -2% sp4  +63% f0  +84% corr +nan () pos_t3,t2
+L14 hull ETH 4h n9 ambos                             redundante CAGR  +91.1% (B&H  +56.6%) Sh +1.22 (+0.96) DD -69% t +3.00 tercos +231%/ +88%/  +2% 2a  +12% sp4  +67% f0  +92% corr +0.71 (L12 rsima ETH 15min {'rl': 5, 'ml': 50}) 
+L33 dst ETH 4h 3/5 long                              redundante CAGR  +46.6% (B&H  +56.6%) Sh +1.22 (+0.96) DD -29% t +2.98 tercos  +85%/ +34%/ +26% 2a  +28% sp4  +45% f0  +50% corr +0.62 (L24 best ETH 1h {'short_ok': False}) 
+L12 tk ETH 15min 20/60 ema0 long                     reprova    CAGR  +71.2% (B&H  +56.8%) Sh +1.22 (+0.96) DD -50% t +1.49 tercos +210%/ +47%/  +7% 2a  +33% sp4  +51% f0  +81% corr +nan () t2
+L31 ttm ETH 15min inv long                           reprova    CAGR  +69.8% (B&H  +56.8%) Sh +1.22 (+0.96) DD -55% t +4.07 tercos +368%/  +1%/  +4% 2a   +3% sp4  -44% f0  +79% corr +nan () sp4_pos
+L17 ftsma BTC 1h 5/20/200 semft long                 reprova    CAGR  +51.6% (B&H  +43.9%) Sh +1.22 (+0.91) DD -49% t +1.86 tercos +140%/ +37%/  +6% 2a  +24% sp4  +48% f0  +60% corr +nan () t2
+L15 sbs BTC 15min sl0.5% sessao ambos                reprova    CAGR  +27.7% (B&H  +43.8%) Sh +1.22 (+0.91) DD -36% t +3.28 tercos  +43%/ +14%/ +28% 2a  +21% sp4  -23% f0  +28% corr +nan () sp4_pos
+L23 tema ETH 15min adx43 long                        redundante CAGR  +27.5% (B&H  +56.8%) Sh +1.22 (+0.96) DD -20% t +3.13 tercos  +61%/  +8%/ +19% 2a  +11% sp4  +22% f0  +29% corr +0.55 (L23 tema ETH 15min {'short_ok': True}) 
+L17 ftsma BTC 4h 5/20/200 semft ambos                reprova    CAGR  +64.6% (B&H  +43.7%) Sh +1.22 (+0.91) DD -46% t +2.61 tercos +160%/ +56%/  -2% 2a  +16% sp4  +63% f0  +65% corr +nan () pos_t3
+L12 tk ETH 30min 40/120 ema200 long                  reprova    CAGR  +65.1% (B&H  +56.8%) Sh +1.22 (+0.96) DD -55% t +1.39 tercos +295%/  +5%/  +9% 2a  +11% sp4  +61% f0  +74% corr +nan () t2
+L19 3ema US100 1h tp0 sl2                            ENTRA      CAGR  +11.8% (B&H  +20.3%) Sh +1.22 (+0.93) DD -14% t +2.27 tercos  +17%/ +13%/  +5% 2a   +5% sp4   +9% f0  +13% corr +0.12 (L24 dcf ETH 15min semtp long) 
+L22 slopes BTC 1D 130/400 filtro long                reprova    CAGR  +47.9% (B&H  +43.8%) Sh +1.21 (+0.91) DD -29% t +1.87 tercos +128%/ +34%/  +7% 2a  +23% sp4  +48% f0  +53% corr +nan () t2
+L27 tfb ETH 15min 100/50 long                        reprova    CAGR  +55.9% (B&H  +56.8%) Sh +1.21 (+0.96) DD -44% t +1.66 tercos +196%/ +18%/  +7% 2a  +12% sp4  +49% f0  +61% corr +nan () t2
+L16 pmax BTC 1h sl1% tp35% filtros ambos             redundante CAGR  +39.1% (B&H  +43.9%) Sh +1.21 (+0.91) DD -25% t +2.91 tercos  +50%/ +39%/ +26% 2a  +28% sp4  +37% f0  +39% corr +0.84 (L16 pmax BTC 1h sl1% tp35% sofiltro0 ambos) 
+L22 slopes ETH 30min 50/200 filtro ambos             redundante CAGR  +78.4% (B&H  +56.8%) Sh +1.21 (+0.96) DD -56% t +3.23 tercos +135%/ +61%/ +48% 2a  +36% sp4  +50% f0  +79% corr +0.71 (L12 rsima ETH 15min {'rl': 5, 'ml': 50}) 
+L21 lube ETH 30min 500 tl-0.1 ambos                  reprova    CAGR  +39.5% (B&H  +56.8%) Sh +1.21 (+0.96) DD -41% t +3.27 tercos  +87%/  -1%/ +37% 2a  +33% sp4  +37% f0  +40% corr +nan () pos_t2
+L12b zig ETH 1h lb6 dmi1 cond long                   ENTRA      CAGR  +41.1% (B&H  +56.8%) Sh +1.20 (+0.96) DD -27% t +2.51 tercos +100%/  +7%/ +31% 2a  +19% sp4  +38% f0  +44% corr +0.42 (L24 best ETH 1h {'short_ok': False}) 
+L31 lch ETH 1h v4% hma200                            ENTRA      CAGR  +18.2% (B&H  +56.8%) Sh +1.20 (+0.96) DD -18% t +4.30 tercos  +30%/ +22%/  +4% 2a   +3% sp4  +18% f0  +18% corr -0.10 (L12 rsima ETH 15min {'rl': 5, 'ml': 50}) 
+L18 slope ETH 30min 50 9/21 filtro long              redundante CAGR  +51.3% (B&H  +56.8%) Sh +1.20 (+0.96) DD -41% t +2.09 tercos +114%/ +33%/ +20% 2a  +29% sp4  +37% f0  +56% corr +0.61 (L24 best ETH 1h {'short_ok': False}) 
+L16 edma ETH 30min l50 e20 long                      reprova    CAGR  +56.8% (B&H  +56.8%) Sh +1.20 (+0.96) DD -51% t +2.17 tercos +243%/ +13%/  -2% 2a   +1% sp4  +52% f0  +63% corr +nan () pos_t3
+L30 scl ETH 15min x2 long                            reprova    CAGR  +68.6% (B&H  +56.8%) Sh +1.20 (+0.96) DD -54% t +2.17 tercos +304%/  -3%/ +21% 2a  +18% sp4  +61% f0  +78% corr +nan () pos_t2
+L15 tmfs ETH 30min sw20 sl8atr tp1% ambos            ENTRA      CAGR  +30.9% (B&H  +56.8%) Sh +1.20 (+0.96) DD -31% t +2.58 tercos  +54%/ +16%/ +26% 2a  +23% sp4  +18% f0  +31% corr +0.30 (L12 rsima ETH 15min {'rl': 5, 'ml': 50}) 
+L27 bbbo ETH 1h m1.5 basis                           redundante CAGR  +58.9% (B&H  +56.8%) Sh +1.20 (+0.96) DD -43% t +3.07 tercos +179%/ +26%/ +11% 2a  +24% sp4  +49% f0  +65% corr +0.70 (L24 best ETH 1h {'short_ok': False}) 
+L24 btcm ETH 4h atr3                                 redundante CAGR  +52.3% (B&H  +56.6%) Sh +1.20 (+0.96) DD -42% t +2.98 tercos +164%/  +7%/ +35% 2a  +22% sp4  +49% f0  +57% corr +0.68 (L24 best ETH 1h {'short_ok': False}) 
+L21 hulk BTC 15min thr0.1 adx25 tp1.35% sl1.1% ambos reprova    CAGR  +25.4% (B&H  +43.8%) Sh +1.20 (+0.91) DD -23% t +1.89 tercos  +67%/ +17%/  +0% 2a   +0% sp4  +15% f0  +25% corr +nan () t2
+L15 tmfs ETH 15min sw20 sl8atr tp1% ambos            reprova    CAGR  +34.6% (B&H  +56.8%) Sh +1.19 (+0.96) DD -42% t +1.92 tercos  +29%/ +54%/ +22% 2a  +19% sp4  +10% f0  +35% corr +nan () t2
+L17 bz ETH 1h bb20 3 semlatest ambos                 ENTRA      CAGR  +81.5% (B&H  +56.8%) Sh +1.19 (+0.96) DD -69% t +2.82 tercos +314%/ +13%/ +48% 2a  +15% sp4  +81% f0  +81% corr +0.35 (L24 d3 ETH 1D x1 ambos) 
+L24 dcf ETH 1h semtp long                            redundante CAGR  +55.8% (B&H  +56.8%) Sh +1.19 (+0.96) DD -37% t +2.44 tercos +117%/ +51%/ +12% 2a  +29% sp4  +36% f0  +61% corr +0.66 (L24 dcf ETH 15min semtp long) 
+L26 tcci ETH 30min sl3 at2.25                        reprova    CAGR  +50.3% (B&H  +56.8%) Sh +1.19 (+0.96) DD -54% t +1.93 tercos +161%/  +1%/ +29% 2a  +27% sp4  +43% f0  +54% corr +nan () t2
+L17 ftsma BTC 4h 5/20/200 semft long                 reprova    CAGR  +48.4% (B&H  +43.7%) Sh +1.19 (+0.91) DD -36% t +2.34 tercos +126%/ +44%/  -1% 2a  +17% sp4  +48% f0  +55% corr +nan () pos_t3
+L20 cam US100 15min sl0.5% tp1% ambos                reprova    CAGR  +11.6% (B&H  +20.3%) Sh +1.19 (+0.93) DD -16% t +4.97 tercos  +15%/ +18%/  +2% 2a   +5% sp4   -1% f0  +12% corr +nan () sp4_pos
+L17 ftsma BTC 30min 5/20/200 ft long                 reprova    CAGR  +50.6% (B&H  +43.9%) Sh +1.19 (+0.91) DD -54% t +1.54 tercos +124%/ +31%/ +17% 2a  +34% sp4  +43% f0  +59% corr +nan () t2
+L21 surf BTC 1h p168 t8.0 f2.0 long                  redundante CAGR  +36.1% (B&H  +43.9%) Sh +1.19 (+0.91) DD -33% t +2.38 tercos  +81%/ +32%/  +6% 2a  +14% sp4  +35% f0  +40% corr +0.68 (L22 force BTC 4h {'fast': 5, 'slow': 50, 'short_ok': False}) 
+L24 dcf ETH 30min semtp long                         redundante CAGR  +52.8% (B&H  +56.8%) Sh +1.19 (+0.96) DD -43% t +2.12 tercos +117%/ +18%/ +37% 2a  +32% sp4  +16% f0  +58% corr +0.77 (L24 dcf ETH 15min semtp long) 
+L24 best ETH 30min m3 ambos                          redundante CAGR  +70.8% (B&H  +56.8%) Sh +1.18 (+0.96) DD -49% t +3.99 tercos +121%/ +49%/ +60% 2a  +36% sp4  +45% f0  +72% corr +0.57 (L24 best ETH 1h {'short_ok': False}) 
+L26 kama ETH 1h f1 semtrail                          redundante CAGR  +65.3% (B&H  +56.8%) Sh +1.18 (+0.96) DD -50% t +2.14 tercos +245%/ +10%/ +14% 2a  +22% sp4  +57% f0  +74% corr +0.71 (L24 best ETH 1h {'short_ok': False}) 
+L31 seq ETH 1D rr1 long                              ENTRA      CAGR  +38.9% (B&H  +56.5%) Sh +1.18 (+0.96) DD -34% t +2.90 tercos  +86%/  +6%/ +36% 2a  +31% sp4  +39% f0  +41% corr +0.41 (L24 best ETH 1h {'short_ok': False}) 
+L32 hic ETH 4h h24 long                              redundante CAGR  +51.9% (B&H  +56.6%) Sh +1.18 (+0.96) DD -42% t +2.48 tercos +130%/ +13%/ +36% 2a  +27% sp4  +49% f0  +57% corr +0.64 (L24 best ETH 1h {'short_ok': False}) 
+L28 pmax ETH 4h m3 ambos                             redundante CAGR  +81.8% (B&H  +56.6%) Sh +1.18 (+0.96) DD -67% t +3.47 tercos +173%/ +66%/ +20% 2a  +32% sp4  +81% f0  +81% corr +0.64 (L32 prv ETH 4h) 
+L33 dst ETH 4h 2/4 long                              redundante CAGR  +46.5% (B&H  +56.6%) Sh +1.18 (+0.96) DD -34% t +3.26 tercos  +83%/ +28%/ +34% 2a  +29% sp4  +45% f0  +50% corr +0.60 (L24 best ETH 1h {'short_ok': False}) 
+L15 tmfs ETH 1h sw20 sl8atr tp1% ambos               reprova    CAGR  +24.4% (B&H  +56.8%) Sh +1.18 (+0.96) DD -28% t +2.40 tercos  +56%/ +28%/  -4% 2a   +5% sp4  +18% f0  +24% corr +nan () pos_t3
+L24 tq BTC 1D p1% long                               ENTRA      CAGR  +14.7% (B&H  +43.8%) Sh +1.18 (+0.91) DD -12% t +2.82 tercos  +14%/ +22%/  +8% 2a  +10% sp4  +15% f0  +15% corr +0.31 (L23 tema BTC 4h adx43 long) 
+L16 emax ETH 1h 20/50 long                           reprova    CAGR  +64.5% (B&H  +56.8%) Sh +1.17 (+0.96) DD -59% t +2.20 tercos +296%/ +33%/ -15% 2a   +3% sp4  +60% f0  +74% corr +nan () pos_t3
+L21 strex BTC 1h m2 ambos                            redundante CAGR  +63.2% (B&H  +43.9%) Sh +1.17 (+0.91) DD -53% t +2.78 tercos +156%/ +49%/  +6% 2a  +27% sp4  +61% f0  +64% corr +0.68 (§24 Multi-MA BTC 4h) 
+L20 cam US100 15min sl1% tp2% ambos                  ENTRA      CAGR  +17.2% (B&H  +20.3%) Sh +1.16 (+0.93) DD -25% t +3.80 tercos  +20%/ +28%/  +4% 2a   +7% sp4   +7% f0  +18% corr +0.35 (L19 3ema US100 1h tp0 sl2) 
+L26 vst ETH 4h b5 ambos                              redundante CAGR  +77.9% (B&H  +56.6%) Sh +1.16 (+0.96) DD -55% t +2.55 tercos +207%/ +64%/ +15% 2a  +14% sp4  +77% f0  +77% corr +0.58 (L32 prv ETH 4h) 
+L23 rsipa ETH 15min s2 tp4 ambos                     reprova    CAGR  +37.9% (B&H  +56.8%) Sh +1.16 (+0.96) DD -40% t +3.53 tercos +147%/ +18%/  -9% 2a  -11% sp4  +23% f0  +39% corr +nan () pos_t3
+L26 him ETH 1h h30 ambos                             redundante CAGR  +71.1% (B&H  +56.8%) Sh +1.16 (+0.96) DD -46% t +5.16 tercos +156%/ +33%/ +46% 2a  +40% sp4  +52% f0  +72% corr +0.74 (L12 rsima ETH 15min {'rl': 5, 'ml': 50}) 
+L30 mma ETH 30min l66 ambos                          reprova    CAGR  +79.4% (B&H  +56.8%) Sh +1.16 (+0.96) DD -67% t +4.98 tercos +274%/ -15%/ +81% 2a  +46% sp4  +65% f0  +80% corr +nan () pos_t2
+L24 dcf ETH 1h tp2.5% ambos                          redundante CAGR  +62.2% (B&H  +56.8%) Sh +1.16 (+0.96) DD -49% t +3.12 tercos  +95%/ +53%/ +42% 2a  +52% sp4  +27% f0  +63% corr +0.60 (L26 pprs ETH 15min pv6/3 ambos) 
+L21 strex BTC 30min m8 long                          redundante CAGR  +48.2% (B&H  +43.9%) Sh +1.16 (+0.91) DD -54% t +2.79 tercos +127%/ +37%/  +9% 2a  +27% sp4  +47% f0  +55% corr +0.77 (L22 force BTC 4h {'fast': 5, 'slow': 50, 'short_ok': False}) 
+L21 lsf ETH 4h 30 2 ambos                            redundante CAGR  +76.2% (B&H  +56.6%) Sh +1.15 (+0.96) DD -62% t +2.89 tercos +313%/ +15%/ +14% 2a  +20% sp4  +75% f0  +76% corr +0.67 (L24 d3 ETH 1D x1 ambos) 
+L29 dbo ETH 30min d55 basis                          reprova    CAGR  +50.3% (B&H  +56.8%) Sh +1.15 (+0.96) DD -50% t +2.30 tercos +204%/  -1%/ +12% 2a   +7% sp4  +45% f0  +55% corr +nan () pos_t2
+L30 mma BTC 4h l150 long                             reprova    CAGR  +47.5% (B&H  +43.7%) Sh +1.15 (+0.91) DD -55% t +2.19 tercos +137%/ +36%/  -1% 2a  +26% sp4  +47% f0  +54% corr +nan () pos_t3
+L17 stcci BTC 1D cci50 long                          redundante CAGR  +46.9% (B&H  +43.8%) Sh +1.15 (+0.91) DD -59% t +2.24 tercos +121%/ +37%/ +10% 2a  +29% sp4  +46% f0  +53% corr +0.72 (L22 force BTC 4h {'fast': 5, 'slow': 50, 'short_ok': False}) 
+L33 vct BTC 1h adx30/vp25                            reprova    CAGR  +27.6% (B&H  +43.9%) Sh +1.15 (+0.91) DD -23% t +1.58 tercos  +48%/ +38%/  +1% 2a  +16% sp4  +24% f0  +30% corr +nan () t2
+L28 gvto US100 30min adx0 long                       reprova    CAGR  +14.8% (B&H  +20.3%) Sh +1.15 (+0.93) DD -15% t +1.70 tercos  +14%/ +20%/ +11% 2a  +11% sp4   +8% f0  +17% corr +nan () t2
+L12 rsima ETH 30min r5 m100 ambos                    redundante CAGR  +78.6% (B&H  +56.8%) Sh +1.15 (+0.96) DD -61% t +4.41 tercos +233%/  +2%/ +61% 2a  +39% sp4  +64% f0  +81% corr +0.69 (§16 HULL+T3 ETH 1h) 
+L29 bbf ETH 30min n30 ambos                          redundante CAGR  +79.7% (B&H  +56.8%) Sh +1.15 (+0.96) DD -55% t +2.53 tercos  +91%/ +94%/ +52% 2a  +57% sp4  +47% f0  +81% corr +0.73 (L12 rsima ETH 15min {'rl': 5, 'ml': 50}) 
+L28 gvto ETH 4h adx25 ambos                          redundante CAGR  +68.8% (B&H  +56.6%) Sh +1.14 (+0.96) DD -50% t +4.13 tercos  +80%/ +48%/ +71% 2a  +45% sp4  +68% f0  +68% corr +0.67 (L32 prv ETH 4h) 
+L23 qqe ETH 4h thr5 semfiltro ambos                  redundante CAGR  +69.8% (B&H  +56.6%) Sh +1.14 (+0.96) DD -51% t +2.80 tercos +191%/ +72%/  +3% 2a  +18% sp4  +61% f0  +71% corr +0.79 (§16 HULL+T3 ETH 1h) 
+L21 lube BTC 30min 500 tl-0.1 long                   reprova    CAGR  +19.4% (B&H  +43.9%) Sh +1.13 (+0.91) DD -18% t +1.85 tercos  +35%/ +14%/ +10% 2a  +11% sp4  +18% f0  +20% corr +nan () t2
+L21 lube ETH 30min 500 tl-0.1 long                   reprova    CAGR  +30.1% (B&H  +56.8%) Sh +1.13 (+0.96) DD -39% t +3.20 tercos  +76%/  -0%/ +25% 2a  +24% sp4  +29% f0  +31% corr +nan () pos_t2
+L33 vxe BTC 4h ema20 ambos                           ENTRA      CAGR  +56.2% (B&H  +43.7%) Sh +1.13 (+0.91) DD -47% t +3.87 tercos +207%/ +10%/ +11% 2a   +3% sp4  +50% f0  +53% corr +0.50 (§24 Multi-MA BTC 4h) 
+L18 osb ETH 30min m0.25 sl2.00% ambos                ENTRA      CAGR  +47.0% (B&H  +56.8%) Sh +1.13 (+0.96) DD -50% t +3.13 tercos +165%/ +15%/  +4% 2a  +14% sp4  +39% f0  +47% corr +0.30 (L12 rsima ETH 15min {'rl': 5, 'ml': 50}) 
+L29 mrs ETH 4h e20 ambos                             redundante CAGR  +75.6% (B&H  +56.6%) Sh +1.13 (+0.96) DD -78% t +2.68 tercos +123%/ +95%/ +16% 2a  +38% sp4  +70% f0  +76% corr +0.64 (§16 HULL+T3 ETH 1h) 
+L15 sbs BTC 30min sl2.00% 24h ambos                  ENTRA      CAGR  +56.5% (B&H  +43.9%) Sh +1.13 (+0.91) DD -50% t +4.09 tercos  +77%/ +27%/ +67% 2a  +41% sp4  +14% f0  +56% corr +0.44 (L15 sbs ETH 30min {'sl': 0.02, 'session': False}) 
+L33 stc ETH 4h m7 ambos                              redundante CAGR  +71.6% (B&H  +56.6%) Sh +1.13 (+0.96) DD -57% t +2.45 tercos +253%/ +32%/  +1% 2a  +11% sp4  +71% f0  +71% corr +0.64 (L24 d3 ETH 1D x1 ambos) 
+L23 evw ETH 4h 100 ambos                             redundante CAGR  +72.4% (B&H  +56.6%) Sh +1.13 (+0.96) DD -65% t +3.55 tercos +106%/ +62%/ +51% 2a  +45% sp4  +71% f0  +72% corr +0.59 (L24 d3 ETH 1D x1 ambos) 
+L18 slope BTC 4h 130 9/21 filtro ambos               redundante CAGR  +50.0% (B&H  +43.7%) Sh +1.13 (+0.91) DD -33% t +3.82 tercos  +76%/ +71%/ +16% 2a  +33% sp4  +47% f0  +50% corr +0.73 (L33 vxe BTC 4h ema20 ambos) 
+L24 tq ETH 1h p3% ambos                              ENTRA      CAGR  +50.9% (B&H  +56.8%) Sh +1.13 (+0.96) DD -49% t +2.76 tercos +119%/ +12%/ +44% 2a  +26% sp4  +47% f0  +51% corr +0.34 (§16 HULL+T3 ETH 1h) 
+L24 best ETH 4h m3 ambos                             redundante CAGR  +65.1% (B&H  +56.6%) Sh +1.13 (+0.96) DD -69% t +3.22 tercos +141%/ +40%/ +39% 2a  +34% sp4  +62% f0  +66% corr +0.59 (L31 cmb ETH 4h) 
+L26 bx BTC 1D trl5% long                             redundante CAGR  +32.7% (B&H  +43.8%) Sh +1.12 (+0.91) DD -28% t +2.43 tercos  +85%/ +28%/  +3% 2a  +15% sp4  +32% f0  +36% corr +0.67 (L22 force BTC 4h {'fast': 5, 'slow': 50, 'short_ok': False}) 
+L15 tmfs BTC 1h sw20 sl8atr tp0% long                reprova    CAGR  +35.7% (B&H  +43.9%) Sh +1.12 (+0.91) DD -24% t +1.89 tercos +102%/  +5%/ +17% 2a  +20% sp4  +32% f0  +40% corr +nan () t2
+L33 s200 BTC 4h 1.02/0.99                            reprova    CAGR  +44.3% (B&H  +43.7%) Sh +1.12 (+0.91) DD -40% t +0.83 tercos +106%/ +49%/  -1% 2a  +25% sp4  +44% f0  +51% corr +nan () pos_t3,t2
+L17 ftsma BTC 1h 5/20/200 semft ambos                reprova    CAGR  +59.0% (B&H  +43.9%) Sh +1.12 (+0.91) DD -55% t +2.63 tercos +148%/ +56%/  -0% 2a  +14% sp4  +52% f0  +60% corr +nan () pos_t3
+L33 tbn BTC 15min c14 ambos                          reprova    CAGR  +29.8% (B&H  +43.8%) Sh +1.12 (+0.91) DD -38% t +4.65 tercos  +96%/  -4%/ +15% 2a  +14% sp4   +7% f0  +30% corr +nan () pos_t2
+L12 rsima ETH 15min r20 m20 long                     redundante CAGR  +61.9% (B&H  +56.8%) Sh +1.12 (+0.96) DD -47% t +2.39 tercos +233%/ +10%/ +14% 2a  +20% sp4  +45% f0  +71% corr +0.70 (L24 best ETH 1h {'short_ok': False}) 
+L23 twin ETH 4h atr t17 sltp ambos                   redundante CAGR  +43.8% (B&H  +56.6%) Sh +1.12 (+0.96) DD -33% t +2.72 tercos  +44%/ +68%/ +13% 2a  +26% sp4  +41% f0  +44% corr +0.88 (L23 twin ETH 4h {'sltp': False}) 
+L24 dcf US100 1h tp2.5% long                         reprova    CAGR  +13.8% (B&H  +20.3%) Sh +1.12 (+0.93) DD -15% t +3.64 tercos  +18%/  +7%/ +16% 2a  +11% sp4   -8% f0  +16% corr +nan () sp4_pos
+L22 mab BTC 1D 40 rr0 long                           redundante CAGR  +45.5% (B&H  +43.8%) Sh +1.12 (+0.91) DD -62% t +2.80 tercos +122%/ +32%/ +12% 2a  +31% sp4  +45% f0  +52% corr +0.73 (L22 force BTC 4h {'fast': 5, 'slow': 50, 'short_ok': False}) 
+L28 sflip ETH 1D f3 ambos                            redundante CAGR  +58.6% (B&H  +56.5%) Sh +1.12 (+0.96) DD -51% t +2.83 tercos +221%/ +25%/ +14% 2a   +1% sp4  +58% f0  +60% corr +0.55 (L24 best ETH 1h {'short_ok': False}) 
+L26 csq ETH 1h mfi14 ambos                           redundante CAGR  +78.5% (B&H  +56.8%) Sh +1.12 (+0.96) DD -83% t +2.86 tercos  +30%/ +87%/ +16% 2a  +22% sp4  +66% f0  +77% corr +0.54 (L12 rsima ETH 15min {'rl': 5, 'ml': 50}) 
+L15 sbs BTC 15min sl1.00% sessao ambos               reprova    CAGR  +36.4% (B&H  +43.8%) Sh +1.12 (+0.91) DD -61% t +4.24 tercos  +58%/ +19%/ +35% 2a  +25% sp4   -7% f0  +36% corr +nan () sp4_pos
+L33 vxe BTC 1D ema50 long                            reprova    CAGR  +44.0% (B&H  +43.8%) Sh +1.11 (+0.91) DD -40% t +1.68 tercos +105%/ +45%/  +5% 2a  +23% sp4  +44% f0  +50% corr +nan () t2
+L19 3ema ETH 1h tp6 sl4                              reprova    CAGR  +34.0% (B&H  +56.8%) Sh +1.11 (+0.96) DD -53% t +1.45 tercos +148%/ +11%/ -13% 2a   -9% sp4  +31% f0  +37% corr +nan () pos_t3,t2
+L32 prv US100 15min f2.618 long                      ENTRA      CAGR  +17.3% (B&H  +20.3%) Sh +1.11 (+0.93) DD -23% t +2.30 tercos   +8%/ +23%/ +22% 2a  +23% sp4   +5% f0  +20% corr +0.47 (L19 3ema US100 1h tp0 sl2) 
+L16 aivst ETH 4h l10 f5 ambos                        redundante CAGR  +70.4% (B&H  +56.6%) Sh +1.11 (+0.96) DD -54% t +3.41 tercos +158%/ +11%/ +32% 2a  +31% sp4  +69% f0  +70% corr +0.61 (L24 d3 ETH 1D x1 ambos) 
+L21 strex BTC 15min m2 ambos                         redundante CAGR  +57.4% (B&H  +43.8%) Sh +1.11 (+0.91) DD -62% t +3.53 tercos +158%/  +4%/ +26% 2a  +38% sp4  +52% f0  +58% corr +0.68 (§24 Multi-MA BTC 4h) 
+L17 ftsma ETH 4h 5/20/200 semft ambos                reprova    CAGR  +69.9% (B&H  +56.6%) Sh +1.11 (+0.96) DD -53% t +2.00 tercos +106%/ +38%/ +56% 2a  +64% sp4  +68% f0  +70% corr +nan () t2
+L12b zig ETH 1h lb6 dmi0 cond long                   redundante CAGR  +45.3% (B&H  +56.8%) Sh +1.11 (+0.96) DD -39% t +2.06 tercos +103%/ +10%/ +33% 2a  +28% sp4  +40% f0  +50% corr +0.80 (L12b zig ETH 1h lb6 dmi1 cond long) 
+L19 3ema ETH 4h tp0 sl2                              reprova    CAGR  +42.7% (B&H  +56.6%) Sh +1.11 (+0.96) DD -48% t +2.30 tercos +112%/ +44%/  -4% 2a  +13% sp4  +42% f0  +46% corr +nan () pos_t3
+L22 apsar BTC 4h n1 0.02/0.2 ambos                   ENTRA      CAGR  +60.3% (B&H  +43.7%) Sh +1.11 (+0.91) DD -59% t +2.26 tercos  +89%/ +87%/ +27% 2a  +22% sp4  +58% f0  +61% corr +0.48 (L33 vxe BTC 4h ema20 ambos) 
+L20 kelt XAU 1D 81 2.5 tp6% sl2% tend                ENTRA      CAGR   +5.5% (B&H  +13.4%) Sh +1.11 (+0.82) DD  -7% t +2.90 tercos   +3%/  +4%/  +9% 2a   +9% sp4   +5% f0   +7% corr +0.17 (L7 tsl XAU 4h {'val': 2.0}) 
+L21 lsf ETH 1h 30 1 ambos                            redundante CAGR  +72.4% (B&H  +56.8%) Sh +1.11 (+0.96) DD -75% t +2.87 tercos +202%/  +7%/ +55% 2a  +28% sp4  +66% f0  +73% corr +0.77 (§16 HULL+T3 ETH 1h) 
+L20 cam US100 30min sl1% tp2% ambos                  redundante CAGR  +16.1% (B&H  +20.3%) Sh +1.11 (+0.93) DD -24% t +2.90 tercos  +16%/ +24%/  +9% 2a   +8% sp4   +7% f0  +17% corr +0.91 (L20 cam US100 15min sl1% tp2% ambos) 
+L21 bbb ETH 15min bb40 semvol sl0% tp0% long         reprova    CAGR  +59.2% (B&H  +56.8%) Sh +1.11 (+0.96) DD -51% t +1.48 tercos +178%/ +19%/ +19% 2a  +30% sp4  +48% f0  +68% corr +nan () t2
+L20 atrgod XAU 4h sl4.5 rr1.5 semfiltros ambos       ENTRA      CAGR  +10.9% (B&H  +13.4%) Sh +1.11 (+0.82) DD -13% t +2.72 tercos   +6%/  +2%/ +27% 2a  +17% sp4  +10% f0  +13% corr +0.25 (L7 tsl XAU 4h {'val': 2.0}) 
+L15 sbs US100 4h sl1.00% sessao ambos                ENTRA      CAGR  +11.7% (B&H  +20.3%) Sh +1.11 (+0.93) DD -15% t +4.02 tercos   +9%/ +15%/ +11% 2a   +9% sp4   +5% f0  +12% corr +0.33 (L20 cam US100 15min sl1% tp2% ambos) 
+L21 strex BTC 4h m2 long                             redundante CAGR  +46.9% (B&H  +43.7%) Sh +1.10 (+0.91) DD -52% t +2.81 tercos +142%/ +33%/  +8% 2a  +27% sp4  +46% f0  +54% corr +0.73 (L22 force BTC 4h {'fast': 5, 'slow': 50, 'short_ok': False}) 
+L30 mma ETH 15min l66 ambos                          redundante CAGR  +73.8% (B&H  +56.8%) Sh +1.10 (+0.96) DD -50% t +2.51 tercos +199%/ +57%/  +8% 2a   +0% sp4  +44% f0  +74% corr +0.73 (L12 rsima ETH 15min {'rl': 5, 'ml': 50}) 
+L33 vxe ETH 4h ema20 ambos                           redundante CAGR  +67.4% (B&H  +56.6%) Sh +1.10 (+0.96) DD -51% t +2.42 tercos +187%/ +32%/ +27% 2a  +23% sp4  +60% f0  +64% corr +0.69 (§16 HULL+T3 ETH 1h) 
+L20 ds ETH 1D 8/72 ambos                             redundante CAGR  +67.2% (B&H  +56.5%) Sh +1.10 (+0.96) DD -61% t +2.70 tercos  +45%/  +3%/+102% 2a  +75% sp4  +67% f0  +66% corr +0.77 (L24 d3 ETH 1D x1 ambos) 
+L22 slopes BTC 1D 130/400 semfiltro ambos            redundante CAGR  +54.7% (B&H  +43.8%) Sh +1.10 (+0.91) DD -39% t +2.81 tercos +134%/ +29%/ +20% 2a  +25% sp4  +54% f0  +52% corr +0.68 (§24 Multi-MA BTC 4h) 
+L32 cce ETH 30min tp10% ambos                        redundante CAGR  +64.5% (B&H  +56.8%) Sh +1.10 (+0.96) DD -42% t +2.47 tercos +164%/ +38%/ +19% 2a  +17% sp4  +48% f0  +65% corr +0.71 (§16 HULL+T3 ETH 1h) 
+L14 hull BTC 1D n100 ambos                           redundante CAGR  +53.5% (B&H  +43.8%) Sh +1.10 (+0.91) DD -62% t +2.78 tercos +139%/ +24%/ +31% 2a  +18% sp4  +53% f0  +53% corr +0.73 (§24 Multi-MA BTC 4h) 
+L29 rss ETH 4h 100/150 ambos                         reprova    CAGR  +74.3% (B&H  +56.6%) Sh +1.10 (+0.96) DD -78% t +2.98 tercos +352%/ -34%/ +32% 2a  +31% sp4  +74% f0  +72% corr +nan () pos_t2
+L22 emax ETH 4h 20x5 ambos                           redundante CAGR  +70.7% (B&H  +56.6%) Sh +1.10 (+0.96) DD -57% t +2.45 tercos +165%/ +17%/ +48% 2a  +41% sp4  +69% f0  +70% corr +0.62 (L24 d3 ETH 1D x1 ambos) 
+L15 tmfs ETH 4h sw20 sl8atr tp0% long                redundante CAGR  +45.7% (B&H  +56.6%) Sh +1.09 (+0.96) DD -44% t +2.22 tercos +146%/ +16%/  +3% 2a  +18% sp4  +45% f0  +50% corr +0.59 (L24 best ETH 1h {'short_ok': False}) 
+L22 apsar ETH 30min n1 0.02/0.2 ambos                reprova    CAGR  +73.6% (B&H  +56.8%) Sh +1.09 (+0.96) DD -67% t +3.01 tercos +327%/  -8%/ +27% 2a   +6% sp4  +58% f0  +74% corr +nan () pos_t2
+L22 mab BTC 1D 40 rr0 ambos                          redundante CAGR  +55.5% (B&H  +43.8%) Sh +1.09 (+0.91) DD -61% t +3.71 tercos +139%/ +30%/ +18% 2a  +38% sp4  +55% f0  +55% corr +0.89 (§24 Multi-MA BTC 4h) 
+L16 qqe ETH 1h XZ f5 dfil long                       ENTRA      CAGR  +33.2% (B&H  +56.8%) Sh +1.09 (+0.96) DD -27% t +2.03 tercos  +58%/ +21%/ +23% 2a  +28% sp4  +30% f0  +35% corr +0.48 (L24 best ETH 1h {'short_ok': False}) 
+L21 bbb ETH 4h bb15 vol sl2% tp9% ambos              reprova    CAGR  +37.9% (B&H  +56.6%) Sh +1.09 (+0.96) DD -46% t +2.33 tercos  +58%/  -9%/ +69% 2a  +41% sp4  +35% f0  +39% corr +nan () pos_t2
+L28 gvto ETH 4h adx0 ambos                           redundante CAGR  +66.4% (B&H  +56.6%) Sh +1.09 (+0.96) DD -53% t +2.23 tercos  +70%/ +38%/ +88% 2a  +57% sp4  +65% f0  +66% corr +0.67 (L32 prv ETH 4h) 
+L26 pprs ETH 1h pv6/3 ambos                          redundante CAGR  +71.6% (B&H  +56.8%) Sh +1.09 (+0.96) DD -70% t +2.56 tercos  +88%/ +58%/ +67% 2a  +34% sp4  +57% f0  +72% corr +0.60 (L12 rsima ETH 15min {'rl': 5, 'ml': 50}) 
+L18 slope ETH 4h 130 9/21 filtro ambos               redundante CAGR  +60.0% (B&H  +56.6%) Sh +1.09 (+0.96) DD -46% t +3.61 tercos  +89%/ +54%/ +41% 2a  +45% sp4  +57% f0  +61% corr +0.66 (§16 HULL+T3 ETH 1h) 
+L22 mab US100 30min 100 rr3 ambos                    reprova    CAGR  +14.6% (B&H  +20.3%) Sh +1.09 (+0.93) DD -28% t +3.94 tercos  +13%/ +29%/  +4% 2a   +9% sp4   -5% f0  +15% corr +nan () sp4_pos
+L23 twin ETH 1h atr t17 semsltp ambos                reprova    CAGR  +47.0% (B&H  +56.8%) Sh +1.09 (+0.96) DD -47% t +2.83 tercos +159%/ +17%/  -1% 2a   -2% sp4  +37% f0  +47% corr +nan () pos_t3
+L32 koz ETH 30min 10/30 ambos                        redundante CAGR  +73.5% (B&H  +56.8%) Sh +1.09 (+0.96) DD -58% t +2.58 tercos +121%/ +54%/ +49% 2a  +43% sp4  +40% f0  +74% corr +0.81 (L12 rsima ETH 15min {'rl': 5, 'ml': 50}) 
+L23 twin ETH 15min sematr t17 sltp ambos             reprova    CAGR  +60.5% (B&H  +56.8%) Sh +1.09 (+0.96) DD -49% t +3.06 tercos +247%/  -4%/ +23% 2a   +4% sp4  -13% f0  +62% corr +nan () pos_t2,sp4_pos
+L22 mab ETH 4h 100 rr0 ambos                         redundante CAGR  +69.5% (B&H  +56.6%) Sh +1.09 (+0.96) DD -55% t +2.24 tercos +147%/ +35%/ +34% 2a  +22% sp4  +67% f0  +69% corr +0.62 (L32 prv ETH 4h) 
+L28 bbw BTC 1D bb50 8%                               redundante CAGR  +41.7% (B&H  +43.8%) Sh +1.09 (+0.91) DD -40% t +2.39 tercos +126%/ +26%/  +4% 2a  +16% sp4  +42% f0  +47% corr +0.64 (§24 Multi-MA BTC 4h) 
+L22 apsar BTC 4h n3 0.02/0.2 ambos                   redundante CAGR  +58.4% (B&H  +43.7%) Sh +1.09 (+0.91) DD -56% t +2.87 tercos  +70%/ +80%/ +40% 2a  +36% sp4  +56% f0  +59% corr +0.92 (L22 apsar BTC 4h n1 0.02/0.2 ambos) 
+L30 mma ETH 1h l66 ambos                             reprova    CAGR  +68.8% (B&H  +56.8%) Sh +1.08 (+0.96) DD -63% t +2.44 tercos +281%/ +28%/  -3% 2a   +4% sp4  +62% f0  +69% corr +nan () pos_t3
+L22 force BTC 4h 3/20 ambos                          ENTRA      CAGR  +56.8% (B&H  +43.7%) Sh +1.08 (+0.91) DD -58% t +2.41 tercos +115%/ +53%/  +8% 2a   -6% sp4  +55% f0  +56% corr +0.47 (L33 vxe BTC 4h ema20 ambos) 
+L23 twin ETH 1h atr t17 sltp ambos                   ENTRA      CAGR  +42.3% (B&H  +56.8%) Sh +1.08 (+0.96) DD -41% t +4.35 tercos +121%/  +7%/ +22% 2a  +15% sp4  +33% f0  +43% corr +0.32 (L12 rsima ETH 15min {'rl': 5, 'ml': 50}) 
+L12 rsima ETH 1D r20 m20 ambos                       reprova    CAGR  +66.1% (B&H  +56.5%) Sh +1.08 (+0.96) DD -59% t +2.73 tercos +198%/ -24%/ +69% 2a  +46% sp4  +66% f0  +65% corr +nan () pos_t2
+L24 tq BTC 1h p1% ambos                              reprova    CAGR  +27.2% (B&H  +43.9%) Sh +1.08 (+0.91) DD -39% t +2.78 tercos  +56%/ +41%/  -6% 2a   +4% sp4  +23% f0  +27% corr +nan () pos_t3
+L32 koz ETH 1h 5/15 ambos                            redundante CAGR  +72.2% (B&H  +56.8%) Sh +1.08 (+0.96) DD -54% t +3.52 tercos  +95%/ +56%/ +63% 2a  +50% sp4  +40% f0  +73% corr +0.81 (L12 rsima ETH 15min {'rl': 5, 'ml': 50}) 
+L31 cmb BTC 1h l28 ambos                             redundante CAGR  +49.2% (B&H  +43.9%) Sh +1.08 (+0.91) DD -51% t +2.25 tercos +102%/ +48%/ +11% 2a  +20% sp4  +44% f0  +54% corr +0.85 (L31 cmb BTC 1h) 
+L17 bz ETH 4h bb20 3 semlatest long                  reprova    CAGR  +62.5% (B&H  +56.6%) Sh +1.08 (+0.96) DD -68% t +1.92 tercos +284%/ +29%/ -16% 2a   +7% sp4  +62% f0  +70% corr +nan () pos_t3,t2
+L21 strex BTC 4h m4 ambos                            reprova    CAGR  +52.0% (B&H  +43.7%) Sh +1.08 (+0.91) DD -50% t +2.76 tercos +219%/ +27%/  -9% 2a  +10% sp4  +52% f0  +52% corr +nan () pos_t3
+L15 tmfs ETH 1h sw20 sl8atr tp3% ambos               reprova    CAGR  +34.8% (B&H  +56.8%) Sh +1.07 (+0.96) DD -52% t +1.97 tercos +127%/ +30%/ -19% 2a  -12% sp4  +28% f0  +35% corr +nan () pos_t3,t2
+L12 rsima ETH 30min r5 m20 ambos                     redundante CAGR  +71.5% (B&H  +56.8%) Sh +1.07 (+0.96) DD -56% t +2.82 tercos +126%/ +37%/ +59% 2a  +33% sp4  +40% f0  +72% corr +0.86 (L12 rsima ETH 15min {'rl': 5, 'ml': 50}) 
+L18 savwap ETH 30min prd50 long                      reprova    CAGR  +57.0% (B&H  +56.8%) Sh +1.07 (+0.96) DD -66% t +1.39 tercos +245%/ -11%/ +25% 2a  +22% sp4  +52% f0  +66% corr +nan () pos_t2,t2
+L31 gx BTC 4h 20/100 long                            reprova    CAGR  +42.1% (B&H  +43.7%) Sh +1.07 (+0.91) DD -45% t +1.84 tercos  +89%/ +21%/ +22% 2a  +33% sp4  +42% f0  +50% corr +nan () t2
+L15 sbs ETH 15min sl1.00% 24h ambos                  reprova    CAGR  +53.1% (B&H  +56.8%) Sh +1.07 (+0.96) DD -47% t +4.18 tercos +113%/ +43%/ +16% 2a  +28% sp4  -34% f0  +53% corr +nan () sp4_pos
+L12b zig ETH 30min lb12 dmi1 rr ambos                reprova    CAGR  +26.4% (B&H  +56.8%) Sh +1.07 (+0.96) DD -43% t +2.82 tercos   -7%/ +50%/ +44% 2a  +38% sp4  +16% f0  +26% corr +nan () pos_t1
+L32 dkw ETH 15min canal long                         reprova    CAGR  +49.1% (B&H  +56.8%) Sh +1.07 (+0.96) DD -52% t +1.55 tercos +147%/ -13%/ +51% 2a  +33% sp4  +18% f0  +55% corr +nan () pos_t2,t2
+L28 gch ETH 1h p144 ambos                            reprova    CAGR  +67.8% (B&H  +56.8%) Sh +1.07 (+0.96) DD -69% t +3.46 tercos +330%/ -23%/ +40% 2a  +16% sp4  +49% f0  +69% corr +nan () pos_t2
+L21 strex BTC 30min m2 ambos                         redundante CAGR  +53.3% (B&H  +43.9%) Sh +1.06 (+0.91) DD -48% t +2.87 tercos +134%/ +23%/ +15% 2a  +23% sp4  +49% f0  +54% corr +0.68 (§24 Multi-MA BTC 4h) 
+L32 dkw ETH 15min atr long                           reprova    CAGR  +47.0% (B&H  +56.8%) Sh +1.06 (+0.96) DD -48% t +1.37 tercos +135%/  +1%/ +32% 2a  +26% sp4  +15% f0  +52% corr +nan () t2
+L32 fis ETH 1h l20 ambos                             redundante CAGR  +69.3% (B&H  +56.8%) Sh +1.06 (+0.96) DD -66% t +2.57 tercos +140%/ +76%/ +12% 2a   +6% sp4  +48% f0  +70% corr +0.73 (L12 rsima ETH 15min {'rl': 5, 'ml': 50}) 
+L24 smc BTC 1D lb30 ambos                            reprova    CAGR  +62.9% (B&H  +43.8%) Sh +1.06 (+0.91) DD -75% t +2.00 tercos +210%/ +34%/ -16% 2a  +14% sp4  +63% f0  +60% corr +nan () pos_t3
+L17 stcci ETH 4h cci100 ambos                        redundante CAGR  +65.6% (B&H  +56.6%) Sh +1.06 (+0.96) DD -56% t +2.78 tercos  +70%/ +54%/ +50% 2a  +41% sp4  +61% f0  +66% corr +0.63 (L32 prv ETH 4h) 
+L24 dcf US100 30min tp2.5% long                      reprova    CAGR  +12.9% (B&H  +20.3%) Sh +1.06 (+0.93) DD -17% t +5.22 tercos  +22%/  +8%/  +8% 2a   +9% sp4  -23% f0  +15% corr +nan () sp4_pos
+L15 sbs ETH 30min sl1.00% 24h ambos                  reprova    CAGR  +46.3% (B&H  +56.8%) Sh +1.06 (+0.96) DD -54% t +2.03 tercos  +63%/ +40%/ +38% 2a  +46% sp4  -13% f0  +46% corr +nan () sp4_pos
+L32 irs ETH 30min sem rsi ambos                      redundante CAGR  +68.5% (B&H  +56.8%) Sh +1.05 (+0.96) DD -52% t +2.40 tercos +282%/  +4%/ +18% 2a  +17% sp4  +53% f0  +70% corr +0.66 (L12 rsima ETH 15min {'rl': 5, 'ml': 50}) 
+L33 dst ETH 30min 3/5 long                           redundante CAGR  +37.5% (B&H  +56.8%) Sh +1.05 (+0.96) DD -38% t +3.78 tercos  +54%/ +14%/ +47% 2a  +46% sp4  +25% f0  +40% corr +0.54 (L24 dcf ETH 15min semtp long) 
+L21 guppy ETH 1h antecipado ambos                    redundante CAGR  +66.1% (B&H  +56.8%) Sh +1.05 (+0.96) DD -69% t +2.19 tercos +207%/ +12%/ +28% 2a  +21% sp4  +56% f0  +67% corr +0.80 (§16 HULL+T3 ETH 1h) 
+L31 lch ETH 15min v2% hma200                         reprova    CAGR  +17.9% (B&H  +56.8%) Sh +1.05 (+0.96) DD -22% t +3.70 tercos  +35%/ +22%/  -1% 2a   +5% sp4  +17% f0  +18% corr +nan () pos_t3
+L32 r2 BTC 15min 5/90 ambos                          reprova    CAGR  +12.4% (B&H  +43.8%) Sh +1.05 (+0.91) DD -34% t +4.75 tercos  +34%/ -12%/ +20% 2a  +14% sp4  -26% f0  +12% corr +nan () pos_t2,sp4_pos
+L22 slopes ETH 1h 50/200 filtro long                 reprova    CAGR  +46.9% (B&H  +56.8%) Sh +1.05 (+0.96) DD -46% t +1.63 tercos +169%/ +12%/  +7% 2a   +9% sp4  +40% f0  +52% corr +nan () t2
+L29 mrs ETH 30min e50 ambos                          redundante CAGR  +66.9% (B&H  +56.8%) Sh +1.04 (+0.96) DD -47% t +3.16 tercos  +69%/ +54%/ +72% 2a  +52% sp4  +37% f0  +67% corr +0.71 (L12 rsima ETH 15min {'rl': 5, 'ml': 50}) 
+L13 sqz BTC 4h bb14 kc16 ambos                       ENTRA      CAGR  +30.9% (B&H  +43.7%) Sh +1.04 (+0.91) DD -40% t +2.85 tercos  +59%/ +17%/ +17% 2a  +23% sp4  +28% f0  +31% corr +0.47 (L33 vxe BTC 4h ema20 ambos) 
+L21 surf BTC 15min p168 t8 f2 ambos                  redundante CAGR  +45.2% (B&H  +43.8%) Sh +1.04 (+0.91) DD -34% t +2.51 tercos +115%/ +40%/  +1% 2a   +3% sp4  +37% f0  +46% corr +0.64 (L33 vxe BTC 4h ema20 ambos) 
+L30 hul ETH 4h z100 ambos                            redundante CAGR  +64.2% (B&H  +56.6%) Sh +1.04 (+0.96) DD -60% t +2.48 tercos  +82%/ +92%/ +19% 2a  +34% sp4  +58% f0  +65% corr +0.61 (§16 HULL+T3 ETH 1h) 
+L26 bx ETH 30min trl5% ambos                         redundante CAGR  +50.2% (B&H  +56.8%) Sh +1.04 (+0.96) DD -54% t +2.92 tercos  +69%/  +8%/ +86% 2a  +52% sp4  +20% f0  +51% corr +0.66 (L12 rsima ETH 15min {'rl': 5, 'ml': 50}) 
+L15 tmfs ETH 15min sw20 sl8atr tp3% ambos            reprova    CAGR  +42.0% (B&H  +56.8%) Sh +1.04 (+0.96) DD -41% t +2.93 tercos +114%/ +41%/  -5% 2a   +3% sp4  +17% f0  +42% corr +nan () pos_t3
+L32 usc BTC 15min tp3atr ambos                       reprova    CAGR  +30.9% (B&H  +43.8%) Sh +1.03 (+0.91) DD -49% t +3.08 tercos  +37%/ +28%/ +27% 2a  +23% sp4  -12% f0  +31% corr +nan () sp4_pos
+L21 strex BTC 1h m8 ambos                            redundante CAGR  +51.9% (B&H  +43.9%) Sh +1.03 (+0.91) DD -58% t +2.41 tercos +118%/ +49%/  +3% 2a  +28% sp4  +51% f0  +52% corr +0.75 (§24 Multi-MA BTC 4h) 
+L24 best ETH 30min m1.5 ambos                        redundante CAGR  +57.4% (B&H  +56.8%) Sh +1.03 (+0.96) DD -70% t +2.84 tercos  +55%/ +51%/ +65% 2a  +43% sp4  +33% f0  +58% corr +0.55 (L12 rsima ETH 15min {'rl': 5, 'ml': 50}) 
+L33 vxe BTC 1h ema50 ambos                           redundante CAGR  +50.8% (B&H  +43.9%) Sh +1.03 (+0.91) DD -45% t +3.22 tercos +107%/ +49%/  +9% 2a  +10% sp4  +35% f0  +49% corr +0.72 (L33 vxe BTC 4h ema20 ambos) 
+L14 drsi ETH 1h r21 w100 d3 signal ambos             reprova    CAGR  +65.0% (B&H  +56.8%) Sh +1.03 (+0.96) DD -77% t +2.50 tercos +130%/+120%/ -14% 2a  -19% sp4  +45% f0  +65% corr +nan () pos_t3
+L24 tq BTC 1D p1% ambos                              redundante CAGR  +17.7% (B&H  +43.8%) Sh +1.03 (+0.91) DD -17% t +2.59 tercos  +20%/ +38%/  +3% 2a   +7% sp4  +17% f0  +18% corr +0.72 (L24 tq BTC 1D p1% long) 
+L22 slopes ETH 4h 130/400 semfiltro ambos            redundante CAGR  +61.8% (B&H  +56.6%) Sh +1.03 (+0.96) DD -83% t +2.45 tercos  +52%/ +62%/ +43% 2a  +51% sp4  +59% f0  +61% corr +0.61 (L32 prv ETH 4h) 
+L15 sbs BTC 30min sl0.5% sessao ambos                reprova    CAGR  +18.5% (B&H  +43.9%) Sh +1.03 (+0.91) DD -31% t +3.44 tercos  +16%/ +14%/ +26% 2a  +24% sp4  -13% f0  +18% corr +nan () sp4_pos
+L21 strex BTC 30min m4 ambos                         reprova    CAGR  +51.1% (B&H  +43.9%) Sh +1.03 (+0.91) DD -45% t +1.73 tercos +147%/ +15%/  +8% 2a  +13% sp4  +48% f0  +52% corr +nan () t2
+L18 osb ETH 1h m0.25 sl2.00% ambos                   redundante CAGR  +41.2% (B&H  +56.8%) Sh +1.03 (+0.96) DD -52% t +3.10 tercos +105%/  +8%/ +27% 2a  +35% sp4  +34% f0  +41% corr +0.84 (L18 osb ETH 30min m0.25 sl2.00% ambos) 
+L14 fm BTC 15min bb20 2.0 sl2.0% tp2.0% ambos        ENTRA      CAGR  +33.4% (B&H  +43.8%) Sh +1.03 (+0.91) DD -42% t +2.07 tercos  +56%/  +5%/ +47% 2a  +28% sp4  +18% f0  +33% corr +0.18 (L21 hulk BTC 15min thr0.1 adx33 tp1.35% sl1.1% ambos) 
+L26 tcci ETH 4h sl1.75 at1                           reprova    CAGR  +34.6% (B&H  +56.6%) Sh +1.03 (+0.96) DD -36% t +1.70 tercos  +52%/ +22%/ +33% 2a  +38% sp4  +34% f0  +37% corr +nan () t2
+L14 hull BTC 30min n100 ambos                        redundante CAGR  +53.3% (B&H  +43.9%) Sh +1.03 (+0.91) DD -52% t +3.36 tercos  +91%/ +69%/  +8% 2a  +22% sp4  +31% f0  +54% corr +0.70 (L20 ds BTC 30min {'f': 8, 's': 72}) 
+L14 cs ETH 15min e200 tp/sl default ambos            redundante CAGR  +61.1% (B&H  +56.8%) Sh +1.02 (+0.96) DD -74% t +2.28 tercos +288%/ +11%/ +10% 2a  +27% sp4  +50% f0  +63% corr +0.70 (§16 HULL+T3 ETH 1h) 
+L12 rsima BTC 1D r20 m20 ambos                       redundante CAGR  +49.7% (B&H  +43.8%) Sh +1.02 (+0.91) DD -49% t +3.50 tercos +148%/  +5%/ +19% 2a  +25% sp4  +49% f0  +49% corr +0.65 (§24 Multi-MA BTC 4h) 
+L15 sbs ETH 4h sl2.00% sessao ambos                  redundante CAGR  +29.7% (B&H  +56.6%) Sh +1.02 (+0.96) DD -30% t +2.34 tercos  +55%/ +34%/  +3% 2a  +21% sp4  +24% f0  +29% corr +0.71 (L15 sbs ETH 4h sl2.00% 24h ambos) 
+L15 tmfs ETH 1h sw8 sl8atr tp1% ambos                ENTRA      CAGR  +28.7% (B&H  +56.8%) Sh +1.02 (+0.96) DD -30% t +2.67 tercos  +52%/ +11%/ +25% 2a  +25% sp4  +15% f0  +29% corr +0.38 (L15 tmfs ETH 30min sw20 sl8atr tp1% ambos) 
+L15 sbs BTC 4h sl2.00% 24h ambos                     reprova    CAGR  +34.3% (B&H  +43.7%) Sh +1.02 (+0.91) DD -44% t +1.59 tercos  +78%/ +56%/ -12% 2a  +16% sp4  +26% f0  +34% corr +nan () pos_t3,t2
+L33 hcx ETH 1h h28 ambos                             redundante CAGR  +64.5% (B&H  +56.8%) Sh +1.02 (+0.96) DD -86% t +2.48 tercos +153%/ +38%/ +22% 2a  +17% sp4  +40% f0  +65% corr +0.71 (L12 rsima ETH 15min {'rl': 5, 'ml': 50}) 
+L23 ma1020 ETH 1h 10/20 ambos                        redundante CAGR  +64.3% (B&H  +56.8%) Sh +1.02 (+0.96) DD -86% t +3.08 tercos +128%/ +50%/ +19% 2a   +6% sp4  +42% f0  +65% corr +0.73 (L12 rsima ETH 15min {'rl': 5, 'ml': 50}) 
+L26 pprs BTC 15min pv3/3 ambos                       reprova    CAGR  +52.3% (B&H  +43.8%) Sh +1.02 (+0.91) DD -54% t +3.19 tercos  +34%/ +24%/+110% 2a  +99% sp4  -10% f0  +53% corr +nan () sp4_pos
+L30 mbf ETH 1h l18 ambos                             redundante CAGR  +63.1% (B&H  +56.8%) Sh +1.02 (+0.96) DD -67% t +3.15 tercos  +17%/+171%/ +33% 2a  +31% sp4  +21% f0  +64% corr +0.68 (L12 rsima ETH 15min {'rl': 5, 'ml': 50}) 
+L22 mab ETH 1h 100 rr0 ambos                         reprova    CAGR  +61.0% (B&H  +56.8%) Sh +1.02 (+0.96) DD -65% t +2.29 tercos +321%/ +10%/ -16% 2a   -2% sp4  +53% f0  +62% corr +nan () pos_t3
+L32 dcs ETH 30min d20 ambos                          redundante CAGR  +59.1% (B&H  +56.8%) Sh +1.01 (+0.96) DD -53% t +2.63 tercos +180%/ +22%/ +16% 2a  +24% sp4  +42% f0  +60% corr +0.71 (L12 rsima ETH 15min {'rl': 5, 'ml': 50}) 
+L24 stb US100 30min tp3% ambos                       reprova    CAGR  +19.2% (B&H  +20.3%) Sh +1.01 (+0.93) DD -24% t +4.29 tercos  +18%/ +38%/  +5% 2a  +16% sp4   -2% f0  +20% corr +nan () sp4_pos
+L29 madx ETH 30min adx20 ambos                       reprova    CAGR  +61.0% (B&H  +56.8%) Sh +1.01 (+0.96) DD -81% t +1.95 tercos +142%/ +28%/ +36% 2a  +25% sp4  +53% f0  +61% corr +nan () t2
+L26 bx ETH 1h trl5% ambos                            reprova    CAGR  +52.4% (B&H  +56.8%) Sh +1.01 (+0.96) DD -41% t +2.27 tercos  +94%/ +93%/  -6% 2a  +11% sp4  +36% f0  +53% corr +nan () pos_t3
+L23 rsipa ETH 15min s4 tp0 ambos                     reprova    CAGR  +46.3% (B&H  +56.8%) Sh +1.01 (+0.96) DD -40% t +3.11 tercos +121%/  -0%/ +40% 2a  +25% sp4  +37% f0  +49% corr +nan () pos_t2
+L29 bbf ETH 1D n30 ambos                             reprova    CAGR  +59.8% (B&H  +56.5%) Sh +1.01 (+0.96) DD -66% t +1.59 tercos +154%/  -0%/ +36% 2a  +23% sp4  +59% f0  +59% corr +nan () pos_t2,t2
+L24 dcf XAU 4h tp2.5% ambos                          redundante CAGR  +11.7% (B&H  +13.4%) Sh +1.01 (+0.82) DD -14% t +3.31 tercos  +12%/  +2%/ +23% 2a  +17% sp4   +7% f0  +12% corr +0.56 (L7 tsl XAU 4h {'val': 2.0}) 
+L24 sott ETH 4h s250 p2 ambos                        reprova    CAGR  +59.9% (B&H  +56.6%) Sh +1.01 (+0.96) DD -74% t +2.07 tercos +130%/ -14%/ +98% 2a  +30% sp4  +60% f0  +59% corr +nan () pos_t2
+L21 cons ETH 30min n4 ma20 ambos                     redundante CAGR  +62.3% (B&H  +56.8%) Sh +1.01 (+0.96) DD -53% t +3.03 tercos  +48%/ +68%/ +67% 2a  +45% sp4  +31% f0  +63% corr +0.73 (L12 rsima ETH 15min {'rl': 5, 'ml': 50}) 
+L22 emax ETH 15min 20x3 ambos                        redundante CAGR  +62.0% (B&H  +56.8%) Sh +1.01 (+0.96) DD -53% t +2.92 tercos +119%/ +36%/ +38% 2a  +35% sp4  +34% f0  +63% corr +0.78 (L12 rsima ETH 15min {'rl': 5, 'ml': 50}) 
+L4 ppst ETH 15min p5 f3.0 a10                        reprova    CAGR  +62.3% (B&H  +56.8%) Sh +1.01 (+0.96) DD -58% t +2.53 tercos  +97%/ -35%/ -19% 2a  -41% sp4  +42% f0  +63% corr +nan () pos_t2,pos_t3
+L18 slope ETH 1h 50 9/21 filtro ambos                reprova    CAGR  +53.7% (B&H  +56.8%) Sh +1.01 (+0.96) DD -63% t +2.68 tercos +135%/ +76%/ -16% 2a   -4% sp4  +40% f0  +54% corr +nan () pos_t3
+L23 twin BTC 1h atr t17 semsltp ambos                reprova    CAGR  +31.6% (B&H  +43.9%) Sh +1.01 (+0.91) DD -59% t +2.62 tercos +150%/ +19%/ -24% 2a   -5% sp4  +23% f0  +31% corr +nan () pos_t3
+L22 xsc ETH 4h tp0 sl0 ambos                         reprova    CAGR  +60.0% (B&H  +56.6%) Sh +1.00 (+0.96) DD -74% t +1.59 tercos +148%/ +75%/  -9% 2a   +0% sp4  +54% f0  +60% corr +nan () pos_t3,t2
+L24 stb US100 1h tp3% ambos                          ENTRA      CAGR  +17.6% (B&H  +20.3%) Sh +1.00 (+0.93) DD -34% t +3.20 tercos  +10%/ +32%/ +13% 2a  +17% sp4   +6% f0  +18% corr +0.48 (L20 cam US100 15min sl1% tp2% ambos) 
+L30 lsr ETH 4h lb100 long                            reprova    CAGR  +50.7% (B&H  +56.6%) Sh +1.00 (+0.96) DD -66% t +2.36 tercos +226%/  -5%/ +22% 2a  +21% sp4  +51% f0  +57% corr +nan () pos_t2
+L29 lrcb ETH 30min dv1.5 long                        reprova    CAGR +101.2% (B&H  +56.8%) Sh +1.00 (+0.96) DD -68% t +1.34 tercos +714%/  -1%/  +9% 2a  +31% sp4 +101% f0 +107% corr +nan () pos_t2,t2
+L18 slope ETH 1h 130 9/21 filtro ambos               reprova    CAGR  +55.0% (B&H  +56.8%) Sh +1.00 (+0.96) DD -48% t +2.85 tercos +121%/ +70%/  -2% 2a   +7% sp4  +43% f0  +55% corr +nan () pos_t3
+L28 mab ETH 1h sma21 ambos                           redundante CAGR  +61.8% (B&H  +56.8%) Sh +1.00 (+0.96) DD -55% t +3.65 tercos  +79%/ +98%/ +10% 2a  +30% sp4  +19% f0  +62% corr +0.74 (L12 rsima ETH 15min {'rl': 5, 'ml': 50}) 
+L24 sott ETH 15min s250 p0.618 ambos                 ENTRA      CAGR  +60.9% (B&H  +56.8%) Sh +1.00 (+0.96) DD -62% t +2.68 tercos  +78%/ +31%/ +70% 2a  +81% sp4  +50% f0  +61% corr +0.48 (L12 rsima ETH 15min {'rl': 5, 'ml': 50}) 
+L18 savwap ETH 1D prd50 ambos                        reprova    CAGR  +55.8% (B&H  +56.5%) Sh +1.00 (+0.96) DD -83% t +2.11 tercos +269%/ -40%/ +75% 2a  +44% sp4  +56% f0  +55% corr +nan () pos_t2
+L30 gold ETH 15min 100/30 ambos                      redundante CAGR  +61.1% (B&H  +56.8%) Sh +1.00 (+0.96) DD -75% t +3.06 tercos +205%/  +5%/ +32% 2a   +9% sp4  +29% f0  +61% corr +0.54 (§16 HULL+T3 ETH 1h) 
+L20 cam US100 1h sl0.5% tp1% ambos                   reprova    CAGR   +9.2% (B&H  +20.3%) Sh +1.00 (+0.93) DD -17% t +2.82 tercos  +11%/ +14%/  +3% 2a   +6% sp4   -2% f0  +10% corr +nan () sp4_pos
+L21 bbb ETH 4h bb40 vol sl2% tp9% ambos              ENTRA      CAGR  +33.5% (B&H  +56.6%) Sh +1.00 (+0.96) DD -42% t +2.55 tercos  +44%/ +17%/ +31% 2a  +28% sp4  +31% f0  +34% corr +0.40 (L31 cmb ETH 4h) 
+L23 twin ETH 15min sematr t17 semsltp ambos          reprova    CAGR  +54.6% (B&H  +56.8%) Sh +1.00 (+0.96) DD -49% t +2.63 tercos +165%/  +8%/ +27% 2a   +4% sp4  -16% f0  +55% corr +nan () sp4_pos
+L20 cam ETH 4h sl2.0% tp6% ambos                     reprova    CAGR  +43.5% (B&H  +56.6%) Sh +1.00 (+0.96) DD -63% t +1.53 tercos  +73%/  -6%/ +80% 2a  +39% sp4  +37% f0  +44% corr +nan () pos_t2,t2
+L26 dm BTC 1h d50 long                               reprova    CAGR  +40.0% (B&H  +43.9%) Sh +1.00 (+0.91) DD -52% t +1.83 tercos +129%/ +17%/  -2% 2a  +18% sp4  +22% f0  +48% corr +nan () pos_t3,t2
+L24 dcf ETH 30min tp2.5% long                        reprova    CAGR  +37.5% (B&H  +56.8%) Sh +1.00 (+0.96) DD -43% t +1.70 tercos  +92%/ +15%/ +17% 2a  +20% sp4   +1% f0  +41% corr +nan () t2
+L15 tmfs ETH 1h sw20 sl8atr tp0% ambos               reprova    CAGR  +51.4% (B&H  +56.8%) Sh +1.00 (+0.96) DD -44% t +2.06 tercos +154%/ +25%/  -2% 2a   +6% sp4  +45% f0  +52% corr +nan () pos_t3
+L13 scalp BTC 4h s50 e200 ambos                      redundante CAGR  +48.3% (B&H  +43.7%) Sh +0.99 (+0.91) DD -61% t +2.00 tercos +140%/  +7%/ +16% 2a  +29% sp4  +48% f0  +49% corr +0.80 (§24 Multi-MA BTC 4h) 
+L23 twin BTC 4h atr t0 semsltp ambos                 reprova    CAGR  +49.4% (B&H  +43.7%) Sh +0.99 (+0.91) DD -61% t +2.23 tercos +176%/ +36%/ -24% 2a  +20% sp4  +47% f0  +50% corr +nan () pos_t3
+L20 ypmax ETH 30min 30 2 ambos                       redundante CAGR  +60.5% (B&H  +56.8%) Sh +0.99 (+0.96) DD -57% t +2.06 tercos  +89%/ +41%/ +42% 2a  +26% sp4  +45% f0  +61% corr +0.73 (L12 rsima ETH 15min {'rl': 5, 'ml': 50}) 
+L15 sbs ETH 15min sl2.00% sessao ambos               redundante CAGR  +47.7% (B&H  +56.8%) Sh +0.99 (+0.96) DD -61% t +2.71 tercos +160%/ +23%/  +0% 2a   +7% sp4   +6% f0  +47% corr +0.70 (L15 sbs ETH 15min sl1.00% sessao ambos) 
+L22 force ETH 1h 5/50 ambos                          redundante CAGR  +58.0% (B&H  +56.8%) Sh +0.99 (+0.96) DD -50% t +2.32 tercos +105%/ +68%/  +6% 2a   +8% sp4  +54% f0  +55% corr +0.54 (§16 HULL+T3 ETH 1h) 
+L28 pmax ETH 15min m3 ambos                          redundante CAGR  +60.2% (B&H  +56.8%) Sh +0.99 (+0.96) DD -67% t +2.43 tercos +114%/ +42%/ +31% 2a  +28% sp4  +44% f0  +60% corr +0.72 (L12 rsima ETH 15min {'rl': 5, 'ml': 50}) 
+L29 lrcb ETH 4h dv1.5 long                           reprova    CAGR  +80.8% (B&H  +56.6%) Sh +0.99 (+0.96) DD -63% t +1.42 tercos +491%/  +3%/ +20% 2a  +20% sp4  +81% f0  +85% corr +nan () t2
+L24 stb US100 30min semtp long                       reprova    CAGR  +15.4% (B&H  +20.3%) Sh +0.99 (+0.93) DD -23% t +1.34 tercos  +14%/ +19%/ +12% 2a  +14% sp4   +5% f0  +18% corr +nan () t2
+L23 qqe ETH 1D thr5 semfiltro ambos                  reprova    CAGR  +54.7% (B&H  +56.5%) Sh +0.99 (+0.96) DD -46% t +1.44 tercos +126%/ +23%/ +24% 2a  +15% sp4  +54% f0  +55% corr +nan () t2
+L22 slopes BTC 4h 130/400 filtro ambos               redundante CAGR  +44.4% (B&H  +43.7%) Sh +0.99 (+0.91) DD -56% t +2.28 tercos  +61%/ +47%/ +12% 2a  +13% sp4  +43% f0  +44% corr +0.63 (L33 vxe BTC 4h ema20 ambos) 
+L13 sqz BTC 1D bb20 kc20 long                        ENTRA      CAGR  +19.8% (B&H  +43.8%) Sh +0.99 (+0.91) DD -29% t +2.41 tercos  +42%/ +19%/  +2% 2a   +7% sp4  +20% f0  +21% corr +0.49 (L22 force BTC 4h {'fast': 5, 'slow': 50, 'short_ok': False}) 
+L10 piv XAU 1h 4/2                                   reprova    CAGR  +15.7% (B&H  +13.4%) Sh +0.99 (+0.82) DD -18% t +3.13 tercos  +15%/  -0%/ +38% 2a  +22% sp4   +4% f0  +17% corr +nan () pos_t2
+L24 dcf ETH 4h semtp ambos                           redundante CAGR  +51.0% (B&H  +56.6%) Sh +0.99 (+0.96) DD -49% t +2.58 tercos +155%/ +13%/ +14% 2a  +19% sp4  +44% f0  +52% corr +0.71 (§16 HULL+T3 ETH 1h) 
+L32 cce BTC 30min tp5% long                          reprova    CAGR  +32.6% (B&H  +43.9%) Sh +0.99 (+0.91) DD -43% t +1.69 tercos  +88%/ +28%/  -3% 2a   +9% sp4  +25% f0  +37% corr +nan () pos_t3,t2
+L12 rsima ETH 1D r10 m20 ambos                       reprova    CAGR  +57.4% (B&H  +56.5%) Sh +0.99 (+0.96) DD -76% t +2.64 tercos +250%/ -28%/ +36% 2a  +18% sp4  +57% f0  +57% corr +nan () pos_t2
+L23 ma1020 ETH 1D 20/50 long                         reprova    CAGR  +49.3% (B&H  +56.5%) Sh +0.98 (+0.96) DD -57% t +3.79 tercos +249%/  -4%/ +16% 2a  +14% sp4  +49% f0  +55% corr +nan () pos_t2
+L14 fm BTC 15min bb20 2.0 sl1.0% tp1.0% ambos        redundante CAGR  +20.9% (B&H  +43.8%) Sh +0.98 (+0.91) DD -29% t +2.42 tercos  +26%/ +15%/ +22% 2a  +19% sp4   +3% f0  +21% corr +0.64 (L14 fm BTC 15min bb20 2.0 sl2.0% tp2.0% ambos) 
+L22 slopes BTC 1D 130/400 filtro ambos               redundante CAGR  +45.4% (B&H  +43.8%) Sh +0.98 (+0.91) DD -50% t +2.48 tercos  +90%/ +46%/ +13% 2a  +20% sp4  +45% f0  +45% corr +0.66 (§24 Multi-MA BTC 4h) 
+L20 atrgod XAU 4h sl4.5 rr1.5 semfiltros long        reprova    CAGR   +7.5% (B&H  +13.4%) Sh +0.98 (+0.82) DD -13% t +2.07 tercos   +6%/  -0%/ +16% 2a  +11% sp4   +7% f0  +11% corr +nan () pos_t2
+L23 ma1020 ETH 30min 20/50 ambos                     redundante CAGR  +58.8% (B&H  +56.8%) Sh +0.98 (+0.96) DD -67% t +4.03 tercos +149%/  +2%/ +47% 2a  +15% sp4  +41% f0  +60% corr +0.66 (L12 rsima ETH 15min {'rl': 5, 'ml': 50}) 
+L20 cam US100 30min sl0.5% tp1% ambos                reprova    CAGR   +9.2% (B&H  +20.3%) Sh +0.98 (+0.93) DD -21% t +2.38 tercos  +14%/ +14%/  -0% 2a   +2% sp4   -3% f0  +10% corr +nan () pos_t3,sp4_pos
+L27 obv BTC 1h l20 ambos                             reprova    CAGR  +50.9% (B&H  +43.9%) Sh +0.98 (+0.91) DD -64% t +2.97 tercos +260%/ +15%/ -19% 2a  -10% sp4  +33% f0  +51% corr +nan () pos_t3
+L17 stcci US100 30min cci100 long                    reprova    CAGR  +14.6% (B&H  +20.3%) Sh +0.98 (+0.93) DD -25% t +1.13 tercos  +15%/ +16%/ +13% 2a  +11% sp4   +1% f0  +18% corr +nan () t2
+L28 gvto BTC 4h adx25 long                           reprova    CAGR  +31.4% (B&H  +43.7%) Sh +0.98 (+0.91) DD -48% t +1.68 tercos  +73%/ +19%/ +15% 2a  +13% sp4  +31% f0  +36% corr +nan () t2
+L30 lin ETH 4h 50/200 ambos                          reprova    CAGR  +56.4% (B&H  +56.6%) Sh +0.98 (+0.96) DD -63% t +1.51 tercos +135%/  +4%/ +19% 2a  +21% sp4  +56% f0  +56% corr +nan () t2
+L27 ssl ETH 1D l50 ambos                             reprova    CAGR  +55.8% (B&H  +56.5%) Sh +0.98 (+0.96) DD -63% t +2.42 tercos +159%/ -10%/ +31% 2a  +22% sp4  +55% f0  +55% corr +nan () pos_t2
+L19 abcd BTC 4h sl2.0% rr2 ambos                     ENTRA      CAGR  +21.2% (B&H  +43.7%) Sh +0.98 (+0.91) DD -25% t +2.91 tercos  +50%/ +14%/  +5% 2a   +6% sp4  +19% f0  +21% corr +0.18 (L20 ds BTC 30min {'f': 8, 's': 72}) 
+L16 qqe ETH 15min XZ f5 dfil ambos                   ENTRA      CAGR  +37.8% (B&H  +56.8%) Sh +0.97 (+0.96) DD -37% t +2.82 tercos  +52%/ +29%/ +32% 2a  +23% sp4  +12% f0  +38% corr +0.42 (L26 pprs ETH 15min pv6/3 ambos) 
+L29 rss ETH 15min 50/100 ambos                       redundante CAGR  +57.8% (B&H  +56.8%) Sh +0.97 (+0.96) DD -79% t +2.12 tercos  +92%/ +14%/ +67% 2a  +38% sp4  +47% f0  +59% corr +0.57 (L24 sott ETH 15min s250 p0.618 ambos) 
+L16 aivst ETH 4h l20 f3 ambos                        redundante CAGR  +55.0% (B&H  +56.6%) Sh +0.97 (+0.96) DD -54% t +2.38 tercos +103%/ +29%/ +17% 2a  +17% sp4  +54% f0  +55% corr +0.66 (L32 prv ETH 4h) 
+L13 scalp BTC 4h s25 e200 ambos                      redundante CAGR  +46.7% (B&H  +43.7%) Sh +0.97 (+0.91) DD -58% t +2.33 tercos +147%/  +5%/  +8% 2a  +20% sp4  +46% f0  +48% corr +0.79 (§24 Multi-MA BTC 4h) 
+L15 tmfs BTC 1h sw8 sl8atr tp1% ambos                reprova    CAGR  +23.3% (B&H  +43.9%) Sh +0.97 (+0.91) DD -30% t +1.69 tercos  +39%/ +31%/  +5% 2a   +9% sp4  +11% f0  +23% corr +nan () t2
+L23 bbst ETH 30min f3 ambos                          reprova    CAGR  +60.3% (B&H  +56.8%) Sh +0.97 (+0.96) DD -86% t +3.52 tercos +121%/+103%/ -10% 2a  +30% sp4  +18% f0  +60% corr +nan () pos_t3
+L23 stv ETH 15min m3 ambos                           reprova    CAGR  +55.3% (B&H  +56.8%) Sh +0.97 (+0.96) DD -66% t +1.87 tercos +321%/ -10%/  -6% 2a  -10% sp4  +48% f0  +56% corr +nan () pos_t2,pos_t3,t2
+L33 tbn BTC 30min c7 ambos                           reprova    CAGR  +29.0% (B&H  +43.9%) Sh +0.97 (+0.91) DD -52% t +2.72 tercos  +79%/ +27%/  -5% 2a   -8% sp4   +9% f0  +29% corr +nan () pos_t3
+L22 slopes ETH 1h 130/400 semfiltro ambos            redundante CAGR  +55.7% (B&H  +56.8%) Sh +0.97 (+0.96) DD -60% t +2.18 tercos +161%/ +10%/ +32% 2a   +7% sp4  +44% f0  +56% corr +0.68 (§16 HULL+T3 ETH 1h) 
+L21 hulk ETH 15min thr0.3 adx25 tp3.00% sl2.0% ambos reprova    CAGR  +27.4% (B&H  +56.8%) Sh +0.97 (+0.96) DD -38% t +1.87 tercos  +51%/ +19%/ +14% 2a   +7% sp4  +22% f0  +27% corr +nan () t2
+L29 kamatd ETH 4h r10 ambos                          reprova    CAGR  +55.6% (B&H  +56.6%) Sh +0.97 (+0.96) DD -63% t +2.51 tercos +222%/ +24%/ -12% 2a   -8% sp4  +55% f0  +55% corr +nan () pos_t3
+L15 sbs ETH 1h sl1.00% sessao ambos                  ENTRA      CAGR  +24.8% (B&H  +56.8%) Sh +0.97 (+0.96) DD -46% t +3.79 tercos  +66%/  +2%/ +15% 2a  +19% sp4   +6% f0  +25% corr +0.34 (L15 sbs ETH 15min sl1.00% sessao ambos) 
+L21 bbb BTC 4h bb15 vol sl0% tp0% ambos              redundante CAGR  +40.7% (B&H  +43.7%) Sh +0.97 (+0.91) DD -47% t +2.51 tercos  +87%/ +42%/  +8% 2a   +2% sp4  +39% f0  +41% corr +0.61 (L33 vxe BTC 4h ema20 ambos) 
+L15 tmfs BTC 4h sw20 sl8atr tp0% ambos               redundante CAGR  +38.9% (B&H  +43.7%) Sh +0.97 (+0.91) DD -31% t +2.71 tercos  +73%/ +22%/ +15% 2a  +18% sp4  +37% f0  +40% corr +0.65 (L22 apsar BTC 4h n1 0.02/0.2 ambos) 
+L29 kamatd ETH 4h r5 ambos                           redundante CAGR  +55.5% (B&H  +56.6%) Sh +0.97 (+0.96) DD -65% t +2.07 tercos  +81%/ +41%/ +34% 2a  +17% sp4  +54% f0  +55% corr +0.63 (L32 prv ETH 4h) 
+L31 lch ETH 1h v4% hma400                            reprova    CAGR  +16.9% (B&H  +56.8%) Sh +0.97 (+0.96) DD -21% t +2.62 tercos  +38%/ +18%/  -2% 2a   -0% sp4  +16% f0  +17% corr +nan () pos_t3
+L28 mab ETH 4h sma21 ambos                           reprova    CAGR  +55.5% (B&H  +56.6%) Sh +0.97 (+0.96) DD -64% t +3.22 tercos +216%/ +22%/  -4% 2a   +5% sp4  +45% f0  +56% corr +nan () pos_t3
+L24 vwap ETH 15min sma20 ambos                       reprova    CAGR  +59.6% (B&H  +56.8%) Sh +0.96 (+0.96) DD -71% t +3.49 tercos +336%/  +5%/ -14% 2a  -11% sp4   +4% f0  +60% corr +nan () pos_t3
+L23 qqe ETH 4h thr5 filtro ambos                     reprova    CAGR  +52.5% (B&H  +56.6%) Sh +0.96 (+0.96) DD -55% t +2.37 tercos +123%/ +56%/  -2% 2a  +16% sp4  +47% f0  +53% corr +nan () pos_t3
+L23 rsipa ETH 4h s4 tp0 ambos                        reprova    CAGR  +43.9% (B&H  +56.6%) Sh +0.96 (+0.96) DD -55% t +1.54 tercos +125%/ +39%/  -2% 2a   -1% sp4  +43% f0  +47% corr +nan () pos_t3,t2
+L24 btcm BTC 1h atr2                                 redundante CAGR  +27.8% (B&H  +43.9%) Sh +0.96 (+0.91) DD -28% t +3.02 tercos  +67%/ +23%/  +4% 2a  +11% sp4  +15% f0  +32% corr +0.53 (L22 force BTC 4h {'fast': 5, 'slow': 50, 'short_ok': False}) 
+L19 cipher US100 4h wt tp4 sl2 ambos                 ENTRA      CAGR   +2.6% (B&H  +20.3%) Sh +0.96 (+0.93) DD  -3% t +3.41 tercos   +2%/  +2%/  +4% 2a   +4% sp4   +2% f0   +3% corr +0.16 (L24 tq BTC 1D p1% long) 
+L31 ttm BTC 15min inv long                           reprova    CAGR  +37.5% (B&H  +43.8%) Sh +0.96 (+0.91) DD -73% t +2.94 tercos +152%/ -18%/ +26% 2a  +22% sp4  -54% f0  +45% corr +nan () pos_t2,sp4_pos
+L21 surf BTC 30min p168 t8 f2 ambos                  redundante CAGR  +39.2% (B&H  +43.9%) Sh +0.96 (+0.91) DD -41% t +2.35 tercos  +67%/ +34%/ +18% 2a  +19% sp4  +35% f0  +40% corr +0.66 (L33 vxe BTC 4h ema20 ambos) 
+L26 dm BTC 1D d50 ambos                              reprova    CAGR  +45.2% (B&H  +43.8%) Sh +0.96 (+0.91) DD -50% t +1.88 tercos  +95%/ +26%/ +16% 2a  +19% sp4  +44% f0  +45% corr +nan () t2
+L33 vxe BTC 4h ema50 ambos                           reprova    CAGR  +43.7% (B&H  +43.7%) Sh +0.95 (+0.91) DD -54% t +1.84 tercos  +90%/ +15%/ +35% 2a  +17% sp4  +40% f0  +42% corr +nan () t2
+L15 tmfs BTC 4h sw8 sl8atr tp1% ambos                reprova    CAGR  +17.8% (B&H  +43.7%) Sh +0.95 (+0.91) DD -25% t +1.69 tercos  +26%/ +15%/ +13% 2a  +13% sp4  +14% f0  +18% corr +nan () t2
+L28 gvto US100 30min adx0 ambos                      redundante CAGR  +16.8% (B&H  +20.3%) Sh +0.95 (+0.93) DD -23% t +3.76 tercos  +15%/ +29%/  +7% 2a  +12% sp4   +4% f0  +17% corr +0.58 (L24 stb US100 1h tp3% ambos) 
+L22 mab US100 1h 40 rr3 long                         redundante CAGR  +10.7% (B&H  +20.3%) Sh +0.95 (+0.93) DD -25% t +2.47 tercos   +6%/ +14%/ +14% 2a  +11% sp4   +2% f0  +12% corr +0.54 (L32 prv US100 15min f2.618 long) 
+L16 aivst US100 15min l10 f2 long                    reprova    CAGR  +13.1% (B&H  +20.3%) Sh +0.95 (+0.93) DD -24% t +3.16 tercos  +12%/ +11%/ +16% 2a  +12% sp4   -4% f0  +15% corr +nan () sp4_pos
+L15 sbs US100 4h sl1.00% 24h ambos                   redundante CAGR  +12.5% (B&H  +20.3%) Sh +0.95 (+0.93) DD -25% t +2.60 tercos   +7%/ +18%/ +14% 2a   +9% sp4   +2% f0  +13% corr +0.68 (L15 sbs US100 4h sl1.00% sessao ambos) 
+L22 tdon BTC 1D 20/10 m2 long                        reprova    CAGR  +34.4% (B&H  +43.8%) Sh +0.94 (+0.91) DD -56% t +1.18 tercos +100%/ +13%/ +11% 2a  +21% sp4  +34% f0  +40% corr +nan () t2
+L31 pse BTC 1D off1% ambos                           reprova    CAGR  +39.8% (B&H  +43.8%) Sh +0.94 (+0.91) DD -42% t +1.60 tercos +101%/ +54%/  +1% 2a  +11% sp4  +39% f0  +41% corr +nan () t2
+L26 kama US100 15min f0.5 atr3                       reprova    CAGR  +13.1% (B&H  +20.3%) Sh +0.94 (+0.93) DD -25% t +3.30 tercos  +17%/  +9%/ +13% 2a   +8% sp4  -20% f0  +16% corr +nan () sp4_pos
+L24 dcf US100 1h tp2.5% ambos                        reprova    CAGR  +14.8% (B&H  +20.3%) Sh +0.94 (+0.93) DD -21% t +3.86 tercos  +13%/ +14%/ +17% 2a  +15% sp4  -13% f0  +15% corr +nan () sp4_pos
+L14 drsi BTC 1h r21 w100 d3 zero ambos               reprova    CAGR  +46.3% (B&H  +43.9%) Sh +0.94 (+0.91) DD -75% t +2.58 tercos +204%/  -6%/  +8% 2a   +5% sp4  +35% f0  +46% corr +nan () pos_t2
+L23 rsipa BTC 15min s4 tp0 ambos                     reprova    CAGR  +34.1% (B&H  +43.8%) Sh +0.94 (+0.91) DD -39% t +1.89 tercos  +94%/ +25%/  +1% 2a   +3% sp4  +26% f0  +36% corr +nan () t2
+L24 stb XAU 4h tp3% ambos                            ENTRA      CAGR  +11.0% (B&H  +13.4%) Sh +0.94 (+0.82) DD -20% t +3.96 tercos  +10%/  +2%/ +26% 2a  +16% sp4   +9% f0  +10% corr +0.45 (L7 tsl XAU 4h {'val': 2.0}) 
+L19 3ema BTC 1D tp0 sl2                              reprova    CAGR  +24.4% (B&H  +43.8%) Sh +0.94 (+0.91) DD -30% t +1.03 tercos  +71%/ +18%/  -3% 2a   +7% sp4  +24% f0  +27% corr +nan () pos_t3,t2
+L22 slopes BTC 4h 130/400 semfiltro ambos            redundante CAGR  +42.7% (B&H  +43.7%) Sh +0.94 (+0.91) DD -52% t +2.35 tercos  +49%/ +43%/  +4% 2a   +3% sp4  +40% f0  +42% corr +0.54 (L33 vxe BTC 4h ema20 ambos) 
+L11 hast XAU 15min m4.0 HA tp0.03 sl0.01             reprova    CAGR  +13.5% (B&H  +13.4%) Sh +0.93 (+0.82) DD -24% t +3.40 tercos  +10%/  -3%/ +41% 2a  +24% sp4   +3% f0  +15% corr +nan () pos_t2
+L21 surf BTC 1h p168 t8 f2 ambos                     reprova    CAGR  +35.7% (B&H  +43.9%) Sh +0.93 (+0.91) DD -48% t +2.18 tercos  +78%/ +41%/  -3% 2a   -0% sp4  +34% f0  +36% corr +nan () pos_t3
+L26 vst US100 15min b5 long                          reprova    CAGR  +14.1% (B&H  +20.3%) Sh +0.93 (+0.93) DD -20% t +1.94 tercos  +13%/ +15%/ +13% 2a  +13% sp4   +4% f0  +17% corr +nan () t2
+L21 surf BTC 4h p168 t8 f2 ambos                     reprova    CAGR  +36.8% (B&H  +43.7%) Sh +0.93 (+0.91) DD -43% t +3.13 tercos +136%/ +16%/  -3% 2a   +8% sp4  +36% f0  +38% corr +nan () pos_t3
+L15 tmfs BTC 4h sw20 sl8atr tp3% ambos               reprova    CAGR  +19.5% (B&H  +43.7%) Sh +0.93 (+0.91) DD -25% t +1.63 tercos  +38%/ +11%/  +8% 2a  +10% sp4  +18% f0  +20% corr +nan () t2
+L22 mab US100 1h 40 rr3 ambos                        reprova    CAGR  +13.7% (B&H  +20.3%) Sh +0.93 (+0.93) DD -39% t +3.36 tercos   +7%/ +24%/ +13% 2a  +14% sp4   -3% f0  +14% corr +nan () sp4_pos
+L15 tmfs XAU 4h sw8 sl8atr tp3% ambos                redundante CAGR  +10.8% (B&H  +13.4%) Sh +0.93 (+0.82) DD -15% t +3.18 tercos   +8%/  +4%/ +23% 2a  +16% sp4   +9% f0  +10% corr +0.56 (L24 stb XAU 4h tp3% ambos) 
+L22 tsi XAU 30min tp0.0% ambos                       reprova    CAGR  +14.7% (B&H  +13.4%) Sh +0.93 (+0.82) DD -28% t +2.95 tercos  +28%/  -3%/ +19% 2a  +10% sp4   +9% f0  +15% corr +nan () pos_t2
+L32 r2 BTC 30min 5/90 long                           reprova    CAGR   +6.4% (B&H  +43.9%) Sh +0.93 (+0.91) DD -12% t +2.44 tercos  +16%/  -2%/  +6% 2a   +6% sp4   -1% f0   +7% corr +nan () pos_t2,sp4_pos
+L32 cce XAU 1h tp10% long                            reprova    CAGR   +9.0% (B&H  +13.4%) Sh +0.93 (+0.82) DD -14% t +1.80 tercos   +6%/  -0%/ +24% 2a  +15% sp4   +7% f0  +14% corr +nan () pos_t2,t2
+L32 usc BTC 15min tp2atr ambos                       reprova    CAGR  +23.4% (B&H  +43.8%) Sh +0.93 (+0.91) DD -41% t +3.47 tercos  +34%/ +11%/ +26% 2a  +17% sp4  -18% f0  +24% corr +nan () sp4_pos
+L28 rci XAU 1h rci30 ambos                           reprova    CAGR  +14.6% (B&H  +13.4%) Sh +0.92 (+0.82) DD -24% t +3.58 tercos   +7%/  -2%/ +49% 2a  +29% sp4   +2% f0  +15% corr +nan () pos_t2
+L14 cs XAU 1h e60 tp/sl sim2 ambos                   redundante CAGR  +13.4% (B&H  +13.4%) Sh +0.92 (+0.82) DD -26% t +2.72 tercos   +5%/ +14%/ +27% 2a  +23% sp4  +11% f0  +14% corr +0.51 (L7 tsl XAU 4h {'val': 2.0}) 
+L16 emax BTC 1D 10/20 ambos                          redundante CAGR  +42.4% (B&H  +43.8%) Sh +0.92 (+0.91) DD -66% t +2.34 tercos +126%/ +18%/  +0% 2a  +29% sp4  +42% f0  +42% corr +0.82 (§24 Multi-MA BTC 4h) 
+L12 rsima BTC 15min r20 m50 ambos                    reprova    CAGR  +44.4% (B&H  +43.8%) Sh +0.92 (+0.91) DD -67% t +1.80 tercos  +88%/ +45%/  +6% 2a  +17% sp4  +27% f0  +45% corr +nan () t2
+L23 e3r BTC 1D sl5 x24 long                          reprova    CAGR  +12.3% (B&H  +43.8%) Sh +0.92 (+0.91) DD -20% t +3.53 tercos  +45%/  -1%/  -4% 2a   -2% sp4  +12% f0  +13% corr +nan () pos_t2,pos_t3
+L17 ftsma BTC 30min 5/20/200 semft ambos             reprova    CAGR  +43.1% (B&H  +43.9%) Sh +0.92 (+0.91) DD -63% t +2.32 tercos +147%/ +22%/  -9% 2a   +7% sp4  +30% f0  +44% corr +nan () pos_t3
+L31 pse XAU 1h off0% ambos                           redundante CAGR  +12.6% (B&H  +13.4%) Sh +0.92 (+0.82) DD -15% t +3.39 tercos  +14%/  +4%/ +20% 2a  +13% sp4   +6% f0  +14% corr +0.63 (L14 hap XAU 1h {'start': 0.01, 'inc': 0.01, 'mx': 0.1}) 
+L23 evw BTC 1D 30 ambos                              redundante CAGR  +42.1% (B&H  +43.8%) Sh +0.91 (+0.91) DD -59% t +2.62 tercos  +78%/ +41%/ +14% 2a  +28% sp4  +41% f0  +43% corr +0.80 (§24 Multi-MA BTC 4h) 
+L15 tmfs BTC 30min sw20 sl8atr tp3% ambos            ENTRA      CAGR  +27.2% (B&H  +43.9%) Sh +0.91 (+0.91) DD -61% t +2.53 tercos  +55%/  +0%/ +32% 2a  +22% sp4  +16% f0  +27% corr +0.44 (L15 sbs BTC 30min sl2.00% 24h ambos) 
+L19 abcd BTC 4h sl4.0% rr5 ambos                     reprova    CAGR  +33.6% (B&H  +43.7%) Sh +0.91 (+0.91) DD -45% t +1.94 tercos  +79%/ +21%/  +4% 2a  +10% sp4  +32% f0  +33% corr +nan () t2
+L10 piv XAU 1h 8/2                                   reprova    CAGR  +14.1% (B&H  +13.4%) Sh +0.90 (+0.82) DD -17% t +3.89 tercos  +13%/  -4%/ +39% 2a  +22% sp4   +6% f0  +15% corr +nan () pos_t2
+L16 pmax XAU 1h sl1% tp35% filtros ambos             redundante CAGR  +12.0% (B&H  +13.4%) Sh +0.90 (+0.82) DD -14% t +2.27 tercos  +10%/ +15%/ +15% 2a  +14% sp4  +11% f0  +12% corr +0.51 (L7 tsl XAU 4h {'val': 2.0}) 
+L10 mab XAU 30min ma 20/50 ambos                     reprova    CAGR  +14.2% (B&H  +13.4%) Sh +0.90 (+0.82) DD -21% t +3.52 tercos   +9%/  -2%/ +45% 2a  +26% sp4   +5% f0  +16% corr +nan () pos_t2
+L12 tk XAU 30min 20/60 ema0 ambos                    reprova    CAGR  +14.3% (B&H  +13.4%) Sh +0.90 (+0.82) DD -28% t +2.92 tercos  +22%/  -4%/ +26% 2a  +17% sp4   +4% f0  +14% corr +nan () pos_t2
+L16 edma XAU 1h l20 e20 ambos                        redundante CAGR  +14.5% (B&H  +13.4%) Sh +0.89 (+0.82) DD -23% t +2.97 tercos  +23%/  +1%/ +17% 2a   +9% sp4   +9% f0  +10% corr +0.60 (L3 occ HULL13 x5 XAU 1h) 
+L24 hf XAU 1h h50 ambos                              reprova    CAGR  +13.4% (B&H  +13.4%) Sh +0.89 (+0.82) DD -18% t +3.06 tercos   +9%/  -0%/ +37% 2a  +26% sp4   +3% f0  +15% corr +nan () pos_t2
+L15 tmfs XAU 1h sw20 sl8atr tp3% ambos               redundante CAGR   +9.4% (B&H  +13.4%) Sh +0.88 (+0.82) DD -16% t +2.99 tercos   +6%/  +1%/ +23% 2a  +16% sp4   +5% f0  +10% corr +0.54 (L14 hap XAU 1h {'start': 0.01, 'inc': 0.01, 'mx': 0.1}) 
+L28 hvc XAU 1h h100 ambos                            ENTRA      CAGR  +14.0% (B&H  +13.4%) Sh +0.87 (+0.82) DD -23% t +3.22 tercos  +11%/  +7%/ +26% 2a  +18% sp4   +8% f0  +15% corr +0.42 (L7 tsl XAU 4h {'val': 2.0}) 
+L9 rsma XAU 1h r8 m10 tend ambos                     redundante CAGR  +13.8% (B&H  +13.4%) Sh +0.87 (+0.82) DD -22% t +2.64 tercos  +14%/  +2%/ +28% 2a  +18% sp4   +3% f0  +15% corr +0.65 (L14 hap XAU 1h {'start': 0.01, 'inc': 0.01, 'mx': 0.1}) 
+L15 tmfs XAU 1h sw20 sl8atr tp3% long                reprova    CAGR   +6.8% (B&H  +13.4%) Sh +0.86 (+0.82) DD -13% t +2.77 tercos   +5%/  -1%/ +19% 2a  +13% sp4   +5% f0  +10% corr +nan () pos_t2
+L20 atrgod XAU 4h sl2.0 rr2.0 semfiltros ambos       reprova    CAGR   +5.5% (B&H  +13.4%) Sh +0.86 (+0.82) DD -11% t +2.62 tercos   +3%/  -2%/ +17% 2a  +11% sp4   +5% f0   +6% corr +nan () pos_t2
+L29 bsc XAU 30min 20/100 ambos                       reprova    CAGR   +8.7% (B&H  +13.4%) Sh +0.85 (+0.82) DD -12% t +2.97 tercos  +10%/  -1%/ +17% 2a  +10% sp4   +3% f0  +10% corr +nan () pos_t2
+L20 atrgod XAU 4h sl2.0 rr2.0 filtros ambos          ENTRA      CAGR   +2.8% (B&H  +13.4%) Sh +0.85 (+0.82) DD  -4% t +3.27 tercos   +3%/  +1%/  +3% 2a   +3% sp4   +3% f0   +2% corr +0.31 (L20 atrgod XAU 4h sl4.5 rr1.5 semfiltros ambos) 
+L9 ut XAU 30min k3.0 sl3.0 be0.75 tp0.0 ema0 ambos   reprova    CAGR  +11.1% (B&H  +13.4%) Sh +0.85 (+0.82) DD -29% t +3.60 tercos  +16%/  -2%/ +20% 2a  +11% sp4   +1% f0  +11% corr +nan () pos_t2
+L20 atrgod XAU 4h sl4.5 rr1.5 filtros ambos          redundante CAGR   +4.1% (B&H  +13.4%) Sh +0.85 (+0.82) DD  -9% t +2.40 tercos   +4%/  +3%/  +7% 2a   +3% sp4   +4% f0   +4% corr +0.66 (L20 atrgod XAU 4h sl2.0 rr2.0 filtros ambos) 
+L24 dcf XAU 4h semtp ambos                           redundante CAGR  +10.1% (B&H  +13.4%) Sh +0.85 (+0.82) DD -13% t +4.89 tercos  +12%/  +2%/ +18% 2a  +13% sp4   +6% f0  +11% corr +0.59 (L7 tsl XAU 4h {'val': 2.0}) 
+L17 grid XAU 4h p2.00% ambos                         redundante CAGR  +10.9% (B&H  +13.4%) Sh +0.85 (+0.82) DD -24% t +2.89 tercos   +2%/  +4%/ +32% 2a  +23% sp4   +9% f0  +13% corr +0.62 (L7 tsl XAU 4h {'val': 2.0}) 
+L30 sich XAU 4h rr2 long                             ENTRA      CAGR   +7.9% (B&H  +13.4%) Sh +0.84 (+0.82) DD -15% t +2.30 tercos   +7%/  +5%/ +12% 2a  +10% sp4   +8% f0  +12% corr +0.36 (L20 atrgod XAU 4h sl4.5 rr1.5 semfiltros ambos) 
+L32 cce XAU 1h tp5% ambos                            redundante CAGR  +10.1% (B&H  +13.4%) Sh +0.84 (+0.82) DD -14% t +3.00 tercos  +10%/  +1%/ +20% 2a  +12% sp4   +6% f0  +12% corr +0.61 (L7 tsl XAU 4h {'val': 2.0}) 
+L23 rsipa XAU 30min s4 tp0 long                      reprova    CAGR   +6.9% (B&H  +13.4%) Sh +0.84 (+0.82) DD -11% t +1.65 tercos   +7%/  -1%/ +17% 2a  +10% sp4   +5% f0  +11% corr +nan () pos_t2,t2
+L33 pst XAU 1h af0.01 ambos                          ENTRA      CAGR  +13.2% (B&H  +13.4%) Sh +0.84 (+0.82) DD -19% t +2.22 tercos   +3%/  +7%/ +38% 2a  +23% sp4   +5% f0  +13% corr +0.47 (L14 hap XAU 1h {'start': 0.01, 'inc': 0.01, 'mx': 0.1}) 
+L8 tm XAU 1h sl0.02 rr0.0 eod0 filt0 ambos           reprova    CAGR  +12.8% (B&H  +13.4%) Sh +0.83 (+0.82) DD -22% t +3.26 tercos  +11%/  -5%/ +36% 2a  +21% sp4   +0% f0  +14% corr +nan () pos_t2
+L9 hull XAU 1h p50 ambos                             reprova    CAGR  +12.9% (B&H  +13.4%) Sh +0.83 (+0.82) DD -23% t +3.46 tercos   +7%/  -1%/ +39% 2a  +27% sp4   -1% f0  +14% corr +nan () pos_t2,sp4_pos
+L27 obv XAU 4h l20 ambos                             reprova    CAGR  +13.1% (B&H  +13.4%) Sh +0.83 (+0.82) DD -22% t +3.53 tercos  +17%/  -3%/ +27% 2a  +15% sp4  +10% f0  +13% corr +nan () pos_t2
+L33 pst WTI 15min af0.02 ambos                       reprova    CAGR  +30.5% (B&H   +5.4%) Sh +0.79 (+0.35) DD -79% t +3.35 tercos  +89%/ -24%/ +59% 2a  +16% sp4  -32% f0  +33% corr +nan () pos_t2,sp4_pos
+L14 drsi WTI 1h r21 w100 d3 zero ambos               redundante CAGR  +29.5% (B&H   +5.4%) Sh +0.78 (+0.35) DD -73% t +2.29 tercos  +15%/ +57%/ +24% 2a  +36% sp4  +16% f0  +30% corr +0.82 (L14 drsi WTI 4h {'rl': 14, 'window': 30, 'mode': 'signal'}) 
+L27 obv WTI 1h l50 ambos                             ENTRA      CAGR  +23.5% (B&H   +5.4%) Sh +0.70 (+0.35) DD -53% t +2.20 tercos  +47%/ +13%/ +12% 2a   +9% sp4  +10% f0  +23% corr +0.29 (L25 sta WTI 4h {'ln': 14}) 
+L22 pmax WTI 15min m3 t8 ambos                       reprova    CAGR  +25.1% (B&H   +5.4%) Sh +0.69 (+0.35) DD -62% t +2.77 tercos  -13%/+109%/  +7% 2a   +4% sp4   +8% f0  +23% corr +nan () pos_t1
+L16 qqe WTI 1h XZ f5 semfil ambos                    reprova    CAGR  +18.3% (B&H   +5.4%) Sh +0.68 (+0.35) DD -39% t +3.75 tercos   +3%/ +64%/  -1% 2a  +11% sp4   +4% f0  +20% corr +nan () pos_t3
+L21 lube WTI 30min 500 tl-0.1 ambos                  reprova    CAGR   +9.2% (B&H   +5.4%) Sh +0.67 (+0.35) DD -32% t +1.72 tercos  +25%/  +8%/  -3% 2a   -3% sp4   +7% f0  +10% corr +nan () pos_t3,t2
+L22 apsar WTI 30min n1 0.01/0.1 ambos                ENTRA      CAGR  +21.8% (B&H   +5.4%) Sh +0.67 (+0.35) DD -69% t +3.09 tercos  +19%/  +7%/ +38% 2a  +35% sp4  +15% f0  +27% corr +0.27 (L25 sta WTI 4h {'ln': 14}) 
+L16 edma WTI 30min l50 e20 ambos                     reprova    CAGR  +20.7% (B&H   +5.4%) Sh +0.64 (+0.35) DD -61% t +1.81 tercos  +55%/ +21%/ -10% 2a   -1% sp4  +10% f0   +2% corr +nan () pos_t3,t2
+L31 seq WTI 1D rr1.5 ambos                           ENTRA      CAGR  +10.6% (B&H   +5.7%) Sh +0.62 (+0.35) DD -34% t +2.37 tercos   +7%/  +3%/ +24% 2a  +14% sp4  +11% f0  +16% corr +0.16 (L29 bot WTI 1D {'k': 0.02}) 
+L22 tsi WTI 15min tp0.0% ambos                       reprova    CAGR  +20.1% (B&H   +5.4%) Sh +0.62 (+0.35) DD -51% t +2.43 tercos   +8%/ +60%/  -7% 2a   -1% sp4   +2% f0  +22% corr +nan () pos_t3
+L27 tch WTI 15min p50 ambos                          reprova    CAGR  +15.9% (B&H   +5.4%) Sh +0.55 (+0.35) DD -51% t +2.70 tercos   +2%/ +42%/  +4% 2a   -1% sp4   -3% f0  +17% corr +nan () sp4_pos
+L29 bot WTI 15min k0.04 ambos                        reprova    CAGR  +14.1% (B&H   +5.4%) Sh +0.51 (+0.35) DD -83% t +3.50 tercos  -11%/  +8%/  +2% 2a  +33% sp4  +14% f0  +12% corr +nan () pos_t1
+L23 bbst WTI 30min f7 ambos                          reprova    CAGR  +13.7% (B&H   +5.4%) Sh +0.50 (+0.35) DD -61% t +2.26 tercos   -8%/ +26%/ +22% 2a  +24% sp4  -15% f0  +13% corr +nan () pos_t1,sp4_pos
+L19 cipher WTI 30min semwt tp2 sl1 ambos             reprova    CAGR   +4.3% (B&H   +5.4%) Sh +0.49 (+0.35) DD -13% t +2.30 tercos   +2%/  +3%/  +7% 2a   +5% sp4   -2% f0   +5% corr +nan () sp4_pos
+L26 pprs WTI 15min pv3/3 ambos                       reprova    CAGR  +11.3% (B&H   +5.4%) Sh +0.44 (+0.35) DD -83% t +3.26 tercos  +28%/ +47%/ -27% 2a  -17% sp4  -47% f0  +13% corr +nan () pos_t3,sp4_pos
+L31 psw WTI 1h af0.02 ambos                          reprova    CAGR  +10.1% (B&H   +5.4%) Sh +0.42 (+0.35) DD -60% t +2.21 tercos  +44%/  -3%/  -5% 2a   -2% sp4  -19% f0  +13% corr +nan () pos_t2,pos_t3,sp4_pos
+L23 ttm WTI 1D m1.5 semmacd ambos                    reprova    CAGR   +8.9% (B&H   +5.7%) Sh +0.41 (+0.35) DD -71% t +1.51 tercos  +11%/  -3%/  -2% 2a   -8% sp4   +6% f0  +21% corr +nan () pos_t2,pos_t3,t2
+L26 lbo WTI 4h rr2 ambos                             reprova    CAGR   +7.4% (B&H   +5.4%) Sh +0.40 (+0.35) DD -44% t +2.67 tercos   -3%/  +3%/ +21% 2a  +15% sp4   -8% f0  +11% corr +nan () pos_t1,sp4_pos
+L28 hvc WTI 1h h50 ambos                             reprova    CAGR   +7.1% (B&H   +5.4%) Sh +0.37 (+0.35) DD -63% t +1.26 tercos   -3%/ +28%/  -2% 2a   -7% sp4   -4% f0  +13% corr +nan () pos_t1,pos_t3,t2,sp4_pos
+L31 lch WTI 30min v2% hma400                         reprova    CAGR   +4.2% (B&H   +5.4%) Sh +0.36 (+0.35) DD -29% t +2.35 tercos   -1%/ +19%/  -3% 2a   -2% sp4   +3% f0   +6% corr +nan () pos_t1,pos_t3
+
+Sem captura (cfg da grade nao reproduzida pelo main atual):
+  L25 bbe 4h sl1.75
+  L25 made 1D 30 ambos
+  L25 flexi 4h f5 ambos
+  L25 thma 30min 40 ambos
+  L25 ffe 30min tp2.0% direto ambos
+  L25 hyb 15min atr4 ambos
+  L25 elo 4h 21
+  L25 davin 4h dip14 sl5
+  L25 bts 30min tr8% ambos
+  L25 grov 30min 100 m5 long
+  L25 era 4h sl2% ambos
+  L25 era 4h sl5% ambos
+  L25 era 1D sl2 ambos
+  L25 era 1D sl2% long
+  L25 uhl 4h 100 ambos
+  L25 uhl 1D 30 long
+  L25 ht3 1h 100 sltp ambos
+  L25 ht3 4h 50 sltp ambos
+  L25 ht3 4h 100 sltp ambos
+  L25 opw 15min dip2 tp2
+  L25 opw 30min dip2 tp2
+  L25 opw 1h dip2 tp2
+  L25 spym 30min ambos
+  L25 gn 1D sltp long
+  L25 tlb 15min p10 ma ambos
+  L25 tlb 1h p5 semma ambos
+  L25 bas 30min atr2 ambos
+  L25 smp 1h p20 sl1% tp1.5% ambos
+  L25 bbe 30min sl1.75
+  L25 sr 4h 10 ambos
+  L25 flexi 4h f15 ambos
+  L25 thma 15min 100 long
+  L25 ffe 15min tp2.0% direto ambos
+  L25 imct 15min ambos
+  L25 c123r 1h ambos
+  L25 pop 4h 10/5 ambos
+  L25 bts 30min tr3 ambos
+  L25 grov 30min 100 m5 ambos
+  L25 era 4h sl2 ambos
+  L25 era 4h sl2% long
+  L25 era 4h sl5% long
+  L25 era 1D sl2% ambos
+  L25 era 1D sl5% long
+  L25 uhl 1D 30 ambos
+  L25 ht3 1h 50 sltp ambos
+  L25 ht3 1h 100 semsltp ambos
+  L25 ht3 4h 50 semsltp ambos
+  L25 ht3 1D 100 semsltp ambos
+  L25 opw 30min dip1 tp1
+  L25 opw 1h dip1 tp1
+  L25 opw 4h dip2 tp2
+  L25 spym 30min long
+  L25 gn 1D semsltp ambos
+  L25 tlb 1h p5 ma ambos
+  L25 tlb 4h p10 ma ambos
+  L25 nr7s 1h semfiltro
+  L25 smp 1D p5 sl0% tp0.0% ambos
+  L25 bbe 15min sl1.75
+  L25 made 1h 9 ambos
+  L25 htf 15min 200 s14 long
+  L25 flexi 4h f5 ambos
+  L25 thma 15min 100 long
+  L25 thma 1D 40 ambos
+  L25 hyb 30min atr4 ambos
+  L25 c123r 30min ambos
+  L25 mas 15min ambos
+  L25 bts 15min tr3% ambos
+  L25 bts 30min tr3% ambos
+  L25 grov 30min 100 m5 ambos
+  L25 vwbo 15min tp2 ambos
+  L25 vwbo 30min tp4 ambos
+  L25 sec 4h tp8 ambos
+  L25 era 30min sl5% ambos
+  L25 mx 1h padrao
+  L25 uhl 4h 100 long
+  L25 ht3 15min 50 sltp ambos
+  L25 ht3 30min 100 sltp ambos
+  L25 ht3 1h 100 sltp ambos
+  L25 ht3 4h 50 sltp ambos
+  L25 ht3 4h 100 semsltp ambos
+  L25 ht3 1D 100 semsltp ambos
+  L25 gn 15min sltp ambos
+  L25 gn 1h semsltp ambos
+  L25 bas 15min atr2 ambos
+  L25 bas 4h atr4 ambos
+  L25 rtb 15min sl3% tp6% ambos
+  L25 smp 15min p20 sl0% tp0.0% ambos
+  L25 smp 30min p20 sl1% tp1.5% ambos
+  L25 smp 1h p5 sl0% tp0.0% long
+  L25 smp 1D p20 sl0% tp0.0% ambos
+  L25 smp 1D p5 sl0% tp0.0% long
+  L25 ce 30min risco ambos
+  L25 made 15min 30 ambos
+  L25 made 1D 9 ambos
+  L25 htf 1h 200 s14 ambos
+  L25 flexi 4h f5 long
+  L25 thma 30min 40 ambos
+  L25 mst 1h 60 m4 ambos
+  L25 hyb 4h atr4 ambos
+  L25 c123r 4h ambos
+  L25 mas 15min long
+  L25 bts 15min tr8% ambos
+  L25 bts 30min tr8% ambos
+  L25 grov 30min 100 m5 long
+  L25 vwbo 15min tp4 ambos
+  L25 vwbo 1h tp2 ambos
+  L25 era 30min sl2 ambos
+  L25 era 30min sl5% long
+  L25 uhl 15min 30 ambos
+  L25 uhl 1D 100 ambos
+  L25 ht3 15min 100 sltp long
+  L25 ht3 30min 100 sltp long
+  L25 ht3 1h 100 sltp long
+  L25 ht3 4h 50 sltp long
+  L25 ht3 1D 50 sltp long
+  L25 sta 30min 14 ambos
+  L25 gn 15min semsltp ambos
+  L25 gn 4h sltp ambos
+  L25 bas 15min atr4 ambos
+  L25 bas 1D atr2 ambos
+  L25 smp 15min p20 sl1 tp1.5 ambos
+  L25 smp 15min p20 sl0% tp0.0% long
+  L25 smp 1h p20 sl1% tp1.5% ambos
+  L25 smp 4h p20 sl0% tp0.0% ambos
+  L25 smp 1D p20 sl0% tp0.0% long
+  L25 ce 1D semrisco ambos
+  L25 made 30min 30 ambos
+  L25 htf 15min 200 s14 ambos
+  L25 htf 1h 200 s14 long
+  L25 thma 15min 100 ambos
+  L25 thma 30min 40 long
+  L25 imct 30min ambos
+  L25 c123r 15min long
+  L25 c123r 1D ambos
+  L25 bts 15min tr3 ambos
+  L25 bts 30min tr3 ambos
+  L25 bts 4h tr3 ambos
+  L25 grov 4h 100 m5 ambos
+  L25 vwbo 30min tp2 ambos
+  L25 vwbo 1h tp4 ambos
+  L25 era 30min sl2% ambos
+  L25 era 1D sl5% long
+  L25 uhl 4h 100 ambos
+  L25 uhl 1D 30 ambos
+  L25 ht3 30min 50 semsltp ambos
+  L25 ht3 1h 50 sltp ambos
+  L25 ht3 1h 100 semsltp ambos
+  L25 ht3 4h 100 sltp ambos
+  L25 ht3 1D 100 sltp ambos
+  L25 kpl 1D 20 ambos
+  L25 gn 1h sltp ambos
+  L25 gn 4h semsltp ambos
+  L25 bas 30min atr4 ambos
+  L25 bas 1D atr4 ambos
+  L25 smp 15min p20 sl1% tp1.5% ambos
+  L25 smp 30min p20 sl1 tp1.5 ambos
+  L25 smp 1h p5 sl0% tp0.0% ambos
+  L25 smp 4h p5 sl1% tp1.5% ambos
+  L25 smp 1D p5 sl0% tp0.0% ambos
+  L25 sr 15min 30 ambos
+  L25 made 15min 9 long
+  L25 made 1h 9 ambos
+  L25 cmo 4h 20 ambos
+  L25 flexi 15min f5 long
+  L25 ffe 15min tp2.0% direto ambos
+  L25 hyb 15min atr2 ambos
+  L25 hyb 30min atr2 ambos
+  L25 c123r 30min ambos
+  L25 bts 15min tr8% ambos
+  L25 bts 30min tr3% ambos
+  L25 sec 1D tp8% long
+  L25 era 1h sl2% ambos
+  L25 uhl 15min 30 ambos
+  L25 ht3 15min 100 semsltp ambos
+  L25 ht3 30min 50 semsltp ambos
+  L25 ht3 30min 100 semsltp ambos
+  L25 opw 4h dip1 tp1
+  L25 sta 1D 14 ambos
+  L25 gn 30min semsltp ambos
+  L25 tlb 4h p10 ma ambos
+  L25 tlb 1D p10 semma long
+  L25 dbt 15min 100 ambos
+  L25 bas 15min atr2 ambos
+  L25 bas 30min atr2 ambos
+  L25 ce 30min semrisco ambos
+  L25 made 15min 9 ambos
+  L25 made 15min 30 ambos
+  L25 made 1h 30 ambos
+  L25 flexi 15min f15 ambos
+  L25 thma 15min 100 ambos
+  L25 imct 15min ambos
+  L25 hyb 15min atr4 ambos
+  L25 hyb 30min atr4 ambos
+  L25 c123r 30min long
+  L25 bts 30min tr3 ambos
+  L25 bts 30min tr8% ambos
+  L25 sec 1D semtp long
+  L25 uhl 15min 100 ambos
+  L25 ht3 15min 100 sltp ambos
+  L25 ht3 30min 50 sltp ambos
+  L25 ht3 30min 100 sltp ambos
+  L25 ht3 1h 50 sltp ambos
+  L25 opw 4h dip2 tp2
+  L25 spym 4h ambos
+  L25 tlb 1h p5 semma long
+  L25 tlb 1D p10 semma ambos
+  L25 fbo 30min ambos
+  L25 dbt 30min 30 ambos
+  L25 bas 15min atr4 ambos
+  L25 bas 30min atr4 ambos
+  L25 dax 1D adx32 ambos
+  L25 drm 1h 20/80 ambos
+  L25 rbd 4h tp3 sl1.75
+  L25 ht3 4h 100 sltp ambos
+  L25 opw 1h dip1 tp1
+  L25 sta 4h 14 ambos
+  L25 tlb 1h p10 ma ambos
+  L25 tlb 1h p10 semma ambos
+  L25 tlb 4h p5 ma ambos
+  L25 tlb 4h p5 semma ambos
+  L25 bas 1D atr2 ambos
+  L25 sr 30min 30 ambos
+  L25 made 1h 9 ambos
+  L25 made 1D 30 ambos
+  L25 flexi 30min f15 ambos
+  L25 thma 30min 100 ambos
+  L25 mst 1h 20 m4 ambos
+  L25 ffe 30min tp2.0% direto ambos
+  L25 pop 15min 10/5 ambos
+  L25 bts 30min tr3 ambos
+  L25 bts 4h tr3 ambos
+  L25 uhl 30min 30 ambos
+  L25 tlb 4h p10 ma ambos
+  L25 bas 30min atr4 ambos
+  L25 smp 30min p5 sl1% tp1.5% ambos
+  L25 smp 1D p20 sl1% tp1.5% long
+  L25 sr 1h 10 ambos
+  L25 made 4h 9 ambos
+  L25 htf 30min 200 s3 ambos
+  L25 thma 15min 100 ambos
+  L25 thma 1h 40 ambos
+  L25 mst 4h 20 m2 ambos
+  L25 imct 30min ambos
+  L25 pop 30min 4/2 ambos
+  L25 bts 30min tr3% ambos
+  L25 mx 1h padrao
+  L25 ht3 1h 50 sltp ambos
+  L25 tlb 4h p10 ma long
+  L25 ao 4h ambos
+  L25 smp 30min p5 sl0% tp0.0% ambos
+  L25 ce 4h risco ambos
+  L25 made 30min 30 ambos
+  L25 made 4h 30 ambos
+  L25 flexi 15min f15 ambos
+  L25 thma 30min 40 ambos
+  L25 mst 1h 60 m4 ambos
+  L25 ffe 15min tp2.0% direto ambos
+  L25 pop 15min 4/2 ambos
+  L25 mas 15min ambos
+  L25 bts 30min tr8% ambos
+  L25 uhl 30min 100 ambos
+  L25 ht3 1h 50 semsltp ambos
+  L25 bas 30min atr2 ambos
+  L25 smp 15min p20 sl0% tp0.0% ambos
+  L25 smp 1h p5 sl0% tp0.0% ambos

@@ -426,6 +426,77 @@ Regra e configuração de cada uma, com o veredito da revisão. Os números anti
 - **Regra:** close acima da VWAP diária, da EMA50 e da EMA200 compra; abaixo da VWAP e da EMA50 vende; inverte. EMA50 (o padrão).
 - **Na revisão:** passa, mas é redundante (corr 0,64).
 
+## Resgatadas pela métrica corrigida (lotes 3 a 33, fora da robustez)
+
+Células que a conta antiga descartou antes da robustez. Pré-filtro nas grades salvas só com o que não depende da curva de equity (t > 2 e média líquida por trade > 0): 3235 células. Período todo recalculado com o CAGR composto: 458 passam em CAGR > 0, Sharpe ≥ B&H e t > 2; 254 passam no critério novo inteiro (terços, spread 4×, sem funding); **60 entram** com |corr| < 0,5 contra as 34 acima e entre si. Fonte: `scripts/study_resgate.py` → `results/study_resgate.txt` e `.csv`. Excluídas: células com lookahead (`peek` do lote 3), 265 configurações que o main atual não reproduz e 18 do lote 7 (HMA) que quebram ao fatiar.
+
+Cautela maior que nas 34: cada uma é a melhor de uma grade com milhares de células, então parte delas passa por acaso. Lotes 3, 5, 6 e 8 a 11 só têm grade no ouro.
+
+Por ativo: ETH 27, BTC 17, XAU 7, US100 6, WTI 3.
+
+| # | Célula | CAGR (B&H) | Sharpe (B&H) | DD | t | Terços | Spread 4× | Sem funding | Corr máx (com) |
+| ---: | --- | --- | --- | ---: | ---: | --- | ---: | ---: | --- |
+| R1 | L20 cam ETH 1h sl0.5% tp1% ambos | +25% (+57%) | 1,87 (0,96) | −14% | 4,92 | +29% / +31% / +16% | +15% | +25% | 0,19 (L12 rsima ETH 15min {'rl': 5, 'ml': 50}) |
+| R2 | L20 cam ETH 15min sl1% tp2% ambos | +50% (+57%) | 1,76 (0,96) | −27% | 4,48 | +125% / +19% / +26% | +36% | +50% | 0,44 (L20 cam ETH 1h sl0.5% tp1% ambos) |
+| R3 | L23 tema BTC 4h adx43 long | +35% (+44%) | 1,69 (0,91) | −12% | 3,87 | +54% / +40% / +14% | +34% | +37% | 0,47 (L22 force BTC 4h {'fast': 5, 'slow': 50, 'short_ok': False}) |
+| R4 | L31 lch ETH 15min v2% hma400 | +35% (+57%) | 1,65 (0,96) | −27% | 7,71 | +84% / +17% / +14% | +33% | +35% | 0,25 (§4c Scalping ETH 30m) |
+| R5 | L26 pprs ETH 15min pv6/3 ambos | +159% (+57%) | 1,64 (0,96) | −62% | 4,80 | +197% / +13% / +409% | +78% | +160% | 0,47 (L12 rsima ETH 15min {'rl': 5, 'ml': 50}) |
+| R6 | L15 sbs ETH 15min sl1.00% sessao ambos | +72% (+57%) | 1,61 (0,96) | −40% | 3,68 | +136% / +50% / +44% | +12% | +72% | 0,36 (L15 sbs ETH 30min {'sl': 0.02, 'session': False}) |
+| R7 | L24 dcf ETH 15min semtp long | +76% (+57%) | 1,58 (0,96) | −38% | 3,98 | +202% / +14% / +57% | +2% | +82% | 0,46 (L24 best ETH 1h {'short_ok': False}) |
+| R8 | L31 lch BTC 15min v2% hma200 | +18% (+44%) | 1,56 (0,91) | −14% | 6,87 | +40% / +16% / +2% | +18% | +18% | 0,47 (L31 lch ETH 15min v2% hma400) |
+| R9 | L20 cam BTC 15min sl1% tp2% ambos | +42% (+44%) | 1,56 (0,91) | −25% | 3,05 | +65% / +33% / +30% | +30% | +42% | 0,31 (L20 cam ETH 15min sl1% tp2% ambos) |
+| R10 | L21 hulk BTC 15min thr0.1 adx33 tp1.35% sl1.1% ambos | +22% (+44%) | 1,48 (0,91) | −12% | 3,19 | +29% / +24% / +14% | +17% | +22% | 0,16 (§16 HULL+T3 ETH 1h) |
+| R11 | L15 sbs ETH 4h sl2.00% 24h ambos | +60% (+57%) | 1,39 (0,96) | −41% | 2,67 | +103% / +50% / +27% | +48% | +60% | 0,38 (§16 HULL+T3 ETH 1h) |
+| R12 | L24 d3 ETH 1D x1 ambos | +109% (+56%) | 1,37 (0,96) | −64% | 3,07 | +154% / +36% / +117% | +108% | +110% | 0,46 (L24 best ETH 1h {'short_ok': False}) |
+| R13 | L31 vip ETH 30min tp1% stop no close | +13% (+57%) | 1,32 (0,96) | −15% | 2,47 | +23% / +12% / +5% | +11% | +14% | 0,19 (L24 dcf ETH 15min semtp long) |
+| R14 | L21 hulk ETH 15min thr0.3 adx33 tp1.35% sl1.1% ambos | +15% (+57%) | 1,31 (0,96) | −16% | 2,40 | +27% / +5% / +12% | +12% | +15% | 0,21 (L21 hulk BTC 15min thr0.1 adx33 tp1.35% sl1.1% ambos) |
+| R15 | L14 cs ETH 4h e60 tp/sl default long | +60% (+57%) | 1,31 (0,96) | −64% | 2,53 | +312% / +52% / +6% | +60% | +63% | 0,42 (L24 best ETH 1h {'short_ok': False}) |
+| R16 | L24 tq BTC 4h p1% ambos | +20% (+44%) | 1,29 (0,91) | −18% | 4,91 | +11% / +21% / +32% | +19% | +20% | 0,20 (L20 cam BTC 15min sl1% tp2% ambos) |
+| R17 | L16 pmax BTC 1h sl1% tp35% sofiltro0 ambos | +45% (+44%) | 1,28 (0,91) | −29% | 3,54 | +39% / +66% / +22% | +42% | +45% | 0,42 (L31 cmb BTC 1h) |
+| R18 | L12b zig ETH 15min lb6 dmi1 cond long | +35% (+57%) | 1,26 (0,96) | −22% | 2,95 | +38% / +27% / +42% | +30% | +37% | 0,36 (L24 dcf ETH 15min semtp long) |
+| R19 | L21 lube BTC 30min 500 tl-0.1 ambos | +29% (+44%) | 1,26 (0,91) | −28% | 3,77 | +53% / +12% / +24% | +27% | +29% | 0,27 (L16 pmax BTC 1h sl1% tp35% sofiltro0 ambos) |
+| R20 | L20 kelt ETH 4h 81 2.5 tp6% sl2% tend | +18% (+57%) | 1,26 (0,96) | −11% | 3,20 | +22% / +20% / +11% | +17% | +18% | 0,24 (L24 best ETH 1h {'short_ok': False}) |
+| R21 | L19 3ema US100 1h tp0 sl2 | +12% (+20%) | 1,22 (0,93) | −14% | 2,27 | +17% / +13% / +5% | +9% | +13% | 0,12 (L24 dcf ETH 15min semtp long) |
+| R22 | L12b zig ETH 1h lb6 dmi1 cond long | +41% (+57%) | 1,20 (0,96) | −27% | 2,51 | +100% / +7% / +31% | +38% | +44% | 0,42 (L24 best ETH 1h {'short_ok': False}) |
+| R23 | L31 lch ETH 1h v4% hma200 | +18% (+57%) | 1,20 (0,96) | −18% | 4,30 | +30% / +22% / +4% | +18% | +18% | -0,10 (L12 rsima ETH 15min {'rl': 5, 'ml': 50}) |
+| R24 | L15 tmfs ETH 30min sw20 sl8atr tp1% ambos | +31% (+57%) | 1,20 (0,96) | −31% | 2,58 | +54% / +16% / +26% | +18% | +31% | 0,30 (L12 rsima ETH 15min {'rl': 5, 'ml': 50}) |
+| R25 | L17 bz ETH 1h bb20 3 semlatest ambos | +81% (+57%) | 1,19 (0,96) | −69% | 2,82 | +314% / +13% / +48% | +81% | +81% | 0,35 (L24 d3 ETH 1D x1 ambos) |
+| R26 | L31 seq ETH 1D rr1 long | +39% (+56%) | 1,18 (0,96) | −34% | 2,90 | +86% / +6% / +36% | +39% | +41% | 0,41 (L24 best ETH 1h {'short_ok': False}) |
+| R27 | L24 tq BTC 1D p1% long | +15% (+44%) | 1,18 (0,91) | −12% | 2,82 | +14% / +22% / +8% | +15% | +15% | 0,31 (L23 tema BTC 4h adx43 long) |
+| R28 | L20 cam US100 15min sl1% tp2% ambos | +17% (+20%) | 1,16 (0,93) | −25% | 3,80 | +20% / +28% / +4% | +7% | +18% | 0,35 (L19 3ema US100 1h tp0 sl2) |
+| R29 | L33 vxe BTC 4h ema20 ambos | +56% (+44%) | 1,13 (0,91) | −47% | 3,87 | +207% / +10% / +11% | +50% | +53% | 0,50 (§24 Multi-MA BTC 4h) |
+| R30 | L18 osb ETH 30min m0.25 sl2.00% ambos | +47% (+57%) | 1,13 (0,96) | −50% | 3,12 | +165% / +15% / +4% | +39% | +47% | 0,30 (L12 rsima ETH 15min {'rl': 5, 'ml': 50}) |
+| R31 | L15 sbs BTC 30min sl2.00% 24h ambos | +56% (+44%) | 1,13 (0,91) | −50% | 4,09 | +77% / +27% / +67% | +14% | +56% | 0,44 (L15 sbs ETH 30min {'sl': 0.02, 'session': False}) |
+| R32 | L24 tq ETH 1h p3% ambos | +51% (+57%) | 1,13 (0,96) | −49% | 2,76 | +119% / +12% / +44% | +47% | +51% | 0,34 (§16 HULL+T3 ETH 1h) |
+| R33 | L32 prv US100 15min f2.618 long | +17% (+20%) | 1,11 (0,93) | −23% | 2,30 | +8% / +23% / +22% | +5% | +20% | 0,47 (L19 3ema US100 1h tp0 sl2) |
+| R34 | L22 apsar BTC 4h n1 0.02/0.2 ambos | +60% (+44%) | 1,11 (0,91) | −59% | 2,26 | +89% / +87% / +27% | +58% | +61% | 0,48 (L33 vxe BTC 4h ema20 ambos) |
+| R35 | L20 kelt XAU 1D 81 2.5 tp6% sl2% tend | +6% (+13%) | 1,11 (0,82) | −7% | 2,90 | +3% / +4% / +9% | +5% | +7% | 0,17 (L7 tsl XAU 4h {'val': 2.0}) |
+| R36 | L20 atrgod XAU 4h sl4.5 rr1.5 semfiltros ambos | +11% (+13%) | 1,11 (0,82) | −13% | 2,72 | +6% / +2% / +27% | +10% | +13% | 0,25 (L7 tsl XAU 4h {'val': 2.0}) |
+| R37 | L15 sbs US100 4h sl1.00% sessao ambos | +12% (+20%) | 1,11 (0,93) | −14% | 4,02 | +9% / +15% / +11% | +5% | +12% | 0,33 (L20 cam US100 15min sl1% tp2% ambos) |
+| R38 | L16 qqe ETH 1h XZ f5 dfil long | +33% (+57%) | 1,09 (0,96) | −27% | 2,03 | +58% / +21% / +23% | +30% | +35% | 0,48 (L24 best ETH 1h {'short_ok': False}) |
+| R39 | L22 force BTC 4h 3/20 ambos | +57% (+44%) | 1,08 (0,91) | −58% | 2,41 | +115% / +53% / +8% | +55% | +56% | 0,47 (L33 vxe BTC 4h ema20 ambos) |
+| R40 | L23 twin ETH 1h atr t17 sltp ambos | +42% (+57%) | 1,08 (0,96) | −41% | 4,35 | +121% / +7% / +22% | +33% | +43% | 0,32 (L12 rsima ETH 15min {'rl': 5, 'ml': 50}) |
+| R41 | L13 sqz BTC 4h bb14 kc16 ambos | +31% (+44%) | 1,04 (0,91) | −40% | 2,85 | +59% / +17% / +17% | +28% | +31% | 0,47 (L33 vxe BTC 4h ema20 ambos) |
+| R42 | L14 fm BTC 15min bb20 2.0 sl2.0% tp2.0% ambos | +33% (+44%) | 1,03 (0,91) | −42% | 2,07 | +56% / +5% / +47% | +18% | +33% | 0,18 (L21 hulk BTC 15min thr0.1 adx33 tp1.35% sl1.1% ambos) |
+| R43 | L15 tmfs ETH 1h sw8 sl8atr tp1% ambos | +29% (+57%) | 1,02 (0,96) | −30% | 2,67 | +52% / +11% / +25% | +15% | +29% | 0,38 (L15 tmfs ETH 30min sw20 sl8atr tp1% ambos) |
+| R44 | L24 stb US100 1h tp3% ambos | +18% (+20%) | 1,00 (0,93) | −34% | 3,20 | +10% / +32% / +13% | +6% | +18% | 0,48 (L20 cam US100 15min sl1% tp2% ambos) |
+| R45 | L24 sott ETH 15min s250 p0.618 ambos | +61% (+57%) | 1,00 (0,96) | −62% | 2,68 | +78% / +31% / +70% | +50% | +61% | 0,48 (L12 rsima ETH 15min {'rl': 5, 'ml': 50}) |
+| R46 | L21 bbb ETH 4h bb40 vol sl2% tp9% ambos | +33% (+57%) | 1,00 (0,96) | −42% | 2,55 | +44% / +17% / +31% | +31% | +34% | 0,40 (L31 cmb ETH 4h) |
+| R47 | L13 sqz BTC 1D bb20 kc20 long | +20% (+44%) | 0,99 (0,91) | −29% | 2,41 | +42% / +19% / +2% | +20% | +21% | 0,49 (L22 force BTC 4h {'fast': 5, 'slow': 50, 'short_ok': False}) |
+| R48 | L19 abcd BTC 4h sl2.0% rr2 ambos | +21% (+44%) | 0,98 (0,91) | −25% | 2,91 | +50% / +14% / +5% | +19% | +21% | 0,18 (L20 ds BTC 30min {'f': 8, 's': 72}) |
+| R49 | L16 qqe ETH 15min XZ f5 dfil ambos | +38% (+57%) | 0,97 (0,96) | −37% | 2,82 | +52% / +29% / +32% | +12% | +38% | 0,42 (L26 pprs ETH 15min pv6/3 ambos) |
+| R50 | L15 sbs ETH 1h sl1.00% sessao ambos | +25% (+57%) | 0,97 (0,96) | −46% | 3,79 | +66% / +2% / +15% | +6% | +25% | 0,34 (L15 sbs ETH 15min sl1.00% sessao ambos) |
+| R51 | L19 cipher US100 4h wt tp4 sl2 ambos | +3% (+20%) | 0,96 (0,93) | −3% | 3,41 | +2% / +2% / +4% | +2% | +3% | 0,16 (L24 tq BTC 1D p1% long) |
+| R52 | L24 stb XAU 4h tp3% ambos | +11% (+13%) | 0,94 (0,82) | −20% | 3,96 | +10% / +2% / +26% | +9% | +10% | 0,45 (L7 tsl XAU 4h {'val': 2.0}) |
+| R53 | L15 tmfs BTC 30min sw20 sl8atr tp3% ambos | +27% (+44%) | 0,91 (0,91) | −61% | 2,53 | +55% / +0% / +32% | +16% | +27% | 0,44 (L15 sbs BTC 30min sl2.00% 24h ambos) |
+| R54 | L28 hvc XAU 1h h100 ambos | +14% (+13%) | 0,87 (0,82) | −23% | 3,22 | +11% / +7% / +26% | +8% | +15% | 0,42 (L7 tsl XAU 4h {'val': 2.0}) |
+| R55 | L20 atrgod XAU 4h sl2.0 rr2.0 filtros ambos | +3% (+13%) | 0,85 (0,82) | −4% | 3,27 | +3% / +1% / +3% | +3% | +2% | 0,31 (L20 atrgod XAU 4h sl4.5 rr1.5 semfiltros ambos) |
+| R56 | L30 sich XAU 4h rr2 long | +8% (+13%) | 0,84 (0,82) | −15% | 2,30 | +7% / +5% / +12% | +8% | +12% | 0,36 (L20 atrgod XAU 4h sl4.5 rr1.5 semfiltros ambos) |
+| R57 | L33 pst XAU 1h af0.01 ambos | +13% (+13%) | 0,84 (0,82) | −19% | 2,22 | +3% / +7% / +38% | +5% | +13% | 0,47 (L14 hap XAU 1h {'start': 0.01, 'inc': 0.01, 'mx': 0.1}) |
+| R58 | L27 obv WTI 1h l50 ambos | +23% (+5%) | 0,70 (0,35) | −53% | 2,20 | +47% / +13% / +12% | +10% | +23% | 0,29 (L25 sta WTI 4h {'ln': 14}) |
+| R59 | L22 apsar WTI 30min n1 0.01/0.1 ambos | +22% (+5%) | 0,67 (0,35) | −69% | 3,09 | +19% / +7% / +38% | +15% | +27% | 0,27 (L25 sta WTI 4h {'ln': 14}) |
+| R60 | L31 seq WTI 1D rr1.5 ambos | +11% (+6%) | 0,62 (0,35) | −34% | 2,37 | +7% / +3% / +24% | +11% | +16% | 0,16 (L29 bot WTI 1D {'k': 0.02}) |
+
 ## Pendências comuns
 
 - Medir o spread real do ETH e o histórico de funding de cada mercado na Lighter; refazer as células com o funding hora a hora.
