@@ -1,0 +1,61 @@
+Escolhidas (|corr| media entre os pares antes do OOS = 0.031):
+  §1 Trailing SL XAU 30m
+  §21 Golden Edge WTI 30m
+  §25 MACD+Stoch WTI 4h
+  §6 ABCD BTC 1h
+  §19 HA MACD BTC 1h
+  §8 MA Consec ETH 4h
+
+Matriz das escolhidas (antes do OOS)
+                         §1 Trailing SL XAU 30m  §21 Golden Edge WTI 30m  §25 MACD+Stoch WTI 4h  §6 ABCD BTC 1h  §19 HA MACD BTC 1h  §8 MA Consec ETH 4h
+§1 Trailing SL XAU 30m                     1.00                    -0.05                  -0.02           -0.04               -0.04                 0.02
+§21 Golden Edge WTI 30m                   -0.05                     1.00                   0.09           -0.04               -0.01                 0.02
+§25 MACD+Stoch WTI 4h                     -0.02                     0.09                   1.00            0.01                0.05                -0.02
+§6 ABCD BTC 1h                            -0.04                    -0.04                   0.01            1.00                0.02                 0.02
+§19 HA MACD BTC 1h                        -0.04                    -0.01                   0.05            0.02                1.00                 0.01
+§8 MA Consec ETH 4h                        0.02                     0.02                  -0.02            0.02                0.01                 1.00
+
+=== Antes do OOS: 2020-01-01..2023-05-16
+  Carteira 6 (pesos iguais)      CAGR  +79.9%  Sharpe +2.33  DD  -22%  vol  27%
+  B&H 4 ativos (pesos iguais)    CAGR  +57.7%  Sharpe +1.23  DD  -48%  vol  45%
+  B&H XAU                        CAGR   +9.6%  Sharpe +0.63  DD  -21%  vol  17%
+  B&H WTI                        CAGR   +4.3%  Sharpe +0.38  DD  -81%  vol  60%
+  B&H BTC                        CAGR  +48.1%  Sharpe +0.92  DD  -77%  vol  72%
+  B&H ETH                        CAGR +118.6%  Sharpe +1.31  DD  -79%  vol  95%
+  §1 Trailing SL XAU 30m         CAGR  +11.1%  Sharpe +0.68  DD  -15%  vol  18%
+  §21 Golden Edge WTI 30m        CAGR  +83.7%  Sharpe +1.29  DD  -45%  vol  61%
+  §25 MACD+Stoch WTI 4h          CAGR  +29.0%  Sharpe +0.73  DD  -58%  vol  62%
+  §6 ABCD BTC 1h                 CAGR  +36.7%  Sharpe +0.83  DD  -67%  vol  56%
+  §19 HA MACD BTC 1h             CAGR +118.1%  Sharpe +1.57  DD  -68%  vol  62%
+  §8 MA Consec ETH 4h            CAGR  +60.4%  Sharpe +0.96  DD  -81%  vol  98%
+  corr media dos pares no trecho: +0.00
+
+=== Depois do OOS: 2023-05-17..2026-10-04
+  Carteira 6 (pesos iguais)      CAGR  +45.4%  Sharpe +2.07  DD  -10%  vol  19%
+  B&H 4 ativos (pesos iguais)    CAGR  +27.7%  Sharpe +0.99  DD  -31%  vol  29%
+  B&H XAU                        CAGR  +24.2%  Sharpe +1.16  DD  -28%  vol  21%
+  B&H WTI                        CAGR   +7.4%  Sharpe +0.38  DD  -41%  vol  39%
+  B&H BTC                        CAGR  +39.6%  Sharpe +0.95  DD  -53%  vol  46%
+  B&H ETH                        CAGR  +12.1%  Sharpe +0.49  DD  -68%  vol  64%
+  §1 Trailing SL XAU 30m         CAGR  +25.3%  Sharpe +1.21  DD  -20%  vol  20%
+  §21 Golden Edge WTI 30m        CAGR   +7.7%  Sharpe +0.39  DD  -44%  vol  40%
+  §25 MACD+Stoch WTI 4h          CAGR  +30.3%  Sharpe +0.84  DD  -42%  vol  42%
+  §6 ABCD BTC 1h                 CAGR  +51.0%  Sharpe +1.19  DD  -27%  vol  42%
+  §19 HA MACD BTC 1h             CAGR  +46.9%  Sharpe +1.10  DD  -51%  vol  44%
+  §8 MA Consec ETH 4h            CAGR  +54.6%  Sharpe +1.01  DD  -65%  vol  62%
+  corr media dos pares no trecho: +0.03
+
+=== Periodo todo: 2020-01-01..2026-10-04
+  Carteira 6 (pesos iguais)      CAGR  +61.7%  Sharpe +2.19  DD  -22%  vol  23%
+  B&H 4 ativos (pesos iguais)    CAGR  +41.8%  Sharpe +1.11  DD  -48%  vol  38%
+  B&H XAU                        CAGR  +16.7%  Sharpe +0.92  DD  -28%  vol  19%
+  B&H WTI                        CAGR   +5.9%  Sharpe +0.37  DD  -81%  vol  50%
+  B&H BTC                        CAGR  +43.7%  Sharpe +0.91  DD  -77%  vol  60%
+  B&H ETH                        CAGR  +56.4%  Sharpe +0.96  DD  -79%  vol  81%
+  §1 Trailing SL XAU 30m         CAGR  +18.0%  Sharpe +0.96  DD  -20%  vol  19%
+  §21 Golden Edge WTI 30m        CAGR  +40.6%  Sharpe +0.91  DD  -54%  vol  51%
+  §25 MACD+Stoch WTI 4h          CAGR  +29.6%  Sharpe +0.76  DD  -58%  vol  53%
+  §6 ABCD BTC 1h                 CAGR  +43.7%  Sharpe +0.98  DD  -67%  vol  50%
+  §19 HA MACD BTC 1h             CAGR  +78.9%  Sharpe +1.35  DD  -68%  vol  53%
+  §8 MA Consec ETH 4h            CAGR  +57.5%  Sharpe +0.95  DD  -81%  vol  82%
+  corr media dos pares no trecho: +0.01
