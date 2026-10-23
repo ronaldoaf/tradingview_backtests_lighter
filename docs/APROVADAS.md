@@ -224,6 +224,14 @@ Convenções: sinal no fechamento, ordem na abertura seguinte, custo de spread +
 - **Robustez:** terços +466/+58/+101% vs +330/+1/−11%; 2ª metade +95% vs +13%; custo 4× +118%.
 - **Ressalvas:** parâmetro diferente do padrão; muito correlacionada com a §26.
 
+## 28. VWAP X EMA — ETH 30m (lote 33, aprovada com ressalva)
+
+- **Script:** `DP1S7S5j` · [LOTE33_TV](LOTE33_TV.md) · `scripts/study_tvlote33.py`
+- **Regra:** close acima da VWAP diária, da EMA50 e da EMA200 compra; abaixo da VWAP e da EMA50 vende; inverte. EMA50 (o padrão).
+- **Resultado:** +138% a.a. vs +57%; t = 4,0; ~710 trades/ano.
+- **Robustez:** terços +335/+89/+60% vs +330/+1/−11%; 2ª metade +48% vs +13%; custo 4× +92%.
+- **Ressalvas:** o 1º terço passa por pouco; muitos trades; não funciona no BTC.
+
 ## Correlação entre as candidatas do ETH
 
 `scripts/study_eth_corr.py` → `results/study_eth_corr.txt`. Correlação dos retornos diários entre as cinco candidatas do ETH vai de 0,29 a 0,72; com o B&H do ETH fica perto de zero. Ficam na mesma direção 62% a 81% do tempo. Pares mais parecidos: RSI-MA × Ichimoku (0,72) e RSI-MA × Pivot ST (0,66). UT Bot e Scalping são os mais diferentes. A carteira com peso igual nas cinco cai o DD para cerca de −39% (vs −55% a −74% de cada uma, na marcação diária aproximada).

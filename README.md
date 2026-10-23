@@ -100,6 +100,26 @@ Todas reprovadas, exceto a candidata indicada. Ordem cronológica inversa.
 
 | # | Estratégia (autor, id do script) | Doc | Diagnóstico |
 | --- | --- | --- | --- |
+| 423 | Ichimoku + EMA filter (`IYQMk5fS`) | [LOTE33_TV](docs/LOTE33_TV.md) | quase (ETH 4h) |
+| 422 | Stochastic Z-Score (TradeDots) (`Nft2YKWq`) | [LOTE33_TV](docs/LOTE33_TV.md) | nada robusto |
+| 421 | VWAP X EMA (`DP1S7S5j`) | [LOTE33_TV](docs/LOTE33_TV.md) | **aprovada** no ETH 30m ema50 (ambos) |
+| 420 | Dual Supertrend with MACD (`zFKRj4Gi`) | [LOTE33_TV](docs/LOTE33_TV.md) | nada robusto |
+| 419 | Binary Option EMA/Stoch (`ARoezF2n`) | [LOTE33_TV](docs/LOTE33_TV.md) | nada robusto |
+| 418 | Hull MA Crossover (`zb7PgKWs`) | [LOTE33_TV](docs/LOTE33_TV.md) | nada robusto |
+| 417 | MACD 8/16/11 (sinal SMA) (`zR9yW6nn`) | [LOTE33_TV](docs/LOTE33_TV.md) | nada robusto |
+| 416 | EMA + RSI Sniper (long-only) (`83Ijv4aU`) | [LOTE33_TV](docs/LOTE33_TV.md) | nada robusto |
+| 415 | Signal To Noise (`m8ascqf7`) | [LOTE33_TV](docs/LOTE33_TV.md) | nada robusto |
+| 414 | 3 RSI (`raWdLVOY`) | [LOTE33_TV](docs/LOTE33_TV.md) | nada robusto |
+| 413 | SuperTrend chandelier 7/7 (`mk3G22hz`) | [LOTE33_TV](docs/LOTE33_TV.md) | nada robusto |
+| 412 | Money Flow (Chaikin Oscillator) (`YKeGkOA0`) | [LOTE33_TV](docs/LOTE33_TV.md) | nada robusto |
+| 411 | Parabolic SAR stop entries (`CfnaujUD`) | [LOTE33_TV](docs/LOTE33_TV.md) | nada robusto |
+| 410 | Trend Bounce (`xV3t2X7R`) | [LOTE33_TV](docs/LOTE33_TV.md) | quase (WTI 4h) |
+| 409 | TASC 2024.08 VCTS (long-only) (`K3s5dmdv`) | [LOTE33_TV](docs/LOTE33_TV.md) | nada robusto |
+| 408 | SMA 200 bands (long-only) (`QEVAQHl6`) | [LOTE33_TV](docs/LOTE33_TV.md) | nada robusto |
+| 407 | VWMA with ATR stops (long-only) (`HY2GjJIc`) | [LOTE33_TV](docs/LOTE33_TV.md) | nada robusto |
+| 406 | Bar Counter Trend Reversal (`0KAtQQDD`) | [LOTE33_TV](docs/LOTE33_TV.md) | nada robusto |
+| 405 | Abdoli's Heikin Ashi Smoothed (long-only) (`2N0o6J1P`) | [LOTE33_TV](docs/LOTE33_TV.md) | nada robusto |
+| 404 | PSAR + ADX + CMF + RSI (long-only) (`yFwSIDYf`) | [LOTE33_TV](docs/LOTE33_TV.md) | nada robusto |
 | 403 | Kozlod MA Cross (`PevJdTsm`) | [LOTE32_TV](docs/LOTE32_TV.md) | nada robusto |
 | 402 | Trend Following Parabolic (TradeDots) (`hsJ1K1Uw`) | [LOTE32_TV](docs/LOTE32_TV.md) | quase (WTI 4h) |
 | 401 | TSI w SuperTrend decision (`lncoD9BX`) | [LOTE32_TV](docs/LOTE32_TV.md) | **aprovada** no ETH 15m p64 e 30m p32 (ambos) |
