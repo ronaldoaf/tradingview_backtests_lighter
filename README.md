@@ -100,6 +100,26 @@ Todas reprovadas, exceto a candidata indicada. Ordem cronológica inversa.
 
 | # | Estratégia (autor, id do script) | Doc | Diagnóstico |
 | --- | --- | --- | --- |
+| 173 | Breakout Trend Follower (`9uvZIPnH`) | [LOTE22_TV](docs/LOTE22_TV.md) | ETH 30m quase (terço 1) |
+| 172 | Cumulative RSI Strategy (`nI9Csm8g`) | [LOTE22_TV](docs/LOTE22_TV.md) | nada acima do B&H |
+| 171 | Tripple super Trend Strategy (`aCbQTE0W`) | [LOTE22_TV](docs/LOTE22_TV.md) | BTC 1h +63%, isolada |
+| 170 | Volatility based force trade scalper (`FN3ZkHZA`) | [LOTE22_TV](docs/LOTE22_TV.md) | BTC 4h perde a 2ª metade |
+| 169 | PMax on Rsi w T3 (`ZLcmWQtj`) | [LOTE22_TV](docs/LOTE22_TV.md) | XAU 30m perde terços e custo 4x |
+| 168 | XAUUSD Scalping V2 AGRESIV (`5q4PsY3a`) | [LOTE22_TV](docs/LOTE22_TV.md) | nada robusto (ETH só sem TP/SL) |
+| 167 | Parabolic SAR on close [QuantNomad] (`gK7skk6m`) | [LOTE22_TV](docs/LOTE22_TV.md) | XAU 4h perde o terço 2 |
+| 166 | Highest High and Lowest Low Channel (`1SMJivyk`) | [LOTE22_TV](docs/LOTE22_TV.md) | nada acima do B&H |
+| 165 | Renko Strategy V2 (`oAlFKwej`) | [LOTE22_TV](docs/LOTE22_TV.md) | ETH 1h +90%, perde o terço 1 |
+| 164 | Moving Average Band (`wwi02rpz`) | [LOTE22_TV](docs/LOTE22_TV.md) | **candidata: WTI 4h** (+27% vs +5%, lucro do lado vendido) |
+| 163 | Slopes (`XBgfW9k9`) | [LOTE22_TV](docs/LOTE22_TV.md) | ETH 4h +116% quase (terço 1); BTC perde a 2ª metade |
+| 162 | Turtle trading Donchian/ATR (`gbxblhGl`) | [LOTE22_TV](docs/LOTE22_TV.md) | WTI short quase (perde o terço 2020-23) |
+| 161 | Ichimoku no offset + RSI (`MGSCiuSP`) | [LOTE22_TV](docs/LOTE22_TV.md) | ETH 15m +75%, isolada |
+| 160 | ATR Parabolic SAR [QuantNomad] (`LKfHdoNv`) | [LOTE22_TV](docs/LOTE22_TV.md) | BTC 4h long perde a 2ª metade |
+| 159 | Real Turtle (`67fpKimh`) | [LOTE22_TV](docs/LOTE22_TV.md) | ETH 1D +86%, perde o terço 1 |
+| 158 | TSI CCI Hull with profit (`qwN8CGrU`) | [LOTE22_TV](docs/LOTE22_TV.md) | WTI/XAU 15m acima do B&H, perde terços e custo 4x |
+| 157 | Easy to Use MACD + RSI (`06gU5i7b`) | [LOTE22_TV](docs/LOTE22_TV.md) | nada acima do B&H |
+| 156 | EWO RSI advanced Signals (`B7MQqWes`) | [LOTE22_TV](docs/LOTE22_TV.md) | nada acima do B&H |
+| 155 | EMA Crossover Strategy (`sxJejjdy`) | [LOTE22_TV](docs/LOTE22_TV.md) | ETH: 18 células acima do B&H, todas perdem o terço 1 |
+| 154 | Forex Scalping BB + RSI + ADX (`sR1hePBi`) | [LOTE22_TV](docs/LOTE22_TV.md) | nada acima do B&H com t > 1 (WTI 4h +9%, 81 trades) |
 | 153 | Multi Timeframe RSI [TradeDots] (`kfj6EdjQ`) | [LOTE21_TV](docs/LOTE21_TV.md) | nada acima do B&H |
 | 152 | Super Guppy Strategy (`vPStjyWz`) | [LOTE21_TV](docs/LOTE21_TV.md) | ETH 30m +98% perde o terço 1 |
 | 151 | MACD + Stochastic + RSI (`2BIMZDGk`) | [LOTE21_TV](docs/LOTE21_TV.md) | nada acima do B&H |

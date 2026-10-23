@@ -72,6 +72,14 @@ Convenções: sinal no fechamento, ordem na abertura seguinte, custo de spread +
 - **Robustez:** terços +469/+28/+83% vs B&H +328/0/−11%; 2ª metade +62% vs +13%; custo 4× +130% (t 2,6).
 - **Ressalvas:** vizinhança irregular (30m e 1h com 4 barras acima do B&H; com EMA20 ou 8 barras no 4h, não); DD −108% (log), cerca de −66%. Outro seguidor de tendência no ETH, da mesma família de 2 a 7.
 
+## 9. Moving Average Band — WTI 4h (lote 22, aprovada com ressalva)
+
+- **Script:** `wwi02rpz` · [LOTE22_TV](LOTE22_TV.md) · `scripts/study_tvlote22.py`
+- **Regra:** banda = SMA40 das máximas e SMA40 das mínimas. Close cruza acima da banda de cima compra; abaixo da de baixo vende; a entrada contrária inverte. Stop na banda oposta (fixado na entrada) e alvo de 3× o risco.
+- **Resultado:** +27,1% a.a. vs +5,4% do B&H; Sharpe 0,80; t = 3,8; 75 trades/ano.
+- **Robustez:** terços −1/+60/+21% vs B&H −21/+40/+8%; 2ª metade +30% vs +3%; custo 4× +21,6%.
+- **Ressalvas:** o lucro vem do lado vendido (long-only perde −11% a.a.), o mesmo viés do WTI visto na Gold/Silver (lote 21) e no Turtle Donchian short (lote 22); vale checar se vem do rolamento do CFD. DD −67% (log), cerca de −49%. Vizinhança razoável (4h sem alvo, 4h SMA100 e 1h SMA40 também acima do B&H). Única aprovada fora de ETH/BTC/XAU.
+
 ## Correlação entre as candidatas do ETH
 
 `scripts/study_eth_corr.py` → `results/study_eth_corr.txt`. Correlação dos retornos diários entre as cinco candidatas do ETH vai de 0,29 a 0,72; com o B&H do ETH fica perto de zero. Ficam na mesma direção 62% a 81% do tempo. Pares mais parecidos: RSI-MA × Ichimoku (0,72) e RSI-MA × Pivot ST (0,66). UT Bot e Scalping são os mais diferentes. A carteira com peso igual nas cinco cai o DD para cerca de −39% (vs −55% a −74% de cada uma, na marcação diária aproximada).

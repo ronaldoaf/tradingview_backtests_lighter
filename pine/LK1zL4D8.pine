@@ -1,0 +1,17 @@
+// This source code is subject to the terms of the Mozilla Public License 2.0 at https://mozilla.org/MPL/2.0/
+// © thequantscience
+
+//@version=5
+strategy(
+     title = 'Grid Spot Trading Algorithm [DEPRECATED] - The Quant Science', 
+     overlay = false,
+     calc_on_every_tick = true,
+     initial_capital = 10000, 
+     commission_type = strategy.commission.percent, 
+     commission_value = 0.10, 
+     pyramiding = 20,
+     default_qty_type = strategy.percent_of_equity,
+     close_entries_rule = 'ANY'
+     )
+
+plot(close)
