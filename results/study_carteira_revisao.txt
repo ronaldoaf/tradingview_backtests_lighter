@@ -1,0 +1,55 @@
+Carteira das 6 que continuam aprovadas: §4c Scalping ETH 30m, §8 MA Consec ETH 4h, §16 HULL+T3 ETH 1h, §17 5 EMA ETH 4h, §18 Wyckoff ETH 4h, §24 Multi-MA BTC 4h
+
+Correlacao das 6 antes do OOS
+                      §4c Scalping ETH 30m  §8 MA Consec ETH 4h  §16 HULL+T3 ETH 1h  §17 5 EMA ETH 4h  §18 Wyckoff ETH 4h  §24 Multi-MA BTC 4h
+§4c Scalping ETH 30m                  1.00                 0.43                0.39              0.34                0.27                 0.14
+§8 MA Consec ETH 4h                   0.43                 1.00                0.41              0.44                0.34                 0.25
+§16 HULL+T3 ETH 1h                    0.39                 0.41                1.00              0.44                0.47                 0.26
+§17 5 EMA ETH 4h                      0.34                 0.44                0.44              1.00                0.51                 0.34
+§18 Wyckoff ETH 4h                    0.27                 0.34                0.47              0.51                1.00                 0.45
+§24 Multi-MA BTC 4h                   0.14                 0.25                0.26              0.34                0.45                 1.00
+
+=== Antes do OOS: 2020-01-01..2023-05-16
+  Carteira 6 revisao             CAGR +167.1%  Sharpe +1.87  DD  -51%  vol  64%
+  Carteira 8 (anterior)          CAGR  +99.4%  Sharpe +2.55  DD  -18%  vol  29%
+  B&H 4 ativos (pesos iguais)    CAGR  +57.7%  Sharpe +1.23  DD  -48%  vol  45%
+  B&H XAU                        CAGR   +9.6%  Sharpe +0.63  DD  -21%  vol  17%
+  B&H WTI                        CAGR   +4.3%  Sharpe +0.38  DD  -81%  vol  60%
+  B&H BTC                        CAGR  +48.1%  Sharpe +0.92  DD  -77%  vol  72%
+  B&H ETH                        CAGR +118.6%  Sharpe +1.31  DD  -79%  vol  95%
+  §4c Scalping ETH 30m           CAGR +177.8%  Sharpe +1.54  DD  -55%  vol  94%
+  §8 MA Consec ETH 4h            CAGR  +60.4%  Sharpe +0.96  DD  -81%  vol  98%
+  §16 HULL+T3 ETH 1h             CAGR +354.1%  Sharpe +2.10  DD  -49%  vol  92%
+  §17 5 EMA ETH 4h               CAGR +106.8%  Sharpe +1.24  DD  -65%  vol 102%
+  §18 Wyckoff ETH 4h             CAGR +134.6%  Sharpe +0.81  DD  -42%  vol  93%
+  §24 Multi-MA BTC 4h            CAGR  +71.0%  Sharpe +1.09  DD  -53%  vol  73%
+
+=== Depois do OOS: 2023-05-17..2026-10-04
+  Carteira 6 revisao             CAGR  +39.1%  Sharpe +1.16  DD  -26%  vol  33%
+  Carteira 8 (anterior)          CAGR  +42.7%  Sharpe +1.98  DD  -12%  vol  19%
+  B&H 4 ativos (pesos iguais)    CAGR  +27.7%  Sharpe +0.99  DD  -31%  vol  29%
+  B&H XAU                        CAGR  +24.2%  Sharpe +1.16  DD  -28%  vol  21%
+  B&H WTI                        CAGR   +7.4%  Sharpe +0.38  DD  -41%  vol  39%
+  B&H BTC                        CAGR  +39.6%  Sharpe +0.95  DD  -53%  vol  46%
+  B&H ETH                        CAGR  +12.1%  Sharpe +0.49  DD  -68%  vol  64%
+  §4c Scalping ETH 30m           CAGR  +28.5%  Sharpe +0.71  DD  -54%  vol  63%
+  §8 MA Consec ETH 4h            CAGR  +54.6%  Sharpe +1.01  DD  -65%  vol  62%
+  §16 HULL+T3 ETH 1h             CAGR   +9.8%  Sharpe +0.46  DD  -70%  vol  61%
+  §17 5 EMA ETH 4h               CAGR  +15.5%  Sharpe +0.54  DD  -70%  vol  64%
+  §18 Wyckoff ETH 4h             CAGR  +23.7%  Sharpe +0.68  DD  -35%  vol  47%
+  §24 Multi-MA BTC 4h            CAGR  +19.6%  Sharpe +0.62  DD  -57%  vol  45%
+
+=== Periodo todo: 2020-01-01..2026-10-04
+  Carteira 6 revisao             CAGR  +92.6%  Sharpe +1.55  DD  -51%  vol  51%
+  Carteira 8 (anterior)          CAGR  +68.6%  Sharpe +2.28  DD  -18%  vol  24%
+  B&H 4 ativos (pesos iguais)    CAGR  +41.8%  Sharpe +1.11  DD  -48%  vol  38%
+  B&H XAU                        CAGR  +16.7%  Sharpe +0.92  DD  -28%  vol  19%
+  B&H WTI                        CAGR   +5.9%  Sharpe +0.37  DD  -81%  vol  50%
+  B&H BTC                        CAGR  +43.7%  Sharpe +0.91  DD  -77%  vol  60%
+  B&H ETH                        CAGR  +56.4%  Sharpe +0.96  DD  -79%  vol  81%
+  §4c Scalping ETH 30m           CAGR  +88.7%  Sharpe +1.18  DD  -55%  vol  80%
+  §8 MA Consec ETH 4h            CAGR  +57.5%  Sharpe +0.95  DD  -81%  vol  82%
+  §16 HULL+T3 ETH 1h             CAGR +122.9%  Sharpe +1.41  DD  -70%  vol  78%
+  §17 5 EMA ETH 4h               CAGR  +54.4%  Sharpe +0.95  DD  -70%  vol  85%
+  §18 Wyckoff ETH 4h             CAGR  +70.2%  Sharpe +0.73  DD  -42%  vol  74%
+  §24 Multi-MA BTC 4h            CAGR  +43.0%  Sharpe +0.89  DD  -57%  vol  61%

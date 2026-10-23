@@ -7,8 +7,8 @@ Contem:
   - engine_bars                    : posicao por sinal, execucao na ABERTURA da barra seguinte,
                                      sem stop intrabar (serve Ichimoku e RSI-Div)
   - engine_sltp                    : long com stop/alvo percentuais resolvidos no M1 (serve Flawless v2/v3)
-  - stats / control                : metricas (CAGR vs buy&hold, Sharpe, DD, expo) e controle aleatorio
-                                     com MESMO lado, MESMA duracao e MESMA gestao
+  - equity / summarize / control   : metricas (CAGR composto trade a trade vs buy&hold, Sharpe, DD, expo)
+                                     e controle aleatorio com MESMO lado, MESMA duracao e MESMA gestao
 
 Convencoes de custo: CUSTO[ativo] por perna (spread medido na Lighter) e FUND[ativo] de funding anual
 que o long paga (o short recebe), proporcional ao tempo em posicao. Retornos medidos sobre o nocional
@@ -315,22 +315,60 @@ def _cost(out, name, with_fund):
     return out
 
 
+def equity_curve(df, tr, name):
+    """Equity a 1x composta trade a trade, no fechamento de cada barra de df.
+    Cada trade usa o equity da entrada inteiro com quantidade fixa (como percent_of_equity no Pine):
+    dentro do trade a marcacao e E0 * (1 + u*(d*(close/entrada - 1) - custo da entrada - funding
+    acumulado)); da barra que contem a saida em diante vale E0 * (1 + u*ret). Uma posicao por vez.
+    Substitui a soma de log(close).diff() * pos, que creditava ao vendido log(P0/P1) em vez de 1 - P1/P0
+    e marcava a posicao com uma barra de atraso."""
+    idx = df.index; c = df.close.to_numpy(float); n = len(c)
+    eq = np.ones(n)
+    if tr is None or len(tr) == 0:
+        return pd.Series(eq, idx)
+    a = np.clip(tr.i.to_numpy(int), 0, n - 1)
+    b = np.clip(idx.searchsorted(pd.DatetimeIndex(tr.t_out), side='right') - 1, a, n - 1)
+    t_in = pd.DatetimeIndex(tr.t_in).asi8; t_out = pd.DatetimeIndex(tr.t_out).asi8
+    d = tr.d.to_numpy(float); u = tr.u.to_numpy(float); en = tr.entry.to_numpy(float)
+    ret = tr.ret.to_numpy(float); fund = tr.fund.to_numpy(float) if 'fund' in tr else np.zeros(len(tr))
+    cst = CUSTO[name]; ti = idx.asi8
+    E = 1.0; last = 0
+    for k in range(len(tr)):
+        eq[last:a[k]] = E
+        if b[k] > a[k]:
+            frac = (ti[a[k]:b[k]] - t_in[k]) / max(t_out[k] - t_in[k], 1)
+            eq[a[k]:b[k]] = E * (1 + u[k] * (d[k] * (c[a[k]:b[k]] / en[k] - 1) - cst - fund[k] * frac))
+        E = max(E * (1 + u[k] * ret[k]), 0.0)
+        last = max(b[k], last)
+    eq[last:] = E
+    return pd.Series(np.maximum(eq, 0.0), idx)
+
+
+def daily_sharpe(eq, yrs):
+    """Sharpe dos retornos diarios de uma curva de equity, nos dias em que o ativo tem barra (dias parados
+    contam como zero), anualizado pelo numero de dias com barra por ano."""
+    dly = eq.resample('1D').last().dropna().pct_change().dropna()
+    return float(dly.mean() / dly.std() * np.sqrt(len(dly) / yrs)) if dly.std() else np.nan
+
+
 def equity(df, tr, name, dcol='d'):
-    """serie de equity a 1x (log) para Sharpe/DD/expo, com custo na mudanca de posicao e funding."""
+    """CAGR, Sharpe, DD e exposicao a 1x a partir de equity_curve (composicao trade a trade, com custo e
+    funding). CAGR = exp(soma de log1p(u*ret) / anos) - 1; DD simples (equity / maximo - 1)."""
     pos = pd.Series(0.0, index=df.index)
     for _, r in tr.iterrows():
         pos.iloc[int(r.i):int(r.j)] = r[dcol] * r.u
-    r = np.log(df.close).diff().fillna(0.0) * pos.shift(1).fillna(0.0)
-    chg = pos.diff().abs().fillna(0.0)
-    fr = FUND.get(name, 5.0) / 100 * (
-        df.index.to_series().diff().dt.total_seconds() / (365 * 86400)).fillna(0.0)
-    r = r - chg * CUSTO[name] - pos.shift(1).fillna(0.0) * fr
-    dd_eq = r.cumsum()
-    dly = r.resample('1D').sum(); dly = dly[dly != 0]
+    eq = equity_curve(df, tr, name)
     yrs = (df.index[-1] - df.index[0]).total_seconds() / (365 * 86400)
-    return dict(cagr=float(np.expm1(dd_eq.iloc[-1] / yrs)),
-                sharpe=float(dly.mean() / dly.std() * np.sqrt(252)) if dly.std() else np.nan,
-                dd=float((dd_eq - dd_eq.cummax()).min()), expo=float((pos != 0).mean()))
+    return dict(cagr=float(eq.iloc[-1] ** (1 / yrs) - 1), sharpe=daily_sharpe(eq, yrs),
+                dd=float((eq / eq.cummax() - 1).min()), expo=float((pos != 0).mean()))
+
+
+def bh_stats(df):
+    """Buy & hold do proprio ativo no periodo de df, com as mesmas convencoes de equity()."""
+    yrs = (df.index[-1] - df.index[0]).total_seconds() / (365 * 86400)
+    eq = df.close / df.close.iloc[0]
+    return dict(bh=float(np.expm1(np.log(eq.iloc[-1]) / yrs)), bh_sharpe=daily_sharpe(eq, yrs),
+                bh_dd=float((eq / eq.cummax() - 1).min()))
 
 
 @njit(cache=True)
@@ -402,19 +440,20 @@ def summarize(df, trades, name, nsim=20, sl=0.0, tp=0.0, m1=None, minimo=10):
         return None
     yrs = (df.index[-1] - df.index[0]).total_seconds() / (365 * 86400)
     st = equity(df, trades, name)
-    bh = float(np.expm1(np.log(df.close.iloc[-1] / df.close.iloc[0]) / yrs))
+    bh = bh_stats(df)
     ctl = control_dur(df, trades, name, nsim=nsim, sl=sl, tp=tp, m1=m1)
     mu = trades.ret.mean()
     t = (mu - ctl.mean()) / (ctl.std(ddof=1) + 1e-12)
     return dict(trades=len(trades), por_ano=len(trades) / yrs,
                 bp_bruto=1e4 * trades.bruto.mean(), bp_liq=1e4 * mu, bp_sf=1e4 * trades.ret_sf.mean(),
                 win=float((trades.ret > 0).mean()), dias=float(trades.yrs.mean() * 365),
-                cagr=st['cagr'], bh=bh, sharpe=st['sharpe'], dd=st['dd'], expo=st['expo'],
+                cagr=st['cagr'], bh=bh['bh'], sharpe=st['sharpe'], bh_sharpe=bh['bh_sharpe'], dd=st['dd'],
+                expo=st['expo'],
                 ctl_bp=1e4 * ctl.mean(), t=t)
 
 
 FMT = ('{trades:4d} tr ({por_ano:5.1f}/ano, {dias:6.2f}d) | bruto {bp_bruto:+7.1f}bp liq {bp_liq:+7.1f}bp'
-       ' (win {win:.0%}) | CAGR {cagr:+7.1%} vs B&H {bh:+7.1%} | Sh {sharpe:+5.2f} DD {dd:6.0%}'
+       ' (win {win:.0%}) | CAGR {cagr:+7.1%} vs B&H {bh:+7.1%} | Sh {sharpe:+5.2f} ({bh_sharpe:+4.2f}) DD {dd:4.0%}'
        ' expo {expo:4.0%} | ctl {ctl_bp:+7.1f}bp t={t:+5.2f}')
 
 
