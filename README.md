@@ -100,6 +100,26 @@ Todas reprovadas, exceto a candidata indicada. Ordem cronológica inversa.
 
 | # | Estratégia (autor, id do script) | Doc | Diagnóstico |
 | --- | --- | --- | --- |
+| 403 | Kozlod MA Cross (`PevJdTsm`) | [LOTE32_TV](docs/LOTE32_TV.md) | nada robusto |
+| 402 | Trend Following Parabolic (TradeDots) (`hsJ1K1Uw`) | [LOTE32_TV](docs/LOTE32_TV.md) | quase (WTI 4h) |
+| 401 | TSI w SuperTrend decision (`lncoD9BX`) | [LOTE32_TV](docs/LOTE32_TV.md) | **aprovada** no ETH 15m p64 e 30m p32 (ambos) |
+| 400 | Supertrend + RSI (Alorse) (`zLLibnMR`) | [LOTE32_TV](docs/LOTE32_TV.md) | quase (WTI 1D) |
+| 399 | SuperTrend Trapping Candle (`H61Z9TNa`) | [LOTE32_TV](docs/LOTE32_TV.md) | nada robusto |
+| 398 | Fisher Transform (Ehlers) (`qhXwZvJ2`) | [LOTE32_TV](docs/LOTE32_TV.md) | nada robusto |
+| 397 | Donchian Channels (KrisWaters) (`z7hAbAHD`) | [LOTE32_TV](docs/LOTE32_TV.md) | nada robusto |
+| 396 | Hull MA_X + Ichimoku (`OpEMmVwl`) | [LOTE32_TV](docs/LOTE32_TV.md) | nada robusto |
+| 395 | CCI & EMA (Tradeswithashish) (`SdhTE8Ao`) | [LOTE32_TV](docs/LOTE32_TV.md) | nada robusto |
+| 394 | RSI Divergence Strategy (`mU02nqSK`) | [LOTE32_TV](docs/LOTE32_TV.md) | nada robusto |
+| 393 | Donchian Channel (stop + EMA200) (`7lDOCF4F`) | [LOTE32_TV](docs/LOTE32_TV.md) | nada robusto |
+| 392 | Grant's PSAR (long-only) (`wAbIlZaz`) | [LOTE32_TV](docs/LOTE32_TV.md) | nada robusto |
+| 391 | QuantNomad SuperTrend (`cX6X9Ry2`) | [LOTE32_TV](docs/LOTE32_TV.md) | nada robusto |
+| 390 | AK RSI 2 (`klkZ7SdU`) | [LOTE32_TV](docs/LOTE32_TV.md) | nada robusto |
+| 389 | Ichimoku Cloud with RSI (Coinrule) (`2OfRyQSy`) | [LOTE32_TV](docs/LOTE32_TV.md) | nada robusto |
+| 388 | HMA 200 + EMA 20 (`w4Z36wFl`) | [LOTE32_TV](docs/LOTE32_TV.md) | nada robusto |
+| 387 | SuperTrend Enhanced Pivot Reversal (`wcegMOXj`) | [LOTE32_TV](docs/LOTE32_TV.md) | quase (ETH 4h) |
+| 386 | Ultimate Scalping v2 (EMA + VWAP) (`n45dOuob`) | [LOTE32_TV](docs/LOTE32_TV.md) | nada robusto |
+| 385 | Super Trend Daily BF (`fDiKl24D`) | [LOTE32_TV](docs/LOTE32_TV.md) | nada robusto |
+| 384 | Hurst Future Lines of Demarcation (`4B9sbgmC`) | [LOTE32_TV](docs/LOTE32_TV.md) | nada robusto |
 | 383 | Combo 123 Reversal & Stochastic (`IYPg1Xjt`) | [LOTE31_TV](docs/LOTE31_TV.md) | quase (BTC 1h, ETH 4h) |
 | 382 | VIP (long-only) (`4OYdIrWk`) | [LOTE31_TV](docs/LOTE31_TV.md) | nada robusto |
 | 381 | Smoothed Heiken Ashi (long-only) (`4JDTWBH3`) | [LOTE31_TV](docs/LOTE31_TV.md) | quase (ETH 30m) |

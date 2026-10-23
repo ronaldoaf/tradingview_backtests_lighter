@@ -208,6 +208,22 @@ Convenções: sinal no fechamento, ordem na abertura seguinte, custo de spread +
 - **Robustez:** terços +2/+47/+46% vs −21/+40/+8%; 2ª metade +60% vs +3%; custo 4× +36%.
 - **Ressalvas:** t baixo; 1º terço perto de zero; parte do ganho vem do funding/carry (líquido acima do bruto); parâmetro diferente do padrão.
 
+## 26. TSI w SuperTrend — ETH 15m (lote 32, aprovada com ressalva)
+
+- **Script:** `lncoD9BX` · [LOTE32_TV](LOTE32_TV.md) · `scripts/study_tvlote32.py`
+- **Regra:** TSI = correlação de 64 barras entre close e tempo; SuperTrend(10, 3) sobre velas do TSI: direção de alta com TSI>−0,241 compra, de baixa com TSI<0,241 vende; as condições opostas fecham. Período 64 (o padrão).
+- **Resultado:** +162% a.a. vs +57%; t = 4,4; 686 trades/ano.
+- **Robustez:** terços +356/+105/+85% vs +330/+1/−11%; 2ª metade +85% vs +13%; custo 4× +113%.
+- **Ressalvas:** muitos trades com 13 bp de lucro médio; o 1º terço passa por pouco; não funciona no BTC.
+
+## 27. TSI w SuperTrend — ETH 30m (lote 32, aprovada com ressalva)
+
+- **Script:** `lncoD9BX` · [LOTE32_TV](LOTE32_TV.md) · `scripts/study_tvlote32.py`
+- **Regra:** a mesma da §26 com período 32 (o padrão é 64).
+- **Resultado:** +165% a.a. vs +57%; t = 3,0; 643 trades/ano.
+- **Robustez:** terços +466/+58/+101% vs +330/+1/−11%; 2ª metade +95% vs +13%; custo 4× +118%.
+- **Ressalvas:** parâmetro diferente do padrão; muito correlacionada com a §26.
+
 ## Correlação entre as candidatas do ETH
 
 `scripts/study_eth_corr.py` → `results/study_eth_corr.txt`. Correlação dos retornos diários entre as cinco candidatas do ETH vai de 0,29 a 0,72; com o B&H do ETH fica perto de zero. Ficam na mesma direção 62% a 81% do tempo. Pares mais parecidos: RSI-MA × Ichimoku (0,72) e RSI-MA × Pivot ST (0,66). UT Bot e Scalping são os mais diferentes. A carteira com peso igual nas cinco cai o DD para cerca de −39% (vs −55% a −74% de cada uma, na marcação diária aproximada).
