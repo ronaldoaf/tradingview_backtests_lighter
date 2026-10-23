@@ -80,6 +80,14 @@ Convenções: sinal no fechamento, ordem na abertura seguinte, custo de spread +
 - **Robustez:** terços −1/+60/+21% vs B&H −21/+40/+8%; 2ª metade +30% vs +3%; custo 4× +21,6%.
 - **Ressalvas:** o lucro vem do lado vendido (long-only perde −11% a.a.), o mesmo viés do WTI visto na Gold/Silver (lote 21) e no Turtle Donchian short (lote 22); vale checar se vem do rolamento do CFD. DD −67% (log), cerca de −49%. Vizinhança razoável (4h sem alvo, 4h SMA100 e 1h SMA40 também acima do B&H). Única aprovada fora de ETH/BTC/XAU.
 
+## 10. Super trend V — ETH 15m (lote 23, aprovada com ressalva)
+
+- **Script:** `7g8MF7f7` · [LOTE23_TV](LOTE23_TV.md) · `scripts/study_tvlote23.py`
+- **Regra:** VPT "sombra" (volume × corpo da vela, normalizado pelo desvio do range) suavizado por uma EMA de 336 barras no 15m (720/TF × 7); SuperTrend 10 × 1 em volta dele. Close cruza acima da linha com close acima da EMA da abertura compra; abaixo, vende. Comprado e vendido, o sinal contrário inverte.
+- **Resultado:** +146% a.a. vs +56,8% do B&H; t = 3,9; 314 trades/ano.
+- **Robustez:** terços +610/+57/+25% vs B&H +330/+1/−11%; 2ª metade +29% vs +13%; custo 4× +124%.
+- **Ressalvas:** DD −70% (log), cerca de −50%; depende do volume da Binance; vizinhança boa no ETH (15m, 30m e 1h com multiplicador 1 acima do B&H; a versão só comprada também passa, por pouco na 2ª metade), mas no BTC a regra morre depois de 2022. Mais um seguidor de tendência no ETH (ver correlação abaixo).
+
 ## Correlação entre as candidatas do ETH
 
 `scripts/study_eth_corr.py` → `results/study_eth_corr.txt`. Correlação dos retornos diários entre as cinco candidatas do ETH vai de 0,29 a 0,72; com o B&H do ETH fica perto de zero. Ficam na mesma direção 62% a 81% do tempo. Pares mais parecidos: RSI-MA × Ichimoku (0,72) e RSI-MA × Pivot ST (0,66). UT Bot e Scalping são os mais diferentes. A carteira com peso igual nas cinco cai o DD para cerca de −39% (vs −55% a −74% de cada uma, na marcação diária aproximada).

@@ -100,6 +100,26 @@ Todas reprovadas, exceto a candidata indicada. Ordem cronológica inversa.
 
 | # | Estratégia (autor, id do script) | Doc | Diagnóstico |
 | --- | --- | --- | --- |
+| 193 | VWAP Momentum Pullback (`uhdaobby`) | [LOTE23_TV](docs/LOTE23_TV.md) | nada acima do B&H |
+| 192 | EVWMA VWAP Cross [QuantNomad] (`QPIGo8hs`) | [LOTE23_TV](docs/LOTE23_TV.md) | BTC 4h perde 2024-26 |
+| 191 | Trend Trader Strategy with MACD (`dUNRiEBG`) | [LOTE23_TV](docs/LOTE23_TV.md) | nada robusto |
+| 190 | RSI Strategy [PrimeAutomation] (`RiQzLLoh`) | [LOTE23_TV](docs/LOTE23_TV.md) | ETH 4h quase (terço 1, 64 trades) |
+| 189 | Super trend V (`7g8MF7f7`) | [LOTE23_TV](docs/LOTE23_TV.md) | **candidata: ETH 15m** (+146% vs +57%) |
+| 188 | Buying Dip with TP/SL (racer8) (`AHxkEMXm`) | [LOTE23_TV](docs/LOTE23_TV.md) | nada acima do B&H |
+| 187 | Combo 123 Reversal & SMI (`NudssmJx`) | [LOTE23_TV](docs/LOTE23_TV.md) | nada robusto |
+| 186 | Crypto ZigZag RSI 15min (`LhpfQMtP`) | [LOTE23_TV](docs/LOTE23_TV.md) | BTC 15m quase (perde o terço 1) |
+| 185 | MA 10/20 Crossover (`2cbpO8lO`) | [LOTE23_TV](docs/LOTE23_TV.md) | XAU marginal, morre no custo 4x |
+| 184 | Triple EMA Trend ADX/ATR (`vzXlqRCT`) | [LOTE23_TV](docs/LOTE23_TV.md) | ETH 15m quase (terço 1); BTC 4h perde 2024-26 |
+| 183 | TradeIQ Crazy Scalping (Kaspricci) (`R7OSA2ar`) | [LOTE23_TV](docs/LOTE23_TV.md) | WTI 1h perde 2023-26 |
+| 182 | MA Bollinger Bands + RSI (`2MMNHl97`) | [LOTE23_TV](docs/LOTE23_TV.md) | poucos trades, nada acima do B&H |
+| 181 | DEMA ATR [PrimeAutomation] (`rqRd3f62`) | [LOTE23_TV](docs/LOTE23_TV.md) | nada robusto |
+| 180 | [UL] QQE Cross v1.1 (`nkka4EfU`) | [LOTE23_TV](docs/LOTE23_TV.md) | nada robusto |
+| 179 | Maximized Scalping On Trend (Coinrule) (`XAiEh7nb`) | [LOTE23_TV](docs/LOTE23_TV.md) | nada acima do B&H |
+| 178 | NR7 + Inside Day (ChartArt) (`Dln4aFaM`) | [LOTE23_TV](docs/LOTE23_TV.md) | nada acima do B&H |
+| 177 | HIGHER HIGH LOWER LOW (`JWsBrWBu`) | [LOTE23_TV](docs/LOTE23_TV.md) | BTC 4h acima do B&H com poucos trades |
+| 176 | 3 EMA + RSI with Trail Stop (`mgD7xBuw`) | [LOTE23_TV](docs/LOTE23_TV.md) | nada acima do B&H |
+| 175 | BBTrend w SuperTrend decision (`7C1kIEOn`) | [LOTE23_TV](docs/LOTE23_TV.md) | nada robusto (WTI 30m isolada) |
+| 174 | Twin Range Filter Algo v.3 (`ZsiaNicR`) | [LOTE23_TV](docs/LOTE23_TV.md) | ETH 4h quase (perde o terço 1 e o custo 4x) |
 | 173 | Breakout Trend Follower (`9uvZIPnH`) | [LOTE22_TV](docs/LOTE22_TV.md) | ETH 30m quase (terço 1) |
 | 172 | Cumulative RSI Strategy (`nI9Csm8g`) | [LOTE22_TV](docs/LOTE22_TV.md) | nada acima do B&H |
 | 171 | Tripple super Trend Strategy (`aCbQTE0W`) | [LOTE22_TV](docs/LOTE22_TV.md) | BTC 1h +63%, isolada |
