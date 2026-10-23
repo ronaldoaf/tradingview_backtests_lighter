@@ -13,7 +13,9 @@ veredito, porque o mesmo punhado de falhas se repete (sempre-no-mercado disfarç
 sinal, `lookahead_on`, risco/retorno impossível por construção, ilha de parâmetros que
 morre no out-of-sample).
 
-Lista das candidatas aprovadas: [docs/APROVADAS.md](docs/APROVADAS.md).
+Lista das candidatas aprovadas: [docs/APROVADAS.md](docs/APROVADAS.md). Ela foi refeita em 2026-10-23
+com a métrica corrigida e o critério para carteira; os vereditos "aprovada" da tabela abaixo, até o
+lote 33, são da conta antiga e valem só como histórico.
 
 ## Protocolo de teste
 
@@ -85,8 +87,10 @@ As grades são pesadas (dezenas de milhões de barras × centenas de combinaçõ
 - `engine_bars` — posição por sinal, execução na abertura da barra seguinte, sem stop
   intrabar.
 - `engine_sltp` — long com stop/alvo percentuais resolvidos no M1.
-- `stats` / `control` — CAGR vs. buy & hold, Sharpe, drawdown, exposição, e o controle
-  aleatório de mesmo lado/duração/gestão.
+- `equity_curve` / `summarize` / `control_dur` — equity composta trade a trade, CAGR e Sharpe
+  vs. buy & hold, drawdown, exposição, e o controle aleatório de mesmo lado/duração/gestão.
+  Até o lote 33 o CAGR vinha de uma soma de log-retornos que inflava o lado vendido (ver
+  [PROTOCOLO](docs/PROTOCOLO.md#métrica-revisão-de-2026-10-23)).
 
 Os estudos mais antigos (`study_goldtrail`, `study_tlangle`, `study_macdconf`,
 `study_bbrsi`, `study_macdsma`, `study_commas`, `study_flipma`, `study_serdar`) foram
