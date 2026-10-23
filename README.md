@@ -100,6 +100,11 @@ Todas reprovadas, exceto a candidata indicada. Ordem cronológica inversa.
 
 | # | Estratégia (autor, id do script) | Doc | Diagnóstico |
 | --- | --- | --- | --- |
+| 108 | Liquidity Sweep Reversal (`GoeqO1ev`) | [LOTE18_TV](docs/LOTE18_TV.md) | 0 células acima do B&H fora do WTI |
+| 107 | EMA Slope Trend Follower (`TKg40Ska`) | [LOTE18_TV](docs/LOTE18_TV.md) | ETH 30m +85% mas empata com custo 4×; BTC perde na 2ª metade |
+| 106 | [RS] Open Session Breakout Trader (`mIvVYU42`) | [LOTE18_TV](docs/LOTE18_TV.md) | 0 células acima do B&H fora do WTI |
+| 105 | Dynamic Swing Anchored VWAP STRATEGY (`gjFSGRCo`) | [LOTE18_TV](docs/LOTE18_TV.md) | ETH 1D +89% com 26 trades; resto abaixo do B&H |
+| 104 | [BACKTEST] Traders Dynamic Index (`rDZ0Id1U`) | [LOTE18_TV](docs/LOTE18_TV.md) | XAU 1h +18,5% (DD −25%) mas só em 2024-26 e célula isolada; ETH 4h quase |
 | 103 | Wolfe Strategy (`EGvQ2nLb`) | [LOTE17_TV](docs/LOTE17_TV.md) | ignorado (sem ordens) |
 | 102 | Band-Zigzag TrendFollower (`9FsHYtrq`) | [LOTE17_TV](docs/LOTE17_TV.md) | ETH 1h +123% mas terço do meio ≈ 0 |
 | 101 | HULLTSIBOT (`gf21APTn`) | [LOTE17_TV](docs/LOTE17_TV.md) | ETH 30m e WTI 1h passam nos testes, mas só na célula 100/50; vizinhos negativos |

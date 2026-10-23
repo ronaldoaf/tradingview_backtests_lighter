@@ -1,0 +1,145 @@
+// This Pine Script™ code is subject to the terms of the Mozilla Public License 2.0 at https://mozilla.org/MPL/2.0/
+// © RicardoSantos.
+
+//@version=6
+string  TITLE = 'Open Session Breakout Trader'
+string STITLE = 'S'
+strategy(TITLE, STITLE, overlay=true,
+ default_qty_type=strategy.cash, default_qty_value=1000, initial_capital=100000, currency=currency.USD)
+
+//#region   Effective Trading Session:
+bool use_trade_session = true
+string trade_session = input.session('0400-0700,0900-1300', 'Trade Session:', tooltip='Use `xxxx-xxxx` or `xxxx-xxxx,xxxx-xxxx` to define a interval')
+bool isinsession = use_trade_session ? not na(time('1', trade_session)) : true
+
+bgcolor(use_trade_session and isinsession ? #9b27b067 : na, title='In Session BG')
+//#endregion
+
+float percent_range_multiplier = input.float(0.25, 'Percent Range Multiplier:')
+float r = request.security(syminfo.tickerid, 'D', ta.atr(100)[1], barmerge.gaps_off, barmerge.lookahead_off)
+float open_price = open , open_price := ta.change(use_trade_session and isinsession ? 1 : 0) > 0 ? open : open_price[1]
+float buy_line = open_price + r * percent_range_multiplier
+float sel_line = open_price - r * percent_range_multiplier
+
+plot(not isinsession ? na : open_price, 'Session Open Price', color.black , 1, plot.style_linebr)
+plot(not isinsession ? na : buy_line  , 'Buy Line'          , color.green , 2, plot.style_linebr)
+plot(not isinsession ? na : sel_line  , 'Sell Line'         , color.maroon, 2, plot.style_linebr)
+
+// Conditions to buy/sell on the first bar, since cross's arent detected we set a buy/sell if extreme lines are breached.
+bool is_new_open = ta.change(open_price) != 0
+bool buy_on_1st_bar = is_new_open and high > buy_line
+bool sel_on_1st_bar = is_new_open and low < sel_line
+
+bool buy_trigger = ta.crossover(high, buy_line) or buy_on_1st_bar
+bool sel_trigger = ta.crossunder(low, sel_line) or sel_on_1st_bar
+
+
+// Close trades at end of session:                 ||
+bool close_at_end_of_session = input.bool(false, 'Close trades at the end of the session?')
+if close_at_end_of_session and not isinsession
+    strategy.close_all()
+
+//#region Account Margin Management functions:
+f_account_margin_call (float _ammount) =>
+    bool _return = false , _return := strategy.equity <= _ammount ? true : _return[1]
+    _return
+
+f_account_fixed_trail_call(float _ammount) =>
+    float _max_eq = strategy.equity , _max_eq := na(_max_eq[1]) ? strategy.equity : math.max(_max_eq[1], strategy.equity)
+    bool _return = false , _return := strategy.equity <= _max_eq - _ammount ? true : _return[1]
+    _return
+
+f_account_percent_trail_call(float _percent) =>
+    _max_eq = strategy.equity , _max_eq := na(_max_eq[1]) ? strategy.equity : math.max(_max_eq[1], strategy.equity)
+    _return = false , _return := strategy.equity <= _max_eq * (_percent / 100) ? true : _return[1]
+    _return
+//#endregion
+
+enum MMODE
+    FIXED  = 'Fixed Value'
+    FTRAIL = 'Fixed Trail Value'
+    PTRAIL = 'Equity Percent Trail '
+
+bool use_margin_call = input.bool(true)
+MMODE margin_call_mode = input.enum(MMODE.FIXED, 'Margin call mode:')
+float margin_value = input.float(95000.0, 'Margin Value:')
+
+bool account_margin_call = f_account_margin_call(margin_value)
+bool account_fixed_trail_call = f_account_fixed_trail_call(margin_value)
+bool account_percent_trail_call = f_account_percent_trail_call(margin_value)
+trade_if_not_margin_call = if use_margin_call
+    switch margin_call_mode
+        MMODE.FIXED => not account_margin_call
+        MMODE.FTRAIL => not account_fixed_trail_call
+        MMODE.PTRAIL => not account_percent_trail_call
+        => false
+else
+    true
+
+float wins_multiplier = input.float(1.00, 'Scaling Multiplier for Consecutive Wins:')
+float losses_multiplier = input.float(2.00, 'Scaling Multiplier for Consecutive Losses:')
+
+bool buy_cond = isinsession and trade_if_not_margin_call and buy_trigger and strategy.opentrades < 1
+bool sel_cond = isinsession and trade_if_not_margin_call and sel_trigger and strategy.opentrades < 1
+
+int C_LOSSES = ta.change(strategy.losstrades)
+int C_WINS   = ta.change(strategy.wintrades)
+int C_EVENS  = ta.change(strategy.eventrades)
+int C_OTRADE = ta.change(strategy.opentrades)
+
+f_martingale_wins_multiplier(float _multiplier) =>
+    float _r = na , _r := na(_r[1]) ? 1 : C_LOSSES > 0 ? 1 : C_WINS > 0 or C_EVENS > 0 ? _r[1] * _multiplier : _r[1]
+    _r
+
+f_martingale_loss_multiplier(float _multiplier) =>
+    float _r = na , _r := na(_r[1]) ? 1 : C_LOSSES > 0 ? 1 : C_WINS > 0 or C_EVENS > 0 ? _r[1] * _multiplier : _r[1]
+    _r
+
+int mode = na , mode := C_WINS > 0 ? 1 : C_LOSSES > 0 ? -1 : nz(mode[1], 1)
+
+float martingale_wins_multiplier = f_martingale_wins_multiplier(wins_multiplier)
+float martingale_loss_multiplier = f_martingale_loss_multiplier(losses_multiplier)
+float trade_multiplier = mode > 0 ? martingale_wins_multiplier : martingale_loss_multiplier
+
+float trade_size = input.float(25.0, 'Base trade value:')
+float trade_leverage = input.float(400.0, 'Base Leverage value:')
+float trade_size_multiplied = trade_size * trade_leverage * trade_multiplier
+
+//plot(strategy.closedtrades)
+if buy_cond
+    strategy.entry('B', strategy.long, trade_size_multiplied)
+if sel_cond
+    strategy.entry('S', strategy.short, trade_size_multiplied)
+
+// Simple Profit and Loss Logic:
+float take_profit = input.float(250.0, 'TP in ticks(1/10 of a pip):')
+float stop_loss = input.float(100.0, 'SL in ticks(1/10 of a pip):')
+
+bool use_trailing_stop = input.bool(false, 'Use Trailing Stop?')
+float trailing_activation = input.float(100.0, 'Trailing activation distance in ticks(1/10 of a pip):')
+float trailing_offset = input.float(250.0, 'Trailing offset in ticks(1/10 of a pip):')
+if use_trailing_stop
+    strategy.exit('B', 'B', profit=take_profit, loss=stop_loss, trail_points=trailing_activation, trail_offset=trailing_offset)
+    strategy.exit('S', 'S', profit=take_profit, loss=stop_loss, trail_points=trailing_activation, trail_offset=trailing_offset)
+else
+    strategy.exit('B', 'B', profit=take_profit, loss=stop_loss)
+    strategy.exit('S', 'S', profit=take_profit, loss=stop_loss)
+
+// Simple Profit and Loss open Trade ploting:
+float pip_digits_multiplier = 0.00001
+float trade_open_price = na , trade_open_price := strategy.opentrades == 0 ? na : C_OTRADE > 0 ? open : trade_open_price[1]
+float trade_loss_price = na , trade_loss_price := strategy.opentrades == 0 ? na : C_OTRADE > 0 ? buy_trigger[1] ? trade_open_price - stop_loss * math.round(open) * pip_digits_multiplier : trade_open_price + stop_loss * math.round(open) * pip_digits_multiplier : trade_loss_price[1]
+float trade_profit_price = na , trade_profit_price := strategy.opentrades == 0 ? na : C_OTRADE > 0 ? buy_trigger[1] ? trade_open_price + take_profit * math.round(open) * pip_digits_multiplier : trade_open_price - take_profit * math.round(open) * pip_digits_multiplier : trade_profit_price[1]
+
+t_o = plot(trade_open_price, 'Trade Open Price Line', color.black, 1, plot.style_linebr)
+t_l = plot(trade_loss_price, 'Trade Loss Price Line', color.black, 1, plot.style_linebr)
+t_p = plot(trade_profit_price, 'Trade Profit Price Line', color.black, 1, plot.style_linebr)
+fill(t_o, t_l, color = color.new(color.red, 80), title = 'Trade Loss Fill')
+fill(t_o, t_p, color = color.new(color.lime, 80), title = 'Trade Profit Fill')
+
+//p_eq = plot(series=strategy.equity, title='Equity', color=black, linewidth=2)
+
+//drawdown = change(strategy.closedtrades) > 0 ? strategy.equity : drawdown[1]
+//p_dd = plot(series=drawdown, title='Drawdown', style=linebr, color=red, linewidth=1)
+
+//fill(plot1=p_eq, plot2=p_dd, color=red, transp=70, title='DD')

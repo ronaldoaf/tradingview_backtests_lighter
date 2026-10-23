@@ -1,0 +1,73 @@
+
+================= btc =================
+  M1 2020-01-01 -> 2026-09-30
+
+### 1. Traders Dynamic Index (forca 1-2)
+  15min TDI default                  17329 tr (2566.0/ano,   0.14d) | bruto    -1.6bp liq    -2.6bp (win 31%) | CAGR  -48.4% vs B&H  +43.8% | Sh -0.97 DD  -547% expo 100% | ctl    -0.7bp t=-2.35
+  30min TDI default                  8444 tr (1250.3/ano,   0.29d) | bruto    -0.7bp liq    -1.7bp (win 31%) | CAGR   -9.4% vs B&H  +43.9% | Sh -0.14 DD  -167% expo 100% | ctl    -0.4bp t=-0.58
+  1h TDI default                     3962 tr (586.7/ano,   0.62d) | bruto    +8.7bp liq    +7.7bp (win 33%) | CAGR  +45.7% vs B&H  +43.9% | Sh +0.52 DD  -122% expo 100% | ctl    -1.0bp t=+1.85
+  4h TDI default                      971 tr (143.8/ano,   2.53d) | bruto    +6.3bp liq    +5.1bp (win 31%) | CAGR   +8.1% vs B&H  +43.7% | Sh +0.11 DD  -115% expo 100% | ctl    -2.4bp t=+0.63
+  1D TDI default                      145 tr ( 21.5/ano,  16.61d) | bruto  +177.7bp liq  +177.6bp (win 36%) | CAGR  +42.0% vs B&H  +43.8% | Sh +0.48 DD   -99% expo  98% | ctl    -0.2bp t=+1.48
+
+### 2. Swing Anchored VWAP (direcao do swing de 50 barras, long-only)
+  15min SAVWAP default               1595 tr (236.2/ano,   0.78d) | bruto   +14.2bp liq   +10.9bp (win 34%) | CAGR  +18.0% vs B&H  +43.8% | Sh +0.34 DD   -99% expo  51% | ctl    +8.8bp t=+0.58
+  30min SAVWAP default                783 tr (115.9/ano,   1.64d) | bruto   +22.7bp liq   +16.8bp (win 33%) | CAGR  +14.4% vs B&H  +43.9% | Sh +0.31 DD  -137% expo  52% | ctl   +17.3bp t=-0.04
+  1h SAVWAP default                   395 tr ( 58.5/ano,   3.25d) | bruto   +58.8bp liq   +48.1bp (win 33%) | CAGR  +17.2% vs B&H  +43.9% | Sh +0.40 DD  -102% expo  52% | ctl   +29.2bp t=+0.57
+  4h SAVWAP default                    88 tr ( 13.0/ano,  15.03d) | bruto  +301.5bp liq  +255.6bp (win 39%) | CAGR  +23.7% vs B&H  +43.7% | Sh +0.59 DD   -94% expo  54% | ctl  +158.3bp t=+0.88
+  1D SAVWAP default                    17 tr (  2.5/ano,  74.12d) | bruto +3073.6bp liq +2851.3bp (win 47%) | CAGR  +21.6% vs B&H  +43.8% | Sh +0.56 DD  -105% expo  51% | ctl +1176.8bp t=+1.05
+
+### 3. Open Session Breakout (open da sessao +- 0,25 ATR100 diario)
+  15min OSB default                  1949 tr (288.6/ano,   0.09d) | bruto    +2.4bp liq    +1.4bp (win 30%) | CAGR   +2.7% vs B&H  +43.8% | Sh +0.20 DD   -44% expo   7% | ctl    -0.8bp t=+1.47
+  30min OSB default                  1796 tr (265.9/ano,   0.10d) | bruto    +2.3bp liq    +1.3bp (win 30%) | CAGR   +8.5% vs B&H  +43.9% | Sh +0.60 DD   -37% expo   7% | ctl    -0.5bp t=+0.89
+  1h OSB default                     1689 tr (250.1/ano,   0.12d) | bruto    +1.8bp liq    +0.8bp (win 30%) | CAGR   +8.2% vs B&H  +43.9% | Sh +0.51 DD   -29% expo   8% | ctl    -0.8bp t=+0.75
+
+### 4. EMA Slope Trend Follower (EMA130, inclinacao 9/21, filtro EMA200)
+  15min SLOPE default                7768 tr (1150.2/ano,   0.19d) | bruto    +1.0bp liq    -0.1bp (win 30%) | CAGR   +7.2% vs B&H  +43.8% | Sh +0.12 DD  -103% expo  58% | ctl    -1.1bp t=+0.64
+  30min SLOPE default                3679 tr (544.8/ano,   0.39d) | bruto    +6.9bp liq    +5.8bp (win 32%) | CAGR  +24.0% vs B&H  +43.9% | Sh +0.36 DD   -93% expo  58% | ctl    -0.8bp t=+2.17
+  1h SLOPE default                   1794 tr (265.6/ano,   0.80d) | bruto   +12.1bp liq   +11.0bp (win 33%) | CAGR  +24.8% vs B&H  +43.9% | Sh +0.39 DD  -117% expo  58% | ctl    +0.4bp t=+1.76
+  4h SLOPE default                    438 tr ( 64.9/ano,   3.23d) | bruto   +81.5bp liq   +80.0bp (win 37%) | CAGR  +63.1% vs B&H  +43.7% | Sh +0.98 DD   -41% expo  57% | ctl    +6.5bp t=+2.50
+  1D SLOPE default                     61 tr (  9.0/ano,  20.56d) | bruto  +412.4bp liq  +402.7bp (win 41%) | CAGR  +33.6% vs B&H  +43.8% | Sh +0.79 DD   -70% expo  51% | ctl   +57.4bp t=+1.59
+
+### 5. Liquidity Sweep Reversal (pivo 7, vol, pavio, confirmacao, sessao 12-16)
+  15min SWEEP default                 980 tr (145.1/ano,   0.42d) | bruto    -8.5bp liq    -9.5bp (win 37%) | CAGR  -10.3% vs B&H  +43.8% | Sh -0.61 DD   -86% expo  17% | ctl    +0.8bp t=-1.58
+  30min SWEEP default                 588 tr ( 87.1/ano,   0.85d) | bruto    +3.7bp liq    +2.8bp (win 43%) | CAGR   -0.4% vs B&H  +43.9% | Sh -0.02 DD   -57% expo  20% | ctl    -1.3bp t=+0.32
+  1h SWEEP default                    285 tr ( 42.2/ano,   1.72d) | bruto    +4.0bp liq    +3.6bp (win 39%) | CAGR   -1.8% vs B&H  +43.9% | Sh -0.11 DD   -92% expo  20% | ctl    +2.5bp t=+0.05
+  4h SWEEP default                     24 tr (  3.6/ano,   4.86d) | bruto  -100.5bp liq   -95.4bp (win 38%) | CAGR   -3.9% vs B&H  +43.7% | Sh -1.14 DD   -52% expo   5% | ctl    -1.8bp t=-0.52
+
+=== resumo btc (198 celulas) ===
+  osb      51 cel | liq>0   26 | liq>0 e t>2   0 | CAGR>B&H   0 | melhor CAGR +14.6%
+  savwap   29 cel | liq>0   26 | liq>0 e t>2   0 | CAGR>B&H   0 | melhor CAGR +42.6%
+  slope    40 cel | liq>0   37 | liq>0 e t>2  12 | CAGR>B&H   5 | melhor CAGR +65.1%
+  sweep    48 cel | liq>0   12 | liq>0 e t>2   0 | CAGR>B&H   0 | melhor CAGR +7.5%
+  tdi      30 cel | liq>0   21 | liq>0 e t>2   1 | CAGR>B&H   2 | melhor CAGR +48.0%
+
+  top 15 por CAGR:
+   est    TF                      cfg  trades  por_ano  bp_bruto   bp_liq   win  cagr    bh  sharpe     dd  expo   ctl_bp     t
+ slope    4h     50 9/21 filtro ambos     494   73.153    59.154   57.753 0.381 0.651 0.437   1.038 -0.405 0.546   -2.330 2.437
+ slope    4h    130 9/21 filtro ambos     438   64.860    81.456   79.988 0.372 0.631 0.437   0.979 -0.410 0.573    6.535 2.505
+   tdi    1h               str1 ambos    2401  355.529    11.179   10.137 0.380 0.480 0.439   0.538 -1.130 0.999   -3.185 2.441
+   tdi    1h               str2 ambos    3962  586.675     8.669    7.664 0.331 0.457 0.439   0.523 -1.216 0.999   -1.004 1.845
+ slope    1h     50 9/21 filtro ambos    1997  295.707    17.314   16.204 0.347 0.451 0.439   0.666 -0.812 0.546   -3.902 3.402
+ slope    4h  50 9/21 semfiltro ambos     739  109.433    28.988   28.135 0.350 0.446 0.437   0.517 -1.042 0.934   -2.072 1.800
+ slope 30min     50 9/21 filtro ambos    4181  619.099     5.771    4.728 0.334 0.442 0.439   0.656 -0.650 0.546   -2.356 2.196
+savwap    1D             prd100 ambos      12    1.778  2981.357 2933.821 0.583 0.426 0.438   0.560 -0.880 0.923 -441.539 1.348
+   tdi    1D               str2 ambos     145   21.479   177.668  177.616 0.359 0.420 0.438   0.483 -0.992 0.977   -0.177 1.476
+ slope    4h      50 9/21 filtro long     256   37.909   110.647  101.281 0.402 0.419 0.437   1.589 -0.286 0.291   19.634 2.535
+   tdi    4h               str1 ambos     584   86.480    27.362   26.043 0.406 0.396 0.437   0.455 -1.536 0.994   -3.234 1.381
+   tdi    1h                str1 long    1200  177.691    26.449   22.343 0.395 0.386 0.439   0.690 -0.735 0.506   11.294 1.136
+ slope    4h 130 9/21 semfiltro ambos     641   94.921    41.802   41.052 0.345 0.379 0.437   0.456 -1.306 0.940  -10.831 2.671
+   tdi    1h                str2 long    1981  293.338    17.861   15.000 0.341 0.374 0.439   0.653 -0.710 0.501    8.503 1.173
+ slope 30min      50 9/21 filtro long    2204  326.356     9.958    7.989 0.336 0.369 0.439   0.950 -0.890 0.290    1.179 2.354
+
+  top 10 por t:
+  est    TF                      cfg  trades  por_ano  bp_bruto  bp_liq   win  cagr    bh  sharpe     dd  expo  ctl_bp     t
+slope    1h     50 9/21 filtro ambos    1997  295.707    17.314  16.204 0.347 0.451 0.439   0.666 -0.812 0.546  -3.902 3.402
+slope    1h      50 9/21 filtro long    1050  155.479    30.972  27.920 0.364 0.324 0.439   0.944 -0.683 0.293   6.940 2.835
+slope    4h 130 9/21 semfiltro ambos     641   94.921    41.802  41.052 0.345 0.379 0.437   0.456 -1.306 0.940 -10.831 2.671
+slope    4h      50 9/21 filtro long     256   37.909   110.647 101.281 0.402 0.419 0.437   1.589 -0.286 0.291  19.634 2.535
+slope    4h    130 9/21 filtro ambos     438   64.860    81.456  79.988 0.372 0.631 0.437   0.979 -0.410 0.573   6.535 2.505
+slope    1D     130 9/21 filtro long      34    5.037   877.836 813.157 0.529 0.325 0.438   1.456 -0.366 0.294 194.027 2.464
+  tdi    1h               str1 ambos    2401  355.529    11.179  10.137 0.380 0.480 0.439   0.538 -1.130 0.999  -3.185 2.441
+slope    4h     50 9/21 filtro ambos     494   73.153    59.154  57.753 0.381 0.651 0.437   1.038 -0.405 0.546  -2.330 2.437
+slope    4h     130 9/21 filtro long     227   33.615   133.258 122.400 0.396 0.340 0.437   1.283 -0.420 0.304  41.445 2.412
+slope 30min      50 9/21 filtro long    2204  326.356     9.958   7.989 0.336 0.369 0.439   0.950 -0.890 0.290   1.179 2.354
