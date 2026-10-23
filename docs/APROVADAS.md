@@ -144,6 +144,14 @@ Convenções: sinal no fechamento, ordem na abertura seguinte, custo de spread +
 - **Robustez:** terços +372/+181/+81% vs +328/+0/−11%; 2ª metade +59% vs +13%; custo 4× +131%.
 - **Ressalvas:** só o alvo 3R passa (com 1,5R fica em +61%, perto do B&H); DD alto; mais um seguidor de tendência no ETH, provavelmente correlacionado com as outras aprovadas do ETH.
 
+## 18. Wyckoff Range — ETH 4h (lote 27, aprovada com ressalva)
+
+- **Script:** `vQSBf9rh` · [LOTE27_TV](LOTE27_TV.md) · `scripts/study_tvlote27.py`
+- **Regra:** Close cruza acima da SMA32 junto com a mínima cruzando acima da SMA10 das mínimas compra; close abaixo da SMA35 com máxima abaixo da SMA20 das máximas vende; inverte; stop de 3% (o script usa 10%).
+- **Resultado:** +100% a.a. vs +56,6%; t = 2,3; 29 trades/ano; exposição 53%.
+- **Robustez:** terços +461/+23/+16% vs +328/+0/−11%; 2ª metade +21% vs +13%; custo 4× +98%.
+- **Ressalvas:** com o stop original de 10% falha no 3º terço e na 2ª metade; boa parte do ganho vem de 2020–2022; poucos trades por ano.
+
 ## Correlação entre as candidatas do ETH
 
 `scripts/study_eth_corr.py` → `results/study_eth_corr.txt`. Correlação dos retornos diários entre as cinco candidatas do ETH vai de 0,29 a 0,72; com o B&H do ETH fica perto de zero. Ficam na mesma direção 62% a 81% do tempo. Pares mais parecidos: RSI-MA × Ichimoku (0,72) e RSI-MA × Pivot ST (0,66). UT Bot e Scalping são os mais diferentes. A carteira com peso igual nas cinco cai o DD para cerca de −39% (vs −55% a −74% de cada uma, na marcação diária aproximada).

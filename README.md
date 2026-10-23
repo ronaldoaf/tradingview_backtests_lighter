@@ -100,6 +100,26 @@ Todas reprovadas, exceto a candidata indicada. Ordem cronológica inversa.
 
 | # | Estratégia (autor, id do script) | Doc | Diagnóstico |
 | --- | --- | --- | --- |
+| 303 | OBV Oscillator (`VQjItUaK`) | [LOTE27_TV](docs/LOTE27_TV.md) | nada robusto |
+| 302 | Combo 2/20 EMA + AC (`Cfz1HMO1`) | [LOTE27_TV](docs/LOTE27_TV.md) | nada robusto |
+| 301 | SSL Channel Cross (`jds0DHEd`) | [LOTE27_TV](docs/LOTE27_TV.md) | quase: ETH 30m l50 (perde o 1º terço) |
+| 300 | Ichimoku Backtester (`fsYSuQGL`) | [LOTE27_TV](docs/LOTE27_TV.md) | nada robusto |
+| 299 | 3 EMA + Stoch RSI + ATR (`IhxCXn6n`) | [LOTE27_TV](docs/LOTE27_TV.md) | nada robusto |
+| 298 | ATR Trailing Stops (`ZPD0fN55`) | [LOTE27_TV](docs/LOTE27_TV.md) | nada robusto |
+| 297 | Martin Pring's Special K (`CpP23CQM`) | [LOTE27_TV](docs/LOTE27_TV.md) | quase: ETH 30m s30 (perde o 1º terço) |
+| 296 | Wyckoff Range (`vQSBf9rh`) | [LOTE27_TV](docs/LOTE27_TV.md) | **aprovada: ETH 4h (stop 3%)** |
+| 295 | Trend Following Breakout (`vOfNuQ8n`) | [LOTE27_TV](docs/LOTE27_TV.md) | nada robusto |
+| 294 | Squeeze Momentum on Reversal (`Fckzv8iH`) | [LOTE27_TV](docs/LOTE27_TV.md) | nada robusto |
+| 293 | Simple strat (MACD + Stoch + RSI) (`pOT16FZ5`) | [LOTE27_TV](docs/LOTE27_TV.md) | nada robusto |
+| 292 | Bollinger Band Breakout (long-only) (`UHsvM5JR`) | [LOTE27_TV](docs/LOTE27_TV.md) | nada robusto |
+| 291 | Volatility System (Wilder) (`pjZKWnHl`) | [LOTE27_TV](docs/LOTE27_TV.md) | nada robusto |
+| 290 | The Flash (`XKgLfo15`) | [LOTE27_TV](docs/LOTE27_TV.md) | nada robusto |
+| 289 | Gold Scalping (`wO3Es23F`) | [LOTE27_TV](docs/LOTE27_TV.md) | nada robusto |
+| 288 | TSI CCI Hull (`MuAKk43D`) | [LOTE27_TV](docs/LOTE27_TV.md) | quase: WTI 15m (perde o 3º terço por pouco) |
+| 287 | Stochastic Trend (long-only) (`hk9a7099`) | [LOTE27_TV](docs/LOTE27_TV.md) | nada robusto |
+| 286 | Optimized RSI Buy The Dips (long-only) (`Pm1WAtyI`) | [LOTE27_TV](docs/LOTE27_TV.md) | nada robusto |
+| 285 | Adaptive Trend Flow (`CNJ1hXQw`) | [LOTE27_TV](docs/LOTE27_TV.md) | nada robusto |
+| 284 | Doji strategy (`U3JBNJ9V`) | [LOTE27_TV](docs/LOTE27_TV.md) | nada robusto |
 | 283 | Triple CCI + MFI (long-only) (`PETNavGq`) | [LOTE26_TV](docs/LOTE26_TV.md) | nada robusto |
 | 282 | London BreakOut Classic (`Fh42LHOM`) | [LOTE26_TV](docs/LOTE26_TV.md) | nada robusto |
 | 281 | DEMA + MACD (`xeqJN1KH`) | [LOTE26_TV](docs/LOTE26_TV.md) | quase: ETH 1D d50 (perde o 1º terço) |
