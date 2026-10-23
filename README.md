@@ -100,6 +100,11 @@ Todas reprovadas, exceto a candidata indicada. Ordem cronológica inversa.
 
 | # | Estratégia (autor, id do script) | Doc | Diagnóstico |
 | --- | --- | --- | --- |
+| 113 | Cipher B+ Divergence EMA Pullback (`ywcSiaaV`) | [LOTE19_TV](docs/LOTE19_TV.md) | quase não opera; nenhum ativo acima do B&H |
+| 112 | 3EMA (`9bA3Z56w`) | [LOTE19_TV](docs/LOTE19_TV.md) | 0 células acima do B&H |
+| 111 | UT Bot v2 (`lDGmh7ou`) | [LOTE19_TV](docs/LOTE19_TV.md) | ETH 30m ATR×3 +107% mas perde o terço 1 e t < 2: quase |
+| 110 | HHLL Strategy (`CRNp5xev`) | [LOTE19_TV](docs/LOTE19_TV.md) | ETH 1h +97% (t 2,5), perde só o terço 1: quase |
+| 109 | BEST ABCD Pattern Strategy (`TWSr0hGH`) | [LOTE19_TV](docs/LOTE19_TV.md) | **BTC 1h SL 4% RR 5 aprovada com ressalva** (+70% vs +44%, todos os terços, custo 4×); WTI 4h morreu em 2023-26 |
 | 108 | Liquidity Sweep Reversal (`GoeqO1ev`) | [LOTE18_TV](docs/LOTE18_TV.md) | 0 células acima do B&H fora do WTI |
 | 107 | EMA Slope Trend Follower (`TKg40Ska`) | [LOTE18_TV](docs/LOTE18_TV.md) | ETH 30m +85% mas empata com custo 4×; BTC perde na 2ª metade |
 | 106 | [RS] Open Session Breakout Trader (`mIvVYU42`) | [LOTE18_TV](docs/LOTE18_TV.md) | 0 células acima do B&H fora do WTI |

@@ -47,6 +47,14 @@ Convenções: sinal no fechamento, ordem na abertura seguinte, custo de spread +
 - **Robustez:** terços +614/+50/+30% vs B&H +330/+0,7/−11%; 2ª metade +26% vs +13%; custo 4× +126%; vizinhança 15m, 1h e 4h também acima do B&H com t > 2.
 - **Ressalvas:** DD −82% (log). Outro seguidor de tendência no ETH (mesma família de 2 a 4). Custo do ETH estimado. No BTC 30m quase passa (perde na 2ª metade).
 
+## 6. ABCD Pattern — BTC 1h (lote 19, aprovada com ressalva)
+
+- **Script:** `TWSr0hGH` · [LOTE19_TV](LOTE19_TV.md) · `scripts/study_tvlote19.py`
+- **Regra:** zigzag de fractais Bill Williams; padrão ABCD com BC/AB entre 0,382 e 0,886 e CD/BC entre 1,13 e 2,618. D abaixo de C compra, acima vende; o padrão contrário inverte. Stop 4% e alvo 20% (5:1).
+- **Resultado:** +70,4% a.a. vs +43,9% do B&H; t = 2,0; 156 trades/ano; exposição 84%.
+- **Robustez:** terços +132/+31/+62% vs B&H +130/+15/+14%; 2ª metade +69% vs +40%; custo 4× +62,6% (t 3,0).
+- **Ressalvas:** terço 1 só empata; vizinhança estreita (só 1h com SL 4%, RR 5 ou 2, bate o B&H no BTC); DD −87% (log). Primeira candidata do BTC; precisa de walk-forward.
+
 ## Correlação entre as candidatas do ETH
 
 `scripts/study_eth_corr.py` → `results/study_eth_corr.txt`. Correlação dos retornos diários entre as cinco candidatas do ETH vai de 0,29 a 0,72; com o B&H do ETH fica perto de zero. Ficam na mesma direção 62% a 81% do tempo. Pares mais parecidos: RSI-MA × Ichimoku (0,72) e RSI-MA × Pivot ST (0,66). UT Bot e Scalping são os mais diferentes. A carteira com peso igual nas cinco cai o DD para cerca de −39% (vs −55% a −74% de cada uma, na marcação diária aproximada).
