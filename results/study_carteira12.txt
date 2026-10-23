@@ -1,0 +1,91 @@
+Escolhidas (|corr| media entre os pares antes do OOS = 0.103):
+  §1 Trailing SL XAU 30m
+  §9 MA Band WTI 4h
+  §20 HA PA WTI 4h
+  §21 Golden Edge WTI 30m
+  §25 MACD+Stoch WTI 4h
+  §6 ABCD BTC 1h
+  §19 HA MACD BTC 1h
+  §24 Multi-MA BTC 4h
+  §4c Scalping ETH 30m
+  §8 MA Consec ETH 4h
+  §13 Chandelier ETH 30m
+  §17 5 EMA ETH 4h
+
+Matriz das escolhidas (antes do OOS)
+                         §1 Trailing SL XAU 30m  §9 MA Band WTI 4h  §20 HA PA WTI 4h  §21 Golden Edge WTI 30m  §25 MACD+Stoch WTI 4h  §6 ABCD BTC 1h  §19 HA MACD BTC 1h  §24 Multi-MA BTC 4h  §4c Scalping ETH 30m  §8 MA Consec ETH 4h  §13 Chandelier ETH 30m  §17 5 EMA ETH 4h
+§1 Trailing SL XAU 30m                     1.00               0.01             -0.04                    -0.05                  -0.02           -0.04               -0.04                -0.01                  0.10                 0.02                    0.01              0.05
+§9 MA Band WTI 4h                          0.01               1.00              0.37                     0.25                  -0.34           -0.05               -0.05                 0.04                 -0.04                -0.03                   -0.05              0.01
+§20 HA PA WTI 4h                          -0.04               0.37              1.00                     0.44                  -0.21           -0.03                0.07                 0.04                  0.01                 0.06                    0.08              0.07
+§21 Golden Edge WTI 30m                   -0.05               0.25              0.44                     1.00                   0.09           -0.04               -0.01                 0.04                 -0.03                 0.02                    0.03             -0.00
+§25 MACD+Stoch WTI 4h                     -0.02              -0.34             -0.21                     0.09                   1.00            0.01                0.05                -0.09                  0.04                -0.02                    0.10             -0.04
+§6 ABCD BTC 1h                            -0.04              -0.05             -0.03                    -0.04                   0.01            1.00                0.02                -0.09                 -0.01                 0.02                    0.04             -0.04
+§19 HA MACD BTC 1h                        -0.04              -0.05              0.07                    -0.01                   0.05            0.02                1.00                 0.09                  0.10                 0.01                    0.20              0.06
+§24 Multi-MA BTC 4h                       -0.01               0.04              0.04                     0.04                  -0.09           -0.09                0.09                 1.00                  0.14                 0.25                    0.13              0.34
+§4c Scalping ETH 30m                       0.10              -0.04              0.01                    -0.03                   0.04           -0.01                0.10                 0.14                  1.00                 0.43                    0.37              0.34
+§8 MA Consec ETH 4h                        0.02              -0.03              0.06                     0.02                  -0.02            0.02                0.01                 0.25                  0.43                 1.00                    0.22              0.44
+§13 Chandelier ETH 30m                     0.01              -0.05              0.08                     0.03                   0.10            0.04                0.20                 0.13                  0.37                 0.22                    1.00              0.24
+§17 5 EMA ETH 4h                           0.05               0.01              0.07                    -0.00                  -0.04           -0.04                0.06                 0.34                  0.34                 0.44                    0.24              1.00
+
+=== Antes do OOS: 2020-01-01..2023-05-16
+  Carteira 12 (pesos iguais)     CAGR +107.1%  Sharpe +2.62  DD  -15%  vol  29%
+  B&H 4 ativos (pesos iguais)    CAGR  +57.7%  Sharpe +1.23  DD  -48%  vol  45%
+  B&H XAU                        CAGR   +9.6%  Sharpe +0.63  DD  -21%  vol  17%
+  B&H WTI                        CAGR   +4.3%  Sharpe +0.38  DD  -81%  vol  60%
+  B&H BTC                        CAGR  +48.1%  Sharpe +0.92  DD  -77%  vol  72%
+  B&H ETH                        CAGR +118.6%  Sharpe +1.31  DD  -79%  vol  95%
+  §1 Trailing SL XAU 30m         CAGR  +11.1%  Sharpe +0.68  DD  -15%  vol  18%
+  §9 MA Band WTI 4h              CAGR  +40.3%  Sharpe +0.95  DD  -36%  vol  47%
+  §20 HA PA WTI 4h               CAGR   +9.3%  Sharpe +0.43  DD  -66%  vol  58%
+  §21 Golden Edge WTI 30m        CAGR  +83.7%  Sharpe +1.29  DD  -45%  vol  61%
+  §25 MACD+Stoch WTI 4h          CAGR  +29.0%  Sharpe +0.73  DD  -58%  vol  62%
+  §6 ABCD BTC 1h                 CAGR  +36.7%  Sharpe +0.83  DD  -67%  vol  56%
+  §19 HA MACD BTC 1h             CAGR +118.1%  Sharpe +1.57  DD  -68%  vol  62%
+  §24 Multi-MA BTC 4h            CAGR  +71.0%  Sharpe +1.09  DD  -53%  vol  73%
+  §4c Scalping ETH 30m           CAGR +177.8%  Sharpe +1.54  DD  -55%  vol  94%
+  §8 MA Consec ETH 4h            CAGR  +60.4%  Sharpe +0.96  DD  -81%  vol  98%
+  §13 Chandelier ETH 30m         CAGR +147.6%  Sharpe +1.46  DD  -47%  vol  90%
+  §17 5 EMA ETH 4h               CAGR +106.8%  Sharpe +1.24  DD  -65%  vol 102%
+  corr media dos pares no trecho: +0.06
+
+=== Depois do OOS: 2023-05-17..2026-10-04
+  Carteira 12 (pesos iguais)     CAGR  +40.4%  Sharpe +2.04  DD   -8%  vol  17%
+  B&H 4 ativos (pesos iguais)    CAGR  +27.7%  Sharpe +0.99  DD  -31%  vol  29%
+  B&H XAU                        CAGR  +24.2%  Sharpe +1.16  DD  -28%  vol  21%
+  B&H WTI                        CAGR   +7.4%  Sharpe +0.38  DD  -41%  vol  39%
+  B&H BTC                        CAGR  +39.6%  Sharpe +0.95  DD  -53%  vol  46%
+  B&H ETH                        CAGR  +12.1%  Sharpe +0.49  DD  -68%  vol  64%
+  §1 Trailing SL XAU 30m         CAGR  +25.3%  Sharpe +1.21  DD  -20%  vol  20%
+  §9 MA Band WTI 4h              CAGR   +7.7%  Sharpe +0.41  DD  -26%  vol  28%
+  §20 HA PA WTI 4h               CAGR  +32.7%  Sharpe +0.91  DD  -32%  vol  39%
+  §21 Golden Edge WTI 30m        CAGR   +7.7%  Sharpe +0.39  DD  -44%  vol  40%
+  §25 MACD+Stoch WTI 4h          CAGR  +30.3%  Sharpe +0.84  DD  -42%  vol  42%
+  §6 ABCD BTC 1h                 CAGR  +51.0%  Sharpe +1.19  DD  -27%  vol  42%
+  §19 HA MACD BTC 1h             CAGR  +46.9%  Sharpe +1.10  DD  -51%  vol  44%
+  §24 Multi-MA BTC 4h            CAGR  +19.6%  Sharpe +0.62  DD  -57%  vol  45%
+  §4c Scalping ETH 30m           CAGR  +28.5%  Sharpe +0.71  DD  -54%  vol  63%
+  §8 MA Consec ETH 4h            CAGR  +54.6%  Sharpe +1.01  DD  -65%  vol  62%
+  §13 Chandelier ETH 30m         CAGR  +16.7%  Sharpe +0.56  DD  -41%  vol  62%
+  §17 5 EMA ETH 4h               CAGR  +15.5%  Sharpe +0.54  DD  -70%  vol  64%
+  corr media dos pares no trecho: +0.05
+
+=== Periodo todo: 2020-01-01..2026-10-04
+  Carteira 12 (pesos iguais)     CAGR  +70.4%  Sharpe +2.32  DD  -15%  vol  24%
+  B&H 4 ativos (pesos iguais)    CAGR  +41.8%  Sharpe +1.11  DD  -48%  vol  38%
+  B&H XAU                        CAGR  +16.7%  Sharpe +0.92  DD  -28%  vol  19%
+  B&H WTI                        CAGR   +5.9%  Sharpe +0.37  DD  -81%  vol  50%
+  B&H BTC                        CAGR  +43.7%  Sharpe +0.91  DD  -77%  vol  60%
+  B&H ETH                        CAGR  +56.4%  Sharpe +0.96  DD  -79%  vol  81%
+  §1 Trailing SL XAU 30m         CAGR  +18.0%  Sharpe +0.96  DD  -20%  vol  19%
+  §9 MA Band WTI 4h              CAGR  +22.9%  Sharpe +0.72  DD  -36%  vol  38%
+  §20 HA PA WTI 4h               CAGR  +20.4%  Sharpe +0.61  DD  -70%  vol  50%
+  §21 Golden Edge WTI 30m        CAGR  +40.6%  Sharpe +0.91  DD  -54%  vol  51%
+  §25 MACD+Stoch WTI 4h          CAGR  +29.6%  Sharpe +0.76  DD  -58%  vol  53%
+  §6 ABCD BTC 1h                 CAGR  +43.7%  Sharpe +0.98  DD  -67%  vol  50%
+  §19 HA MACD BTC 1h             CAGR  +78.9%  Sharpe +1.35  DD  -68%  vol  53%
+  §24 Multi-MA BTC 4h            CAGR  +43.0%  Sharpe +0.89  DD  -57%  vol  61%
+  §4c Scalping ETH 30m           CAGR  +88.7%  Sharpe +1.18  DD  -55%  vol  80%
+  §8 MA Consec ETH 4h            CAGR  +57.5%  Sharpe +0.95  DD  -81%  vol  82%
+  §13 Chandelier ETH 30m         CAGR  +69.8%  Sharpe +1.07  DD  -47%  vol  77%
+  §17 5 EMA ETH 4h               CAGR  +54.4%  Sharpe +0.95  DD  -70%  vol  85%
+  corr media dos pares no trecho: +0.06
