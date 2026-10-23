@@ -37,9 +37,9 @@ def stats(x):
     return f'CAGR {eq.iloc[-1] ** (1 / yrs) - 1:+7.1%}  Sharpe {sh:+5.2f}  DD {(eq / eq.cummax() - 1).min():+5.0%}  vol {x.std() * np.sqrt(365):4.0%}'
 
 
-def main(com_extra=False):
+def main(com_extra=False, k=8):
     C = pd.read_csv(os.path.join(D, 'results', 'study_aprovadas_corr.csv'), index_col=0)
-    sel, v = escolhe(C); ests = [e for e in EST if e[0] in sel]
+    sel, v = escolhe(C, k); ests = [e for e in EST if e[0] in sel]
     if com_extra:
         ests += [(r, a, tf, fn) for r, a, tf, fn in EXTRA]; sel = sel + [e[0] for e in EXTRA]
     else:
@@ -74,4 +74,4 @@ def main(com_extra=False):
 
 
 if __name__ == '__main__':
-    main('9' in sys.argv[1:])
+    a = sys.argv[1:]; main('9' in a, int(next((x[2:] for x in a if x.startswith('k=')), 8)))
