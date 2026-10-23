@@ -100,6 +100,26 @@ Todas reprovadas, exceto a candidata indicada. Ordem cronológica inversa.
 
 | # | Estratégia (autor, id do script) | Doc | Diagnóstico |
 | --- | --- | --- | --- |
+| 213 | AlphaTrend (`uvkI3QJC`) | [LOTE24_TV](docs/LOTE24_TV.md) | BTC 30m reprovada |
+| 212 | EMA Crossover with TP (`B7umqU7W`) | [LOTE24_TV](docs/LOTE24_TV.md) | nada robusto |
+| 211 | Bullish Engulfing [Quant Science] (`0moOi6G5`) | [LOTE24_TV](docs/LOTE24_TV.md) | nada acima do B&H |
+| 210 | VWAPStrategy (`t1lk7Uvk`) | [LOTE24_TV](docs/LOTE24_TV.md) | **aprovada: ETH 30m** (ressalva forte: custo) |
+| 209 | VWMA/SMA 3Commas (`cH5Tjlns`) | [LOTE24_TV](docs/LOTE24_TV.md) | nada acima do B&H |
+| 208 | Combo 123 Reversal & Statistical Volatility (`3w6l57bw`) | [LOTE24_TV](docs/LOTE24_TV.md) | nada (o filtro de volatilidade quase nunca vira) |
+| 207 | Low-High Trend (`o97hSCY4`) | [LOTE24_TV](docs/LOTE24_TV.md) | nada acima do B&H |
+| 206 | DEMA 8/20/63 (`AbRhwDeX`) | [LOTE24_TV](docs/LOTE24_TV.md) | ETH 4h quase (terço 1) |
+| 205 | Hull Fisher (`QTYaYuX7`) | [LOTE24_TV](docs/LOTE24_TV.md) | nada robusto |
+| 204 | Bitcoin Momentum (`Tce7SnL7`) | [LOTE24_TV](docs/LOTE24_TV.md) | nada acima do B&H |
+| 203 | Gap Filling (`ghocsiv7`) | [LOTE24_TV](docs/LOTE24_TV.md) | nada (quase não há gaps fora do WTI) |
+| 202 | Donchian free bot (`KZuFvEYa`) | [LOTE24_TV](docs/LOTE24_TV.md) | nada robusto |
+| 201 | SMC (`Zcf69Yqd`) | [LOTE24_TV](docs/LOTE24_TV.md) | WTI 15m reprovada |
+| 200 | Stochastic RSI + RVI (`22FnhBk9`) | [LOTE24_TV](docs/LOTE24_TV.md) | nada robusto |
+| 199 | HMA50 + Supertrend (`3SHJZytF`) | [LOTE24_TV](docs/LOTE24_TV.md) | ETH 30m quase (terço 1) |
+| 198 | SuperTrend Backtester (`GMZLB374`) | [LOTE24_TV](docs/LOTE24_TV.md) | nada robusto |
+| 197 | Triple EMA + QQE [TradeDots] (`M4y5HT3h`) | [LOTE24_TV](docs/LOTE24_TV.md) | nada acima do B&H |
+| 196 | Mbit MA (`hXrtpUdS`) | [LOTE24_TV](docs/LOTE24_TV.md) | nada robusto |
+| 195 | BEST Supertrend (`6knHPR6c`) | [LOTE24_TV](docs/LOTE24_TV.md) | **aprovada: ETH 1h ambos** (com ressalva) |
+| 194 | SOTT (`cJhpIJ2w`) | [LOTE24_TV](docs/LOTE24_TV.md) | WTI 30m reprovada (perde 2023-26) |
 | 193 | VWAP Momentum Pullback (`uhdaobby`) | [LOTE23_TV](docs/LOTE23_TV.md) | nada acima do B&H |
 | 192 | EVWMA VWAP Cross [QuantNomad] (`QPIGo8hs`) | [LOTE23_TV](docs/LOTE23_TV.md) | BTC 4h perde 2024-26 |
 | 191 | Trend Trader Strategy with MACD (`dUNRiEBG`) | [LOTE23_TV](docs/LOTE23_TV.md) | nada robusto |

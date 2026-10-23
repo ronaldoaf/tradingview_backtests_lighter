@@ -88,6 +88,22 @@ Convenções: sinal no fechamento, ordem na abertura seguinte, custo de spread +
 - **Robustez:** terços +610/+57/+25% vs B&H +330/+1/−11%; 2ª metade +29% vs +13%; custo 4× +124%.
 - **Ressalvas:** DD −70% (log), cerca de −50%; depende do volume da Binance; vizinhança boa no ETH (15m, 30m e 1h com multiplicador 1 acima do B&H; a versão só comprada também passa, por pouco na 2ª metade), mas no BTC a regra morre depois de 2022. Mais um seguidor de tendência no ETH (ver correlação abaixo).
 
+## 11. BEST Supertrend — ETH 1h (lote 24, aprovada com ressalva)
+
+- **Script:** `6knHPR6c` · [LOTE24_TV](LOTE24_TV.md) · `scripts/study_tvlote24.py`
+- **Regra:** SuperTrend diário (ATR3 × 3) do dia anterior como nível; regime de alta quando SMA7 > SMA20. Close ≥ linha diária no regime de alta compra; close ≤ linha no regime de baixa vende; sai no cruzamento contrário das médias. Comprado e vendido.
+- **Resultado:** +122% a.a. vs +56,8% do B&H; t = 3,6; 264 trades/ano.
+- **Robustez:** terços +366/+52/+64% vs B&H +330/+1/−11%; 2ª metade +31% vs +13%; custo 4× +105%.
+- **Ressalvas:** DD −80% (log); vizinhança boa (30m, 1h e 4h, multiplicador 3 e 1,5); a versão só comprada tem Sharpe 1,6 mas perde o terço 1; no BTC perde a 2ª metade. Mais um seguidor de tendência no ETH.
+
+## 12. VWAPStrategy — ETH 30m (lote 24, aprovada com ressalva forte)
+
+- **Script:** `t1lk7Uvk` · [LOTE24_TV](LOTE24_TV.md) · `scripts/study_tvlote24.py`
+- **Regra:** SMA3 do close cruza a VWAP diária (hlc3, âncora 00:00 UTC): acima compra, abaixo vende; sempre posicionado.
+- **Resultado:** +175% a.a. vs +56,8% do B&H; t = 5,2; ~1.770 trades/ano, 7 bp brutos por trade.
+- **Robustez:** terços +549/+103/+54% vs B&H +330/+1/−11%; 2ª metade +59% vs +13%; custo 2× +130%; custo 4× +61,5% (passa por pouco).
+- **Ressalvas:** muito sensível a custo (no 15m o custo 4× já reprova); DD −86% (log); depende do volume da Binance para a VWAP. Só vale com custo de execução baixo.
+
 ## Correlação entre as candidatas do ETH
 
 `scripts/study_eth_corr.py` → `results/study_eth_corr.txt`. Correlação dos retornos diários entre as cinco candidatas do ETH vai de 0,29 a 0,72; com o B&H do ETH fica perto de zero. Ficam na mesma direção 62% a 81% do tempo. Pares mais parecidos: RSI-MA × Ichimoku (0,72) e RSI-MA × Pivot ST (0,66). UT Bot e Scalping são os mais diferentes. A carteira com peso igual nas cinco cai o DD para cerca de −39% (vs −55% a −74% de cada uma, na marcação diária aproximada).
