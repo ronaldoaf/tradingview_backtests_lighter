@@ -1,0 +1,57 @@
+Carteira 8 das 34: L22 force BTC 4h {'fast': 5, 'slow': 50, 'short_ok': False}, L23 tema ETH 15min {'short_ok': True}, L26 csq ETH 4h {'mfl': 14}, L28 hamacd ETH 1h {'sltp': False}, L23 crazy WTI 1h {'sll': 30}, L25 tlb WTI 4h {'maf': False}, L29 bot WTI 1D {'k': 0.02}, L3 occ HULL13 x5 XAU 1h
+
+Pesos fixos (1/vol antes do OOS):
+  L22 force BTC 4h {'fast': 5, 'slow': 50, 'short_ok': False} 10.5%   vol  44%
+  L23 tema ETH 15min {'short_ok': True}                    9.6%   vol  49%
+  L26 csq ETH 4h {'mfl': 14}                               5.5%   vol  85%
+  L28 hamacd ETH 1h {'sltp': False}                        5.3%   vol  88%
+  L23 crazy WTI 1h {'sll': 30}                            20.1%   vol  23%
+  L25 tlb WTI 4h {'maf': False}                           11.4%   vol  41%
+  L29 bot WTI 1D {'k': 0.02}                               9.6%   vol  49%
+  L3 occ HULL13 x5 XAU 1h                                 27.9%   vol  17%
+
+Peso medio no movel 60d depois do OOS:
+  L22 force BTC 4h {'fast': 5, 'slow': 50, 'short_ok': False} 11.3%
+  L23 tema ETH 15min {'short_ok': True}                   11.6%
+  L26 csq ETH 4h {'mfl': 14}                               5.1%
+  L28 hamacd ETH 1h {'sltp': False}                        5.4%
+  L23 crazy WTI 1h {'sll': 30}                            27.0%
+  L25 tlb WTI 4h {'maf': False}                           12.4%
+  L29 bot WTI 1D {'k': 0.02}                               9.6%
+  L3 occ HULL13 x5 XAU 1h                                 17.5%
+
+=== Antes do OOS: 2020-01-01..2023-05-16
+  Pesos iguais                           CAGR +110.5%  Sharpe +3.82  DD  -16%  vol  20%
+  Inv-vol fixo (antes do OOS)            CAGR  +71.1%  Sharpe +3.94  DD   -7%  vol  14%
+  Inv-vol movel 30d                      CAGR  +63.4%  Sharpe +3.69  DD   -6%  vol  14%
+  Inv-vol movel 60d                      CAGR  +68.6%  Sharpe +3.92  DD   -6%  vol  14%
+  Inv-vol movel 120d                     CAGR  +69.5%  Sharpe +3.98  DD   -6%  vol  13%
+  Inv-vol fixo (antes do OOS) x1.44      CAGR +115.6%  Sharpe +3.94  DD  -10%  vol  20%
+  Inv-vol movel 30d x1.48                CAGR +105.1%  Sharpe +3.69  DD   -9%  vol  20%
+  Inv-vol movel 60d x1.48                CAGR +115.0%  Sharpe +3.92  DD   -8%  vol  20%
+  Inv-vol movel 120d x1.49               CAGR +117.6%  Sharpe +3.98  DD  -10%  vol  20%
+  B&H 4 ativos                           CAGR  +57.7%  Sharpe +1.23  DD  -48%  vol  45%
+
+=== Depois do OOS: 2023-05-17..2026-10-04
+  Pesos iguais                           CAGR  +41.6%  Sharpe +2.43  DD  -11%  vol  15%
+  Inv-vol fixo (antes do OOS)            CAGR  +29.2%  Sharpe +2.49  DD   -6%  vol  10%
+  Inv-vol movel 30d                      CAGR  +27.0%  Sharpe +2.30  DD   -5%  vol  11%
+  Inv-vol movel 60d                      CAGR  +25.1%  Sharpe +2.25  DD   -6%  vol  10%
+  Inv-vol movel 120d                     CAGR  +24.9%  Sharpe +2.24  DD   -6%  vol  10%
+  Inv-vol fixo (antes do OOS) x1.44      CAGR  +44.1%  Sharpe +2.49  DD   -9%  vol  15%
+  Inv-vol movel 30d x1.48                CAGR  +41.8%  Sharpe +2.30  DD   -8%  vol  16%
+  Inv-vol movel 60d x1.48                CAGR  +38.7%  Sharpe +2.25  DD   -8%  vol  15%
+  Inv-vol movel 120d x1.49               CAGR  +38.6%  Sharpe +2.24  DD   -9%  vol  15%
+  B&H 4 ativos                           CAGR  +27.7%  Sharpe +0.99  DD  -31%  vol  29%
+
+=== Periodo todo: 2020-01-01..2026-10-04
+  Pesos iguais                           CAGR  +72.6%  Sharpe +3.19  DD  -16%  vol  18%
+  Inv-vol fixo (antes do OOS)            CAGR  +48.6%  Sharpe +3.28  DD   -7%  vol  12%
+  Inv-vol movel 30d                      CAGR  +44.0%  Sharpe +3.05  DD   -6%  vol  12%
+  Inv-vol movel 60d                      CAGR  +45.2%  Sharpe +3.16  DD   -6%  vol  12%
+  Inv-vol movel 120d                     CAGR  +45.4%  Sharpe +3.20  DD   -6%  vol  12%
+  Inv-vol fixo (antes do OOS) x1.44      CAGR  +76.2%  Sharpe +3.28  DD  -10%  vol  18%
+  Inv-vol movel 30d x1.48                CAGR  +70.4%  Sharpe +3.05  DD   -9%  vol  18%
+  Inv-vol movel 60d x1.48                CAGR  +72.6%  Sharpe +3.16  DD   -8%  vol  18%
+  Inv-vol movel 120d x1.49               CAGR  +73.5%  Sharpe +3.20  DD  -10%  vol  18%
+  B&H 4 ativos                           CAGR  +41.8%  Sharpe +1.11  DD  -48%  vol  38%
