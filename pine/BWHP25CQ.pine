@@ -1,0 +1,41 @@
+//@version=3
+strategy(title = "14/28 SMA and RSI", shorttitle = "14/28 SMA and RSI", overlay = false, pyramiding = 0, default_qty_type = strategy.percent_of_equity, default_qty_value = 100, currency = currency.USD)
+src = close, len = input(14, minval=1, title="Length")
+take_Profit=input(8, title="Take Profit", type=integer)
+quantityPercentage=input(50, title="Percent of Quantity to Sell", type=integer)
+closeOverbought=input(true, title="Close Overbought and Take Profit")
+up = rma(max(change(src), 0), len)
+down = rma(-min(change(src), 0), len)
+rsi = down == 0 ? 100 : up == 0 ? 0 : 100 - (100 / (1 + up / down))
+longCondition = 0
+sellCondition = 0
+takeProfit = 0
+quantityRemainder = 100
+smaSignal = input(14, title="SMA Signal Period", type=integer)
+smaLong = input(28, title="SMA Longer Period", type=integer)
+if ((sma(close, smaSignal) >= sma(close, smaLong) and rsi<= 30) or (rsi<=13)) and strategy.position_size==0
+    longCondition:=1
+
+if longCondition==1
+    strategy.entry("Buy", strategy.long)
+    
+profit = ((close-strategy.position_avg_price)/strategy.position_avg_price) * 100
+
+if sma(close, smaSignal) <= sma(close, smaLong) and strategy.position_size>1
+    sellCondition := 1
+
+if strategy.position_size>=1
+    if closeOverbought == true
+        if profit>=take_Profit and takeProfit == 0
+            strategy.exit("Take Profit", profit=take_Profit, qty_percent=quantityPercentage)
+            takeProfit:=1
+            quantityRemainder:=100-quantityPercentage
+    if sellCondition == 1 and quantityRemainder<100
+        strategy.close("Buy")
+
+    if closeOverbought == false and rsi>70
+        strategy.close("Take Profit")
+        
+plot(longCondition, "Buy Condition", green)
+plot(takeProfit, "Partial Sell Condition", orange)
+plot(sellCondition, "Sell Condition", red)

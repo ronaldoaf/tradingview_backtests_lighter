@@ -1,0 +1,21 @@
+//@version=3
+strategy("bt_heikinashi", overlay=true)
+
+h_a = heikinashi(tickerid)
+vp = input(3, "Validation Period")
+
+c = security(h_a, period, close)
+o = security(h_a, period, open)
+
+lt = true
+st = true
+
+for i = 0 to vp-1
+    lt:= lt and c[i] > o[i]
+    st:= st and c[i] < o[i]
+
+l = lt and c[vp] < o[vp]
+s = st and c[vp] > o[vp]
+
+strategy.entry("long", strategy.long, when=l)
+strategy.entry("short", strategy.short, when=s)
