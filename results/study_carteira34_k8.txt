@@ -1,0 +1,37 @@
+Carteira das 34 aprovadas (criterio novo), pesos iguais: §8 MA Consec ETH 4h, §4c Scalping ETH 30m, §24 Multi-MA BTC 4h, §18 Wyckoff ETH 4h, §17 5 EMA ETH 4h, §16 HULL+T3 ETH 1h, L3 occ HULL13 x5 XAU 1h, L7 tsl XAU 4h {'val': 2.0}, L12 rsima ETH 15min {'rl': 5, 'ml': 50}, L13 scalp BTC 1D {'sma_len': 25, 'ema_len': 0}, L14 drsi BTC 1h {'rl': 21, 'window': 50, 'mode': 'zero'}, L14 drsi BTC 4h {'rl': 21, 'window': 100, 'mode': 'zero'}, L14 drsi ETH 1h {'rl': 21, 'window': 50, 'mode': 'signal'}, L14 drsi WTI 4h {'rl': 14, 'window': 30, 'mode': 'signal'}, L14 hap XAU 1h {'start': 0.01, 'inc': 0.01, 'mx': 0.1}, L15 sbs ETH 30min {'sl': 0.02, 'session': False}, L20 ds BTC 30min {'f': 8, 's': 72}, L20 nw WTI 1D {'hlen': 8, 'x0': 25, 'shorts': True}, L21 gs WTI 4h, L22 force BTC 4h {'fast': 5, 'slow': 50, 'short_ok': False}, L23 twin ETH 4h {'sltp': False}, L23 tema ETH 15min {'short_ok': True}, L23 crazy WTI 1h {'sll': 30}, L24 best ETH 1h {'short_ok': False}, L25 sta WTI 4h {'ln': 14}, L25 tlb WTI 4h {'maf': False}, L26 csq ETH 4h {'mfl': 14}, L28 hamacd ETH 1h {'sltp': False}, L29 vf BTC 1D, L29 bot WTI 1D {'k': 0.02}, L31 cmb BTC 1h, L31 cmb ETH 4h, L31 lch WTI 15min, L32 prv ETH 4h
+Por ativo: ETH 15, BTC 8, WTI 8, XAU 3
+
+As 8 de menor |corr| media antes do OOS (0.027): L3 occ HULL13 x5 XAU 1h, L22 force BTC 4h {'fast': 5, 'slow': 50, 'short_ok': False}, L23 tema ETH 15min {'short_ok': True}, L23 crazy WTI 1h {'sll': 30}, L25 tlb WTI 4h {'maf': False}, L26 csq ETH 4h {'mfl': 14}, L28 hamacd ETH 1h {'sltp': False}, L29 bot WTI 1D {'k': 0.02}
+                                                             L3 occ HULL13 x5 XAU 1h  L22 force BTC 4h {'fast': 5, 'slow': 50, 'short_ok': False}  L23 tema ETH 15min {'short_ok': True}  L23 crazy WTI 1h {'sll': 30}  L25 tlb WTI 4h {'maf': False}  L26 csq ETH 4h {'mfl': 14}  L28 hamacd ETH 1h {'sltp': False}  L29 bot WTI 1D {'k': 0.02}
+L3 occ HULL13 x5 XAU 1h                                                         1.00                                                         0.02                                   0.01                          0.01                          -0.00                       -0.03                               0.01                        0.02
+L22 force BTC 4h {'fast': 5, 'slow': 50, 'short_ok': False}                     0.02                                                         1.00                                   0.02                          0.03                           0.03                        0.04                              -0.02                        0.00
+L23 tema ETH 15min {'short_ok': True}                                           0.01                                                         0.02                                   1.00                          0.03                          -0.04                        0.08                               0.05                       -0.00
+L23 crazy WTI 1h {'sll': 30}                                                    0.01                                                         0.03                                   0.03                          1.00                           0.18                       -0.01                              -0.02                        0.02
+L25 tlb WTI 4h {'maf': False}                                                  -0.00                                                         0.03                                  -0.04                          0.18                           1.00                       -0.03                               0.02                       -0.00
+L26 csq ETH 4h {'mfl': 14}                                                     -0.03                                                         0.04                                   0.08                         -0.01                          -0.03                        1.00                              -0.00                       -0.01
+L28 hamacd ETH 1h {'sltp': False}                                               0.01                                                        -0.02                                   0.05                         -0.02                           0.02                       -0.00                               1.00                        0.00
+L29 bot WTI 1D {'k': 0.02}                                                      0.02                                                         0.00                                  -0.00                          0.02                          -0.00                       -0.01                               0.00                        1.00
+
+=== Antes do OOS: 2020-01-01..2023-05-16
+  Carteira 8 (das 34)            CAGR +110.5%  Sharpe +3.82  DD  -16%  vol  20%
+  Carteira 34                    CAGR +140.1%  Sharpe +3.67  DD   -7%  vol  25%
+  Carteira 6 revisao             CAGR +167.1%  Sharpe +1.87  DD  -51%  vol  64%
+  Carteira 8 anterior            CAGR  +99.4%  Sharpe +2.55  DD  -18%  vol  29%
+  B&H 4 ativos                   CAGR  +57.7%  Sharpe +1.23  DD  -48%  vol  45%
+  corr media dos pares no trecho: +0.10
+
+=== Depois do OOS: 2023-05-17..2026-10-04
+  Carteira 8 (das 34)            CAGR  +41.6%  Sharpe +2.43  DD  -11%  vol  15%
+  Carteira 34                    CAGR  +43.1%  Sharpe +2.42  DD   -7%  vol  15%
+  Carteira 6 revisao             CAGR  +39.1%  Sharpe +1.16  DD  -26%  vol  33%
+  Carteira 8 anterior            CAGR  +42.7%  Sharpe +1.98  DD  -12%  vol  19%
+  B&H 4 ativos                   CAGR  +27.7%  Sharpe +0.99  DD  -31%  vol  29%
+  corr media dos pares no trecho: +0.08
+
+=== Periodo todo: 2020-01-01..2026-10-04
+  Carteira 8 (das 34)            CAGR  +72.6%  Sharpe +3.19  DD  -16%  vol  18%
+  Carteira 34                    CAGR  +85.2%  Sharpe +3.10  DD   -7%  vol  21%
+  Carteira 6 revisao             CAGR  +92.6%  Sharpe +1.55  DD  -51%  vol  51%
+  Carteira 8 anterior            CAGR  +68.6%  Sharpe +2.28  DD  -18%  vol  24%
+  B&H 4 ativos                   CAGR  +41.8%  Sharpe +1.11  DD  -48%  vol  38%
+  corr media dos pares no trecho: +0.10

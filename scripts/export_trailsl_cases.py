@@ -1,7 +1,7 @@
 """Casos de paridade do Trailing SL (QuantNomad) para o modo sombra do paper (test/trailsl.test.js).
 
 Exporta, de fatias reais do ouro, as barras de 30m, os minutos de cada barra e os trades que o motor
-do backtest (study_tvlote7._run) produz, para o JS reproduzir bit a bit.
+do backtest (study_trailsl._run) produz, para o JS reproduzir bit a bit.
 
 uso: python export_trailsl_cases.py [saida.json]
 """
@@ -11,7 +11,7 @@ import numpy as np, pandas as pd
 D = os.environ.get('EDGE_ROOT') or os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(D, 'scripts'))
 import tvlib as T
-import study_tvlote7 as S
+import study_trailsl as S
 
 TF, PCT = '30min', 0.02
 FATIAS = [('2018-04-01', '2018-05-15'), ('2020-02-20', '2020-04-05'),

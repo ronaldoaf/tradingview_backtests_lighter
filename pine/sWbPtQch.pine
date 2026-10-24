@@ -1,0 +1,131 @@
+//@version=2
+strategy(title="Ichimoku/SAR Strategy - Bitcoin",overlay=true, pyramiding=1, default_qty_type=strategy.percent_of_equity, default_qty_value=100, commission_type=strategy.commission.percent, commission_value=0.2)
+
+
+
+
+// Parabolic SAR
+
+start = input(0.02)
+increment = input(0.02)
+maximum = input(0.2)
+
+psar = security(tickerid, "D", sar(start, increment, maximum))
+
+plot(psar, title="Par SAR", color=white, linewidth=2, style=cross)
+
+
+// Ichimoku
+
+conversionPeriods = input(10, minval=1, title="Conversion Line Periods"),
+basePeriods = input(30, minval=1, title="Base Line Periods")
+laggingSpan2Periods = input(60, minval=1, title="Lagging Span 2 Periods"),
+displacement = input(30, minval=1, title="Displacement")
+
+donchian(len) => avg(lowest(len), highest(len))
+
+conversionLine = donchian(conversionPeriods)
+baseLine = donchian(basePeriods)
+leadLine1 = avg(conversionLine, baseLine)
+leadLine2 = donchian(laggingSpan2Periods)
+
+
+p1 = plot(leadLine1, offset = displacement, color=green,
+ title="Lead 1")
+p2 = plot(leadLine2, offset = displacement, color=red, 
+ title="Lead 2")
+fill(p1, p2, color = leadLine1 > leadLine2 ? color(green,50) : color(red,50))
+
+bottomcloud=leadLine2[displacement-1]
+uppercloud=leadLine1[displacement-1]
+
+
+
+
+// RSI
+
+rsilength = input(14, title="RSI Length")
+overSold = input(20, title="RSI Overbought")
+overBought = input(80, title="RSI Oversold")
+rsiprice = close
+
+vrsi = rsi(rsiprice, rsilength)
+
+
+
+
+// Bollinger Bands
+
+length = input(20, minval=1, title="BB Length")
+mult = 2
+
+basis = sma(close, length)
+dev = mult * stdev(close, length)
+
+upperbb = security(tickerid, "D", basis + dev)
+lowerbb = security(tickerid, "D", basis - dev)
+
+
+
+plot(lowerbb, title="Lower BB")
+plot(upperbb, title="Upper BB")
+plot(basis, title="BB Basis", color=red)
+
+// SMA Indicator - Are we in a Bull or Bear market according to 200 SMA?
+SMA200 = sma(close, input(200))
+EMA = ema(close,input(21))
+
+plot(SMA200,color=green, linewidth=2)
+plot(EMA,color=yellow, linewidth=2)
+
+
+
+
+//MACD Indicator - Is the MACD bullish or bearish?
+
+fastLength = input(12)
+slowlength = input(26)
+MACDLength = input(9)
+
+MACD = ema(close, fastLength) - ema(close, slowlength)
+aMACD = ema(MACD, MACDLength)
+delta = MACD - aMACD
+[main,signal,histo]=macd(close,fastLength,slowlength,MACDLength)
+
+stop_price=close
+
+// Set Buy/Sell conditions
+
+buy_1 = if low>psar and vrsi<overBought and close<upperbb and close>EMA and (histo>histo[1] or delta>0)
+    true
+buy_2 = if uppercloud>=bottomcloud and close>min(uppercloud,bottomcloud)
+    true
+buy_3 = if uppercloud<bottomcloud and close>max(uppercloud,bottomcloud)
+    true
+buy_4 = if close>max(uppercloud,bottomcloud)
+    true
+
+sell_1 = if vrsi>overSold and close>lowerbb and close<EMA and (histo<histo[1] or delta<0)
+    true
+sell_2 = if uppercloud<bottomcloud and close<max(uppercloud,bottomcloud)
+    true
+sell_3 = if uppercloud>=bottomcloud and close<min(uppercloud,bottomcloud)
+    true
+sell_4 = if close<min(uppercloud,bottomcloud)
+    true
+
+
+buy_entry = if (buy_1 and ((close>SMA200 and (buy_2 or buy_3)) or (close<SMA200 and buy_4)))
+    true
+
+sell_entry = if (sell_1 and ((close<SMA200 and (sell_2 or sell_3)) or (close>SMA200 and sell_4)))
+    true
+
+
+strategy.entry("Buy", strategy.long, comment="Buy", when = buy_entry and not sell_entry)
+
+strategy.close("Buy", when = (sell_entry))
+
+
+
+

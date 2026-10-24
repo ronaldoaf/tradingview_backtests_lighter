@@ -1,0 +1,78 @@
+
+================= xau =================
+  M1 2017-09-01 -> 2026-10-04
+
+### 1. EVWMA VWAP MACD (30, 5/20, sempre no mercado)
+  5min EVW default                   11514 tr (1265.5/ano,   0.29d) | bruto    -0.7bp liq    -2.2bp (win 61%) | CAGR  -21.6% vs B&H  +13.4% | Sh -1.49 DD  -244% expo 100% | ctl    -1.5bp t=-2.01
+  15min EVW default                  5623 tr (618.0/ano,   0.59d) | bruto    -0.2bp liq    -1.7bp (win 51%) | CAGR  -14.6% vs B&H  +13.4% | Sh -0.97 DD  -165% expo 100% | ctl    -1.6bp t=-0.15
+  30min EVW default                  3314 tr (364.2/ano,   1.00d) | bruto    +0.6bp liq    -0.9bp (win 43%) | CAGR   -4.5% vs B&H  +13.4% | Sh -0.29 DD   -64% expo 100% | ctl    -1.3bp t=+0.28
+  1h EVW default                     1879 tr (206.5/ano,   1.77d) | bruto    +7.1bp liq    +5.4bp (win 38%) | CAGR   +7.4% vs B&H  +13.4% | Sh +0.41 DD   -51% expo 100% | ctl    -1.2bp t=+2.45
+  4h EVW default                      658 tr ( 72.3/ano,   5.04d) | bruto    +9.7bp liq    +8.5bp (win 37%) | CAGR   +4.7% vs B&H  +13.4% | Sh +0.27 DD   -61% expo 100% | ctl    -3.1bp t=+1.91
+
+### 2. Strategy Code Example (EMA14x21 do open, stop 0,1% alvo 0,5%)
+  5min SCE default                   19917 tr (2189.0/ano,   0.11d) | bruto    -0.1bp liq    -1.6bp (win 23%) | CAGR  -31.6% vs B&H  +13.4% | Sh -3.64 DD  -347% expo  62% | ctl    -1.6bp t=-0.42
+  15min SCE default                  6354 tr (698.3/ano,   0.17d) | bruto    +0.0bp liq    -1.5bp (win 20%) | CAGR  -10.3% vs B&H  +13.4% | Sh -1.61 DD  -109% expo  33% | ctl    -1.5bp t=-0.09
+  30min SCE default                  3186 tr (350.2/ano,   0.20d) | bruto    +0.4bp liq    -1.1bp (win 19%) | CAGR   -3.5% vs B&H  +13.4% | Sh -0.77 DD   -41% expo  20% | ctl    -1.5bp t=+0.36
+  1h SCE default                     1561 tr (171.6/ano,   0.29d) | bruto    +0.7bp liq    -0.9bp (win 19%) | CAGR   -1.7% vs B&H  +13.4% | Sh -0.45 DD   -24% expo  11% | ctl    -1.6bp t=+0.71
+  4h SCE default                      401 tr ( 44.1/ano,   0.64d) | bruto    +2.6bp liq    +1.5bp (win 19%) | CAGR   +2.1% vs B&H  +13.4% | Sh +0.96 DD    -9% expo   5% | ctl    -1.5bp t=+0.90
+  1D SCE default                       82 tr (  9.0/ano,   1.59d) | bruto    +0.2bp liq    -0.2bp (win 17%) | CAGR   +0.1% vs B&H  +13.4% | Sh +0.10 DD    -8% expo   4% | ctl    -0.9bp t=+0.07
+
+### 3. Heikin Ashi Supertrend (10, 2,7; alvo 47%, stop 21%)
+  15min HAST default                 3556 tr (390.8/ano,   0.93d) | bruto    +1.5bp liq    -0.4bp (win 35%) | CAGR   +1.7% vs B&H  +13.4% | Sh +0.10 DD   -69% expo 100% | ctl    -1.4bp t=+0.99
+  30min HAST default                 1768 tr (194.3/ano,   1.88d) | bruto    +5.7bp liq    +3.7bp (win 37%) | CAGR   +9.5% vs B&H  +13.4% | Sh +0.54 DD   -25% expo 100% | ctl    -1.4bp t=+1.80
+  1h HAST default                     888 tr ( 97.6/ano,   3.74d) | bruto    +8.5bp liq    +5.8bp (win 39%) | CAGR   +6.8% vs B&H  +13.4% | Sh +0.38 DD   -27% expo 100% | ctl    +1.1bp t=+0.83
+  4h HAST default                     256 tr ( 28.1/ano,  12.90d) | bruto   +20.5bp liq   +21.5bp (win 42%) | CAGR   +5.2% vs B&H  +13.4% | Sh +0.31 DD   -35% expo  99% | ctl    +4.4bp t=+0.99
+  1D HAST default                      48 tr (  5.3/ano,  58.44d) | bruto   +41.9bp liq   +39.2bp (win 46%) | CAGR   -1.3% vs B&H  +13.4% | Sh -0.10 DD   -58% expo  83% | ctl   +10.2bp t=+0.38
+
+### 4. Grab Trading System (80/21)
+  5min GRAB default                  9946 tr (1093.1/ano,   0.12d) | bruto    +0.6bp liq    -1.0bp (win 52%) | CAGR   -9.6% vs B&H  +13.4% | Sh -1.16 DD   -99% expo  35% | ctl    -1.6bp t=+2.05
+  15min GRAB default                 3313 tr (364.1/ano,   0.34d) | bruto    +0.8bp liq    -0.8bp (win 52%) | CAGR   -2.3% vs B&H  +13.4% | Sh -0.27 DD   -37% expo  35% | ctl    -1.1bp t=+0.32
+  30min GRAB default                 1700 tr (186.8/ano,   0.68d) | bruto    -2.0bp liq    -3.4bp (win 53%) | CAGR   -6.2% vs B&H  +13.4% | Sh -0.75 DD   -64% expo  35% | ctl    -1.1bp t=-1.83
+  1h GRAB default                     814 tr ( 89.5/ano,   1.49d) | bruto    -0.7bp liq    -1.8bp (win 53%) | CAGR   +0.0% vs B&H  +13.4% | Sh +0.00 DD   -30% expo  35% | ctl    -1.9bp t=+0.04
+  4h GRAB default                     198 tr ( 21.8/ano,   6.14d) | bruto   -16.5bp liq   -20.4bp (win 53%) | CAGR   -2.9% vs B&H  +13.4% | Sh -0.48 DD   -55% expo  34% | ctl    -3.9bp t=-0.89
+  1D GRAB default                      40 tr (  4.4/ano,  25.82d) | bruto  +150.5bp liq  +112.0bp (win 62%) | CAGR   +4.8% vs B&H  +13.4% | Sh +0.96 DD   -14% expo  31% | ctl   +21.0bp t=+1.79
+
+### 5. Easy System 420 (placar > 15 ou zigzag, com SuperTrend do VPT)
+  15min EASY default                 5064 tr (556.6/ano,   0.66d) | bruto    +2.1bp liq    +0.5bp (win 35%) | CAGR   -0.2% vs B&H  +13.4% | Sh -0.01 DD  -101% expo 100% | ctl    -1.5bp t=+2.27
+  30min EASY default                 2566 tr (282.0/ano,   1.29d) | bruto    +4.8bp liq    +2.9bp (win 36%) | CAGR   +3.6% vs B&H  +13.4% | Sh +0.21 DD   -48% expo 100% | ctl    -2.2bp t=+2.19
+  1h EASY default                    1308 tr (143.8/ano,   2.54d) | bruto    +5.7bp liq    +3.4bp (win 37%) | CAGR   +4.2% vs B&H  +13.4% | Sh +0.24 DD   -32% expo 100% | ctl    -1.5bp t=+1.05
+  4h EASY default                     382 tr ( 42.0/ano,   8.66d) | bruto   +10.9bp liq   +13.1bp (win 37%) | CAGR   +4.4% vs B&H  +13.4% | Sh +0.26 DD   -34% expo 100% | ctl    -2.7bp t=+1.39
+  1D EASY default                      74 tr (  8.1/ano,  44.30d) | bruto   +21.6bp liq   +10.2bp (win 41%) | CAGR   +1.6% vs B&H  +13.4% | Sh +0.09 DD   -45% expo  98% | ctl    +3.7bp t=+0.11
+
+=== resumo xau (807 celulas) ===
+  easy    185 cel | liq>0  163 | liq>0 e t>2  23 | CAGR>B&H   6 | melhor CAGR +14.2%
+  evw      95 cel | liq>0   42 | liq>0 e t>2   8 | CAGR>B&H   0 | melhor CAGR +11.4%
+  grab    196 cel | liq>0   31 | liq>0 e t>2   2 | CAGR>B&H   0 | melhor CAGR +4.8%
+  hast    185 cel | liq>0  152 | liq>0 e t>2  14 | CAGR>B&H   0 | melhor CAGR +12.8%
+  sce     146 cel | liq>0   87 | liq>0 e t>2  11 | CAGR>B&H   1 | melhor CAGR +13.5%
+
+  top 15 por CAGR:
+ est    TF                         cfg  trades  por_ano  bp_bruto  bp_liq   win  cagr    bh  sharpe     dd  expo  ctl_bp     t
+easy 15min        e15 st6.0 zig0 ambos    1788  196.514     8.218   6.092 0.369 0.142 0.134   0.794 -0.236 1.000  -0.754 3.122
+easy 15min        e10 st6.0 zig1 ambos    1810  198.932     8.041   5.927 0.368 0.141 0.134   0.788 -0.232 1.000  -1.413 2.576
+easy 15min         e5 st6.0 zig1 ambos    1810  198.932     8.033   5.919 0.368 0.140 0.134   0.787 -0.232 1.000  -1.596 2.850
+easy 15min         e5 st6.0 zig0 ambos    1810  198.932     8.033   5.919 0.368 0.140 0.134   0.787 -0.232 1.000  -1.386 2.681
+easy 15min        e10 st6.0 zig0 ambos    1810  198.932     7.871   5.757 0.367 0.137 0.134   0.770 -0.239 1.000  -0.187 2.324
+easy 15min        e15 st6.0 zig1 ambos    1808  198.712     7.917   5.803 0.366 0.137 0.134   0.767 -0.241 1.000  -1.627 3.077
+ sce 30min 14/21 sl0.005 tp0.025 ambos    3186  350.165     5.103   3.317 0.319 0.135 0.134   0.933 -0.242 0.859  -1.798 3.524
+hast 15min       m4.0 HA tp0.03 sl0.01    2058  226.189     8.119   6.125 0.363 0.128 0.134   0.827 -0.236 0.929  -1.753 2.679
+hast    4h   m2.7 normal tp0.47 sl0.21     366   40.228    25.761  25.820 0.399 0.118 0.134   0.651 -0.190 0.996  -1.038 1.631
+hast    4h     m2.7 normal tp0.0 sl0.0     366   40.228    25.761  25.820 0.399 0.118 0.134   0.651 -0.190 0.996  -2.960 2.701
+hast 15min   m4.0 normal tp0.03 sl0.01    2892  317.851     3.559   1.803 0.346 0.117 0.134   0.726 -0.359 0.956  -1.414 1.591
+ evw 30min             n100 5/20 ambos    2480  272.570     5.951   4.375 0.363 0.114 0.134   0.648 -0.359 1.000  -0.799 3.140
+hast 15min         m4.0 HA tp0.0 sl0.0    2058  226.189     7.426   5.505 0.366 0.113 0.134   0.632 -0.284 1.000  -1.369 2.861
+easy    4h         e5 st1.5 zig0 ambos     724   79.576    14.701  12.076 0.394 0.113 0.134   0.620 -0.315 1.000   2.192 1.565
+hast    4h         m1.5 HA tp0.0 sl0.0     490   53.857    18.871  17.131 0.418 0.112 0.134   0.609 -0.297 0.995   0.380 1.596
+
+  top 10 por t:
+ est    TF                         cfg  trades  por_ano  bp_bruto  bp_liq   win  cagr    bh  sharpe     dd  expo  ctl_bp     t
+easy    1h        e15 st1.5 zig1 ambos    2448  269.055     4.846   3.028 0.363 0.090 0.134   0.495 -0.229 1.000  -2.114 5.006
+ sce 30min 14/21 sl0.005 tp0.025 ambos    3186  350.165     5.103   3.317 0.319 0.135 0.134   0.933 -0.242 0.859  -1.798 3.524
+easy 30min         e5 st3.0 zig0 ambos    2610  286.858     4.640   2.814 0.366 0.037 0.134   0.215 -0.479 1.000  -2.158 3.476
+hast    1h   m1.5 normal tp0.47 sl0.21    2736  300.708     4.180   2.177 0.352 0.068 0.134   0.392 -0.295 1.000  -1.929 3.450
+ sce 30min       14/21 sl0.0 tp0 ambos    3185  350.055     4.683   2.855 0.332 0.109 0.134   0.623 -0.261 1.000  -1.550 3.248
+ evw 30min             n100 5/20 ambos    2480  272.570     5.951   4.375 0.363 0.114 0.134   0.648 -0.359 1.000  -0.799 3.140
+easy 15min        e15 st6.0 zig0 ambos    1788  196.514     8.218   6.092 0.369 0.142 0.134   0.794 -0.236 1.000  -0.754 3.122
+ sce 30min    14/21 sl0.02 tp0.1 ambos    3185  350.055     4.626   2.795 0.332 0.103 0.134   0.606 -0.261 0.995  -1.158 3.102
+easy 15min        e15 st6.0 zig1 ambos    1808  198.712     7.917   5.803 0.366 0.137 0.134   0.767 -0.241 1.000  -1.627 3.077
+ evw    1h             n100 5/20 ambos    1571  172.666     7.933   5.871 0.370 0.076 0.134   0.425 -0.498 1.000  -2.231 2.996

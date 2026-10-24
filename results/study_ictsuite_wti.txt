@@ -1,0 +1,56 @@
+
+================= wti =================
+  M1 2017-01-03 -> 2026-09-30
+
+### 5min
+  5min unicorn                        147 tr ( 15.1/ano,   0.24d) | bruto   +12.0bp liq    +9.3bp (win 62%) | CAGR   +1.6% vs B&H   +5.4% | Sh +1.57 DD   -16% expo   1% | ctl    -2.6bp t=+1.19
+  5min unicorn so long                 84 tr (  8.6/ano,   0.24d) | bruto   +15.6bp liq    +9.1bp (win 60%) | CAGR   +1.1% vs B&H   +5.4% | Sh +1.60 DD   -11% expo   1% | ctl    -1.3bp t=+0.90
+  5min unicorn so short                63 tr (  6.5/ano,   0.23d) | bruto    +7.1bp liq    +9.5bp (win 65%) | CAGR   +0.5% vs B&H   +5.4% | Sh +1.58 DD    -7% expo   0% | ctl    -5.5bp t=+1.34
+  5min ote                           7048 tr (723.0/ano,   0.09d) | bruto    +0.6bp liq    -1.3bp (win 14%) | CAGR  -12.6% vs B&H   +5.4% | Sh -0.65 DD  -132% expo  18% | ctl    -1.8bp t=+0.50
+  5min ote so long                   3819 tr (391.8/ano,   0.09d) | bruto    +1.5bp liq    -2.1bp (win 14%) | CAGR  -11.0% vs B&H   +5.4% | Sh -0.86 DD  -114% expo   9% | ctl    -2.3bp t=+0.21
+  5min ote so short                  4037 tr (414.1/ano,   0.09d) | bruto    -0.6bp liq    -0.9bp (win 15%) | CAGR   -4.7% vs B&H   +5.4% | Sh -0.32 DD   -65% expo  10% | ctl    -1.6bp t=+0.61
+  5min sb                            3221 tr (330.4/ano,   0.23d) | bruto    -1.7bp liq    -3.7bp (win 55%) | CAGR  -10.9% vs B&H   +5.4% | Sh -0.61 DD  -127% expo  16% | ctl    -2.4bp t=-0.65
+  5min sb so long                    1669 tr (171.2/ano,   0.23d) | bruto    +6.2bp liq    -0.0bp (win 58%) | CAGR   -1.6% vs B&H   +5.4% | Sh -0.18 DD   -47% expo   8% | ctl    -3.6bp t=+1.20
+  5min sb so short                   1664 tr (170.7/ano,   0.23d) | bruto    -9.0bp liq    -6.7bp (win 52%) | CAGR   -8.9% vs B&H   +5.4% | Sh -0.80 DD  -101% expo   8% | ctl    -0.3bp t=-2.49
+  5min lr                             526 tr ( 54.0/ano,   0.19d) | bruto    -7.4bp liq    -8.9bp (win 74%) | CAGR   -4.5% vs B&H   +5.4% | Sh -0.87 DD   -61% expo   2% | ctl    -1.2bp t=-2.14
+  5min lr so long                     265 tr ( 27.2/ano,   0.16d) | bruto    +9.0bp liq    +4.0bp (win 77%) | CAGR   +0.5% vs B&H   +5.4% | Sh +0.35 DD   -13% expo   1% | ctl    -4.7bp t=+1.41
+  5min lr so short                    272 tr ( 27.9/ano,   0.22d) | bruto   -22.6bp liq   -20.6bp (win 72%) | CAGR   -4.8% vs B&H   +5.4% | Sh -1.33 DD   -53% expo   1% | ctl    -0.4bp t=-4.40
+
+### 15min
+  15min unicorn                        54 tr (  5.5/ano,   0.61d) | bruto    -3.5bp liq    -7.3bp (win 54%) | CAGR   -0.9% vs B&H   +5.4% | Sh -1.35 DD   -17% expo   1% | ctl    +2.6bp t=-0.39
+  15min unicorn so long                33 tr (  3.4/ano,   0.58d) | bruto    +6.7bp liq    -6.0bp (win 58%) | CAGR   -0.8% vs B&H   +5.4% | Sh -1.98 DD   -16% expo   1% | ctl    -3.6bp t=-0.07
+  15min unicorn so short               21 tr (  2.2/ano,   0.66d) | bruto   -19.6bp liq    -9.5bp (win 48%) | CAGR   -0.1% vs B&H   +5.4% | Sh -0.36 DD    -9% expo   0% | ctl    +5.9bp t=-0.38
+  15min ote                          2587 tr (265.4/ano,   0.24d) | bruto    +2.9bp liq    +1.1bp (win 15%) | CAGR   +0.7% vs B&H   +5.4% | Sh +0.04 DD   -80% expo  16% | ctl    -2.1bp t=+1.58
+  15min ote so long                  1382 tr (141.8/ano,   0.22d) | bruto    +9.6bp liq    +3.5bp (win 16%) | CAGR   +2.1% vs B&H   +5.4% | Sh +0.19 DD   -42% expo   8% | ctl    -3.1bp t=+2.24
+  15min ote so short                 1458 tr (149.6/ano,   0.23d) | bruto    -2.4bp liq    -0.1bp (win 15%) | CAGR   +0.5% vs B&H   +5.4% | Sh +0.06 DD   -33% expo   9% | ctl    -0.1bp t=-0.02
+  15min lr                            130 tr ( 13.3/ano,   0.27d) | bruto   +21.4bp liq   +17.6bp (win 82%) | CAGR   +2.9% vs B&H   +5.4% | Sh +3.39 DD    -6% expo   1% | ctl    -6.1bp t=+1.76
+  15min lr so long                     78 tr (  8.0/ano,   0.30d) | bruto   +21.6bp liq   +14.1bp (win 83%) | CAGR   +1.4% vs B&H   +5.4% | Sh +2.94 DD    -6% expo   1% | ctl    -6.5bp t=+1.23
+  15min lr so short                    52 tr (  5.3/ano,   0.21d) | bruto   +21.1bp liq   +23.0bp (win 79%) | CAGR   +1.6% vs B&H   +5.4% | Sh +3.92 DD    -5% expo   0% | ctl    +3.2bp t=+1.47
+
+### 1h
+  1h unicorn                           26 tr (  2.7/ano,   1.87d) | bruto   -75.4bp liq   -77.2bp (win 38%) | CAGR   -1.9% vs B&H   +5.4% | Sh -2.97 DD   -26% expo   1% | ctl    -7.5bp t=-1.32
+  1h unicorn so long                   15 tr (  1.5/ano,   1.61d) | bruto  -112.0bp liq  -143.9bp (win 33%) | CAGR   -1.9% vs B&H   +5.4% | Sh -5.27 DD   -23% expo   1% | ctl   -50.2bp t=-1.02
+  1h unicorn so short                  11 tr (  1.1/ano,   2.22d) | bruto   -25.5bp liq   +13.7bp (win 45%) | CAGR   -0.0% vs B&H   +5.4% | Sh -0.06 DD   -10% expo   1% | ctl   +30.9bp t=-0.12
+  1h ote                              589 tr ( 60.4/ano,   0.99d) | bruto   +10.2bp liq    +8.5bp (win 17%) | CAGR   +4.1% vs B&H   +5.4% | Sh +0.43 DD   -48% expo  16% | ctl    -0.5bp t=+0.78
+  1h ote so long                      309 tr ( 31.7/ano,   1.02d) | bruto   +24.2bp liq    +3.3bp (win 17%) | CAGR   -1.4% vs B&H   +5.4% | Sh -0.26 DD   -40% expo   9% | ctl   -14.2bp t=+1.80
+  1h ote so short                     335 tr ( 34.4/ano,   0.95d) | bruto    -3.2bp liq   +12.3bp (win 18%) | CAGR   +5.6% vs B&H   +5.4% | Sh +1.07 DD   -20% expo   9% | ctl    +9.0bp t=+0.36
+  1h lr                                20 tr (  2.1/ano,   0.99d) | bruto   +13.8bp liq   +14.3bp (win 70%) | CAGR   +0.3% vs B&H   +5.4% | Sh +0.82 DD    -5% expo   1% | ctl    -4.9bp t=+0.54
+  1h lr so long                        13 tr (  1.3/ano,   0.66d) | bruto   -37.1bp liq   -51.3bp (win 62%) | CAGR   -0.5% vs B&H   +5.4% | Sh -3.23 DD    -8% expo   0% | ctl    +4.3bp t=-0.69
+  1h lr so short                     (menos de 10 trades)
+
+=== resumo wti (47 celulas) ===
+  lr: liq>0 5/8 | CAGR>B&H 0 | melhor CAGR +2.9%
+  ote: liq>0 14/27 | CAGR>B&H 5 | melhor CAGR +10.7%
+  sb: liq>0 0/3 | CAGR>B&H 0 | melhor CAGR -1.6%
+  unicorn: liq>0 4/9 | CAGR>B&H 0 | melhor CAGR +1.6%
+model    TF              cfg  trades  por_ano  bp_liq   win  cagr    bh  sharpe     dd     t
+  ote 15min    lvl0.62 tp2.0    1888  193.682   6.613 0.150 0.107 0.054   0.296 -1.806 1.096
+  ote  5min   lvl0.705 tp2.0    5423  556.323   2.202 0.110 0.065 0.054   0.195 -1.026 1.854
+  ote    1h    lvl0.62 tp2.0     423   43.394  24.054 0.191 0.061 0.054   0.249 -0.739 1.382
+  ote    1h   lvl0.705 tp2.0     436   44.728  17.461 0.154 0.060 0.054   0.314 -0.698 1.135
+  ote    1h default so short     335   34.367  12.295 0.176 0.056 0.054   1.067 -0.198 0.357
+  ote    1h          default     589   60.424   8.466 0.170 0.041 0.054   0.433 -0.479 0.780
+  ote 15min    lvl0.62 tp1.0    2394  245.591   1.384 0.197 0.034 0.054   0.118 -1.221 0.900
+  ote    1h   lvl0.705 tp1.0     542   55.602   6.956 0.173 0.034 0.054   0.224 -0.681 0.242
+   lr 15min          default     130   13.336  17.634 0.815 0.029 0.054   3.394 -0.063 1.761
+  ote 15min   lvl0.705 tp1.0    2480  254.413   1.238 0.158 0.024 0.054   0.097 -1.259 1.198

@@ -1,0 +1,9 @@
+
+### rsima 15min {'rl': 10, 'ml': 50}
+  tudo 2017-01-05..2026-08-31        2682 tr (277.7/ano,   1.31d) | bruto    +7.1bp liq    +4.4bp (win 35%) | CAGR  +13.4% vs B&H  +20.3% | Sh +0.62 DD   -47% expo 100% | ctl    -1.9bp t=+2.88
+  terco1 2017-01-05..2020-07-28       855 tr (240.1/ano,   1.51d) | bruto   +10.7bp liq    +7.9bp (win 36%) | CAGR  +22.6% vs B&H  +24.5% | Sh +1.06 DD   -30% expo 100% | ctl    +0.9bp t=+1.89
+  terco2 2020-07-28..2023-08-15       886 tr (290.5/ano,   1.25d) | bruto    +5.5bp liq    +2.9bp (win 35%) | CAGR   +6.6% vs B&H  +12.1% | Sh +0.27 DD   -28% expo 100% | ctl    -2.4bp t=+1.04
+  terco3 2023-08-15..2026-08-31       937 tr (307.4/ano,   1.18d) | bruto    +5.1bp liq    +2.5bp (win 33%) | CAGR   +9.7% vs B&H  +24.1% | Sh +0.50 DD   -47% expo 100% | ctl    -2.4bp t=+1.25
+  2a metade 2022-02-08..2026-08-31   1384 tr (303.3/ano,   1.20d) | bruto    +6.3bp liq    +3.8bp (win 34%) | CAGR  +13.4% vs B&H  +16.4% | Sh +0.60 DD   -47% expo 100% | ctl    -1.6bp t=+1.58
+  custo 2x                           2682 tr (277.7/ano,   1.31d) | bruto    +7.1bp liq    +2.0bp (win 34%) | CAGR   +6.1% vs B&H  +20.3% | Sh +0.29 DD   -55% expo 100% | ctl    -4.6bp t=+2.80
+  custo 4x                           2682 tr (277.7/ano,   1.31d) | bruto    +7.1bp liq    -2.8bp (win 32%) | CAGR   -7.1% vs B&H  +20.3% | Sh -0.36 DD  -118% expo 100% | ctl    -8.6bp t=+2.81

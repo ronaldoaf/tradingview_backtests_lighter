@@ -1,0 +1,37 @@
+Lote 34: 35 celulas candidatas (CAGR > 0, Sharpe >= B&H, t > 2) com tercos, 2a metade, spread 4x e funding 0; correlacao contra as 34 aprovadas.
+
+L34 mls ETH 4h f4 tp0 ambos                      redundante CAGR +114.1% (B&H  +56.6%) Sh +1.44 (+0.96) DD -49% t +4.34 tercos +282%/ +31%/ +38% 2a  +71% sp4 +112% f0 +113% corr +0.54 (L31 cmb ETH 4h) 
+L34 mls ETH 4h f2.94 tp0 ambos                   redundante CAGR  +95.9% (B&H  +56.6%) Sh +1.31 (+0.96) DD -52% t +3.18 tercos +187%/ +21%/ +68% 2a  +43% sp4  +92% f0  +95% corr +0.64 (L32 prv ETH 4h) 
+L34 mtl ETH 1h 20/50 adx20 long                  redundante CAGR  +60.5% (B&H  +56.8%) Sh +1.29 (+0.96) DD -50% t +3.10 tercos +200%/ +23%/ +13% 2a  +17% sp4  +58% f0  +66% corr +0.60 (L24 best ETH 1h) 
+L34 kmt ETH 1h stop long                         reprova    CAGR  +71.3% (B&H  +56.8%) Sh +1.27 (+0.96) DD -63% t +1.41 tercos +325%/ +12%/  +6% 2a  +17% sp4  +66% f0  +80% corr +0.64 (L24 best ETH 1h) t2
+L34 khw BTC 1h h48 sem wt long                   redundante CAGR  +55.6% (B&H  +43.9%) Sh +1.25 (+0.91) DD -53% t +2.13 tercos +222%/ +11%/  +4% 2a  +22% sp4  +45% f0  +64% corr +0.52 (L14 drsi BTC 1h) 
+L34 ttl ETH 30min 55/55/20/20 sem filtro         redundante CAGR  +55.9% (B&H  +56.8%) Sh +1.23 (+0.96) DD -34% t +2.45 tercos +166%/  +8%/ +31% 2a  +27% sp4  +48% f0  +61% corr +0.66 (L24 best ETH 1h) 
+L34 ttl ETH 30min 55/55/20/20 filtro             reprova    CAGR  +55.9% (B&H  +56.8%) Sh +1.23 (+0.96) DD -34% t +1.85 tercos +166%/  +8%/ +31% 2a  +27% sp4  +48% f0  +61% corr +0.66 (L24 best ETH 1h) t2
+L34 ttl ETH 1h 55/55/20/20 sem filtro            reprova    CAGR  +55.6% (B&H  +56.8%) Sh +1.22 (+0.96) DD -47% t +1.89 tercos +247%/ +20%/  -9% 2a   +7% sp4  +51% f0  +60% corr +0.64 (L24 best ETH 1h) pos_t3,t2
+L34 ttl ETH 1h 55/55/20/20 filtro                reprova    CAGR  +55.6% (B&H  +56.8%) Sh +1.22 (+0.96) DD -47% t +3.15 tercos +247%/ +20%/  -9% 2a   +7% sp4  +51% f0  +60% corr +0.64 (L24 best ETH 1h) pos_t3
+L34 zlm US100 30min rr4 ambos                    ENTRA      CAGR  +19.9% (B&H  +20.3%) Sh +1.20 (+0.93) DD -26% t +3.24 tercos  +16%/ +34%/ +12% 2a  +16% sp4   +9% f0  +20% corr +0.13 (L23 twin ETH 4h) 
+L34 kmt ETH 15min stop ambos                     redundante CAGR  +87.9% (B&H  +56.8%) Sh +1.19 (+0.96) DD -50% t +2.57 tercos +137%/+111%/ +30% 2a  +49% sp4  +54% f0  +89% corr +0.73 (L12 rsima ETH 15min) 
+L34 fmv ETH 1D f8 long                           reprova    CAGR  +59.5% (B&H  +56.5%) Sh +1.19 (+0.96) DD -37% t +1.07 tercos +192%/ +14%/  +7% 2a  +11% sp4  +59% f0  +66% corr +0.66 (L24 best ETH 1h) t2
+L34 mls BTC 4h f2.94 tp2.2 ambos                 ENTRA      CAGR  +16.5% (B&H  +43.7%) Sh +1.17 (+0.91) DD -18% t +2.25 tercos  +25%/ +11%/ +14% 2a  +13% sp4  +14% f0  +17% corr +0.13 (L15 sbs ETH 30min) 
+L34 ttl ETH 1D 55/55/20/20 sem filtro            reprova    CAGR  +55.1% (B&H  +56.5%) Sh +1.14 (+0.96) DD -46% t +1.91 tercos +199%/  +8%/ +21% 2a  +20% sp4  +55% f0  +60% corr +0.59 (L24 best ETH 1h) t2
+L34 ttl ETH 1h 20/55/10/20 filtro                reprova    CAGR  +53.5% (B&H  +56.8%) Sh +1.11 (+0.96) DD -58% t +1.84 tercos +273%/  -5%/  -0% 2a  +10% sp4  +46% f0  +60% corr +0.66 (L24 best ETH 1h) pos_t2,pos_t3,t2
+L34 mtl ETH 15min 12/25 adx0 long                redundante CAGR  +59.9% (B&H  +56.8%) Sh +1.10 (+0.96) DD -53% t +2.93 tercos +171%/  +6%/ +37% 2a  +42% sp4  +32% f0  +69% corr +0.63 (L24 best ETH 1h) 
+L34 gtf ETH 15min l25 ambos                      redundante CAGR  +73.6% (B&H  +56.8%) Sh +1.10 (+0.96) DD -68% t +3.02 tercos +148%/ +67%/ +16% 2a  +20% sp4  +49% f0  +74% corr +0.80 (L12 rsima ETH 15min) 
+L34 mtl ETH 15min 20/50 adx0 long                reprova    CAGR  +58.7% (B&H  +56.8%) Sh +1.09 (+0.96) DD -47% t +1.04 tercos +184%/ +14%/ +21% 2a  +26% sp4  +43% f0  +68% corr +0.71 (L24 best ETH 1h) t2
+L34 azl ETH 15min cos thr0.05 long               reprova    CAGR  +58.9% (B&H  +56.8%) Sh +1.09 (+0.96) DD -65% t +2.18 tercos +416%/  +2%/ -25% 2a  -15% sp4   -6% f0  +68% corr +0.38 (L24 best ETH 1h) pos_t3,sp4_pos
+L34 khw BTC 1h h48 sem wt ambos                  reprova    CAGR  +58.7% (B&H  +43.9%) Sh +1.08 (+0.91) DD -60% t +4.23 tercos +282%/  +6%/  -5% 2a   +8% sp4  +37% f0  +59% corr +0.68 (L14 drsi BTC 1h) pos_t3
+L34 ttl ETH 1D 20/55/10/20 filtro                reprova    CAGR  +53.3% (B&H  +56.5%) Sh +1.08 (+0.96) DD -59% t +1.00 tercos +210%/ +32%/  +5% 2a  +18% sp4  +53% f0  +59% corr +0.63 (L24 best ETH 1h) t2
+L34 mtl ETH 1D 20/50 adx20 ambos                 reprova    CAGR  +67.5% (B&H  +56.5%) Sh +1.06 (+0.96) DD -80% t +2.35 tercos +189%/  -2%/ +38% 2a  +32% sp4  +67% f0  +65% corr +0.31 (L13 scalp BTC 1D) pos_t2
+L34 ppt ETH 30min l20 ambos                      redundante CAGR  +64.8% (B&H  +56.8%) Sh +1.04 (+0.96) DD -77% t +2.82 tercos +160%/ +43%/ +23% 2a  +16% sp4  +58% f0  +66% corr +0.62 (L26 csq ETH 4h) 
+L34 gtf BTC 15min l25 long                       reprova    CAGR  +40.6% (B&H  +43.8%) Sh +1.01 (+0.91) DD -45% t +1.66 tercos  +98%/ +35%/  +3% 2a  +17% sp4  +30% f0  +49% corr +0.59 (L22 force BTC 4h) t2
+L34 khw BTC 4h h24 sem wt long                   reprova    CAGR  +40.2% (B&H  +43.7%) Sh +1.01 (+0.91) DD -57% t +1.55 tercos +103%/ +17%/ +19% 2a  +27% sp4  +34% f0  +48% corr +0.50 (L22 force BTC 4h) t2
+L34 mtl BTC 1D 12/25 adx0 long                   reprova    CAGR  +39.7% (B&H  +43.8%) Sh +1.01 (+0.91) DD -61% t +1.46 tercos +112%/ +27%/  +0% 2a  +22% sp4  +40% f0  +46% corr +0.71 (L22 force BTC 4h) t2
+L34 azl ETH 15min cos thr0 long                  reprova    CAGR  +50.5% (B&H  +56.8%) Sh +0.99 (+0.96) DD -66% t +2.12 tercos +378%/  -2%/ -29% 2a  -15% sp4  -22% f0  +59% corr +0.40 (L24 best ETH 1h) pos_t2,pos_t3,sp4_pos
+L34 kmt ETH 30min mercado ambos                  redundante CAGR  +58.8% (B&H  +56.8%) Sh +0.98 (+0.96) DD -75% t +2.54 tercos +159%/ +39%/  +4% 2a   -0% sp4  +37% f0  +60% corr +0.66 (L12 rsima ETH 15min) 
+L34 azl WTI 4h cos thr0 ambos                    reprova    CAGR  +19.5% (B&H   +5.4%) Sh +0.61 (+0.35) DD -89% t +1.94 tercos  +22%/ -28%/ +57% 2a  +50% sp4   +9% f0  +18% corr -0.12 (L20 nw WTI 1D) pos_t2,t2
+L34 azl WTI 1h cos thr0.05 ambos                 reprova    CAGR  +17.4% (B&H   +5.4%) Sh +0.58 (+0.35) DD -67% t +4.23 tercos   -6%/ +57%/  +9% 2a  +32% sp4  -17% f0  +17% corr -0.08 (L23 crazy WTI 1h) pos_t1,sp4_pos
+L34 azl WTI 4h cos thr0.05 ambos                 reprova    CAGR  +16.8% (B&H   +5.4%) Sh +0.57 (+0.35) DD -89% t +2.14 tercos  +15%/ -28%/ +58% 2a  +51% sp4   +6% f0  +16% corr -0.12 (L20 nw WTI 1D) pos_t2
+L34 azl WTI 1h cos thr0 ambos                    reprova    CAGR  +13.4% (B&H   +5.4%) Sh +0.50 (+0.35) DD -73% t +2.23 tercos  -13%/ +55%/  +7% 2a  +31% sp4  -23% f0  +15% corr +0.06 (L25 sta WTI 4h) pos_t1,sp4_pos
+L34 fmv WTI 15min f15 ambos                      reprova    CAGR   +9.4% (B&H   +5.4%) Sh +0.41 (+0.35) DD -72% t +2.51 tercos  +24%/ +33%/ -18% 2a  -19% sp4   -8% f0   +7% corr +0.42 (L14 drsi WTI 4h) pos_t3,sp4_pos
+L34 kmt WTI 30min stop ambos                     reprova    CAGR   +8.1% (B&H   +5.4%) Sh +0.39 (+0.35) DD -67% t +1.34 tercos   -2%/ +20%/  +7% 2a   -0% sp4   -5% f0  +16% corr +0.47 (L14 drsi WTI 4h) pos_t1,t2,sp4_pos
+L34 mtl WTI 1h 12/25 adx0 ambos                  reprova    CAGR   +6.7% (B&H   +5.4%) Sh +0.37 (+0.35) DD -58% t +1.07 tercos   -2%/ +15%/  -0% 2a   +6% sp4   -5% f0  +13% corr +0.43 (L25 sta WTI 4h) pos_t1,pos_t3,t2,sp4_pos

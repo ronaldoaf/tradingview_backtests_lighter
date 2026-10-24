@@ -1,0 +1,5 @@
+//@version=4
+strategy("GetTrend Strategy (ps4-del)", overlay=true)
+
+
+plot(close)

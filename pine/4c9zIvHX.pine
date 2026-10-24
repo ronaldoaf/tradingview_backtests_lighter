@@ -1,0 +1,16 @@
+//@version=2
+strategy("SPY Master v1.0", overlay=true)
+
+basis = rsi(ohlc4, input(2))
+
+rsiema1 = ema(basis, input(3))
+rsiema2 = ema(basis, input(5))
+
+trigger1 = input(50)
+trigger2 = input(50)
+
+if (crossover(rsiema1, trigger1))
+    strategy.entry("BUY", strategy.long, comment="BUY")
+
+if (crossunder(rsiema2, trigger2))
+    strategy.entry("SELL", strategy.short, comment="SELL")

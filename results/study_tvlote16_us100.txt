@@ -1,0 +1,76 @@
+
+================= us100 =================
+  M1 2017-01-05 -> 2026-08-31
+
+### 1. QQE Cross v6.0 (XC, fecha XQ, filtro de direcao)
+  15min QQE default                  4045 tr (418.8/ano,   0.28d) | bruto    +1.4bp liq    -1.0bp (win 37%) | CAGR   -6.1% vs B&H  +20.3% | Sh -0.52 DD   -87% expo  32% | ctl    -2.7bp t=+1.64
+  30min QQE default                  2119 tr (219.4/ano,   0.61d) | bruto    +3.3bp liq    +0.8bp (win 41%) | CAGR   -1.3% vs B&H  +20.3% | Sh -0.12 DD   -37% expo  35% | ctl    -1.7bp t=+1.15
+  1h QQE default                     1126 tr (116.6/ano,   1.22d) | bruto    +9.0bp liq    +6.3bp (win 40%) | CAGR   +5.7% vs B&H  +20.3% | Sh +0.52 DD   -24% expo  38% | ctl    -1.7bp t=+1.68
+  4h QQE default                      320 tr ( 33.1/ano,   4.43d) | bruto   +12.7bp liq    +8.5bp (win 44%) | CAGR   +0.6% vs B&H  +20.3% | Sh +0.06 DD   -51% expo  39% | ctl    +6.6bp t=+0.16
+  1D QQE default                       51 tr (  5.3/ano,  25.90d) | bruto    +5.4bp liq   -15.9bp (win 49%) | CAGR   -0.8% vs B&H  +20.2% | Sh -0.09 DD   -39% expo  37% | ctl   +45.1bp t=-0.93
+
+### 2. PMax (VAR12, ATR10x3, MACD/PSAR/CCI, SL1% TP35%)
+  15min PMAX default                 1103 tr (114.2/ano,   2.66d) | bruto   +12.4bp liq   +10.0bp (win 35%) | CAGR   +9.3% vs B&H  +20.3% | Sh +0.55 DD   -45% expo  83% | ctl    -3.6bp t=+3.51
+  30min PMAX default                  610 tr ( 63.2/ano,   4.31d) | bruto   +14.1bp liq   +11.4bp (win 32%) | CAGR   +7.3% vs B&H  +20.3% | Sh +0.49 DD   -31% expo  75% | ctl    +0.1bp t=+1.17
+  1h PMAX default                     319 tr ( 33.0/ano,   6.51d) | bruto   +19.4bp liq   +16.2bp (win 25%) | CAGR   +4.2% vs B&H  +20.3% | Sh +0.31 DD   -37% expo  60% | ctl    +3.5bp t=+0.85
+  4h PMAX default                      88 tr (  9.1/ano,  15.70d) | bruto   +41.0bp liq   +33.9bp (win 23%) | CAGR   +3.1% vs B&H  +20.3% | Sh +0.33 DD   -47% expo  40% | ctl    +5.6bp t=+0.67
+  1D PMAX default                    (menos de 10 trades)
+
+### 3. AI Volume SuperTrend (10, 3; rotulo WMA20 vs WMA100 do ST)
+  15min AIVST default                3159 tr (327.0/ano,   0.93d) | bruto    +5.1bp liq    +2.7bp (win 37%) | CAGR   +7.3% vs B&H  +20.3% | Sh +0.39 DD   -42% expo  81% | ctl    -2.0bp t=+2.38
+  30min AIVST default                1609 tr (166.6/ano,   1.71d) | bruto    +9.4bp liq    +6.8bp (win 37%) | CAGR   +9.1% vs B&H  +20.3% | Sh +0.49 DD   -39% expo  80% | ctl    -1.5bp t=+2.07
+  1h AIVST default                    898 tr ( 93.0/ano,   3.01d) | bruto    +8.7bp liq    +5.8bp (win 38%) | CAGR   +4.2% vs B&H  +20.3% | Sh +0.24 DD   -48% expo  78% | ctl    +1.3bp t=+0.73
+  4h AIVST default                    249 tr ( 25.8/ano,  10.80d) | bruto   +13.8bp liq    +7.9bp (win 44%) | CAGR   +0.8% vs B&H  +20.3% | Sh +0.04 DD   -51% expo  77% | ctl    +8.1bp t=-0.01
+  1D AIVST default                     33 tr (  3.4/ano,  79.45d) | bruto  +137.5bp liq  +100.2bp (win 52%) | CAGR   +3.2% vs B&H  +20.2% | Sh +0.19 DD   -43% expo  74% | ctl   +82.7bp t=+0.12
+
+### 4. EMA Cross 10/20
+  15min EMAX default                 7371 tr (763.1/ano,   0.48d) | bruto    +1.7bp liq    -0.8bp (win 27%) | CAGR   -5.0% vs B&H  +20.3% | Sh -0.24 DD  -102% expo 100% | ctl    -2.3bp t=+1.47
+  30min EMAX default                 3647 tr (377.6/ano,   0.97d) | bruto    +4.3bp liq    +1.7bp (win 30%) | CAGR   +6.9% vs B&H  +20.3% | Sh +0.33 DD   -43% expo 100% | ctl    -1.5bp t=+1.63
+  1h EMAX default                    1718 tr (177.9/ano,   2.05d) | bruto   +11.1bp liq    +8.4bp (win 33%) | CAGR   +7.8% vs B&H  +20.3% | Sh +0.37 DD   -47% expo 100% | ctl    +0.4bp t=+2.19
+  4h EMAX default                     510 tr ( 52.8/ano,   6.90d) | bruto    +4.7bp liq    +0.4bp (win 33%) | CAGR   -4.8% vs B&H  +20.3% | Sh -0.23 DD   -85% expo 100% | ctl    +1.8bp t=-0.11
+  1D EMAX default                      74 tr (  7.7/ano,  47.28d) | bruto  +100.6bp liq   +74.5bp (win 32%) | CAGR   +3.7% vs B&H  +20.2% | Sh +0.17 DD   -33% expo  99% | ctl   +70.0bp t=+0.06
+
+### 5. EDMA Scalping (EMA20 x EDMA20)
+  15min EDMA default                 4191 tr (433.9/ano,   0.84d) | bruto    +0.5bp liq    -1.7bp (win 33%) | CAGR   -8.4% vs B&H  +20.3% | Sh -0.41 DD  -124% expo 100% | ctl    -3.6bp t=+0.97
+  30min EDMA default                 2050 tr (212.2/ano,   1.71d) | bruto    +3.2bp liq    +1.2bp (win 35%) | CAGR   +2.6% vs B&H  +20.3% | Sh +0.13 DD   -75% expo 100% | ctl    -3.1bp t=+1.20
+  1h EDMA default                    1064 tr (110.2/ano,   3.29d) | bruto    +1.8bp liq    -0.0bp (win 36%) | CAGR   -1.0% vs B&H  +20.3% | Sh -0.05 DD   -66% expo 100% | ctl    -3.2bp t=+0.43
+  4h EDMA default                     322 tr ( 33.3/ano,  10.71d) | bruto   -17.0bp liq   -18.6bp (win 32%) | CAGR   -8.5% vs B&H  +20.3% | Sh -0.42 DD  -100% expo  98% | ctl    -3.8bp t=-0.74
+  1D EDMA default                      56 tr (  5.8/ano,  59.52d) | bruto   +10.2bp liq    +2.7bp (win 41%) | CAGR   +0.7% vs B&H  +20.2% | Sh +0.03 DD   -58% expo  95% | ctl   +25.4bp t=-0.17
+
+=== resumo us100 (231 celulas) ===
+  aivst    60 cel | liq>0   53 | liq>0 e t>2  10 | CAGR>B&H   0 | melhor CAGR +17.4%
+  edma     40 cel | liq>0   28 | liq>0 e t>2   0 | CAGR>B&H   0 | melhor CAGR +9.4%
+  emax     28 cel | liq>0   24 | liq>0 e t>2   2 | CAGR>B&H   0 | melhor CAGR +13.3%
+  pmax     43 cel | liq>0   40 | liq>0 e t>2   6 | CAGR>B&H   0 | melhor CAGR +11.8%
+  qqe      60 cel | liq>0   39 | liq>0 e t>2   7 | CAGR>B&H   0 | melhor CAGR +7.3%
+
+  top 15 por CAGR:
+  est    TF                        cfg  trades  por_ano  bp_bruto  bp_liq   win  cagr    bh  sharpe     dd  expo  ctl_bp      t
+aivst 15min                l10 f5 long     793   82.096    27.650  22.091 0.484 0.174 0.203   1.195 -0.343 0.571  10.654  1.673
+aivst 15min               l10 f5 ambos    1963  203.221    10.415   7.927 0.372 0.163 0.203   0.775 -0.368 0.902  -1.775  3.503
+aivst 15min                l20 f5 long     750   77.644    26.621  21.148 0.473 0.159 0.203   1.212 -0.190 0.534  11.638  1.329
+aivst 30min                l10 f3 long     808   83.649    22.955  18.141 0.447 0.137 0.203   1.221 -0.218 0.469   6.900  1.987
+aivst 15min               l20 f5 ambos    1696  175.579     9.965   7.455 0.377 0.136 0.203   0.687 -0.481 0.915  -2.941  3.069
+ emax 30min                 20/50 long     728   75.367    26.180  20.350 0.386 0.133 0.203   0.971 -0.223 0.587  14.949  0.917
+ pmax 15min sl0% tp35% sofiltro0 ambos    1513  156.634    11.596   9.026 0.394 0.118 0.203   0.556 -0.425 0.999  -2.427  2.537
+ emax 30min                20/50 ambos    1456  150.734    12.599   9.752 0.334 0.115 0.203   0.548 -0.317 0.999   1.661  2.258
+ emax    1h                 10/20 long     859   88.929    22.648  17.371 0.375 0.113 0.203   0.823 -0.260 0.583   8.938  1.752
+ pmax 15min  sl1% tp35% sofiltro0 long      73    7.557   243.769 192.140 0.096 0.113 0.203   0.659 -0.530 0.818 206.058 -0.277
+ pmax 15min    sl1% tp35% filtros long      72    7.454   248.398 197.559 0.097 0.113 0.203   0.690 -0.502 0.793 161.327  0.490
+ pmax 15min   sl0% tp35% filtros ambos    1006  104.147    14.827  12.612 0.413 0.112 0.203   0.525 -0.558 0.998  -2.819  1.942
+ pmax 15min   sl3% tp35% filtros ambos    1036  107.253    14.472  12.167 0.403 0.111 0.203   0.537 -0.577 0.963  -3.487  2.248
+aivst 30min                l20 f5 long     443   45.862    34.925  27.511 0.463 0.110 0.203   0.957 -0.209 0.529  19.379  0.693
+ emax 30min                 10/20 long    1823  188.728     9.769   6.036 0.332 0.109 0.203   0.747 -0.202 0.572   2.435  1.263
+
+  top 10 por t:
+  est    TF                      cfg  trades  por_ano  bp_bruto  bp_liq   win  cagr    bh  sharpe     dd  expo  ctl_bp     t
+  qqe 15min          XZ f5 dfil long    1797  186.036     5.973   3.164 0.388 0.066 0.203   0.974 -0.160 0.170  -1.391 3.512
+ pmax 15min sl1% tp35% filtros ambos    1103  114.189    12.419   9.976 0.349 0.093 0.203   0.550 -0.454 0.826  -3.564 3.512
+aivst 15min             l10 f5 ambos    1963  203.221    10.415   7.927 0.372 0.163 0.203   0.775 -0.368 0.902  -1.775 3.503
+aivst 15min             l20 f5 ambos    1696  175.579     9.965   7.455 0.377 0.136 0.203   0.687 -0.481 0.915  -2.941 3.069
+  qqe    1h       XZ f5 semfil ambos    1503  155.600     9.512   6.963 0.376 0.073 0.203   0.527 -0.379 0.500  -2.013 2.874
+aivst 15min             l20 f2 ambos    3669  379.835     4.188   1.659 0.365 0.055 0.203   0.298 -0.377 0.775  -2.150 2.839
+aivst 15min              l10 f2 long    2194  227.135     9.127   5.838 0.403 0.108 0.203   0.832 -0.287 0.443   1.394 2.833
+  qqe 15min        XZ f5 semfil long    3395  351.469     4.186   1.410 0.363 0.064 0.203   0.583 -0.192 0.299  -0.949 2.681
+aivst 30min              l20 f2 long     971  100.524    18.411  13.953 0.437 0.108 0.203   0.964 -0.231 0.478   5.554 2.606
+aivst 15min             l20 f3 ambos    2756  285.317     5.320   2.779 0.368 0.075 0.203   0.394 -0.367 0.840  -2.464 2.604

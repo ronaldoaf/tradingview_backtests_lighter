@@ -1,0 +1,76 @@
+
+================= eth =================
+  M1 2020-01-01 -> 2026-09-30
+
+### 1. Fibonacci + RSI (VWMA200 x 3 stdev, alvo 0,764, stop 0,2%)
+  15min FIB default                   387 tr ( 57.3/ano,   0.03d) | bruto    -3.6bp liq    -4.6bp (win 20%) | CAGR   +0.5% vs B&H  +56.8% | Sh +0.28 DD   -10% expo   0% | ctl    -0.8bp t=-1.03
+  30min FIB default                   182 tr ( 26.9/ano,   0.05d) | bruto    -2.1bp liq    -3.1bp (win 18%) | CAGR   -2.6% vs B&H  +56.8% | Sh -2.23 DD   -20% expo   0% | ctl    -1.5bp t=-0.28
+  1h FIB default                       76 tr ( 11.3/ano,   0.06d) | bruto    -5.9bp liq    -6.8bp (win 9%) | CAGR   -1.0% vs B&H  +56.8% | Sh -1.26 DD   -10% expo   0% | ctl    +3.4bp t=-0.69
+  4h FIB default                       20 tr (  3.0/ano,   0.17d) | bruto   -20.0bp liq   -20.8bp (win 0%) | CAGR   +1.7% vs B&H  +56.6% | Sh +3.07 DD    -7% expo   0% | ctl    -0.8bp t=-0.50
+  1D FIB default                     (menos de 10 trades)
+
+### 2. Scalping Trading System (SMA25/EMA200, Keltner, MACD 4/34, Stoch 10)
+  15min SCALP default                2060 tr (305.0/ano,   1.20d) | bruto   +22.5bp liq   +20.9bp (win 29%) | CAGR  +73.9% vs B&H  +56.8% | Sh +0.57 DD  -130% expo 100% | ctl    +2.4bp t=+1.78
+  30min SCALP default                 998 tr (147.8/ano,   2.47d) | bruto   +40.8bp liq   +38.6bp (win 30%) | CAGR  +49.3% vs B&H  +56.8% | Sh +0.42 DD  -187% expo 100% | ctl   +10.2bp t=+1.30
+  1h SCALP default                    522 tr ( 77.3/ano,   4.70d) | bruto   +85.3bp liq   +81.9bp (win 29%) | CAGR  +68.6% vs B&H  +56.8% | Sh +0.53 DD  -139% expo  99% | ctl   +22.0bp t=+2.22
+  4h SCALP default                    112 tr ( 16.6/ano,  21.17d) | bruto  +419.8bp liq  +410.0bp (win 28%) | CAGR  +49.7% vs B&H  +56.6% | Sh +0.42 DD  -234% expo  96% | ctl  +106.4bp t=+1.11
+  1D SCALP default                     14 tr (  2.1/ano, 172.07d) | bruto +14512.0bp liq +14381.6bp (win 57%) | CAGR  +42.4% vs B&H  +56.5% | Sh +0.36 DD  -102% expo  98% | ctl  +351.6bp t=+5.36
+
+### 3. UT Bot v5 (a=1, ATR11, HMA2 do open, long-only)
+  15min UT default                   10135 tr (1500.7/ano,   0.12d) | bruto    +3.3bp liq    +2.0bp (win 40%) | CAGR  +17.2% vs B&H  +56.8% | Sh +0.24 DD  -132% expo  51% | ctl    +0.9bp t=+0.66
+  30min UT default                   4845 tr (717.4/ano,   0.26d) | bruto   +10.5bp liq    +8.8bp (win 42%) | CAGR  +31.8% vs B&H  +56.8% | Sh +0.42 DD   -69% expo  51% | ctl    +2.0bp t=+2.21
+  1h UT default                      2315 tr (342.8/ano,   0.53d) | bruto   +15.2bp liq   +12.6bp (win 40%) | CAGR  +26.4% vs B&H  +56.8% | Sh +0.36 DD  -155% expo  50% | ctl    +9.0bp t=+0.48
+  4h UT default                       565 tr ( 83.7/ano,   2.20d) | bruto   +58.1bp liq   +50.5bp (win 43%) | CAGR  +15.1% vs B&H  +56.6% | Sh +0.26 DD  -150% expo  51% | ctl   +42.2bp t=+0.31
+  1D UT default                        99 tr ( 14.7/ano,  13.09d) | bruto  +219.3bp liq  +179.2bp (win 39%) | CAGR  +10.6% vs B&H  +56.5% | Sh +0.21 DD   -95% expo  53% | ctl  +231.4bp t=-0.42
+
+### 4. Squeeze Momentum [LazyBear] (BB14x2, KC16x1,5)
+  15min SQZ default                  9504 tr (1407.3/ano,   0.05d) | bruto    +0.9bp liq    -0.1bp (win 36%) | CAGR  -16.0% vs B&H  +56.8% | Sh -0.40 DD  -139% expo  20% | ctl    -0.4bp t=+0.35
+  30min SQZ default                  4590 tr (679.7/ano,   0.10d) | bruto    +0.3bp liq    -0.7bp (win 36%) | CAGR   +2.4% vs B&H  +56.8% | Sh +0.05 DD   -70% expo  20% | ctl    -1.3bp t=+0.34
+  1h SQZ default                     2258 tr (334.4/ano,   0.22d) | bruto    +7.5bp liq    +6.5bp (win 39%) | CAGR  +27.8% vs B&H  +56.8% | Sh +0.57 DD   -76% expo  20% | ctl    +0.4bp t=+1.46
+  4h SQZ default                      595 tr ( 88.1/ano,   0.88d) | bruto   +29.0bp liq   +27.7bp (win 42%) | CAGR   +7.9% vs B&H  +56.6% | Sh +0.25 DD  -105% expo  21% | ctl    -7.2bp t=+2.39
+  1D SQZ default                      103 tr ( 15.3/ano,   5.50d) | bruto  +104.9bp liq  +101.9bp (win 33%) | CAGR  +14.3% vs B&H  +56.5% | Sh +0.53 DD   -85% expo  23% | ctl   +22.7bp t=+0.89
+
+### 5. Ichimoku basico (9/26/52, deslocamento 26)
+  15min ICHI default                 4651 tr (688.7/ano,   0.53d) | bruto   +10.5bp liq    +9.4bp (win 32%) | CAGR  +69.5% vs B&H  +56.8% | Sh +0.55 DD   -84% expo 100% | ctl    -1.9bp t=+2.91
+  30min ICHI default                 2244 tr (332.3/ano,   1.10d) | bruto   +25.4bp liq   +24.2bp (win 33%) | CAGR +129.0% vs B&H  +56.8% | Sh +0.85 DD  -102% expo 100% | ctl    -0.8bp t=+2.61
+  1h ICHI default                    1128 tr (167.0/ano,   2.18d) | bruto   +25.6bp liq   +24.0bp (win 32%) | CAGR  +52.0% vs B&H  +56.8% | Sh +0.44 DD  -177% expo 100% | ctl    +6.8bp t=+0.98
+  4h ICHI default                     284 tr ( 42.1/ano,   8.61d) | bruto  +117.4bp liq  +114.0bp (win 34%) | CAGR  +26.9% vs B&H  +56.6% | Sh +0.24 DD  -110% expo  99% | ctl   +19.9bp t=+1.13
+  1D ICHI default                      44 tr (  6.5/ano,  53.36d) | bruto  +770.0bp liq  +756.5bp (win 39%) | CAGR  +31.6% vs B&H  +56.5% | Sh +0.29 DD  -214% expo  95% | ctl    +8.1bp t=+0.91
+
+=== resumo eth (418 celulas) ===
+  fib     225 cel | liq>0   53 | liq>0 e t>2   3 | CAGR>B&H   0 | melhor CAGR +9.9%
+  ichi     19 cel | liq>0   19 | liq>0 e t>2   4 | CAGR>B&H   7 | melhor CAGR +129.0%
+  scalp    50 cel | liq>0   50 | liq>0 e t>2   9 | CAGR>B&H   7 | melhor CAGR +125.1%
+  sqz      40 cel | liq>0   33 | liq>0 e t>2   5 | CAGR>B&H   0 | melhor CAGR +39.9%
+  ut       84 cel | liq>0   77 | liq>0 e t>2   7 | CAGR>B&H  11 | melhor CAGR +131.5%
+
+  top 15 por CAGR:
+  est    TF                   cfg  trades  por_ano  bp_bruto  bp_liq   win  cagr    bh  sharpe     dd  expo  ctl_bp     t
+   ut 30min a5.0 atr11 hma2 ambos     911  134.896    68.868  67.846 0.380 1.315 0.568   0.867 -0.953 0.999  -0.747 2.853
+ ichi 30min         9/26/52 ambos    2244  332.279    25.442  24.194 0.326 1.290 0.568   0.847 -1.019 1.000  -0.824 2.614
+scalp 30min          s25 e0 ambos    2864  424.085    25.183  23.273 0.413 1.251 0.568   0.843 -0.911 1.000   6.572 2.229
+ ichi 15min       20/60/120 ambos    2012  297.924    31.335  30.047 0.330 1.197 0.568   0.809 -0.897 0.999   1.498 2.402
+   ut    4h a5.0 atr11 hma2 ambos     105   15.549   509.808 501.778 0.467 0.907 0.566   0.653 -1.221 0.982 -28.514 2.807
+   ut    4h a5.0 atr30 hma2 ambos     109   16.141   399.512 402.877 0.404 0.878 0.566   0.641 -0.921 0.981   6.572 2.175
+   ut 30min  a5.0 atr11 hma2 long     455   67.374   130.369 121.262 0.402 0.805 0.568   1.117 -0.757 0.501  39.166 2.103
+ ichi 30min          9/26/52 long    1122  166.139    48.027  43.500 0.341 0.793 0.568   0.937 -1.014 0.538  21.649 1.959
+   ut 15min a2.0 atr11 hma2 ambos    7685 1137.946     4.368   3.378 0.376 0.790 0.568   0.631 -1.976 1.000  -0.275 1.287
+scalp 30min           s25 e0 long    1432  212.042    43.265  38.786 0.385 0.776 0.568   0.757 -1.049 0.677  24.738 1.401
+ ichi 15min        20/60/120 long    1006  148.962    56.372  51.428 0.349 0.757 0.568   0.917 -0.879 0.539  20.235 2.500
+scalp    1D          s25 e0 ambos      60    8.888   838.684 811.006 0.483 0.744 0.565   0.579 -1.369 0.962  16.091 2.193
+scalp 15min        s25 e200 ambos    2060  305.032    22.524  20.919 0.290 0.739 0.568   0.570 -1.305 1.000   2.439 1.780
+   ut    4h a3.0 atr11 hma2 ambos     253   37.465   178.834 176.557 0.368 0.726 0.566   0.554 -1.208 0.994 -33.341 2.179
+scalp    1h        s50 e200 ambos     508   75.222    89.705  86.456 0.307 0.717 0.568   0.544 -1.275 0.994  18.268 1.592
+
+  top 10 por t:
+  est    TF                    cfg  trades  por_ano  bp_bruto    bp_liq   win  cagr    bh  sharpe     dd  expo  ctl_bp     t
+scalp    1D         s25 e200 ambos      14    2.074 14512.035 14381.558 0.571 0.424 0.565   0.363 -1.021 0.977 351.642 5.364
+  fib    1D l200 m2.0 sl0.01 ambos      20    2.963   298.449   301.182 0.250 0.007 0.565   0.215 -0.443 0.013 -50.906 3.324
+ ichi 15min          9/26/52 ambos    4651  688.691    10.526     9.417 0.317 0.695 0.568   0.552 -0.839 1.000  -1.864 2.913
+   ut 30min  a5.0 atr11 hma2 ambos     911  134.896    68.868    67.846 0.380 1.315 0.568   0.867 -0.953 0.999  -0.747 2.853
+  sqz    4h        bb14 kc20 ambos     501   74.190    46.346    45.083 0.433 0.212 0.566   0.586 -0.630 0.230  -1.744 2.814
+   ut    4h  a5.0 atr11 hma2 ambos     105   15.549   509.808   501.778 0.467 0.907 0.566   0.653 -1.221 0.982 -28.514 2.807
+ ichi 30min          9/26/52 ambos    2244  332.279    25.442    24.194 0.326 1.290 0.568   0.847 -1.019 1.000  -0.824 2.614
+   ut 30min  a1.0 atr11 hma2 ambos    9691 1434.988     5.415     4.404 0.407 0.240 0.568   0.235 -1.975 1.000  -0.786 2.581
+  sqz    4h        bb20 kc20 ambos     420   62.195    35.577    34.249 0.412 0.094 0.566   0.352 -0.610 0.178 -11.487 2.508
+ ichi 15min         20/60/120 long    1006  148.962    56.372    51.428 0.349 0.757 0.568   0.917 -0.879 0.539  20.235 2.500

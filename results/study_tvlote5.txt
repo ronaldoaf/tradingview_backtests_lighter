@@ -1,0 +1,75 @@
+
+================= xau =================
+  M1 2017-09-01 -> 2026-10-04
+
+### 1. Price and Volume Breakout (60/60/200, so long)
+  15min PVB default                   405 tr ( 44.5/ano,   2.64d) | bruto   +18.0bp liq    +6.5bp (win 32%) | CAGR   +1.8% vs B&H  +13.4% | Sh +0.26 DD   -24% expo  34% | ctl    +2.2bp t=+0.71
+  15min PVB long+short                659 tr ( 72.4/ano,   2.77d) | bruto   +12.7bp liq   +10.4bp (win 34%) | CAGR   +7.0% vs B&H  +13.4% | Sh +0.62 DD   -24% expo  55% | ctl    -3.3bp t=+2.26
+  30min PVB default                   148 tr ( 16.3/ano,   5.83d) | bruto   +41.4bp liq   +17.9bp (win 33%) | CAGR   +2.4% vs B&H  +13.4% | Sh +0.47 DD   -22% expo  26% | ctl    +8.9bp t=+0.47
+  30min PVB long+short                261 tr ( 28.7/ano,   5.58d) | bruto   +19.4bp liq   +15.8bp (win 34%) | CAGR   +4.3% vs B&H  +13.4% | Sh +0.49 DD   -21% expo  45% | ctl    +0.0bp t=+1.02
+  1h PVB default                       78 tr (  8.6/ano,  11.66d) | bruto   +28.5bp liq   -17.1bp (win 35%) | CAGR   -2.0% vs B&H  +13.4% | Sh -0.39 DD   -39% expo  28% | ctl   +19.2bp t=-0.87
+  1h PVB long+short                   134 tr ( 14.7/ano,  11.56d) | bruto    -2.2bp liq   -10.8bp (win 36%) | CAGR   -2.2% vs B&H  +13.4% | Sh -0.28 DD   -33% expo  45% | ctl    -7.4bp t=-0.18
+  4h PVB default                       22 tr (  2.4/ano,  48.92d) | bruto  +294.3bp liq  +107.8bp (win 36%) | CAGR   +1.8% vs B&H  +13.4% | Sh +0.26 DD   -30% expo  34% | ctl   +70.1bp t=+0.25
+  4h PVB long+short                    36 tr (  4.0/ano,  41.47d) | bruto  +135.3bp liq   +70.9bp (win 39%) | CAGR   +1.7% vs B&H  +13.4% | Sh +0.18 DD   -29% expo  45% | ctl    +6.0bp t=+0.59
+  1D PVB default                     (menos de 10 trades)
+  1D PVB long+short                  (menos de 10 trades)
+
+### 2. QQE MOD + SSL Hybrid + WAE
+  15min b60 x15 s180 sw10 wae1 lucro1 6643 tr (730.1/ano,   0.28d) | bruto    -0.3bp liq    -1.8bp (win 55%) | CAGR  -11.8% vs B&H  +13.4% | Sh -1.03 DD  -130% expo  56% | ctl    -1.4bp t=-0.68
+  15min b60 x15 s180 sw10 wae1 lucro1 so long 4067 tr (447.0/ano,   0.28d) | bruto    +1.4bp liq    -1.1bp (win 56%) | CAGR   -5.2% vs B&H  +13.4% | Sh -0.55 DD   -75% expo  33% | ctl    -1.2bp t=+0.07
+  30min b60 x15 s180 sw10 wae1 lucro1 3355 tr (368.7/ano,   0.53d) | bruto    -1.2bp liq    -2.9bp (win 57%) | CAGR   -9.7% vs B&H  +13.4% | Sh -0.88 DD  -106% expo  54% | ctl    -1.5bp t=-1.41
+  30min b60 x15 s180 sw10 wae1 lucro1 so long 2041 tr (224.3/ano,   0.57d) | bruto    +1.9bp liq    -1.8bp (win 58%) | CAGR   -4.5% vs B&H  +13.4% | Sh -0.56 DD   -56% expo  32% | ctl    -0.4bp t=-1.16
+  1h b60 x15 s180 sw10 wae1 lucro1   1711 tr (188.1/ano,   1.12d) | bruto    +3.8bp liq    +2.3bp (win 58%) | CAGR   +3.6% vs B&H  +13.4% | Sh +0.31 DD   -21% expo  53% | ctl    -1.4bp t=+1.51
+  1h b60 x15 s180 sw10 wae1 lucro1 so long 1034 tr (113.6/ano,   1.16d) | bruto    +9.1bp liq    +3.2bp (win 58%) | CAGR   +3.0% vs B&H  +13.4% | Sh +0.40 DD   -17% expo  32% | ctl    +0.5bp t=+0.97
+  4h b60 x15 s180 sw10 wae1 lucro1    459 tr ( 50.4/ano,   3.93d) | bruto   +13.4bp liq   +13.4bp (win 62%) | CAGR   +6.9% vs B&H  +13.4% | Sh +0.65 DD   -25% expo  53% | ctl    -1.3bp t=+1.66
+  4h b60 x15 s180 sw10 wae1 lucro1 so long  276 tr ( 30.3/ano,   3.68d) | bruto   +22.0bp liq    +6.6bp (win 61%) | CAGR   +3.5% vs B&H  +13.4% | Sh +0.58 DD   -21% expo  31% | ctl    +6.2bp t=+0.04
+  1D b60 x15 s180 sw10 wae1 lucro1     87 tr (  9.6/ano,  21.31d) | bruto    -4.7bp liq   -13.2bp (win 53%) | CAGR   -1.5% vs B&H  +13.4% | Sh -0.16 DD   -55% expo  56% | ctl    +8.4bp t=-0.70
+  1D b60 x15 s180 sw10 wae1 lucro1 so long   51 tr (  5.6/ano,  22.16d) | bruto   +51.8bp liq   -33.5bp (win 45%) | CAGR   -1.4% vs B&H  +13.4% | Sh -0.24 DD   -41% expo  34% | ctl    -3.2bp t=-0.73
+
+### 3. Full CRYPTO pack (EMA9 hl2, MACD 12/26/9, OBV 10)
+  15min CRYPTO default               2205 tr (242.3/ano,   0.90d) | bruto    +2.8bp liq    -2.1bp (win 39%) | CAGR   -6.1% vs B&H  +13.4% | Sh -0.49 DD   -75% expo  58% | ctl    +0.2bp t=-1.66
+  15min CRYPTO long+short            4409 tr (484.6/ano,   0.75d) | bruto    -0.1bp liq    -2.1bp (win 38%) | CAGR  -10.9% vs B&H  +13.4% | Sh -0.68 DD  -126% expo 100% | ctl    -1.6bp t=-0.56
+  30min CRYPTO default               1058 tr (116.3/ano,   1.83d) | bruto    +6.6bp liq    -1.8bp (win 40%) | CAGR   -2.7% vs B&H  +13.4% | Sh -0.23 DD   -46% expo  58% | ctl    +1.7bp t=-0.84
+  30min CRYPTO long+short            2115 tr (232.5/ano,   1.57d) | bruto    +0.6bp liq    -1.9bp (win 38%) | CAGR   -4.2% vs B&H  +13.4% | Sh -0.25 DD   -65% expo 100% | ctl    -0.4bp t=-0.62
+  1h CRYPTO default                   545 tr ( 59.9/ano,   3.71d) | bruto   +17.6bp liq    +2.1bp (win 37%) | CAGR   +1.4% vs B&H  +13.4% | Sh +0.12 DD   -32% expo  59% | ctl    +4.7bp t=-0.64
+  1h CRYPTO long+short               1089 tr (119.7/ano,   3.04d) | bruto    +6.1bp liq    +2.1bp (win 37%) | CAGR   +4.2% vs B&H  +13.4% | Sh +0.24 DD   -40% expo 100% | ctl    -0.7bp t=+0.72
+  4h CRYPTO default                   142 tr ( 15.6/ano,  12.77d) | bruto   +77.2bp liq   +27.5bp (win 41%) | CAGR   +4.6% vs B&H  +13.4% | Sh +0.42 DD   -33% expo  56% | ctl   +12.5bp t=+0.67
+  4h CRYPTO long+short                284 tr ( 31.2/ano,  11.65d) | bruto   +33.6bp liq   +27.9bp (win 42%) | CAGR  +10.8% vs B&H  +13.4% | Sh +0.60 DD   -33% expo 100% | ctl    -1.5bp t=+2.32
+  1D CRYPTO default                    33 tr (  3.6/ano,  65.42d) | bruto  +148.3bp liq  -100.6bp (win 33%) | CAGR   -3.1% vs B&H  +13.4% | Sh -0.28 DD   -49% expo  66% | ctl  +104.5bp t=-1.87
+  1D CRYPTO long+short                 66 tr (  7.3/ano,  47.83d) | bruto   -45.1bp liq  -113.1bp (win 41%) | CAGR   -6.0% vs B&H  +13.4% | Sh -0.38 DD   -85% expo  95% | ctl   +53.6bp t=-2.04
+
+=== resumo xau (1102 celulas) ===
+  crypto  128 cel | liq>0   79 | liq>0 e t>2   4 | CAGR>B&H   0 | melhor CAGR +11.8%
+  pvb     334 cel | liq>0  288 | liq>0 e t>2  31 | CAGR>B&H   0 | melhor CAGR +12.8%
+  qqe     640 cel | liq>0  258 | liq>0 e t>2  25 | CAGR>B&H   0 | melhor CAGR +9.1%
+
+  top 15 por CAGR:
+   est    TF                 cfg  trades  por_ano  bp_bruto  bp_liq   win  cagr    bh  sharpe     dd  expo  ctl_bp     t
+   pvb 30min   20/200 x5 vol0 ls     710   78.034    18.403  15.475 0.315 0.128 0.134   0.738 -0.280 0.936   1.634 2.615
+crypto    4h 21 24/52/18 obv1 ls     125   13.739   113.357  83.450 0.504 0.118 0.134   0.668 -0.421 0.990  19.366 1.630
+crypto    1D  9 24/52/18 obv1 ls      37    4.068   257.143 242.359 0.459 0.117 0.134   0.711 -0.212 0.926  37.698 1.690
+   pvb 30min   60/200 x5 vol0 ls     591   64.955    19.531  16.356 0.325 0.116 0.134   0.693 -0.261 0.886  -4.130 2.604
+crypto    4h 21 24/52/18 obv0 ls     135   14.838   100.228  75.628 0.504 0.115 0.134   0.651 -0.390 0.990  11.788 1.550
+crypto    4h   9 12/26/9 obv1 ls     284   31.215    33.641  27.927 0.415 0.108 0.134   0.601 -0.325 0.996   3.848 1.323
+crypto    4h  9 12/26/9 obv10 ls     284   31.215    33.641  27.927 0.415 0.108 0.134   0.601 -0.325 0.996  -1.530 2.322
+crypto 30min 50 24/52/18 obv0 ls     527   57.921    25.478  18.152 0.372 0.106 0.134   0.596 -0.402 0.999   0.759 1.386
+   pvb    1h   20/100 x5 vol0 ls     527   57.922    21.022  17.674 0.321 0.104 0.134   0.625 -0.273 0.913  -0.720 1.469
+   pvb    1h   20/100 x1 vol0 ls     923  101.445    11.489   8.792 0.255 0.104 0.134   0.640 -0.294 0.861   0.393 1.051
+   pvb 15min   20/100 x5 vol0 ls    2224  244.433     5.928   3.867 0.305 0.103 0.134   0.621 -0.259 0.908  -2.045 3.712
+   pvb 15min   60/100 x5 vol0 ls    1824  200.470     7.330   5.098 0.349 0.102 0.134   0.638 -0.218 0.837  -1.262 2.355
+crypto 15min  50 12/26/9 obv1 ls    1683  184.973     9.253   6.340 0.344 0.102 0.134   0.570 -0.324 0.999  -1.690 2.755
+   pvb 30min    20/50 x5 vol0 ls    1648  181.127     7.408   5.128 0.343 0.102 0.134   0.624 -0.247 0.873  -1.800 2.763
+crypto    4h  21 12/26/9 obv0 ls     177   19.454    63.315  41.127 0.350 0.100 0.134   0.558 -0.325 0.989   3.278 1.081
+
+  top 10 por t:
+   est    TF                           cfg  trades  por_ano  bp_bruto  bp_liq   win  cagr    bh  sharpe     dd  expo  ctl_bp     t
+   pvb 15min             20/100 x5 vol0 ls    2224  244.433     5.928   3.867 0.305 0.103 0.134   0.621 -0.259 0.908  -2.045 3.712
+   qqe    1h  b60 x15 s90 sw10 wae1 lucro1    1525  167.610     3.920   2.912 0.590 0.038 0.134   0.357 -0.237 0.471  -1.738 3.344
+   pvb 15min             20/200 x5 vol1 ls    1026  112.765    11.802   9.591 0.305 0.099 0.134   0.678 -0.204 0.731  -0.161 3.342
+   qqe    4h b60 x15 s180 sw10 wae0 lucro1     467   51.329    17.403  17.170 0.625 0.091 0.134   0.854 -0.182 0.541  -2.786 3.243
+   pvb 15min              60/50 x5 vol0 ls    2529  277.955     4.983   2.990 0.360 0.074 0.134   0.506 -0.329 0.718  -1.634 2.882
+   pvb 15min            120/100 x5 vol0 ls    1336  146.836     7.981   5.671 0.369 0.074 0.134   0.518 -0.197 0.673  -1.503 2.855
+   qqe    1h  b30 x15 s90 sw10 wae1 lucro1    1516  166.621     4.055   3.054 0.594 0.040 0.134   0.368 -0.245 0.469  -1.829 2.851
+   pvb 30min              20/50 x5 vol0 ls    1648  181.127     7.408   5.128 0.343 0.102 0.134   0.624 -0.247 0.873  -1.800 2.763
+crypto 15min            50 12/26/9 obv1 ls    1683  184.973     9.253   6.340 0.344 0.102 0.134   0.570 -0.324 0.999  -1.690 2.755
+   pvb 30min             20/100 x5 vol0 ls    1058  116.282    11.006   8.198 0.316 0.085 0.134   0.513 -0.269 0.907  -2.783 2.737

@@ -1,0 +1,329 @@
+// This source code is subject to the terms of the Mozilla Public License 2.0 at https://mozilla.org/MPL/2.0/
+// © thequantscience
+
+//@version=6
+strategy(
+     title = '🚀 Rocket Grid Algorithm [The Quant Science]', 
+     overlay = true,
+     default_qty_type = strategy.cash,
+     currency = currency.USDT,
+     initial_capital = 100000, 
+     commission_type = strategy.commission.percent, 
+     commission_value = 0.07, 
+     pyramiding = 10,
+     slippage = 5,
+     process_orders_on_close = true,
+     max_labels_count = 500,
+     max_lines_count = 500
+     )
+
+strategy_side_long = input.bool(defval = true, title = "Long (Crossover SMA) |", group = "SETTINGS" , inline = "side")
+strategy_side_short = input.bool(defval = false, title = "Short (Crossunder SMA)", group = "SETTINGS", inline = "side")
+
+if (strategy_side_long == true and strategy_side_short==true)
+    runtime.error("Cannot select both strategies!!! Only one strategy per side at a time. Select LONG to analyze the long backtest and choose SHORT to analyze the short backtest.")
+
+start_capital = input.int(defval = 500, title = "Starting Capital [$]", minval=10, group = "SETTINGS") 
+rocket_multiple = input.float(defval = 1.50, title = "🚀 Rocket Multiple 🚀", minval=1.05, step = 0.01, group = "SETTINGS") 
+
+lenght_data = input.int(defval = 50, title = "SMA Period", minval = 1, group = "SMA CONFIGURATION")
+
+percentage_grid_distance  = input.float(defval = 0.50, minval = 0, step = 0.10, title = "Grid Distance Levels [%]", group = "STRATEGY CONFIGURATION")
+stop_loss = input.float(defval = 2.00, minval = 0, step = 0.10, title = "Stop Loss [%]", group = "STRATEGY CONFIGURATION")
+take_profit = input.float(defval = 2.00, minval = 0, step = 0.10, title = "Take Profit [%]", group = "STRATEGY CONFIGURATION")
+
+start_date  = input.int(title="D: ", defval=1,    minval=1,    maxval=31,   inline = 'Start', group = "DATE PERIOD BACKTESTING")
+start_month = input.int(title="M: ", defval=1,    minval=1,    maxval=12,   inline = 'Start', group = "DATE PERIOD BACKTESTING")
+start_year  = input.int(title="Y: ", defval=2021, minval=1800, maxval=2100, inline = 'Start', group = "DATE PERIOD BACKTESTING")
+end_date    = input.int(title="D: ", defval=31,   minval=1,    maxval=31,   inline = 'End',   group = "DATE PERIOD BACKTESTING")
+end_month   = input.int(title="M: ", defval=12,   minval=1,    maxval=12,   inline = 'End',   group = "DATE PERIOD BACKTESTING")
+end_year    = input.int(title="Y: ", defval=2027, minval=1800, maxval=2100, inline = 'End',   group = "DATE PERIOD BACKTESTING")
+
+in_date_range = (time >= timestamp(syminfo.timezone, start_year, start_month, start_date, 0, 0)) and (time < timestamp(syminfo.timezone, end_year, end_month, end_date, 0, 0))
+
+sma = ta.sma(close, lenght_data)
+crossunder_sma = ta.crossunder(close, sma) 
+crossover_sma = ta.crossover(close, sma)
+
+var float grid_up1  = 0
+var float grid_up2  = 0
+var float grid_up3  = 0
+var float grid_up4  = 0
+var float grid_up5  = 0
+var float grid_up6  = 0
+var float grid_up7  = 0
+var float grid_up8  = 0
+var float grid_up9  = 0
+var float grid_up10 = 0
+
+var float grid_down1  = 0
+var float grid_down2  = 0
+var float grid_down3  = 0
+var float grid_down4  = 0
+var float grid_down5  = 0
+var float grid_down6  = 0
+var float grid_down7  = 0
+var float grid_down8  = 0
+var float grid_down9  = 0
+var float grid_down10 = 0
+
+var float trigger_price = 0
+
+var float capital_rocked1  = 0
+var float capital_rocked2  = 0
+var float capital_rocked3  = 0
+var float capital_rocked4  = 0
+var float capital_rocked5  = 0
+var float capital_rocked6  = 0
+var float capital_rocked7  = 0
+var float capital_rocked8  = 0
+var float capital_rocked9  = 0
+var float capital_rocked10 = 0
+
+var float stop_loss_level_long = 0
+var float take_profit_level_long = 0 
+var float stop_loss_level_short = 0
+var float take_profit_level_short = 0 
+
+if (strategy_side_long==true and crossover_sma and strategy.opentrades==0 and in_date_range) 
+
+    trigger_price := close 
+
+    grid_up1  := (trigger_price + ((trigger_price * percentage_grid_distance) / 100))
+    grid_up2  := (grid_up1 + ((grid_up1 * percentage_grid_distance) / 100))
+    grid_up3  := (grid_up2 + ((grid_up2 * percentage_grid_distance) / 100))
+    grid_up4  := (grid_up3 + ((grid_up3 * percentage_grid_distance) / 100))
+    grid_up5  := (grid_up4 + ((grid_up4 * percentage_grid_distance) / 100))
+    grid_up6  := (grid_up5 + ((grid_up5 * percentage_grid_distance) / 100))
+    grid_up7  := (grid_up6 + ((grid_up6 * percentage_grid_distance) / 100)) 
+    grid_up8  := (grid_up7 + ((grid_up7 * percentage_grid_distance) / 100))
+    grid_up9  := (grid_up8 + ((grid_up8 * percentage_grid_distance) / 100))
+    grid_up10 := (grid_up9 + ((grid_up9 * percentage_grid_distance) / 100))
+
+    grid_down1  := (trigger_price - ((trigger_price * percentage_grid_distance) / 100)) 
+    grid_down2  := (grid_down1 - ((grid_down1 * percentage_grid_distance) / 100))
+    grid_down3  := (grid_down2 - ((grid_down2 * percentage_grid_distance) / 100)) 
+    grid_down4  := (grid_down3 - ((grid_down3 * percentage_grid_distance) / 100))
+    grid_down5  := (grid_down4 - ((grid_down4 * percentage_grid_distance) / 100))
+    grid_down6  := (grid_down5 - ((grid_down5 * percentage_grid_distance) / 100))
+    grid_down7  := (grid_down6 - ((grid_down6 * percentage_grid_distance) / 100))
+    grid_down8  := (grid_down7 - ((grid_down7 * percentage_grid_distance) / 100))
+    grid_down9  := (grid_down8 - ((grid_down8 * percentage_grid_distance) / 100))
+    grid_down10 := (grid_down9 - ((grid_down9 * percentage_grid_distance) / 100))
+
+    capital_rocked1  := start_capital * rocket_multiple
+    capital_rocked2  := capital_rocked1 * rocket_multiple
+    capital_rocked3  := capital_rocked2 * rocket_multiple
+    capital_rocked4  := capital_rocked3 * rocket_multiple
+    capital_rocked5  := capital_rocked4 * rocket_multiple
+    capital_rocked6  := capital_rocked5 * rocket_multiple
+    capital_rocked7  := capital_rocked6 * rocket_multiple
+    capital_rocked8  := capital_rocked7 * rocket_multiple
+    capital_rocked9  := capital_rocked8 * rocket_multiple
+    capital_rocked10 := capital_rocked9 * rocket_multiple
+
+    stop_loss_level_long := (grid_down10 - (grid_down10 * stop_loss)/100)
+    take_profit_level_long := (grid_up10 + (grid_up10 * take_profit)/100)
+
+    strategy.entry(id = "L 🚀 #1",  direction = strategy.long, qty = (capital_rocked1/grid_up1),  stop = grid_up1)
+    strategy.entry(id = "L 🚀 #2",  direction = strategy.long, qty = (capital_rocked2/grid_up2),  stop = grid_up2)
+    strategy.entry(id = "L 🚀 #3",  direction = strategy.long, qty = (capital_rocked3/grid_up3),  stop = grid_up3)
+    strategy.entry(id = "L 🚀 #4",  direction = strategy.long, qty = (capital_rocked4/grid_up4),  stop = grid_up4)
+    strategy.entry(id = "L 🚀 #5",  direction = strategy.long, qty = (capital_rocked5/grid_up5),  stop = grid_up5)
+    strategy.entry(id = "L 🚀 #6",  direction = strategy.long, qty = (capital_rocked6/grid_up6),  stop = grid_up6)
+    strategy.entry(id = "L 🚀 #7",  direction = strategy.long, qty = (capital_rocked7/grid_up7),  stop = grid_up7)
+    strategy.entry(id = "L 🚀 #8",  direction = strategy.long, qty = (capital_rocked8/grid_up8),  stop = grid_up8)
+    strategy.entry(id = "L 🚀 #9",  direction = strategy.long, qty = (capital_rocked9/grid_up9),  stop = grid_up9)
+    strategy.entry(id = "L 🚀 #10", direction = strategy.long, qty = (capital_rocked10/grid_up10), stop = grid_up10)
+
+if (strategy_side_short==true and crossunder_sma and strategy.opentrades==0 and in_date_range) 
+
+    trigger_price := close 
+
+    grid_up1  := (trigger_price + ((trigger_price * percentage_grid_distance) / 100))
+    grid_up2  := (grid_up1 + ((grid_up1 * percentage_grid_distance) / 100))
+    grid_up3  := (grid_up2 + ((grid_up2 * percentage_grid_distance) / 100))
+    grid_up4  := (grid_up3 + ((grid_up3 * percentage_grid_distance) / 100))
+    grid_up5  := (grid_up4 + ((grid_up4 * percentage_grid_distance) / 100))
+    grid_up6  := (grid_up5 + ((grid_up5 * percentage_grid_distance) / 100))
+    grid_up7  := (grid_up6 + ((grid_up6 * percentage_grid_distance) / 100)) 
+    grid_up8  := (grid_up7 + ((grid_up7 * percentage_grid_distance) / 100))
+    grid_up9  := (grid_up8 + ((grid_up8 * percentage_grid_distance) / 100))
+    grid_up10 := (grid_up9 + ((grid_up9 * percentage_grid_distance) / 100))
+
+    grid_down1  := (trigger_price - ((trigger_price * percentage_grid_distance) / 100)) 
+    grid_down2  := (grid_down1 - ((grid_down1 * percentage_grid_distance) / 100))
+    grid_down3  := (grid_down2 - ((grid_down2 * percentage_grid_distance) / 100)) 
+    grid_down4  := (grid_down3 - ((grid_down3 * percentage_grid_distance) / 100))
+    grid_down5  := (grid_down4 - ((grid_down4 * percentage_grid_distance) / 100))
+    grid_down6  := (grid_down5 - ((grid_down5 * percentage_grid_distance) / 100))
+    grid_down7  := (grid_down6 - ((grid_down6 * percentage_grid_distance) / 100))
+    grid_down8  := (grid_down7 - ((grid_down7 * percentage_grid_distance) / 100))
+    grid_down9  := (grid_down8 - ((grid_down8 * percentage_grid_distance) / 100))
+    grid_down10 := (grid_down9 - ((grid_down9 * percentage_grid_distance) / 100))
+
+    capital_rocked1  := start_capital * rocket_multiple
+    capital_rocked2  := capital_rocked1 * rocket_multiple
+    capital_rocked3  := capital_rocked2 * rocket_multiple
+    capital_rocked4  := capital_rocked3 * rocket_multiple
+    capital_rocked5  := capital_rocked4 * rocket_multiple
+    capital_rocked6  := capital_rocked5 * rocket_multiple
+    capital_rocked7  := capital_rocked6 * rocket_multiple
+    capital_rocked8  := capital_rocked7 * rocket_multiple
+    capital_rocked9  := capital_rocked8 * rocket_multiple
+    capital_rocked10 := capital_rocked9 * rocket_multiple
+
+    stop_loss_level_short := (grid_up10 + (grid_up10 * stop_loss)/100)
+    take_profit_level_short := (grid_down10 - (grid_down10 * take_profit)/100)
+
+    strategy.entry(id = "S 🚀 #1",  direction = strategy.short, qty = (capital_rocked1/grid_down1),  stop = grid_down1)
+    strategy.entry(id = "S 🚀 #2",  direction = strategy.short, qty = (capital_rocked2/grid_down2),  stop = grid_down2)
+    strategy.entry(id = "S 🚀 #3",  direction = strategy.short, qty = (capital_rocked3/grid_down3),  stop = grid_down3)
+    strategy.entry(id = "S 🚀 #4",  direction = strategy.short, qty = (capital_rocked4/grid_down4),  stop = grid_down4)
+    strategy.entry(id = "S 🚀 #5",  direction = strategy.short, qty = (capital_rocked5/grid_down5),  stop = grid_down5)
+    strategy.entry(id = "S 🚀 #6",  direction = strategy.short, qty = (capital_rocked6/grid_down6),  stop = grid_down6)
+    strategy.entry(id = "S 🚀 #7",  direction = strategy.short, qty = (capital_rocked7/grid_down7),  stop = grid_down7)
+    strategy.entry(id = "S 🚀 #8",  direction = strategy.short, qty = (capital_rocked8/grid_down8),  stop = grid_down8)
+    strategy.entry(id = "S 🚀 #9",  direction = strategy.short, qty = (capital_rocked9/grid_down9),  stop = grid_down9)
+    strategy.entry(id = "S 🚀 #10", direction = strategy.short, qty = (capital_rocked10/grid_down10), stop = grid_down10)
+
+if (ta.crossunder(close, stop_loss_level_long) and strategy_side_long==true and in_date_range)
+    strategy.close_all("stop-loss-long")
+    strategy.cancel("L 🚀 #1")
+    strategy.cancel("L 🚀 #2")
+    strategy.cancel("L 🚀 #3")
+    strategy.cancel("L 🚀 #4")
+    strategy.cancel("L 🚀 #5")
+    strategy.cancel("L 🚀 #6")
+    strategy.cancel("L 🚀 #7")
+    strategy.cancel("L 🚀 #8")
+    strategy.cancel("L 🚀 #9")
+    strategy.cancel("L 🚀 #10")
+    strategy.cancel("S 🚀 #1")
+    strategy.cancel("S 🚀 #2")
+    strategy.cancel("S 🚀 #3")
+    strategy.cancel("S 🚀 #4")
+    strategy.cancel("S 🚀 #5")
+    strategy.cancel("S 🚀 #6")
+    strategy.cancel("S 🚀 #7")
+    strategy.cancel("S 🚀 #8")
+    strategy.cancel("S 🚀 #9")
+    strategy.cancel("S 🚀 #10")
+
+if (ta.crossover(close, take_profit_level_long) and strategy_side_long==true and in_date_range)
+    strategy.close_all("take-profit-long")
+    strategy.cancel("L 🚀 #1")
+    strategy.cancel("L 🚀 #2")
+    strategy.cancel("L 🚀 #3")
+    strategy.cancel("L 🚀 #4")
+    strategy.cancel("L 🚀 #5")
+    strategy.cancel("L 🚀 #6")
+    strategy.cancel("L 🚀 #7")
+    strategy.cancel("L 🚀 #8")
+    strategy.cancel("L 🚀 #9")
+    strategy.cancel("L 🚀 #10")
+    strategy.cancel("S 🚀 #1")
+    strategy.cancel("S 🚀 #2")
+    strategy.cancel("S 🚀 #3")
+    strategy.cancel("S 🚀 #4")
+    strategy.cancel("S 🚀 #5")
+    strategy.cancel("S 🚀 #6")
+    strategy.cancel("S 🚀 #7")
+    strategy.cancel("S 🚀 #8")
+    strategy.cancel("S 🚀 #9")
+    strategy.cancel("S 🚀 #10")
+
+if (ta.crossunder(close, take_profit_level_short) and strategy_side_short==true and in_date_range)
+    strategy.close_all("take-profit-short")
+    strategy.cancel("S 🚀 #1")
+    strategy.cancel("S 🚀 #2")
+    strategy.cancel("S 🚀 #3")
+    strategy.cancel("S 🚀 #4")
+    strategy.cancel("S 🚀 #5")
+    strategy.cancel("S 🚀 #6")
+    strategy.cancel("S 🚀 #7")
+    strategy.cancel("S 🚀 #8")
+    strategy.cancel("S 🚀 #9")
+    strategy.cancel("S 🚀 #10")
+    strategy.cancel("L 🚀 #1")
+    strategy.cancel("L 🚀 #2")
+    strategy.cancel("L 🚀 #3")
+    strategy.cancel("L 🚀 #4")
+    strategy.cancel("L 🚀 #5")
+    strategy.cancel("L 🚀 #6")
+    strategy.cancel("L 🚀 #7")
+    strategy.cancel("L 🚀 #8")
+    strategy.cancel("L 🚀 #9")
+    strategy.cancel("L 🚀 #10")
+
+if (ta.crossover(close, stop_loss_level_short) and strategy_side_short==true and in_date_range)
+    strategy.close_all("stop-loss-short")
+    strategy.cancel("S 🚀 #1")
+    strategy.cancel("S 🚀 #2")
+    strategy.cancel("S 🚀 #3")
+    strategy.cancel("S 🚀 #4")
+    strategy.cancel("S 🚀 #5")
+    strategy.cancel("S 🚀 #6")
+    strategy.cancel("S 🚀 #7")
+    strategy.cancel("S 🚀 #8")
+    strategy.cancel("S 🚀 #9")
+    strategy.cancel("S 🚀 #10")
+    strategy.cancel("L 🚀 #1")
+    strategy.cancel("L 🚀 #2")
+    strategy.cancel("L 🚀 #3")
+    strategy.cancel("L 🚀 #4")
+    strategy.cancel("L 🚀 #5")
+    strategy.cancel("L 🚀 #6")
+    strategy.cancel("L 🚀 #7")
+    strategy.cancel("L 🚀 #8")
+    strategy.cancel("L 🚀 #9")
+    strategy.cancel("L 🚀 #10")
+    
+p_up1   = plot(grid_up1,   color=color.new(color.rgb(0, 255, 132), 85))
+p_up2   = plot(grid_up2,   color=color.new(color.rgb(0, 255, 132), 85))
+p_up3   = plot(grid_up3,   color=color.new(color.rgb(0, 255, 132), 85))
+p_up4   = plot(grid_up4,   color=color.new(color.rgb(0, 255, 132), 85))
+p_up5   = plot(grid_up5,   color=color.new(color.rgb(0, 255, 132), 85))
+p_up6   = plot(grid_up6,   color=color.new(color.rgb(0, 255, 132), 85))
+p_up7   = plot(grid_up7,   color=color.new(color.rgb(0, 255, 132), 85))
+p_up8   = plot(grid_up8,   color=color.new(color.rgb(0, 255, 132), 85))
+p_up9   = plot(grid_up9,   color=color.new(color.rgb(0, 255, 132), 85))
+p_up10  = plot(grid_up10,  color=color.new(color.rgb(0, 255, 132), 85))
+
+p_down1 = plot(grid_down1, color=color.new(color.rgb(255, 50, 50), 85))
+p_down2 = plot(grid_down2, color=color.new(color.rgb(255, 50, 50), 85))
+p_down3 = plot(grid_down3, color=color.new(color.rgb(255, 50, 50), 85))
+p_down4 = plot(grid_down4, color=color.new(color.rgb(255, 50, 50), 85))
+p_down5 = plot(grid_down5, color=color.new(color.rgb(255, 50, 50), 85))
+p_down6 = plot(grid_down6, color=color.new(color.rgb(255, 50, 50), 85))
+p_down7 = plot(grid_down7, color=color.new(color.rgb(255, 50, 50), 85))
+p_down8 = plot(grid_down8, color=color.new(color.rgb(255, 50, 50), 85))
+p_down9 = plot(grid_down9, color=color.new(color.rgb(255, 50, 50), 85))
+p_down10= plot(grid_down10, color=color.new(color.rgb(255, 50, 50), 85))
+
+fill(p_up1,  p_up2,  color = color.new(color.rgb(0, 255, 132), 96))
+fill(p_up2,  p_up3,  color = color.new(color.rgb(0, 255, 132), 94))
+fill(p_up3,  p_up4,  color = color.new(color.rgb(0, 255, 132), 92))
+fill(p_up4,  p_up5,  color = color.new(color.rgb(0, 255, 132), 90))
+fill(p_up5,  p_up6,  color = color.new(color.rgb(0, 255, 132), 88))
+fill(p_up6,  p_up7,  color = color.new(color.rgb(0, 255, 132), 86))
+fill(p_up7,  p_up8,  color = color.new(color.rgb(0, 255, 132), 84))
+fill(p_up8,  p_up9,  color = color.new(color.rgb(0, 255, 132), 82))
+fill(p_up9,  p_up10, color = color.new(color.rgb(0, 255, 132), 80))
+
+fill(p_down1, p_down2, color = color.new(color.rgb(255, 50, 50), 96))
+fill(p_down2, p_down3, color = color.new(color.rgb(255, 50, 50), 94))
+fill(p_down3, p_down4, color = color.new(color.rgb(255, 50, 50), 92))
+fill(p_down4, p_down5, color = color.new(color.rgb(255, 50, 50), 90))
+fill(p_down5, p_down6, color = color.new(color.rgb(255, 50, 50), 88))
+fill(p_down6, p_down7, color = color.new(color.rgb(255, 50, 50), 86))
+fill(p_down7, p_down8, color = color.new(color.rgb(255, 50, 50), 84))
+fill(p_down8, p_down9, color = color.new(color.rgb(255, 50, 50), 82))
+fill(p_down9, p_down10,color = color.new(color.rgb(255, 50, 50), 80))
+
+sma_color = close >= sma ? color.rgb(0, 255, 132) : color.rgb(255, 50, 50)
+p_sma = plot(sma, title="SMA", color=sma_color, linewidth=3)
+fill(plot(close, display=display.none), p_sma, color = color.new(sma_color, 90), title="Background SMA Trend")
+
+if strategy.equity <= 0 
+    runtime.error(" BANKRUPTCY: BACKTEST RETURN LOSS > EQUITY !!! ")

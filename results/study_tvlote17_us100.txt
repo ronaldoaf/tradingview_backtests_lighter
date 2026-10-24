@@ -1,0 +1,76 @@
+
+================= us100 =================
+  M1 2017-01-05 -> 2026-08-31
+
+### 1. Supertrend CCI (sinal do CCI28)
+  15min STCCI default                16913 tr (1750.9/ano,   0.21d) | bruto    +1.3bp liq    -1.1bp (win 20%) | CAGR  -25.2% vs B&H  +20.3% | Sh -1.35 DD  -297% expo 100% | ctl    -2.3bp t=+2.85
+  30min STCCI default                8147 tr (843.4/ano,   0.43d) | bruto    +2.5bp liq    +0.1bp (win 22%) | CAGR   -4.6% vs B&H  +20.3% | Sh -0.23 DD   -79% expo 100% | ctl    -2.1bp t=+2.87
+  1h STCCI default                   3861 tr (399.7/ano,   0.91d) | bruto    +4.7bp liq    +2.1bp (win 25%) | CAGR   +5.2% vs B&H  +20.3% | Sh +0.26 DD   -38% expo 100% | ctl    -1.5bp t=+1.58
+  4h STCCI default                   1009 tr (104.5/ano,   3.48d) | bruto    +7.8bp liq    +4.6bp (win 25%) | CAGR   -5.6% vs B&H  +20.3% | Sh -0.27 DD  -116% expo 100% | ctl    +3.4bp t=+0.25
+  1D STCCI default                    183 tr ( 18.9/ano,  18.70d) | bruto   +35.9bp liq   +25.1bp (win 26%) | CAGR   +6.9% vs B&H  +20.2% | Sh +0.32 DD   -32% expo  97% | ctl   +17.1bp t=+0.29
+
+### 2. Grid Like (linha-base, alvo/stop = point)
+  15min GRID 1%                      3157 tr (326.8/ano,   0.97d) | bruto    +2.2bp liq    -0.7bp (win 51%) | CAGR   -3.3% vs B&H  +20.3% | Sh -0.18 DD   -76% expo  87% | ctl    -0.1bp t=-0.23
+  30min GRID 1%                      2802 tr (290.1/ano,   1.04d) | bruto    +2.3bp liq    -0.5bp (win 52%) | CAGR   -3.9% vs B&H  +20.3% | Sh -0.23 DD   -79% expo  82% | ctl    +0.2bp t=-0.28
+  1h GRID 1%                         2490 tr (257.8/ano,   1.10d) | bruto    +1.5bp liq    -1.4bp (win 51%) | CAGR   -3.6% vs B&H  +20.3% | Sh -0.22 DD   -70% expo  77% | ctl    -1.0bp t=-0.14
+  4h GRID 1%                         1745 tr (180.7/ano,   1.36d) | bruto    +7.6bp liq    +4.6bp (win 54%) | CAGR   +1.3% vs B&H  +20.3% | Sh +0.08 DD   -79% expo  69% | ctl    +0.4bp t=+1.16
+  1D GRID 1%                          963 tr ( 99.7/ano,   2.37d) | bruto    +0.8bp liq    -2.5bp (win 49%) | CAGR   -2.1% vs B&H  +20.2% | Sh -0.13 DD   -74% expo  65% | ctl    +1.9bp t=-0.86
+
+### 3. FTSMA (EMAs 5/20/200 do close + termo de Fourier)
+  15min FTSMA default                3167 tr (327.9/ano,   1.11d) | bruto    +6.9bp liq    +4.3bp (win 25%) | CAGR  +10.5% vs B&H  +20.3% | Sh +0.49 DD   -49% expo 100% | ctl    -1.9bp t=+3.53
+  30min FTSMA default                1612 tr (166.9/ano,   2.18d) | bruto   +10.0bp liq    +7.1bp (win 27%) | CAGR   +9.6% vs B&H  +20.3% | Sh +0.47 DD   -53% expo 100% | ctl    +1.0bp t=+1.74
+  1h FTSMA default                    856 tr ( 88.6/ano,   4.09d) | bruto   +12.9bp liq    +9.1bp (win 29%) | CAGR   +4.3% vs B&H  +20.3% | Sh +0.21 DD   -44% expo 100% | ctl    +2.9bp t=+1.15
+  4h FTSMA default                    246 tr ( 25.5/ano,  13.98d) | bruto   +14.9bp liq    +5.6bp (win 23%) | CAGR   +0.9% vs B&H  +20.3% | Sh +0.04 DD   -41% expo  98% | ctl   +23.4bp t=-0.69
+  1D FTSMA default                     30 tr (  3.1/ano,  98.93d) | bruto  +286.1bp liq  +207.7bp (win 23%) | CAGR   +5.1% vs B&H  +20.2% | Sh +0.26 DD   -38% expo  85% | ctl  +329.0bp t=-0.60
+
+### 4. HULLTSIBOT (TSI com HMA 50/50, sinal 7)
+  15min HTSI default                 12376 tr (1281.2/ano,   0.28d) | bruto    +0.4bp liq    -2.0bp (win 40%) | CAGR  -24.7% vs B&H  +20.3% | Sh -1.34 DD  -284% expo 100% | ctl    -2.3bp t=+0.56
+  30min HTSI default                 5629 tr (582.7/ano,   0.62d) | bruto    -0.1bp liq    -2.6bp (win 42%) | CAGR  -12.8% vs B&H  +20.3% | Sh -0.67 DD  -154% expo 100% | ctl    -2.2bp t=-0.37
+  1h HTSI default                    2220 tr (229.8/ano,   1.58d) | bruto    +5.1bp liq    +2.6bp (win 45%) | CAGR   +4.0% vs B&H  +20.3% | Sh +0.18 DD   -48% expo 100% | ctl    -0.7bp t=+1.07
+  4h HTSI default                     617 tr ( 63.9/ano,   5.65d) | bruto    +1.4bp liq    -1.7bp (win 42%) | CAGR   -0.7% vs B&H  +20.3% | Sh -0.04 DD  -108% expo  99% | ctl    +0.5bp t=-0.22
+  1D HTSI default                     106 tr ( 11.0/ano,  31.21d) | bruto   -13.1bp liq   -20.0bp (win 42%) | CAGR   -2.2% vs B&H  +20.2% | Sh -0.11 DD   -66% expo  94% | ctl   +50.9bp t=-1.12
+
+### 5. Band-Zigzag TrendFollower (BB20x2 grudenta)
+  15min BZ default                    904 tr ( 93.6/ano,   3.89d) | bruto   -10.2bp liq   -14.7bp (win 47%) | CAGR  -12.3% vs B&H  +20.3% | Sh -0.64 DD  -161% expo 100% | ctl    +6.8bp t=-3.54
+  30min BZ default                    462 tr ( 47.8/ano,   7.62d) | bruto   +19.5bp liq   +12.1bp (win 49%) | CAGR   +5.1% vs B&H  +20.3% | Sh +0.24 DD   -53% expo 100% | ctl   +22.8bp t=-0.75
+  1h BZ default                       225 tr ( 23.3/ano,  15.59d) | bruto   +40.3bp liq   +27.3bp (win 49%) | CAGR   +5.4% vs B&H  +20.3% | Sh +0.25 DD   -67% expo 100% | ctl   +41.5bp t=-0.62
+  4h BZ default                        58 tr (  6.0/ano,  59.69d) | bruto   +30.2bp liq   -13.0bp (win 47%) | CAGR   -2.1% vs B&H  +20.3% | Sh -0.10 DD   -82% expo  98% | ctl  +167.6bp t=-2.28
+  1D BZ default                        10 tr (  1.0/ano, 178.10d) | bruto  +455.8bp liq  +325.8bp (win 60%) | CAGR   +3.6% vs B&H  +20.2% | Sh +0.28 DD   -34% expo  51% | ctl  +414.9bp t=-0.18
+
+=== resumo us100 (195 celulas) ===
+  bz       50 cel | liq>0   41 | liq>0 e t>2   0 | CAGR>B&H   0 | melhor CAGR +12.0%
+  ftsma    20 cel | liq>0   20 | liq>0 e t>2   3 | CAGR>B&H   0 | melhor CAGR +13.9%
+  grid     55 cel | liq>0   28 | liq>0 e t>2   0 | CAGR>B&H   0 | melhor CAGR +15.5%
+  htsi     30 cel | liq>0   14 | liq>0 e t>2   0 | CAGR>B&H   0 | melhor CAGR +13.3%
+  stcci    40 cel | liq>0   31 | liq>0 e t>2   5 | CAGR>B&H   0 | melhor CAGR +11.6%
+
+  top 15 por CAGR:
+  est    TF                     cfg  trades  por_ano  bp_bruto  bp_liq   win  cagr    bh  sharpe     dd  expo  ctl_bp      t
+ grid 15min            p2.00% ambos     969  100.316    14.815  10.808 0.537 0.155 0.203   0.823 -0.261 0.902   6.975  0.679
+ftsma 30min     5/20/200 semft long     760   78.680    23.732  17.926 0.300 0.139 0.203   1.084 -0.213 0.615  13.038  0.695
+ftsma 15min     5/20/200 semft long    1500  155.288    14.324  10.222 0.285 0.138 0.203   0.970 -0.272 0.597   5.002  1.516
+ htsi    4h            25/13/7 long     712   73.711    20.197  14.462 0.493 0.133 0.203   0.898 -0.264 0.547  11.795  0.364
+ftsma 30min    5/20/200 semft ambos    1520  157.359    10.845   7.886 0.268 0.130 0.203   0.636 -0.554 0.998   0.148  2.065
+ grid 15min             p2.00% long     536   55.490    26.732  19.220 0.569 0.128 0.203   0.971 -0.302 0.631  17.809  0.177
+ftsma 15min    5/20/200 semft ambos    3001  310.680     7.759   5.104 0.260 0.128 0.203   0.577 -0.480 0.999  -0.923  2.813
+ftsma 15min        5/20/200 ft long    1583  163.881    13.141   9.128 0.276 0.127 0.203   0.922 -0.288 0.597   4.641  1.740
+ftsma 30min        5/20/200 ft long     806   83.442    22.142  16.533 0.297 0.121 0.203   0.944 -0.193 0.614  10.179  1.072
+   bz    1h bb20 1.5 semlatest long     294   30.437    54.535  43.531 0.466 0.120 0.203   0.975 -0.322 0.578  26.660  1.050
+ htsi    4h           25/13/7 ambos    1424  147.422     6.180   3.478 0.440 0.119 0.203   0.535 -0.388 0.996  -1.763  1.147
+stcci 30min             cci100 long    1752  181.377    11.964   8.144 0.216 0.116 0.203   0.879 -0.240 0.584   2.581  2.054
+   bz    1h    bb20 1.5 latest long     167   17.289    86.414  63.972 0.461 0.110 0.203   0.673 -0.422 0.770  75.161 -0.377
+ grid    1h             p5.00% long     105   10.870   117.012  84.379 0.619 0.109 0.203   0.781 -0.318 0.722 116.502 -0.818
+   bz    1h      bb20 3 latest long      60    6.212   246.015 190.876 0.550 0.106 0.203   0.697 -0.381 0.727 167.448  0.217
+
+  top 10 por t:
+  est    TF                  cfg  trades  por_ano  bp_bruto  bp_liq   win   cagr    bh  sharpe     dd  expo  ctl_bp     t
+ftsma 15min    5/20/200 ft ambos    3167  327.866     6.917   4.275 0.254  0.105 0.203   0.489 -0.489 0.999  -1.879 3.526
+stcci 30min          cci28 ambos    8147  843.426     2.542   0.084 0.220 -0.046 0.203  -0.225 -0.786 0.999  -2.062 2.866
+stcci 15min          cci28 ambos   16913 1750.929     1.288  -1.143 0.205 -0.252 0.203  -1.354 -2.967 0.999  -2.307 2.846
+stcci 30min         cci100 ambos    3504  362.755     6.377   3.793 0.199  0.084 0.203   0.421 -0.401 0.998  -1.622 2.828
+ftsma 15min 5/20/200 semft ambos    3001  310.680     7.759   5.104 0.260  0.128 0.203   0.577 -0.480 0.999  -0.923 2.813
+stcci 15min          cci50 ambos   12129 1255.662     1.611  -0.828 0.181 -0.114 0.203  -0.562 -1.350 0.999  -2.202 2.501
+stcci 15min         cci100 ambos    7653  792.281     2.510   0.039 0.176 -0.014 0.203  -0.068 -0.587 0.999  -2.395 2.483
+stcci 30min          cci50 ambos    5647  584.611     3.655   1.153 0.215  0.051 0.203   0.244 -0.447 0.999  -1.871 2.443
+ftsma 30min 5/20/200 semft ambos    1520  157.359    10.845   7.886 0.268  0.130 0.203   0.636 -0.554 0.998   0.148 2.065
+stcci 30min          cci100 long    1752  181.377    11.964   8.144 0.216  0.116 0.203   0.879 -0.240 0.584   2.581 2.054

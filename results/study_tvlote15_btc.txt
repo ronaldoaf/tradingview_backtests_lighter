@@ -1,0 +1,76 @@
+
+================= btc =================
+  M1 2020-01-01 -> 2026-09-30
+
+### 1. Spot/Binary Scalper (Tenkan7 + DI>20, sessao 04-15)
+  15min SBS default                  11474 tr (1699.0/ano,   0.07d) | bruto    +2.6bp liq    +1.6bp (win 41%) | CAGR  -21.8% vs B&H  +43.8% | Sh -0.77 DD  -212% expo  32% | ctl    -1.0bp t=+3.62
+  30min SBS default                  7008 tr (1037.7/ano,   0.09d) | bruto    +2.8bp liq    +1.8bp (win 43%) | CAGR   -5.5% vs B&H  +43.9% | Sh -0.20 DD  -114% expo  25% | ctl    -1.2bp t=+3.55
+  1h SBS default                     3921 tr (580.6/ano,   0.11d) | bruto    +3.4bp liq    +2.4bp (win 45%) | CAGR   -1.5% vs B&H  +43.9% | Sh -0.06 DD   -92% expo  18% | ctl    -0.8bp t=+1.99
+  4h SBS default                     1054 tr (156.1/ano,   0.21d) | bruto    +4.7bp liq    +3.8bp (win 47%) | CAGR   +1.7% vs B&H  +43.7% | Sh +0.12 DD   -45% expo   9% | ctl    -0.9bp t=+1.18
+  1D SBS default                     (menos de 10 trades)
+
+### 2. Combined Strategy (fita de EMAs + RSI + Stoch)
+  15min COMB default                 10227 tr (1514.3/ano,   0.18d) | bruto    +2.2bp liq    +1.2bp (win 58%) | CAGR  +15.9% vs B&H  +43.8% | Sh +0.23 DD   -97% expo  77% | ctl    -0.6bp t=+1.41
+  30min COMB default                 4940 tr (731.5/ano,   0.38d) | bruto    +4.9bp liq    +3.9bp (win 59%) | CAGR  +12.7% vs B&H  +43.9% | Sh +0.20 DD  -116% expo  76% | ctl    -1.0bp t=+1.97
+  1h COMB default                    2484 tr (367.8/ano,   0.75d) | bruto    +2.3bp liq    +1.2bp (win 61%) | CAGR   +1.4% vs B&H  +43.9% | Sh +0.02 DD  -128% expo  76% | ctl    +0.4bp t=+0.20
+  4h COMB default                     661 tr ( 97.9/ano,   2.71d) | bruto   +11.8bp liq   +10.5bp (win 61%) | CAGR  +11.9% vs B&H  +43.7% | Sh +0.21 DD   -92% expo  73% | ctl    +2.9bp t=+0.39
+  1D COMB default                     106 tr ( 15.7/ano,  16.11d) | bruto   +81.7bp liq   +78.5bp (win 66%) | CAGR   +4.1% vs B&H  +43.8% | Sh +0.09 DD  -110% expo  69% | ctl   +33.0bp t=+0.43
+
+### 3. TMFS (rompimento de LT + media de 3 SuperTrends)
+  15min TMFS default                 9332 tr (1381.8/ano,   0.11d) | bruto    +1.7bp liq    +0.7bp (win 41%) | CAGR  -10.5% vs B&H  +43.8% | Sh -0.27 DD  -119% expo  43% | ctl    -1.1bp t=+1.90
+  30min TMFS default                 4808 tr (711.9/ano,   0.18d) | bruto    +1.0bp liq    +0.0bp (win 48%) | CAGR  -11.5% vs B&H  +43.9% | Sh -0.31 DD  -146% expo  36% | ctl    -0.5bp t=+0.27
+  1h TMFS default                    2444 tr (361.9/ano,   0.31d) | bruto    +7.7bp liq    +6.7bp (win 60%) | CAGR  +13.2% vs B&H  +43.9% | Sh +0.40 DD   -52% expo  30% | ctl    -1.9bp t=+2.09
+  4h TMFS default                     671 tr ( 99.4/ano,   0.68d) | bruto   +19.0bp liq   +18.0bp (win 78%) | CAGR  +14.9% vs B&H  +43.7% | Sh +0.78 DD   -29% expo  18% | ctl    -2.7bp t=+2.30
+  1D TMFS default                     110 tr ( 16.3/ano,   2.18d) | bruto    +1.7bp liq    +0.7bp (win 86%) | CAGR   -3.6% vs B&H  +43.8% | Sh -0.53 DD   -41% expo  10% | ctl    -8.3bp t=+0.25
+
+### 4. EMA STOCH (Crypto BOT lower timeframes)
+  15min ES default                    140 tr ( 20.7/ano,   9.76d) | bruto  -140.3bp liq  -139.4bp (win 35%) | CAGR  -23.0% vs B&H  +43.8% | Sh -0.77 DD  -209% expo  55% | ctl    +6.0bp t=-1.62
+  30min ES default                     69 tr ( 10.2/ano,  11.79d) | bruto   +65.1bp liq   +65.4bp (win 51%) | CAGR   +6.8% vs B&H  +43.9% | Sh +0.32 DD   -98% expo  33% | ctl   -16.0bp t=+0.88
+  1h ES default                        34 tr (  5.0/ano,  14.13d) | bruto  +189.4bp liq  +200.3bp (win 59%) | CAGR   +8.4% vs B&H  +43.9% | Sh +0.77 DD   -33% expo  19% | ctl   -61.6bp t=+1.06
+  4h ES default                      (menos de 10 trades)
+  1D ES default                      (menos de 10 trades)
+
+### 5. BTC bot (cc do RSI21 x 0; saida no R3 semanal)
+  15min BTCB default                  170 tr ( 25.2/ano,  10.06d) | bruto   +43.6bp liq   +12.5bp (win 76%) | CAGR   -5.9% vs B&H  +43.8% | Sh -0.13 DD  -107% expo  69% | ctl  +116.7bp t=-1.12
+  30min BTCB default                  156 tr ( 23.1/ano,   8.86d) | bruto   +22.0bp liq    -5.4bp (win 76%) | CAGR   +1.4% vs B&H  +43.9% | Sh +0.04 DD   -96% expo  56% | ctl  +101.4bp t=-1.64
+  1h BTCB default                     112 tr ( 16.6/ano,   9.51d) | bruto    +8.3bp liq   -21.1bp (win 75%) | CAGR  -10.6% vs B&H  +43.9% | Sh -0.38 DD  -113% expo  43% | ctl  +129.7bp t=-1.58
+  4h BTCB default                      44 tr (  6.5/ano,  11.16d) | bruto  +122.2bp liq   +87.8bp (win 80%) | CAGR   +5.8% vs B&H  +43.7% | Sh +0.43 DD   -52% expo  20% | ctl   +95.5bp t=-0.05
+  1D BTCB default                    (menos de 10 trades)
+
+=== resumo btc (201 celulas) ===
+  btcb     27 cel | liq>0    7 | liq>0 e t>2   0 | CAGR>B&H   0 | melhor CAGR +5.8%
+  comb     20 cel | liq>0   20 | liq>0 e t>2   0 | CAGR>B&H   0 | melhor CAGR +36.4%
+  es       18 cel | liq>0    8 | liq>0 e t>2   0 | CAGR>B&H   0 | melhor CAGR +8.4%
+  sbs      76 cel | liq>0   62 | liq>0 e t>2  17 | CAGR>B&H   0 | melhor CAGR +38.5%
+  tmfs     60 cel | liq>0   51 | liq>0 e t>2  13 | CAGR>B&H   0 | melhor CAGR +38.2%
+
+  top 15 por CAGR:
+ est    TF                    cfg  trades  por_ano  bp_bruto   bp_liq   win  cagr    bh  sharpe     dd  expo  ctl_bp      t
+ sbs 30min      sl2.00% 24h ambos    7057 1044.960     6.415    5.461 0.332 0.385 0.439   0.517 -0.924 0.882  -1.539  3.109
+tmfs    4h sw20 sl8atr tp0% ambos     252   37.317   118.233  115.481 0.385 0.382 0.437   0.734 -0.531 0.494  15.063  2.411
+comb    4h          so EMAs ambos     247   36.577    85.556   82.158 0.308 0.364 0.437   0.453 -0.801 0.886 -23.151  1.777
+comb    4h           so EMAs long     124   18.362   234.237  204.542 0.306 0.347 0.437   0.904 -0.887 0.483 105.633  1.436
+comb    1h           so EMAs long     476   70.484    64.541   56.139 0.313 0.345 0.439   0.801 -0.904 0.479  28.103  1.609
+tmfs 30min  sw20 sl8atr tp0% long    1081  160.068    23.927   21.223 0.365 0.339 0.439   1.023 -0.837 0.250   5.441  2.274
+tmfs    4h  sw8 sl8atr tp0% ambos     485   71.820    45.750   44.404 0.328 0.327 0.437   0.492 -1.091 0.704  -1.969  1.655
+comb    1D           so EMAs long      19    2.815  2561.720 2367.553 0.474 0.318 0.438   0.817 -0.666 0.499 910.177  1.589
+ sbs    4h      sl1.00% 24h ambos    1917  283.875     6.045    5.096 0.449 0.318 0.437   0.875 -0.306 0.308  -0.217  1.024
+tmfs 30min sw20 sl8atr tp0% ambos    2092  309.771    12.148   11.039 0.352 0.317 0.439   0.584 -1.195 0.469   0.606  2.006
+ sbs 30min       sl2.00% 24h long    1863  275.862    13.169    9.638 0.457 0.316 0.439   0.565 -0.769 0.640  10.997 -0.299
+tmfs    1h   sw8 sl8atr tp0% long     920  136.229    31.160   27.277 0.316 0.315 0.439   0.805 -1.018 0.360   9.771  2.206
+comb    1h          so EMAs ambos     963  142.597    23.176   21.705 0.303 0.314 0.439   0.392 -1.009 0.895   0.204  1.546
+comb    1D          so EMAs ambos      37    5.481  1084.396 1059.102 0.405 0.309 0.438   0.437 -0.858 0.874 228.767  1.340
+comb 30min          so EMAs ambos    1977  292.743    11.251   10.048 0.300 0.302 0.439   0.381 -0.732 0.884   0.725  1.175
+
+  top 10 por t:
+est    TF                  cfg  trades  por_ano  bp_bruto  bp_liq   win   cagr    bh  sharpe     dd  expo  ctl_bp     t
+sbs 15min sl0.50% sessao ambos   11474 1698.997     2.576   1.581 0.406 -0.218 0.438  -0.772 -2.120 0.322  -1.314 4.618
+sbs 15min  sl0.5% sessao ambos   11474 1698.997     2.576   1.581 0.406 -0.218 0.438  -0.772 -2.120 0.322  -1.046 3.620
+sbs 30min    sl1.00% 24h ambos    9811 1452.757     2.433   1.449 0.377  0.060 0.439   0.111 -1.017 0.715  -1.472 3.617
+sbs 15min    sl1.00% 24h ambos   16538 2448.842     2.149   1.161 0.345 -0.152 0.438  -0.284 -2.366 0.815  -1.262 3.601
+sbs 15min    sl0.50% 24h ambos   23251 3442.860     1.634   0.637 0.400 -0.273 0.438  -0.699 -2.926 0.593  -0.845 3.561
+sbs 30min  sl0.5% sessao ambos    7008 1037.705     2.784   1.790 0.432 -0.055 0.439  -0.198 -1.144 0.252  -1.169 3.554
+sbs 15min sl0.25% sessao ambos   14510 2148.549     1.384   0.383 0.436 -0.244 0.438  -1.193 -2.000 0.185  -0.953 3.346
+sbs 15min sl1.00% sessao ambos    8653 1281.281     3.829   2.842 0.354 -0.049 0.438  -0.115 -1.374 0.531  -1.318 3.297
+sbs 30min sl0.50% sessao ambos    7008 1037.705     2.784   1.790 0.432 -0.055 0.439  -0.198 -1.144 0.252  -0.991 3.248
+sbs 15min    sl2.00% 24h ambos   12894 1909.262     3.336   2.359 0.302 -0.052 0.438  -0.080 -2.084 0.939  -1.150 3.196

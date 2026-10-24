@@ -1,0 +1,224 @@
+// This source code is subject to the terms of the Mozilla Public License 2.0 at https://mozilla.org/MPL/2.0/
+// © ahancock
+
+//@version=4
+strategy(
+     title = "Hancock - Filtered Volume OBV OSC [Strategy]",
+     initial_capital = 1000,
+     overlay = false,
+     commission_type = strategy.commission.percent,
+     commission_value= 0.075)
+
+sma_average = "SMA"
+ema_average = "EMA"
+wma_average = "WMA"
+hma_average = "HMA"
+vwma_average = "VWMA"
+rma_average = "RMA"
+alma_average = "ALMA"
+
+// Inputs
+source = input(close, title = "Source", type = input.source)
+
+use_vol_filter        = input(true, title = "Use Volume Filter", type = input.bool)
+vol_filter_length     = input(50, title = "Volume Filter - Length", type = input.integer, minval = 1)
+vol_filter_multiplier = input(2.5, title = "Volume Filter - Multiplier", type = input.float, minval = 0.1, step = 0.1)
+
+use_osc    = input(true, title = "Use Oscillator", type = input.bool)
+osc_length = input(50, title = "Oscillator - Signal Length", type = input.integer, minval = 1)
+osc_type   = input(wma_average, title = "Oscillator - Type", options = [sma_average, ema_average, wma_average, hma_average, vwma_average, rma_average, alma_average])
+
+average_alma_offset = input(0.85, title = "Oscillator - ALMA - Offset", type = input.float, minval = 0.05, step = 0.05)
+average_alma_sigma  = input(10, title = "Oscillator - ALMA - Sigma", type = input.integer, minval = 1)
+
+channel_length = input(125, title = "Channel - Slow Length", minval = 5, maxval = 200, step = 5)
+channel_percent = input(35, title = "Channel - Fast Length Percent", minval = 5, maxval = 100, step = 5)
+
+trade_both = "Both", trade_long = "Long", trade_short = "Short"
+trade_direction       = input("Both", title = "Trade - Direction", options = [trade_both, trade_long, trade_short])
+trade_leverage        = input(5, title = "Trade - Leverage", type = input.integer, minval = 1, maxval = 100)
+trade_stop            = input(10, title = "Trade - Stop Loss %", type = input.float, minval = 0.5, step = 0.5, maxval = 100)
+trade_trail_threshold = input(10, title = "Trade - Trail Stop Threshold %", type = input.float, minval = 0.5, step = 0.5, maxval = 100)
+trade_trail           = input(20, title = "Trade - Trail Stop Minimum %", type = input.float, minval = 0.5, step = 0.5, maxval = 100)
+trade_risk            = input(100, title = "Trade - Risk %", type = input.integer, step = 1, minval = 1, maxval = 100)
+
+use_test_range = input(false, "Use Test Range", type = input.bool)
+test_year      = input(2016, "Test - Year", type = input.integer, minval = 1970, maxval = 2222) 
+test_month     = input(01, "Test - Month", type = input.integer, minval = 1, maxval = 12)
+test_day       = input(01, "Test - Day", type = input.integer,  minval = 1, maxval = 31)
+
+// Functions
+get_round(value, precision) => round(value * (pow(10, precision))) / pow(10, precision)
+
+get_average(values, length, type) => 
+    type == sma_average ? sma(values, length) : 
+         type == ema_average ? ema(values, length) : 
+             type == wma_average ? wma(values, length) : 
+                 type == hma_average ? wma(2 * wma(values, length / 2) - wma(values, length), round(sqrt(length))) : 
+                     type == vwma_average ? vwma(values, length) : 
+                         type == rma_average ? rma(values, length) :
+                             type == alma_average ? alma(values, length, average_alma_offset, average_alma_sigma) : na
+                             
+get_obv(values, filter_length, filter_multiplier, use_filter, osc_length, osc_type, use_osc) => 
+    threshold = abs(avg(volume, filter_length) - (stdev(volume, filter_length) * filter_multiplier))
+
+    obv = 0.0
+    if (use_filter and volume < threshold)
+        obv := nz(obv[1])
+    else
+        obv :=  nz(obv[1]) + sign(change(values)) * volume
+        
+    use_osc ? (obv - get_average(obv, osc_length, osc_type)) : obv
+
+get_dc(high_values, low_values, length) =>
+
+    top = highest(high_values, length)
+    bot = lowest(low_values, length)
+    mid = bot + ((top - bot) / 2)
+    
+    [top, mid, bot]
+
+get_dcs(high_values, low_values, length, length_percent) => 
+    
+    slow_length = length
+    fast_length = slow_length * length_percent / 100
+
+    [slow_top, slow_mid, slow_bot] = 
+         get_dc(high_values, low_values, slow_length)
+         
+    [fast_top, fast_mid, fast_bot] = 
+         get_dc(high_values, low_values, fast_length)
+    
+    [slow_top, slow_mid, slow_bot, fast_top, fast_mid, fast_bot]
+
+
+// Strategy
+obv = get_obv(
+         source, 
+         vol_filter_length, 
+         vol_filter_multiplier, 
+         use_vol_filter,
+         osc_length,
+         osc_type,
+         use_osc)
+
+[slow_top_price, _, slow_bot_price, fast_top_price, _, fast_bot_price] = 
+     get_dcs(high, low, channel_length, channel_percent)
+
+[slow_top_obv, _, slow_bot_obv, fast_top_obv, _, fast_bot_obv] = 
+     get_dcs(obv, obv, channel_length, channel_percent)
+
+enter_long_price  = high > slow_top_price[1]
+enter_short_price = low  < slow_bot_price[1]
+exit_long_price   = low  < fast_bot_price[1]
+exit_short_price  = high > fast_top_price[1]
+
+enter_long_obv  = obv > slow_top_obv[1] and (use_osc ? obv > 0 : true)
+enter_short_obv = obv < slow_bot_obv[1] and (use_osc ? obv < 0 : true)
+exit_long_obv   = obv < fast_bot_obv[1]
+exit_short_obv  = obv > fast_top_obv[1]
+
+
+// Trade Conditions
+can_trade = true
+
+enter_long_condition = enter_long_obv and enter_long_price
+exit_long_condition  = exit_long_obv  and exit_long_price
+
+enter_short_condition = enter_short_obv and enter_short_price 
+exit_short_condition  = exit_short_obv  and exit_short_price
+
+
+// Positions
+long_high = 0.0, long_high := nz(long_high[1], 0)
+short_low = 0.0, short_low := nz(short_low[1], 0)
+            
+long_trail_threshold  = 0.0, long_trail_threshold := nz(long_trail_threshold[1], 0)
+short_trail_threshold = 0.0, short_trail_threshold := nz(short_trail_threshold[1], 0)
+
+long_stop  = 0.0, long_stop := nz(long_stop[1], 0)
+short_stop = 0.0, short_stop := nz(short_stop[1], 0)
+
+can_long  = trade_direction == trade_long or trade_direction == trade_both
+can_short = trade_direction == trade_short or trade_direction == trade_both
+
+if (strategy.position_size > 0)
+    if(high > long_high)
+        long_high := high
+            
+        if (long_high > long_trail_threshold)
+            long_stop := long_high - ((long_high / trade_leverage) * (trade_trail / 100))
+            
+    strategy.exit("S/L", "LONG",
+         stop = long_stop,
+         qty = abs(get_round(strategy.position_size, 4)))
+
+if (strategy.position_size < 0)
+    if (low < short_low)
+        short_low := low
+        
+        if(short_low < short_trail_threshold)
+            short_stop := short_low + ((short_low / trade_leverage) * (trade_trail / 100))
+
+    strategy.exit("S/L", "SHORT", 
+         stop = short_stop, 
+         qty = abs(get_round(strategy.position_size, 4)))
+        
+if (exit_long_condition)
+    strategy.close("LONG")
+    
+if (exit_short_condition)
+    strategy.close("SHORT")
+
+test_time   = timestamp(test_year, test_month, test_day, 0, 0)
+
+if (time >= test_time and strategy.opentrades == 0)
+    if (can_long)
+        if(enter_long_condition and strategy.position_size == 0)
+            contracts = get_round((strategy.equity * trade_leverage / close) * (trade_risk / 100), 4)
+        
+            strategy.entry(
+                 "LONG", 
+                 strategy.long, 
+                 qty = contracts)
+                 
+            long_high := low
+            long_trail_threshold := close + ((close / trade_leverage) * (trade_trail_threshold / 100))
+            long_stop := close - ((close / trade_leverage) * (trade_stop / 100))
+            
+
+    if (can_short)
+        if (enter_short_condition and strategy.position_size == 0)
+            contracts = get_round((strategy.equity * trade_leverage / close) * (trade_risk / 100), 4)
+            
+            strategy.entry(
+                 "SHORT", 
+                 strategy.short, 
+                 qty = contracts)
+            
+            short_low := high
+            short_trail_threshold := close - ((close / trade_leverage) * (trade_trail_threshold / 100))
+            short_stop := close + ((close / trade_leverage) * (trade_stop / 100))
+
+
+// Plots
+plotshape(enter_long_condition, "Enter Long", shape.diamond, location.top, color.green)
+plotshape(exit_long_condition, "Exit Long", shape.diamond, location.top, color.red)
+
+plotshape(enter_short_condition, "Enter Short", shape.diamond, location.bottom, color.green)
+plotshape(exit_short_condition, "Exit Short", shape.diamond, location.bottom, color.red)
+
+color_green = #63b987
+color_red   = #eb3d5c
+
+hline(use_osc ? 0 : na)
+plot(use_osc ? obv : na, color = color.silver, style = plot.style_area, transp = 90)
+plot(obv, color = color.white, style = plot.style_line, linewidth = 2, transp = 0)
+
+plot_slow_top = plot(slow_top_obv, color = color_green, linewidth = 2, transp = 60)
+plot_slow_bot = plot(slow_bot_obv, color = color_green, linewidth = 2, transp = 60)
+fill(plot_slow_top, plot_slow_bot, color = color_green, transp = 90)
+
+plot_fast_top = plot(fast_top_obv, color = color_red, linewidth = 2, transp = 60)
+plot_fast_bot = plot(fast_bot_obv, color = color_red, linewidth = 2, transp = 60)
+fill(plot_fast_top, plot_fast_bot, color = color_red, transp = 90)

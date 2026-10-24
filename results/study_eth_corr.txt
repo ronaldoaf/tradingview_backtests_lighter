@@ -1,0 +1,33 @@
+  scalp                              2864 tr (424.1/ano,   0.86d) | bruto   +25.2bp liq   +23.3bp (win 41%) | CAGR +125.1% vs B&H  +56.8% | Sh +0.84 DD   -91% expo 100% | ctl    +5.6bp t=+2.25
+Correlacao dos retornos diarios (Pearson)
+               RSI-MA 15m  Pivot ST 15m  UT Bot 30m  Ichimoku 15m  Scalping 30m  B&H ETH
+RSI-MA 15m          1.00          0.66        0.46          0.72          0.55     0.01
+Pivot ST 15m        0.66          1.00        0.41          0.60          0.41     0.04
+UT Bot 30m          0.46          0.41        1.00          0.60          0.33    -0.07
+Ichimoku 15m        0.72          0.60        0.60          1.00          0.49    -0.00
+Scalping 30m        0.55          0.41        0.33          0.49          1.00     0.29
+B&H ETH             0.01          0.04       -0.07         -0.00          0.29     1.00
+
+Correlacao das posicoes (15m)
+               RSI-MA 15m  Pivot ST 15m  UT Bot 30m  Ichimoku 15m  Scalping 30m
+RSI-MA 15m          1.00          0.62        0.30          0.62          0.48
+Pivot ST 15m        0.62          1.00        0.24          0.50          0.29
+UT Bot 30m          0.30          0.24        1.00          0.46          0.27
+Ichimoku 15m        0.62          0.50        0.46          1.00          0.46
+Scalping 30m        0.48          0.29        0.27          0.46          1.00
+
+Fracao do tempo na mesma direcao
+               RSI-MA 15m  Pivot ST 15m  UT Bot 30m  Ichimoku 15m  Scalping 30m
+RSI-MA 15m          1.00          0.81        0.65          0.81          0.74
+Pivot ST 15m        0.81          1.00        0.62          0.75          0.64
+UT Bot 30m          0.65          0.62        1.00          0.73          0.63
+Ichimoku 15m        0.81          0.75        0.73          1.00          0.73
+Scalping 30m        0.74          0.64        0.63          0.73          1.00
+
+CAGR aprox. de cada uma e da carteira igual (media diaria)
+  RSI-MA 15m     CAGR +134.7%  DD -55%  vol anual 80%
+  Pivot ST 15m   CAGR +44.1%  DD -56%  vol anual 80%
+  UT Bot 30m     CAGR +64.7%  DD -71%  vol anual 79%
+  Ichimoku 15m   CAGR +68.5%  DD -74%  vol anual 80%
+  Scalping 30m   CAGR +88.6%  DD -55%  vol anual 80%
+  carteira       CAGR +101.0%  DD -39%  vol anual 63%

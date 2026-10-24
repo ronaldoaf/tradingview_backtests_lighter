@@ -1,0 +1,76 @@
+
+================= btc =================
+  M1 2020-01-01 -> 2026-09-30
+
+### 1. Crypto Scalper (PSAR + MACD + EMA60)
+  15min CS default                   1848 tr (273.6/ano,   1.25d) | bruto   +12.5bp liq   +11.0bp (win 35%) | CAGR  +19.2% vs B&H  +43.8% | Sh +0.27 DD  -105% expo  94% | ctl    +4.1bp t=+0.73
+  30min CS default                   1063 tr (157.4/ano,   2.04d) | bruto    -3.3bp liq    -5.4bp (win 32%) | CAGR  -25.4% vs B&H  +43.9% | Sh -0.47 DD  -310% expo  88% | ctl    -1.0bp t=-0.31
+  1h CS default                       560 tr ( 82.9/ano,   3.61d) | bruto   +43.4bp liq   +39.3bp (win 37%) | CAGR  +18.5% vs B&H  +43.9% | Sh +0.29 DD  -162% expo  82% | ctl   +17.5bp t=+0.81
+  4h CS default                       188 tr ( 27.8/ano,   8.30d) | bruto   +79.8bp liq   +64.1bp (win 35%) | CAGR   +6.7% vs B&H  +43.7% | Sh +0.15 DD  -183% expo  63% | ctl   +84.9bp t=-0.35
+  1D CS default                        44 tr (  6.5/ano,  25.80d) | bruto  +186.7bp liq  +115.3bp (win 39%) | CAGR  +14.5% vs B&H  +43.8% | Sh +0.39 DD   -78% expo  46% | ctl  +488.1bp t=-0.89
+
+### 2. Heikin-Ashi PSAR [QuantNomad]
+  15min HAP default                  14389 tr (2130.6/ano,   0.17d) | bruto    -0.9bp liq    -1.9bp (win 40%) | CAGR  -37.6% vs B&H  +43.8% | Sh -0.65 DD  -417% expo 100% | ctl    -1.0bp t=-1.00
+  30min HAP default                  7013 tr (1038.4/ano,   0.35d) | bruto    -2.9bp liq    -3.9bp (win 40%) | CAGR  -37.3% vs B&H  +43.9% | Sh -0.67 DD  -376% expo 100% | ctl    -0.6bp t=-1.94
+  1h HAP default                     3505 tr (519.0/ano,   0.70d) | bruto    +0.9bp liq    -0.2bp (win 40%) | CAGR  -11.1% vs B&H  +43.9% | Sh -0.16 DD  -161% expo 100% | ctl    -0.6bp t=+0.09
+  4h HAP default                      894 tr (132.4/ano,   2.76d) | bruto    +5.1bp liq    +3.8bp (win 41%) | CAGR  +10.5% vs B&H  +43.7% | Sh +0.14 DD  -124% expo 100% | ctl    +8.7bp t=-0.34
+  1D HAP default                      145 tr ( 21.5/ano,  16.90d) | bruto  +144.3bp liq  +140.3bp (win 39%) | CAGR  +24.0% vs B&H  +43.8% | Sh +0.29 DD  -121% expo  99% | ctl   +26.8bp t=+0.78
+
+### 4. Forex Master v4.0 (BB20x1,5 + ADX fraco)
+  15min FM default                   5688 tr (842.2/ano,   0.20d) | bruto    +2.0bp liq    +1.1bp (win 53%) | CAGR  +11.4% vs B&H  +43.8% | Sh +0.31 DD   -42% expo  47% | ctl    -1.0bp t=+1.38
+  30min FM default                   3328 tr (492.8/ano,   0.25d) | bruto    +2.6bp liq    +1.7bp (win 52%) | CAGR   +8.9% vs B&H  +43.9% | Sh +0.29 DD   -41% expo  33% | ctl    -2.2bp t=+1.48
+  1h FM default                      1920 tr (284.3/ano,   0.29d) | bruto    +2.7bp liq    +1.8bp (win 52%) | CAGR   -3.6% vs B&H  +43.9% | Sh -0.18 DD   -44% expo  23% | ctl    -1.9bp t=+0.88
+  4h FM default                       552 tr ( 81.7/ano,   0.39d) | bruto    +2.6bp liq    +1.8bp (win 51%) | CAGR   +5.7% vs B&H  +43.7% | Sh +0.64 DD   -39% expo   9% | ctl    -2.1bp t=+0.49
+  1D FM default                        98 tr ( 14.5/ano,   1.15d) | bruto   -12.2bp liq   -13.0bp (win 44%) | CAGR   +9.8% vs B&H  +43.8% | Sh +2.74 DD   -10% expo   5% | ctl    +1.7bp t=-0.43
+
+### 5. Delta-RSI (grau 3, janela 50, RSI21, sinal EMA9)
+  15min DRSI default                 18807 tr (2784.8/ano,   0.13d) | bruto    +0.4bp liq    -0.6bp (win 41%) | CAGR   -4.3% vs B&H  +43.8% | Sh -0.06 DD  -129% expo 100% | ctl    -1.0bp t=+0.46
+  30min DRSI default                 9438 tr (1397.5/ano,   0.26d) | bruto    -1.4bp liq    -2.4bp (win 40%) | CAGR  -34.3% vs B&H  +43.9% | Sh -0.58 DD  -393% expo 100% | ctl    -0.6bp t=-0.83
+  1h DRSI default                    4501 tr (666.5/ano,   0.55d) | bruto    +6.1bp liq    +5.1bp (win 42%) | CAGR +102.2% vs B&H  +43.9% | Sh +1.04 DD   -64% expo 100% | ctl    -0.7bp t=+1.42
+  4h DRSI default                    1130 tr (167.3/ano,   2.17d) | bruto    +6.6bp liq    +5.7bp (win 43%) | CAGR   +6.1% vs B&H  +43.7% | Sh +0.08 DD  -173% expo  99% | ctl    -1.7bp t=+0.65
+  1D DRSI default                     182 tr ( 27.0/ano,  13.05d) | bruto   +30.9bp liq   +28.9bp (win 38%) | CAGR   -1.2% vs B&H  +43.8% | Sh -0.02 DD  -143% expo  96% | ctl    +7.6bp t=+0.30
+
+### 6. HullMA Strategy (HMA16 subindo/descendo)
+  15min HULL default                 30923 tr (4578.9/ano,   0.08d) | bruto    -0.7bp liq    -1.7bp (win 33%) | CAGR  -53.4% vs B&H  +43.8% | Sh -1.14 DD  -547% expo 100% | ctl    -1.0bp t=-1.05
+  30min HULL default                 15308 tr (2266.7/ano,   0.16d) | bruto    +0.5bp liq    -0.5bp (win 34%) | CAGR  -31.2% vs B&H  +43.9% | Sh -0.51 DD  -394% expo 100% | ctl    -1.6bp t=+1.19
+  1h HULL default                    7779 tr (1151.9/ano,   0.32d) | bruto    -1.1bp liq    -2.1bp (win 33%) | CAGR  -39.9% vs B&H  +43.9% | Sh -0.73 DD  -389% expo 100% | ctl    -1.4bp t=-0.38
+  4h HULL default                    1878 tr (278.1/ano,   1.31d) | bruto    +2.5bp liq    +1.3bp (win 34%) | CAGR  -12.7% vs B&H  +43.7% | Sh -0.18 DD  -238% expo 100% | ctl    +2.5bp t=-0.15
+  1D HULL default                     307 tr ( 45.5/ano,   7.95d) | bruto   +61.0bp liq   +58.5bp (win 35%) | CAGR  +30.0% vs B&H  +43.8% | Sh +0.36 DD   -91% expo  99% | ctl   +11.3bp t=+0.88
+
+=== resumo btc (258 celulas) ===
+  cs       53 cel | liq>0   39 | liq>0 e t>2   1 | CAGR>B&H   2 | melhor CAGR +51.5%
+  drsi     60 cel | liq>0   43 | liq>0 e t>2   7 | CAGR>B&H  10 | melhor CAGR +143.5%
+  fm       65 cel | liq>0   46 | liq>0 e t>2   3 | CAGR>B&H   0 | melhor CAGR +34.7%
+  hap      30 cel | liq>0   22 | liq>0 e t>2   0 | CAGR>B&H   0 | melhor CAGR +31.1%
+  hull     50 cel | liq>0   37 | liq>0 e t>2   5 | CAGR>B&H   2 | melhor CAGR +54.6%
+
+  top 15 por CAGR:
+ est    TF                      cfg  trades  por_ano  bp_bruto   bp_liq   win  cagr    bh  sharpe     dd  expo  ctl_bp     t
+drsi 30min   r21 w100 d3 zero ambos    3839  568.457    16.683   15.681 0.427 1.435 0.439   1.276 -0.898 0.999  -1.602 3.981
+drsi    1h    r21 w50 d3 zero ambos    3620  536.033    18.435   17.437 0.423 1.158 0.439   1.150 -1.066 0.998  -0.836 3.803
+drsi    1h  r21 w50 d3 signal ambos    4501  666.488     6.109    5.112 0.415 1.022 0.439   1.042 -0.642 0.998  -0.698 1.415
+drsi    4h   r21 w100 d3 zero ambos     443   65.601   105.026  103.715 0.472 0.821 0.437   0.819 -0.759 0.987   7.509 2.519
+drsi 30min    r21 w100 d3 zero long    1919  284.155    26.277   23.359 0.435 0.771 0.439   1.159 -0.701 0.500   7.793 2.912
+drsi    1h   r21 w100 d3 zero ambos    1868  276.605    20.771   19.737 0.433 0.717 0.439   0.742 -0.864 0.997   0.024 2.234
+drsi    1h     r21 w50 d3 zero long    1810  268.017    28.456   25.428 0.429 0.666 0.439   1.040 -0.587 0.499   6.878 2.910
+drsi    1h   r21 w50 d3 signal long    2251  333.318    14.105   11.475 0.423 0.613 0.439   0.945 -0.528 0.498   3.660 1.880
+hull    1D               n100 ambos      52    7.703  1132.748 1121.526 0.423 0.546 0.438   0.678 -0.859 0.924  97.282 2.777
+hull 30min               n100 ambos    3573  529.069    12.194   11.137 0.315 0.530 0.439   0.596 -0.881 0.999  -1.527 2.856
+drsi    4h    r21 w100 d3 zero long     222   32.874   184.157  166.485 0.505 0.515 0.437   1.105 -0.572 0.503  61.742 2.660
+  cs 15min     e200 tp/sl sem ambos    1075  159.179    31.030   29.560 0.319 0.515 0.438   0.563 -0.785 1.000  -3.569 2.493
+  cs 15min e200 tp/sl default ambos    1357  200.936    29.682   28.034 0.340 0.487 0.438   0.604 -0.888 0.944   0.667 1.951
+drsi    1h    r21 w100 d3 zero long     934  138.303    39.854   34.891 0.445 0.483 0.439   0.862 -0.861 0.503  17.586 1.713
+hull 30min                n100 long    1787  264.609    22.262   19.147 0.329 0.404 0.439   0.712 -0.777 0.513   8.469 1.678
+
+  top 10 por t:
+ est    TF                    cfg  trades  por_ano  bp_bruto   bp_liq   win  cagr    bh  sharpe     dd  expo  ctl_bp     t
+drsi 30min r21 w100 d3 zero ambos    3839  568.457    16.683   15.681 0.427 1.435 0.439   1.276 -0.898 0.999  -1.602 3.981
+drsi    1h  r21 w50 d3 zero ambos    3620  536.033    18.435   17.437 0.423 1.158 0.439   1.150 -1.066 0.998  -0.836 3.803
+drsi 30min  r21 w100 d3 zero long    1919  284.155    26.277   23.359 0.435 0.771 0.439   1.159 -0.701 0.500   7.793 2.912
+drsi    1h   r21 w50 d3 zero long    1810  268.017    28.456   25.428 0.429 0.666 0.439   1.040 -0.587 0.499   6.878 2.910
+hull 30min             n100 ambos    3573  529.069    12.194   11.137 0.315 0.530 0.439   0.596 -0.881 0.999  -1.527 2.856
+hull    1D             n100 ambos      52    7.703  1132.748 1121.526 0.423 0.546 0.438   0.678 -0.859 0.924  97.282 2.777
+drsi    4h  r21 w100 d3 zero long     222   32.874   184.157  166.485 0.505 0.515 0.437   1.105 -0.572 0.503  61.742 2.660
+drsi    4h r21 w100 d3 zero ambos     443   65.601   105.026  103.715 0.472 0.821 0.437   0.819 -0.759 0.987   7.509 2.519
+  cs 15min   e200 tp/sl sem ambos    1075  159.179    31.030   29.560 0.319 0.515 0.438   0.563 -0.785 1.000  -3.569 2.493
+hull    1D              n100 long      26    3.851  2153.740 2011.695 0.462 0.395 0.438   0.971 -0.761 0.498 661.478 2.465

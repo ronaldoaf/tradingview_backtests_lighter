@@ -1,0 +1,68 @@
+
+================= btc =================
+  M1 2020-01-01 -> 2026-09-30
+
+### 1. TK Cross > EMA200 (20/60, long-only)
+  15min TK default                   2240 tr (331.7/ano,   0.46d) | bruto   +13.3bp liq   +10.9bp (win 37%) | CAGR  +31.5% vs B&H  +43.8% | Sh +0.65 DD   -70% expo  42% | ctl    +2.7bp t=+2.06
+  30min TK default                   1086 tr (160.8/ano,   0.97d) | bruto   +22.9bp liq   +19.0bp (win 36%) | CAGR  +29.5% vs B&H  +43.9% | Sh +0.67 DD   -59% expo  43% | ctl   +10.9bp t=+1.19
+  1h TK default                       516 tr ( 76.4/ano,   2.08d) | bruto   +51.2bp liq   +44.0bp (win 39%) | CAGR  +28.9% vs B&H  +43.9% | Sh +0.73 DD   -76% expo  43% | ctl   +29.7bp t=+0.67
+  4h TK default                       122 tr ( 18.1/ano,   9.25d) | bruto  +241.5bp liq  +212.9bp (win 39%) | CAGR  +32.0% vs B&H  +43.7% | Sh +0.87 DD   -64% expo  46% | ctl  +137.7bp t=+0.67
+  1D TK default                        21 tr (  3.1/ano,  54.29d) | bruto +2094.6bp liq +1931.5bp (win 43%) | CAGR  +19.9% vs B&H  +43.8% | Sh +0.56 DD   -75% expo  46% | ctl  +756.6bp t=+1.14
+
+### 2. Powertrend (range filter de volume, 200, long-only)
+  15min PT default                     28 tr (  4.1/ano,   0.48d) | bruto  +148.2bp liq  +145.8bp (win 64%) | CAGR   +5.5% vs B&H  +43.8% | Sh +5.28 DD    -7% expo   1% | ctl    -5.4bp t=+2.70
+  30min PT default                   (menos de 10 trades)
+  1h PT default                      (menos de 10 trades)
+  4h PT default                      (menos de 10 trades)
+  1D PT default                      (menos de 10 trades)
+
+### 4. Acrypto Weighted (>=2 de 5 gatilhos, stop 6%)
+  15min ACR default                  4149 tr (614.4/ano,   0.59d) | bruto    -3.9bp liq    -5.1bp (win 48%) | CAGR  -32.3% vs B&H  +43.8% | Sh -0.52 DD  -283% expo  99% | ctl    +0.1bp t=-1.31
+  30min ACR default                  2214 tr (327.8/ano,   1.09d) | bruto   -19.2bp liq   -20.5bp (win 47%) | CAGR  -45.2% vs B&H  +43.9% | Sh -0.85 DD  -428% expo  98% | ctl    -0.8bp t=-2.47
+  1h ACR default                     1273 tr (188.5/ano,   1.85d) | bruto   -34.6bp liq   -35.8bp (win 45%) | CAGR  -40.3% vs B&H  +43.9% | Sh -0.79 DD  -410% expo  95% | ctl    -4.9bp t=-2.16
+  4h ACR default                      439 tr ( 65.0/ano,   4.83d) | bruto    -7.4bp liq    -9.4bp (win 41%) | CAGR  +17.7% vs B&H  +43.7% | Sh +0.27 DD  -129% expo  86% | ctl   +10.3bp t=-0.66
+  1D ACR default                      105 tr ( 15.6/ano,  16.33d) | bruto   +60.6bp liq   +58.1bp (win 24%) | CAGR   -6.9% vs B&H  +43.8% | Sh -0.14 DD  -157% expo  70% | ctl   +60.4bp t=-0.01
+
+### 5. Simple RSI-MA (SMA50 do RSI10 x 50)
+  15min RSIMA default                4051 tr (599.8/ano,   0.61d) | bruto   +10.7bp liq    +9.6bp (win 33%) | CAGR  +84.6% vs B&H  +43.8% | Sh +0.85 DD   -62% expo 100% | ctl    -1.6bp t=+3.11
+  30min RSIMA default                2063 tr (305.5/ano,   1.19d) | bruto    -1.2bp liq    -2.5bp (win 29%) | CAGR  -14.0% vs B&H  +43.9% | Sh -0.21 DD  -239% expo 100% | ctl    -0.2bp t=-0.30
+  1h RSIMA default                    980 tr (145.1/ano,   2.51d) | bruto   +14.1bp liq   +12.5bp (win 32%) | CAGR  +21.7% vs B&H  +43.9% | Sh +0.26 DD  -180% expo 100% | ctl    +3.1bp t=+0.41
+  4h RSIMA default                    241 tr ( 35.7/ano,  10.08d) | bruto   +81.5bp liq   +77.5bp (win 31%) | CAGR  +16.3% vs B&H  +43.7% | Sh +0.21 DD  -148% expo  99% | ctl    +1.6bp t=+1.25
+  1D RSIMA default                     43 tr (  6.4/ano,  54.47d) | bruto  +724.5bp liq  +702.2bp (win 35%) | CAGR   +6.6% vs B&H  +43.8% | Sh +0.10 DD  -115% expo  95% | ctl  +217.1bp t=+1.16
+
+=== resumo btc (250 celulas) ===
+  acr      85 cel | liq>0   32 | liq>0 e t>2   0 | CAGR>B&H   0 | melhor CAGR +24.4%
+  pt       15 cel | liq>0   10 | liq>0 e t>2   3 | CAGR>B&H   0 | melhor CAGR +5.5%
+  rsima    92 cel | liq>0   84 | liq>0 e t>2  11 | CAGR>B&H  13 | melhor CAGR +84.6%
+  tk       58 cel | liq>0   57 | liq>0 e t>2   5 | CAGR>B&H   2 | melhor CAGR +46.4%
+
+  top 15 por CAGR:
+  est    TF                cfg  trades  por_ano  bp_bruto   bp_liq   win  cagr    bh  sharpe     dd  expo  ctl_bp     t
+rsima 15min            r10 m50    4051  599.846    10.691    9.600 0.326 0.846 0.438   0.848 -0.620 0.999  -1.604 3.115
+rsima 15min      r10 m50 ambos    4051  599.846    10.691    9.600 0.326 0.846 0.438   0.848 -0.620 0.999  -0.780 2.653
+rsima 15min       r5 m50 ambos    5750  851.423     7.057    5.986 0.295 0.716 0.438   0.742 -0.808 1.000  -0.094 1.855
+rsima 30min      r10 m20 ambos    3416  505.822    10.528    9.424 0.328 0.643 0.439   0.680 -1.048 1.000  -0.959 2.328
+rsima 15min      r20 m50 ambos    2975  440.519    13.046   11.923 0.326 0.596 0.438   0.647 -0.937 0.999  -1.484 3.731
+rsima 15min       r10 m50 long    2025  299.849    19.610   16.703 0.334 0.545 0.438   0.897 -0.763 0.525   5.699 2.236
+rsima    1D       r5 m20 ambos      79   11.703   455.492  446.894 0.380 0.537 0.438   0.596 -0.702 0.972  95.988 1.906
+rsima    1h       r5 m50 ambos    1361  201.531    23.427   21.955 0.310 0.514 0.439   0.561 -1.415 0.999   4.694 1.589
+rsima    1D      r10 m20 ambos      57    8.444   712.035  699.981 0.421 0.492 0.438   0.560 -0.878 0.959 -55.309 1.784
+rsima 15min        r5 m50 long    2875  425.712    13.328   10.977 0.305 0.488 0.438   0.806 -0.814 0.528   3.182 2.383
+rsima    1D      r20 m20 ambos      45    6.666  1272.340 1259.129 0.467 0.481 0.438   0.551 -0.772 0.956  99.991 2.277
+   tk    4h  9/26 ema200 ambos     463   68.562    58.896   57.015 0.395 0.464 0.437   0.640 -0.664 0.705  -4.171 3.233
+rsima 30min       r10 m20 long    1708  252.911    21.028   17.770 0.335 0.456 0.439   0.783 -0.920 0.524   7.127 1.755
+   tk    1h 20/60 ema200 ambos     985  145.854    28.005   26.782 0.380 0.441 0.439   0.547 -0.881 0.829   0.213 1.489
+rsima    1h      r5 m100 ambos     935  138.451    32.962   31.093 0.287 0.439 0.439   0.488 -1.368 0.998   5.414 1.279
+
+  top 10 por t:
+  est    TF                cfg  trades  por_ano  bp_bruto  bp_liq   win  cagr    bh  sharpe     dd  expo  ctl_bp     t
+rsima 15min      r20 m50 ambos    2975  440.519    13.046  11.923 0.326 0.596 0.438   0.647 -0.937 0.999  -1.484 3.731
+   pt 15min      l200 m3.0 vol      28    4.146   148.234 145.788 0.643 0.055 0.438   5.280 -0.073 0.006  15.180 3.444
+rsima 30min      r20 m20 ambos    2459  364.115    10.461   9.298 0.316 0.352 0.439   0.413 -0.989 0.999  -2.973 3.374
+   tk    4h  9/26 ema200 ambos     463   68.562    58.896  57.015 0.395 0.464 0.437   0.640 -0.664 0.705  -4.171 3.233
+rsima 15min            r10 m50    4051  599.846    10.691   9.600 0.326 0.846 0.438   0.848 -0.620 0.999  -1.604 3.115
+   pt 15min        l200 m3 vol      28    4.146   148.234 145.788 0.643 0.055 0.438   5.280 -0.073 0.006  -5.411 2.701
+rsima 15min      r10 m50 ambos    4051  599.846    10.691   9.600 0.326 0.846 0.438   0.848 -0.620 0.999  -0.780 2.653
+   tk 15min 20/60 ema200 ambos    4243  628.276     6.689   5.660 0.362 0.335 0.438   0.427 -0.752 0.811  -1.638 2.400
+   tk    1D  9/26 ema200 ambos      70   10.369   440.687 428.083 0.429 0.239 0.438   0.391 -0.979 0.686 -17.310 2.398
+rsima 15min        r5 m50 long    2875  425.712    13.328  10.977 0.305 0.488 0.438   0.806 -0.814 0.528   3.182 2.383

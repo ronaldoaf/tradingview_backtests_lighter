@@ -1,0 +1,54 @@
+
+### vwap 30min {}
+  tudo 2020-01-01..2026-09-30        11975 tr (1773.2/ano,   0.21d) | bruto    +7.1bp liq    +6.0bp (win 33%) | CAGR +175.0% vs B&H  +56.8% | Sh +1.05 DD   -86% expo 100% | ctl    -1.2bp t=+5.16
+  terco1 2020-01-01..2022-04-01      3918 tr (1740.5/ano,   0.21d) | bruto   +13.0bp liq   +12.0bp (win 33%) | CAGR +549.1% vs B&H +329.9% | Sh +1.51 DD   -86% expo 100% | ctl    -1.4bp t=+3.75
+  terco2 2022-04-01..2024-07-01      4108 tr (1824.9/ano,   0.20d) | bruto    +1.5bp liq    +0.5bp (win 33%) | CAGR +102.5% vs B&H   +0.7% | Sh +0.90 DD   -38% expo 100% | ctl    -0.7bp t=+0.55
+  terco3 2024-07-01..2026-09-30      3952 tr (1755.6/ano,   0.21d) | bruto    +6.7bp liq    +5.7bp (win 34%) | CAGR  +53.8% vs B&H  -11.0% | Sh +0.55 DD   -62% expo 100% | ctl    -1.0bp t=+2.31
+  2a metade 2023-05-17..2026-09-30   5970 tr (1768.0/ano,   0.21d) | bruto    +6.2bp liq    +5.2bp (win 34%) | CAGR  +59.4% vs B&H  +12.7% | Sh +0.64 DD   -62% expo 100% | ctl    -1.1bp t=+3.81
+  custo 2x                           11975 tr (1773.2/ano,   0.21d) | bruto    +7.1bp liq    +5.0bp (win 33%) | CAGR +130.3% vs B&H  +56.8% | Sh +0.87 DD   -87% expo 100% | ctl    -1.8bp t=+4.21
+  custo 4x                           11975 tr (1773.2/ano,   0.21d) | bruto    +7.1bp liq    +3.0bp (win 32%) | CAGR  +61.5% vs B&H  +56.8% | Sh +0.50 DD   -96% expo 100% | ctl    -3.5bp t=+4.64
+
+### vwap 15min {}
+  tudo 2020-01-01..2026-09-30        16459 tr (2437.1/ano,   0.15d) | bruto    +5.9bp liq    +4.9bp (win 29%) | CAGR +163.2% vs B&H  +56.8% | Sh +0.98 DD  -101% expo 100% | ctl    -0.8bp t=+4.82
+  terco1 2020-01-01..2022-04-01      5290 tr (2349.9/ano,   0.16d) | bruto   +12.1bp liq   +11.0bp (win 30%) | CAGR +516.7% vs B&H +329.7% | Sh +1.43 DD  -101% expo 100% | ctl    -0.8bp t=+5.94
+  terco2 2022-04-01..2024-07-01      5704 tr (2533.9/ano,   0.14d) | bruto    +1.7bp liq    +0.7bp (win 28%) | CAGR  +42.0% vs B&H   +0.7% | Sh +0.45 DD   -64% expo 100% | ctl    -1.0bp t=+1.31
+  terco3 2024-07-01..2026-09-30      5466 tr (2428.1/ano,   0.15d) | bruto    +4.2bp liq    +3.2bp (win 30%) | CAGR +101.1% vs B&H  -11.0% | Sh +0.85 DD   -81% expo 100% | ctl    -0.7bp t=+2.88
+  2a metade 2023-05-17..2026-09-30   8327 tr (2466.0/ano,   0.15d) | bruto    +3.4bp liq    +2.4bp (win 29%) | CAGR  +79.7% vs B&H  +12.7% | Sh +0.79 DD   -81% expo 100% | ctl    -0.6bp t=+1.98
+  custo 2x                           16459 tr (2437.1/ano,   0.15d) | bruto    +5.9bp liq    +3.9bp (win 29%) | CAGR +106.2% vs B&H  +56.8% | Sh +0.73 DD  -102% expo 100% | ctl    -1.6bp t=+3.76
+  custo 4x                           16459 tr (2437.1/ano,   0.15d) | bruto    +5.9bp liq    +1.9bp (win 28%) | CAGR  +26.7% vs B&H  +56.8% | Sh +0.24 DD  -195% expo 100% | ctl    -4.0bp t=+4.82
+
+### best 1h {}
+  tudo 2020-01-01..2026-09-30        1784 tr (264.2/ano,   0.73d) | bruto   +34.4bp liq   +33.1bp (win 38%) | CAGR +121.9% vs B&H  +56.8% | Sh +1.10 DD   -80% expo  53% | ctl    +2.8bp t=+3.59
+  terco1 2020-01-01..2022-04-01       586 tr (260.3/ano,   0.78d) | bruto   +63.0bp liq   +61.1bp (win 40%) | CAGR +365.5% vs B&H +329.8% | Sh +1.63 DD   -44% expo  55% | ctl   +15.5bp t=+2.09
+  terco2 2022-04-01..2024-07-01       594 tr (263.9/ano,   0.70d) | bruto   +22.1bp liq   +21.2bp (win 39%) | CAGR  +51.8% vs B&H   +1.0% | Sh +0.73 DD   -52% expo  51% | ctl    +0.1bp t=+1.93
+  terco3 2024-07-01..2026-09-30       604 tr (268.3/ano,   0.71d) | bruto   +21.0bp liq   +19.8bp (win 34%) | CAGR  +64.1% vs B&H  -10.9% | Sh +0.83 DD   -50% expo  52% | ctl    -0.8bp t=+1.48
+  2a metade 2023-05-17..2026-09-30    909 tr (269.2/ano,   0.70d) | bruto   +14.1bp liq   +12.8bp (win 34%) | CAGR  +31.4% vs B&H  +12.7% | Sh +0.51 DD   -80% expo  52% | ctl    -0.5bp t=+1.31
+  custo 2x                           1784 tr (264.2/ano,   0.73d) | bruto   +34.4bp liq   +32.1bp (win 37%) | CAGR +116.1% vs B&H  +56.8% | Sh +1.07 DD   -82% expo  53% | ctl    +0.3bp t=+2.93
+  custo 4x                           1784 tr (264.2/ano,   0.73d) | bruto   +34.4bp liq   +30.1bp (win 36%) | CAGR +105.0% vs B&H  +56.8% | Sh +0.99 DD   -87% expo  53% | ctl    -3.9bp t=+4.04
+
+### best 1h {'short_ok': False}
+  tudo 2020-01-01..2026-09-30        1012 tr (149.9/ano,   0.74d) | bruto   +52.5bp liq   +49.3bp (win 38%) | CAGR  +78.4% vs B&H  +56.8% | Sh +1.57 DD   -58% expo  30% | ctl   +10.9bp t=+3.21
+  terco1 2020-01-01..2022-04-01       395 tr (175.5/ano,   0.80d) | bruto   +90.6bp liq   +87.2bp (win 42%) | CAGR +274.6% vs B&H +329.8% | Sh +2.44 DD   -58% expo  39% | ctl   +47.0bp t=+2.29
+  terco2 2022-04-01..2024-07-01       291 tr (129.3/ano,   0.68d) | bruto   +33.5bp liq   +30.4bp (win 40%) | CAGR  +25.0% vs B&H   +1.0% | Sh +0.94 DD   -22% expo  24% | ctl    +4.3bp t=+1.38
+  terco3 2024-07-01..2026-09-30       326 tr (144.8/ano,   0.72d) | bruto   +22.5bp liq   +19.3bp (win 33%) | CAGR  +19.6% vs B&H  -10.9% | Sh +0.59 DD   -48% expo  29% | ctl    +4.1bp t=+1.01
+  2a metade 2023-05-17..2026-09-30    496 tr (146.9/ano,   0.72d) | bruto   +21.2bp liq   +18.0bp (win 34%) | CAGR  +17.6% vs B&H  +12.7% | Sh +0.56 DD   -50% expo  29% | ctl    +5.8bp t=+1.08
+  custo 2x                           1012 tr (149.9/ano,   0.74d) | bruto   +52.5bp liq   +48.3bp (win 38%) | CAGR  +75.7% vs B&H  +56.8% | Sh +1.53 DD   -59% expo  30% | ctl    +9.7bp t=+4.23
+  custo 4x                           1012 tr (149.9/ano,   0.74d) | bruto   +52.5bp liq   +46.3bp (win 37%) | CAGR  +70.5% vs B&H  +56.8% | Sh +1.45 DD   -61% expo  30% | ctl    +6.2bp t=+4.60
+
+### d3 4h {}
+  tudo 2020-01-01..2026-09-30         505 tr ( 74.8/ano,   4.87d) | bruto  +101.9bp liq   +98.4bp (win 38%) | CAGR +115.1% vs B&H  +56.6% | Sh +0.78 DD   -73% expo 100% | ctl   +11.2bp t=+2.68
+  terco1 2020-01-01..2022-04-01       169 tr ( 75.1/ano,   4.85d) | bruto  +205.7bp liq  +202.0bp (win 41%) | CAGR +286.5% vs B&H +328.1% | Sh +1.10 DD   -73% expo 100% | ctl   +47.5bp t=+2.12
+  terco2 2022-04-01..2024-07-01       170 tr ( 75.5/ano,   4.80d) | bruto   +74.6bp liq   +71.4bp (win 39%) | CAGR  +99.3% vs B&H   +0.3% | Sh +0.85 DD   -58% expo  99% | ctl   +10.5bp t=+1.00
+  terco3 2024-07-01..2026-09-30       167 tr ( 74.2/ano,   4.88d) | bruto    +9.3bp liq    +5.7bp (win 35%) | CAGR  +19.2% vs B&H  -10.6% | Sh +0.22 DD   -73% expo  99% | ctl    -7.9bp t=+0.22
+  2a metade 2023-05-17..2026-09-30    249 tr ( 73.8/ano,   4.92d) | bruto   +31.3bp liq   +27.8bp (win 37%) | CAGR  +36.9% vs B&H  +12.6% | Sh +0.41 DD   -73% expo  99% | ctl    +7.9bp t=+0.38
+  custo 2x                            505 tr ( 74.8/ano,   4.87d) | bruto  +101.9bp liq   +97.4bp (win 38%) | CAGR +113.5% vs B&H  +56.6% | Sh +0.78 DD   -73% expo 100% | ctl   +32.0bp t=+2.33
+  custo 4x                            505 tr ( 74.8/ano,   4.87d) | bruto  +101.9bp liq   +95.4bp (win 38%) | CAGR +110.3% vs B&H  +56.6% | Sh +0.76 DD   -74% expo 100% | ctl   +26.3bp t=+1.70
+
+### hst 30min {'hl': 100}
+  tudo 2020-01-01..2026-09-30        2958 tr (438.0/ano,   0.69d) | bruto   +17.1bp liq   +16.0bp (win 34%) | CAGR +113.3% vs B&H  +56.8% | Sh +0.86 DD   -72% expo  83% | ctl    +0.8bp t=+3.37
+  terco1 2020-01-01..2022-04-01       949 tr (421.6/ano,   0.72d) | bruto   +26.8bp liq   +25.6bp (win 36%) | CAGR +260.5% vs B&H +329.9% | Sh +1.12 DD   -67% expo  83% | ctl    +2.8bp t=+1.47
+  terco2 2022-04-01..2024-07-01       979 tr (434.9/ano,   0.68d) | bruto   +14.6bp liq   +13.7bp (win 32%) | CAGR  +81.9% vs B&H   +0.7% | Sh +0.86 DD   -50% expo  81% | ctl    +0.8bp t=+1.07
+  terco3 2024-07-01..2026-09-30      1027 tr (456.2/ano,   0.67d) | bruto    +9.5bp liq    +8.5bp (win 33%) | CAGR  +41.4% vs B&H  -11.0% | Sh +0.47 DD   -72% expo  84% | ctl    +1.0bp t=+1.19
+  2a metade 2023-05-17..2026-09-30   1537 tr (455.2/ano,   0.67d) | bruto    +7.1bp liq    +6.1bp (win 31%) | CAGR  +32.4% vs B&H  +12.7% | Sh +0.42 DD   -72% expo  83% | ctl    -1.7bp t=+0.92
+  custo 2x                           2958 tr (438.0/ano,   0.69d) | bruto   +17.1bp liq   +15.0bp (win 33%) | CAGR +104.2% vs B&H  +56.8% | Sh +0.81 DD   -73% expo  83% | ctl    -2.6bp t=+2.91
+  custo 4x                           2958 tr (438.0/ano,   0.69d) | bruto   +17.1bp liq   +13.0bp (win 33%) | CAGR  +87.1% vs B&H  +56.8% | Sh +0.71 DD   -75% expo  83% | ctl    -4.2bp t=+2.30
