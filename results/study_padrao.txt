@@ -1,0 +1,48 @@
+34 celulas. Colunas: exposicao, tempo comprado / vendido, duracao mediana do trade (dias), trades/ano, lookback L (dias) do sinal de momento mais parecido com a posicao e essa correlacao.
+
+                                                       nome  expo  comprado  vendido  dur_dias  trades_ano  L_best  corr_best
+   L14 drsi BTC 1h {'rl': 21, 'window': 50, 'mode': 'zero'}  1.00      0.50     0.50      0.71      536.03       1       0.19
+                         L20 ds BTC 30min {'f': 8, 's': 72}  1.00      0.49     0.50      0.46      550.54       1       0.40
+                                             L31 cmb BTC 1h  0.62      0.47     0.14      0.98      140.67       2       0.41
+  L14 drsi BTC 4h {'rl': 21, 'window': 100, 'mode': 'zero'}  0.99      0.50     0.48      5.83       65.60       3       0.38
+L22 force BTC 4h {'fast': 5, 'slow': 50, 'short_ok': False}  0.47      0.47     0.00     10.00        9.92      20       0.51
+                                              L29 vf BTC 1D  0.94      0.41     0.53     34.00        8.44      30       0.49
+                                        §24 Multi-MA BTC 4h  0.97      0.52     0.45     15.92       12.74      30       0.76
+             L13 scalp BTC 1D {'sma_len': 25, 'ema_len': 0}  0.96      0.67     0.30     31.00        8.00      60       0.50
+                    L12 rsima ETH 15min {'rl': 5, 'ml': 50}  1.00      0.53     0.47      0.29      815.44       1       0.48
+                                       §4c Scalping ETH 30m  1.00      0.68     0.32      0.58      424.08       1       0.40
+           L15 sbs ETH 30min {'sl': 0.02, 'session': False}  0.83      0.39     0.44      0.17     1189.78       1       0.47
+                      L23 tema ETH 15min {'short_ok': True}  0.21      0.09     0.12      0.14      318.21       1       0.42
+ L14 drsi ETH 1h {'rl': 21, 'window': 50, 'mode': 'signal'}  1.00      0.50     0.50      0.58      668.86       2       0.08
+                            L23 twin ETH 4h {'sltp': False}  0.39      0.19     0.20      2.83       63.97       2       0.37
+                                         §16 HULL+T3 ETH 1h  1.00      0.53     0.47      0.54      420.39       2       0.67
+                          L28 hamacd ETH 1h {'sltp': False}  1.00      0.50     0.50      0.62      561.06       2       0.05
+                                        §8 MA Consec ETH 4h  1.00      0.59     0.40      4.50       57.01       3       0.29
+                                 L26 csq ETH 4h {'mfl': 14}  0.98      0.48     0.50      3.33       68.12       3       0.56
+                                             L31 cmb ETH 4h  0.65      0.51     0.14      4.83       34.95       7       0.46
+                                             L32 prv ETH 4h  0.99      0.54     0.45     10.17       28.58      10       0.59
+                                           §17 5 EMA ETH 4h  1.00      0.59     0.40      1.00       79.52      15       0.45
+                                         §18 Wyckoff ETH 4h  0.53      0.34     0.19      2.33       29.32      15       0.36
+                        L24 best ETH 1h {'short_ok': False}  0.30      0.30     0.00      0.62      149.85      20       0.45
+ L14 drsi WTI 4h {'rl': 14, 'window': 30, 'mode': 'signal'}  1.00      0.50     0.50      1.83      170.81       1       0.27
+                               L23 crazy WTI 1h {'sll': 30}  0.14      0.06     0.08      0.83       38.26       1       0.17
+                                          L31 lch WTI 15min  0.01      0.01     0.00      0.21       10.67       1       0.04
+                                  L25 sta WTI 4h {'ln': 14}  1.00      0.54     0.45      2.67      107.51       2       0.31
+                              L25 tlb WTI 4h {'maf': False}  0.58      0.30     0.28      2.17       72.02       3       0.27
+        L20 nw WTI 1D {'hlen': 8, 'x0': 25, 'shorts': True}  0.99      0.47     0.52     13.00       22.27       7       0.32
+                                 L29 bot WTI 1D {'k': 0.02}  0.99      0.46     0.53     21.50       11.29      20       0.59
+                                              L21 gs WTI 4h  0.99      0.13     0.86     46.50        5.33      45       0.34
+     L14 hap XAU 1h {'start': 0.01, 'inc': 0.01, 'mx': 0.1}  1.00      0.52     0.48      1.12      190.14       1       0.43
+                                    L3 occ HULL13 x5 XAU 1h  1.00      0.53     0.47      1.54      138.70       2       0.43
+                                 L7 tsl XAU 4h {'val': 2.0}  1.00      0.51     0.48      8.00       25.39      15       0.50
+
+Correlacao media posicao x sign(momento L) por ativo:
+         c1    c2    c3    c5    c7   c10   c15   c20   c30   c45   c60   c90  c120  c180  c250
+ativo                                                                                          
+btc    0.17  0.15  0.15  0.16  0.16  0.17  0.23  0.27  0.29  0.25  0.21  0.14  0.12  0.08  0.10
+eth    0.25  0.29  0.28  0.26  0.25  0.24  0.22  0.20  0.18  0.14  0.11  0.07  0.08  0.06  0.05
+wti    0.14  0.14  0.14  0.10  0.10  0.10  0.09  0.09  0.10  0.09  0.08  0.07  0.04  0.01  0.02
+xau    0.33  0.33  0.34  0.29  0.29  0.29  0.26  0.25  0.20  0.17  0.15  0.12  0.11  0.04  0.06
+
+Medianas: expo 0.99, comprado 0.50, vendido 0.45, dur_dias 2.00, trades_ano 70.07, L_best 2.50, corr_best 0.41
+Sempre posicionadas (expo > 0,95): 22 de 34; so compradas: 3

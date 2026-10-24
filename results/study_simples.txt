@@ -1,0 +1,125 @@
+Antes do OOS (inicio de cada ativo .. 2023-05-16), configuracoes por Sharpe medio nos 5 ativos:
+   fam    lo  hi mode  sharpe_med  passam   bh
+    ma  3.00 100 ls_d        0.70       1 0.78
+tsmom1 30.00  30 ls_d        0.67       2 0.78
+tsmom1 30.00  30   ls        0.67       2 0.78
+    ma  5.00 200 ls_d        0.62       0 0.78
+    ma 20.00 200 ls_d        0.60       1 0.78
+    ma  2.00  30 lo_d        0.60       0 0.78
+tsmom1 30.00  30   lo        0.59       1 0.78
+tsmom1 30.00  30 lo_d        0.59       2 0.78
+    ma  2.00  30   lo        0.59       0 0.78
+    ma  3.00 100 lo_d        0.57       0 0.78
+    ma 20.00 200   ls        0.57       0 0.78
+   ma1  3.00   3   lo        0.57       1 0.78
+   ma1  3.00   3 lo_d        0.57       1 0.78
+ tsmom  3.00 100 ls_d        0.56       1 0.78
+    ma  5.00 200   ls        0.56       0 0.78
+   ma1  3.00   3   ls        0.56       0 0.78
+   ma1  3.00   3 ls_d        0.56       0 0.78
+ tsmom 30.00 250 ls_d        0.56       0 0.78
+   ma1 30.00  30   ls        0.55       0 0.78
+   ma1 30.00  30 ls_d        0.55       0 0.78
+   ma1 30.00  30   lo        0.55       0 0.78
+   ma1 30.00  30 lo_d        0.55       1 0.78
+    ma  3.00 100   ls        0.55       0 0.78
+    ma  5.00 200   lo        0.55       2 0.78
+ tsmom 20.00 200   ls        0.54       0 0.78
+
+Escolhidas (melhor Sharpe medio antes do OOS em cada familia, com e sem vendido):
+
+--- ma 3.0-100d ls_d
+  xau   antes  CAGR  +6.7% (B&H  +7.4%)  Sharpe +0.58 (+0.55)  DD -14%  t +1.99  tercos   +4%/ +10%/  +7%  sp4   +3% f0   +8%  expo 0.76 comprado 0.43 giro 178/ano  
+  xau   depois CAGR  +7.5% (B&H +24.2%)  Sharpe +0.49 (+1.14)  DD -22%  t +1.19  tercos   -2%/  +8%/ +18%  sp4   +2% f0  +11%  expo 0.82 comprado 0.53 giro 126/ano  
+  us100 antes  CAGR  +7.3% (B&H +17.1%)  Sharpe +0.45 (+0.79)  DD -22%  t +1.25  tercos   +5%/  +3%/ +15%  sp4   +1% f0   +9%  expo 0.79 comprado 0.53 giro 164/ano  
+  us100 depois CAGR  +0.2% (B&H +26.9%)  Sharpe +0.11 (+1.23)  DD -35%  t -0.43  tercos  +16%/  +5%/ -17%  sp4   -6% f0   +2%  expo 0.84 comprado 0.58 giro 96/ano  
+  wti   antes  CAGR  -1.8% (B&H  +4.3%)  Sharpe +0.19 (+0.34)  DD -68%  t +1.35  tercos   +3%/  -8%/  -0%  sp4   -7% f0   +8%  expo 0.79 comprado 0.46 giro 196/ano  
+  wti   depois CAGR -19.2% (B&H  +7.6%)  Sharpe -0.29 (+0.38)  DD -62%  t -0.69  tercos  -32%/ -14%/  -9%  sp4  -25% f0  -19%  expo 0.80 comprado 0.40 giro 129/ano  
+  btc   antes  CAGR +67.1% (B&H +48.1%)  Sharpe +1.16 (+0.92)  DD -50%  t +2.15  tercos +156%/ +23%/ +49%  sp4  +62% f0  +68%  expo 0.75 comprado 0.41 giro 225/ano  PASSA
+  btc   depois CAGR  +9.3% (B&H +39.8%)  Sharpe +0.42 (+0.96)  DD -51%  t +0.85  tercos  +33%/ -13%/ +12%  sp4   +5% f0  +10%  expo 0.80 comprado 0.45 giro 135/ano  
+  eth   antes  CAGR +72.7% (B&H +119.4%)  Sharpe +1.09 (+1.31)  DD -39%  t +1.49  tercos +138%/ +68%/ +30%  sp4  +68% f0  +76%  expo 0.74 comprado 0.45 giro 237/ano  
+  eth   depois CAGR +48.1% (B&H +11.9%)  Sharpe +0.96 (+0.49)  DD -39%  t +2.27  tercos  +12%/+124%/ +30%  sp4  +44% f0  +48%  expo 0.79 comprado 0.40 giro 152/ano  PASSA
+
+--- ma 2.0-30d lo_d
+  xau   antes  CAGR  +2.5% (B&H  +7.4%)  Sharpe +0.30 (+0.55)  DD -13%  t +2.82  tercos   -0%/  +8%/  +0%  sp4   -1% f0   +8%  expo 0.46 comprado 0.46 giro 144/ano  
+  xau   depois CAGR  +9.6% (B&H +24.2%)  Sharpe +0.72 (+1.14)  DD -21%  t +1.73  tercos   +1%/ +11%/ +17%  sp4   +5% f0  +17%  expo 0.50 comprado 0.50 giro 93/ano  
+  us100 antes  CAGR +11.3% (B&H +17.1%)  Sharpe +0.89 (+0.79)  DD -14%  t +1.31  tercos  +13%/ +14%/  +7%  sp4   +6% f0  +14%  expo 0.53 comprado 0.53 giro 130/ano  
+  us100 depois CAGR  +7.3% (B&H +26.9%)  Sharpe +0.63 (+1.23)  DD -22%  t -0.27  tercos  +27%/  +0%/  -3%  sp4   +1% f0  +10%  expo 0.55 comprado 0.55 giro 76/ano  
+  wti   antes  CAGR -18.6% (B&H  +4.3%)  Sharpe -0.61 (+0.34)  DD -74%  t +1.39  tercos  -18%/ -12%/ -25%  sp4  -22% f0  +13%  expo 0.48 comprado 0.48 giro 152/ano  
+  wti   depois CAGR -25.9% (B&H  +7.6%)  Sharpe -0.70 (+0.38)  DD -69%  t -0.13  tercos  -34%/ -22%/ -21%  sp4  -29% f0   +0%  expo 0.44 comprado 0.44 giro 81/ano  
+  btc   antes  CAGR +27.1% (B&H +48.1%)  Sharpe +0.76 (+0.92)  DD -57%  t +0.74  tercos +139%/ +14%/ -25%  sp4  +24% f0  +33%  expo 0.43 comprado 0.43 giro 186/ano  
+  btc   depois CAGR  +9.6% (B&H +39.8%)  Sharpe +0.45 (+0.96)  DD -53%  t +0.00  tercos  +40%/ +20%/ -21%  sp4   +6% f0  +15%  expo 0.45 comprado 0.45 giro 98/ano  
+  eth   antes  CAGR +121.3% (B&H +119.4%)  Sharpe +1.64 (+1.31)  DD -36%  t +1.76  tercos +466%/+107%/  -7%  sp4 +117% f0 +133%  expo 0.47 comprado 0.47 giro 173/ano  
+  eth   depois CAGR +21.9% (B&H +11.9%)  Sharpe +0.69 (+0.49)  DD -37%  t +1.38  tercos  +55%/ +46%/ -20%  sp4  +19% f0  +28%  expo 0.41 comprado 0.41 giro 99/ano  
+
+--- tsmom 3.0-100d ls_d
+  xau   antes  CAGR  -2.4% (B&H  +7.4%)  Sharpe -0.13 (+0.55)  DD -24%  t +0.18  tercos   +0%/  -3%/  -4%  sp4   -6% f0   -0%  expo 0.72 comprado 0.44 giro 164/ano  
+  xau   depois CAGR  +5.4% (B&H +24.2%)  Sharpe +0.38 (+1.14)  DD -21%  t +0.68  tercos   -2%/  +4%/ +15%  sp4   +1% f0  +10%  expo 0.76 comprado 0.55 giro 108/ano  
+  us100 antes  CAGR  +4.7% (B&H +17.1%)  Sharpe +0.33 (+0.79)  DD -25%  t +0.89  tercos   -1%/  +1%/ +15%  sp4   -1% f0   +6%  expo 0.76 comprado 0.54 giro 143/ano  
+  us100 depois CAGR  +0.1% (B&H +26.9%)  Sharpe +0.10 (+1.23)  DD -36%  t -0.43  tercos  +22%/  +4%/ -21%  sp4   -6% f0   +2%  expo 0.80 comprado 0.59 giro 85/ano  
+  wti   antes  CAGR  -6.3% (B&H  +4.3%)  Sharpe +0.09 (+0.34)  DD -61%  t +0.96  tercos   -5%/ -14%/  +0%  sp4  -11% f0   +4%  expo 0.75 comprado 0.45 giro 184/ano  
+  wti   depois CAGR -22.0% (B&H  +7.6%)  Sharpe -0.39 (+0.38)  DD -63%  t -0.80  tercos  -33%/ -26%/  -5%  sp4  -27% f0  -23%  expo 0.75 comprado 0.36 giro 122/ano  
+  btc   antes  CAGR +83.3% (B&H +48.1%)  Sharpe +1.31 (+0.92)  DD -37%  t +2.54  tercos +174%/ +11%/+104%  sp4  +77% f0  +85%  expo 0.72 comprado 0.41 giro 215/ano  PASSA
+  btc   depois CAGR  -3.2% (B&H +39.8%)  Sharpe +0.13 (+0.96)  DD -63%  t +0.20  tercos  +37%/  -3%/ -31%  sp4   -7% f0   -2%  expo 0.78 comprado 0.46 giro 145/ano  
+  eth   antes  CAGR +86.4% (B&H +119.4%)  Sharpe +1.19 (+1.31)  DD -48%  t +1.90  tercos +244%/ +49%/ +27%  sp4  +82% f0  +91%  expo 0.71 comprado 0.47 giro 227/ano  
+  eth   depois CAGR +27.4% (B&H +11.9%)  Sharpe +0.70 (+0.49)  DD -50%  t +1.83  tercos  +29%/ +75%/  -8%  sp4  +24% f0  +28%  expo 0.76 comprado 0.38 giro 139/ano  
+
+--- tsmom 2.0-30d lo
+  xau   antes  CAGR  +0.8% (B&H  +7.4%)  Sharpe +0.14 (+0.55)  DD -12%  t +1.77  tercos   +1%/  +3%/  -2%  sp4   -2% f0   +5%  expo 0.43 comprado 0.43 giro 105/ano  
+  xau   depois CAGR  +8.6% (B&H +24.2%)  Sharpe +0.78 (+1.14)  DD -16%  t +1.19  tercos   +0%/  +8%/ +18%  sp4   +5% f0  +14%  expo 0.48 comprado 0.48 giro 68/ano  
+  us100 antes  CAGR  +5.0% (B&H +17.1%)  Sharpe +0.55 (+0.79)  DD  -8%  t +0.41  tercos   +3%/  +7%/  +5%  sp4   +1% f0   +7%  expo 0.53 comprado 0.53 giro 115/ano  
+  us100 depois CAGR  +6.6% (B&H +26.9%)  Sharpe +0.74 (+1.23)  DD -11%  t -0.07  tercos  +16%/  +0%/  +5%  sp4   +2% f0   +9%  expo 0.54 comprado 0.54 giro 63/ano  
+  wti   antes  CAGR -17.9% (B&H  +4.3%)  Sharpe -0.95 (+0.34)  DD -72%  t +0.42  tercos  -13%/ -19%/ -22%  sp4  -21% f0   +4%  expo 0.46 comprado 0.46 giro 134/ano  
+  wti   depois CAGR -17.6% (B&H  +7.6%)  Sharpe -0.46 (+0.38)  DD -58%  t +0.04  tercos  -31%/ -20%/  +1%  sp4  -21% f0   +2%  expo 0.42 comprado 0.42 giro 67/ano  
+  btc   antes  CAGR +43.1% (B&H +48.1%)  Sharpe +1.19 (+0.92)  DD -25%  t +1.46  tercos +142%/  +9%/ +11%  sp4  +40% f0  +48%  expo 0.44 comprado 0.44 giro 150/ano  
+  btc   depois CAGR +18.5% (B&H +39.8%)  Sharpe +0.79 (+0.96)  DD -31%  t +1.26  tercos  +51%/  +5%/  +5%  sp4  +15% f0  +23%  expo 0.45 comprado 0.45 giro 89/ano  
+  eth   antes  CAGR +110.4% (B&H +119.4%)  Sharpe +1.74 (+1.31)  DD -23%  t +2.35  tercos +365%/ +89%/  +6%  sp4 +107% f0 +119%  expo 0.47 comprado 0.47 giro 160/ano  PASSA
+  eth   depois CAGR +35.4% (B&H +11.9%)  Sharpe +1.06 (+0.49)  DD -22%  t +1.87  tercos  +55%/ +65%/  -2%  sp4  +33% f0  +40%  expo 0.40 comprado 0.40 giro 83/ano  
+
+--- ma1 3.0-3d ls
+  xau   antes  CAGR  +7.9% (B&H  +7.4%)  Sharpe +0.60 (+0.55)  DD -18%  t +2.14  tercos   -1%/ +34%/  -5%  sp4   -1% f0   +9%  expo 1.00 comprado 0.53 giro 367/ano  
+  xau   depois CAGR  +7.0% (B&H +24.2%)  Sharpe +0.44 (+1.14)  DD -23%  t +1.04  tercos   -9%/ +25%/  +7%  sp4   -4% f0   +9%  expo 1.00 comprado 0.55 giro 241/ano  
+  us100 antes  CAGR  +2.3% (B&H +17.1%)  Sharpe +0.22 (+0.79)  DD -46%  t +1.08  tercos  +14%/ -14%/  +9%  sp4  -10% f0   +3%  expo 1.00 comprado 0.58 giro 355/ano  
+  us100 depois CAGR  +6.5% (B&H +26.9%)  Sharpe +0.41 (+1.23)  DD -39%  t +0.91  tercos  +17%/  -1%/  +4%  sp4   -7% f0   +7%  expo 1.00 comprado 0.58 giro 188/ano  
+  wti   antes  CAGR  -7.1% (B&H  +4.3%)  Sharpe +0.10 (+0.34)  DD -64%  t +0.86  tercos  -25%/  -5%/ +12%  sp4  -18% f0   -2%  expo 1.00 comprado 0.54 giro 434/ano  
+  wti   depois CAGR  -2.9% (B&H  +7.6%)  Sharpe +0.15 (+0.38)  DD -54%  t +0.62  tercos  -31%/ -11%/ +49%  sp4  -14% f0   +2%  expo 1.00 comprado 0.53 giro 212/ano  
+  btc   antes  CAGR +18.9% (B&H +48.1%)  Sharpe +0.59 (+0.92)  DD -72%  t +0.96  tercos +125%/  +0%/ -25%  sp4  +10% f0  +20%  expo 1.00 comprado 0.53 giro 518/ano  
+  btc   depois CAGR  -6.3% (B&H +39.8%)  Sharpe +0.10 (+0.96)  DD -54%  t +0.38  tercos   -7%/ -12%/  +1%  sp4  -14% f0   -6%  expo 1.00 comprado 0.52 giro 275/ano  
+  eth   antes  CAGR +119.1% (B&H +119.4%)  Sharpe +1.27 (+1.31)  DD -72%  t +2.41  tercos +351%/ +60%/ +46%  sp4 +108% f0 +121%  expo 1.00 comprado 0.54 giro 495/ano  
+  eth   depois CAGR +18.2% (B&H +11.9%)  Sharpe +0.58 (+0.49)  DD -50%  t +1.22  tercos  -13%/ +83%/  +4%  sp4  +11% f0  +18%  expo 1.00 comprado 0.51 giro 286/ano  
+
+--- ma1 3.0-3d lo
+  xau   antes  CAGR  +1.0% (B&H  +7.4%)  Sharpe +0.15 (+0.55)  DD -21%  t +2.18  tercos   -4%/ +14%/  -6%  sp4   -3% f0   +9%  expo 0.53 comprado 0.53 giro 184/ano  
+  xau   depois CAGR  +8.6% (B&H +24.2%)  Sharpe +0.63 (+1.14)  DD -23%  t +0.95  tercos   -4%/ +23%/  +9%  sp4   +3% f0  +17%  expo 0.55 comprado 0.55 giro 121/ano  
+  us100 antes  CAGR  +8.4% (B&H +17.1%)  Sharpe +0.58 (+0.79)  DD -28%  t +0.91  tercos  +14%/  +7%/  +4%  sp4   +2% f0  +11%  expo 0.58 comprado 0.58 giro 178/ano  
+  us100 depois CAGR +14.9% (B&H +26.9%)  Sharpe +1.11 (+1.23)  DD -14%  t +0.82  tercos  +27%/  +7%/ +12%  sp4   +7% f0  +18%  expo 0.58 comprado 0.58 giro 94/ano  
+  wti   antes  CAGR -23.4% (B&H  +4.3%)  Sharpe -0.68 (+0.34)  DD -83%  t +0.97  tercos  -36%/ -15%/ -18%  sp4  -28% f0  +10%  expo 0.54 comprado 0.54 giro 217/ano  
+  wti   depois CAGR -24.1% (B&H  +7.6%)  Sharpe -0.62 (+0.38)  DD -73%  t +0.93  tercos  -35%/ -39%/ +10%  sp4  -29% f0   +9%  expo 0.53 comprado 0.53 giro 106/ano  
+  btc   antes  CAGR +43.4% (B&H +48.1%)  Sharpe +0.98 (+0.92)  DD -65%  t +1.34  tercos +281%/ +11%/ -30%  sp4  +38% f0  +52%  expo 0.53 comprado 0.53 giro 259/ano  
+  btc   depois CAGR +14.1% (B&H +39.8%)  Sharpe +0.56 (+0.96)  DD -44%  t +0.36  tercos  +39%/ +25%/ -14%  sp4  +10% f0  +21%  expo 0.52 comprado 0.52 giro 138/ano  
+  eth   antes  CAGR +158.7% (B&H +119.4%)  Sharpe +1.81 (+1.31)  DD -59%  t +2.50  tercos +697%/+115%/  +1%  sp4 +152% f0 +175%  expo 0.54 comprado 0.54 giro 248/ano  PASSA
+  eth   depois CAGR +20.4% (B&H +11.9%)  Sharpe +0.63 (+0.49)  DD -47%  t +0.98  tercos  +24%/ +66%/ -15%  sp4  +17% f0  +27%  expo 0.51 comprado 0.51 giro 143/ano  
+
+--- tsmom1 30.0-30d ls_d
+  xau   antes  CAGR  +0.6% (B&H  +7.4%)  Sharpe +0.12 (+0.55)  DD -20%  t +0.65  tercos   +7%/  -0%/  -5%  sp4   -1% f0   +2%  expo 0.98 comprado 0.54 giro 79/ano  
+  xau   depois CAGR  +1.5% (B&H +24.2%)  Sharpe +0.17 (+1.14)  DD -23%  t +0.37  tercos  -17%/  +2%/ +23%  sp4   -1% f0   +5%  expo 1.00 comprado 0.63 giro 52/ano  
+  us100 antes  CAGR  +3.2% (B&H +17.1%)  Sharpe +0.25 (+0.79)  DD -38%  t +0.69  tercos  -14%/ +10%/ +16%  sp4   +1% f0   +5%  expo 0.99 comprado 0.66 giro 68/ano  
+  us100 depois CAGR  -6.3% (B&H +26.9%)  Sharpe -0.20 (+1.23)  DD -37%  t -0.95  tercos   +6%/  +2%/ -23%  sp4  -10% f0   -5%  expo 1.00 comprado 0.69 giro 55/ano  
+  wti   antes  CAGR  -6.2% (B&H  +4.3%)  Sharpe +0.13 (+0.34)  DD -66%  t +0.86  tercos   -5%/ -11%/  -2%  sp4   -9% f0   +3%  expo 0.99 comprado 0.56 giro 92/ano  
+  wti   depois CAGR  +2.1% (B&H  +7.6%)  Sharpe +0.26 (+0.38)  DD -45%  t +0.44  tercos  -25%/  +2%/ +39%  sp4   -2% f0   -1%  expo 1.00 comprado 0.48 giro 71/ano  
+  btc   antes  CAGR +115.0% (B&H +48.1%)  Sharpe +1.40 (+0.92)  DD -42%  t +2.70  tercos +271%/ +30%/+107%  sp4 +111% f0 +117%  expo 0.98 comprado 0.53 giro 110/ano  PASSA
+  btc   depois CAGR +17.5% (B&H +39.8%)  Sharpe +0.58 (+0.96)  DD -55%  t +0.94  tercos  +82%/ -38%/ +43%  sp4  +15% f0  +19%  expo 1.00 comprado 0.57 giro 72/ano  
+  eth   antes  CAGR +152.1% (B&H +119.4%)  Sharpe +1.43 (+1.31)  DD -56%  t +2.03  tercos +536%/ +57%/ +61%  sp4 +149% f0 +158%  expo 0.98 comprado 0.59 giro 111/ano  PASSA
+  eth   depois CAGR +76.3% (B&H +11.9%)  Sharpe +1.19 (+0.49)  DD -48%  t +2.25  tercos  +44%/+155%/ +50%  sp4  +74% f0  +76%  expo 1.00 comprado 0.50 giro 72/ano  PASSA
+
+--- tsmom1 30.0-30d lo
+  xau   antes  CAGR  -2.0% (B&H  +7.4%)  Sharpe -0.11 (+0.55)  DD -29%  t +0.93  tercos   +2%/  -2%/  -6%  sp4   -3% f0   +5%  expo 0.54 comprado 0.54 giro 39/ano  
+  xau   depois CAGR  +5.5% (B&H +24.2%)  Sharpe +0.40 (+1.14)  DD -19%  t +0.53  tercos   -8%/ +11%/ +16%  sp4   +4% f0  +15%  expo 0.63 comprado 0.63 giro 26/ano  
+  us100 antes  CAGR  +8.9% (B&H +17.1%)  Sharpe +0.65 (+0.79)  DD -23%  t +0.43  tercos   -2%/ +22%/  +8%  sp4   +8% f0  +12%  expo 0.66 comprado 0.66 giro 34/ano  
+  us100 depois CAGR  +7.9% (B&H +26.9%)  Sharpe +0.64 (+1.23)  DD -21%  t -0.77  tercos  +20%/  +9%/  -4%  sp4   +6% f0  +11%  expo 0.69 comprado 0.69 giro 28/ano  
+  wti   antes  CAGR -21.8% (B&H  +4.3%)  Sharpe -0.79 (+0.34)  DD -79%  t +1.89  tercos  -27%/ -14%/ -23%  sp4  -23% f0  +15%  expo 0.56 comprado 0.56 giro 46/ano  
+  wti   depois CAGR -22.2% (B&H  +7.6%)  Sharpe -0.50 (+0.38)  DD -69%  t +0.47  tercos  -33%/ -34%/  +6%  sp4  -24% f0   +7%  expo 0.48 comprado 0.48 giro 35/ano  
+  btc   antes  CAGR +85.0% (B&H +48.1%)  Sharpe +1.55 (+0.92)  DD -31%  t +2.92  tercos +322%/ +27%/ +19%  sp4  +83% f0  +96%  expo 0.53 comprado 0.53 giro 55/ano  PASSA
+  btc   depois CAGR +27.5% (B&H +39.8%)  Sharpe +0.89 (+0.96)  DD -37%  t +0.89  tercos  +92%/  +5%/  +3%  sp4  +26% f0  +36%  expo 0.57 comprado 0.57 giro 36/ano  
+  eth   antes  CAGR +151.7% (B&H +119.4%)  Sharpe +1.66 (+1.31)  DD -49%  t +1.98  tercos +666%/ +95%/  +7%  sp4 +150% f0 +169%  expo 0.59 comprado 0.59 giro 56/ano  
+  eth   depois CAGR +47.6% (B&H +11.9%)  Sharpe +1.09 (+0.49)  DD -42%  t +2.35  tercos  +57%/ +99%/  +3%  sp4  +47% f0  +56%  expo 0.50 comprado 0.50 giro 36/ano  PASSA

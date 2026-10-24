@@ -1,0 +1,123 @@
+
+=== Antes do OOS: 2020-01-01..2023-05-16
+  Carteira 8 (das 34)                    CAGR +111.3%  Sharpe +3.84  DD  -16%  vol  20%
+  Carteira 34                            CAGR +141.1%  Sharpe +3.69  DD   -7%  vol  25%
+  ma 3.0-100d ls_d 5 ativos              CAGR  +43.3%  Sharpe +1.41  DD  -17%  vol  28%
+  ma 3.0-100d ls_d sem US100             CAGR  +49.6%  Sharpe +1.36  DD  -21%  vol  34%
+  ma 2.0-30d lo_d 5 ativos               CAGR  +29.2%  Sharpe +1.34  DD  -20%  vol  21%
+  ma 2.0-30d lo_d sem US100              CAGR  +32.6%  Sharpe +1.26  DD  -24%  vol  25%
+  tsmom 3.0-100d ls_d 5 ativos           CAGR  +44.4%  Sharpe +1.44  DD  -15%  vol  28%
+  tsmom 3.0-100d ls_d sem US100          CAGR  +52.4%  Sharpe +1.41  DD  -18%  vol  34%
+  tsmom 2.0-30d lo 5 ativos              CAGR  +25.7%  Sharpe +1.48  DD  -10%  vol  16%
+  tsmom 2.0-30d lo sem US100             CAGR  +30.3%  Sharpe +1.44  DD  -13%  vol  20%
+  ma1 3.0-3d ls 5 ativos                 CAGR  +43.1%  Sharpe +1.18  DD  -27%  vol  35%
+  ma1 3.0-3d ls sem US100                CAGR  +54.0%  Sharpe +1.24  DD  -33%  vol  42%
+  ma1 3.0-3d lo 5 ativos                 CAGR  +36.5%  Sharpe +1.44  DD  -31%  vol  23%
+  ma1 3.0-3d lo sem US100                CAGR  +44.2%  Sharpe +1.46  DD  -37%  vol  28%
+  tsmom1 30.0-30d ls_d 5 ativos          CAGR  +62.2%  Sharpe +1.52  DD  -22%  vol  36%
+  tsmom1 30.0-30d ls_d sem US100         CAGR  +74.4%  Sharpe +1.52  DD  -23%  vol  42%
+  tsmom1 30.0-30d lo 5 ativos            CAGR  +42.1%  Sharpe +1.59  DD  -16%  vol  24%
+  tsmom1 30.0-30d lo sem US100           CAGR  +49.0%  Sharpe +1.53  DD  -19%  vol  29%
+
+=== Depois do OOS: 2023-05-17..2026-09-30
+  Carteira 8 (das 34)                    CAGR  +42.4%  Sharpe +2.46  DD  -11%  vol  15%
+  Carteira 34                            CAGR  +43.9%  Sharpe +2.46  DD   -7%  vol  15%
+  ma 3.0-100d ls_d 5 ativos              CAGR  +12.8%  Sharpe +0.66  DD  -15%  vol  22%
+  ma 3.0-100d ls_d sem US100             CAGR  +15.2%  Sharpe +0.68  DD  -18%  vol  26%
+  ma 2.0-30d lo_d 5 ativos               CAGR   +6.1%  Sharpe +0.48  DD  -17%  vol  15%
+  ma 2.0-30d lo_d sem US100              CAGR   +5.4%  Sharpe +0.38  DD  -21%  vol  18%
+  tsmom 3.0-100d ls_d 5 ativos           CAGR   +5.5%  Sharpe +0.36  DD  -20%  vol  21%
+  tsmom 3.0-100d ls_d sem US100          CAGR   +6.1%  Sharpe +0.36  DD  -22%  vol  25%
+  tsmom 2.0-30d lo 5 ativos              CAGR  +11.2%  Sharpe +0.91  DD   -8%  vol  12%
+  tsmom 2.0-30d lo sem US100             CAGR  +12.1%  Sharpe +0.82  DD  -12%  vol  15%
+  ma1 3.0-3d ls 5 ativos                 CAGR  +10.9%  Sharpe +0.56  DD  -22%  vol  24%
+  ma1 3.0-3d ls sem US100                CAGR  +11.0%  Sharpe +0.51  DD  -27%  vol  28%
+  ma1 3.0-3d lo 5 ativos                 CAGR   +9.0%  Sharpe +0.59  DD  -21%  vol  17%
+  ma1 3.0-3d lo sem US100                CAGR   +7.1%  Sharpe +0.44  DD  -24%  vol  20%
+  tsmom1 30.0-30d ls_d 5 ativos          CAGR  +22.6%  Sharpe +0.99  DD  -18%  vol  23%
+  tsmom1 30.0-30d ls_d sem US100         CAGR  +29.8%  Sharpe +1.08  DD  -20%  vol  28%
+  tsmom1 30.0-30d lo 5 ativos            CAGR  +14.6%  Sharpe +0.91  DD  -16%  vol  16%
+  tsmom1 30.0-30d lo sem US100           CAGR  +15.8%  Sharpe +0.84  DD  -17%  vol  20%
+
+=== Periodo todo: 2020-01-01..2026-09-30
+  Carteira 8 (das 34)                    CAGR  +73.4%  Sharpe +3.21  DD  -16%  vol  18%
+  Carteira 34                            CAGR  +86.2%  Sharpe +3.13  DD   -7%  vol  21%
+  ma 3.0-100d ls_d 5 ativos              CAGR  +27.1%  Sharpe +1.07  DD  -17%  vol  25%
+  ma 3.0-100d ls_d sem US100             CAGR  +31.3%  Sharpe +1.05  DD  -21%  vol  30%
+  ma 2.0-30d lo_d 5 ativos               CAGR  +17.1%  Sharpe +0.97  DD  -20%  vol  18%
+  ma 2.0-30d lo_d sem US100              CAGR  +18.2%  Sharpe +0.88  DD  -25%  vol  22%
+  tsmom 3.0-100d ls_d 5 ativos           CAGR  +23.4%  Sharpe +0.97  DD  -20%  vol  25%
+  tsmom 3.0-100d ls_d sem US100          CAGR  +27.2%  Sharpe +0.95  DD  -23%  vol  30%
+  tsmom 2.0-30d lo 5 ativos              CAGR  +18.2%  Sharpe +1.22  DD  -10%  vol  15%
+  tsmom 2.0-30d lo sem US100             CAGR  +20.8%  Sharpe +1.16  DD  -13%  vol  18%
+  ma1 3.0-3d ls 5 ativos                 CAGR  +26.0%  Sharpe +0.91  DD  -27%  vol  30%
+  ma1 3.0-3d ls sem US100                CAGR  +30.7%  Sharpe +0.93  DD  -33%  vol  35%
+  ma1 3.0-3d lo 5 ativos                 CAGR  +22.0%  Sharpe +1.07  DD  -31%  vol  20%
+  ma1 3.0-3d lo sem US100                CAGR  +24.3%  Sharpe +1.01  DD  -37%  vol  24%
+  tsmom1 30.0-30d ls_d 5 ativos          CAGR  +41.0%  Sharpe +1.28  DD  -22%  vol  30%
+  tsmom1 30.0-30d ls_d sem US100         CAGR  +50.4%  Sharpe +1.31  DD  -23%  vol  36%
+  tsmom1 30.0-30d lo 5 ativos            CAGR  +27.6%  Sharpe +1.29  DD  -16%  vol  21%
+  tsmom1 30.0-30d lo sem US100           CAGR  +31.4%  Sharpe +1.23  DD  -19%  vol  25%
+
+Correlacao diaria com a Carteira 8 / Carteira 34 (periodo todo, depois do OOS):
+  ma 3.0-100d ls_d 5 ativos              C8 +0.36 / +0.39   C34 +0.55 / +0.61
+  ma 3.0-100d ls_d sem US100             C8 +0.37 / +0.43   C34 +0.55 / +0.64
+  ma 2.0-30d lo_d 5 ativos               C8 +0.35 / +0.38   C34 +0.55 / +0.56
+  ma 2.0-30d lo_d sem US100              C8 +0.36 / +0.40   C34 +0.56 / +0.57
+  tsmom 3.0-100d ls_d 5 ativos           C8 +0.32 / +0.34   C34 +0.48 / +0.54
+  tsmom 3.0-100d ls_d sem US100          C8 +0.33 / +0.37   C34 +0.49 / +0.57
+  tsmom 2.0-30d lo 5 ativos              C8 +0.34 / +0.39   C34 +0.54 / +0.55
+  tsmom 2.0-30d lo sem US100             C8 +0.35 / +0.39   C34 +0.55 / +0.56
+  ma1 3.0-3d ls 5 ativos                 C8 +0.43 / +0.41   C34 +0.64 / +0.56
+  ma1 3.0-3d ls sem US100                C8 +0.45 / +0.43   C34 +0.65 / +0.58
+  ma1 3.0-3d lo 5 ativos                 C8 +0.35 / +0.39   C34 +0.54 / +0.49
+  ma1 3.0-3d lo sem US100                C8 +0.36 / +0.40   C34 +0.55 / +0.50
+  tsmom1 30.0-30d ls_d 5 ativos          C8 +0.28 / +0.25   C34 +0.47 / +0.44
+  tsmom1 30.0-30d ls_d sem US100         C8 +0.29 / +0.27   C34 +0.48 / +0.46
+  tsmom1 30.0-30d lo 5 ativos            C8 +0.23 / +0.27   C34 +0.40 / +0.42
+  tsmom1 30.0-30d lo sem US100           C8 +0.24 / +0.29   C34 +0.41 / +0.43
+  Carteira 34 = 0.44 x [ma 3.0-100d ls_d] + residuo; residuo: CAGR  +66.1%  Sharpe +3.03  DD   -8%  vol  17%
+  Carteira 34 = 0.64 x [ma 2.0-30d lo_d] + residuo; residuo: CAGR  +67.8%  Sharpe +3.11  DD   -9%  vol  17%
+  Carteira 34 = 0.40 x [tsmom 3.0-100d ls_d] + residuo; residuo: CAGR  +70.0%  Sharpe +3.04  DD   -8%  vol  18%
+  Carteira 34 = 0.76 x [tsmom 2.0-30d lo] + residuo; residuo: CAGR  +63.7%  Sharpe +2.93  DD  -10%  vol  17%
+  Carteira 34 = 0.44 x [ma1 3.0-3d ls] + residuo; residuo: CAGR  +66.5%  Sharpe +3.31  DD   -7%  vol  16%
+  Carteira 34 = 0.55 x [ma1 3.0-3d lo] + residuo; residuo: CAGR  +66.2%  Sharpe +3.03  DD   -8%  vol  17%
+  Carteira 34 = 0.32 x [tsmom1 30.0-30d ls_d] + residuo; residuo: CAGR  +65.4%  Sharpe +2.86  DD   -8%  vol  18%
+  Carteira 34 = 0.40 x [tsmom1 30.0-30d lo] + residuo; residuo: CAGR  +67.9%  Sharpe +2.85  DD   -9%  vol  19%
+
+Cada aprovada contra a regra simples do mesmo ativo (corr diaria, periodo todo):
+  aprovada                                                         ma 3.0-100d ls_d     ma 2.0-30d lo_d  tsmom 3.0-100d ls_    tsmom 2.0-30d lo       ma1 3.0-3d ls       ma1 3.0-3d lo  tsmom1 30.0-30d ls  tsmom1 30.0-30d lo
+  L13 scalp BTC 1D {'sma_len': 25, 'ema_len': 0}                              +0.20               +0.35               +0.26               +0.41               +0.10               +0.33               +0.40               +0.56
+  L14 drsi BTC 1h {'rl': 21, 'window': 50, 'mode': 'zero'}                    +0.06               +0.09               +0.06               +0.09               +0.11               +0.13               +0.10               +0.12
+  L14 drsi BTC 4h {'rl': 21, 'window': 100, 'mode': 'zero'}                   +0.18               +0.18               +0.14               +0.17               +0.35               +0.22               +0.17               +0.08
+  L20 ds BTC 30min {'f': 8, 's': 72}                                          +0.08               +0.11               +0.03               +0.07               +0.26               +0.18               +0.10               +0.06
+  L22 force BTC 4h {'fast': 5, 'slow': 50, 'short_ok': False}                 +0.45               +0.73               +0.44               +0.74               +0.24               +0.63               +0.35               +0.72
+  L29 vf BTC 1D                                                               +0.36               +0.15               +0.38               +0.21               +0.24               +0.02               +0.45               +0.17
+  §24 Multi-MA BTC 4h                                                         +0.62               +0.44               +0.67               +0.54               +0.28               +0.26               +0.79               +0.64
+  L31 cmb BTC 1h                                                              +0.45               +0.55               +0.39               +0.51               +0.53               +0.57               +0.35               +0.44
+  L12 rsima ETH 15min {'rl': 5, 'ml': 50}                                     +0.35               +0.35               +0.29               +0.31               +0.50               +0.38               +0.23               +0.17
+  §4c Scalping ETH 30m                                                        +0.19               +0.43               +0.19               +0.39               +0.37               +0.50               +0.17               +0.32
+  L14 drsi ETH 1h {'rl': 21, 'window': 50, 'mode': 'signal'}                  +0.02               +0.01               +0.03               +0.03               -0.02               +0.00               +0.00               +0.02
+  L15 sbs ETH 30min {'sl': 0.02, 'session': False}                            +0.24               +0.20               +0.15               +0.16               +0.41               +0.25               +0.10               +0.02
+  §8 MA Consec ETH 4h                                                         +0.33               +0.43               +0.30               +0.42               +0.40               +0.46               +0.24               +0.32
+  L23 tema ETH 15min {'short_ok': True}                                       +0.19               +0.20               +0.18               +0.17               +0.39               +0.23               +0.15               +0.04
+  L23 twin ETH 4h {'sltp': False}                                             +0.29               +0.26               +0.28               +0.22               +0.39               +0.30               +0.15               +0.11
+  L24 best ETH 1h {'short_ok': False}                                         +0.49               +0.71               +0.50               +0.73               +0.36               +0.67               +0.47               +0.70
+  §16 HULL+T3 ETH 1h                                                          +0.59               +0.48               +0.43               +0.43               +0.79               +0.49               +0.26               +0.10
+  L26 csq ETH 4h {'mfl': 14}                                                  +0.40               +0.24               +0.36               +0.29               +0.51               +0.29               +0.29               +0.12
+  §17 5 EMA ETH 4h                                                            +0.49               +0.40               +0.43               +0.41               +0.38               +0.33               +0.36               +0.29
+  §18 Wyckoff ETH 4h                                                          +0.44               +0.42               +0.42               +0.46               +0.39               +0.34               +0.41               +0.34
+  L28 hamacd ETH 1h {'sltp': False}                                           -0.04               +0.01               -0.04               -0.00               -0.00               +0.03               -0.01               +0.02
+  L31 cmb ETH 4h                                                              +0.59               +0.60               +0.59               +0.60               +0.43               +0.51               +0.50               +0.52
+  L32 prv ETH 4h                                                              +0.54               +0.47               +0.50               +0.48               +0.40               +0.30               +0.41               +0.29
+  L14 drsi WTI 4h {'rl': 14, 'window': 30, 'mode': 'signal'}                  +0.07               +0.08               -0.01               +0.05               +0.24               +0.20               +0.02               +0.04
+  L20 nw WTI 1D {'hlen': 8, 'x0': 25, 'shorts': True}                         +0.03               +0.08               -0.01               -0.04               +0.09               +0.05               -0.12               -0.12
+  L21 gs WTI 4h                                                               +0.16               -0.13               +0.15               -0.09               +0.08               -0.21               +0.20               -0.13
+  L23 crazy WTI 1h {'sll': 30}                                                +0.03               +0.07               -0.02               -0.02               +0.21               +0.13               -0.02               -0.03
+  L25 sta WTI 4h {'ln': 14}                                                   +0.11               +0.08               +0.07               -0.02               +0.31               +0.18               -0.02               -0.06
+  L25 tlb WTI 4h {'maf': False}                                               +0.07               +0.20               +0.00               +0.11               +0.30               +0.29               -0.05               +0.04
+  L29 bot WTI 1D {'k': 0.02}                                                  +0.56               +0.34               +0.56               +0.42               +0.19               +0.12               +0.53               +0.41
+  L31 lch WTI 15min                                                           -0.10               +0.26               -0.21               +0.08               +0.19               +0.39               -0.25               +0.06
+  L3 occ HULL13 x5 XAU 1h                                                     +0.34               +0.27               +0.27               +0.27               +0.62               +0.42               +0.03               +0.02
+  L7 tsl XAU 4h {'val': 2.0}                                                  +0.48               +0.41               +0.34               +0.40               +0.45               +0.35               +0.11               +0.11
+  L14 hap XAU 1h {'start': 0.01, 'inc': 0.01, 'mx': 0.1}                      +0.26               +0.23               +0.15               +0.17               +0.47               +0.31               -0.02               -0.03
