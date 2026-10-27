@@ -1,0 +1,33 @@
+xau: 40 celulas, 0 candidatas
+us100: 36 celulas, 0 candidatas
+wti: 40 celulas, 0 candidatas
+btc: 36 celulas, 4 candidatas
+  L35 lpr BTC 4h k360 sempre long              CAGR  +43.3% Sh +1.04 t +2.38
+  L35 lpr BTC 4h k360 forte ambos              CAGR  +52.7% Sh +1.07 t +2.40
+  L35 lpr BTC 1D k120 forte ambos              CAGR  +43.2% Sh +0.98 t +1.29
+  L35 lpr BTC 1D k120 forte long               CAGR  +39.6% Sh +1.01 t +0.75
+eth: 38 celulas, 9 candidatas
+  L35 lpr ETH 15min k360 sempre ambos          CAGR +102.4% Sh +1.32 t +2.42
+  L35 lpr ETH 15min k360 forte ambos           CAGR  +95.6% Sh +1.28 t +2.16
+  L35 lpr ETH 15min k120 sempre ambos          CAGR  +61.2% Sh +1.00 t +2.59
+  L35 lpr ETH 30min k120 sempre ambos          CAGR  +84.6% Sh +1.18 t +2.37
+  L35 lpr ETH 30min k120 sempre long           CAGR  +80.7% Sh +1.29 t +2.26
+  L35 lpr ETH 30min k120 forte long            CAGR  +64.3% Sh +1.18 t +1.25
+  L35 lpr ETH 1h k120 sempre ambos             CAGR  +86.1% Sh +1.21 t +2.71
+  L35 lpr ETH 1h k120 forte long               CAGR  +63.0% Sh +1.17 t +1.84
+  L35 lpr ETH 4h k360 forte long               CAGR  +53.3% Sh +1.00 t +0.93
+Lote 35: 13 celulas candidatas (CAGR > 0, Sharpe >= B&H, t > 2) com tercos, 2a metade, spread 4x e funding 0; correlacao contra as 34 aprovadas.
+
+L35 lpr ETH 15min k360 sempre ambos              reprova    CAGR +102.4% (B&H  +56.8%) Sh +1.32 (+0.96) DD -63% t +2.42 tercos +579%/ +35%/ -14% 2a  -10% sp4  +75% f0 +108% corr +0.70 (L25 ht3 ETH 1h) pos_t3
+L35 lpr ETH 30min k120 sempre long               redundante CAGR  +80.7% (B&H  +56.8%) Sh +1.29 (+0.96) DD -53% t +2.26 tercos +381%/  +6%/ +12% 2a  +13% sp4  +68% f0  +92% corr +0.70 (L24 best ETH 1h) 
+L35 lpr ETH 15min k360 forte ambos               reprova    CAGR  +95.6% (B&H  +56.8%) Sh +1.28 (+0.96) DD -60% t +2.16 tercos +430%/ +48%/  -9% 2a   +1% sp4  +72% f0 +101% corr +0.71 (L25 ht3 ETH 1h) pos_t3
+L35 lpr ETH 1h k120 sempre ambos                 reprova    CAGR  +86.1% (B&H  +56.8%) Sh +1.21 (+0.96) DD -84% t +2.71 tercos +387%/ +58%/ -22% 2a  -13% sp4  +74% f0  +90% corr +0.71 (L25 ht3 ETH 1h) pos_t3
+L35 lpr ETH 30min k120 sempre ambos              redundante CAGR  +84.6% (B&H  +56.8%) Sh +1.18 (+0.96) DD -58% t +2.37 tercos +355%/  +4%/ +26% 2a   +8% sp4  +59% f0  +89% corr +0.68 (L25 ht3 ETH 1h) 
+L35 lpr ETH 30min k120 forte long                reprova    CAGR  +64.3% (B&H  +56.8%) Sh +1.18 (+0.96) DD -58% t +1.25 tercos +287%/ +17%/  -4% 2a   +1% sp4  +54% f0  +73% corr +0.68 (L24 best ETH 1h) pos_t3,t2
+L35 lpr ETH 1h k120 forte long                   reprova    CAGR  +63.0% (B&H  +56.8%) Sh +1.17 (+0.96) DD -72% t +1.84 tercos +322%/ +35%/ -23% 2a  -11% sp4  +58% f0  +72% corr +0.65 (L24 best ETH 1h) pos_t3,t2
+L35 lpr BTC 4h k360 forte ambos                  redundante CAGR  +52.7% (B&H  +43.7%) Sh +1.07 (+0.91) DD -52% t +2.40 tercos +127%/ +38%/ +22% 2a  +23% sp4  +52% f0  +56% corr +0.81 (L30 mma BTC 4h) 
+L35 lpr BTC 4h k360 sempre long                  redundante CAGR  +43.3% (B&H  +43.7%) Sh +1.04 (+0.91) DD -56% t +2.38 tercos +113%/ +38%/ +11% 2a  +23% sp4  +43% f0  +51% corr +0.74 (L22 force BTC 4h) 
+L35 lpr BTC 1D k120 forte long                   reprova    CAGR  +39.6% (B&H  +43.8%) Sh +1.01 (+0.91) DD -52% t +0.75 tercos +110%/ +38%/  +1% 2a  +26% sp4  +39% f0  +45% corr +0.61 (L13 scalp BTC 1D) t2
+L35 lpr ETH 4h k360 forte long                   reprova    CAGR  +53.3% (B&H  +56.6%) Sh +1.00 (+0.96) DD -61% t +0.93 tercos +172%/ +25%/  +7% 2a  +17% sp4  +53% f0  +61% corr +0.62 (L24 best ETH 1h) t2
+L35 lpr ETH 15min k120 sempre ambos              redundante CAGR  +61.2% (B&H  +56.8%) Sh +1.00 (+0.96) DD -51% t +2.59 tercos +215%/ +17%/ +11% 2a   +6% sp4  +21% f0  +65% corr +0.69 (L12 rsima ETH 15min) 
+L35 lpr BTC 1D k120 forte ambos                  reprova    CAGR  +43.2% (B&H  +43.8%) Sh +0.98 (+0.91) DD -42% t +1.29 tercos +129%/ +23%/  -3% 2a  +19% sp4  +43% f0  +46% corr +0.57 (L13 scalp BTC 1D) pos_t3,t2
