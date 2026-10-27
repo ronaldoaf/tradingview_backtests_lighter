@@ -104,6 +104,26 @@ Todas reprovadas, exceto a candidata indicada. Ordem cronológica inversa.
 
 | # | Estratégia (autor, id do script) | Doc | Diagnóstico |
 | --- | --- | --- | --- |
+| 443 | MACD Short/Long TVIO (`X4c5lTKF`) | [LOTE36_TV](docs/LOTE36_TV.md) | nada robusto |
+| 442 | Candle Breakout 13:00 UTC (`YJjFy8kD`) | [LOTE36_TV](docs/LOTE36_TV.md) | **aprovada** no US100 1h rr1 (só comprado) |
+| 441 | Squeeze Momentum LazyBear (`G40dtEbK`) | [LOTE36_TV](docs/LOTE36_TV.md) | **aprovada** no BTC 1D e no ETH 1D e100 (só comprado) |
+| 440 | ATR Reversed (`beTGXcYr`) | [LOTE36_TV](docs/LOTE36_TV.md) | nada robusto |
+| 439 | ATR and T3 (`XUUH8oiL`) | [LOTE36_TV](docs/LOTE36_TV.md) | nada robusto |
+| 438 | Multi MA Crossing Coinrule (`DDnx7g70`) | [LOTE36_TV](docs/LOTE36_TV.md) | redundante (BTC 15m) |
+| 437 | Volatility Range Breakout (`2cnPhDGs`) | [LOTE36_TV](docs/LOTE36_TV.md) | **aprovada** no BTC 1h n100 (ambos) |
+| 436 | Linear Regression Channel Breakout (`diTCC7a5`) | [LOTE36_TV](docs/LOTE36_TV.md) | nada robusto |
+| 435 | Keltner SL/TP (`eH0FxdMp`) | [LOTE36_TV](docs/LOTE36_TV.md) | **aprovada** no ETH 4h k2/sl5 (ambos) |
+| 434 | Donchian stop entries (`ZZ0T9Wc7`) | [LOTE36_TV](docs/LOTE36_TV.md) | redundante (XAU 1h, ETH 30m) |
+| 433 | RSI 2 + tendência (`Be5GdJIr`) | [LOTE36_TV](docs/LOTE36_TV.md) | quase (XAU 1D) |
+| 432 | Super Momentum (`jjBHYafE`) | [LOTE36_TV](docs/LOTE36_TV.md) | nada robusto |
+| 431 | RSI Alligator (`sfEGsYBL`) | [LOTE36_TV](docs/LOTE36_TV.md) | nada robusto |
+| 430 | Trend Entry 0 (`W6Xttkiv`) | [LOTE36_TV](docs/LOTE36_TV.md) | nada robusto |
+| 429 | Pinbar (`QtCWpUWb`) | [LOTE36_TV](docs/LOTE36_TV.md) | nada robusto |
+| 428 | Combo 123 Reversal & N Bars Down (`PmEilDJm`) | [LOTE36_TV](docs/LOTE36_TV.md) | passa no WTI 30m só pelo funding do short |
+| 427 | Beat the market (`vrFq8cGn`) | [LOTE36_TV](docs/LOTE36_TV.md) | nada robusto |
+| 426 | Multi-Step Vegas SuperTrend (`SXtas3lS`) | [LOTE36_TV](docs/LOTE36_TV.md) | redundante (BTC 4h) |
+| 425 | Kozlod BB (`D3PkU5ho`) | [LOTE36_TV](docs/LOTE36_TV.md) | nada robusto |
+| 424 | Stoch RSI Crossover + EMA (`isC2RICc`) | [LOTE36_TV](docs/LOTE36_TV.md) | nada robusto |
 | 423 | Ichimoku + EMA filter (`IYQMk5fS`) | [LOTE33_TV](docs/LOTE33_TV.md) | quase (ETH 4h) |
 | 422 | Stochastic Z-Score (TradeDots) (`Nft2YKWq`) | [LOTE33_TV](docs/LOTE33_TV.md) | nada robusto |
 | 421 | VWAP X EMA (`DP1S7S5j`) | [LOTE33_TV](docs/LOTE33_TV.md) | **aprovada** no ETH 30m ema50 (ambos) |

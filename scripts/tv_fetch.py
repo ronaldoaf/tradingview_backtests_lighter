@@ -44,7 +44,10 @@ def triage(src):
 if __name__ == '__main__':
     os.makedirs(os.path.join(D, 'pine'), exist_ok=True)
     for slug in sys.argv[1:]:
-        src = fetch(slug)
+        try:
+            src = fetch(slug)
+        except Exception as e:  # 404 e afins: segue para o proximo da lista
+            print(slug, 'ERRO', e); continue
         p = os.path.join(D, 'pine', slug.split('-')[0] + '.pine')
         open(p, 'w').write(src)
         print(slug, len(src.splitlines()), 'linhas', triage(src) if src else 'CODIGO FECHADO/PROTEGIDO')
