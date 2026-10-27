@@ -1,0 +1,11 @@
+//@version=2
+strategy("Big Candles", overlay=true)
+
+barHeight = input(.032)
+
+bigUp() => close > open and high-low > barHeight
+bigDown() => close < open and high-low > barHeight
+
+plotshape(bigUp(), color=green, style=shape.arrowup, text="Buy")
+plotshape(bigDown(), color=red, style=shape.arrowdown, text="Sell")
+barcolor(bigDown() ? red : bigUp() ? green : gray)

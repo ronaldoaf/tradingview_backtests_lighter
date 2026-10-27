@@ -1,0 +1,318 @@
+//@version=6
+strategy("Macketings 1min Scalping V3 [Smart Exit + Time]", shorttitle="Macketing Time", overlay=true, pyramiding=0, initial_capital=10000, default_qty_value=100, default_qty_type=strategy.percent_of_equity, commission_type=strategy.commission.percent, commission_value=0.05, slippage=1)
+
+// --- 1. INSTÄLLNINGAR ---
+len80 = input.int(80, title="EMA 80 Length")
+len90 = input.int(90, title="EMA 90 Length")
+len340 = input.int(340, title="EMA 340 Length")
+len500 = input.int(500, title="EMA 500 Length")
+lenSafety = input.int(325, title="SMA Safety Filter")
+
+// FILTER (Cooldown & Tid)
+cooldown_bars = input.int(100, title="Cooldown Bars (Vila efter exit)", group="Filter")
+
+// LUTNINGSFILTER (EMA 80/90 måste luta rätt håll = undvik brus i platt marknad)
+use_slope_filter = input.bool(true, title="Kräv lutning på EMA 80/90?", group="Filter")
+slope_len = input.int(3, title="Lutning lookback (barer)", minval=1, group="Filter")
+
+// TIDSFILTER (Sessioner)
+use_time_filter = input.bool(true, title="Aktivera Tidsfilter?", group="Filter")
+session_tz = input.string("Europe/Stockholm", title="Tidszon för sessioner", group="Filter", tooltip="Tiderna nedan tolkas i denna tidszon. Byt vid behov (t.ex. America/New_York).")
+
+// Slå på/av + justera tider per session. Handel tillåts om baren ligger i NÅGON aktiv session.
+use_asia   = input.bool(true,  title="Asia",        inline="asia",   group="Sessioner")
+sess_asia  = input.session("0000-0900", title="",   inline="asia",   group="Sessioner")
+use_london = input.bool(true,  title="London/DAX",  inline="london", group="Sessioner")
+sess_london= input.session("0900-1730", title="",   inline="london", group="Sessioner")
+use_nasdaq = input.bool(true,  title="Nasdaq (US)", inline="nasdaq", group="Sessioner")
+sess_nasdaq= input.session("1530-2200", title="",   inline="nasdaq", group="Sessioner")
+
+// RISK (Stop Loss & TP)
+sl_perc = input.float(0.2, title="Initial Stop Loss (%)", step=0.1, group="Risk") / 100
+be_trigger_perc = input.float(0.3, title="Breakeven Trigger (%)", step=0.1, group="Risk") / 100
+be_profit_perc = input.float(0.2, title="Secured Profit (%)", step=0.1, group="Risk") / 100
+tp_perc = input.float(1.5, title="Take Profit (%)", step=0.5, group="Risk") / 100
+
+// TRAILING STOP
+use_trailing       = input.bool(true, title="Använd Trailing Stop?", group="Risk")
+trail_trigger_perc = input.float(0.5, title="Trailing Trigger (%)", step=0.1, group="Risk") / 100
+trail_perc         = input.float(0.3, title="Trailing Distance (%)", step=0.1, group="Risk") / 100
+
+// POSITIONSSTORLEK
+sizing_mode = input.string("Procent av kapital", title="Positionsstorlek", options=["Procent av kapital", "Riskbaserad"], group="Risk")
+risk_per_trade = input.float(1.0, title="Risk per trade (%)", step=0.1, group="Risk", tooltip="Endast i Riskbaserad-läge: riskerar denna % av kapitalet per trade, beräknat på SL-avståndet.") / 100
+
+// BACKTEST-PERIOD
+use_date_filter = input.bool(false, title="Aktivera Datumfilter?", group="Backtest")
+start_date = input.time(timestamp("1 Jan 2025 00:00 +0000"), title="Startdatum", group="Backtest")
+end_date   = input.time(timestamp("1 Jan 2027 00:00 +0000"), title="Slutdatum", group="Backtest")
+
+// ENTRY-LÄGE (Retest / Bryt / Båda)
+entry_mode = input.string("Båda", title="Entry-läge", options=["Retest", "Bryt", "Båda"], group="Entry")
+
+// SMART BAND EXIT
+use_smart_exit = input.bool(true, title="Använd Smart Band Exit?", group="Smart Band Exit")
+smart_exit_min_profit = input.float(0.3, title="Min Vinst för att aktivera (%)", step=0.1, group="Smart Band Exit") / 100
+
+// --- 2. INDIKATORER ---
+ema80 = ta.ema(close, len80)
+ema90 = ta.ema(close, len90)
+ema340 = ta.ema(close, len340)
+ema500 = ta.ema(close, len500)
+smaSafety = ta.sma(close, lenSafety)
+
+// --- 3. COOLDOWN & TIDS LOGIK ---
+// A) Cooldown
+var int last_exit_bar = 0
+if strategy.position_size[1] != 0 and strategy.position_size == 0
+    last_exit_bar := bar_index
+
+is_cooldown_ok = (bar_index - last_exit_bar) >= cooldown_bars
+
+// B) Tidsfilter (Sessioner)
+// time(timeframe.period, session, tz) returnerar "na" om baren är utanför sessionen.
+// Handel tillåts om vi är i NÅGON aktiverad session. Är use_time_filter false -> alltid true.
+in_asia   = use_asia   and not na(time(timeframe.period, sess_asia,   session_tz))
+in_london = use_london and not na(time(timeframe.period, sess_london, session_tz))
+in_nasdaq = use_nasdaq and not na(time(timeframe.period, sess_nasdaq, session_tz))
+any_session = in_asia or in_london or in_nasdaq
+is_time_ok = not use_time_filter or any_session
+
+// C) Datumfilter (backtest-period)
+in_date_range = not use_date_filter or (time >= start_date and time <= end_date)
+
+// --- 4. HANDELSVILLKOR ---
+mid_band_low = math.min(ema80, ema90)
+mid_band_high = math.max(ema80, ema90)
+
+// Retest = priset är inne i bandet. Bryt = priset korsar ut ur bandet.
+retest_in_band = (close >= mid_band_low) and (close <= mid_band_high)
+breakout_long  = ta.crossover(close, mid_band_high)
+breakout_short = ta.crossunder(close, mid_band_low)
+
+// Välj trigger baserat på entry-läge
+allow_retest  = entry_mode == "Retest" or entry_mode == "Båda"
+allow_breakout = entry_mode == "Bryt"  or entry_mode == "Båda"
+
+retest_or_breakout_long  = (allow_retest and retest_in_band) or (allow_breakout and breakout_long)
+retest_or_breakout_short = (allow_retest and retest_in_band) or (allow_breakout and breakout_short)
+
+long_conf = close > close[1]
+short_conf = close < close[1]
+
+// LUTNING på EMA 80/90 (båda måste luta rätt håll för att undvika brus i platt marknad)
+slope_up   = (ema80 > ema80[slope_len]) and (ema90 > ema90[slope_len])
+slope_down = (ema80 < ema80[slope_len]) and (ema90 < ema90[slope_len])
+slope_ok_long  = not use_slope_filter or slope_up
+slope_ok_short = not use_slope_filter or slope_down
+
+// ENTRY RULES (Nu med is_time_ok + lutningsfilter)
+long_trend_ok = (ema340 > ema500) and (mid_band_low > ema500)
+long_entry_signal = long_trend_ok and retest_or_breakout_long and long_conf and (close > smaSafety) and is_cooldown_ok and is_time_ok and slope_ok_long and in_date_range
+
+short_trend_ok = (ema340 < ema500) and (mid_band_high < ema500)
+short_entry_signal = short_trend_ok and retest_or_breakout_short and short_conf and (close < smaSafety) and is_cooldown_ok and is_time_ok and slope_ok_short and in_date_range
+
+// --- 5. EXEKVERING ---
+// Riskbaserad storlek: riskera fast % av kapitalet baserat på SL-avståndet. na = använd default (100% equity).
+entry_qty = sizing_mode == "Riskbaserad" ? strategy.equity * risk_per_trade / (close * sl_perc) : na
+
+if long_entry_signal and strategy.position_size == 0
+    strategy.entry("Long_E", strategy.long, qty=entry_qty, comment="Long | CD/Time OK")
+    alert("Macketing: LONG entry @ " + str.tostring(close, format.mintick), alert.freq_once_per_bar)
+
+if short_entry_signal and strategy.position_size == 0
+    strategy.entry("Short_E", strategy.short, qty=entry_qty, comment="Short | CD/Time OK")
+    alert("Macketing: SHORT entry @ " + str.tostring(close, format.mintick), alert.freq_once_per_bar)
+
+// --- 6. STOP LOSS & EXIT ---
+var float current_stop_price_long = na
+var float current_stop_price_short = na
+var float peak_since_entry = na
+var float trough_since_entry = na
+
+is_in_long = strategy.position_size > 0
+is_in_short = strategy.position_size < 0
+
+// --- SMART BAND EXIT LOGIK ---
+band_break_down = ta.crossunder(close, mid_band_low)
+band_break_up = ta.crossover(close, mid_band_high)
+
+exit_long_trend_change = ta.crossunder(ema340, ema500)
+exit_short_trend_change = ta.crossover(ema340, ema500)
+
+// SNABBT EMA-KORS: EMA 80/90 korsar igenom trendzonen (EMA 340/500)
+// Tvingande stängning oavsett vinst - se användarens bild.
+fast_cross_down = ta.crossunder(ema80, ema340) or ta.crossunder(ema90, ema340)
+fast_cross_up   = ta.crossover(ema80, ema340)  or ta.crossover(ema90, ema340)
+
+// 1. Long Exit
+just_closed = false
+if is_in_long
+    entry_price = strategy.position_avg_price
+    can_use_band_exit = use_smart_exit and (close >= entry_price * (1 + smart_exit_min_profit))
+
+    if (band_break_down and can_use_band_exit) or exit_long_trend_change or fast_cross_down
+        strategy.close("Long_E", comment="Exit Long: Smart/Trend/Cross")
+        current_stop_price_long := na
+        just_closed := true
+        alert("Macketing: EXIT LONG (Smart/Trend/Cross) @ " + str.tostring(close, format.mintick), alert.freq_once_per_bar)
+
+// 2. Short Exit
+if is_in_short
+    entry_price = strategy.position_avg_price
+    can_use_band_exit = use_smart_exit and (close <= entry_price * (1 - smart_exit_min_profit))
+
+    if (band_break_up and can_use_band_exit) or exit_short_trend_change or fast_cross_up
+        strategy.close("Short_E", comment="Exit Short: Smart/Trend/Cross")
+        current_stop_price_short := na
+        just_closed := true
+        alert("Macketing: EXIT SHORT (Smart/Trend/Cross) @ " + str.tostring(close, format.mintick), alert.freq_once_per_bar)
+
+// Update SL Logic (Breakeven, Trailing & Hard SL)
+// "not just_closed" = hoppa över baren där vi precis stängt, annars återinitieras stoppen i onödan
+if is_in_long and not just_closed
+    entry_price = strategy.position_avg_price
+    // Följ högsta pris sedan entry (trailing utgår från toppen, inte close)
+    peak_since_entry := na(peak_since_entry) ? high : math.max(peak_since_entry, high)
+    if na(current_stop_price_long)
+        current_stop_price_long := entry_price * (1 - sl_perc)
+    // Breakeven
+    if close >= entry_price * (1 + be_trigger_perc)
+        new_sl_price = entry_price * (1 + be_profit_perc)
+        if new_sl_price > current_stop_price_long
+            current_stop_price_long := new_sl_price
+    // Trailing Stop (long) - trailar från högsta pris sedan entry
+    if use_trailing and peak_since_entry >= entry_price * (1 + trail_trigger_perc)
+        trail_sl_long = peak_since_entry * (1 - trail_perc)
+        if trail_sl_long > current_stop_price_long
+            current_stop_price_long := trail_sl_long
+
+if is_in_short and not just_closed
+    entry_price = strategy.position_avg_price
+    // Följ lägsta pris sedan entry
+    trough_since_entry := na(trough_since_entry) ? low : math.min(trough_since_entry, low)
+    if na(current_stop_price_short)
+        current_stop_price_short := entry_price * (1 + sl_perc)
+    // Breakeven
+    if close <= entry_price * (1 - be_trigger_perc)
+        new_sl_price = entry_price * (1 - be_profit_perc)
+        if new_sl_price < current_stop_price_short
+            current_stop_price_short := new_sl_price
+    // Trailing Stop (short) - trailar från lägsta pris sedan entry
+    if use_trailing and trough_since_entry <= entry_price * (1 - trail_trigger_perc)
+        trail_sl_short = trough_since_entry * (1 + trail_perc)
+        if trail_sl_short < current_stop_price_short
+            current_stop_price_short := trail_sl_short
+
+// Exit: Dynamic SL & Hard TP (separata IDs för renare trade-lista)
+if is_in_long
+    long_limit_price = strategy.position_avg_price * (1 + tp_perc)
+    strategy.exit("Exit_L", from_entry="Long_E", stop=current_stop_price_long, limit=long_limit_price)
+
+if is_in_short
+    short_limit_price = strategy.position_avg_price * (1 - tp_perc)
+    strategy.exit("Exit_S", from_entry="Short_E", stop=current_stop_price_short, limit=short_limit_price)
+
+// Reset
+if strategy.position_size[1] != 0 and strategy.position_size == 0
+    current_stop_price_long := na
+    current_stop_price_short := na
+    peak_since_entry := na
+    trough_since_entry := na
+
+// --- 7. VISUALS (Stilren version) ---
+
+// Färgpalett (modern & mjuk)
+c_long    = color.rgb(38, 166, 154)   // teal
+c_short   = color.rgb(239, 83, 80)    // korall
+c_neutral = color.rgb(120, 123, 134)  // grå
+c_band    = color.rgb(66, 165, 245)   // ljusblå
+
+trend_up   = long_trend_ok
+trend_down = short_trend_ok
+c_trend    = trend_up ? c_long : trend_down ? c_short : c_neutral
+
+// EMA-band 80/90 som ett mjukt moln
+p80 = plot(ema80, color=color.new(c_band, 40), linewidth=1, title="EMA 80")
+p90 = plot(ema90, color=color.new(c_band, 40), linewidth=1, title="EMA 90")
+fill(p80, p90, color=color.new(c_band, 88), title="EMA Band")
+
+// Trend-EMA 340/500 med tonad fyllning
+p340 = plot(ema340, color=color.new(c_trend, 0),  linewidth=2, title="EMA 340")
+p500 = plot(ema500, color=color.new(c_trend, 55), linewidth=1, title="EMA 500")
+fill(p340, p500, color=color.new(c_trend, 92), title="Trend Zone")
+
+// Safety SMA - diskret
+plot(smaSafety, color=color.new(color.orange, 20), linewidth=1, style=plot.style_line, title="SMA 325 Safety")
+
+// Entry-markörer (rena trianglar)
+plotshape(long_entry_signal  and strategy.position_size == 0, title="Long Entry",
+     location=location.belowbar, style=shape.triangleup,   size=size.tiny, color=c_long)
+plotshape(short_entry_signal and strategy.position_size == 0, title="Short Entry",
+     location=location.abovebar, style=shape.triangledown, size=size.tiny, color=c_short)
+
+// No-trade-zon (subtil, ljusgrå)
+bgcolor((not is_cooldown_ok or not is_time_ok) ? color.new(c_neutral, 92) : na, title="No Trade Zone")
+
+// --- LIVE TRADE-NIVÅER (Entry / SL / TP under öppen position) ---
+entry_line = strategy.position_size != 0 ? strategy.position_avg_price : na
+sl_line    = is_in_long ? current_stop_price_long : is_in_short ? current_stop_price_short : na
+tp_line    = is_in_long ? strategy.position_avg_price * (1 + tp_perc) : is_in_short ? strategy.position_avg_price * (1 - tp_perc) : na
+
+plot(entry_line, color=color.new(color.white, 40), style=plot.style_linebr, linewidth=1, title="Entry-nivå")
+plot(sl_line,    color=color.new(c_short, 20),     style=plot.style_linebr, linewidth=1, title="Stop Loss")
+plot(tp_line,    color=color.new(c_long, 20),      style=plot.style_linebr, linewidth=1, title="Take Profit")
+
+// --- DASHBOARD ---
+var table dash = table.new(position.top_right, 2, 9, bgcolor=color.new(color.black, 85), border_width=1, border_color=color.new(color.gray, 70), frame_width=1, frame_color=color.new(color.gray, 60))
+
+if barstate.islast
+    // Trend
+    trend_txt = trend_up ? "▲ LONG" : trend_down ? "▼ SHORT" : "– NEUTRAL"
+    trend_col = trend_up ? c_long : trend_down ? c_short : c_neutral
+
+    // Position + öppen vinst
+    pos_txt = is_in_long ? "I LONG" : is_in_short ? "I SHORT" : "Flat"
+    pos_col = is_in_long ? c_long : is_in_short ? c_short : c_neutral
+    open_pnl = strategy.position_size != 0 ? ((close - strategy.position_avg_price) / strategy.position_avg_price) * (is_in_long ? 100 : -100) : 0.0
+    pnl_txt = strategy.position_size != 0 ? str.tostring(open_pnl, "0.00") + " %" : "–"
+    pnl_col = open_pnl > 0 ? c_long : open_pnl < 0 ? c_short : c_neutral
+
+    // Filterstatus
+    cd_txt = is_cooldown_ok ? "OK" : "Vilar"
+    cd_col = is_cooldown_ok ? c_long : c_short
+    active_sess = not use_time_filter ? "Alltid" : in_asia ? "Asia" : in_london ? "London" : in_nasdaq ? "Nasdaq" : "Stängt"
+    time_txt = active_sess
+    time_col = is_time_ok ? c_long : c_short
+
+    table.cell(dash, 0, 0, "MACKETING", text_color=color.white, text_size=size.normal, bgcolor=color.new(c_band, 60))
+    table.cell(dash, 1, 0, "TIME", text_color=color.white, text_size=size.normal, bgcolor=color.new(c_band, 60))
+
+    table.cell(dash, 0, 1, "Trend",      text_color=color.gray, text_size=size.small)
+    table.cell(dash, 1, 1, trend_txt,    text_color=trend_col, text_size=size.small)
+    table.cell(dash, 0, 2, "Position",   text_color=color.gray, text_size=size.small)
+    table.cell(dash, 1, 2, pos_txt,      text_color=pos_col, text_size=size.small)
+    table.cell(dash, 0, 3, "Öppen P/L",  text_color=color.gray, text_size=size.small)
+    table.cell(dash, 1, 3, pnl_txt,      text_color=pnl_col, text_size=size.small)
+    table.cell(dash, 0, 4, "Cooldown",   text_color=color.gray, text_size=size.small)
+    table.cell(dash, 1, 4, cd_txt,       text_color=cd_col, text_size=size.small)
+    table.cell(dash, 0, 5, "Handelstid", text_color=color.gray, text_size=size.small)
+    table.cell(dash, 1, 5, time_txt,     text_color=time_col, text_size=size.small)
+
+    // Statistik
+    n_trades = strategy.closedtrades
+    win_rate = n_trades > 0 ? strategy.wintrades / n_trades * 100 : 0.0
+    wr_txt = n_trades > 0 ? str.tostring(win_rate, "0.0") + " %" : "–"
+    wr_col = win_rate >= 50 ? c_long : c_short
+    net_pl = strategy.netprofit
+    net_pl_perc = net_pl / strategy.initial_capital * 100
+    pl_txt = str.tostring(net_pl_perc, "0.00") + " %"
+    pl_col = net_pl > 0 ? c_long : net_pl < 0 ? c_short : c_neutral
+
+    table.cell(dash, 0, 6, "Trades",     text_color=color.gray, text_size=size.small)
+    table.cell(dash, 1, 6, str.tostring(n_trades), text_color=color.white, text_size=size.small)
+    table.cell(dash, 0, 7, "Win rate",   text_color=color.gray, text_size=size.small)
+    table.cell(dash, 1, 7, wr_txt,       text_color=wr_col, text_size=size.small)
+    table.cell(dash, 0, 8, "Netto P/L",  text_color=color.gray, text_size=size.small)
+    table.cell(dash, 1, 8, pl_txt,       text_color=pl_col, text_size=size.small)

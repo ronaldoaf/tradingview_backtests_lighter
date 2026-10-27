@@ -1,0 +1,20 @@
+//@version=2
+strategy("HL MovingAvg2Line Cross Dhananjay V1.0", overlay=true)
+
+length0 = input(9)
+length1 = input(9)
+
+emahigh = ema(high,length0)
+emalow = ema(low, length1)
+emalow50 = ema(low,50)
+
+if  (close > emahigh)
+    strategy.entry("long", strategy.long, comment="GOLong")
+    strategy.exit("long","strategy.long",comment="ExitLong",when=close<emalow)
+
+if (close < emalow)
+    strategy.entry("short", strategy.short, comment="GoShort")
+    strategy.exit("short","strategy.short",comment="ExitLong",when=close>emahigh)
+    
+
+//plot(strategy.equity, title="equity", color=red, linewidth=2, style=areabr)

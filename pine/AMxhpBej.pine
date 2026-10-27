@@ -1,0 +1,92 @@
+//@version=4
+strategy("Hancock - Pump Catcher [BitMEX]", precision = 8, initial_capital = 1000)
+
+// Inputs
+macd_fast_length   = input(12, title = "MACD - Fast Length", type = input.integer, minval = 1)
+macd_slow_length   = input(26, title = "MACD - Slow Length", type = input.integer, minval = 1)
+
+vol_threshold    = input(0.9, title = "Volume - Threshold", step = 0.05)
+vol_fast_length  = input(7, title = "Volume - Fast Length")
+vol_slow_length  = input(11, title = "Volume - Slow Length")
+
+trade_leverage = input(5, title = "Trade - Leverage", step = 0.25)
+trade_stop     = input(10, title = "Trade - Stop Loss Percent", type = input.float, step = 0.1, minval = 0.1)
+trade_risk     = input(100, title = "Trade - Risk Percent", type = input.float, step = 0.1, minval = 0.1, maxval = 100)
+
+// Functions
+get_round(value, precision) => round(value * (pow(10, precision))) / pow(10, precision)
+
+// Strategy
+b = sum(volume,24)
+c = 0.0
+for i = 24 to 1200 by +24
+    c := b[i] + c
+
+d = c / 50
+vol = b / d
+
+macd = (ema(close, macd_fast_length) - ema(close, macd_slow_length))
+
+trend = macd - macd[1]
+
+fast_signal = ema(vol, vol_fast_length)
+slow_signal = ema(vol, vol_slow_length)
+
+// Conditions
+enter_condition = crossover(vol, vol_threshold) and rising(slow_signal, 1)
+
+enter_long_condition  = enter_condition and trend > 0
+enter_short_condition = enter_condition and trend < 0
+
+exit_condition  = slow_signal > fast_signal
+
+position_signal = 0
+position_signal := 
+     enter_long_condition ? 1 :
+     enter_short_condition ? -1 :
+     exit_condition ? 0 :
+     position_signal[1]
+
+// Positions
+if (strategy.opentrades == 0)
+    contracts = get_round((strategy.equity * trade_leverage / close) * (trade_risk / 100), 4)
+    
+    strategy.entry(
+         "LONG", 
+         strategy.long, 
+         qty = contracts,
+         when = enter_long_condition)
+        
+    strategy.entry(
+         "SHORT", 
+         strategy.short, 
+         qty = contracts,
+         when = enter_short_condition)
+         
+
+stop_difference = (strategy.position_avg_price / trade_leverage) * (trade_stop / 100)
+
+in_long  = strategy.position_size > 0
+in_short  = strategy.position_size < 0
+ 
+long_stop  = in_long ? strategy.position_avg_price - stop_difference : na
+short_stop = in_short ? strategy.position_avg_price + stop_difference : na
+
+strategy.exit("S/L", "LONG",
+     stop = long_stop, 
+     qty = abs(get_round(strategy.position_size, 4)))
+         
+strategy.exit("S/L", "SHORT", 
+     stop = short_stop, 
+     qty = abs(get_round(strategy.position_size, 4)))
+
+strategy.close_all(when = exit_condition or abs(change(position_signal)) > 0)
+
+// Plots
+bgcolor(position_signal > 0 ? color.lime : position_signal < 0 ? color.red : na, transp = 70)
+
+hline(vol_threshold)
+
+plot(vol, color = color.blue)
+plot(slow_signal, color = color.yellow)
+plot(fast_signal, color = color.red)
