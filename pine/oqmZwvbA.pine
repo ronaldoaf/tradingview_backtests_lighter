@@ -1,0 +1,31 @@
+//@version=4
+strategy("Robot Wealth Simple Pairs Trade", overlay=true)
+
+source = close
+smalength = input(title = "SMA Length", defval = 20, minval=1)
+entryzscore = input(title = "Entry ZScore", defval = 2.0, minval=0, maxval = 50)
+startYear = input(title="Backtest Start Year", type=input.integer, defval=2012, minval=1800, maxval=2100)
+
+ma = sma(source, smalength)
+dev = entryzscore * stdev(source, smalength)
+
+upper = ma + dev
+lower = ma - dev
+
+longEntrySignal = cross(source, lower)
+shortEntrySignal = cross(source, upper)
+exitSignal = cross(source, ma)
+
+afterStartDate = (time >= timestamp(syminfo.timezone, startYear,1,1, 0, 0))
+
+if (longEntrySignal and afterStartDate)
+    strategy.entry("le", strategy.long, comment = "Enter Long")
+
+if (shortEntrySignal and afterStartDate)
+    strategy.entry("se", strategy.short, comment="Enter Short")
+
+if (exitSignal and afterStartDate)
+    strategy.close_all(true)
+
+
+//plot(strategy.equity, title="equity", color=color.red, linewidth=2, style=plot.style_areabr)
