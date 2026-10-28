@@ -1,0 +1,27 @@
+2017-01-06 a 2024-09-25 (4 partes, sem OOS)
+inv-vol    total +312% CAGR +20.1% Sharpe 2.29 vol 8.2% DD -6.3% | P1 +34.7% P2 +47.3% P3 +55.6% P4 +33.5%
+peso igual total +324% CAGR +20.6% Sharpe 2.27 vol 8.4% DD -6.1% | P1 +34.2% P2 +47.1% P3 +58.5% P4 +35.5%
+
+pesos inv-vol:
+                                                                           nome                            celula  peso  vol_aa
+est                                                                                                                            
+3ema                 4. 3EMA (21x55, TP 3 ATR, SL 2 ATR, saida 9x21, long-only)                        1h tp0 sl2  9.3%   10.2%
+dema                                                                8. DEMA ATR                       4h tp6 long  7.4%   12.9%
+cam                                                                                         15min sl1% tp2% ambos  6.2%   15.4%
+eng                                                        4. Engulfing + SMA32  30min ma128 sl0.005 tp0.05 ambos  6.0%   16.0%
+mls                                                        8. ML SuperTrend kNN           30min f2.94 tp2.2 ambos  5.9%   16.2%
+zlm                                              6. Zero-Lag MA Trend Following                   30min rr4 ambos  5.4%   17.6%
+hyb                                                   17. Hybrid RSI + Breakout                  30min atr4 ambos  5.2%   18.5%
+mrb                                                                                   1h 80 g2 m2 lower-atr ambos  4.7%   20.3%
+cs                                      1. Crypto Scalper (PSAR + MACD + EMA60)        15min e60 tp/sl sim2 ambos  4.4%   21.5%
+qst                                                    8. QuantNomad SuperTrend                       4h m2 ambos  4.3%   22.0%
+pop                                                 22. Pivot of Pivot Reversal                      1D 4/2 ambos  4.3%   22.1%
+tsl                         1. Trailing SL [QuantNomad] (4%, sempre no mercado)                      1h atr10x2.0  4.3%   22.2%
+ged                                                          7. PTS Golden Edge                     1h 9/50 ambos  4.2%   22.5%
+crypto                     3. Full CRYPTO pack (EMA9 hl2, MACD 12/26/9, OBV 10)            1D 21 24/52/18 obv0 ls  4.1%   23.0%
+sbf                                               1. Stochastic (BiznesFilosof)                    4h 20/80 ambos  4.1%   23.2%
+gold                                                             4. MAster Gold                   1D 100/30 ambos  4.1%   23.2%
+scalp   2. Scalping Trading System (SMA25/EMA200, Keltner, MACD 4/34, Stoch 10)                15min s25 e0 ambos  4.1%   23.6%
+sqr                                            11. Squeeze Momentum on Reversal                  4h f0.0018 ambos  4.0%   23.7%
+tch                                                             5. TSI CCI Hull                   15min p50 ambos  4.0%   23.8%
+dax                                                             10. DAX Shooter                    1h adx20 ambos  3.9%   24.3%
