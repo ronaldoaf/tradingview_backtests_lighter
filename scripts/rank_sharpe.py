@@ -15,7 +15,11 @@ for f in glob.glob(os.path.join(R, 'lote*.csv')):
     S = pd.read_parquet(os.path.join(R, f'lote{l.split("_")[0]}_ser.parquet')); S.index = pd.DatetimeIndex(S.index)
     c = corte if S.index.tz is not None else corte.tz_localize(None); S = S[S.index < c].replace([np.inf, -np.inf], np.nan).fillna(0.0)
     f_ano = len(S) / ((S.index[-1] - S.index[0]).days / 365)
-    sh = S.mean() / S.std() * np.sqrt(f_ano); sh.index = sh.index.astype(str)
+    if os.environ.get('METRIC') == 'kalmar':   # CAGR / |DD maximo| da equity diaria
+        eq = (1 + S).cumprod(); anos = (S.index[-1] - S.index[0]).days / 365
+        sh = (eq.iloc[-1].clip(lower=1e-9) ** (1 / anos) - 1) / (1 - eq / eq.cummax()).max().clip(lower=1e-4)
+    else: sh = S.mean() / S.std() * np.sqrt(f_ano)
+    sh.index = sh.index.astype(str)
     g['sharpe'] = [sh.get(str(int(s)), np.nan) for s in g.sid]
     g['lote'] = l; out.append(g)
 g = pd.concat(out)
@@ -26,6 +30,7 @@ a = g.dropna(subset=['sharpe']).sort_values('sharpe', ascending=False).drop_dupl
 a['nome'] = [nomes.get((l, e), '') for l, e in zip(a.lote, a.est)]
 a = a[~a.nome.fillna('').astype(str).str.contains('Example|Template', case=False)]
 cols = ['lote', 'est', 'nome', 'celula', 'sharpe', 'total', 'trades']
-a[cols].to_csv(os.path.join(R, 'ranking_sharpe.csv'), index=False)
-print(f'{len(a)} estrategias; Sharpe > 0: {(a.sharpe > 0).sum()}')
-print(a[cols].head(20).to_string(index=False, formatters={'total': lambda v: f'{v:+.0%}', 'sharpe': lambda v: f'{v:.2f}'}))
+M = os.environ.get('METRIC', 'sharpe'); a = a.rename(columns={'sharpe': M}); cols = [M if c == 'sharpe' else c for c in cols]
+a[cols].to_csv(os.path.join(R, f"ranking_{os.environ.get('METRIC', 'sharpe')}.csv"), index=False)
+print(f'{len(a)} estrategias; {M} > 0: {(a[M] > 0).sum()}')
+print(a[cols].head(20).to_string(index=False, formatters={'total': lambda v: f'{v:+.0%}', M: lambda v: f'{v:.2f}'}))
