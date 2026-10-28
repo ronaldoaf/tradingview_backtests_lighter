@@ -1,0 +1,27 @@
+OOS 2024-09-26 a 2026-08-31 (1.93 anos); diferenca max p1..p4 vs selecao 1.53e-01
+carteira peso igual: total +8.9% CAGR +4.5% Sharpe 1.31 vol 3.4% DD -1.7%
+B&H US100: total +46.9% CAGR +22.0% Sharpe 0.99 DD -24.0%
+corr diaria carteira x B&H 0.08; estrategias positivas no OOS: 14/20
+
+por estrategia (OOS):
+                            celula    oos
+bot              30min k0.02 ambos +57.4%
+tsl                   1h atr10x2.0 +46.0%
+crypto      1D 21 24/52/18 obv0 ls +38.0%
+xscalp     15min gap1.00% rr3 long +29.0%
+sqr               4h f0.0018 ambos +19.7%
+stv                 15min m3 ambos +11.1%
+crazy             30min sl30 ambos +10.6%
+macd        15min m4.0 tp5% filtro  +7.1%
+lch                  1h v2% hma200  +5.8%
+lube         30min 500 tl-0.1 long  +4.0%
+rbin            4h 6 13/82 h3 long  +3.7%
+sre                4h tp3/sl2 long  +2.6%
+ict       1h p5 rr5.0 trend0 ambos  +0.9%
+pt             15min l400 m3.0 vol  +0.5%
+osb       15min m0.5 sl0.25% ambos  -1.9%
+sr         4h lb20 pb2 tp0.5 sl2.0  -3.3%
+l2r                  1h tpsl ambos  -6.6%
+es             30min sl/tp3% ambos  -6.7%
+sbf                 4h 20/80 ambos -16.1%
+sweep   1h rr3.0 semvol sess ambos -25.7%
