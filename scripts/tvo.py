@@ -10,7 +10,8 @@ import numpy as np, pandas as pd
 D = os.path.dirname(os.path.dirname(os.path.abspath(__file__))); sys.path.insert(0, os.path.join(D, 'scripts')); import tvlib as T
 A = os.environ.get('ATIVO', 'wti'); R = os.path.join(D, 'results', A + '_4p_8p_full'); MINTR = int(os.environ.get('MINTR', '100'))
 m1 = T.load_m1v(A); t0, t1 = m1.index[0], m1.index[-1]; c = [(t0 + (t1 - t0) * k / 10) for k in range(11)]
-nomes = pd.read_csv(os.path.join(R, 'ranking.csv')).astype({'lote': str}).set_index(['lote', 'est']).nome.to_dict()
+RK = os.path.join(R, 'ranking.csv'); RK = RK if os.path.exists(RK) else os.path.join(D, 'results', 'wti_4p_8p_full', 'ranking.csv')   # nomes iguais em todos os ativos
+nomes = pd.read_csv(RK).astype({'lote': str}).set_index(['lote', 'est']).nome.to_dict()
 rows, TR, VA = [], {}, {}
 for f in sorted(glob.glob(os.path.join(R, 'lote*.csv'))):
     l = os.path.basename(f)[4:-4]; g = pd.read_csv(f)
