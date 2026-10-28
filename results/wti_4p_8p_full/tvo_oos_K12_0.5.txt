@@ -1,0 +1,18 @@
+OOS 2025-10-13 a 2026-09-30; K=12 teto=0.5
+peso igual: total +15.0% Sharpe 0.98 DD -6.5%
+inverso da vol: total +13.4% Sharpe 0.94 DD -5.9%
+B&H WTI: total +54.6% Sharpe 1.10 DD -40.3%
+
+por estrategia (OOS):
+drsi    +116.1%
+azl      +66.3%
+sttsl    +10.1%
+srvi      +8.0%
+pst       -0.1%
+abcd      -6.7%
+sta      -12.0%
+wr       -13.3%
+twin     -15.2%
+l2r      -19.7%
+piv      -21.3%
+edma     -25.2%
