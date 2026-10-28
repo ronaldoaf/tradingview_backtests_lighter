@@ -1,6 +1,6 @@
 # BTC: treino / validação / OOS
 
-Período todo (2020-01-01 a 2026-09-30) em 10 partes iguais: 1–6 treino (até 2023-05-17), 7–9 validação (até 2026-01-27), 10 OOS (não lido). B&H BTC na validação: +115,9%.
+Período todo (2020-01-01 a 2026-09-30) em 10 partes iguais: 1–6 treino (até 2024-01-18), 7–9 validação (até 2026-01-27), 10 OOS (não lido). B&H BTC na validação: +115,9%.
 
 Mesmo método do WTI (scripts/tvo.py): exclusão só no treino (geo > 0, ≥4/6 partes positivas, sem a melhor parte > 0, ≥100 trades), melhor célula por estratégia pela geo, templates fora. 18.976 células; aprovadas: 386 estratégias.
 
