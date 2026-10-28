@@ -11,14 +11,14 @@ import tvlib as T
 _load = T.load_m1v
 A = os.environ.get('ATIVO', 'us100')   # ATIVO=wti etc.
 EX = [pd.Timestamp(x, tz='UTC') for x in os.environ['EXCL'].split(',')] if os.environ.get('EXCL') else None   # EXCL=ini,fim: descarta trades abertos nesse intervalo
-SUF = os.environ.get('SUF', '')
+SUF = os.environ.get('SUF', ''); NP = int(os.environ.get('NP', '4'))   # NP=10: o periodo antes do OOS em 10 partes
 B = {}; SER = []; FULL = os.environ.get('FULL') == '1'   # FULL=1: dados todos, para medir o OOS das ja escolhidas
 
 
 def load_4p(name):
     m1 = _load(name); t0, t1 = m1.index[0], m1.index[-1]
-    B['cortes'] = [t0 + (t1 - t0) * k / 5 for k in range(5)]
-    return m1 if FULL else m1[m1.index < B['cortes'][4]]
+    oos = t0 + (t1 - t0) * 4 / 5; B['cortes'] = [t0 + (oos - t0) * k / NP for k in range(NP + 1)]
+    return m1 if FULL else m1[m1.index < B['cortes'][NP]]
 
 
 def summarize(df, trades, name, *a, minimo=10, **k):
@@ -27,9 +27,9 @@ def summarize(df, trades, name, *a, minimo=10, **k):
         trades = trades[~((ni(trades.t_in) < EX[1].tz_localize(None)) & (ni(trades.t_out) >= EX[0].tz_localize(None)))].reset_index(drop=True)
     if trades is None or len(trades) < minimo: return None
     c = B['cortes']; ti = pd.DatetimeIndex(trades.t_in); g = np.log1p(np.clip(trades.u * trades.ret, -0.999, None))
-    o = {f'p{q + 1}': float(np.expm1(g[(ti >= c[q]) & (ti < (c[q + 1] if q < 3 else c[4]))].sum())) for q in range(4)}
+    o = {f'p{q + 1}': float(np.expm1(g[(ti >= c[q]) & (ti < c[q + 1])].sum())) for q in range(NP)}
     o['tot'] = float(np.expm1(g.sum()))
-    if FULL or all(o[f'p{q}'] > 0 for q in range(1, 5)):   # guarda o retorno diario das celulas que passam
+    if FULL or (NP == 4 and all(o[f'p{q}'] > 0 for q in range(1, 5))):   # guarda o retorno diario das celulas que passam
         o['sid'] = len(SER); SER.append(T.equity_curve(df, trades, name).resample('1D').last().dropna().pct_change().fillna(0.0))
     yrs = (df.index[-1] - df.index[0]).total_seconds() / (365 * 86400); mu = trades.ret.mean()
     o.update(trades=len(trades), por_ano=len(trades) / yrs, bp_bruto=1e4 * trades.bruto.mean(), bp_liq=1e4 * mu,
