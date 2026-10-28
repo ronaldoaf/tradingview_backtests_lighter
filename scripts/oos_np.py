@@ -8,6 +8,8 @@ D = os.path.dirname(os.path.dirname(os.path.abspath(__file__))); sys.path.insert
 A = os.environ.get('ATIVO', 'wti'); R = os.path.join(D, 'results', A + '_4p' + os.environ.get('SUF', '_8p_full'))
 a = pd.read_csv(os.path.join(R, os.environ.get('IN', 'aprovadas.csv')))   # IN=ranking_total.csv: ranking pelo retorno total
 if 'total' in a: a = a[a.total > 0]
+for m in ('kalmar', 'sharpe'):
+    if m in a: a = a[a[m] > 0]
 a = a[~a.nome.fillna('').str.contains('Example|Template', case=False)].reset_index(drop=True)   # exemplos/templates nao contam
 G, S, cols = {}, {}, {}
 for _, r in a.iterrows():
