@@ -19,6 +19,17 @@ X = pd.DataFrame(cols).fillna(0.0); X.index = pd.DatetimeIndex(X.index); X = X[(
 m1 = T.load_m1v(A); t0, t1 = m1.index[0], m1.index[-1]; corte = (t0 + (t1 - t0) * 4 / 5).normalize()
 if X.index.tz is None: corte = corte.tz_localize(None)
 I, O = X[X.index < corte], X[X.index > corte]
+K = int(os.environ.get('K', '0'))   # K>0: so as K pouco correlacionadas (gulosa na ordem do ranking, menor limite que fecha K)
+if K:
+    C = I.corr().to_numpy()
+    def pega(lim):
+        s = []
+        for i in range(len(C)):
+            if all(C[i, j] < lim for j in s): s.append(i)
+            if len(s) == K: return s
+    lim = next(l for l in np.arange(-0.2, 1.01, 0.01) if pega(l)); s = pega(lim)
+    print(f'limite {lim:.2f}; corr media do par {np.mean(C[np.ix_(s, s)][np.triu_indices(K, 1)]):.2f}; ranks {[i + 1 for i in s]}')
+    X, I, O = X.iloc[:, s], I.iloc[:, s], O.iloc[:, s]
 w_iv = (1 / I.std()); w_iv /= w_iv.sum(); w_eq = pd.Series(1 / X.shape[1], X.columns)
 yrs = (O.index[-1] - O.index[0]).days / 365
 px = m1.close[m1.index >= m1.index[0] + (t1 - t0) * 4 / 5].resample('1D').last().dropna(); bhr = px.pct_change().dropna()
@@ -37,6 +48,6 @@ eqb, sb = st(bhr, f'B&H {A.upper()} OOS'); out.append(sb); plt.plot(eqb, label=f
 ind = (1 + O).prod() - 1
 out.append(f'positivas no OOS: {(ind > 0).sum()}/{len(ind)}\n\nmaiores pesos inverso da vol: ' + ', '.join(f'{k} {v:.1%}' for k, v in w_iv.sort_values(ascending=False).head(5).items()))
 out.append('\npor estrategia (OOS):\n' + ind.sort_values(ascending=False).to_string(float_format=lambda v: f'{v:+.1%}'))
-open(os.path.join(R, 'oos_carteira.txt'), 'w').write('\n'.join(out))
-plt.title(f'{A.upper()} OOS: {X.shape[1]} aprovadas'); plt.legend(); plt.grid(alpha=.3); plt.tight_layout(); plt.savefig(os.path.join(R, 'oos_carteira.png'), dpi=110)
+open(os.path.join(R, f'oos_carteira{K or ""}.txt'), 'w').write('\n'.join(out))
+plt.title(f'{A.upper()} OOS: {X.shape[1]} aprovadas'); plt.legend(); plt.grid(alpha=.3); plt.tight_layout(); plt.savefig(os.path.join(R, f'oos_carteira{K or ""}.png'), dpi=110)
 print('\n'.join(out))
