@@ -1,0 +1,17 @@
+OOS 2024-10-21 a 2026-09-30 (1.94 anos); diferenca max p1..p4 vs selecao 2.11e-01
+carteira peso igual: total +28.63% CAGR +13.8% Sharpe 0.97 vol 14.4% DD -13.4%
+B&H WTI: total +28.59% CAGR +13.8% Sharpe 0.51 DD -40.3%
+corr diaria carteira x B&H -0.31; estrategias positivas no OOS: 5/10
+
+por estrategia (OOS):
+                                         celula     oos
+azl                           4h cos thr0 ambos +295.1%
+dbt                              30min 30 ambos +164.4%
+abcd                        4h sl4.0% rr5 ambos  +28.5%
+nr7s                               1D semfiltro  +12.7%
+gs                     30min como escrito ambos   +6.0%
+hast               1D m2.7 normal tp0.47 sl0.21   -4.2%
+wr    15min w140 -94/-6 sl0.005 contrario ambos  -22.4%
+pmax             15min sl0% tp35% filtros ambos  -24.9%
+l2r                         30min semtpsl ambos  -31.8%
+piv                                    5min 2/2  -48.4%
