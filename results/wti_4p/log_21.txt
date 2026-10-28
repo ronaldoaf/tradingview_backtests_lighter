@@ -1,0 +1,71 @@
+/home/user/tradingview_backtests_lighter/scripts/study_tvlote21.py:159: UserWarning: Converting to PeriodArray/Index representation will drop timezone information.
+  per = df.index.to_period(htf[0]) if htf else None
+/home/user/tradingview_backtests_lighter/scripts/study_tvlote21.py:159: UserWarning: Converting to PeriodArray/Index representation will drop timezone information.
+  per = df.index.to_period(htf[0]) if htf else None
+/home/user/tradingview_backtests_lighter/scripts/study_tvlote21.py:159: UserWarning: Converting to PeriodArray/Index representation will drop timezone information.
+  per = df.index.to_period(htf[0]) if htf else None
+/home/user/tradingview_backtests_lighter/scripts/study_tvlote21.py:159: UserWarning: Converting to PeriodArray/Index representation will drop timezone information.
+  per = df.index.to_period(htf[0]) if htf else None
+/home/user/tradingview_backtests_lighter/scripts/study_tvlote21.py:159: UserWarning: Converting to PeriodArray/Index representation will drop timezone information.
+  per = df.index.to_period(htf[0]) if htf else None
+/home/user/tradingview_backtests_lighter/scripts/study_tvlote21.py:159: UserWarning: Converting to PeriodArray/Index representation will drop timezone information.
+  per = df.index.to_period(htf[0]) if htf else None
+/home/user/tradingview_backtests_lighter/scripts/study_tvlote21.py:159: UserWarning: Converting to PeriodArray/Index representation will drop timezone information.
+  per = df.index.to_period(htf[0]) if htf else None
+/home/user/tradingview_backtests_lighter/scripts/study_tvlote21.py:159: UserWarning: Converting to PeriodArray/Index representation will drop timezone information.
+  per = df.index.to_period(htf[0]) if htf else None
+/home/user/tradingview_backtests_lighter/scripts/study_tvlote21.py:159: UserWarning: Converting to PeriodArray/Index representation will drop timezone information.
+  per = df.index.to_period(htf[0]) if htf else None
+/home/user/tradingview_backtests_lighter/scripts/study_tvlote21.py:159: UserWarning: Converting to PeriodArray/Index representation will drop timezone information.
+  per = df.index.to_period(htf[0]) if htf else None
+/home/user/tradingview_backtests_lighter/scripts/study_tvlote21.py:159: UserWarning: Converting to PeriodArray/Index representation will drop timezone information.
+  per = df.index.to_period(htf[0]) if htf else None
+/home/user/tradingview_backtests_lighter/scripts/study_tvlote21.py:159: UserWarning: Converting to PeriodArray/Index representation will drop timezone information.
+  per = df.index.to_period(htf[0]) if htf else None
+/home/user/tradingview_backtests_lighter/scripts/study_tvlote21.py:159: UserWarning: Converting to PeriodArray/Index representation will drop timezone information.
+  per = df.index.to_period(htf[0]) if htf else None
+/home/user/tradingview_backtests_lighter/scripts/study_tvlote21.py:159: UserWarning: Converting to PeriodArray/Index representation will drop timezone information.
+  per = df.index.to_period(htf[0]) if htf else None
+/home/user/tradingview_backtests_lighter/scripts/study_tvlote21.py:159: UserWarning: Converting to PeriodArray/Index representation will drop timezone information.
+  per = df.index.to_period(htf[0]) if htf else None
+/home/user/tradingview_backtests_lighter/scripts/study_tvlote21.py:159: UserWarning: Converting to PeriodArray/Index representation will drop timezone information.
+  per = df.index.to_period(htf[0]) if htf else None
+/home/user/tradingview_backtests_lighter/scripts/study_tvlote21.py:159: UserWarning: Converting to PeriodArray/Index representation will drop timezone information.
+  per = df.index.to_period(htf[0]) if htf else None
+/home/user/tradingview_backtests_lighter/scripts/study_tvlote21.py:159: UserWarning: Converting to PeriodArray/Index representation will drop timezone information.
+  per = df.index.to_period(htf[0]) if htf else None
+/home/user/tradingview_backtests_lighter/scripts/study_tvlote21.py:159: UserWarning: Converting to PeriodArray/Index representation will drop timezone information.
+  per = df.index.to_period(htf[0]) if htf else None
+/home/user/tradingview_backtests_lighter/scripts/study_tvlote21.py:159: UserWarning: Converting to PeriodArray/Index representation will drop timezone information.
+  per = df.index.to_period(htf[0]) if htf else None
+/home/user/tradingview_backtests_lighter/scripts/study_tvlote21.py:159: UserWarning: Converting to PeriodArray/Index representation will drop timezone information.
+  per = df.index.to_period(htf[0]) if htf else None
+/home/user/tradingview_backtests_lighter/scripts/study_tvlote21.py:159: UserWarning: Converting to PeriodArray/Index representation will drop timezone information.
+  per = df.index.to_period(htf[0]) if htf else None
+/home/user/tradingview_backtests_lighter/scripts/study_tvlote21.py:159: UserWarning: Converting to PeriodArray/Index representation will drop timezone information.
+  per = df.index.to_period(htf[0]) if htf else None
+/home/user/tradingview_backtests_lighter/scripts/study_tvlote21.py:159: UserWarning: Converting to PeriodArray/Index representation will drop timezone information.
+  per = df.index.to_period(htf[0]) if htf else None
+/home/user/tradingview_backtests_lighter/scripts/study_tvlote21.py:159: UserWarning: Converting to PeriodArray/Index representation will drop timezone information.
+  per = df.index.to_period(htf[0]) if htf else None
+/home/user/tradingview_backtests_lighter/scripts/study_tvlote21.py:159: UserWarning: Converting to PeriodArray/Index representation will drop timezone information.
+  per = df.index.to_period(htf[0]) if htf else None
+/home/user/tradingview_backtests_lighter/scripts/study_tvlote21.py:159: UserWarning: Converting to PeriodArray/Index representation will drop timezone information.
+  per = df.index.to_period(htf[0]) if htf else None
+/home/user/tradingview_backtests_lighter/scripts/study_tvlote21.py:159: UserWarning: Converting to PeriodArray/Index representation will drop timezone information.
+  per = df.index.to_period(htf[0]) if htf else None
+/home/user/tradingview_backtests_lighter/scripts/study_tvlote21.py:159: UserWarning: Converting to PeriodArray/Index representation will drop timezone information.
+  per = df.index.to_period(htf[0]) if htf else None
+/home/user/tradingview_backtests_lighter/scripts/study_tvlote21.py:159: UserWarning: Converting to PeriodArray/Index representation will drop timezone information.
+  per = df.index.to_period(htf[0]) if htf else None
+/home/user/tradingview_backtests_lighter/scripts/study_tvlote21.py:159: UserWarning: Converting to PeriodArray/Index representation will drop timezone information.
+  per = df.index.to_period(htf[0]) if htf else None
+/home/user/tradingview_backtests_lighter/scripts/study_tvlote21.py:159: UserWarning: Converting to PeriodArray/Index representation will drop timezone information.
+  per = df.index.to_period(htf[0]) if htf else None
+/home/user/tradingview_backtests_lighter/scripts/study_tvlote21.py:159: UserWarning: Converting to PeriodArray/Index representation will drop timezone information.
+  per = df.index.to_period(htf[0]) if htf else None
+/home/user/tradingview_backtests_lighter/scripts/study_tvlote21.py:159: UserWarning: Converting to PeriodArray/Index representation will drop timezone information.
+  per = df.index.to_period(htf[0]) if htf else None
+/home/user/tradingview_backtests_lighter/scripts/study_tvlote21.py:159: UserWarning: Converting to PeriodArray/Index representation will drop timezone information.
+  per = df.index.to_period(htf[0]) if htf else None
+21 ok

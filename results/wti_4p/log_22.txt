@@ -1,0 +1,71 @@
+/home/user/tradingview_backtests_lighter/scripts/study_tvlote22.py:170: RuntimeWarning: invalid value encountered in divide
+  tsi = 100 * ema(ema(pc, 50), 50) / ema(ema(np.abs(pc), 50), 50)
+/home/user/tradingview_backtests_lighter/scripts/study_tvlote22.py:170: RuntimeWarning: invalid value encountered in divide
+  tsi = 100 * ema(ema(pc, 50), 50) / ema(ema(np.abs(pc), 50), 50)
+/home/user/tradingview_backtests_lighter/scripts/study_tvlote22.py:170: RuntimeWarning: invalid value encountered in divide
+  tsi = 100 * ema(ema(pc, 50), 50) / ema(ema(np.abs(pc), 50), 50)
+/home/user/tradingview_backtests_lighter/scripts/study_tvlote22.py:170: RuntimeWarning: invalid value encountered in divide
+  tsi = 100 * ema(ema(pc, 50), 50) / ema(ema(np.abs(pc), 50), 50)
+/home/user/tradingview_backtests_lighter/scripts/study_tvlote22.py:170: RuntimeWarning: invalid value encountered in divide
+  tsi = 100 * ema(ema(pc, 50), 50) / ema(ema(np.abs(pc), 50), 50)
+/home/user/tradingview_backtests_lighter/scripts/study_tvlote22.py:170: RuntimeWarning: invalid value encountered in divide
+  tsi = 100 * ema(ema(pc, 50), 50) / ema(ema(np.abs(pc), 50), 50)
+/home/user/tradingview_backtests_lighter/scripts/study_tvlote22.py:170: RuntimeWarning: invalid value encountered in divide
+  tsi = 100 * ema(ema(pc, 50), 50) / ema(ema(np.abs(pc), 50), 50)
+/home/user/tradingview_backtests_lighter/scripts/study_tvlote22.py:170: RuntimeWarning: invalid value encountered in divide
+  tsi = 100 * ema(ema(pc, 50), 50) / ema(ema(np.abs(pc), 50), 50)
+/home/user/tradingview_backtests_lighter/scripts/study_tvlote22.py:170: RuntimeWarning: invalid value encountered in divide
+  tsi = 100 * ema(ema(pc, 50), 50) / ema(ema(np.abs(pc), 50), 50)
+/home/user/tradingview_backtests_lighter/scripts/study_tvlote22.py:170: RuntimeWarning: invalid value encountered in divide
+  tsi = 100 * ema(ema(pc, 50), 50) / ema(ema(np.abs(pc), 50), 50)
+/home/user/tradingview_backtests_lighter/scripts/study_tvlote22.py:170: RuntimeWarning: invalid value encountered in divide
+  tsi = 100 * ema(ema(pc, 50), 50) / ema(ema(np.abs(pc), 50), 50)
+/home/user/tradingview_backtests_lighter/scripts/study_tvlote22.py:170: RuntimeWarning: invalid value encountered in divide
+  tsi = 100 * ema(ema(pc, 50), 50) / ema(ema(np.abs(pc), 50), 50)
+/home/user/tradingview_backtests_lighter/scripts/study_tvlote22.py:170: RuntimeWarning: invalid value encountered in divide
+  tsi = 100 * ema(ema(pc, 50), 50) / ema(ema(np.abs(pc), 50), 50)
+/home/user/tradingview_backtests_lighter/scripts/study_tvlote22.py:170: RuntimeWarning: invalid value encountered in divide
+  tsi = 100 * ema(ema(pc, 50), 50) / ema(ema(np.abs(pc), 50), 50)
+/home/user/tradingview_backtests_lighter/scripts/study_tvlote22.py:170: RuntimeWarning: invalid value encountered in divide
+  tsi = 100 * ema(ema(pc, 50), 50) / ema(ema(np.abs(pc), 50), 50)
+/home/user/tradingview_backtests_lighter/scripts/study_tvlote22.py:170: RuntimeWarning: invalid value encountered in divide
+  tsi = 100 * ema(ema(pc, 50), 50) / ema(ema(np.abs(pc), 50), 50)
+/home/user/tradingview_backtests_lighter/scripts/study_tvlote22.py:170: RuntimeWarning: invalid value encountered in divide
+  tsi = 100 * ema(ema(pc, 50), 50) / ema(ema(np.abs(pc), 50), 50)
+/home/user/tradingview_backtests_lighter/scripts/study_tvlote22.py:170: RuntimeWarning: invalid value encountered in divide
+  tsi = 100 * ema(ema(pc, 50), 50) / ema(ema(np.abs(pc), 50), 50)
+/home/user/tradingview_backtests_lighter/scripts/study_tvlote22.py:170: RuntimeWarning: invalid value encountered in divide
+  tsi = 100 * ema(ema(pc, 50), 50) / ema(ema(np.abs(pc), 50), 50)
+/home/user/tradingview_backtests_lighter/scripts/study_tvlote22.py:170: RuntimeWarning: invalid value encountered in divide
+  tsi = 100 * ema(ema(pc, 50), 50) / ema(ema(np.abs(pc), 50), 50)
+/home/user/tradingview_backtests_lighter/scripts/study_tvlote22.py:170: RuntimeWarning: invalid value encountered in divide
+  tsi = 100 * ema(ema(pc, 50), 50) / ema(ema(np.abs(pc), 50), 50)
+/home/user/tradingview_backtests_lighter/scripts/study_tvlote22.py:170: RuntimeWarning: invalid value encountered in divide
+  tsi = 100 * ema(ema(pc, 50), 50) / ema(ema(np.abs(pc), 50), 50)
+/home/user/tradingview_backtests_lighter/scripts/study_tvlote22.py:170: RuntimeWarning: invalid value encountered in divide
+  tsi = 100 * ema(ema(pc, 50), 50) / ema(ema(np.abs(pc), 50), 50)
+/home/user/tradingview_backtests_lighter/scripts/study_tvlote22.py:170: RuntimeWarning: invalid value encountered in divide
+  tsi = 100 * ema(ema(pc, 50), 50) / ema(ema(np.abs(pc), 50), 50)
+/home/user/tradingview_backtests_lighter/scripts/study_tvlote22.py:170: RuntimeWarning: invalid value encountered in divide
+  tsi = 100 * ema(ema(pc, 50), 50) / ema(ema(np.abs(pc), 50), 50)
+/home/user/tradingview_backtests_lighter/scripts/study_tvlote22.py:170: RuntimeWarning: invalid value encountered in divide
+  tsi = 100 * ema(ema(pc, 50), 50) / ema(ema(np.abs(pc), 50), 50)
+/home/user/tradingview_backtests_lighter/scripts/study_tvlote22.py:170: RuntimeWarning: invalid value encountered in divide
+  tsi = 100 * ema(ema(pc, 50), 50) / ema(ema(np.abs(pc), 50), 50)
+/home/user/tradingview_backtests_lighter/scripts/study_tvlote22.py:170: RuntimeWarning: invalid value encountered in divide
+  tsi = 100 * ema(ema(pc, 50), 50) / ema(ema(np.abs(pc), 50), 50)
+/home/user/tradingview_backtests_lighter/scripts/study_tvlote22.py:170: RuntimeWarning: invalid value encountered in divide
+  tsi = 100 * ema(ema(pc, 50), 50) / ema(ema(np.abs(pc), 50), 50)
+/home/user/tradingview_backtests_lighter/scripts/study_tvlote22.py:170: RuntimeWarning: invalid value encountered in divide
+  tsi = 100 * ema(ema(pc, 50), 50) / ema(ema(np.abs(pc), 50), 50)
+/home/user/tradingview_backtests_lighter/scripts/study_tvlote22.py:170: RuntimeWarning: invalid value encountered in divide
+  tsi = 100 * ema(ema(pc, 50), 50) / ema(ema(np.abs(pc), 50), 50)
+/home/user/tradingview_backtests_lighter/scripts/study_tvlote22.py:170: RuntimeWarning: invalid value encountered in divide
+  tsi = 100 * ema(ema(pc, 50), 50) / ema(ema(np.abs(pc), 50), 50)
+/home/user/tradingview_backtests_lighter/scripts/study_tvlote22.py:170: RuntimeWarning: invalid value encountered in divide
+  tsi = 100 * ema(ema(pc, 50), 50) / ema(ema(np.abs(pc), 50), 50)
+/home/user/tradingview_backtests_lighter/scripts/study_tvlote22.py:170: RuntimeWarning: invalid value encountered in divide
+  tsi = 100 * ema(ema(pc, 50), 50) / ema(ema(np.abs(pc), 50), 50)
+/home/user/tradingview_backtests_lighter/scripts/study_tvlote22.py:170: RuntimeWarning: invalid value encountered in divide
+  tsi = 100 * ema(ema(pc, 50), 50) / ema(ema(np.abs(pc), 50), 50)
+22 ok

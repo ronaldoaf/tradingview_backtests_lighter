@@ -9,6 +9,7 @@ D = os.path.dirname(os.path.dirname(os.path.abspath(__file__))); sys.path.insert
 import tvlib as T
 
 _load = T.load_m1v
+A = os.environ.get('ATIVO', 'us100')   # ATIVO=wti etc.
 B = {}; SER = []; FULL = os.environ.get('FULL') == '1'   # FULL=1: dados todos, para medir o OOS das ja escolhidas
 
 
@@ -34,17 +35,17 @@ def summarize(df, trades, name, *a, minimo=10, **k):
 
 T.load_m1v = load_4p; T.summarize = summarize
 N = sys.argv[1]; MOD = f'study_tvlote{N}' if N.isdigit() else f'study_{N}'
-OUT = os.path.join(D, 'results', 'us100_4p' + ('_full' if FULL else ''), f'lote{N}.csv')
+OUT = os.path.join(D, 'results', A + '_4p' + ('_full' if FULL else ''), f'lote{N}.csv')
 _csv = pd.DataFrame.to_csv
 def to_csv(self, path=None, *a, **k):
-    if isinstance(path, str) and 'us100' in os.path.basename(path):
+    if isinstance(path, str) and A in os.path.basename(path):
         suf = '' if 'grid' in path else '_' + os.path.basename(path)[:-4].rsplit('_', 1)[-1]
         return _csv(self.assign(lote=N + suf), OUT[:-4] + suf + '.csv', index=False)
 pd.DataFrame.to_csv = to_csv
 import builtins; _print = builtins.print
 builtins.print = lambda *a, **k: None   # silencia o log das celulas
 L = importlib.import_module(MOD)
-L.main(['us100'])
+L.main([A])
 builtins.print = _print
 if SER: pd.DataFrame({i: x for i, x in enumerate(SER)}).fillna(0.0).to_parquet(OUT[:-4] + '_ser.parquet')
 print(N, 'ok' if os.path.exists(OUT) else 'SEM CSV')
