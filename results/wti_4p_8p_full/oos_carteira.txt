@@ -1,10 +1,10 @@
-47 estrategias; OOS 2024-10-21 a 2026-09-30 (1.94 anos)
-[peso igual] antes do OOS: total +82.6% CAGR +8.0% Sharpe 2.31 DD -2.2% | OOS: total -1.5% CAGR -0.8% Sharpe -0.22 DD -4.3%
-[inverso da vol] antes do OOS: total +26.8% CAGR +3.1% Sharpe 2.39 DD -0.9% | OOS: total -0.6% CAGR -0.3% Sharpe -0.22 DD -1.8%
+46 estrategias; OOS 2024-10-21 a 2026-09-30 (1.94 anos)
+[peso igual] antes do OOS: total +84.5% CAGR +8.2% Sharpe 2.30 DD -2.2% | OOS: total -1.7% CAGR -0.9% Sharpe -0.25 DD -4.4%
+[inverso da vol] antes do OOS: total +27.3% CAGR +3.1% Sharpe 2.37 DD -1.0% | OOS: total -1.0% CAGR -0.5% Sharpe -0.35 DD -2.0%
 B&H WTI OOS: total +28.6% CAGR +13.8% Sharpe 0.51 DD -40.3%
-positivas no OOS: 16/47
+positivas no OOS: 15/46
 
-maiores pesos inverso da vol: vixfix:grade 13.8%, 15:es 6.5%, 6:bbrsi 5.3%, 32:r2 4.8%, 11:sce 3.5%
+maiores pesos inverso da vol: vixfix:grade 14.3%, 15:es 6.8%, 6:bbrsi 5.5%, 32:r2 5.0%, 19:cipher 3.4%
 
 por estrategia (OOS):
 21:gs            +163.2%
@@ -13,7 +13,6 @@ por estrategia (OOS):
 20:3st            +19.3%
 24:ectp           +16.0%
 25:nr7s           +10.8%
-11:sce             +9.5%
 16:qqe             +5.1%
 zigzagpa:grade     +5.0%
 27:gsc             +4.6%

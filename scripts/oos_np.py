@@ -6,7 +6,9 @@ import numpy as np, pandas as pd
 import matplotlib; matplotlib.use('Agg'); import matplotlib.pyplot as plt
 D = os.path.dirname(os.path.dirname(os.path.abspath(__file__))); sys.path.insert(0, os.path.join(D, 'scripts')); import tvlib as T
 A = os.environ.get('ATIVO', 'wti'); R = os.path.join(D, 'results', A + '_4p' + os.environ.get('SUF', '_8p_full'))
-a = pd.read_csv(os.path.join(R, 'aprovadas.csv')); G, S, cols = {}, {}, {}
+a = pd.read_csv(os.path.join(R, 'aprovadas.csv'))
+a = a[~a.nome.fillna('').str.contains('Example|Template', case=False)].reset_index(drop=True)   # exemplos/templates nao contam
+G, S, cols = {}, {}, {}
 for _, r in a.iterrows():
     l = str(r.lote)
     if l not in G:
