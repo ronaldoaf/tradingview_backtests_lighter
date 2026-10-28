@@ -22,7 +22,7 @@ a['nome'] = [nomes.get((l, e), '') for l, e in zip(a.lote, a.est)]
 a['celula'] = a.apply(lambda r: ' '.join(str(r[c]) for c in ('TF', 'cfg') if c in r and pd.notna(r[c])), axis=1)
 a['n_cel_ok'] = [int(g[(g.lote == l) & (g.est == e) & g.ok].shape[0]) for l, e in zip(a.lote, a.est)]
 a['n_cel'] = [int(g[(g.lote == l) & (g.est == e)].shape[0]) for l, e in zip(a.lote, a.est)]
-cols = ['lote', 'est', 'nome', 'celula', 'p1', 'p2', 'p3', 'p4', 'soma', 'trades', 'n_cel_ok', 'n_cel']
+cols = ['lote', 'est', 'nome', 'celula', 'p1', 'p2', 'p3', 'p4', 'soma', 'trades', 'n_cel_ok', 'n_cel', 'sid']
 a[cols].to_csv(os.path.join(R, 'aprovadas.csv'), index=False)
 with open(os.path.join(R, 'resumo.txt'), 'w') as fo:
     fo.write(f'{n_est} estrategias, {len(g)} celulas; aprovadas {len(a)}\n')

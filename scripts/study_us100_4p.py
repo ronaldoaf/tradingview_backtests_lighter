@@ -9,7 +9,7 @@ D = os.path.dirname(os.path.dirname(os.path.abspath(__file__))); sys.path.insert
 import tvlib as T
 
 _load = T.load_m1v
-B = {}
+B = {}; SER = []
 
 
 def load_4p(name):
@@ -23,6 +23,8 @@ def summarize(df, trades, name, *a, minimo=10, **k):
     c = B['cortes']; ti = pd.DatetimeIndex(trades.t_in); g = np.log1p(np.clip(trades.u * trades.ret, -0.999, None))
     o = {f'p{q + 1}': float(np.expm1(g[(ti >= c[q]) & (ti < (c[q + 1] if q < 3 else c[4]))].sum())) for q in range(4)}
     o['tot'] = float(np.expm1(g.sum()))
+    if all(o[f'p{q}'] > 0 for q in range(1, 5)):   # guarda o retorno diario das celulas que passam
+        o['sid'] = len(SER); SER.append(T.equity_curve(df, trades, name).resample('1D').last().dropna().pct_change().fillna(0.0))
     yrs = (df.index[-1] - df.index[0]).total_seconds() / (365 * 86400); mu = trades.ret.mean()
     o.update(trades=len(trades), por_ano=len(trades) / yrs, bp_bruto=1e4 * trades.bruto.mean(), bp_liq=1e4 * mu,
              bp_sf=1e4 * trades.ret_sf.mean(), win=float((trades.ret > 0).mean()), dias=float(trades.yrs.mean() * 365),
@@ -36,11 +38,13 @@ OUT = os.path.join(D, 'results', 'us100_4p', f'lote{N}.csv')
 _csv = pd.DataFrame.to_csv
 def to_csv(self, path=None, *a, **k):
     if isinstance(path, str) and 'us100' in os.path.basename(path):
-        return _csv(self.assign(lote=N), OUT, index=False)
+        suf = '' if 'grid' in path else '_' + os.path.basename(path)[:-4].rsplit('_', 1)[-1]
+        return _csv(self.assign(lote=N + suf), OUT[:-4] + suf + '.csv', index=False)
 pd.DataFrame.to_csv = to_csv
 import builtins; _print = builtins.print
 builtins.print = lambda *a, **k: None   # silencia o log das celulas
 L = importlib.import_module(MOD)
 L.main(['us100'])
 builtins.print = _print
+if SER: pd.DataFrame({i: x for i, x in enumerate(SER)}).fillna(0.0).to_parquet(OUT[:-4] + '_ser.parquet')
 print(N, 'ok' if os.path.exists(OUT) else 'SEM CSV')
