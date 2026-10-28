@@ -18,6 +18,8 @@ for f in glob.glob(os.path.join(R, 'lote*.csv')):
     if os.environ.get('METRIC') == 'kalmar':   # CAGR / |DD maximo| da equity diaria
         eq = (1 + S).cumprod(); anos = (S.index[-1] - S.index[0]).days / 365
         sh = (eq.iloc[-1].clip(lower=1e-9) ** (1 / anos) - 1) / (1 - eq / eq.cummax()).max().clip(lower=1e-4)
+    elif os.environ.get('METRIC') == 'sortino':   # media / desvio so dos dias negativos
+        sh = S.mean() / np.sqrt((S.clip(upper=0) ** 2).mean()) * np.sqrt(f_ano)
     else: sh = S.mean() / S.std() * np.sqrt(f_ano)
     sh.index = sh.index.astype(str)
     g['sharpe'] = [sh.get(str(int(s)), np.nan) for s in g.sid]
