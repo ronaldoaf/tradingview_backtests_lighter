@@ -33,6 +33,8 @@ def load_m1v(name):
     import glob
     if name == 'xau':
         x = pd.read_parquet(os.path.join(D, 'data', 'gold', 'xau_1m.parquet'))
+    elif name == 'xag':   # prata, Dukascopy XAG-USD BID 1m (data/xag_1m_dl.py)
+        x = pd.read_parquet(os.path.join(D, 'data', 'silver', 'xag_1m.parquet'))
     elif name in ('us100', 'us500', 'wti'):
         fs = sorted(glob.glob(os.path.join(D, 'data', f'duka1m_{name}', '*.parquet')))
         x = pd.concat([pd.read_parquet(f) for f in fs if os.path.getsize(f) > 0])

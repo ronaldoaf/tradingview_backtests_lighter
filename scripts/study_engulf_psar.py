@@ -18,9 +18,9 @@ import numpy as np, pandas as pd
 
 D = os.environ.get('EDGE_ROOT') or os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(D, 'scripts'))
-CUSTO = {'us500': 1.2e-4, 'us100': 1.2e-4, 'us30': 1.2e-4, 'us2000': 1.2e-4, 'xau': 0.75e-4, 'wti': 1.0e-4, 'btc': 0.5e-4,
+CUSTO = {'us500': 1.2e-4, 'us100': 1.2e-4, 'us30': 1.2e-4, 'us2000': 1.2e-4, 'xau': 0.75e-4, 'xag': 0.75e-4, 'wti': 1.0e-4, 'btc': 0.5e-4,
          'eth': 0.5e-4}  # eth: estimativa = btc, ainda nao medido no livro da Lighter
-FUND = {'us500': 3.1, 'us100': 4.5, 'us30': 8.4, 'us2000': 8.4, 'xau': 13.8, 'wti': 67.7, 'btc': 10.9, 'eth': 10.9}  # funding anual medio que o long paga na Lighter (%)
+FUND = {'us500': 3.1, 'us100': 4.5, 'us30': 8.4, 'us2000': 8.4, 'xau': 13.8, 'xag': 13.8, 'wti': 67.7, 'btc': 10.9, 'eth': 10.9}  # funding anual medio que o long paga na Lighter (%)
 
 
 def load15(name):
