@@ -1,0 +1,12 @@
+OOS 2025-11-07 a 2026-10-04; K=6 teto=0.3
+peso igual: total -0.3% Sharpe 0.04 DD -13.6%
+inverso da vol: total -1.2% Sharpe -0.04 DD -13.2%
+B&H XAU: total +3.8% Sharpe 0.29 DD -27.7%
+
+por estrategia (OOS):
+tsi    +23.2%
+gso     +9.6%
+mtl     -1.0%
+ut      -7.5%
+hulk   -15.2%
+bbr    -19.3%
