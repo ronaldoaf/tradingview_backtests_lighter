@@ -10,6 +10,8 @@ import tvlib as T
 
 _load = T.load_m1v
 A = os.environ.get('ATIVO', 'us100')   # ATIVO=wti etc.
+EX = [pd.Timestamp(x, tz='UTC') for x in os.environ['EXCL'].split(',')] if os.environ.get('EXCL') else None   # EXCL=ini,fim: descarta trades abertos nesse intervalo
+SUF = os.environ.get('SUF', '')
 B = {}; SER = []; FULL = os.environ.get('FULL') == '1'   # FULL=1: dados todos, para medir o OOS das ja escolhidas
 
 
@@ -20,6 +22,9 @@ def load_4p(name):
 
 
 def summarize(df, trades, name, *a, minimo=10, **k):
+    if trades is not None and EX is not None:
+        ni = lambda x: (lambda d: d.tz_localize(None) if d.tz is not None else d)(pd.DatetimeIndex(x))   # aceita trades com ou sem fuso
+        trades = trades[~((ni(trades.t_in) < EX[1].tz_localize(None)) & (ni(trades.t_out) >= EX[0].tz_localize(None)))].reset_index(drop=True)
     if trades is None or len(trades) < minimo: return None
     c = B['cortes']; ti = pd.DatetimeIndex(trades.t_in); g = np.log1p(np.clip(trades.u * trades.ret, -0.999, None))
     o = {f'p{q + 1}': float(np.expm1(g[(ti >= c[q]) & (ti < (c[q + 1] if q < 3 else c[4]))].sum())) for q in range(4)}
@@ -35,7 +40,7 @@ def summarize(df, trades, name, *a, minimo=10, **k):
 
 T.load_m1v = load_4p; T.summarize = summarize
 N = sys.argv[1]; MOD = f'study_tvlote{N}' if N.isdigit() else f'study_{N}'
-OUT = os.path.join(D, 'results', A + '_4p' + ('_full' if FULL else ''), f'lote{N}.csv')
+OUT = os.path.join(D, 'results', A + '_4p' + SUF + ('_full' if FULL else ''), f'lote{N}.csv')
 _csv = pd.DataFrame.to_csv
 def to_csv(self, path=None, *a, **k):
     if isinstance(path, str) and A in os.path.basename(path):

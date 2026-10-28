@@ -3,7 +3,7 @@ aceita a estrategia se a maior correlacao (retornos diarios, so nas 4 partes) co
 limite; o limite e o menor (passo 0,01) que ainda fecha 20. Grava results/us100_4p/sel20.csv e sel20_corr.csv."""
 import os, sys
 import numpy as np, pandas as pd
-D = os.path.dirname(os.path.dirname(os.path.abspath(__file__))); A = os.environ.get('ATIVO', 'us100'); R = os.path.join(D, 'results', A + '_4p')
+D = os.path.dirname(os.path.dirname(os.path.abspath(__file__))); A = os.environ.get('ATIVO', 'us100'); R = os.path.join(D, 'results', A + '_4p' + os.environ.get('SUF', ''))
 BH = A != 'us100'   # nos outros ativos: aprovadas pelo criterio do B&H com as 4 partes positivas, ordem pela media geometrica
 K = int(sys.argv[1]) if len(sys.argv) > 1 else 20
 a = pd.read_csv(os.path.join(R, 'aprovadas_bh.csv' if BH else 'aprovadas.csv')); ser = {}

@@ -7,9 +7,12 @@ import glob, os, re
 import numpy as np, pandas as pd
 D = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 import sys; sys.path.insert(0, os.path.join(D, 'scripts')); import tvlib as T
-A = os.environ.get('ATIVO', 'wti'); R = os.path.join(D, 'results', A + '_4p')
+A = os.environ.get('ATIVO', 'wti'); R = os.path.join(D, 'results', A + '_4p' + os.environ.get('SUF', ''))
 m1 = T.load_m1v(A); t0, t1 = m1.index[0], m1.index[-1]; c = [t0 + (t1 - t0) * k / 5 for k in range(5)]
 cl = m1.close[m1.index < c[4]]   # a 5a parte (OOS) nao entra
+if os.environ.get('EXCL'):   # B&H sem o intervalo excluido: o preco fica parado nele
+    e0, e1 = [pd.Timestamp(x, tz='UTC') for x in os.environ['EXCL'].split(',')]; r = cl.pct_change().fillna(0.0); r[(r.index >= e0) & (r.index <= e1)] = 0.0
+    cl = cl.iloc[0] * (1 + r).cumprod()
 bh = [float(cl[cl.index < c[q + 1]].iloc[-1] / cl[cl.index < c[q]].iloc[-1] - 1) if q else float(cl[cl.index < c[1]].iloc[-1] / cl.iloc[0] - 1) for q in range(4)]
 bh_tot = float(np.prod([1 + b for b in bh]) - 1); lim = 0.5 * bh_tot
 g = pd.concat([pd.read_csv(f).assign(lote=os.path.basename(f)[4:-4]) for f in glob.glob(os.path.join(R, 'lote*.csv'))])
