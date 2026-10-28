@@ -20,7 +20,8 @@ def pega(lim):
     return None
 
 
-lim = next(l for l in np.arange(0.0, 1.01, 0.01) if pega(l)); s = pega(lim)
+LIM = float(sys.argv[2]) if len(sys.argv) > 2 else None   # limite fixo (ex.: 0.5); sem ele, o menor que fecha K
+lim = LIM if LIM is not None else next(l for l in np.arange(0.0, 1.01, 0.01) if pega(l)); s = pega(lim)
 b = a.iloc[s].assign(rank=[i + 1 for i in s], corr_max=[max([C[i, j] for j in s if j != i]) for i in s],
                      corr_med=[np.mean([C[i, j] for j in s if j != i]) for i in s])
 b.to_csv(os.path.join(R, 'sel20.csv'), index=False)
