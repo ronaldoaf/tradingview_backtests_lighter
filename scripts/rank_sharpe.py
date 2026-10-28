@@ -26,11 +26,12 @@ g = pd.concat(out)
 g = g[~(g.get('cfg', pd.Series('', g.index)).astype(str).eq('peek') | g.get('tag', pd.Series('', g.index)).astype(str).str.contains('peek'))]
 g['total'] = np.prod(1 + g[P].values, axis=1) - 1
 g['celula'] = g.apply(lambda r: ' '.join(str(r[k]) for k in ('TF', 'cfg') if k in r and pd.notna(r[k])), axis=1)
+g = g[g.trades >= int(os.environ.get('MINTR', '0'))]   # MINTR: minimo de trades da celula
 a = g.dropna(subset=['sharpe']).sort_values('sharpe', ascending=False).drop_duplicates(['lote', 'est']).copy()
 a['nome'] = [nomes.get((l, e), '') for l, e in zip(a.lote, a.est)]
 a = a[~a.nome.fillna('').astype(str).str.contains('Example|Template', case=False)]
 cols = ['lote', 'est', 'nome', 'celula', 'sharpe', 'total', 'trades']
 M = os.environ.get('METRIC', 'sharpe'); a = a.rename(columns={'sharpe': M}); cols = [M if c == 'sharpe' else c for c in cols]
-a[cols].to_csv(os.path.join(R, f"ranking_{os.environ.get('METRIC', 'sharpe')}.csv"), index=False)
+a[cols].to_csv(os.path.join(R, f"ranking_{os.environ.get('METRIC', 'sharpe')}{os.environ.get('MINTR', '')}.csv"), index=False)
 print(f'{len(a)} estrategias; {M} > 0: {(a[M] > 0).sum()}')
 print(a[cols].head(20).to_string(index=False, formatters={'total': lambda v: f'{v:+.0%}', M: lambda v: f'{v:.2f}'}))
