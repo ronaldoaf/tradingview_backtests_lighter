@@ -32,7 +32,7 @@ a['celula'] = a.apply(lambda r: ' '.join(str(r[k]) for k in ('TF', 'cfg') if k i
 ok = g[g.ok].groupby(['lote', 'est']).size(); tt = g.groupby(['lote', 'est']).size()
 a['n_cel_ok'] = [int(ok[(l, e)]) for l, e in zip(a.lote, a.est)]; a['n_cel'] = [int(tt[(l, e)]) for l, e in zip(a.lote, a.est)]
 a['todas_pos'] = (a[P] > 0).all(axis=1)
-cols = ['lote', 'est', 'nome', 'celula', 'p1', 'p2', 'p3', 'p4', 'tot4', 'geo', 'todas_pos', 'trades', 'n_cel_ok', 'n_cel']
+cols = ['lote', 'est', 'nome', 'celula', 'p1', 'p2', 'p3', 'p4', 'tot4', 'geo', 'todas_pos', 'trades', 'n_cel_ok', 'n_cel', 'sid']
 a[cols].to_csv(os.path.join(R, 'aprovadas_bh.csv'), index=False)
 with open(os.path.join(R, 'resumo_bh.txt'), 'w') as fo:
     fo.write(f'cortes: {[str(x)[:10] for x in c]}\nB&H por parte: {[f"{b:+.1%}" for b in bh]}  total {bh_tot:+.1%}  limite {lim:+.1%}\n')
