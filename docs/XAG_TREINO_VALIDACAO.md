@@ -85,3 +85,22 @@ Mesmo método do XAU (`ATIVO=xag bash scripts/run_full.sh` e `ATIVO=xag python s
 | 38 | 14 | hull | 6. HullMA Strategy (HMA16 subindo/descendo) | 1h n55 ambos | +14,6% | 4/6 | 2613 |
 | 39 | 18 | savwap | 2. Swing Anchored VWAP (direcao do swing de 50 barras, long-only) | 30min prd50 ambos | +14,3% | 4/6 | 1353 |
 | 40 | 23 | twin | 1. Twin Range Filter | 1D sematr t17 sltp ambos | +14,1% | 4/6 | 199 |
+
+## OOS (parte 10) da carteira K=6 teto 0,3
+
+```
+OOS 2025-11-07 a 2026-10-04; K=6 teto=0.3
+peso igual: total -29.0% Sharpe -0.91 DD -36.1%
+inverso da vol: total -16.6% Sharpe -0.55 DD -29.0%
+B&H XAG: total +25.7% Sharpe 0.73 DD -52.8%
+
+por estrategia (OOS):
+macdre    +19.1%
+rsirev    +12.4%
+evw       -13.8%
+atr       -19.0%
+stdbf     -22.4%
+kbb      -100.0%
+```
+
+kbb (Kozlod BB, 4h) zera na alta parabólica da prata em jan/2026: o retorno é sobre o nocional 1x e a posição vendida perdeu tudo.

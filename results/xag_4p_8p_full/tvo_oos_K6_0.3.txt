@@ -1,0 +1,12 @@
+OOS 2025-11-07 a 2026-10-04; K=6 teto=0.3
+peso igual: total -29.0% Sharpe -0.91 DD -36.1%
+inverso da vol: total -16.6% Sharpe -0.55 DD -29.0%
+B&H XAG: total +25.7% Sharpe 0.73 DD -52.8%
+
+por estrategia (OOS):
+macdre    +19.1%
+rsirev    +12.4%
+evw       -13.8%
+atr       -19.0%
+stdbf     -22.4%
+kbb      -100.0%
