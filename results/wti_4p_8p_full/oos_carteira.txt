@@ -1,0 +1,56 @@
+47 estrategias; OOS 2024-10-21 a 2026-09-30 (1.94 anos)
+[peso igual] antes do OOS: total +82.6% CAGR +8.0% Sharpe 2.31 DD -2.2% | OOS: total -1.5% CAGR -0.8% Sharpe -0.22 DD -4.3%
+[inverso da vol] antes do OOS: total +26.8% CAGR +3.1% Sharpe 2.39 DD -0.9% | OOS: total -0.6% CAGR -0.3% Sharpe -0.22 DD -1.8%
+B&H WTI OOS: total +28.6% CAGR +13.8% Sharpe 0.51 DD -40.3%
+positivas no OOS: 16/47
+
+maiores pesos inverso da vol: vixfix:grade 13.8%, 15:es 6.5%, 6:bbrsi 5.3%, 32:r2 4.8%, 11:sce 3.5%
+
+por estrategia (OOS):
+21:gs            +163.2%
+6:sttsl           +70.0%
+21:hulk           +22.0%
+20:3st            +19.3%
+24:ectp           +16.0%
+25:nr7s           +10.8%
+11:sce             +9.5%
+16:qqe             +5.1%
+zigzagpa:grade     +5.0%
+27:gsc             +4.6%
+20:atrgod          +4.5%
+12:pt              +3.2%
+24:stb             +2.5%
+8:tm               +2.0%
+6:bbrsi            +0.3%
+32:r2              +0.1%
+vixfix:grade       -0.1%
+15:es              -0.3%
+28:l2r             -0.9%
+30:stpb            -0.9%
+37:rvc             -1.9%
+22:bbra            -2.1%
+21:sqz             -2.3%
+10:wr              -2.7%
+25:smp             -3.8%
+11:hast            -3.8%
+18:sweep           -4.1%
+14:fm              -4.4%
+16:pmax            -4.6%
+13:fib             -5.8%
+20:cam             -5.9%
+15:sbs             -6.7%
+19:cipher          -9.6%
+21:lube           -11.9%
+15:tmfs           -13.2%
+31:lch            -13.9%
+9:ict             -15.2%
+30:dip            -16.3%
+7:cap             -18.8%
+16:edma           -19.7%
+6:sr              -21.2%
+36:cbo            -22.6%
+19:abcd           -22.7%
+7:hma             -27.7%
+37:mrs            -34.4%
+7:std             -41.8%
+10:piv            -48.4%
