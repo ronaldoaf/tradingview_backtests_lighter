@@ -1,0 +1,19 @@
+10 estrategias; OOS 2024-10-21 a 2026-09-30 (1.94 anos)
+[peso igual] antes do OOS: total +690.5% CAGR +30.4% Sharpe 2.34 DD -7.5% | OOS: total -0.7% CAGR -0.4% Sharpe 0.03 DD -13.0%
+[inverso da vol] antes do OOS: total +464.6% CAGR +24.9% Sharpe 2.33 DD -5.8% | OOS: total -2.3% CAGR -1.2% Sharpe -0.07 DD -12.8%
+B&H WTI OOS: total +28.6% CAGR +13.8% Sharpe 0.51 DD -40.3%
+positivas no OOS: 3/10
+
+maiores pesos inverso da vol: 15:tmfs 17.6%, 21:lube 15.9%, 23:crazy 15.7%, 6:sttsl 9.9%, 10:wr 8.6%
+
+por estrategia (OOS):
+6:sttsl             +71.3%
+14:drsi             +49.3%
+22:ewo              +48.9%
+23:crazy             -6.2%
+21:lube             -11.9%
+15:tmfs             -20.5%
+10:wr               -22.4%
+7:std               -41.8%
+ichimoku:ichimoku   -46.3%
+10:piv              -48.4%

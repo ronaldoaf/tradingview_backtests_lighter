@@ -15,7 +15,7 @@ for _, r in a.iterrows():
     if l not in G:
         g = pd.read_csv(os.path.join(R, f'lote{l}.csv')); g['est'] = g['est'].fillna(l) if 'est' in g else l
         g['celula'] = g.apply(lambda x: ' '.join(str(x[k]) for k in ('TF', 'cfg') if k in x and pd.notna(x[k])), axis=1)
-        G[l] = g; S[l] = pd.read_parquet(os.path.join(R, f'lote{l}_ser.parquet'))
+        G[l] = g; S[l] = pd.read_parquet(os.path.join(R, f'lote{l.split("_")[0]}_ser.parquet'))
     h = G[l][(G[l].est == r.est) & (G[l].celula == r.celula)].iloc[0]
     cols[f'{l}:{r.est}'] = S[l][str(int(h.sid))] if str(int(h.sid)) in S[l] else S[l][int(h.sid)]
 X = pd.DataFrame(cols).fillna(0.0); X.index = pd.DatetimeIndex(X.index); X = X[(X != 0).any(axis=1)]
