@@ -17,6 +17,10 @@ Lista das candidatas aprovadas: [docs/APROVADAS.md](docs/APROVADAS.md). Ela foi 
 com a métrica corrigida e o critério para carteira; os vereditos "aprovada" da tabela abaixo, até o
 lote 33, são da conta antiga e valem só como histórico.
 
+Regime de mercado por HMM (ligar/desligar ou escolher estratégias pelo regime, walk-forward, nos 5 ativos):
+**não ajuda** — o HMM prevê a volatilidade, mas não quando as aprovadas ganham. Ver
+[docs/HMM_REGIME.md](docs/HMM_REGIME.md).
+
 ## Protocolo de teste
 
 1. A partir do lote 12, toda estratégia é testada nos **5 ativos** (XAU, US100, WTI, BTC, ETH).
@@ -550,6 +554,8 @@ pullback, Engolfo + PSAR, rompimento de NQ H1.
 - **`lookahead_on`** em `security()` é a causa número um de curva publicada boa. Sempre
   conferir antes de reimplementar. Em Pine v1/v2 ele é **implícito**: o `security()` histórico
   já devolve o candle HTF corrente, sem nenhum parâmetro no código.
+- **Desligar estratégia em drawdown piora.** O desempenho das aprovadas reverte em ~60 dias; filtro de curva
+  (média recente > 0) e regime por HMM ficaram abaixo do "sempre ligado" ([HMM_REGIME](docs/HMM_REGIME.md)).
 - **Sempre-no-mercado** (Hull, Ichimoku, Bollinger) não é estratégia: é beta com custo de
   giro. O benchmark certo é buy & hold, não zero.
 - **Acerto alto sem stop** (RSI Divergence) vem da saída assimétrica, não do sinal.
