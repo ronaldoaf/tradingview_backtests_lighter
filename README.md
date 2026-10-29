@@ -20,6 +20,9 @@ lote 33, são da conta antiga e valem só como histórico.
 Regime de mercado por HMM (ligar/desligar ou escolher estratégias pelo regime, walk-forward, nos 5 ativos):
 **não ajuda** — o HMM prevê a volatilidade, mas não quando as aprovadas ganham. Ver
 [docs/HMM_REGIME.md](docs/HMM_REGIME.md).
+Regras simples de alta/baixa (média de 200, cruzamento 50 × 200, momento de 12 meses, queda de 20% da máxima) no
+mesmo teste: **também não** — o que foi bem na validação não repetiu no OOS. Ver
+[docs/REGIME_SIMPLES.md](docs/REGIME_SIMPLES.md).
 
 ## Protocolo de teste
 
@@ -555,7 +558,8 @@ pullback, Engolfo + PSAR, rompimento de NQ H1.
   conferir antes de reimplementar. Em Pine v1/v2 ele é **implícito**: o `security()` histórico
   já devolve o candle HTF corrente, sem nenhum parâmetro no código.
 - **Desligar estratégia em drawdown piora.** O desempenho das aprovadas reverte em ~60 dias; filtro de curva
-  (média recente > 0) e regime por HMM ficaram abaixo do "sempre ligado" ([HMM_REGIME](docs/HMM_REGIME.md)).
+  (média recente > 0) e regime por HMM ou por regra de tendência ficaram abaixo do "sempre ligado"
+  ([HMM_REGIME](docs/HMM_REGIME.md), [REGIME_SIMPLES](docs/REGIME_SIMPLES.md)).
 - **Sempre-no-mercado** (Hull, Ichimoku, Bollinger) não é estratégia: é beta com custo de
   giro. O benchmark certo é buy & hold, não zero.
 - **Acerto alto sem stop** (RSI Divergence) vem da saída assimétrica, não do sinal.
