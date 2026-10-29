@@ -1,0 +1,139 @@
+
+== wti regime da propria estrategia
+            teste periodo   ret  cagr  sharpe    dd  exposicao
+            todas   valid -0.11 -0.04   -0.56 -0.16      +1.00
+todas_propria_hmm   valid -0.10 -0.04   -0.53 -0.14      +0.93
+todas_propria_rel   valid -0.07 -0.02   -0.38 -0.10      +0.54
+    todas_media60   valid -0.05 -0.02   -0.41 -0.08      +0.47
+               k6   valid -0.11 -0.04   -0.24 -0.27      +1.00
+   k6_propria_hmm   valid -0.11 -0.04   -0.24 -0.27      +1.00
+   k6_propria_rel   valid -0.10 -0.04   -0.44 -0.18      +0.27
+       k6_media60   valid +0.11 +0.04   +0.44 -0.10      +0.48
+     info_propria   valid -0.00   NaN     NaN   NaN        NaN
+     info_media60   valid -0.09   NaN     NaN   NaN        NaN
+            todas     oos +0.06 +0.07   +0.69 -0.07      +1.00
+todas_propria_hmm     oos +0.04 +0.04   +0.43 -0.08      +0.87
+todas_propria_rel     oos +0.02 +0.02   +0.28 -0.07      +0.59
+    todas_media60     oos -0.00 -0.00   +0.00 -0.09      +0.52
+               k6     oos +0.14 +0.15   +0.66 -0.18      +1.00
+   k6_propria_hmm     oos +0.14 +0.15   +0.66 -0.18      +1.00
+   k6_propria_rel     oos +0.18 +0.19   +0.88 -0.18      +0.54
+       k6_media60     oos +0.11 +0.12   +0.74 -0.14      +0.55
+     info_propria     oos -0.12   NaN     NaN   NaN        NaN
+     info_media60     oos -0.39   NaN     NaN   NaN        NaN
+
+== wti D K=2: {'n_aprovadas': 143, 'k6': ['piv', 'sta', 'drsi', 'pst', 'l2r', 'twin'], 'cortes': ['2017-01-03', '2017-12-24', '2018-12-15', '2019-12-06', '2020-11-26', '2021-11-16', '2022-11-07', '2023-10-29', '2024-10-19', '2025-10-10', '2026-09-30'], 'ajustes': '2019-01..2026-09', 'diagA': [0.982, 0.942]}
+             teste periodo   ret  cagr  sharpe    dd  exposicao  placebo_med  placebo_pct
+                bh   valid -0.91 -0.57   -2.42 -0.91      +1.00          NaN          NaN
+             todas   valid -0.11 -0.04   -0.56 -0.16      +1.00          NaN          NaN
+                k6   valid -0.11 -0.04   -0.24 -0.27      +1.00          NaN          NaN
+escolhe_sem_regime   valid +0.21 +0.07   +0.67 -0.16      +1.00          NaN          NaN
+            bh_hmm   valid +0.00 +0.00   +0.00 +0.00      +0.00        +0.00        +0.51
+            bh_rel   valid -0.33 -0.13   -0.71 -0.36      +0.15        -1.65        +0.98
+         todas_hmm   valid -0.11 -0.04   -0.56 -0.14      +0.91        -0.54        +0.38
+         todas_rel   valid -0.01 -0.00   -0.14 -0.04      +0.32        -0.59        +0.88
+            k6_hmm   valid -0.11 -0.04   -0.24 -0.27      +1.00        -0.24        +0.47
+            k6_rel   valid -0.03 -0.01   -0.13 -0.11      +0.15        -0.22        +0.57
+       escolhe_hmm   valid +0.13 +0.04   +0.43 -0.14      +1.00        +0.42        +0.52
+           info_bh   valid -0.02   NaN     NaN   NaN        NaN        +0.04        +0.40
+        info_todas   valid +0.06   NaN     NaN   NaN        NaN        -0.01        +0.84
+                bh     oos -0.20 -0.21   -0.15 -0.49      +1.00          NaN          NaN
+             todas     oos +0.06 +0.07   +0.69 -0.07      +1.00          NaN          NaN
+                k6     oos +0.14 +0.15   +0.66 -0.18      +1.00          NaN          NaN
+escolhe_sem_regime     oos -0.04 -0.04   -0.03 -0.20      +1.00          NaN          NaN
+            bh_hmm     oos +0.00 +0.00   +0.00 +0.00      +0.00        +0.00        +0.50
+            bh_rel     oos -0.28 -0.29   -0.43 -0.50      +0.60        -0.22        +0.36
+         todas_hmm     oos +0.01 +0.02   +0.23 -0.06      +0.86        +0.50        +0.11
+         todas_rel     oos -0.03 -0.03   -0.47 -0.06      +0.54        +0.47        +0.05
+            k6_hmm     oos +0.14 +0.15   +0.66 -0.18      +1.00        +0.66        +0.55
+            k6_rel     oos +0.14 +0.14   +0.66 -0.18      +0.56        +0.55        +0.63
+       escolhe_hmm     oos -0.10 -0.10   -0.37 -0.19      +1.00        +0.19        +0.17
+           info_bh     oos -0.70   NaN     NaN   NaN        NaN        -0.29        +0.38
+        info_todas     oos -0.37   NaN     NaN   NaN        NaN        -0.08        +0.24
+
+== wti D K=3: {'n_aprovadas': 143, 'k6': ['piv', 'sta', 'drsi', 'pst', 'l2r', 'twin'], 'cortes': ['2017-01-03', '2017-12-24', '2018-12-15', '2019-12-06', '2020-11-26', '2021-11-16', '2022-11-07', '2023-10-29', '2024-10-19', '2025-10-10', '2026-09-30'], 'ajustes': '2019-01..2026-09', 'diagA': [0.957, 0.933, 0.927]}
+             teste periodo   ret  cagr  sharpe    dd  exposicao  placebo_med  placebo_pct
+                bh   valid -0.91 -0.57   -2.42 -0.91      +1.00          NaN          NaN
+             todas   valid -0.11 -0.04   -0.56 -0.16      +1.00          NaN          NaN
+                k6   valid -0.11 -0.04   -0.24 -0.27      +1.00          NaN          NaN
+escolhe_sem_regime   valid +0.21 +0.07   +0.67 -0.16      +1.00          NaN          NaN
+            bh_hmm   valid -0.03 -0.01   -0.09 -0.06      +0.01        +0.00        +0.20
+            bh_rel   valid -0.24 -0.09   -0.65 -0.22      +0.07        -1.65        +0.99
+         todas_hmm   valid -0.11 -0.04   -0.67 -0.14      +0.83        -0.55        +0.12
+         todas_rel   valid -0.04 -0.01   -0.47 -0.05      +0.30        -0.47        +0.51
+            k6_hmm   valid -0.13 -0.05   -0.29 -0.27      +0.98        -0.24        +0.25
+            k6_rel   valid -0.22 -0.08   -0.95 -0.27      +0.27        -0.16        +0.09
+       escolhe_hmm   valid +0.05 +0.02   +0.20 -0.17      +1.00        +0.27        +0.44
+           info_bh   valid -0.54   NaN     NaN   NaN        NaN        +0.00        +0.08
+        info_todas   valid -0.18   NaN     NaN   NaN        NaN        -0.01        +0.01
+                bh     oos -0.20 -0.21   -0.15 -0.49      +1.00          NaN          NaN
+             todas     oos +0.06 +0.07   +0.69 -0.07      +1.00          NaN          NaN
+                k6     oos +0.14 +0.15   +0.66 -0.18      +1.00          NaN          NaN
+escolhe_sem_regime     oos -0.04 -0.04   -0.03 -0.20      +1.00          NaN          NaN
+            bh_hmm     oos -0.04 -0.04   +0.12 -0.37      +0.32        +0.00        +0.96
+            bh_rel     oos -0.32 -0.33   -0.60 -0.56      +0.46        -0.01        +0.27
+         todas_hmm     oos +0.04 +0.04   +0.45 -0.08      +0.82        +0.45        +0.49
+         todas_rel     oos +0.03 +0.03   +0.33 -0.08      +0.54        +0.29        +0.53
+            k6_hmm     oos +0.09 +0.09   +0.48 -0.18      +0.99        +0.63        +0.15
+            k6_rel     oos +0.20 +0.21   +0.92 -0.14      +0.55        +0.32        +0.88
+       escolhe_hmm     oos -0.00 -0.00   +0.08 -0.20      +1.00        +0.23        +0.40
+           info_bh     oos -1.01   NaN     NaN   NaN        NaN        +0.44        +0.26
+        info_todas     oos -0.08   NaN     NaN   NaN        NaN        -0.12        +0.61
+
+== wti W K=2: {'n_aprovadas': 143, 'k6': ['piv', 'sta', 'drsi', 'pst', 'l2r', 'twin'], 'cortes': ['2017-01-03', '2017-12-24', '2018-12-15', '2019-12-06', '2020-11-26', '2021-11-16', '2022-11-07', '2023-10-29', '2024-10-19', '2025-10-10', '2026-09-30'], 'ajustes': '2018-12..2026-09', 'diagA': [0.969, 0.913]}
+             teste periodo   ret  cagr  sharpe    dd  exposicao  placebo_med  placebo_pct
+                bh   valid -0.91 -0.57   -2.42 -0.91      +1.00          NaN          NaN
+             todas   valid -0.11 -0.04   -0.56 -0.16      +1.00          NaN          NaN
+                k6   valid -0.11 -0.04   -0.24 -0.27      +1.00          NaN          NaN
+escolhe_sem_regime   valid +0.21 +0.07   +0.67 -0.16      +1.00          NaN          NaN
+            bh_hmm   valid +0.00 +0.00   +0.00 +0.00      +0.00        +0.00        +0.51
+            bh_rel   valid -0.39 -0.15   -0.81 -0.39      +0.22        -1.62        +0.97
+         todas_hmm   valid -0.11 -0.04   -0.56 -0.15      +0.94        -0.53        +0.33
+         todas_rel   valid -0.07 -0.02   -0.72 -0.10      +0.39        -0.45        +0.14
+            k6_hmm   valid -0.11 -0.04   -0.24 -0.27      +1.00        -0.24        +0.49
+            k6_rel   valid -0.19 -0.07   -1.00 -0.25      +0.22        -0.15        +0.05
+       escolhe_hmm   valid +0.18 +0.06   +0.59 -0.14      +1.00        +0.47        +0.54
+           info_bh   valid +0.12   NaN     NaN   NaN        NaN        +0.01        +0.68
+        info_todas   valid -0.07   NaN     NaN   NaN        NaN        -0.00        +0.05
+                bh     oos -0.20 -0.21   -0.15 -0.49      +1.00          NaN          NaN
+             todas     oos +0.06 +0.07   +0.69 -0.07      +1.00          NaN          NaN
+                k6     oos +0.14 +0.15   +0.66 -0.18      +1.00          NaN          NaN
+escolhe_sem_regime     oos -0.04 -0.04   -0.03 -0.20      +1.00          NaN          NaN
+            bh_hmm     oos +0.00 +0.00   +0.00 +0.00      +0.00        +0.00        +0.50
+            bh_rel     oos -0.35 -0.36   -0.66 -0.49      +0.61        -0.15        +0.26
+         todas_hmm     oos +0.02 +0.02   +0.31 -0.05      +0.84        +0.60        +0.09
+         todas_rel     oos +0.03 +0.03   +0.51 -0.04      +0.52        +0.58        +0.42
+            k6_hmm     oos +0.14 +0.15   +0.66 -0.18      +1.00        +0.66        +0.53
+            k6_rel     oos +0.18 +0.19   +0.83 -0.18      +0.61        +0.54        +0.83
+       escolhe_hmm     oos +0.07 +0.08   +0.41 -0.14      +1.00        +0.22        +0.60
+           info_bh     oos -1.14   NaN     NaN   NaN        NaN        -0.04        +0.26
+        info_todas     oos -0.21   NaN     NaN   NaN        NaN        -0.20        +0.49
+
+== wti W K=3: {'n_aprovadas': 143, 'k6': ['piv', 'sta', 'drsi', 'pst', 'l2r', 'twin'], 'cortes': ['2017-01-03', '2017-12-24', '2018-12-15', '2019-12-06', '2020-11-26', '2021-11-16', '2022-11-07', '2023-10-29', '2024-10-19', '2025-10-10', '2026-09-30'], 'ajustes': '2018-12..2026-09', 'diagA': [0.952, 0.923, 0.841]}
+             teste periodo   ret  cagr  sharpe    dd  exposicao  placebo_med  placebo_pct
+                bh   valid -0.91 -0.57   -2.42 -0.91      +1.00          NaN          NaN
+             todas   valid -0.11 -0.04   -0.56 -0.16      +1.00          NaN          NaN
+                k6   valid -0.11 -0.04   -0.24 -0.27      +1.00          NaN          NaN
+escolhe_sem_regime   valid +0.21 +0.07   +0.67 -0.16      +1.00          NaN          NaN
+            bh_hmm   valid +0.00 +0.00   +0.00 +0.00      +0.00        +0.00        +0.55
+            bh_rel   valid -0.70 -0.34   -1.43 -0.69      +0.51        -1.65        +0.70
+         todas_hmm   valid -0.10 -0.04   -0.58 -0.14      +0.87        -0.51        +0.40
+         todas_rel   valid -0.01 -0.00   -0.09 -0.05      +0.39        -0.50        +0.90
+            k6_hmm   valid -0.10 -0.04   -0.21 -0.24      +0.96        -0.25        +0.77
+            k6_rel   valid -0.03 -0.01   -0.08 -0.17      +0.32        -0.23        +0.59
+       escolhe_hmm   valid +0.43 +0.13   +1.14 -0.11      +1.00        +0.20        +1.00
+           info_bh   valid +0.12   NaN     NaN   NaN        NaN        -0.04        +0.75
+        info_todas   valid -0.09   NaN     NaN   NaN        NaN        -0.02        +0.14
+                bh     oos -0.20 -0.21   -0.15 -0.49      +1.00          NaN          NaN
+             todas     oos +0.06 +0.07   +0.69 -0.07      +1.00          NaN          NaN
+                k6     oos +0.14 +0.15   +0.66 -0.18      +1.00          NaN          NaN
+escolhe_sem_regime     oos -0.04 -0.04   -0.03 -0.20      +1.00          NaN          NaN
+            bh_hmm     oos +0.00 +0.00   +0.00 +0.00      +0.00        +0.00        +0.49
+            bh_rel     oos -0.10 -0.11   +0.05 -0.49      +0.77        -0.12        +0.64
+         todas_hmm     oos +0.02 +0.02   +0.29 -0.06      +0.81        +0.43        +0.32
+         todas_rel     oos -0.02 -0.02   -0.35 -0.06      +0.56        +0.38        +0.08
+            k6_hmm     oos +0.08 +0.09   +0.45 -0.21      +0.97        +0.66        +0.07
+            k6_rel     oos +0.16 +0.17   +0.76 -0.18      +0.63        +0.40        +0.75
+       escolhe_hmm     oos -0.03 -0.03   -0.05 -0.18      +1.00        +0.13        +0.37
+           info_bh     oos +0.50   NaN     NaN   NaN        NaN        -0.04        +0.59
+        info_todas     oos -0.27   NaN     NaN   NaN        NaN        -0.10        +0.25

@@ -41,6 +41,8 @@ def summarize(df, trades, name, *a, minimo=10, **k):
 T.load_m1v = load_4p; T.summarize = summarize
 N = sys.argv[1]; MOD = f'study_tvlote{N}' if N.isdigit() else f'study_{N}'
 OUT = os.path.join(D, 'results', A + '_4p' + SUF + ('_full' if FULL else ''), f'lote{N}.csv')
+if FULL and os.path.exists(OUT) and os.path.exists(OUT[:-4] + '_ser.parquet'):   # retoma o run_full.sh: apague para refazer
+    print(N, 'ok (ja existia)'); sys.exit()
 _csv = pd.DataFrame.to_csv
 def to_csv(self, path=None, *a, **k):
     if isinstance(path, str) and A in os.path.basename(path):
