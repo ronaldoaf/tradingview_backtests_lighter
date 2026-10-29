@@ -9,3 +9,4 @@ results/eth_4p_8p_full/*_ser.parquet
 results/wti_4p_8p_full/*_ser.parquet
 results/us100_4p_8p_full/*_ser.parquet
 logs/
+results/*_4p_8p_lado/

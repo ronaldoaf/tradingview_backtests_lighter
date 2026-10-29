@@ -156,8 +156,23 @@ def ret_liga(Rv, on, cu): return (Rv * on).astype(float) - cu * np.abs(np.diff(o
 def ret_pesos(Rv, W, cu): return (Rv * W).sum(1) - cu * np.abs(np.diff(W, axis=0, prepend=W[:1])).sum(1)
 
 
+def atual(G, shift=0):
+    """Probabilidade de regime vigente em cada data (parametros do mes da data)."""
+    P = np.full((len(G.idx), G.Q[G.ms[0]].shape[1]), np.nan)
+    for j in range(len(G.ms)): P[G.b[j]:G.b[j + 1]] = G.P(j, shift)[G.b[j]:G.b[j + 1]]
+    return P
+
+
 def roda(A, K, freq, rng):
-    R, a, k6, c = aprovadas(A); X, ms, Q, par = H.walk(A, K, freq); cu = CUSTO[A]; Xd = H.features(A)
+    X, ms, Q, par = H.walk(A, K, freq); o, inf = avalia(A, X, ms, Q, rng)
+    o.insert(1, 'freq', freq); o.insert(2, 'K', K)
+    return o, dict(inf, ajustes=f'{ms[0]:%Y-%m}..{ms[-1]:%Y-%m}', diagA=np.round(par[-1][:K], 3).tolist())
+
+
+def avalia(A, X, ms, Q, rng, bh_estado=None):
+    """Todos os usos para uma serie de regimes (X, ms, Q no formato do hmm_regime.walk), com placebos.
+    bh_estado: indice do estado em que o teste bh_regra fica comprado (regras simples: 1 = alta)."""
+    R, a, k6, c = aprovadas(A); cu = CUSTO[A]; Xd = H.features(A)
     per = {'valid': (c[6], c[9]), 'oos': (c[9], c[10] + pd.Timedelta(days=1))}
     # bh no calendario de pregoes; estrategias no calendario das series
     cl = Xd.close; d = cl.index.to_series().diff().dt.days.fillna(1).values
@@ -178,6 +193,8 @@ def roda(A, K, freq, rng):
              'todas_hmm': (g1.mean(1), on.mean(1), 0), 'todas_rel': (g2.mean(1), rel.mean(1), 0),
              'k6_hmm': (g1[:, i6].mean(1), on[:, i6].mean(1), 0), 'k6_rel': (g2[:, i6].mean(1), rel[:, i6].mean(1), 0),
              'escolhe_hmm': (ret_pesos(Rv, W1, cu), W1.sum(1), 0)}
+        if bh_estado is not None:
+            ob = ~(atual(Gx, shift)[:, bh_estado] <= 0.5)[:, None]; s['bh_regra'] = (ret_liga(rb, ob, cu)[:, 0], ob[:, 0], 1)
         out = {(t, p): (r[mk[p][x]], ex[mk[p][x]]) for t, (r, ex, x) in s.items() for p in per}
         inf = {('info_bh', p): info(rb, Eb, Eb0, mk[p][1], ppx[p]) for p in per}
         inf.update({('info_todas', p): info(Rv, E, E0, mk[p][0], ppy[p]) for p in per})
@@ -201,9 +218,8 @@ def roda(A, K, freq, rng):
         for (t, q), v in inf.items():
             if q != p: continue
             pl = np.array(plac[(t, q)]); rows.append(dict(teste=t, periodo=p, ret=v, placebo_med=np.nanmedian(pl), placebo_pct=pct(pl, v)))
-    o = pd.DataFrame(rows); o.insert(0, 'ativo', A); o.insert(1, 'freq', freq); o.insert(2, 'K', K)
-    pa = par[-1]; return o, dict(n_aprovadas=len(a), k6=[k.split('|')[1] for k in k6], cortes=[str(x)[:10] for x in c],
-                               ajustes=f'{ms[0]:%Y-%m}..{ms[-1]:%Y-%m}', diagA=np.round(pa[:K], 3).tolist())
+    o = pd.DataFrame(rows); o.insert(0, 'ativo', A)
+    return o, dict(n_aprovadas=len(a), k6=[k.split('|')[1] for k in k6], cortes=[str(x)[:10] for x in c])
 
 
 def propria(A):

@@ -1,0 +1,777 @@
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+
+== btc mm200: {'n_sel_L': 6, 'n_sel_S': 6, 'sel_L': ['strex', 'drsi', 'ged', 'ichimoku', 'twin', 'piv'], 'sel_S': ['std', 'piv', 'hs', 'madrid', 'dax', 'acr']}
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+
+== btc cruz: {'n_sel_L': 6, 'n_sel_S': 6, 'sel_L': ['rsima', 'piv', 'azl', 'hhll', 'twin', 'bbst'], 'sel_S': ['sts', 'qqe', 'std', 'tlb', 'sbs', 'fm']}
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+
+== btc mom12: {'n_sel_L': 6, 'n_sel_S': 6, 'sel_L': ['piv', 'mrr', 'moon', 'tst', 'ged', 'sqr'], 'sel_S': ['okx', 'std', 'piv', 'sts', 'apsar', 'macdre']}
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+/home/user/tradingview_backtests_lighter/scripts/study_lado.py:62: RuntimeWarning: invalid value encountered in matmul
+  P = (Lg[:c6i].T @ Mp).astype(float)   # celulas x partes elegiveis: soma dos log-retornos nos dias do regime
+
+== btc dd20: {'n_sel_L': 6, 'n_sel_S': 6, 'sel_L': ['bz', 'occ', 'azl', 'rdi', 'piv', 'sqz'], 'sel_S': ['std', 'force', 'piv', 'okx', 'sqr', 'moon']}
+
+== btc: {'n_aprovadas': 386, 'celulas': 18976, 'erro_max_L_S': 1.4784979907034312e-08}
+regra              teste periodo   ret  cagr  sharpe    dd  placebo_med  placebo_pct
+mm200              todas   valid +0.21 +0.10   +0.59 -0.21          NaN          NaN
+mm200                 k6   valid +0.65 +0.28   +1.33 -0.11          NaN          NaN
+mm200 escolhe_sem_regime   valid +0.47 +0.21   +1.40 -0.09          NaN          NaN
+mm200         todas_lado   valid +0.14 +0.07   +0.42 -0.22        +0.38        +0.54
+mm200            k6_lado   valid +0.19 +0.09   +0.46 -0.30        +0.64        +0.38
+mm200       escolhe_lado   valid +0.21 +0.10   +0.57 -0.21        +0.79        +0.40
+mm200           sel_lado   valid -0.06 -0.03   +0.01 -0.37        +0.52        +0.23
+mm200          info_lado   valid -0.08   NaN     NaN   NaN        -0.02        +0.44
+mm200              todas     oos +0.10 +0.15   +0.91 -0.09          NaN          NaN
+mm200                 k6     oos +0.05 +0.08   +0.54 -0.11          NaN          NaN
+mm200 escolhe_sem_regime     oos +0.05 +0.07   +0.61 -0.09          NaN          NaN
+mm200         todas_lado     oos +0.18 +0.28   +1.85 -0.05        +0.38        +0.99
+mm200            k6_lado     oos +0.21 +0.32   +1.36 -0.11        -0.19        +0.96
+mm200       escolhe_lado     oos +0.18 +0.28   +1.86 -0.05        +0.07        +0.96
+mm200           sel_lado     oos +0.35 +0.56   +1.72 -0.15        +0.03        +0.95
+mm200          info_lado     oos +1.27   NaN     NaN   NaN        -0.19        +0.97
+ cruz              todas   valid +0.21 +0.10   +0.59 -0.21          NaN          NaN
+ cruz                 k6   valid +0.65 +0.28   +1.33 -0.11          NaN          NaN
+ cruz escolhe_sem_regime   valid +0.47 +0.21   +1.40 -0.09          NaN          NaN
+ cruz         todas_lado   valid +0.08 +0.04   +0.28 -0.29        +0.45        +0.39
+ cruz            k6_lado   valid +0.08 +0.04   +0.28 -0.36        +0.70        +0.25
+ cruz       escolhe_lado   valid -0.04 -0.02   -0.04 -0.29        +0.81        +0.08
+ cruz           sel_lado   valid +0.14 +0.07   +0.39 -0.37        +0.42        +0.49
+ cruz          info_lado   valid -0.23   NaN     NaN   NaN        +0.02        +0.25
+ cruz              todas     oos +0.10 +0.15   +0.91 -0.09          NaN          NaN
+ cruz                 k6     oos +0.05 +0.08   +0.54 -0.11          NaN          NaN
+ cruz escolhe_sem_regime     oos +0.05 +0.07   +0.61 -0.09          NaN          NaN
+ cruz         todas_lado     oos +0.09 +0.13   +1.25 -0.05        +0.38        +0.84
+ cruz            k6_lado     oos +0.13 +0.19   +0.92 -0.13        -0.07        +0.82
+ cruz       escolhe_lado     oos +0.12 +0.18   +1.57 -0.06        +0.19        +0.96
+ cruz           sel_lado     oos +0.16 +0.24   +1.34 -0.08        +0.08        +0.90
+ cruz          info_lado     oos +0.69   NaN     NaN   NaN        -0.02        +0.78
+mom12              todas   valid +0.21 +0.10   +0.59 -0.21          NaN          NaN
+mom12                 k6   valid +0.65 +0.28   +1.33 -0.11          NaN          NaN
+mom12 escolhe_sem_regime   valid +0.47 +0.21   +1.40 -0.09          NaN          NaN
+mom12         todas_lado   valid +0.38 +0.17   +0.83 -0.18        +0.25        +0.83
+mom12            k6_lado   valid +0.66 +0.28   +1.11 -0.18        +0.50        +0.83
+mom12       escolhe_lado   valid +0.31 +0.14   +1.04 -0.11        +0.53        +0.82
+mom12           sel_lado   valid +0.31 +0.14   +0.68 -0.25        +0.45        +0.65
+mom12          info_lado   valid +0.55   NaN     NaN   NaN        -0.03        +0.90
+mom12              todas     oos +0.10 +0.15   +0.91 -0.09          NaN          NaN
+mom12                 k6     oos +0.05 +0.08   +0.54 -0.11          NaN          NaN
+mom12 escolhe_sem_regime     oos +0.05 +0.07   +0.61 -0.09          NaN          NaN
+mom12         todas_lado     oos +0.05 +0.08   +0.92 -0.05        +0.38        +0.76
+mom12            k6_lado     oos +0.08 +0.12   +0.65 -0.12        -0.19        +0.78
+mom12       escolhe_lado     oos +0.07 +0.11   +0.88 -0.07        +0.22        +0.89
+mom12           sel_lado     oos +0.11 +0.17   +0.79 -0.14        -0.01        +0.91
+mom12          info_lado     oos   NaN   NaN     NaN   NaN        +0.34          NaN
+ dd20              todas   valid +0.21 +0.10   +0.59 -0.21          NaN          NaN
+ dd20                 k6   valid +0.65 +0.28   +1.33 -0.11          NaN          NaN
+ dd20 escolhe_sem_regime   valid +0.47 +0.21   +1.40 -0.09          NaN          NaN
+ dd20         todas_lado   valid +0.14 +0.07   +0.40 -0.22        +0.08        +0.63
+ dd20            k6_lado   valid +0.22 +0.10   +0.50 -0.26        +0.38        +0.58
+ dd20       escolhe_lado   valid +0.07 +0.03   +0.30 -0.21        +0.28        +0.50
+ dd20           sel_lado   valid +0.03 +0.02   +0.19 -0.32        -0.14        +0.61
+ dd20          info_lado   valid -0.20   NaN     NaN   NaN        -0.23        +0.50
+ dd20              todas     oos +0.10 +0.15   +0.91 -0.09          NaN          NaN
+ dd20                 k6     oos +0.05 +0.08   +0.54 -0.11          NaN          NaN
+ dd20 escolhe_sem_regime     oos +0.05 +0.07   +0.61 -0.09          NaN          NaN
+ dd20         todas_lado     oos +0.05 +0.08   +0.92 -0.05        +0.53        +0.68
+ dd20            k6_lado     oos +0.08 +0.12   +0.65 -0.12        +0.30        +0.68
+ dd20       escolhe_lado     oos +0.03 +0.05   +0.61 -0.05        +0.09        +0.73
+ dd20           sel_lado     oos +0.08 +0.13   +0.62 -0.18        +0.24        +0.68
+ dd20          info_lado     oos   NaN   NaN     NaN   NaN        +0.03          NaN
+Traceback (most recent call last):
+  File "/home/user/tradingview_backtests_lighter/scripts/study_lado.py", line 204, in <module>
+    resumo()
+    ~~~~~~^^
+  File "/home/user/tradingview_backtests_lighter/scripts/study_lado.py", line 176, in resumo
+    cel.append('—' if x.empty else f'{f(x.ret.median())} · {int((x.ret > 0).sum())}/{len(x)} · p{int(round(100 * x.placebo_pct.median()))}')
+                                                                                                     ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: cannot convert float NaN to integer

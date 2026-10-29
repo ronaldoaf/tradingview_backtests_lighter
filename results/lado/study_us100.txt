@@ -1,0 +1,83 @@
+
+== us100 mm200: {'n_sel_L': 6, 'n_sel_S': 6, 'sel_L': ['ppst', 'hs', 'dm', 'crypto', 'twin', 'ccu'], 'sel_S': ['eng', 'e5', 'cs', 'pst', 'c2ac', 'nw']}
+
+== us100 cruz: {'n_sel_L': 6, 'n_sel_S': 0, 'sel_L': ['bts', 'hs', 'joel', 'azl', 'khw', 'twin'], 'sel_S': []}
+
+== us100 mom12: {'n_sel_L': 6, 'n_sel_S': 0, 'sel_L': ['bts', 'obv', 'joel', 'sbs', 'vf', 'azl'], 'sel_S': []}
+
+== us100 dd20: {'n_sel_L': 6, 'n_sel_S': 0, 'sel_L': ['tm', 'micu', 'ged', 'joel', 'sbs', 'vf'], 'sel_S': []}
+
+== us100: {'n_aprovadas': 405, 'celulas': 18563, 'erro_max_L_S': 8.460072642435534e-09}
+regra              teste periodo   ret  cagr  sharpe    dd  placebo_med  placebo_pct
+mm200              todas   valid +0.31 +0.10   +1.13 -0.06          NaN          NaN
+mm200                 k6   valid +0.22 +0.07   +0.81 -0.08          NaN          NaN
+mm200 escolhe_sem_regime   valid +0.14 +0.05   +0.64 -0.05          NaN          NaN
+mm200         todas_lado   valid +0.22 +0.07   +0.85 -0.09        +1.01        +0.32
+mm200            k6_lado   valid +0.20 +0.07   +0.68 -0.14        +1.02        +0.23
+mm200       escolhe_lado   valid -0.01 -0.00   -0.02 -0.10        +0.58        +0.06
+mm200           sel_lado   valid +0.22 +0.07   +0.71 -0.12        +0.99        +0.18
+mm200          info_lado   valid -0.21   NaN     NaN   NaN        -0.02        +0.14
+mm200              todas     oos +0.01 +0.01   +0.16 -0.09          NaN          NaN
+mm200                 k6     oos -0.02 -0.02   -0.21 -0.13          NaN          NaN
+mm200 escolhe_sem_regime     oos -0.03 -0.03   -0.38 -0.06          NaN          NaN
+mm200         todas_lado     oos +0.02 +0.02   +0.23 -0.09        +0.54        +0.25
+mm200            k6_lado     oos +0.01 +0.01   +0.17 -0.10        +0.32        +0.36
+mm200       escolhe_lado     oos -0.04 -0.04   -0.55 -0.08        +0.54        +0.08
+mm200           sel_lado     oos +0.00 +0.00   +0.06 -0.09        +0.53        +0.17
+mm200          info_lado     oos   NaN   NaN     NaN   NaN        +0.05          NaN
+ cruz              todas   valid +0.31 +0.10   +1.13 -0.06          NaN          NaN
+ cruz                 k6   valid +0.22 +0.07   +0.81 -0.08          NaN          NaN
+ cruz escolhe_sem_regime   valid +0.14 +0.05   +0.64 -0.05          NaN          NaN
+ cruz         todas_lado   valid +0.20 +0.07   +0.74 -0.10        +1.06        +0.10
+ cruz            k6_lado   valid +0.18 +0.06   +0.62 -0.11        +1.06        +0.08
+ cruz       escolhe_lado   valid +0.07 +0.02   +0.35 -0.11        +0.69        +0.15
+ cruz           sel_lado   valid +0.36 +0.11   +1.08 -0.11        +1.06        +0.54
+ cruz          info_lado   valid -0.17   NaN     NaN   NaN        -0.02        +0.12
+ cruz              todas     oos +0.01 +0.01   +0.16 -0.09          NaN          NaN
+ cruz                 k6     oos -0.02 -0.02   -0.21 -0.13          NaN          NaN
+ cruz escolhe_sem_regime     oos -0.03 -0.03   -0.38 -0.06          NaN          NaN
+ cruz         todas_lado     oos +0.05 +0.05   +0.54 -0.10        +0.54        +0.61
+ cruz            k6_lado     oos +0.03 +0.03   +0.34 -0.10        +0.34        +0.64
+ cruz       escolhe_lado     oos -0.01 -0.01   -0.11 -0.09        +0.38        +0.26
+ cruz           sel_lado     oos -0.01 -0.01   -0.04 -0.14        +0.52        +0.11
+ cruz          info_lado     oos   NaN   NaN     NaN   NaN        -0.01          NaN
+mom12              todas   valid +0.31 +0.10   +1.13 -0.06          NaN          NaN
+mom12                 k6   valid +0.22 +0.07   +0.81 -0.08          NaN          NaN
+mom12 escolhe_sem_regime   valid +0.14 +0.05   +0.64 -0.05          NaN          NaN
+mom12         todas_lado   valid +0.21 +0.07   +0.79 -0.13        +1.14        +0.09
+mom12            k6_lado   valid +0.20 +0.06   +0.69 -0.13        +1.20        +0.07
+mom12       escolhe_lado   valid +0.06 +0.02   +0.33 -0.10        +0.71        +0.15
+mom12           sel_lado   valid +0.23 +0.07   +0.83 -0.15        +1.10        +0.08
+mom12          info_lado   valid -0.20   NaN     NaN   NaN        -0.01        +0.14
+mom12              todas     oos +0.01 +0.01   +0.16 -0.09          NaN          NaN
+mom12                 k6     oos -0.02 -0.02   -0.21 -0.13          NaN          NaN
+mom12 escolhe_sem_regime     oos -0.03 -0.03   -0.38 -0.06          NaN          NaN
+mom12         todas_lado     oos +0.05 +0.05   +0.54 -0.10        +0.54        +0.53
+mom12            k6_lado     oos +0.03 +0.03   +0.34 -0.10        +0.34        +0.60
+mom12       escolhe_lado     oos +0.02 +0.02   +0.26 -0.09        +0.58        +0.31
+mom12           sel_lado     oos +0.02 +0.02   +0.30 -0.09        +0.51        +0.32
+mom12          info_lado     oos   NaN   NaN     NaN   NaN        +0.14          NaN
+ dd20              todas   valid +0.31 +0.10   +1.13 -0.06          NaN          NaN
+ dd20                 k6   valid +0.22 +0.07   +0.81 -0.08          NaN          NaN
+ dd20 escolhe_sem_regime   valid +0.14 +0.05   +0.64 -0.05          NaN          NaN
+ dd20         todas_lado   valid +0.22 +0.07   +0.82 -0.13        +1.16        +0.09
+ dd20            k6_lado   valid +0.24 +0.08   +0.79 -0.12        +1.24        +0.09
+ dd20       escolhe_lado   valid +0.22 +0.07   +1.00 -0.07        +0.73        +0.88
+ dd20           sel_lado   valid +0.25 +0.08   +0.80 -0.15        +1.09        +0.09
+ dd20          info_lado   valid -0.34   NaN     NaN   NaN        -0.03        +0.00
+ dd20              todas     oos +0.01 +0.01   +0.16 -0.09          NaN          NaN
+ dd20                 k6     oos -0.02 -0.02   -0.21 -0.13          NaN          NaN
+ dd20 escolhe_sem_regime     oos -0.03 -0.03   -0.38 -0.06          NaN          NaN
+ dd20         todas_lado     oos +0.05 +0.05   +0.54 -0.10        +0.54        +0.60
+ dd20            k6_lado     oos +0.03 +0.03   +0.34 -0.10        +0.34        +0.64
+ dd20       escolhe_lado     oos +0.05 +0.05   +0.77 -0.08        +0.62        +0.57
+ dd20           sel_lado     oos +0.04 +0.04   +0.42 -0.09        +0.49        +0.45
+ dd20          info_lado     oos   NaN   NaN     NaN   NaN        +0.02          NaN
+Traceback (most recent call last):
+  File "/home/user/tradingview_backtests_lighter/scripts/study_lado.py", line 204, in <module>
+    resumo()
+    ~~~~~~^^
+  File "/home/user/tradingview_backtests_lighter/scripts/study_lado.py", line 176, in resumo
+    cel.append('—' if x.empty else f'{f(x.ret.median())} · {int((x.ret > 0).sum())}/{len(x)} · p{int(round(100 * x.placebo_pct.median()))}')
+                                                                                                     ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: cannot convert float NaN to integer

@@ -1,0 +1,148 @@
+
+== xau mm200: {'n_sel_L': 6, 'n_sel_S': 6, 'sel_L': ['dmm', 'kbb', 'osb', 'mdv', 'tfp', 'xscalp'], 'sel_S': ['hs', 'pmax', 'evw', 'srvi', 'sr', 'tbn']}
+
+== xau cruz: {'n_sel_L': 6, 'n_sel_S': 6, 'sel_L': ['dmm', 'pdb', 'sbf', 'sr', 'vws', 'ged'], 'sel_S': ['abcd', 'r3', 'sbf', 'hs', 'pvb', 'ut']}
+
+== xau mom12: {'n_sel_L': 6, 'n_sel_S': 6, 'sel_L': ['dmm', 'mdv', 'tfp', 'sr', 'moon', 'vws'], 'sel_S': ['cbo', 'wr', 'hs', 'tm', 'sr', 'ttm']}
+
+== xau dd20: {'n_sel_L': 6, 'n_sel_S': 0, 'sel_L': ['tq', 'hulk', 'sr', 'ut', 'sweep', 'atrs'], 'sel_S': []}
+
+== xau: {'n_aprovadas': 256, 'celulas': 18863, 'erro_max_L_S': 7.037455951319771e-09}
+regra              teste periodo   ret  cagr  sharpe    dd  placebo_med  placebo_pct
+mm200              todas   valid +0.13 +0.05   +0.65 -0.09          NaN          NaN
+mm200                 k6   valid +0.23 +0.08   +1.10 -0.08          NaN          NaN
+mm200 escolhe_sem_regime   valid -0.06 -0.02   -0.32 -0.16          NaN          NaN
+mm200         todas_lado   valid +0.23 +0.08   +0.97 -0.09        +0.64        +0.82
+mm200            k6_lado   valid +0.30 +0.10   +1.20 -0.09        +0.83        +0.83
+mm200       escolhe_lado   valid +0.09 +0.03   +0.63 -0.07        +0.32        +0.79
+mm200           sel_lado   valid +0.20 +0.07   +1.05 -0.11        +0.65        +0.79
+mm200          info_lado   valid -0.06   NaN     NaN   NaN        -0.05        +0.45
+mm200              todas     oos +0.09 +0.10   +0.79 -0.08          NaN          NaN
+mm200                 k6     oos -0.00 -0.00   +0.04 -0.14          NaN          NaN
+mm200 escolhe_sem_regime     oos +0.11 +0.13   +1.11 -0.06          NaN          NaN
+mm200         todas_lado     oos +0.07 +0.07   +0.60 -0.12        +0.30        +0.82
+mm200            k6_lado     oos +0.01 +0.01   +0.12 -0.17        -0.18        +0.80
+mm200       escolhe_lado     oos +0.05 +0.06   +0.56 -0.09        +0.72        +0.39
+mm200           sel_lado     oos +0.04 +0.04   +0.46 -0.12        -0.38        +0.87
+mm200          info_lado     oos +0.14   NaN     NaN   NaN        -0.15        +0.67
+ cruz              todas   valid +0.13 +0.05   +0.65 -0.09          NaN          NaN
+ cruz                 k6   valid +0.23 +0.08   +1.10 -0.08          NaN          NaN
+ cruz escolhe_sem_regime   valid -0.06 -0.02   -0.32 -0.16          NaN          NaN
+ cruz         todas_lado   valid +0.18 +0.06   +0.81 -0.12        +0.64        +0.79
+ cruz            k6_lado   valid +0.24 +0.08   +1.00 -0.13        +0.83        +0.77
+ cruz       escolhe_lado   valid +0.07 +0.02   +0.54 -0.10        +0.19        +0.86
+ cruz           sel_lado   valid +0.14 +0.05   +0.68 -0.11        +0.56        +0.59
+ cruz          info_lado   valid -0.21   NaN     NaN   NaN        -0.04        +0.09
+ cruz              todas     oos +0.09 +0.10   +0.79 -0.08          NaN          NaN
+ cruz                 k6     oos -0.00 -0.00   +0.04 -0.14          NaN          NaN
+ cruz escolhe_sem_regime     oos +0.11 +0.13   +1.11 -0.06          NaN          NaN
+ cruz         todas_lado     oos +0.03 +0.03   +0.30 -0.16        +0.30        +0.64
+ cruz            k6_lado     oos -0.04 -0.04   -0.19 -0.22        -0.18        +0.32
+ cruz       escolhe_lado     oos +0.01 +0.01   +0.18 -0.16        +0.81        +0.26
+ cruz           sel_lado     oos +0.01 +0.01   +0.11 -0.16        -0.28        +0.64
+ cruz          info_lado     oos -0.05   NaN     NaN   NaN        +0.11        +0.48
+mom12              todas   valid +0.13 +0.05   +0.65 -0.09          NaN          NaN
+mom12                 k6   valid +0.23 +0.08   +1.10 -0.08          NaN          NaN
+mom12 escolhe_sem_regime   valid -0.06 -0.02   -0.32 -0.16          NaN          NaN
+mom12         todas_lado   valid +0.16 +0.06   +0.72 -0.13        +0.62        +0.61
+mom12            k6_lado   valid +0.21 +0.07   +0.89 -0.13        +0.79        +0.63
+mom12       escolhe_lado   valid +0.08 +0.03   +0.57 -0.08        +0.18        +0.75
+mom12           sel_lado   valid +0.15 +0.05   +0.82 -0.10        +0.71        +0.57
+mom12          info_lado   valid -0.43   NaN     NaN   NaN        -0.02        +0.00
+mom12              todas     oos +0.09 +0.10   +0.79 -0.08          NaN          NaN
+mom12                 k6     oos -0.00 -0.00   +0.04 -0.14          NaN          NaN
+mom12 escolhe_sem_regime     oos +0.11 +0.13   +1.11 -0.06          NaN          NaN
+mom12         todas_lado     oos +0.03 +0.03   +0.30 -0.15        +0.30        +0.55
+mom12            k6_lado     oos -0.03 -0.04   -0.18 -0.18        -0.18        +0.52
+mom12       escolhe_lado     oos +0.06 +0.07   +0.62 -0.11        +0.46        +0.60
+mom12           sel_lado     oos -0.02 -0.03   -0.24 -0.12        -0.27        +0.53
+mom12          info_lado     oos   NaN   NaN     NaN   NaN        -0.18          NaN
+ dd20              todas   valid +0.13 +0.05   +0.65 -0.09          NaN          NaN
+ dd20                 k6   valid +0.23 +0.08   +1.10 -0.08          NaN          NaN
+ dd20 escolhe_sem_regime   valid -0.06 -0.02   -0.32 -0.16          NaN          NaN
+ dd20         todas_lado   valid +0.26 +0.09   +1.06 -0.09        +0.99        +0.70
+ dd20            k6_lado   valid +0.32 +0.11   +1.30 -0.07        +1.23        +0.70
+ dd20       escolhe_lado   valid +0.09 +0.03   +0.59 -0.07        +0.43        +0.67
+ dd20           sel_lado   valid +0.22 +0.08   +1.09 -0.09        +1.11        +0.48
+ dd20          info_lado   valid   NaN   NaN     NaN   NaN        -0.01          NaN
+ dd20              todas     oos +0.09 +0.10   +0.79 -0.08          NaN          NaN
+ dd20                 k6     oos -0.00 -0.00   +0.04 -0.14          NaN          NaN
+ dd20 escolhe_sem_regime     oos +0.11 +0.13   +1.11 -0.06          NaN          NaN
+ dd20         todas_lado     oos -0.02 -0.02   -0.11 -0.19        +0.30        +0.03
+ dd20            k6_lado     oos -0.09 -0.10   -0.61 -0.24        -0.18        +0.03
+ dd20       escolhe_lado     oos +0.02 +0.03   +0.28 -0.15        +0.74        +0.05
+ dd20           sel_lado     oos +0.01 +0.01   +0.20 -0.11        -0.38        +0.96
+ dd20          info_lado     oos -0.28   NaN     NaN   NaN        -0.56        +1.00
+### Validação (partes 7–9): Sharpe só com a ponta a favor do regime menos Sharpe com as duas pontas
+
+Cada célula: mediana nas 4 regras · em quantas das 4 ganhou do controle · percentil mediano contra os placebos.
+
+| Uso | XAU | US100 | WTI | BTC | ETH |
+|---|---|---|---|---|---|
+| todas as aprovadas | +0,23 · 4/4 · p75 | — | — | — | — |
+| K6 das aprovadas | −0,00 · 2/4 · p74 | — | — | — | — |
+| escolhe por ponta | +0,90 · 4/4 · p77 | — | — | — | — |
+| aprovação por ponta | −0,17 · 0/4 · p58 | — | — | — | — |
+| informação (a.a.) | −0,21 · 0/4 · p9 | — | — | — | — |
+
+### OOS (parte 10): Sharpe só com a ponta a favor do regime menos Sharpe com as duas pontas
+
+Cada célula: mediana nas 4 regras · em quantas das 4 ganhou do controle · percentil mediano contra os placebos.
+
+| Uso | XAU | US100 | WTI | BTC | ETH |
+|---|---|---|---|---|---|
+| todas as aprovadas | −0,49 · 0/4 · p60 | — | — | — | — |
+| K6 das aprovadas | −0,23 · 1/4 · p42 | — | — | — | — |
+| escolhe por ponta | −0,69 · 0/4 · p32 | — | — | — | — |
+| aprovação por ponta | +0,12 · 3/4 · p76 | — | — | — | — |
+| informação (a.a.) | −0,05 · 1/4 · p67 | — | — | — | — |
+
+### Regra a regra (Sharpe do uso − controle · percentil contra placebos)
+
+| Uso | Regra | Período | XAU | US100 | WTI | BTC | ETH |
+|---|---|---|---|---|---|---|---|
+| todas as aprovadas | mm200 | valid | +0,31 · p82 | — | — | — | — |
+| todas as aprovadas | mm200 | oos | −0,19 · p82 | — | — | — | — |
+| todas as aprovadas | cruz | valid | +0,15 · p79 | — | — | — | — |
+| todas as aprovadas | cruz | oos | −0,49 · p64 | — | — | — | — |
+| todas as aprovadas | mom12 | valid | +0,06 · p61 | — | — | — | — |
+| todas as aprovadas | mom12 | oos | −0,50 · p55 | — | — | — | — |
+| todas as aprovadas | dd20 | valid | +0,40 · p70 | — | — | — | — |
+| todas as aprovadas | dd20 | oos | −0,90 · p3 | — | — | — | — |
+| K6 das aprovadas | mm200 | valid | +0,10 · p83 | — | — | — | — |
+| K6 das aprovadas | mm200 | oos | +0,07 · p80 | — | — | — | — |
+| K6 das aprovadas | cruz | valid | −0,11 · p77 | — | — | — | — |
+| K6 das aprovadas | cruz | oos | −0,23 · p32 | — | — | — | — |
+| K6 das aprovadas | mom12 | valid | −0,21 · p63 | — | — | — | — |
+| K6 das aprovadas | mom12 | oos | −0,22 · p52 | — | — | — | — |
+| K6 das aprovadas | dd20 | valid | +0,20 · p70 | — | — | — | — |
+| K6 das aprovadas | dd20 | oos | −0,65 · p3 | — | — | — | — |
+| escolhe por ponta | mm200 | valid | +0,95 · p79 | — | — | — | — |
+| escolhe por ponta | mm200 | oos | −0,55 · p39 | — | — | — | — |
+| escolhe por ponta | cruz | valid | +0,86 · p86 | — | — | — | — |
+| escolhe por ponta | cruz | oos | −0,93 · p26 | — | — | — | — |
+| escolhe por ponta | mom12 | valid | +0,89 · p75 | — | — | — | — |
+| escolhe por ponta | mom12 | oos | −0,49 · p60 | — | — | — | — |
+| escolhe por ponta | dd20 | valid | +0,91 · p67 | — | — | — | — |
+| escolhe por ponta | dd20 | oos | −0,83 · p5 | — | — | — | — |
+| aprovação por ponta | mm200 | valid | −0,05 · p79 | — | — | — | — |
+| aprovação por ponta | mm200 | oos | +0,42 · p87 | — | — | — | — |
+| aprovação por ponta | cruz | valid | −0,42 · p59 | — | — | — | — |
+| aprovação por ponta | cruz | oos | +0,07 · p64 | — | — | — | — |
+| aprovação por ponta | mom12 | valid | −0,28 · p57 | — | — | — | — |
+| aprovação por ponta | mom12 | oos | −0,28 · p53 | — | — | — | — |
+| aprovação por ponta | dd20 | valid | −0,01 · p48 | — | — | — | — |
+| aprovação por ponta | dd20 | oos | +0,16 · p96 | — | — | — | — |
+
+### Controles (Sharpe)
+
+| Carteira | Período | XAU | US100 | WTI | BTC | ETH |
+|---|---|---|---|---|---|---|
+| todas | valid | +0,65 | — | — | — | — |
+| todas | oos | +0,79 | — | — | — | — |
+| k6 | valid | +1,10 | — | — | — | — |
+| k6 | oos | +0,04 | — | — | — | — |
+| escolhe_sem_regime | valid | −0,32 | — | — | — | — |
+| escolhe_sem_regime | oos | +1,11 | — | — | — | — |
+
+18 combinações (uso × ativo × regra, com a informação): acima de 90% dos placebos na validação 0, nos dois períodos 0; correlação validação × OOS dos percentis −0,08.

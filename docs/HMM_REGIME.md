@@ -196,6 +196,8 @@ Tabelas completas (com a K6) em `results/hmm/resumo.md`; todas as linhas em `res
   não testada aqui.
 - Continuar medindo a "escolha por regime com HMM semanal" conforme o OOS cresce; reprovar de vez se seguir na mediana
   dos placebos.
+- Regras simples de alta/baixa no lugar do HMM (média de 200, cruzamento, momento de 12 meses, queda de 20%): testadas
+  em [REGIME_SIMPLES.md](REGIME_SIMPLES.md), mesmo resultado.
 
 ## Como reproduzir
 
