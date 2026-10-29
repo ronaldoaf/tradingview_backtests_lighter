@@ -13,11 +13,14 @@ A = os.environ.get('ATIVO', 'us100')   # ATIVO=wti etc.
 EX = [pd.Timestamp(x, tz='UTC') for x in os.environ['EXCL'].split(',')] if os.environ.get('EXCL') else None   # EXCL=ini,fim: descarta trades abertos nesse intervalo
 SUF = os.environ.get('SUF', ''); NP = int(os.environ.get('NP', '4'))   # NP=10: o periodo antes do OOS em 10 partes
 B = {}; SER = []; FULL = os.environ.get('FULL') == '1'   # FULL=1: dados todos, para medir o OOS das ja escolhidas
+LADO = FULL and os.environ.get('LADO') == '1'   # LADO=1 (com FULL=1): series so dos trades comprados e so dos vendidos
+SL, SS = [], []
 
 
 def load_4p(name):
     m1 = _load(name); t0, t1 = m1.index[0], m1.index[-1]
     oos = t0 + (t1 - t0) * 4 / 5; B['cortes'] = [t0 + (oos - t0) * k / NP for k in range(NP + 1)]
+    B['treino'] = t0 + (t1 - t0) * 6 / 10   # fim da parte 6 de 10 do tvo.py
     return m1 if FULL else m1[m1.index < B['cortes'][NP]]
 
 
@@ -29,7 +32,13 @@ def summarize(df, trades, name, *a, minimo=10, **k):
     c = B['cortes']; ti = pd.DatetimeIndex(trades.t_in); g = np.log1p(np.clip(trades.u * trades.ret, -0.999, None))
     o = {f'p{q + 1}': float(np.expm1(g[(ti >= c[q]) & (ti < c[q + 1])].sum())) for q in range(NP)}
     o['tot'] = float(np.expm1(g.sum()))
-    if FULL or (NP == 4 and all(o[f'p{q}'] > 0 for q in range(1, 5))):   # guarda o retorno diario das celulas que passam
+    if LADO:   # mesmo sid do FULL; a serie das duas pontas juntas ja esta em <ATIVO>_4p_8p_full
+        nv = lambda x: x.tz_localize(None) if x.tz is not None else x
+        o['sid'] = len(SL); ti0 = nv(pd.DatetimeIndex(trades.t_in)); tt = nv(B['treino']); d = trades.d.to_numpy() if 'd' in trades else np.ones(len(trades))
+        for x, L, m in (('L', SL, d > 0), ('S', SS, d < 0)):
+            o[f'tr{x}'] = int(m.sum()); o[f'tr{x}_treino'] = int((m & (ti0 < tt)).sum())
+            L.append(T.equity_curve(df, trades[m].reset_index(drop=True), name).resample('1D').last().dropna().pct_change().fillna(0.0).astype('float32'))
+    elif FULL or (NP == 4 and all(o[f'p{q}'] > 0 for q in range(1, 5))):   # guarda o retorno diario das celulas que passam
         o['sid'] = len(SER); SER.append(T.equity_curve(df, trades, name).resample('1D').last().dropna().pct_change().fillna(0.0))
     yrs = (df.index[-1] - df.index[0]).total_seconds() / (365 * 86400); mu = trades.ret.mean()
     o.update(trades=len(trades), por_ano=len(trades) / yrs, bp_bruto=1e4 * trades.bruto.mean(), bp_liq=1e4 * mu,
@@ -40,8 +49,9 @@ def summarize(df, trades, name, *a, minimo=10, **k):
 
 T.load_m1v = load_4p; T.summarize = summarize
 N = sys.argv[1]; MOD = f'study_tvlote{N}' if N.isdigit() else f'study_{N}'
-OUT = os.path.join(D, 'results', A + '_4p' + SUF + ('_full' if FULL else ''), f'lote{N}.csv')
-if FULL and os.path.exists(OUT) and os.path.exists(OUT[:-4] + '_ser.parquet'):   # retoma o run_full.sh: apague para refazer
+OUT = os.path.join(D, 'results', A + '_4p' + SUF + ('_lado' if LADO else '_full' if FULL else ''), f'lote{N}.csv')
+os.makedirs(os.path.dirname(OUT), exist_ok=True)
+if FULL and os.path.exists(OUT) and os.path.exists(OUT[:-4] + ('_serS' if LADO else '_ser') + '.parquet'):   # retoma o run_full.sh: apague para refazer
     print(N, 'ok (ja existia)'); sys.exit()
 _csv = pd.DataFrame.to_csv
 def to_csv(self, path=None, *a, **k):
@@ -55,4 +65,6 @@ L = importlib.import_module(MOD)
 L.main([A])
 builtins.print = _print
 if SER: pd.DataFrame({i: x for i, x in enumerate(SER)}).fillna(0.0).to_parquet(OUT[:-4] + '_ser.parquet')
+for x, L in (('L', SL), ('S', SS)):
+    if L: pd.DataFrame({i: v for i, v in enumerate(L)}).fillna(0.0).astype('float32').to_parquet(OUT[:-4] + f'_ser{x}.parquet')
 print(N, 'ok' if os.path.exists(OUT) else 'SEM CSV')

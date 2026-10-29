@@ -120,12 +120,10 @@ Duas em 160 é o que o acaso entrega; não há por que acreditar mais nessas do 
    a regra; o US100 ficou em alta em 96% a 100%. Qualquer regra que acertou esse único episódio parece ótima no OOS, e
    a validação mostra que não era regra.
 
-## O que ainda dá para tentar
+## Separar compras e vendas
 
-Se quiser insistir em alta/baixa, o próximo passo que muda a pergunta (e não só a régua) é **separar compra e venda**:
-regerar as estratégias com saída só comprada e só vendida e, em alta, ligar só as compras; em baixa, só as vendas.
-Hoje cada estratégia mistura as duas pontas, e o regime pode estar ajudando uma e atrapalhando a outra ao mesmo tempo.
-Custa regerar as grades nos 5 ativos (algumas horas) e cai no mesmo teste de validação × OOS.
+Testado depois em [REGIME_LADO.md](REGIME_LADO.md): em alta só as compras de cada estratégia, em baixa só as vendas.
+Também não ajuda; na validação, os trades a favor do regime renderam menos que os contra.
 
 ## Como reproduzir
 
