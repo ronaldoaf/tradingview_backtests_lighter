@@ -8,13 +8,16 @@ from tvlib import load_m1v, resample, CUSTO, FUND
 
 ATIVOS = ['xau', 'us100', 'wti', 'btc', 'eth']
 
-def run(d, name, risco=0.01, nvol=20, tol=0.05, cap=None, wins=(5, 10, 21, 42)):
+def run(d, name, risco=0.01, nvol=20, tol=0.05, cap=None, wins=(5, 10, 21, 42), sma=0):
     c = d.close.values; o = d.open.values; n = len(c)
     S = sum(np.sign(c - pd.Series(c).shift(k).values) for k in wins)
     lr = np.log(d.close).diff()
     vol = lr.rolling(nvol).std().values
     tgt = np.nan_to_num(S * risco / vol)
     if cap: tgt = np.clip(tgt, -cap, cap)
+    if sma:  # compra so acima da SMA, venda so abaixo
+        m = d.close.rolling(sma).mean().values
+        tgt = np.where(np.isnan(m), 0.0, np.where(tgt > 0, tgt * (c > m), tgt * (c < m)))
     w = np.zeros(n); cur = 0.0  # w[i] = posicao decidida no fechamento de i, executada na abertura de i+1
     for i in range(n):
         t = tgt[i]
@@ -43,7 +46,7 @@ def stats(x, bh):
                 bh=beq.iloc[-1] - 1, bh_sharpe=s(bh), bh_dd=dd(beq))
 
 def main(tf='1D'):
-    rows = []; h = 24 if tf == '1h' else 1
+    rows = []; h = {'1h': 24, '4h': 6}.get(tf, 1)
     for a in ATIVOS:
         d = resample(load_m1v(a), tf)
         if a == 'wti':
@@ -54,9 +57,13 @@ def main(tf='1D'):
                'total': (edges[0], edges[10])}
         for var, kw in ([('spec (vol20)', {}), ('vol60', dict(nvol=60)), ('vol20 cap2x', dict(cap=2)),
                         ('risco 0.5%', dict(risco=0.005)), ('sem tol', dict(tol=0.0))] if h == 1 else
-                       [('1h barras 5/10/21/42 vol20', dict(risco=0.01/np.sqrt(24))),
+                       ([('1h barras 5/10/21/42 vol20', dict(risco=0.01/np.sqrt(24))),
                         ('1h janelas em dias (x24) vol480', dict(wins=(120, 240, 504, 1008), nvol=480, risco=0.01/np.sqrt(24))),
-                        ('1h janelas em dias, rebal so com tol 25%', dict(wins=(120, 240, 504, 1008), nvol=480, risco=0.01/np.sqrt(24), tol=0.25))]):
+                        ('1h janelas em dias, rebal so com tol 25%', dict(wins=(120, 240, 504, 1008), nvol=480, risco=0.01/np.sqrt(24), tol=0.25))]
+                        if h == 24 else
+                        [(f'{tf} janelas em dias' + lab, dict(wins=tuple(k * h for k in (5, 10, 21, 42)), nvol=20 * h,
+                                                             risco=0.01 / np.sqrt(h), sma=sm))
+                         for lab, sm in [('', 0), (' + SMA200 4h', 200), (' + SMA200 diaria', 200 * h)]])):
             x = run(d, a, **kw)
             for p, (lo, hi) in per.items():
                 m = (x.index >= lo) & (x.index <= hi)

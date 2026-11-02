@@ -56,3 +56,34 @@ batem o B&H no total e têm DD menor. BTC passa o treino; ETH perde do B&H no tr
 2021) mas ganha em validação e OOS. XAU, US100 e WTI continuam reprovados.
 Ressalva: a melhora vem só de reavaliar mais vezes por dia, então vale checar sensibilidade
 (4h, deslocamento de hora) antes de confiar.
+
+## Versão em 4 horas + filtro SMA200 (`python scripts/study_mhmom.py 4h` → `results/mhmom_4h.csv`)
+Janelas em dias (30/60/126/252 barras de 4h), vol de 120 barras, risco 1%/√6.
+Filtro: compra só com fechamento acima da SMA200, venda só abaixo (senão fica fora).
+SMA200 testada em barras de 4h (~33 dias) e diária (1200 barras de 4h).
+
+Sharpe por período (B&H entre parênteses):
+
+| Ativo | Variante | Treino | Validação | OOS | Total | CAGR | DD |
+|---|---|---|---|---|---|---|---|
+| XAU | base | 0,48 (0,51) | 0,72 (1,70) | 1,19 (0,26) | 0,66 (0,80) | +24% | −51% |
+| XAU | SMA200 4h | 0,44 | 0,77 | 1,16 | 0,65 | +23% | −49% |
+| XAU | SMA200 diária | 0,45 | 1,15 | 0,79 | 0,76 | +28% | −44% |
+| US100 | base | 0,41 (0,77) | 0,71 (1,41) | −0,63 (1,15) | 0,39 (0,99) | +6% | −63% |
+| US100 | SMA200 4h | 0,41 | 0,65 | −0,76 | 0,36 | +5% | −64% |
+| US100 | SMA200 diária | 0,13 | 0,75 | −0,15 | 0,31 | +3% | −54% |
+| WTI | base | 0,12 (0,43) | −0,48 (−0,25) | 1,08 (0,90) | 0,07 (0,33) | −10% | −90% |
+| WTI | SMA200 4h | 0,16 | −0,59 | 1,05 | 0,05 | −11% | −91% |
+| WTI | SMA200 diária | 0,11 | −0,33 | 0,91 | 0,10 | −7% | −87% |
+| BTC | base | 1,03 (0,82) | 0,47 (0,85) | 0,90 (0,06) | 0,86 (0,76) | +67% | −52% |
+| BTC | SMA200 4h | 1,11 | 0,59 | 0,88 | 0,95 | +79% | −45% |
+| BTC | SMA200 diária | 0,95 | 0,66 | 1,06 | 0,88 | +58% | −60% |
+| ETH | base | 0,71 (1,06) | 1,10 (0,38) | 1,04 (0,09) | 0,86 (0,80) | +62% | −62% |
+| ETH | SMA200 4h | 0,70 | 1,12 | 1,12 | 0,87 | +63% | −62% |
+| ETH | SMA200 diária | 0,66 | 0,97 | 1,57 | 0,85 | +52% | −61% |
+
+**Leitura:** o 4h dá praticamente o mesmo que o 1h em cripto (Sharpe ~0,86) e confirma que a melhora
+sobre o diário não depende do timeframe exato. O filtro SMA200 mexe pouco (±0,1 de Sharpe, sem padrão
+consistente entre ativos e períodos), o que é esperado: o sinal de momentum 21/42 dias já concorda
+com a SMA200 quase sempre. Melhor combinação: BTC 4h + SMA200 4h (Sharpe 0,95, DD −45% vs −77% do B&H),
+mas ainda perde do B&H na validação. XAU, US100 e WTI seguem reprovados.
