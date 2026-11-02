@@ -33,3 +33,26 @@ Em nenhum ativo o Sharpe do treino supera o do B&H.
   e ganha do B&H quando o mercado cai (OOS 2026, ETH na validação). Mas perde para o B&H em Sharpe
   no total e no treino, e DD de ~70% não é proteção. Se for reaproveitar, é como diversificador
   de tendência em cripto numa carteira, não como estratégia isolada.
+
+## Versão em 1 hora (`python scripts/study_mhmom.py 1h` → `results/mhmom_1h.csv`)
+Mesma regra, recalculada a cada barra de 1h (ordem na abertura da hora seguinte). Risco escalado
+por 1/√24 para manter o mesmo risco diário. Sharpe e DD medidos em retornos diários.
+
+1. **Barras literais (5/10/21/42 horas, vol 20h):** desastre fora do ETH. Giro de 3–8 mil × capital/ano.
+2. **Janelas em dias equivalentes (120/240/504/1008h, vol 480h):** igual ao diário, só que reavaliado de hora em hora.
+
+| Ativo | Treino Sharpe (B&H) | Val Sharpe (B&H) | OOS Sharpe (B&H) | Total CAGR | Sharpe total (B&H) | DD total (B&H) |
+|---|---|---|---|---|---|---|
+| XAU | 0,40 (0,52) | 0,17 (1,70) | 0,91 (0,27) | +7% | 0,38 (0,80) | −69% (−28%) |
+| US100 | 0,31 (0,78) | 0,53 (1,41) | −0,97 (1,15) | −0,5% | 0,24 (0,99) | −59% (−36%) |
+| WTI | −0,16 (0,43) | −0,32 (−0,25) | 0,77 (0,90) | −17% | −0,09 (0,33) | −95% (−76%) |
+| **BTC** | **1,03 (0,82)** | 0,47 (0,85) | 1,61 (0,07) | **+78%** | **0,94 (0,76)** | **−52% (−77%)** |
+| ETH | 0,88 (1,06) | 1,03 (0,38) | 0,98 (0,10) | +72% | 0,93 (0,80) | −57% (−79%) |
+
+Tolerância de 25% (em vez de 5%) corta o giro sem mudar o resultado.
+
+**Leitura:** no 1h com janelas em dias, BTC e ETH melhoram muito sobre o diário (Sharpe 0,64→0,94),
+batem o B&H no total e têm DD menor. BTC passa o treino; ETH perde do B&H no treino (1,06, o ano de
+2021) mas ganha em validação e OOS. XAU, US100 e WTI continuam reprovados.
+Ressalva: a melhora vem só de reavaliar mais vezes por dia, então vale checar sensibilidade
+(4h, deslocamento de hora) antes de confiar.

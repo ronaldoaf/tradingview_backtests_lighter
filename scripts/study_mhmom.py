@@ -31,6 +31,9 @@ def run(d, name, risco=0.01, nvol=20, tol=0.05, cap=None, wins=(5, 10, 21, 42)):
 
 def stats(x, bh):
     if len(x) < 2: return {}
+    x = pd.DataFrame({'r': np.log1p(x.r.clip(lower=-0.99)).resample('1D').sum().pipe(np.expm1), 'pos': x.pos.abs().resample('1D').mean(), 'chg': x.chg.resample('1D').sum()}).dropna()
+    bh = np.expm1(np.log1p(bh).resample('1D').sum()).reindex(x.index)
+    x = x[x.pos.notna()]
     eq = np.cumprod(1 + x.r.clip(lower=-0.99)); yrs = (x.index[-1] - x.index[0]).days / 365
     beq = np.cumprod(1 + bh)
     s = lambda v: v.mean() / v.std() * np.sqrt(252) if v.std() else np.nan
@@ -39,26 +42,29 @@ def stats(x, bh):
                 lev=x.pos.abs().mean(), giro=x.chg.sum() / yrs,
                 bh=beq.iloc[-1] - 1, bh_sharpe=s(bh), bh_dd=dd(beq))
 
-def main():
-    rows = []
+def main(tf='1D'):
+    rows = []; h = 24 if tf == '1h' else 1
     for a in ATIVOS:
-        d = resample(load_m1v(a), '1D')
+        d = resample(load_m1v(a), tf)
         if a == 'wti':
             d = d[~((d.index >= '2020-04-01') & (d.index < '2020-05-01'))]
         bh = pd.Series(np.r_[d.open.values[1:] / d.open.values[:-1] - 1, 0.0], index=d.index)
         t0, t1 = d.index[0], d.index[-1]; edges = [t0 + (t1 - t0) * k / 10 for k in range(11)]
         per = {'treino': (edges[0], edges[6]), 'validacao': (edges[6], edges[9]), 'oos': (edges[9], edges[10]),
                'total': (edges[0], edges[10])}
-        for var, kw in [('spec (vol20)', {}), ('vol60', dict(nvol=60)), ('vol20 cap2x', dict(cap=2)),
-                        ('risco 0.5%', dict(risco=0.005)), ('sem tol', dict(tol=0.0))]:
+        for var, kw in ([('spec (vol20)', {}), ('vol60', dict(nvol=60)), ('vol20 cap2x', dict(cap=2)),
+                        ('risco 0.5%', dict(risco=0.005)), ('sem tol', dict(tol=0.0))] if h == 1 else
+                       [('1h barras 5/10/21/42 vol20', dict(risco=0.01/np.sqrt(24))),
+                        ('1h janelas em dias (x24) vol480', dict(wins=(120, 240, 504, 1008), nvol=480, risco=0.01/np.sqrt(24))),
+                        ('1h janelas em dias, rebal so com tol 25%', dict(wins=(120, 240, 504, 1008), nvol=480, risco=0.01/np.sqrt(24), tol=0.25))]):
             x = run(d, a, **kw)
             for p, (lo, hi) in per.items():
                 m = (x.index >= lo) & (x.index <= hi)
                 rows.append(dict(ativo=a, var=var, per=p, ini=lo.date(), fim=hi.date(), **stats(x[m], bh[m])))
     R = pd.DataFrame(rows)
-    R.to_csv('results/mhmom.csv', index=False)
+    R.to_csv(f'results/mhmom_{tf}.csv', index=False)
     pd.set_option('display.width', 250); pd.set_option('display.max_rows', 500)
     print(R.round(3).to_string())
 
 if __name__ == '__main__':
-    main()
+    main(sys.argv[1] if len(sys.argv) > 1 else '1D')
