@@ -17,3 +17,12 @@ T1/T2/T3 = terços dos trades. Script: `scripts/study_orb30.py`; saída `results
 Veredito: reprovada em XAU, US100 e WTI (no US100, o ativo de origem da ideia, não bate o controle).
 BTC é o único positivo nos três terços, mas o último terço (set/2024→) cai para 7,7%/ano e Sharpe 0,5
 (p_ctl 0,21). ETH perde 18%/ano no 1º terço. Candidato a estudo adicional só no BTC.
+
+## Variações no BTC (`scripts/study_orb30_btc.py`, `results/orb_btc_grade.csv`)
+
+Grade de 135 células: range 15/30/60m × saída 12–16h ET × filtro de largura do range (estreito/largo vs
+mediana de 60 dias, ou nenhum) × lado. Escolha no treino (até jun/2024), validação jul/2024→set/2026.
+Correlação do Sharpe treino×validação = -0,05: a grade não tem poder de escolha. Os filtros de range
+pioram a validação (Sharpe mediano 0,2 contra 0,4 sem filtro). A melhor célula do treino que se sustenta
+é a original (30m, saída 15h, sem filtro, os dois lados): 23,6%/ano no treino, 13,5%/ano e Sharpe 0,88
+na validação. Veredito: nenhuma variação melhora a regra original; ela continua sendo a candidata.
