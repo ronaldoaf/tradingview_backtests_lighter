@@ -5,7 +5,14 @@ from concurrent.futures import ThreadPoolExecutor
 D = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 name, sym, ini = sys.argv[1], sys.argv[2], dt.date.fromisoformat(sys.argv[3])
 pt = float(sys.argv[4]) if len(sys.argv) > 4 else 1e-3
+CACHE = os.path.join(D, 'data', '_cache', sym); os.makedirs(CACHE, exist_ok=True)
 def get(day):
+    f = os.path.join(CACHE, f'{day}.parquet')
+    if os.path.exists(f): return pd.read_parquet(f)
+    p = fetch(day)
+    if p is not None: p.to_parquet(f)
+    return p
+def fetch(day):
     url = f'https://datafeed.dukascopy.com/datafeed/{sym}/{day.year}/{day.month-1:02d}/{day.day:02d}/BID_candles_min_1.bi5'
     for k in range(12):
         try:
@@ -17,9 +24,9 @@ def get(day):
                                  'volume': a['f5'].astype(float)}, index=t)
         except urllib.error.HTTPError as e:
             if e.code == 404: return None
-            time.sleep(2 ** k)
+            time.sleep(min(600, 5 * 2 ** k))
         except Exception:
-            time.sleep(2 ** k)
+            time.sleep(min(600, 5 * 2 ** k))
     raise RuntimeError(url)
 days = [d.date() for d in pd.date_range(ini, dt.date.today() - dt.timedelta(days=2)) if d.dayofweek < 5]
 with ThreadPoolExecutor(4) as ex: parts = [p for p in ex.map(get, days) if p is not None]
