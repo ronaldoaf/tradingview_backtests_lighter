@@ -87,3 +87,20 @@ sobre o diário não depende do timeframe exato. O filtro SMA200 mexe pouco (±0
 consistente entre ativos e períodos), o que é esperado: o sinal de momentum 21/42 dias já concorda
 com a SMA200 quase sempre. Melhor combinação: BTC 4h + SMA200 4h (Sharpe 0,95, DD −45% vs −77% do B&H),
 mas ainda perde do B&H na validação. XAU, US100 e WTI seguem reprovados.
+
+## 5 horizontes em vez de 4 (4h, `scripts/study_mhmom_5janelas.py` → `results/mhmom_4h_5janelas.csv`)
+Sinal vai de −5 a +5; risco por ponto escalado por 4/5 para manter a mesma exposição máxima.
+Sharpe total (sem filtro / com SMA200 4h). Quinto horizonte em dias:
+
+| Ativo | 4 originais | +2 | +63 | +84 | +126 | B&H |
+|---|---|---|---|---|---|---|
+| XAU | 0,66 / 0,65 | 0,67 / 0,68 | 0,64 / 0,66 | 0,62 / 0,63 | **0,75 / 0,78** | 0,80 |
+| US100 | 0,39 / 0,36 | 0,36 / 0,37 | 0,39 / 0,35 | 0,47 / 0,40 | 0,48 / 0,41 | 0,99 |
+| WTI | 0,07 / 0,05 | 0,11 / 0,09 | −0,01 / −0,01 | −0,06 / −0,06 | −0,08 / −0,09 | 0,33 |
+| BTC | 0,86 / 0,95 | 0,84 / 0,91 | 0,87 / 0,93 | 0,89 / 0,97 | 0,89 / 0,95 | 0,76 |
+| ETH | 0,86 / 0,87 | **0,98 / 1,00** | 0,88 / 0,90 | 0,84 / 0,86 | 0,88 / 0,90 | 0,80 |
+
+Destaques: +126 dias ajuda XAU (treino 0,57, validação 0,96 com SMA, DD −45%) e BTC na validação
+(0,74 com SMA, DD −40%); +2 dias ajuda ETH (treino 0,84, validação 1,22). Ganhos de 0,05–0,1 de
+Sharpe, dentro do ruído de escolher o melhor de 4 opções; nenhuma variante vira o veredito
+de XAU/US100/WTI e nenhuma faz o BTC bater o B&H na validação (0,85).
