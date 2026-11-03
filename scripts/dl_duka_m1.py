@@ -7,7 +7,7 @@ name, sym, ini = sys.argv[1], sys.argv[2], dt.date.fromisoformat(sys.argv[3])
 pt = float(sys.argv[4]) if len(sys.argv) > 4 else 1e-3
 def get(day):
     url = f'https://datafeed.dukascopy.com/datafeed/{sym}/{day.year}/{day.month-1:02d}/{day.day:02d}/BID_candles_min_1.bi5'
-    for k in range(8):
+    for k in range(12):
         try:
             b = urllib.request.urlopen(url, timeout=30).read()
             if not b: return None
