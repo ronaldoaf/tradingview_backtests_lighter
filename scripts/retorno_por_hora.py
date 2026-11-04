@@ -7,7 +7,7 @@ def load(f, bin=False):
     return d['close']
 A = {'XAU': load('data/gold/xau_1m.parquet'), 'US100': load('data/duka1m_us100/all.parquet'),
      'WTI': load('data/duka1m_wti/all.parquet'), 'BTC': load('data/binance/klines_1m/BTCUSDT.parquet', 1),
-     'ETH': load('data/binance/klines_1m/ETHUSDT.parquet', 1)}
+     'ETH': load('data/binance/klines_1m/ETHUSDT.parquet', 1), 'PAXG': load('data/binance/klines_1m/PAXGUSDT.parquet', 1)}
 rows, tabs = [], {}
 for k, c in A.items():
     c = c[c.index < '2026-01-01']
@@ -24,7 +24,7 @@ for k, c in A.items():
     t['anos_pos'] = df.groupby(['hr', 'y']).r.sum().gt(0).groupby('hr').mean()*100
     tabs[k] = (t, df.index[0].date(), df.index[-1].date())
     t.round(2).to_csv(f'{OUT}/retorno_hora_{k}.csv')
-fig, ax = plt.subplots(5, 1, figsize=(11, 16), sharex=True)
+fig, ax = plt.subplots(len(A), 1, figsize=(11, 3.2*len(A)), sharex=True)
 for a, (k, (t, i, f)) in zip(ax, tabs.items()):
     a.bar(t.index, t.media_bps, color=['#2a9d8f' if v > 0 else '#e76f51' for v in t.media_bps])
     for hr, v, tt in zip(t.index, t.media_bps, t.t):
