@@ -1,0 +1,52 @@
+
+== custo ida+volta 0 pip | stop 12 pips
+  Gotobi 5/10/..         TOTAL n= 749 win=48.5% media=+1.13p t=+2.63 soma=+849p
+    treino16-20  n= 352 win=48.0% media=+0.67p t=+1.22 soma=+234p
+    valid21-23   n= 199 win=45.7% media=+0.82p t=+0.93 soma=+162p
+    oos24-26     n= 198 win=52.0% media=+2.28p t=+2.36 soma=+452p
+  Gotobi+fim mes         TOTAL n= 806 win=49.0% media=+1.18p t=+2.86 soma=+949p
+    treino16-20  n= 380 win=48.7% media=+0.71p t=+1.37 soma=+269p
+    valid21-23   n= 215 win=46.0% media=+0.78p t=+0.94 soma=+168p
+    oos24-26     n= 211 win=52.6% media=+2.43p t=+2.58 soma=+512p
+  Controle (nao gotobi)  TOTAL n=1921 win=48.9% media=+0.60p t=+2.41 soma=+1160p
+    treino16-20  n= 904 win=52.0% media=+0.74p t=+2.40 soma=+671p
+    valid21-23   n= 503 win=47.7% media=+0.21p t=+0.44 soma=+107p
+    oos24-26     n= 514 win=44.6% media=+0.74p t=+1.24 soma=+382p
+
+== custo ida+volta 0.7 pip | stop 12 pips
+  Gotobi 5/10/..         TOTAL n= 749 win=46.7% media=+0.43p t=+1.00 soma=+325p
+    treino16-20  n= 352 win=45.2% media=-0.03p t=-0.06 soma=-12p
+    valid21-23   n= 199 win=44.7% media=+0.12p t=+0.13 soma=+23p
+    oos24-26     n= 198 win=51.5% media=+1.58p t=+1.63 soma=+314p
+  Gotobi+fim mes         TOTAL n= 806 win=47.4% media=+0.48p t=+1.16 soma=+384p
+    treino16-20  n= 380 win=46.1% media=+0.01p t=+0.02 soma=+3p
+    valid21-23   n= 215 win=45.1% media=+0.08p t=+0.10 soma=+17p
+    oos24-26     n= 211 win=52.1% media=+1.73p t=+1.84 soma=+364p
+  Controle (nao gotobi)  TOTAL n=1921 win=46.6% media=-0.10p t=-0.38 soma=-185p
+    treino16-20  n= 904 win=48.9% media=+0.04p t=+0.14 soma=+39p
+    valid21-23   n= 503 win=46.5% media=-0.49p t=-1.02 soma=-245p
+    oos24-26     n= 514 win=42.8% media=+0.04p t=+0.07 soma=+22p
+
+== custo ida+volta 1.2 pip | stop 12 pips
+  Gotobi 5/10/..         TOTAL n= 749 win=44.1% media=-0.07p t=-0.15 soma=-50p
+    treino16-20  n= 352 win=41.5% media=-0.53p t=-0.98 soma=-188p
+    valid21-23   n= 199 win=43.2% media=-0.38p t=-0.44 soma=-77p
+    oos24-26     n= 198 win=49.5% media=+1.08p t=+1.12 soma=+215p
+  Gotobi+fim mes         TOTAL n= 806 win=44.7% media=-0.02p t=-0.06 soma=-19p
+    treino16-20  n= 380 win=42.6% media=-0.49p t=-0.95 soma=-187p
+    valid21-23   n= 215 win=42.8% media=-0.42p t=-0.51 soma=-90p
+    oos24-26     n= 211 win=50.2% media=+1.23p t=+1.30 soma=+259p
+  Controle (nao gotobi)  TOTAL n=1921 win=44.5% media=-0.60p t=-2.38 soma=-1145p
+    treino16-20  n= 904 win=46.2% media=-0.46p t=-1.48 soma=-413p
+    valid21-23   n= 503 win=44.3% media=-0.99p t=-2.06 soma=-497p
+    oos24-26     n= 514 win=41.4% media=-0.46p t=-0.76 soma=-235p
+
+Por ano (Gotobi 5/10, sem custo):
+y       2016   2017   2018   2019   2020   2021    2022   2023   2024    2025   2026
+count  71.00  70.00  71.00  71.00  69.00  71.00   71.00  57.00   71.0   70.00  57.00
+mean    0.98  -1.17   1.08   1.28   1.14  -0.62    3.47  -0.71    3.7    3.45  -0.91
+sum    69.30 -81.80  76.80  91.10  78.80 -44.00  246.60 -40.40  262.8  241.70 -52.10
+Por ano (controle):
+y        2016    2017    2018    2019    2020    2021    2022    2023   2024    2025    2026
+count  184.00  180.00  180.00  178.00  182.00  181.00  181.00  141.00  180.0  182.00  152.00
+mean     1.26   -0.28    0.84    0.55    1.32   -0.32    1.49   -0.75   -0.6    2.07    0.75
