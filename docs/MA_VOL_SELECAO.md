@@ -71,3 +71,23 @@ Melhor célula pelo treino em cada família; Sharpe treino / valid / teste; medi
 | ivol, alvo 8% teto 2 | 4% | 8% | 20% |
 
 Leitura: pesos pelo inverso da vol e vol-alvo melhoram tudo (Sharpe fora do treino ~0,9–1,0, DD −6 a −7%, grade inteira com teste ≥ 0,87 na família ivol/alvo2). O controle aleatório mostra que a escolha pela força ajuda (real acima de ~80–95% dos sorteios na maioria dos períodos), mas o ganho sobre o sorteio é moderado: média do aleatório já é 0,45–0,71 fora do treino; boa parte do resultado vem da tendência + diversificação, não da escolha. Com teto 2, a exposição bruta média fica em ~0,66x (no teste).
+
+## Pontos 3, 4 e 6 sobre a melhor versão (`scripts/study_ma_vol_sel_v3.py`, `results/ma_vol_sel4_v3.csv`)
+
+Base: SMA+EMA 100–300, pesos inverso da vol, vol-alvo 8% teto 2 → Sharpe 1,29 / 0,90 / 0,97, DD −7 / −6%.
+
+| Variante (alvo 8%) | Sharpe treino / valid / teste | DD valid / teste |
+|---|---|---|
+| base | 1,29 / 0,90 / 0,97 | −6,9 / −5,6% |
+| 3) zera se |sinal| < 0,4 | 1,30 / 0,92 / 0,96 | −6,8 / −5,7% |
+| 3) zera se |sinal| < 0,6 | 1,30 / 0,88 / 0,93 | −6,7 / −6,2% |
+| 4) fora do par se força < p20 | 1,23 / 0,82 / 0,92 | −8,3 / −5,7% |
+| 4) fora do par se força < p40 | 0,92 / 0,96 / 1,16 | −8,6 / −7,0% |
+| 4) fora do par se força < p60 | 0,45 / 0,39 / 1,65 | −11,8 / −5,3% |
+| 6) spread 2× | 1,16 / 0,75 / 0,81 | −7,2 / −5,8% |
+| 6) spread 4× | 0,91 / 0,44 / 0,51 | −8,1 / −6,2% |
+| 6) funding WTI/Brent de 2026 (−26 / −29% a.a.) | 1,40 / 0,87 / 0,85 | −6,8 / −5,6% |
+
+- 3) Zerar com médias discordando quase não muda nada (o sinal médio de 10 médias raramente fica perto de zero). Não vale a complexidade.
+- 4) Ficar fora sem tendência forte: p20 piora um pouco; p40/p60 pioram o treino e melhoram o teste — inconsistente, o treino rejeitaria. Não adotar.
+- 6) Custo é o ponto sensível: 2× o spread tira ~0,15 de Sharpe, 4× derruba para ~0,5. A estratégia gira bastante (trocas de ativo). Precisa de execução perto do spread medido (maker/limit) e conferir o custo real na VPS. Funding real de 2026 no petróleo muda pouco.
