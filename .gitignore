@@ -2,3 +2,6 @@ __pycache__/
 *.pyc
 .ipynb_checkpoints/
 .DS_Store
+data/silver/
+data/duka1m_brent/
+data/duka1m_us500/
