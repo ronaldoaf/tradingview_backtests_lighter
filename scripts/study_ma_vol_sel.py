@@ -11,7 +11,9 @@ import sys
 GR = [('btc', 'eth'), ('us100', 'us500'), ('wti', 'brent'), ('xau',), ('xag',)]
 if '4' in sys.argv[1:]: GR = [('btc', 'eth'), ('us100', 'us500'), ('wti', 'brent'), ('xau', 'xag')]
 NG = len(GR)
-SUF = ('4' if NG == 4 else '') + ('_hold' if 'hold' in sys.argv[1:] else '')
+TF = '1h' if any(a.startswith('1h') for a in sys.argv[1:]) else '4h'
+MULT = 4 if '1hx4' in sys.argv[1:] else 1
+SUF = ('_' + [a for a in sys.argv[1:] if a.startswith('1h')][0] if TF == '1h' else '') + ('4' if NG == 4 else '') + ('_hold' if 'hold' in sys.argv[1:] else '')
 AT = [a for g in GR for a in g]
 
 
@@ -26,7 +28,7 @@ def hold(pick, H):
 
 
 def run(m1s, modo, H=1):
-    S.AT = AT; bars, idx, dt, t0, t1 = S.prep('4h', m1s)
+    S.AT = AT; bars, idx, dt, t0, t1 = S.prep(TF, m1s)
     c1, c2 = t0 + (t1 - t0) * 0.6, t0 + (t1 - t0) * 0.8
     per = {'treino': (t0, c1), 'valid': (c1, c2), 'teste': (c2, t1)}
     ro = {a: np.log(b.open.shift(-1) / b.open).fillna(0.0).reindex(idx).fillna(0.0) for a, b in bars.items()}
@@ -35,12 +37,12 @@ def run(m1s, modo, H=1):
         sig, frc = {}, {}
         for a, b in bars.items():
             c = b.close; sg, dist = [], []
-            for t, n in cj:
+            for t, n in [(t, n * MULT) for t, n in cj]:
                 ma = c.rolling(n).mean() if t == 'SMA' else c.ewm(span=n, adjust=False).mean()
                 sg.append(np.sign(c - ma)); dist.append(np.log(c / ma))
-            vol = np.log(c).diff().rolling(120).std()
+            vol = np.log(c).diff().rolling(120 * (4 if TF == '1h' else 1)).std()
             s = pd.concat(sg, axis=1).mean(axis=1); f = pd.concat(dist, axis=1).mean(axis=1).abs() / vol
-            ok = c.rolling(max(n for _, n in cj)).count() > 0
+            ok = c.rolling(max(n for _, n in cj) * MULT).count() > 0
             sig[a] = s.where(ok, 0.0).shift(1).reindex(idx).ffill().fillna(0.0)
             frc[a] = f.where(ok).shift(1).reindex(idx).ffill().fillna(0.0)
         pos = {a: 0.0 * ro[a] for a in AT}; esc = {}

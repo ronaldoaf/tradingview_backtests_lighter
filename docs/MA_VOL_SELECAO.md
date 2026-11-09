@@ -33,3 +33,15 @@ H = barras de 4h desde a última troca no par antes de permitir outra. Célula e
 | 120 (20 dias) | SMA+EMA 100–300, > 10% | 1,23 / 0,49 / 0,05 | 0,17 / 0,39 | x2,55 |
 
 A trava piora a validação em todos os H (mediana 0,63 → 0,17–0,46): a troca rápida para o ativo mais forte é justamente o que ajuda, e o custo das trocas é pequeno. Manter sem trava.
+
+## Mesma carteira de 4 no gráfico de 1h (`python study_ma_vol_sel.py 4 1h` e `... 4 1hx4`)
+
+`1h`: médias nas mesmas 75–400 barras (horizonte 4× mais curto). `1hx4`: médias ×4 (mesmo horizonte do 4h), seleção e sinais checados a cada hora.
+
+| Versão | Escolhida | Sharpe treino / valid / teste | Mediana valid / teste | Curva |
+|---|---|---|---|---|
+| 4h (referência) | SMA+EMA 75–400, > 20% | 1,07 / 0,56 / 0,92 | 0,63 / 0,68 | x4,35, DD −15% |
+| 1h, mesmas barras | EMA 75–400, pct 80 | 1,10 / 0,54 / 0,62 | 0,34 / 0,32 | x4,59, DD −19% |
+| 1h, médias ×4 | EMA 75–400 (×4), > 20% | 1,12 / 0,53 / 0,47 | 0,54 / 0,49 | x3,96, DD −19% |
+
+O 1h não melhora: a validação fica parecida e o teste cai. A vantagem da seleção não vem de trocar mais rápido que 4h.
