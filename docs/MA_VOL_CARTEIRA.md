@@ -14,3 +14,7 @@ Script: `scripts/study_ma_vol_cart.py` (grade em `results/ma_vol_cart_grade.csv`
 - Mediana da grade (252 células), Sharpe validação / teste: sem filtro 0,48 / 0,43; percentil 70 0,69 / 0,56; 20% a.a. 0,66 / 0,55. O filtro ajuda de forma consistente.
 - Vizinhas boas: 4h EMA150 com 20% (1,21 / 1,02 / 0,65), 4h EMA200 com 15% (1,21 / 0,85 / 0,94).
 - Leitura: positiva nos três períodos e bem acima do B&H, mas o Sharpe cai de ~1,4 no treino para ~0,5 fora dele. Passa no corte de 0,5 na validação por pouco.
+
+![curva](../results/ma_vol_cart_curva.png)
+
+Curva 2020-01 a 2026-08 (`scripts/plot_ma_vol_cart.py`): estratégia x5,61 com DD −17%; carteira B&H 1/5 x4,93 com DD −49%; ETH x19,1, BTC x10,9, US100 x3,4, XAU x2,9, WTI x1,4 (B&H de preço, sem funding).
