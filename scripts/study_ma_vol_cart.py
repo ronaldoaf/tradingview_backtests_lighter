@@ -14,6 +14,7 @@ from study_engulf_psar import CUSTO, FUND
 AT = ['xau', 'us100', 'wti', 'btc', 'eth']
 MAS = [75, 100, 150, 200, 250, 300, 400]
 FILT = [('nenhum', None)] + [('abs', x) for x in (0.08, 0.10, 0.12, 0.15, 0.20)] + [('pct', x) for x in (0.7, 0.8, 0.9)]
+TFS_RUN = ['4h', '1D']
 YR = 365 * 86400
 
 
@@ -42,7 +43,7 @@ def prep(tf, m1s):
 def run():
     m1s = {a: load_m1v(a) for a in AT}
     rows = []
-    for tf in ('4h', '1D'):
+    for tf in TFS_RUN:
         bars, idx, dt, t0, t1 = prep(tf, m1s)
         c1, c2 = t0 + (t1 - t0) * 0.6, t0 + (t1 - t0) * 0.8
         per = {'treino': (t0, c1), 'valid': (c1, c2), 'teste': (c2, t1)}
@@ -51,7 +52,7 @@ def run():
             o = b.open
             ro[a] = np.log(o.shift(-1) / o).fillna(0.0).reindex(idx).fillna(0.0)
         # benchmark: carteira so comprada, pesos iguais, com funding
-        bh = sum((ro[a] - FUND[a] / 100 * dt * (ro[a] != 0)) / 5 for a in AT)
+        bh = sum((ro[a] - FUND[a] / 100 * dt * (ro[a] != 0)) / len(AT) for a in AT)
         bhs = {p: sharpe(bh[(bh.index >= x) & (bh.index < y)]) for p, (x, y) in per.items()}
         for tipo, n in itertools.product(('SMA', 'EMA'), MAS):
             pos, rr, cst, fnd = {}, {}, {}, {}
@@ -59,7 +60,7 @@ def run():
                 c = b.close
                 ma = c.rolling(n).mean() if tipo == 'SMA' else c.ewm(span=n, adjust=False).mean()
                 sig = np.sign(c - ma).where(ma.notna(), 0.0)
-                p = sig.shift(1).fillna(0.0).reindex(idx).ffill().fillna(0.0) / 5   # posicao vigente na barra
+                p = sig.shift(1).fillna(0.0).reindex(idx).ffill().fillna(0.0) / len(AT)   # posicao vigente na barra
                 pos[a] = p
             base = sum(pos[a] * ro[a] for a in AT)
             dly = base.resample('1D').sum()
