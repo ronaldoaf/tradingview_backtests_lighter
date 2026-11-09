@@ -45,3 +45,29 @@ A trava piora a validação em todos os H (mediana 0,63 → 0,17–0,46): a troc
 | 1h, médias ×4 | EMA 75–400 (×4), > 20% | 1,12 / 0,53 / 0,47 | 0,54 / 0,49 | x3,96, DD −19% |
 
 O 1h não melhora: a validação fica parecida e o teste cai. A vantagem da seleção não vem de trocar mais rápido que 4h.
+
+## Melhorias na carteira de 4 (`scripts/study_ma_vol_sel_v2.py`, grade `results/ma_vol_sel4_v2_grade.csv`, controle `results/ma_vol_sel4_aleat.csv`)
+
+1. Pesos pelo inverso da vol (~20d) do ativo escolhido, normalizados para somar 1 (`ivol`), contra 1/4 (`igual`).
+2. Vol-alvo da carteira: escala = min(alvo / vol 20d, teto), alvo 8–20% a.a., teto 1 (`alvo1`) ou 2 (`alvo2`), no lugar de "metade acima de X".
+
+Melhor célula pelo treino em cada família; Sharpe treino / valid / teste; mediana e mínimo da grade (valid / teste).
+
+| Pesos / dimensionamento | Escolhida | Sharpe | DD valid / teste | Mediana | Mínimo |
+|---|---|---|---|---|---|
+| igual / metade > X (atual) | SMA+EMA 75–400, 20% | 1,07 / 0,56 / 0,92 | −15 / −12% | 0,60 / 0,70 | 0,38 / 0,52 |
+| igual / alvo, teto 1 | SMA+EMA 75–400, 8% | 1,20 / 0,67 / 1,01 | −9 / −7% | 0,64 / 0,84 | 0,43 / 0,63 |
+| igual / alvo, teto 2 | SMA+EMA 75–400, 10% | 1,27 / 0,69 / 1,02 | −11 / −8% | 0,69 / 0,88 | 0,43 / 0,81 |
+| ivol / metade > X | SMA+EMA 100–300, 10% | 1,29 / 0,82 / 0,64 | −7 / −5% | 0,74 / 0,84 | 0,49 / 0,64 |
+| ivol / percentil | SMA+EMA 100–300, p80 | 1,02 / 0,85 / 0,91 | −8 / −10% | 0,85 / 0,84 | 0,67 / 0,76 |
+| **ivol / alvo, teto 2** | SMA+EMA 100–300, 8% | **1,29 / 0,90 / 0,97** | −7 / −6% | **0,80 / 0,97** | **0,59 / 0,87** |
+
+3. Controle aleatório (50 sorteios do ativo de cada par, mesma frequência de trocas): % de sorteios com Sharpe ≥ real.
+
+| Célula | treino | valid | teste |
+|---|---|---|---|
+| igual, metade > 20% | 6% | 16% | 8% |
+| ivol, metade > 10% | 6% | 4% | 62% |
+| ivol, alvo 8% teto 2 | 4% | 8% | 20% |
+
+Leitura: pesos pelo inverso da vol e vol-alvo melhoram tudo (Sharpe fora do treino ~0,9–1,0, DD −6 a −7%, grade inteira com teste ≥ 0,87 na família ivol/alvo2). O controle aleatório mostra que a escolha pela força ajuda (real acima de ~80–95% dos sorteios na maioria dos períodos), mas o ganho sobre o sorteio é moderado: média do aleatório já é 0,45–0,71 fora do treino; boa parte do resultado vem da tendência + diversificação, não da escolha. Com teto 2, a exposição bruta média fica em ~0,66x (no teste).

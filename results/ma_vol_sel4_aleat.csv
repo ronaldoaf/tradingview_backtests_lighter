@@ -1,0 +1,10 @@
+celula,periodo,real,aleat_media,aleat_p95,pct_aleat_maior
+SMA+EMA 75-400 igual abs 0.2,treino,1.07,0.79,1.05,6
+SMA+EMA 75-400 igual abs 0.2,valid,0.56,0.33,0.76,16
+SMA+EMA 75-400 igual abs 0.2,teste,0.92,0.58,0.96,8
+SMA+EMA 100-300 ivol abs 0.1,treino,1.29,0.97,1.26,6
+SMA+EMA 100-300 ivol abs 0.1,valid,0.82,0.28,0.74,4
+SMA+EMA 100-300 ivol abs 0.1,teste,0.64,0.71,1.14,62
+SMA+EMA 100-300 ivol alvo2 0.08,treino,1.29,1.02,1.24,4
+SMA+EMA 100-300 ivol alvo2 0.08,valid,0.9,0.45,0.98,8
+SMA+EMA 100-300 ivol alvo2 0.08,teste,0.97,0.71,1.06,20
