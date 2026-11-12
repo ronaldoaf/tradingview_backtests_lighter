@@ -46,6 +46,9 @@ def load_m1v(name):
     if 'volume' not in x.columns:
         x = x.assign(volume=1.0)
     x = x[~x.index.duplicated()].sort_index()[OHLCV]
+    fim = os.environ.get('EDGE_END')   # corta a serie (ex.: EDGE_END=2023-12-31) para validar fora da amostra depois
+    if fim:
+        x = x[x.index < pd.Timestamp(fim, tz='UTC') + pd.Timedelta(days=1)]
     return x[x.high >= x.low]
 
 
