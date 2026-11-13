@@ -2,7 +2,9 @@
 Payout 85%, empate = perda. Apostas sem sobreposição (cooldown 60m) por regra.
 Treino < 2024-06, Validação 2024-06..2025-05, OOS >= 2025-06."""
 import numpy as np, pandas as pd, itertools, sys
-PAY=0.85; BE=1/(1+PAY)
+H=int(next((a.split('=')[1] for a in sys.argv if a.startswith('--h=')),60))
+PAY={5:.70,10:.75,30:.80,60:.85}[H]; BE=1/(1+PAY)
+SUF='' if H==60 else f'_{H}m'
 T1=pd.Timestamp('2024-06-01',tz='UTC').value//10**6; T2=pd.Timestamp('2025-06-01',tz='UTC').value//10**6
 def load(s):
     d=pd.read_parquet(f'data/binance/klines_1m/{s}USDT.parquet').sort_values('ts').reset_index(drop=True)
@@ -14,7 +16,7 @@ n=min(len(D['BTC']),len(D['ETH']))
 assert (D['BTC'].ts.values[:n]==D['ETH'].ts.values[:n]).all()
 def feats(d,o):
     c=d.c.values; F={}
-    y=np.full(len(c),np.nan); y[:-60]=np.sign(c[60:]-c[:-60]); F['y']=y
+    y=np.full(len(c),np.nan); y[:-H]=np.sign(c[H:]-c[:-H]); F['y']=y
     lr=np.log(c)
     for L in [1,3,5,15,30,60,240,1440]:
         r=np.full(len(c),np.nan); r[L:]=lr[L:]-lr[:-L]; F[f'r{L}']=r
@@ -47,7 +49,7 @@ per=np.where(ts<T1,0,np.where(ts<T2,1,2)); valid=np.arange(n)>=1440*7; valid[-61
 def cooldown(idx):
     out=[];last=-10**9
     for i in idx:
-        if i>=last+60: out.append(i); last=i
+        if i>=last+H: out.append(i); last=i
     return np.array(out,dtype=int)
 def evalrule(F,mask,dirn):
     idx=np.flatnonzero(mask&valid&np.isfinite(F['y']))
@@ -97,7 +99,7 @@ if '--final' not in sys.argv:
     r=evalrule(FE[A],m,d)
     rows.append([A,name,d if np.isscalar(d) else 0]+r)
   R=pd.DataFrame(rows,columns=['ativo','regra','dir','n_tr','hit_tr','n_val','hit_val','n_oos','hit_oos'])
-  R.to_csv('results/binarias_1h_grid.csv',index=False)
+  R.to_csv(f'results/binarias_1h_grid{SUF}.csv',index=False)
   print(len(R))
 
 from math import comb, sqrt
@@ -106,7 +108,7 @@ def pval(k,n,p=BE):  # P(X>=k), normal approx with continuity
     mu=n*p; sd=sqrt(n*p*(1-p)); z=(k-0.5-mu)/sd
     from math import erfc; return 0.5*erfc(z/sqrt(2))
 if '--final' in sys.argv:
-    G=pd.read_csv('results/binarias_1h_grid.csv')
+    G=pd.read_csv(f'results/binarias_1h_grid{SUF}.csv')
     lb=lambda h,n: h-1.645*np.sqrt(h*(1-h)/n)
     S=G[(G.n_tr>=150)&(G.n_val>=100)&(lb(G.hit_tr,G.n_tr)>BE)&(lb(G.hit_val,G.n_val)>BE)]
     print('finalistas',len(S),'de',len(G))
@@ -117,11 +119,11 @@ if '--final' in sys.argv:
         F=FE[r.ativo]
         for lag in (0,1,2):
             y=np.full(n,np.nan); c=D[r.ativo].c.values[:n]
-            y[:-61-lag]=np.sign(c[60+lag:-1] - c[lag:-61]) if lag else F['y'][:-61-lag]
+            y[:-61-lag]=np.sign(c[H+lag:n-61+H] - c[lag:n-61]) if lag else F['y'][:-61-lag]
             G2=dict(F); G2['y']=y
             res=evalrule(G2,m,d)
             no,ho=res[4],res[5]; k=round(no*ho)
             out.append([r.ativo,r.regra,r.dir,lag]+res+[ho*PAY-(1-ho), pval(k,no)])
     O=pd.DataFrame(out,columns=['ativo','regra','dir','lag','n_tr','hit_tr','n_val','hit_val','n_oos','hit_oos','ev_oos','p_oos'])
-    O.to_csv('results/binarias_1h_finalistas.csv',index=False)
+    O.to_csv(f'results/binarias_1h_finalistas{SUF}.csv',index=False)
     pd.set_option('display.width',250); print(O.round(4).to_string())
