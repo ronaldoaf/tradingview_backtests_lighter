@@ -1,0 +1,31 @@
+
+=== WTI 4H 2017-01-03 -> 2026-09-30 (15065 barras)
+  BASE long                           205 tr ( 21.0/ano,   3.71d) | bruto    -7.2bp liq   -78.0bp (win 34%) | CAGR  -19.4% vs B&H   +5.4% | Sh -1.60 DD  -225% expo  21% | ctl   -51.5bp t=-1.00
+  BASE long custo 2x                  205 tr ( 21.0/ano,   3.71d) | bruto    -7.2bp liq   -80.0bp (win 34%) | CAGR  -19.4% vs B&H   +5.4% | Sh -1.60 DD  -225% expo  21% | ctl   -37.6bp t=-2.02
+  BASE long custo 4x                  205 tr ( 21.0/ano,   3.71d) | bruto    -7.2bp liq   -84.0bp (win 32%) | CAGR  -19.4% vs B&H   +5.4% | Sh -1.60 DD  -225% expo  21% | ctl   -58.2bp t=-0.59
+    terço 1 long                       65 tr ( 20.0/ano,   3.87d) | bruto   +79.5bp liq    +5.6bp (win 34%) | CAGR   -0.4% vs B&H  -21.4% | Sh -0.08 DD   -15% expo  21% | ctl  -100.0bp t=+2.51
+    terço 2 long                       75 tr ( 23.1/ano,   3.44d) | bruto   -46.4bp liq  -112.2bp (win 36%) | CAGR  -31.1% vs B&H  +39.2% | Sh -2.47 DD  -125% expo  22% | ctl   -52.6bp t=-0.95
+    terço 3 long                       63 tr ( 19.4/ano,   3.84d) | bruto   +17.0bp liq   -56.3bp (win 32%) | CAGR  -10.5% vs B&H   +7.9% | Sh -1.02 DD   -57% expo  20% | ctl   -69.0bp t=+0.20
+    #1 (24, 65, 52, 20) long TREINO    92 tr ( 18.9/ano,   4.22d) | bruto  +122.5bp liq   +42.3bp (win 33%) | CAGR   +1.2% vs B&H   +8.3% | Sh +0.12 DD   -34% expo  22% | ctl   -26.5bp t=+0.96
+    #1 (24, 65, 52, 20) long TESTE     86 tr ( 17.6/ano,   3.92d) | bruto   -35.8bp liq  -110.6bp (win 28%) | CAGR  -16.4% vs B&H   +2.7% | Sh -1.67 DD  -113% expo  19% | ctl   -69.9bp t=-0.79
+    #2 (24, 45, 55, 50) long TREINO    87 tr ( 17.9/ano,   2.91d) | bruto   +58.2bp liq    +2.1bp (win 33%) | CAGR   -0.1% vs B&H   +8.3% | Sh -0.01 DD   -25% expo  16% | ctl   -37.6bp t=+0.64
+    #2 (24, 45, 55, 50) long TESTE     75 tr ( 15.4/ano,   3.57d) | bruto   +22.8bp liq   -45.5bp (win 47%) | CAGR  -11.2% vs B&H   +2.7% | Sh -1.51 DD   -86% expo  15% | ctl   -42.8bp t=-0.06
+    #3 (24, 45, 55, 20) long TREINO    81 tr ( 16.6/ano,   2.94d) | bruto   +58.8bp liq    +2.3bp (win 32%) | CAGR   -0.8% vs B&H   +8.3% | Sh -0.12 DD   -31% expo  14% | ctl   -40.5bp t=+0.93
+    #3 (24, 45, 55, 20) long TESTE     81 tr ( 16.6/ano,   3.39d) | bruto    -2.5bp liq   -67.4bp (win 41%) | CAGR  -14.9% vs B&H   +2.7% | Sh -1.94 DD  -102% expo  16% | ctl   -50.3bp t=-0.40
+    BASE long TESTE                    97 tr ( 19.9/ano,   3.73d) | bruto    -9.6bp liq   -80.8bp (win 34%) | CAGR  -18.1% vs B&H   +2.7% | Sh -1.81 DD  -108% expo  20% | ctl   -42.7bp t=-0.81
+  grade long: 0/81 celulas com CAGR liquido > 0
+  BASE ls                             379 tr ( 38.9/ano,   3.56d) | bruto   -30.4bp liq   -40.8bp (win 39%) | CAGR  -16.9% vs B&H   +5.4% | Sh -0.79 DD  -297% expo  38% | ctl    -0.8bp t=-1.83
+  BASE ls custo 2x                    379 tr ( 38.9/ano,   3.56d) | bruto   -30.4bp liq   -42.8bp (win 39%) | CAGR  -16.9% vs B&H   +5.4% | Sh -0.79 DD  -297% expo  38% | ctl    -4.8bp t=-1.23
+  BASE ls custo 4x                    379 tr ( 38.9/ano,   3.56d) | bruto   -30.4bp liq   -46.8bp (win 38%) | CAGR  -16.9% vs B&H   +5.4% | Sh -0.79 DD  -297% expo  38% | ctl    -4.4bp t=-2.56
+    terço 1 ls                        116 tr ( 35.7/ano,   3.63d) | bruto   +62.1bp liq   +46.8bp (win 40%) | CAGR  +23.5% vs B&H  -21.4% | Sh +1.28 DD   -22% expo  36% | ctl   -16.9bp t=+3.54
+    terço 2 ls                        134 tr ( 41.3/ano,   3.48d) | bruto   -39.2bp liq   -48.1bp (win 42%) | CAGR  -33.1% vs B&H  +39.2% | Sh -1.62 DD  -139% expo  40% | ctl   -10.9bp t=-0.86
+    terço 3 ls                        125 tr ( 38.5/ano,   3.60d) | bruto   -18.9bp liq   -25.9bp (win 36%) | CAGR   -6.8% vs B&H   +7.9% | Sh -0.41 DD   -76% expo  38% | ctl    -9.8bp t=-0.36
+    #1 (24, 45, 55, 50) ls TREINO     149 tr ( 30.6/ano,   3.24d) | bruto   +55.0bp liq   +49.9bp (win 44%) | CAGR  +21.9% vs B&H   +8.3% | Sh +1.17 DD   -48% expo  28% | ctl   -13.8bp t=+1.18
+    #1 (24, 45, 55, 50) ls TESTE      146 tr ( 30.0/ano,   3.21d) | bruto    +0.4bp liq   -10.2bp (win 48%) | CAGR   -6.7% vs B&H   +2.7% | Sh -0.51 DD   -81% expo  27% | ctl    -1.5bp t=-0.27
+    #2 (24, 45, 52, 50) ls TREINO     166 tr ( 34.1/ano,   3.34d) | bruto   +52.4bp liq   +43.4bp (win 43%) | CAGR  +18.8% vs B&H   +8.3% | Sh +0.94 DD   -48% expo  32% | ctl    -3.5bp t=+1.95
+    #2 (24, 45, 52, 50) ls TESTE      168 tr ( 34.5/ano,   3.27d) | bruto    -1.7bp liq   -13.6bp (win 46%) | CAGR  -10.1% vs B&H   +2.7% | Sh -0.66 DD   -84% expo  32% | ctl   -17.8bp t=+0.13
+    #3 (24, 45, 55, 20) ls TREINO     147 tr ( 30.2/ano,   3.22d) | bruto   +14.9bp liq   +12.5bp (win 41%) | CAGR   +7.6% vs B&H   +8.3% | Sh +0.42 DD   -81% expo  28% | ctl   -13.3bp t=+0.57
+    #3 (24, 45, 55, 20) ls TESTE      157 tr ( 32.2/ano,   3.14d) | bruto    -6.4bp liq   -15.0bp (win 46%) | CAGR   -7.1% vs B&H   +2.7% | Sh -0.51 DD   -80% expo  29% | ctl   -18.5bp t=+0.13
+    BASE ls TESTE                     189 tr ( 38.8/ano,   3.56d) | bruto   -17.9bp liq   -24.8bp (win 41%) | CAGR  -12.4% vs B&H   +2.7% | Sh -0.72 DD   -91% expo  38% | ctl    -5.2bp t=-0.61
+  grade ls: 6/81 celulas com CAGR liquido > 0
+-> /home/user/tradingview_backtests_lighter/results/study_hmamtf_resumo.csv
