@@ -22,3 +22,15 @@ subiu ~4× no período, com risco de ~50–100 bp por trade, isso é ruído.
 **Veredito: reprovada no ouro.** O +15% do notebook vem de 62 trades num único período
 de alta (2020–26) sem separação in/out-of-sample. Pelo protocolo, não estendida aos outros ativos.
 Grade completa: `results/study_pinbar_xau_grid.csv`.
+
+## Versão flexível (mais trades) — `study_pinbar_flex.py`
+
+Afrouxado: sombra ≥ 1,5–2× corpo, corpo ≤ 33–45%; tendência só EMA200 ou EMA50/200; swings 5/5 ou
+10/10; S&R = qualquer swing das últimas 300 barras a até 0,5–1×ATR da sombra; stop 0,5–2×ATR; RR 1,5–2;
+TF 15m/30m/1h. 576 células, **8 positivas nos 3 períodos** (esperado por acaso).
+Mediana de cada TF negativa (−1,5 a −3 bp).
+
+Melhor célula: 1h, EMA200, swings 10/10, zona 0,5×ATR, stop 2×ATR, 2R → 461 trades (~50/ano),
++7,5 bp/trade (treino +1,6 / val +3,3 / teste +17,5), PF 1,18. Placebo (entradas aleatórias com o
+mesmo filtro EMA200 e a mesma gestão, 200 sorteios): média −0,1 bp, dp 5,2 bp; o real fica acima de
+93% deles (p≈0,07), o que não sobrevive a escolher a melhor de 576. **Continua reprovada.**
