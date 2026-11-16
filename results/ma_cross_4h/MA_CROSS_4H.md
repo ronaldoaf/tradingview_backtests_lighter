@@ -2,8 +2,8 @@
 
 **Resposta curta:** nenhuma das 24 configurações bate o buy&hold sem funding (Sharpe 1,03) e nenhuma é estatisticamente
 significativa (maior t = 1,5). A melhor é **T3 200/50** (CAGR +14,7%, Sharpe 0,76, DD −26%), mas 2020 sozinho dá +62% e
-os outros três anos somam quase zero; ela ganha no BTC (+58% a.a.) e perde no ouro e na prata. Só 4 de 24 configurações
-são positivas em ≥ 3 anos **e** ≥ 3 ativos ao mesmo tempo (T3 200/50, ALMA 200/50, KAMA 200/50, e por pouco nenhuma outra).
+os outros três anos somam quase zero; ela ganha no BTC (+58% a.a.) e perde no ouro e na prata. Só 3 de 24 configurações
+são positivas em ≥ 3 anos **e** ≥ 3 ativos ao mesmo tempo (T3, ALMA e KAMA, todas 200/50).
 Com 24 tentativas, o Sharpe máximo esperado por sorte num período de 4 anos fica em torno de 1,0, então 0,76 é ruído.
 Por tipo, T3 e VIDYA são as menos ruins; HMA e ZLEMA (as "sem atraso") são as piores, viram demais e pagam o vai-e-vem.
 O par lento 200/50 é o melhor em média; 50/20 é o pior.
