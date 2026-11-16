@@ -29,7 +29,7 @@ def summarize(df, trades, name, *a, minimo=10, **k):
 
 T.load_m1v = load; T.summarize = summarize
 N = sys.argv[1]; MOD = f'study_tvlote{N}' if N.isdigit() else f'study_{N}'
-OUT = os.path.join(D, 'results', 'cart4h', A, f'lote{N}.csv'); os.makedirs(os.path.dirname(OUT), exist_ok=True)
+OUT = os.path.join(D, 'results', os.environ.get('OUTD', 'cart4h'), A, f'lote{N}.csv'); os.makedirs(os.path.dirname(OUT), exist_ok=True)
 if os.path.exists(OUT) and os.path.exists(OUT[:-4] + '_ser.parquet'): print(N, A, 'ok (ja existia)'); sys.exit()
 _csv = pd.DataFrame.to_csv
 def to_csv(self, path=None, *a, **k):
