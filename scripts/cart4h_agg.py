@@ -17,7 +17,7 @@ for a in AT:
         l = os.path.basename(f)[4:-4]; g = pd.read_csv(f)
         if 'sid' not in g or not os.path.exists(f[:-4] + '_ser.parquet'): continue
         S = pd.read_parquet(f[:-4] + '_ser.parquet'); S.index = pd.DatetimeIndex(S.index).tz_localize(None).normalize()
-        S = S.reindex(DIAS).fillna(0.0)
+        S = S.reindex(DIAS).replace([np.inf, -np.inf], np.nan).fillna(0.0).clip(lower=-1.0)
         g['est'] = g['est'].fillna(l) if 'est' in g else l; g['cfg'] = g['cfg'].astype(str) if 'cfg' in g else g.get('tag', '')
         g = g.drop_duplicates(['est', 'cfg'])
         for _, r in g.iterrows():
@@ -36,7 +36,9 @@ yr = DIAS.year.to_numpy(); rows = []; PORT = {}
 for k, c in cel.items():
     tr = sum(v['trades'] for v in c.values()); lg = sum(v['longs'] for v in c.values())
     if tr == 0 or (tr - lg) / tr < 0.05 or lg / tr < 0.05: continue    # tem que operar long e short
-    M = np.column_stack([SER[k].get(a, np.zeros(len(DIAS))) for a in AT]); p = M.mean(1); PORT[k] = p
+    M = np.column_stack([SER[k].get(a, np.zeros(len(DIAS))) for a in AT])
+    if np.abs(M).max() > 0.5: continue   # serie quebrada (equity zerou/voltou, divisao por zero): fora
+    p = M.mean(1); PORT[k] = p
     o = dict(lote=k[0], est=k[1], cfg=k[2], nome=nomes.get((k[0], k[1]), ''), trades=tr, short_frac=(tr - lg) / tr,
              win=sum(v['win'] * v['trades'] for v in c.values()) / tr, n_ativos=len(c), **st(p))
     for y in ANOS:
