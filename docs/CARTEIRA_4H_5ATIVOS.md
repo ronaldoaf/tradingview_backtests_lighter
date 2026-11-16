@@ -74,20 +74,20 @@ seleção final.
 | 4 | 8. Parabolic SAR stop entries | +36% | +23% | +26% | +11% | +26% |
 | 5 | 10. Slopes | +54% | +15% | +8% | +5% | +22% |
 | 6 | 10. Heikin Ashi Price Action | +86% | +37% | +0% | -1% | +19% |
-| 7 | 11. HL MovingAvg2Line Cross | +15% | +38% | +5% | +11% | +27% |
-| 8 | 16. Bull and Bear Fear | +28% | +36% | -5% | +5% | +21% |
-| 9 | 7. UL QQE Cross | +40% | +15% | +11% | +6% | +9% |
-| 10 | 12. Keltner SL/TP | +79% | +39% | +5% | +11% | +13% |
-| 11 | 2. High/Low channel swing | +1% | +49% | +7% | +7% | +23% |
-| 12 | 8. RSI Alligator | +0% | +16% | +6% | +9% | +18% |
-| 13 | 20. Ichimoku + EMA filter | +27% | +12% | +11% | +8% | +14% |
-| 14 | 1. Supertrend CCI | +28% | +34% | +7% | +4% | +20% |
-| 15 | 10. Combo 123 + Rainbow Oscillator | +42% | +11% | +8% | +2% | +7% |
-| 16 | 5. Bitcoin SuperFlip | +23% | +24% | +10% | +2% | +3% |
-| 17 | 18. Gaussian Channel | +5% | +23% | +14% | +7% | +17% |
-| 18 | 18. VWAP X EMA | +107% | +11% | +13% | +10% | -1% |
-| 19 | 49. Awesome Oscillator | -2% | +58% | +12% | +3% | +18% |
-| 20 | 18. SSL Channel Cross | +9% | +26% | +0% | +6% | +21% |
+| 7 | 15. Rob Booker ADX Breakout | +28% | -4% | +12% | +0% | +2% |
+| 8 | 11. HL MovingAvg2Line Cross | +15% | +38% | +5% | +11% | +27% |
+| 9 | 16. Bull and Bear Fear | +28% | +36% | -5% | +5% | +21% |
+| 10 | 7. UL QQE Cross | +40% | +15% | +11% | +6% | +9% |
+| 11 | 12. Keltner SL/TP | +79% | +39% | +5% | +11% | +13% |
+| 12 | 2. High/Low channel swing | +1% | +49% | +7% | +7% | +23% |
+| 13 | 8. RSI Alligator | +0% | +16% | +6% | +9% | +18% |
+| 14 | 20. Ichimoku + EMA filter | +27% | +12% | +11% | +8% | +14% |
+| 15 | 1. Supertrend CCI | +28% | +34% | +7% | +4% | +20% |
+| 16 | 14. Volatility Range Breakout | +66% | +5% | +1% | -4% | +10% |
+| 17 | 10. Combo 123 + Rainbow Oscillator | +42% | +11% | +8% | +2% | +7% |
+| 18 | 5. Bitcoin SuperFlip | +23% | +24% | +10% | +2% | +3% |
+| 19 | 18. Gaussian Channel | +5% | +23% | +14% | +7% | +17% |
+| 20 | 18. VWAP X EMA | +107% | +11% | +13% | +10% | -1% |
 
 (CAGR por ativo = da perna sozinha, a 1x; na carteira cada uma pesa 1/5.)
 
