@@ -3,7 +3,7 @@ import os, numpy as np, pandas as pd
 D = os.path.dirname(os.path.dirname(os.path.abspath(__file__))); R = os.path.join(D, 'results', 'cart4h')
 AT = ['btc', 'wti', 'us100', 'xau', 'xag']; DIAS = pd.date_range('2020-01-02', '2023-12-31', freq='D')
 g = pd.read_csv(os.path.join(R, 'celulas.csv'), dtype={'lote': str})
-b = g.sort_values('cagr', ascending=False).drop_duplicates(['lote', 'est']).head(10).reset_index(drop=True)
+b = g.sort_values("cagr", ascending=False).drop_duplicates(["lote", "est"]).head(10); b = b[~b.est.isin(os.environ.get("TIRAR", "").split(","))].reset_index(drop=True)
 P = {}
 for r in b.itertuples():
     cols = []
