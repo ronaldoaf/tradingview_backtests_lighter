@@ -7,7 +7,7 @@ from study_lrc import lrc, sim, OUT
 from tvlib import atr_rma
 from study_engulf_psar import CUSTO, FUND
 C1, C2 = pd.Timestamp('2024-01-01', tz='UTC'), pd.Timestamp('2025-07-01', tz='UTC')
-rng = np.random.default_rng(7); N, DEV, K, L, NS = 50, 1.5, 6, 50, 500
+rng = np.random.default_rng(7); N, DEV, K, L, NS = [float(v) if '.' in v else int(v) for v in os.environ.get('CFG', '50,1.5,6,50').split(',')] + [500]
 
 def tot(df, a, sig, atr):
     ei, xi, s, pi, px = sim(df.open.values, df.high.values, df.low.values, df.close.values, sig, atr, K)
@@ -29,4 +29,4 @@ for a in ['btc', 'eth']:
         rows.append(dict(ativo=a, janela=nm, trades=nt, estrat=round(100 * (np.exp(real) - 1), 1),
                          aleat_mediana=round(100 * (np.exp(np.median(sims)) - 1), 1), percentil=round(100 * (sims < real).mean())))
         print(rows[-1], flush=True)
-pd.DataFrame(rows).to_csv(os.path.join(OUT, 'controle_30m.csv'), index=False)
+pd.DataFrame(rows).to_csv(os.path.join(OUT, f'controle_30m_{N}_{DEV}_{K}_{L}.csv'), index=False)
