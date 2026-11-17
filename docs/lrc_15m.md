@@ -81,3 +81,5 @@ Filtro: |slope| × N / ATR(L) ≥ S (quanto a linha sobe em N barras, em ATRs), 
 O filtro não melhora de forma sistemática: corta trades e muda o resultado sem padrão monotônico.
 Blocos positivos nas 3 janelas para quase todo S: BTC 30m (ambas configs), BTC 1h 50/2/5/50 (S 0–5),
 XAU 15m (ambas configs, S 0–8), ETH 1h 50/2/5/50 (S 1–5). US100 e WTI: nada estável.
+
+Controle XAU 15m: 50/1,5/6/50 percentis 73/72/48; 50/2/5/50 53/85/27 (treino/valid/teste). Não bate o aleatório → descartado.

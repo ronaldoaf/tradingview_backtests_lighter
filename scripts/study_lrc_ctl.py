@@ -7,6 +7,7 @@ from study_lrc import lrc, sim, OUT
 from tvlib import atr_rma
 from study_engulf_psar import CUSTO, FUND
 C1, C2 = pd.Timestamp('2024-01-01', tz='UTC'), pd.Timestamp('2025-07-01', tz='UTC')
+TFX = os.environ.get('TF', '30m')
 rng = np.random.default_rng(7); N, DEV, K, L, NS = [float(v) if '.' in v else int(v) for v in os.environ.get('CFG', '50,1.5,6,50').split(',')] + [500]
 
 def tot(df, a, sig, atr):
@@ -16,9 +17,9 @@ def tot(df, a, sig, atr):
     return r.sum(), len(r)
 
 rows = []
-for a in ['btc', 'eth']:
+for a in os.environ.get('ASSETS', 'btc,eth').split(','):
     for nm, sl in [('treino', slice(None, C1)), ('valid', slice(C1, C2)), ('teste', slice(C2, None))]:
-        df = pd.read_parquet(os.path.join(OUT, f'{a}_30m.parquet')); df = df[(df.index >= (sl.start or df.index[0])) & (df.index < (sl.stop or df.index[-1] + pd.Timedelta('1s')))]
+        df = pd.read_parquet(os.path.join(OUT, f'{a}_{TFX}.parquet')); df = df[(df.index >= (sl.start or df.index[0])) & (df.index < (sl.stop or df.index[-1] + pd.Timedelta('1s')))]
         c = df.close.values; b, up, lo = lrc(c, N); mid = (up + lo) / 2; sd = up - mid
         sig = np.where((b > 0) & (c < mid - DEV * sd), 1, np.where((b < 0) & (c > mid + DEV * sd), -1, 0)).astype(np.int64)
         atr = atr_rma(df.high.values, df.low.values, c, L); real, nt = tot(df, a, sig, atr)
@@ -29,4 +30,4 @@ for a in ['btc', 'eth']:
         rows.append(dict(ativo=a, janela=nm, trades=nt, estrat=round(100 * (np.exp(real) - 1), 1),
                          aleat_mediana=round(100 * (np.exp(np.median(sims)) - 1), 1), percentil=round(100 * (sims < real).mean())))
         print(rows[-1], flush=True)
-pd.DataFrame(rows).to_csv(os.path.join(OUT, f'controle_30m_{N}_{DEV}_{K}_{L}.csv'), index=False)
+pd.DataFrame(rows).to_csv(os.path.join(OUT, f'controle_{TFX}_{"-".join(os.environ.get("ASSETS","btc,eth").split(","))}_{N}_{DEV}_{K}_{L}.csv'), index=False)
