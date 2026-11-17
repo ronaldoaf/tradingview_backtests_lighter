@@ -74,3 +74,10 @@ em BTC se repete em 15m, 30m e 1h, porém falhou no 15m pós-2023.
 | ETH | teste | +316% | +42% | 98 |
 
 BTC bate o aleatório nas três janelas (nenhuma acima de p95 em treino/validação). ETH não: o bom teste parece sorte.
+
+## Inclinação mínima (`scripts/study_lrc_slope.py`, `results/lrc/slope_min.csv`)
+
+Filtro: |slope| × N / ATR(L) ≥ S (quanto a linha sobe em N barras, em ATRs), S ∈ {0,1,2,3,5,8}.
+O filtro não melhora de forma sistemática: corta trades e muda o resultado sem padrão monotônico.
+Blocos positivos nas 3 janelas para quase todo S: BTC 30m (ambas configs), BTC 1h 50/2/5/50 (S 0–5),
+XAU 15m (ambas configs, S 0–8), ETH 1h 50/2/5/50 (S 1–5). US100 e WTI: nada estável.
