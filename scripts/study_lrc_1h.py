@@ -5,11 +5,12 @@ import numpy as np, pandas as pd
 D = os.path.dirname(os.path.dirname(os.path.abspath(__file__))); sys.path.insert(0, os.path.join(D, 'scripts'))
 from tvlib import load_m1v, resample
 from study_lrc import run, stats, OUT, ASSETS
+TF = os.environ.get('TF', '1h')
 C1, C2 = pd.Timestamp('2024-01-01', tz='UTC'), pd.Timestamp('2025-07-01', tz='UTC')
 
 def bars(a):
-    f = os.path.join(OUT, f'{a}_1h.parquet')
-    if not os.path.exists(f): resample(load_m1v(a), '1h').to_parquet(f)
+    f = os.path.join(OUT, f'{a}_{TF}.parquet')
+    if not os.path.exists(f): resample(load_m1v(a), {'1h':'1h','30m':'30min'}[TF]).to_parquet(f)
     return pd.read_parquet(f)
 
 def parts(df): return [('TR', df[df.index < C1]), ('VAL', df[(df.index >= C1) & (df.index < C2)]), ('TESTE', df[df.index >= C2])]
@@ -32,6 +33,6 @@ for a in ASSETS:
                      grade_tr_pos=round(100 * (g.cagr > 0).mean()), grade_val_pos=round(100 * (g.val_cagr > 0).mean()),
                      tr_e_val_pos=round(100 * ((g.cagr > 0) & (g.val_cagr > 0)).mean())))
     print(a, 'ok', flush=True)
-fix = pd.DataFrame(fix); print(fix.to_string()); fix.to_csv(os.path.join(OUT, 'fixo_1h.csv'), index=False)
-pd.DataFrame(rows).to_csv(os.path.join(OUT, 'grid_1h.csv'), index=False)
-best = pd.DataFrame(best); print(best.to_string()); best.to_csv(os.path.join(OUT, 'otimo_1h.csv'), index=False)
+fix = pd.DataFrame(fix); print(fix.to_string()); fix.to_csv(os.path.join(OUT, f'fixo_{TF}.csv'), index=False)
+pd.DataFrame(rows).to_csv(os.path.join(OUT, f'grid_{TF}.csv'), index=False)
+best = pd.DataFrame(best); print(best.to_string()); best.to_csv(os.path.join(OUT, f'otimo_{TF}.csv'), index=False)

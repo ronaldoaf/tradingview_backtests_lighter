@@ -46,3 +46,18 @@ WTI -3,5/-15,2/-36,0; BTC -22,8/-4,4/+35,4; ETH -12,3/-7,5/-8,6.
 
 Reprovada também em 1h. BTC passa nas três janelas, mas a mesma config falhou no 15m 2024+, só 6% da grade
 sobrevive a treino+validação e a validação foi fraca (+6% contra B&H +153%). Script: `scripts/study_lrc_1h.py`.
+
+## Versão 30m (mesmas janelas; `TF=30m python scripts/study_lrc_1h.py`)
+
+Config fixa: negativa no treino nos 5 ativos (CAGR -3% a -27%).
+
+| Ativo | Melhor N/dp/k/L | Treino | Validação | Teste | B&H teste | % grade + treino e validação |
+|---|---|---|---|---|---|---|
+| XAU | 50/2/4/50 | +8,0% | -13,1% | +19,4% | +25% | 1% |
+| US100 | 300/2,5/4/14 | +6,4% | +7,3% | -3,5% | +30% | 12% |
+| WTI | 50/3/6/14 | +19,6% | +10,6% | +29,6% (76 tr) | +39% | 2% |
+| BTC | 50/1,5/6/50 | +84,7% | +24,7% | +44,3% | -22% | 6% |
+| ETH | 100/2,5/4/14 | +61,9% | +9,2% | +51,2% | +8% | 10% |
+
+WTI, BTC e ETH ficam positivos nas três janelas, mas são ilhas (2–10% da grade). O padrão N curto + k alto (5–6 ATR)
+em BTC se repete em 15m, 30m e 1h, porém falhou no 15m pós-2023.
