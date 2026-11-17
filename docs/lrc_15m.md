@@ -61,3 +61,16 @@ Config fixa: negativa no treino nos 5 ativos (CAGR -3% a -27%).
 
 WTI, BTC e ETH ficam positivos nas três janelas, mas são ilhas (2–10% da grade). O padrão N curto + k alto (5–6 ATR)
 em BTC se repete em 15m, 30m e 1h, porém falhou no 15m pós-2023.
+
+## Controle aleatório, 50/1,5/6/50 em 30m (`scripts/study_lrc_ctl.py`, 500 sinais embaralhados por janela)
+
+| Ativo | Janela | Estratégia | Mediana aleatória | Percentil |
+|---|---|---|---|---|
+| BTC | treino | +1064% | +209% | 91 |
+| BTC | validação | +39% | -8% | 84 |
+| BTC | teste | +58% | -11% | 96 |
+| ETH | treino | +62% | +164% | 36 |
+| ETH | validação | +50% | +41% | 55 |
+| ETH | teste | +316% | +42% | 98 |
+
+BTC bate o aleatório nas três janelas (nenhuma acima de p95 em treino/validação). ETH não: o bom teste parece sorte.
