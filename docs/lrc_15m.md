@@ -30,3 +30,19 @@ Sinal no fechamento, entrada na abertura seguinte, saída por trailing stop k×A
 - US100: positivo no OOS, mas o lucro vem dos longs num mercado em alta (84% exposto) — é beta, não sinal.
 - XAU: único com sinal consistente — **shorts ganham IS (+9,6 bp/trade) e OOS (+9,5 bp)** mesmo com o ouro
   subindo. Ressalvas: ótimo na borda da grade (N mínimo, k máximo), só 13% da grade positiva, e falta controle aleatório.
+
+## Versão 1h (treino até dez/2023, validação jan/2024–jun/2025, teste jul/2025+)
+
+Config fixa (200,2,2×ATR14), CAGR treino / validação / teste: XAU -7,5/-6,0/+9,3; US100 +3,2/+1,7/-14,4;
+WTI -3,5/-15,2/-36,0; BTC -22,8/-4,4/+35,4; ETH -12,3/-7,5/-8,6.
+
+| Ativo | Melhor N/dp/k/L (treino) | Treino | Validação | Teste | B&H teste | % grade + em treino e validação |
+|---|---|---|---|---|---|---|
+| XAU | 50/2/1/50 | +2,9% | -6,2% | -3,7% | +25% | 2% |
+| US100 | 200/2/6/14 | +13,1% | +10,2% | -21,2% | +30% | 35% |
+| WTI | 300/2,5/1/50 | +4,3% | -19,4% | -4,2% | +39% | 3% |
+| BTC | 50/1,5/6/14 | +71,5% | +6,1% | **+94,7%** (PF 1,69, 122 tr) | -22% | 6% |
+| ETH | 50/2/6/14 | +89,7% | -21,9% | +42,0% | +8% | 10% |
+
+Reprovada também em 1h. BTC passa nas três janelas, mas a mesma config falhou no 15m 2024+, só 6% da grade
+sobrevive a treino+validação e a validação foi fraca (+6% contra B&H +153%). Script: `scripts/study_lrc_1h.py`.
