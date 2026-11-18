@@ -1,0 +1,5 @@
+xau 1728 celulas; IS>0: 0.209 OOS>0: 0.083 corr Sharpe IS/OOS: -0.14
+us100 1728 celulas; IS>0: 0.103 OOS>0: 0.29 corr Sharpe IS/OOS: 0.38
+wti 1728 celulas; IS>0: 0.256 OOS>0: 0.288 corr Sharpe IS/OOS: 0.24
+btc 1728 celulas; IS>0: 0.155 OOS>0: 0.231 corr Sharpe IS/OOS: 0.34
+eth 1728 celulas; IS>0: 0.174 OOS>0: 0.102 corr Sharpe IS/OOS: 0.13
