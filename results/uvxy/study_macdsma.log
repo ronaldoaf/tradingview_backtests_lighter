@@ -1,0 +1,64 @@
+
+===== uvxy =====
+  dados 2024-01-02 -> 2026-11-27  (0.01M m1)
+
+-- defaults (12/26/9, SMA200) por timeframe
+  uvxy  15min 12/26/9 V200 QL1 L1S1 |   13 tr (4.5/ano, 76d) | bruto    -301bp liq    -184bp (s/fund    -311bp, win 31%) | CAGR -0.3% vs B&H -54.0% | Sh -0.00 DD -120% expo 94% | ctl    +139bp t=-0.38
+  uvxy  30min 12/26/9 V200 QL1 L1S1 |   13 tr (4.5/ano, 76d) | bruto    -301bp liq    -184bp (s/fund    -311bp, win 31%) | CAGR -0.3% vs B&H -54.0% | Sh -0.00 DD -120% expo 94% | ctl    +145bp t=-0.38
+  uvxy     1h 12/26/9 V200 QL1 L1S1 |   13 tr (4.5/ano, 76d) | bruto    -301bp liq    -184bp (s/fund    -311bp, win 31%) | CAGR -0.3% vs B&H -54.0% | Sh -0.00 DD -120% expo 94% | ctl     +78bp t=-0.30
+
+-- defaults com filtro sem defasagem (QL=0)
+  uvxy  15min 12/26/9 V200 QL0 L1S1 |   21 tr (7.2/ano, 47d) | bruto    -763bp liq    -713bp (s/fund    -773bp, win 24%) | CAGR -23.0% vs B&H -54.0% | Sh -0.26 DD -184% expo 94% | ctl      -9bp t=-1.15
+  uvxy  30min 12/26/9 V200 QL0 L1S1 |   21 tr (7.2/ano, 47d) | bruto    -763bp liq    -713bp (s/fund    -773bp, win 24%) | CAGR -23.0% vs B&H -54.0% | Sh -0.26 DD -184% expo 94% | ctl     +89bp t=-1.36
+  uvxy     1h 12/26/9 V200 QL0 L1S1 |   21 tr (7.2/ano, 47d) | bruto    -763bp liq    -713bp (s/fund    -773bp, win 24%) | CAGR -23.0% vs B&H -54.0% | Sh -0.26 DD -184% expo 94% | ctl     +36bp t=-1.32
+
+-- lados separados (defaults)
+  uvxy  15min 12/26/9 V200 QL1 L1S0 |    6 tr (2.1/ano, 41d) | bruto   -1569bp liq   -1717bp (s/fund   -1579bp, win 0%) | CAGR -31.3% vs B&H -54.0% | Sh -1.18 DD -149% expo 23% | ctl   -1198bp t=-0.92
+  uvxy  15min 12/26/9 V200 QL1 L0S1 |    7 tr (2.4/ano, 107d) | bruto    +786bp liq   +1129bp (s/fund    +776bp, win 57%) | CAGR +45.1% vs B&H -54.0% | Sh +0.53 DD -112% expo 70% | ctl   +2082bp t=-1.53
+  uvxy  30min 12/26/9 V200 QL1 L1S0 |    6 tr (2.1/ano, 41d) | bruto   -1569bp liq   -1717bp (s/fund   -1579bp, win 0%) | CAGR -31.3% vs B&H -54.0% | Sh -1.18 DD -149% expo 23% | ctl   -1217bp t=-0.90
+  uvxy  30min 12/26/9 V200 QL1 L0S1 |    7 tr (2.4/ano, 107d) | bruto    +786bp liq   +1129bp (s/fund    +776bp, win 57%) | CAGR +45.1% vs B&H -54.0% | Sh +0.53 DD -112% expo 70% | ctl   +2074bp t=-1.51
+  uvxy     1h 12/26/9 V200 QL1 L1S0 |    6 tr (2.1/ano, 41d) | bruto   -1569bp liq   -1717bp (s/fund   -1579bp, win 0%) | CAGR -31.3% vs B&H -54.0% | Sh -1.18 DD -149% expo 23% | ctl   -1159bp t=-0.99
+  uvxy     1h 12/26/9 V200 QL1 L0S1 |    7 tr (2.4/ano, 107d) | bruto    +786bp liq   +1129bp (s/fund    +776bp, win 57%) | CAGR +45.1% vs B&H -54.0% | Sh +0.53 DD -112% expo 70% | ctl   +2098bp t=-1.70
+
+-- grade TF x MACD x SMA lenta x filtro
+
+  grade: 164 celulas, 21 com retorno liquido > 0, 1 tambem acima do controle (t>1), 21 tambem acima do buy&hold
+   TF  FAST  SLOW  SIG  VSLOW  QL  trades  por_ano  bp_bruto   bp_liq    bp_sf  cagr     bh  sharpe  ctl_bp     t
+   4h    19    39    9     50   0       7    2.410  1975.724 2226.588 1965.724 1.048 -0.537   0.704 323.082 1.459
+   4h    19    39    9    100   0       5    1.721  1342.374 1779.356 1332.374 0.536 -0.537   0.457 625.622 0.693
+   4h    12    26    5    100   0       7    2.410  1329.693 1447.954 1319.693 0.776 -0.537   0.600 483.681 0.767
+   4h     8    17    9     50   1       6    2.066  1153.925 1425.245 1143.925 0.574 -0.537   0.542 109.460 0.837
+   4h    12    26    9     50   0       5    1.721   752.267  936.972  742.267 0.342 -0.537   0.314 414.944 0.316
+   4h    12    26    5     50   0       9    3.099   758.877  842.988  748.877 0.544 -0.537   0.454 197.898 0.591
+   4h     8    17    9    100   1       6    2.066   548.336  754.460  538.336 0.307 -0.537   0.320 -62.616 0.621
+30min    19    39    9    200   1       9    3.099   249.804  447.733  239.804 0.462 -0.540   0.404 230.174 0.193
+15min    19    39    9    200   1       9    3.099   249.804  447.733  239.804 0.462 -0.540   0.404 129.321 0.286
+   1h    19    39    9    200   1       9    3.099   249.804  447.733  239.804 0.462 -0.540   0.404 226.088 0.182
+30min    19    39    9    100   1       7    2.410   195.240  412.677  185.240 0.268 -0.540   0.252 273.984 0.112
+   1h    19    39    9    100   1       7    2.410   195.240  412.677  185.240 0.268 -0.540   0.252 340.388 0.062
+
+===== uvxyd =====
+  dados 2011-10-04 -> 2026-11-27  (0.00M m1)
+
+-- defaults (12/26/9, SMA200) por timeframe
+
+-- defaults com filtro sem defasagem (QL=0)
+
+-- lados separados (defaults)
+
+-- grade TF x MACD x SMA lenta x filtro
+
+  grade: 100 celulas, 95 com retorno liquido > 0, 86 tambem acima do controle (t>1), 95 tambem acima do buy&hold
+   TF  FAST  SLOW  SIG  VSLOW  QL  trades  por_ano  bp_bruto   bp_liq    bp_sf  cagr     bh  sharpe   ctl_bp     t
+30min     8    17    9    200   0       5    0.330  2560.885 5864.047 2550.885 2.408 -0.792   1.159 2190.584 1.473
+15min     8    17    9    200   0       5    0.330  2560.885 5864.047 2550.885 2.408 -0.792   1.159 2160.513 1.434
+   1h     8    17    9    200   0       5    0.330  2560.885 5864.047 2550.885 2.408 -0.792   1.159 1942.648 1.493
+   4h     8    17    9    200   0       5    0.330  2560.885 5863.964 2550.885 2.408 -0.792   1.159 2021.209 1.475
+   1D     8    17    9    200   0       5    0.330  2560.885 5863.964 2550.885 2.408 -0.792   1.159 1853.299 1.570
+   1h    12    26    5     50   1       6    0.396  2947.973 5542.075 2937.973 2.672 -0.792   1.211  197.974 2.197
+15min    12    26    5     50   1       6    0.396  2947.973 5542.075 2937.973 2.672 -0.792   1.211  425.945 2.143
+30min    12    26    5     50   1       6    0.396  2947.973 5542.075 2937.973 2.672 -0.792   1.211  156.416 2.226
+   1D    12    26    5     50   1       6    0.396  2947.973 5541.960 2937.973 2.672 -0.792   1.211  125.744 2.205
+   4h    12    26    5     50   1       6    0.396  2947.973 5541.960 2937.973 2.672 -0.792   1.211   84.774 2.371
+30min     8    17    9     50   1       7    0.462  3060.023 5390.028 3050.023 2.953 -0.792   1.237 1216.168 1.939
+15min     8    17    9     50   1       7    0.462  3060.023 5390.028 3050.023 2.953 -0.792   1.237 1411.180 1.670

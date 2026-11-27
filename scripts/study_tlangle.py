@@ -53,6 +53,9 @@ BASE = dict(TF='1h', ATRLEN=14, K45=5.0, REGLEN=20, PVLEN=5, STEEP=45.0, MOD=20.
 
 
 def load_m1(name):
+    if str(name).startswith('uvxy'):
+        from study_engulf_psar import load_uvxy
+        return load_uvxy(name)[OHLC]
     if name == 'xau':
         x = pd.read_parquet(os.path.join(D, 'data', 'gold', 'xau_1m.parquet'))
     elif name in ('us100', 'us500', 'wti'):

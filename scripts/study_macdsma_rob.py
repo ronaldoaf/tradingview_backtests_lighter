@@ -41,6 +41,9 @@ DEF = dict(FAST=12, SLOW=26, SIG=9, VSLOW=200, QL=1)
 
 
 def load_m1(name):
+    if str(name).startswith('uvxy'):
+        from study_engulf_psar import load_uvxy
+        return load_uvxy(name)[OHLC]
     if name == 'xau':
         return _clean(pd.read_parquet(os.path.join(D, 'data', 'gold', 'xau_1m.parquet')))
     if name in ('us100', 'us500', 'wti'):

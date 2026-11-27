@@ -30,6 +30,9 @@ RNG = np.random.default_rng(20261021)
 
 # ------------------------------------------------------------------ dados
 def load_m1v(name):
+    if str(name).startswith('uvxy'):
+        from study_engulf_psar import load_uvxy
+        return load_uvxy(name)[OHLCV]
     import glob
     if name == 'xau':
         x = pd.read_parquet(os.path.join(D, 'data', 'gold', 'xau_1m.parquet'))
