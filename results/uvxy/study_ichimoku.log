@@ -1,0 +1,133 @@
+
+================= uvxy =================
+  M1 2024-01-02 -> 2026-11-27  (0.01M barras)
+
+-- defaults (Period 14) por timeframe, fiel (entrada na abertura seguinte)
+  P14 15min L1S1 sh1                   73 tr ( 25.1/ano,  14.26d) | bruto  -139.4bp liq  -132.3bp (win 34%) | CAGR  -22.5% vs B&H  -54.0% | Sh -0.24 DD  -159% expo  98% | ctl   +91.5bp t=-1.33
+  P14 30min L1S1 sh1                   73 tr ( 25.1/ano,  14.26d) | bruto  -139.4bp liq  -132.3bp (win 34%) | CAGR  -22.5% vs B&H  -54.0% | Sh -0.24 DD  -159% expo  98% | ctl   +70.9bp t=-0.98
+  P14 1h L1S1 sh1                      73 tr ( 25.1/ano,  14.26d) | bruto  -139.4bp liq  -132.3bp (win 34%) | CAGR  -22.5% vs B&H  -54.0% | Sh -0.24 DD  -159% expo  98% | ctl   +58.9bp t=-1.23
+  P14 4h L1S1 sh1                      21 tr (  7.2/ano,  47.48d) | bruto  -673.2bp liq  -598.5bp (win 29%) | CAGR  -21.9% vs B&H  -53.7% | Sh -0.26 DD  -301% expo  93% | ctl  +548.3bp t=-3.74
+
+-- idem com o custo declarado no proprio script (0,25%/perna)
+  P14 15min custo 0,25%/perna          73 tr ( 25.1/ano,  14.26d) | bruto  -139.4bp liq  -172.3bp (win 34%) | CAGR  -22.5% vs B&H  -54.0% | Sh -0.24 DD  -159% expo  98% | ctl   +54.6bp t=-1.36
+  P14 30min custo 0,25%/perna          73 tr ( 25.1/ano,  14.26d) | bruto  -139.4bp liq  -172.3bp (win 34%) | CAGR  -22.5% vs B&H  -54.0% | Sh -0.24 DD  -159% expo  98% | ctl   +75.2bp t=-1.22
+  P14 1h custo 0,25%/perna             73 tr ( 25.1/ano,  14.26d) | bruto  -139.4bp liq  -172.3bp (win 34%) | CAGR  -22.5% vs B&H  -54.0% | Sh -0.24 DD  -159% expo  98% | ctl   +65.8bp t=-0.95
+  P14 4h custo 0,25%/perna             21 tr (  7.2/ano,  47.48d) | bruto  -673.2bp liq  -638.5bp (win 29%) | CAGR  -21.9% vs B&H  -53.7% | Sh -0.26 DD  -301% expo  93% | ctl  +407.7bp t=-2.13
+
+-- entrada na abertura da propria barra do sinal (SHIFT=0, cenario otimista)
+  P14 15min L1S1 sh0                   73 tr ( 25.1/ano,  14.26d) | bruto   -76.2bp liq   -69.8bp (win 33%) | CAGR  -29.5% vs B&H  -54.0% | Sh -0.33 DD  -184% expo  98% | ctl  +127.3bp t=-1.02
+  P14 30min L1S1 sh0                   73 tr ( 25.1/ano,  14.26d) | bruto   -76.2bp liq   -69.8bp (win 33%) | CAGR  -29.5% vs B&H  -54.0% | Sh -0.33 DD  -184% expo  98% | ctl   +55.5bp t=-0.74
+  P14 1h L1S1 sh0                      73 tr ( 25.1/ano,  14.26d) | bruto   -76.2bp liq   -69.8bp (win 33%) | CAGR  -29.5% vs B&H  -54.0% | Sh -0.33 DD  -184% expo  98% | ctl   +83.0bp t=-0.81
+  P14 4h L1S1 sh0                      21 tr (  7.2/ano,  47.48d) | bruto  -309.1bp liq  -234.6bp (win 38%) | CAGR   -9.8% vs B&H  -53.7% | Sh -0.11 DD  -262% expo  93% | ctl  +436.2bp t=-1.06
+
+-- lados separados (um lado so; sinal contrario apenas zera)
+  P14 15min L1S0 sh1                   36 tr ( 12.4/ano,   9.22d) | bruto  -334.3bp liq  -374.9bp (win 22%) | CAGR  -42.5% vs B&H  -54.0% | Sh -1.04 DD  -231% expo  32% | ctl   -65.7bp t=-1.22
+  P14 15min L0S1 sh1                   37 tr ( 12.7/ano,  19.17d) | bruto   +50.2bp liq  +103.8bp (win 46%) | CAGR  +34.7% vs B&H  -54.0% | Sh +0.61 DD   -56% expo  66% | ctl  +320.6bp t=-0.59
+  P14 30min L1S0 sh1                   36 tr ( 12.4/ano,   9.22d) | bruto  -334.3bp liq  -374.9bp (win 22%) | CAGR  -42.5% vs B&H  -54.0% | Sh -1.04 DD  -231% expo  32% | ctl  -158.6bp t=-0.89
+  P14 30min L0S1 sh1                   37 tr ( 12.7/ano,  19.17d) | bruto   +50.2bp liq  +103.8bp (win 46%) | CAGR  +34.7% vs B&H  -54.0% | Sh +0.61 DD   -56% expo  66% | ctl  +237.3bp t=-0.36
+  P14 1h L1S0 sh1                      36 tr ( 12.4/ano,   9.22d) | bruto  -334.3bp liq  -374.9bp (win 22%) | CAGR  -42.5% vs B&H  -54.0% | Sh -1.04 DD  -231% expo  32% | ctl  -220.3bp t=-0.75
+  P14 1h L0S1 sh1                      37 tr ( 12.7/ano,  19.17d) | bruto   +50.2bp liq  +103.8bp (win 46%) | CAGR  +34.7% vs B&H  -54.0% | Sh +0.61 DD   -56% expo  66% | ctl  +126.3bp t=-0.05
+  P14 4h L1S0 sh1                      10 tr (  3.4/ano,  23.05d) | bruto -1291.9bp liq -1378.3bp (win 10%) | CAGR  -43.8% vs B&H  -53.7% | Sh -1.67 DD  -238% expo  21% | ctl  -261.9bp t=-1.45
+  P14 4h L0S1 sh1                      11 tr (  3.8/ano,  69.68d) | bruto  -110.7bp liq  +110.3bp (win 45%) | CAGR  +39.0% vs B&H  -53.7% | Sh +0.56 DD  -139% expo  72% | ctl +1376.7bp t=-1.75
+
+-- ablacao dos quatro filtros (1h e 4h): o que cada bloco acrescenta
+  1h so Hull                          739 tr (254.4/ano,   1.42d) | bruto   -26.4bp liq   -36.0bp (win 39%) | CAGR  -48.9% vs B&H  -54.0% | Sh -0.63 DD  -349% expo  99% | ctl   -12.4bp t=-1.10
+  1h so diario                        367 tr (126.4/ano,   2.86d) | bruto   +49.7bp liq   +41.3bp (win 46%) | CAGR  +80.3% vs B&H  -54.0% | Sh +0.58 DD   -93% expo  99% | ctl    -8.0bp t=+1.02
+  1h so Ichimoku                      145 tr ( 49.9/ano,   7.18d) | bruto   -74.3bp liq   -76.9bp (win 34%) | CAGR  -46.8% vs B&H  -54.0% | Sh -0.61 DD  -229% expo  98% | ctl   +52.0bp t=-1.08
+  1h so MACD-Hull                     840 tr (289.2/ano,   1.25d) | bruto   +28.1bp liq   +18.2bp (win 48%) | CAGR  +61.8% vs B&H  -54.0% | Sh +0.43 DD   -99% expo  99% | ctl    -4.5bp t=+1.14
+  1h sem diario                        87 tr ( 30.0/ano,  11.97d) | bruto  -122.6bp liq  -120.7bp (win 31%) | CAGR  -35.1% vs B&H  -54.0% | Sh -0.42 DD  -219% expo  98% | ctl   +74.4bp t=-1.00
+  1h sem Ichimoku                     223 tr ( 76.8/ano,   4.70d) | bruto   -18.6bp liq   -24.8bp (win 45%) | CAGR   -8.7% vs B&H  -54.0% | Sh -0.08 DD  -231% expo  99% | ctl    -3.3bp t=-0.33
+  1h sem MACD                          77 tr ( 26.5/ano,  13.52d) | bruto  -116.9bp liq  -110.8bp (win 36%) | CAGR  -16.5% vs B&H  -54.0% | Sh -0.17 DD  -123% expo  98% | ctl   +41.7bp t=-0.95
+  4h so Hull                          247 tr ( 85.0/ano,   4.19d) | bruto   -88.7bp liq   -96.9bp (win 38%) | CAGR  -36.0% vs B&H  -53.7% | Sh -0.43 DD  -251% expo  97% | ctl    -8.8bp t=-1.30
+  4h so diario                        364 tr (125.3/ano,   2.84d) | bruto   +57.9bp liq   +49.5bp (win 49%) | CAGR +103.6% vs B&H  -53.7% | Sh +0.68 DD   -88% expo  97% | ctl   -16.7bp t=+1.20
+  4h so Ichimoku                       31 tr ( 10.7/ano,  33.10d) | bruto   -28.1bp liq   +19.5bp (win 39%) | CAGR  +13.3% vs B&H  -53.7% | Sh +0.12 DD  -186% expo  96% | ctl  +225.8bp t=-0.68
+  4h so MACD-Hull                     290 tr ( 99.8/ano,   3.57d) | bruto  -124.9bp liq  -135.0bp (win 39%) | CAGR  -64.9% vs B&H  -53.7% | Sh -0.96 DD  -336% expo  97% | ctl   -13.9bp t=-1.50
+  4h sem diario                        23 tr (  7.9/ano,  43.92d) | bruto  -678.0bp liq  -615.4bp (win 26%) | CAGR  -25.2% vs B&H  -53.7% | Sh -0.30 DD  -273% expo  94% | ctl  +354.2bp t=-1.84
+  4h sem Ichimoku                     141 tr ( 48.5/ano,   7.30d) | bruto   +14.4bp liq   +11.8bp (win 43%) | CAGR  +10.1% vs B&H  -53.7% | Sh +0.10 DD  -115% expo  96% | ctl   +49.8bp t=-0.33
+  4h sem MACD                          23 tr (  7.9/ano,  44.44d) | bruto   -86.8bp liq   -15.9bp (win 43%) | CAGR   +7.4% vs B&H  -53.7% | Sh +0.07 DD  -234% expo  95% | ctl  +545.7bp t=-0.97
+
+-- grade Period x TF
+
+  grade uvxy: 44 celulas | liq>0: 4 | liq>0 e t>1: 0 | CAGR>B&H: 44
+   TF  PERIOD  LONG  SHORT  SHIFT  trades  por_ano  bp_bruto  bp_liq   win   cagr     bh  sharpe  expo   ctl_bp      t
+   4h      14     0      1      1      11    3.787  -110.705 110.295 0.455  0.390 -0.537   0.555 0.717 1376.699 -1.752
+30min      14     0      1      1      37   12.739    50.211 103.754 0.459  0.347 -0.540   0.607 0.663  237.344 -0.361
+15min      14     0      1      1      37   12.739    50.211 103.754 0.459  0.347 -0.540   0.607 0.663  320.614 -0.589
+   1h      14     0      1      1      37   12.739    50.211 103.754 0.459  0.347 -0.540   0.607 0.663  126.349 -0.054
+30min      28     1      1      1      63   21.690   -20.576  -9.175 0.397  0.095 -0.540   0.087 0.979  113.853 -0.508
+   1h      28     1      1      1      63   21.690   -20.576  -9.175 0.397  0.095 -0.540   0.087 0.979  114.786 -0.588
+15min      28     1      1      1      63   21.690   -20.576  -9.175 0.397  0.095 -0.540   0.087 0.979  133.524 -0.720
+15min     100     1      1      1      85   29.265   -19.354 -16.739 0.353 -0.163 -0.540  -0.174 0.968   64.851 -0.537
+30min     100     1      1      1      85   29.265   -19.354 -16.739 0.353 -0.163 -0.540  -0.174 0.968   47.118 -0.332
+   1h     100     1      1      1      85   29.264   -19.354 -16.739 0.353 -0.163 -0.540  -0.174 0.968   83.296 -0.498
+   1h      56     1      1      1      72   24.789   -34.954 -26.963 0.361 -0.124 -0.540  -0.127 0.975  131.635 -0.741
+30min      56     1      1      1      72   24.789   -34.954 -26.963 0.361 -0.124 -0.540  -0.127 0.975   96.445 -0.544
+
+================= uvxyd =================
+  M1 2011-10-04 -> 2026-11-27  (0.00M barras)
+
+-- defaults (Period 14) por timeframe, fiel (entrada na abertura seguinte)
+  P14 15min L1S1 sh1                   37 tr (  2.4/ano, 146.86d) | bruto  +779.4bp liq +1133.9bp (win 43%) | CAGR +123.9% vs B&H  -79.2% | Sh +0.73 DD  -372% expo  98% | ctl +2505.6bp t=-2.22
+  P14 30min L1S1 sh1                   37 tr (  2.4/ano, 146.86d) | bruto  +779.4bp liq +1133.9bp (win 43%) | CAGR +123.9% vs B&H  -79.2% | Sh +0.73 DD  -372% expo  98% | ctl +2338.6bp t=-2.20
+  P14 1h L1S1 sh1                      37 tr (  2.4/ano, 146.86d) | bruto  +779.4bp liq +1133.9bp (win 43%) | CAGR +123.9% vs B&H  -79.2% | Sh +0.73 DD  -372% expo  98% | ctl +2464.5bp t=-1.59
+  P14 4h L1S1 sh1                      37 tr (  2.4/ano, 146.86d) | bruto  +779.4bp liq +1133.9bp (win 43%) | CAGR +123.9% vs B&H  -79.2% | Sh +0.73 DD  -372% expo  98% | ctl +2426.6bp t=-1.84
+  P14 1D L1S1 sh1                      37 tr (  2.4/ano, 146.86d) | bruto  +779.4bp liq +1133.9bp (win 43%) | CAGR +123.9% vs B&H  -79.2% | Sh +0.73 DD  -372% expo  98% | ctl +2087.5bp t=-1.23
+
+-- idem com o custo declarado no proprio script (0,25%/perna)
+  P14 15min custo 0,25%/perna          37 tr (  2.4/ano, 146.86d) | bruto  +779.4bp liq +1093.9bp (win 43%) | CAGR +123.9% vs B&H  -79.2% | Sh +0.73 DD  -372% expo  98% | ctl +2324.3bp t=-1.71
+  P14 30min custo 0,25%/perna          37 tr (  2.4/ano, 146.86d) | bruto  +779.4bp liq +1093.9bp (win 43%) | CAGR +123.9% vs B&H  -79.2% | Sh +0.73 DD  -372% expo  98% | ctl +2383.6bp t=-1.65
+  P14 1h custo 0,25%/perna             37 tr (  2.4/ano, 146.86d) | bruto  +779.4bp liq +1093.9bp (win 43%) | CAGR +123.9% vs B&H  -79.2% | Sh +0.73 DD  -372% expo  98% | ctl +2213.9bp t=-1.73
+  P14 4h custo 0,25%/perna             37 tr (  2.4/ano, 146.86d) | bruto  +779.4bp liq +1093.9bp (win 43%) | CAGR +123.9% vs B&H  -79.2% | Sh +0.73 DD  -372% expo  98% | ctl +2304.1bp t=-2.05
+  P14 1D custo 0,25%/perna             37 tr (  2.4/ano, 146.86d) | bruto  +779.4bp liq +1093.9bp (win 43%) | CAGR +123.9% vs B&H  -79.2% | Sh +0.73 DD  -372% expo  98% | ctl +2174.3bp t=-1.57
+
+-- entrada na abertura da propria barra do sinal (SHIFT=0, cenario otimista)
+  P14 15min L1S1 sh0                   37 tr (  2.4/ano, 146.92d) | bruto  +945.8bp liq +1301.2bp (win 41%) | CAGR +140.5% vs B&H  -79.2% | Sh +0.79 DD  -310% expo  98% | ctl +2315.8bp t=-2.44
+  P14 30min L1S1 sh0                   37 tr (  2.4/ano, 146.92d) | bruto  +945.8bp liq +1301.2bp (win 41%) | CAGR +140.5% vs B&H  -79.2% | Sh +0.79 DD  -310% expo  98% | ctl +2092.8bp t=-2.20
+  P14 1h L1S1 sh0                      37 tr (  2.4/ano, 146.92d) | bruto  +945.8bp liq +1301.2bp (win 41%) | CAGR +140.5% vs B&H  -79.2% | Sh +0.79 DD  -310% expo  98% | ctl +2072.0bp t=-1.02
+  P14 4h L1S1 sh0                      37 tr (  2.4/ano, 146.92d) | bruto  +945.8bp liq +1301.2bp (win 41%) | CAGR +140.5% vs B&H  -79.2% | Sh +0.79 DD  -310% expo  98% | ctl +2388.0bp t=-3.21
+  P14 1D L1S1 sh0                      37 tr (  2.4/ano, 146.92d) | bruto  +945.8bp liq +1301.2bp (win 41%) | CAGR +140.5% vs B&H  -79.2% | Sh +0.79 DD  -310% expo  98% | ctl +2193.8bp t=-1.05
+
+-- lados separados (um lado so; sinal contrario apenas zera)
+  P14 15min L1S0 sh1                   18 tr (  1.2/ano,  37.94d) | bruto -1867.4bp liq -2003.2bp (win 6%) | CAGR  -34.7% vs B&H  -79.2% | Sh -2.36 DD  -645% expo  12% | ctl  -942.1bp t=-0.87
+  P14 15min L0S1 sh1                   19 tr (  1.3/ano, 250.05d) | bruto +3286.9bp liq +4105.8bp (win 79%) | CAGR +242.7% vs B&H  -79.2% | Sh +1.34 DD  -145% expo  86% | ctl +5861.8bp t=-2.44
+  P14 30min L1S0 sh1                   18 tr (  1.2/ano,  37.94d) | bruto -1867.4bp liq -2003.2bp (win 6%) | CAGR  -34.7% vs B&H  -79.2% | Sh -2.36 DD  -645% expo  12% | ctl -1021.1bp t=-0.93
+  P14 30min L0S1 sh1                   19 tr (  1.3/ano, 250.05d) | bruto +3286.9bp liq +4105.8bp (win 79%) | CAGR +242.7% vs B&H  -79.2% | Sh +1.34 DD  -145% expo  86% | ctl +5623.8bp t=-1.64
+  P14 1h L1S0 sh1                      18 tr (  1.2/ano,  37.94d) | bruto -1867.4bp liq -2003.2bp (win 6%) | CAGR  -34.7% vs B&H  -79.2% | Sh -2.36 DD  -645% expo  12% | ctl -1134.5bp t=-1.52
+  P14 1h L0S1 sh1                      19 tr (  1.3/ano, 250.05d) | bruto +3286.9bp liq +4105.8bp (win 79%) | CAGR +242.7% vs B&H  -79.2% | Sh +1.34 DD  -145% expo  86% | ctl +5186.8bp t=-0.74
+  P14 4h L1S0 sh1                      18 tr (  1.2/ano,  37.94d) | bruto -1867.4bp liq -2003.2bp (win 6%) | CAGR  -34.7% vs B&H  -79.2% | Sh -2.36 DD  -645% expo  12% | ctl  -755.4bp t=-0.80
+  P14 4h L0S1 sh1                      19 tr (  1.3/ano, 250.05d) | bruto +3286.9bp liq +4105.8bp (win 79%) | CAGR +242.7% vs B&H  -79.2% | Sh +1.34 DD  -145% expo  86% | ctl +5344.0bp t=-1.21
+  P14 1D L1S0 sh1                      18 tr (  1.2/ano,  37.94d) | bruto -1867.4bp liq -2003.2bp (win 6%) | CAGR  -34.7% vs B&H  -79.2% | Sh -2.36 DD  -645% expo  12% | ctl -1145.3bp t=-0.80
+  P14 1D L0S1 sh1                      19 tr (  1.3/ano, 250.05d) | bruto +3286.9bp liq +4105.8bp (win 79%) | CAGR +242.7% vs B&H  -79.2% | Sh +1.34 DD  -145% expo  86% | ctl +5303.8bp t=-1.67
+
+-- ablacao dos quatro filtros (1h e 4h): o que cada bloco acrescenta
+  1h so Hull                          553 tr ( 36.5/ano,   9.86d) | bruto   -73.2bp liq   -76.1bp (win 41%) | CAGR  -30.9% vs B&H  -79.2% | Sh -0.33 DD  -741% expo  98% | ctl   +48.7bp t=-1.34
+  1h so diario                       1878 tr (123.9/ano,   2.91d) | bruto   +20.3bp liq   +11.9bp (win 49%) | CAGR  -20.7% vs B&H  -79.2% | Sh -0.21 DD  -650% expo  99% | ctl    -4.6bp t=+0.60
+  1h so Ichimoku                       67 tr (  4.4/ano,  81.12d) | bruto  +447.6bp liq  +638.2bp (win 37%) | CAGR +141.9% vs B&H  -79.2% | Sh +0.80 DD  -314% expo  98% | ctl +1141.7bp t=-0.92
+  1h so MACD-Hull                     638 tr ( 42.1/ano,   8.56d) | bruto   -78.0bp liq   -88.6bp (win 47%) | CAGR  -14.8% vs B&H  -79.2% | Sh -0.14 DD  -547% expo  99% | ctl    +7.1bp t=-0.96
+  1h sem diario                        37 tr (  2.4/ano, 146.95d) | bruto  +627.5bp liq  +982.6bp (win 41%) | CAGR +121.3% vs B&H  -79.2% | Sh +0.72 DD  -351% expo  98% | ctl +2452.6bp t=-2.58
+  1h sem Ichimoku                     459 tr ( 30.3/ano,  11.87d) | bruto   -51.0bp liq   -50.2bp (win 42%) | CAGR  -14.4% vs B&H  -79.2% | Sh -0.14 DD  -526% expo  98% | ctl   +69.0bp t=-1.01
+  1h sem MACD                          47 tr (  3.1/ano, 115.60d) | bruto  +308.5bp liq  +592.4bp (win 36%) | CAGR +133.0% vs B&H  -79.2% | Sh +0.76 DD  -363% expo  98% | ctl +1891.8bp t=-2.67
+  4h so Hull                          553 tr ( 36.5/ano,   9.86d) | bruto   -73.2bp liq   -76.1bp (win 41%) | CAGR  -30.9% vs B&H  -79.2% | Sh -0.33 DD  -741% expo  98% | ctl   +29.5bp t=-1.12
+  4h so diario                       1878 tr (123.9/ano,   2.91d) | bruto   +20.3bp liq   +11.9bp (win 49%) | CAGR  -20.7% vs B&H  -79.2% | Sh -0.21 DD  -650% expo  99% | ctl    +7.3bp t=+0.24
+  4h so Ichimoku                       67 tr (  4.4/ano,  81.12d) | bruto  +447.6bp liq  +638.2bp (win 37%) | CAGR +141.9% vs B&H  -79.2% | Sh +0.80 DD  -314% expo  98% | ctl +1415.1bp t=-1.72
+  4h so MACD-Hull                     638 tr ( 42.1/ano,   8.56d) | bruto   -78.0bp liq   -88.6bp (win 47%) | CAGR  -14.8% vs B&H  -79.2% | Sh -0.14 DD  -547% expo  99% | ctl   -22.4bp t=-0.97
+  4h sem diario                        37 tr (  2.4/ano, 146.95d) | bruto  +627.5bp liq  +982.6bp (win 41%) | CAGR +121.3% vs B&H  -79.2% | Sh +0.72 DD  -351% expo  98% | ctl +2488.5bp t=-2.04
+  4h sem Ichimoku                     459 tr ( 30.3/ano,  11.87d) | bruto   -51.0bp liq   -50.2bp (win 42%) | CAGR  -14.4% vs B&H  -79.2% | Sh -0.14 DD  -526% expo  98% | ctl   +64.6bp t=-0.87
+  4h sem MACD                          47 tr (  3.1/ano, 115.60d) | bruto  +308.5bp liq  +592.4bp (win 36%) | CAGR +133.0% vs B&H  -79.2% | Sh +0.76 DD  -363% expo  98% | ctl +2106.1bp t=-1.73
+
+-- grade Period x TF
+
+  grade uvxyd: 55 celulas | liq>0: 50 | liq>0 e t>1: 0 | CAGR>B&H: 55
+   TF  PERIOD  LONG  SHORT  SHIFT  trades  por_ano  bp_bruto   bp_liq   win  cagr     bh  sharpe  expo   ctl_bp      t
+30min      14     0      1      1      19    1.253  3286.867 4105.809 0.789 2.427 -0.792   1.336 0.857 5623.794 -1.643
+   4h      14     0      1      1      19    1.253  3286.867 4105.809 0.789 2.427 -0.792   1.336 0.857 5343.998 -1.210
+   1h      14     0      1      1      19    1.253  3286.867 4105.809 0.789 2.427 -0.792   1.336 0.857 5186.841 -0.737
+15min      14     0      1      1      19    1.253  3286.867 4105.809 0.789 2.427 -0.792   1.336 0.857 5861.771 -2.442
+   1D      14     0      1      1      19    1.253  3286.867 4105.809 0.789 2.427 -0.792   1.336 0.857 5303.789 -1.666
+   4h       7     1      1      1      43    2.837  1030.847 1332.463 0.465 1.536 -0.792   0.841 0.982 2140.994 -1.303
+   1D       7     1      1      1      43    2.837  1030.847 1332.463 0.465 1.536 -0.792   0.841 0.982 2010.808 -1.275
+15min       7     1      1      1      43    2.837  1030.847 1332.457 0.465 1.536 -0.792   0.841 0.982 2053.023 -1.168
+   1h       7     1      1      1      43    2.837  1030.847 1332.457 0.465 1.536 -0.792   0.841 0.982 2155.784 -1.407
+30min       7     1      1      1      43    2.837  1030.847 1332.457 0.465 1.536 -0.792   0.841 0.982 2220.335 -1.034
+   4h      14     1      1      0      37    2.441   945.799 1301.174 0.405 1.405 -0.792   0.793 0.982 2388.005 -3.207
+   1D      14     1      1      0      37    2.441   945.799 1301.174 0.405 1.405 -0.792   0.793 0.982 2193.828 -1.052

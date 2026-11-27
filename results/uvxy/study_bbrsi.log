@@ -1,0 +1,42 @@
+
+===== uvxy =====
+  dados 2024-01-02 -> 2026-11-27  (0.01M m1)
+
+-- defaults (RSI 6 / BB 200) por timeframe
+  uvxy  15min RSI6/BB200 L1S1 |    6 tr (2.1/ano, 154d medios) | bruto   +1263bp liq   +1479bp (s/fund   +1253bp, win 67%) | CAGR +46.3% vs B&H -54.0% | Sh +0.41 DD -103% expo 87% | ctl    -108bp t=+1.10
+  uvxy  30min RSI6/BB200 L1S1 |    6 tr (2.1/ano, 154d medios) | bruto   +1263bp liq   +1479bp (s/fund   +1253bp, win 67%) | CAGR +46.3% vs B&H -54.0% | Sh +0.41 DD -103% expo 87% | ctl    -150bp t=+1.16
+  uvxy     1h RSI6/BB200 L1S1 |    6 tr (2.1/ano, 154d medios) | bruto   +1263bp liq   +1479bp (s/fund   +1253bp, win 67%) | CAGR +46.3% vs B&H -54.0% | Sh +0.41 DD -103% expo 87% | ctl    -129bp t=+1.14
+
+-- lados separados (defaults)
+
+-- grade RSI x BB x TF
+
+  grade: 30 celulas, 30 com retorno liquido > 0, 24 tambem acima do controle (t>1)
+   TF  RSILEN  BBLEN  trades  por_ano  bp_bruto   bp_liq    bp_sf  cagr     bh  sharpe   ctl_bp     t
+15min       6     50       6    2.066  2402.836 2802.063 2392.836 1.353 -0.540   0.886 -192.083 2.149
+30min       6     50       6    2.066  2402.836 2802.063 2392.836 1.353 -0.540   0.886  -16.706 1.781
+   1h       6     50       6    2.066  2402.836 2802.063 2392.836 1.353 -0.540   0.886 -179.911 2.024
+   1h       4    400       7    2.410  2509.377 2464.825 2499.377 0.961 -0.540   0.868 -293.091 2.215
+30min       4    400       7    2.410  2509.377 2464.825 2499.377 0.961 -0.540   0.868 -187.555 2.105
+15min       4    400       7    2.410  2509.377 2464.825 2499.377 0.961 -0.540   0.868 -162.419 1.990
+15min       9    400       5    1.721  2191.967 2085.968 2181.967 0.619 -0.540   0.623 -390.015 1.497
+30min       9    400       5    1.721  2191.967 2085.968 2181.967 0.619 -0.540   0.623 -474.482 1.630
+   1h       9    400       5    1.721  2191.967 2085.968 2181.967 0.619 -0.540   0.623 -415.415 1.545
+   1h       6    400       5    1.721  1896.045 1799.163 1886.045 0.496 -0.540   0.517 -323.769 1.277
+
+===== uvxyd =====
+  dados 2011-10-04 -> 2026-11-27  (0.00M m1)
+
+-- defaults (RSI 6 / BB 200) por timeframe
+
+-- lados separados (defaults)
+
+-- grade RSI x BB x TF
+
+  grade: 5 celulas, 5 com retorno liquido > 0, 5 tambem acima do controle (t>1)
+   TF  RSILEN  BBLEN  trades  por_ano  bp_bruto   bp_liq    bp_sf  cagr     bh  sharpe  ctl_bp     t
+15min       4     50       6    0.396  4369.646 6453.158 4359.646 2.349 -0.792   1.393 150.016 2.848
+30min       4     50       6    0.396  4369.646 6453.158 4359.646 2.349 -0.792   1.393 273.555 2.448
+   1h       4     50       6    0.396  4369.646 6453.158 4359.646 2.349 -0.792   1.393  82.983 2.825
+   4h       4     50       6    0.396  4369.646 6453.112 4359.646 2.349 -0.792   1.393  71.260 2.433
+   1D       4     50       6    0.396  4369.646 6453.112 4359.646 2.349 -0.792   1.393 -94.039 2.975
