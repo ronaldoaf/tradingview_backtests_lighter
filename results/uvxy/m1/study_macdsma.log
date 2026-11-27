@@ -1,0 +1,42 @@
+
+===== uvxy =====
+  dados 2016-01-01 -> 2026-11-27  (1.92M m1)
+
+-- defaults (12/26/9, SMA200) por timeframe
+  uvxy  15min 12/26/9 V200 QL1 L1S1 |  473 tr (43.3/ano, 8d) | bruto     +77bp liq     +76bp (s/fund     +67bp, win 37%) | CAGR +30.8% vs B&H -72.9% | Sh +0.25 DD -313% expo 100% | ctl     -14bp t=+0.99
+  uvxy  30min 12/26/9 V200 QL1 L1S1 |  230 tr (21.1/ano, 17d) | bruto     -78bp liq     -62bp (s/fund     -88bp, win 37%) | CAGR -19.4% vs B&H -72.9% | Sh -0.20 DD -666% expo 99% | ctl     -20bp t=-0.20
+  uvxy     1h 12/26/9 V200 QL1 L1S1 |   79 tr (7.2/ano, 50d) | bruto    +792bp liq    +880bp (s/fund    +782bp, win 51%) | CAGR +145.5% vs B&H -72.9% | Sh +0.85 DD -167% expo 98% | ctl     -21bp t=+1.57
+  uvxy     4h 12/26/9 V200 QL1 L1S1 |   20 tr (1.8/ano, 185d) | bruto    +726bp liq   +1179bp (s/fund    +716bp, win 45%) | CAGR +124.4% vs B&H -72.9% | Sh +0.80 DD -201% expo 93% | ctl     +89bp t=+0.83
+
+-- defaults com filtro sem defasagem (QL=0)
+  uvxy  15min 12/26/9 V200 QL0 L1S1 |  769 tr (70.5/ano, 5d) | bruto      -2bp liq      -8bp (s/fund     -12bp, win 33%) | CAGR -24.6% vs B&H -72.9% | Sh -0.26 DD -664% expo 100% | ctl      -9bp t=+0.03
+  uvxy  30min 12/26/9 V200 QL0 L1S1 |  351 tr (32.2/ano, 11d) | bruto     +22bp liq     +27bp (s/fund     +12bp, win 36%) | CAGR +1.5% vs B&H -72.9% | Sh +0.01 DD -330% expo 100% | ctl      -2bp t=+0.23
+  uvxy     1h 12/26/9 V200 QL0 L1S1 |  157 tr (14.4/ano, 25d) | bruto    +118bp liq    +148bp (s/fund    +108bp, win 36%) | CAGR +25.7% vs B&H -72.9% | Sh +0.21 DD -385% expo 99% | ctl      +6bp t=+0.47
+  uvxy     4h 12/26/9 V200 QL0 L1S1 |   33 tr (3.0/ano, 117d) | bruto    -272bp liq      -9bp (s/fund    -282bp, win 39%) | CAGR +98.9% vs B&H -72.9% | Sh +0.67 DD -292% expo 97% | ctl    +207bp t=-0.23
+
+-- lados separados (defaults)
+  uvxy  15min 12/26/9 V200 QL1 L1S0 |  237 tr (21.7/ano, 6d) | bruto     -66bp liq     -94bp (s/fund     -76bp, win 24%) | CAGR -45.0% vs B&H -72.9% | Sh -1.19 DD -678% expo 33% | ctl    -419bp t=+5.62
+  uvxy  15min 12/26/9 V200 QL1 L0S1 |  236 tr (21.6/ano, 11d) | bruto    +220bp liq    +248bp (s/fund    +210bp, win 51%) | CAGR +137.7% vs B&H -72.9% | Sh +1.34 DD -98% expo 67% | ctl    +404bp t=-2.61
+  uvxy  30min 12/26/9 V200 QL1 L1S0 |  115 tr (10.5/ano, 9d) | bruto    -412bp liq    -453bp (s/fund    -422bp, win 17%) | CAGR -56.9% vs B&H -72.9% | Sh -1.94 DD -931% expo 27% | ctl    -850bp t=+2.79
+  uvxy  30min 12/26/9 V200 QL1 L0S1 |  115 tr (10.5/ano, 25d) | bruto    +256bp liq    +329bp (s/fund    +246bp, win 58%) | CAGR +87.2% vs B&H -72.9% | Sh +0.96 DD -134% expo 72% | ctl    +825bp t=-4.04
+  uvxy     1h 12/26/9 V200 QL1 L1S0 |   39 tr (3.6/ano, 20d) | bruto    -245bp liq    -323bp (s/fund    -255bp, win 28%) | CAGR -24.0% vs B&H -72.9% | Sh -0.85 DD -351% expo 20% | ctl   -1934bp t=+3.82
+  uvxy     1h 12/26/9 V200 QL1 L0S1 |   40 tr (3.7/ano, 78d) | bruto   +1804bp liq   +2053bp (s/fund   +1794bp, win 72%) | CAGR +223.0% vs B&H -72.9% | Sh +1.61 DD -77% expo 78% | ctl   +2104bp t=-0.13
+  uvxy     4h 12/26/9 V200 QL1 L1S0 |   10 tr (0.9/ano, 46d) | bruto   -2400bp liq   -2561bp (s/fund   -2410bp, win 10%) | CAGR -24.1% vs B&H -72.9% | Sh -1.67 DD -395% expo 11% | ctl   -4277bp t=+1.60
+  uvxy     4h 12/26/9 V200 QL1 L0S1 |   10 tr (0.9/ano, 325d) | bruto   +3853bp liq   +4919bp (s/fund   +3843bp, win 80%) | CAGR +195.7% vs B&H -72.9% | Sh +1.29 DD -142% expo 82% | ctl   +5409bp t=-0.47
+
+-- grade TF x MACD x SMA lenta x filtro
+
+  grade: 212 celulas, 158 com retorno liquido > 0, 61 tambem acima do controle (t>1), 158 tambem acima do buy&hold
+TF  FAST  SLOW  SIG  VSLOW  QL  trades  por_ano  bp_bruto   bp_liq    bp_sf  cagr     bh  sharpe   ctl_bp     t
+1D     8    17    9     50   1       5    0.458  3387.367 5772.836 3377.367 2.513 -0.729   1.195 1652.916 1.718
+4h    24    52   18    400   1       6    0.550  3214.906 4954.065 3204.906 1.874 -0.729   1.067   78.770 2.114
+1D     8    17    9    100   0       9    0.825  3004.847 4173.169 2994.847 1.763 -0.729   0.985  796.509 1.720
+1D    12    26    5    100   0      11    1.008  3336.738 4171.176 3326.738 1.521 -0.729   0.951  331.235 2.083
+1D     5    35    5    200   0       8    0.733  2750.071 4007.670 2740.071 1.446 -0.729   0.958   48.718 1.938
+1D    19    39    9    100   0       6    0.550  2537.354 3985.432 2527.354 1.390 -0.729   0.947  159.790 1.534
+4h    24    52   18    200   1       9    0.825  2701.699 3917.415 2691.699 2.347 -0.729   1.147  671.505 1.635
+4h    24    52   18    100   1       9    0.825  2537.171 3751.168 2527.171 2.293 -0.729   1.131  948.430 1.528
+1D    12    26    9    100   0       9    0.825  2592.916 3729.930 2582.916 1.891 -0.729   1.023  818.819 1.539
+4h    19    39    9    200   1      11    1.008  2669.206 3583.658 2659.206 2.121 -0.729   1.091  511.794 1.611
+1D    12    26    5     50   0      13    1.191  2831.442 3533.417 2821.442 1.850 -0.729   1.007  535.763 1.955
+1D    19    39    9     50   0       8    0.733  2206.719 3347.047 2196.719 1.469 -0.729   0.907  218.443 1.297

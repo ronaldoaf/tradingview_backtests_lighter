@@ -1,0 +1,34 @@
+
+===== uvxy =====
+  dados 2016-01-01 -> 2026-11-27  (1.92M m1)
+
+-- defaults (RSI 6 / BB 200) por timeframe
+  uvxy  15min RSI6/BB200 L1S1 |  292 tr (26.8/ano, 14d medios) | bruto     +69bp liq     +61bp (s/fund     +59bp, win 62%) | CAGR +29.5% vs B&H -72.9% | Sh +0.24 DD -357% expo 99% | ctl     -18bp t=+0.49
+  uvxy  30min RSI6/BB200 L1S1 |  144 tr (13.2/ano, 27d medios) | bruto    +318bp liq    +313bp (s/fund    +308bp, win 65%) | CAGR +70.1% vs B&H -72.9% | Sh +0.50 DD -224% expo 99% | ctl     -10bp t=+1.01
+  uvxy     1h RSI6/BB200 L1S1 |   62 tr (5.7/ano, 63d medios) | bruto    +876bp liq    +882bp (s/fund    +866bp, win 65%) | CAGR +67.3% vs B&H -72.9% | Sh +0.48 DD -187% expo 99% | ctl     +42bp t=+1.37
+  uvxy     4h RSI6/BB200 L1S1 |   16 tr (1.5/ano, 200d medios) | bruto   +3637bp liq   +3742bp (s/fund   +3627bp, win 75%) | CAGR +102.8% vs B&H -72.9% | Sh +0.84 DD -278% expo 80% | ctl     +16bp t=+2.57
+
+-- lados separados (defaults)
+  uvxy  15min RSI6/BB200 L1S0 |  146 tr (13.4/ano, 13d medios) | bruto    -226bp liq    -279bp (s/fund    -236bp, win 46%) | CAGR -45.4% vs B&H -72.9% | Sh -1.31 DD -705% expo 48% | ctl    -661bp t=+3.36
+  uvxy  15min RSI6/BB200 L0S1 |  146 tr (13.4/ano, 14d medios) | bruto    +365bp liq    +402bp (s/fund    +355bp, win 79%) | CAGR +137.3% vs B&H -72.9% | Sh +1.33 DD -250% expo 52% | ctl    +661bp t=-2.69
+  uvxy  30min RSI6/BB200 L1S0 |   72 tr (6.6/ano, 26d medios) | bruto    -327bp liq    -422bp (s/fund    -337bp, win 47%) | CAGR -38.0% vs B&H -72.9% | Sh -1.11 DD -597% expo 46% | ctl   -1279bp t=+3.27
+  uvxy  30min RSI6/BB200 L0S1 |   72 tr (6.6/ano, 29d medios) | bruto    +962bp liq   +1048bp (s/fund    +952bp, win 83%) | CAGR +174.5% vs B&H -72.9% | Sh +1.57 DD -221% expo 52% | ctl   +1268bp t=-0.91
+  uvxy     1h RSI6/BB200 L1S0 |   31 tr (2.8/ano, 59d medios) | bruto    -734bp liq    -939bp (s/fund    -744bp, win 39%) | CAGR -38.3% vs B&H -72.9% | Sh -1.21 DD -572% expo 45% | ctl   -2605bp t=+3.43
+  uvxy     1h RSI6/BB200 L0S1 |   31 tr (2.8/ano, 68d medios) | bruto   +2487bp liq   +2702bp (s/fund   +2477bp, win 90%) | CAGR +171.2% vs B&H -72.9% | Sh +1.51 DD -178% expo 53% | ctl   +2492bp t=+0.43
+  uvxy     4h RSI6/BB200 L1S0 |    8 tr (0.7/ano, 166d medios) | bruto   +1239bp liq    +680bp (s/fund   +1229bp, win 50%) | CAGR -11.5% vs B&H -72.9% | Sh -0.33 DD -323% expo 33% | ctl   -5130bp t=+3.88
+  uvxy     4h RSI6/BB200 L0S1 |    8 tr (0.7/ano, 235d medios) | bruto   +6035bp liq   +6804bp (s/fund   +6025bp, win 100%) | CAGR +129.1% vs B&H -72.9% | Sh +1.76 DD -108% expo 47% | ctl   +5013bp t=+1.29
+
+-- grade RSI x BB x TF
+
+  grade: 64 celulas, 59 com retorno liquido > 0, 37 tambem acima do controle (t>1)
+TF  RSILEN  BBLEN  trades  por_ano  bp_bruto   bp_liq    bp_sf  cagr     bh  sharpe   ctl_bp     t
+4h       9    400       6    0.550  4647.612 4726.382 4637.612 0.474 -0.729   0.628 -169.397 1.866
+4h       6    400       6    0.550  4332.981 4383.757 4322.981 0.446 -0.729   0.598 -230.445 1.726
+4h       9    200      14    1.283  3768.322 4245.558 3758.322 1.529 -0.729   1.100   77.832 2.544
+4h       6    200      16    1.466  3637.023 3741.945 3627.023 1.028 -0.729   0.841   16.119 2.567
+4h       6    200      16    1.466  3637.023 3741.945 3627.023 1.028 -0.729   0.841  -28.301 2.446
+1h      14    200      18    1.649  3276.634 3539.222 3266.634 1.866 -0.729   1.751  -52.390 2.323
+1h      14    100       9    0.825  2504.766 3379.552 2494.766 1.175 -0.729   0.914 -712.242 2.251
+4h       9     50       8    0.733  2160.371 3136.190 2150.371 1.219 -0.729   0.833  128.218 1.396
+4h       6    100      22    2.016  2618.798 2994.903 2608.798 2.446 -0.729   1.187  -31.088 2.591
+4h       4    400       7    0.641  3054.699 2798.753 3044.699 0.307 -0.729   0.409 -630.252 1.384

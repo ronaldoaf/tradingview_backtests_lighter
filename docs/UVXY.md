@@ -4,16 +4,17 @@
 capturando o decaimento estrutural do ETF; o controle aleatório de mesmo lado e mesma duração
 faz o mesmo ou melhor (t ≤ 1 vs controle), ou a amostra tem 5–15 trades em 15 anos.
 
-## Dados (`scripts/fetch_uvxy.py`, Yahoo, split-ajustado)
+## Dados (`scripts/fetch_uvxy_alpaca.py` e `scripts/fetch_uvxy.py`, split-ajustados)
 
 | Série | Ativo no código | Período | Barras |
 | --- | --- | --- | --- |
-| 1h (só pregão regular) | `uvxy` | 2024-01-02 → 2026-11-27 | 5.080 |
+| **M1 Alpaca (SIP, com pré/pós)** | `uvxy` | 2016-01-01 → 2026-11-27 | 1,92 M |
+| 1h Yahoo (pregão regular) | `uvxyh` | 2024-01-02 → 2026-11-27 | 5.080 |
 | diário | `uvxyd` | 2011-10-04 → 2026-11-27 | 3.810 |
 
-Não há M1 público de UVXY com histórico longo; a série é servida no lugar do M1, então stops
-intrabar são resolvidos na granularidade da barra (stop primeiro) e TFs menores que a barra
-colapsam para ela (15min=30min=1h em `uvxy`; todos os TFs = 1D em `uvxyd`).
+O M1 da Alpaca (requer `ALPACA_KEY`/`ALPACA_SECRET`) é a série principal: stops intrabar no minuto,
+como nos outros ativos. As séries 1h/diária do Yahoo foram a primeira rodada; nelas os TFs menores
+que a barra colapsam para ela.
 Custos: spread assumido 5 bp/perna; funding 12,1%/ano pago pelo long (média medida na AlphaX,
 1,1 bp/8h, jun–nov/2026).
 
@@ -26,7 +27,28 @@ Custos: spread assumido 5 bp/perna; funding 12,1%/ano pago pelo long (média med
 
 Bater buy&hold é trivial (qualquer estratégia com short bate). O filtro real é o controle aleatório.
 
-## Resultado por estratégia (13 rodadas; 3Commas ignorada por ser template; ORB30 não roda sem M1)
+## Rodada principal — M1 Alpaca 2016–2026 (B&H −72,9%/ano), logs em `results/uvxy/m1/`
+
+| Estratégia | Resultado | Leitura |
+| --- | --- | --- |
+| BB+RSI | 59/64 liq>0, 37 com t>1 | o short sozinho tem t≈0 vs controle; o t>1 vem do long perder menos que o long aleatório. 6–18 trades em 4h/1h |
+| MACD+SMA200 | 158/212 liq>0, 61 com t>1 | as melhores têm 5–11 trades em 11 anos |
+| Engolfo+PSAR (1h) | R médio negativo na maioria dos anos | reprova |
+| Flawless Victory | 0/109 liq>0 | reprova |
+| Flip MA | 152/360 liq>0, retornos pequenos | reprova |
+| Gold Trail | 96/216 R_liq>0 | sem célula que bata o controle de forma consistente |
+| Ichimoku+Hull+MACD | 39/55 liq>0, só 1 com t>1 | é o short do decaimento |
+| MACD Confluence | 4/864 R_liq>0 | reprova |
+| RSI Divergence | 1/115 liq>0 (CAGR −16%) | reprova |
+| Serdar AO/Stoch RSI | 89/720 R_liq>0 | reprova |
+| Trendline Angle | 55/432 R_liq>0 | reprova |
+| Lote 3 (TOTT/OCC/UT/MACD-RE/ANN) | 3/470 com t>2 | múltiplos testes; o resto é o short do decaimento |
+| Lote 7 | 0/50 liq>0 | reprova |
+| ORB30 (NY) | −2,5%/ano, p vs controle 0,26 | só o último terço positivo; reprova |
+
+Conclusão mantida: nenhuma passa.
+
+## Primeira rodada — 1h/diário Yahoo (13 rodadas; 3Commas ignorada por ser template; ORB30 ficou para o M1)
 
 | Estratégia | uvxy 1h | uvxyd diário | Leitura |
 | --- | --- | --- | --- |

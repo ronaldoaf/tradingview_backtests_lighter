@@ -19,17 +19,17 @@ import numpy as np, pandas as pd
 D = os.environ.get('EDGE_ROOT') or os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(D, 'scripts'))
 CUSTO = {'us500': 1.2e-4, 'us100': 1.2e-4, 'us30': 1.2e-4, 'us2000': 1.2e-4, 'xau': 0.75e-4, 'wti': 1.0e-4, 'btc': 0.5e-4, 'eth': 0.35e-4,
-         'uvxy': 5e-4, 'uvxyd': 5e-4}
-FUND = {'us500': 3.1, 'us100': 4.5, 'us30': 8.4, 'us2000': 8.4, 'xau': 13.8, 'wti': 67.7, 'btc': 10.9, 'eth': 11.2, 'uvxy': 12.1, 'uvxyd': 12.1}  # funding anual medio que o long paga na Lighter (%)
+         'uvxy': 5e-4, 'uvxyd': 5e-4, 'uvxyh': 5e-4}
+FUND = {'us500': 3.1, 'us100': 4.5, 'us30': 8.4, 'us2000': 8.4, 'xau': 13.8, 'wti': 67.7, 'btc': 10.9, 'eth': 11.2, 'uvxy': 12.1, 'uvxyd': 12.1, 'uvxyh': 12.1}  # funding anual medio que o long paga na Lighter (%)
 # eth: funding medido (11.2%); spread 0.35bp escalado da medicao de $5k (0.25bp, onde btc da 0.4bp vs 0.5bp aqui)
 
 # uvxy: perp de UVXY na AlphaX; funding medio medido 1,1bp/8h (~12%/ano, long paga); spread assumido 5bp/perna.
 
 
 def load_uvxy(name):
-    """UVXY (Yahoo, split-ajustado), servido no lugar do M1: 'uvxy' = barras de 1h (2024-2026),
+    """UVXY (Yahoo, split-ajustado), servido no lugar do M1: 'uvxy' = M1 Alpaca (2016-2026), 'uvxyh' = 1h Yahoo (2024-2026),
     'uvxyd' = barras diarias (2011-2026). Stops intrabar ficam resolvidos na granularidade da barra."""
-    f = {'uvxy': 'uvxy_1h', 'uvxyd': 'uvxy_1d'}[name]
+    f = {'uvxy': 'uvxy_1m', 'uvxyh': 'uvxy_1h', 'uvxyd': 'uvxy_1d'}[name]
     x = pd.read_parquet(os.path.join(D, 'data', 'uvxy', f + '.parquet'))
     x = x[~x.index.duplicated()].sort_index()
     return x[x.high >= x.low]

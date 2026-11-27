@@ -1,0 +1,56 @@
+
+================= uvxy =================
+  M1 2016-01-01 -> 2026-11-27  (1.92M barras)
+
+-- defaults (RSI 9, pivot 1/3, saida RSI>80 ou divergencia de baixa) por timeframe
+  15min RSI9 NONE pyr1               1154 tr (105.7/ano,   2.26d) | bruto   -55.1bp liq   -72.6bp (win 55%) | CAGR  -67.0% vs B&H  -72.9% | Sh -1.39 DD -1290% expo  63% | ctl   -63.9bp t=-0.40
+  30min RSI9 NONE pyr1                575 tr ( 52.7/ano,   4.42d) | bruto  -109.2bp liq  -133.8bp (win 53%) | CAGR  -62.5% vs B&H  -72.9% | Sh -1.37 DD -1132% expo  62% | ctl  -109.3bp t=-0.52
+  1h RSI9 NONE pyr1                   285 tr ( 26.1/ano,   8.80d) | bruto  -219.2bp liq  -258.4bp (win 50%) | CAGR  -61.4% vs B&H  -72.9% | Sh -1.43 DD -1099% expo  63% | ctl  -217.3bp t=-0.41
+  4h RSI9 NONE pyr1                    73 tr (  6.7/ano,  34.58d) | bruto  -615.7bp liq  -740.3bp (win 45%) | CAGR  -58.6% vs B&H  -72.9% | Sh -1.41 DD -1031% expo  63% | ctl  -778.5bp t=+0.07
+  1D RSI9 NONE pyr1                    12 tr (  1.1/ano, 222.58d) | bruto -3697.2bp liq -4445.1bp (win 17%) | CAGR  -63.2% vs B&H  -72.9% | Sh -1.49 DD -1105% expo  68% | ctl -4908.3bp t=+0.47
+
+-- com pyramiding=2 (como o Pine publicado)
+  15min RSI9 NONE pyr2               1154 tr (105.7/ano,   2.26d) | bruto    +6.5bp liq   -11.0bp (win 57%) | CAGR  -96.1% vs B&H  -72.9% | Sh -2.34 DD -3644% expo  63% | ctl   -63.2bp t=+2.06
+  30min RSI9 NONE pyr2                575 tr ( 52.7/ano,   4.42d) | bruto   -13.4bp liq   -38.0bp (win 57%) | CAGR  -91.8% vs B&H  -72.9% | Sh -1.99 DD -2820% expo  62% | ctl  -117.5bp t=+1.51
+  1h RSI9 NONE pyr2                   285 tr ( 26.1/ano,   8.80d) | bruto   -97.3bp liq  -136.4bp (win 51%) | CAGR  -88.0% vs B&H  -72.9% | Sh -1.75 DD -2415% expo  63% | ctl  -213.9bp t=+0.56
+  4h RSI9 NONE pyr2                    73 tr (  6.7/ano,  34.58d) | bruto  -393.7bp liq  -518.3bp (win 48%) | CAGR  -83.0% vs B&H  -72.9% | Sh -1.62 DD -2020% expo  63% | ctl  -922.2bp t=+1.01
+  1D RSI9 NONE pyr2                    12 tr (  1.1/ano, 222.58d) | bruto -2539.6bp liq -3287.5bp (win 33%) | CAGR  -87.0% vs B&H  -72.9% | Sh -1.53 DD -2256% expo  68% | ctl -4157.0bp t=+0.71
+
+-- gatilhos separados: divergencia CLASSICA vs OCULTA (so para ver se o sinal diz algo)
+  15min so classica                   521 tr ( 47.7/ano,   2.81d) | bruto   -88.8bp liq  -108.1bp (win 53%) | CAGR  -46.0% vs B&H  -72.9% | Sh -1.54 DD  -740% expo  34% | ctl   -75.6bp t=-0.64
+  15min so oculta                     976 tr ( 89.4/ano,   2.10d) | bruto   -38.7bp liq   -55.7bp (win 56%) | CAGR  -54.5% vs B&H  -72.9% | Sh -1.18 DD  -923% expo  49% | ctl   -55.5bp t=-0.01
+  30min so classica                   294 tr ( 26.9/ano,   5.25d) | bruto  -101.0bp liq  -128.4bp (win 52%) | CAGR  -38.4% vs B&H  -72.9% | Sh -1.28 DD  -608% expo  37% | ctl  -139.1bp t=+0.18
+  30min so oculta                     456 tr ( 41.8/ano,   4.27d) | bruto  -114.8bp liq  -139.0bp (win 52%) | CAGR  -54.8% vs B&H  -72.9% | Sh -1.38 DD  -909% expo  48% | ctl  -125.2bp t=-0.26
+  1h so classica                      147 tr ( 13.5/ano,  10.46d) | bruto  -223.4bp liq  -268.1bp (win 52%) | CAGR  -40.6% vs B&H  -72.9% | Sh -1.52 DD  -623% expo  39% | ctl  -263.3bp t=-0.03
+  1h so oculta                        232 tr ( 21.3/ano,   8.06d) | bruto  -188.3bp liq  -225.0bp (win 50%) | CAGR  -49.6% vs B&H  -72.9% | Sh -1.29 DD  -809% expo  47% | ctl  -183.5bp t=-0.31
+  4h so classica                       41 tr (  3.8/ano,  34.64d) | bruto  -285.7bp liq  -410.5bp (win 46%) | CAGR  -26.0% vs B&H  -72.9% | Sh -0.94 DD  -415% expo  36% | ctl  -783.1bp t=+0.61
+  4h so oculta                         55 tr (  5.0/ano,  35.53d) | bruto  -714.6bp liq  -842.4bp (win 45%) | CAGR  -50.1% vs B&H  -72.9% | Sh -1.44 DD  -774% expo  49% | ctl  -781.8bp t=-0.12
+
+-- variantes de trilha do proprio script (PERC 5% e ATR 5xATR, com o bug do multiplicador)
+  15min trilha PERC                  1067 tr ( 97.8/ano,   2.12d) | bruto   -61.3bp liq   -78.4bp (win 30%) | CAGR  -63.2% vs B&H  -72.9% | Sh -1.42 DD -1144% expo  55% | ctl   -60.6bp t=-0.99
+  15min trilha ATR                   1215 tr (111.3/ano,   1.67d) | bruto   -53.5bp liq   -69.0bp (win 27%) | CAGR  -64.0% vs B&H  -72.9% | Sh -1.40 DD -1164% expo  48% | ctl   -45.4bp t=-1.05
+  30min trilha PERC                   681 tr ( 62.4/ano,   2.55d) | bruto   -77.8bp liq   -96.2bp (win 30%) | CAGR  -51.8% vs B&H  -72.9% | Sh -1.41 DD  -836% expo  44% | ctl   -69.4bp t=-0.77
+  30min trilha ATR                    604 tr ( 55.3/ano,   3.38d) | bruto   -99.3bp liq  -120.5bp (win 25%) | CAGR  -60.1% vs B&H  -72.9% | Sh -1.40 DD -1079% expo  51% | ctl  -106.6bp t=-0.30
+  1h trilha PERC                      430 tr ( 39.4/ano,   2.93d) | bruto  -102.9bp liq  -122.6bp (win 30%) | CAGR  -47.8% vs B&H  -72.9% | Sh -1.68 DD  -754% expo  32% | ctl   -78.7bp t=-0.71
+  1h trilha ATR                       313 tr ( 28.7/ano,   6.84d) | bruto  -206.0bp liq  -238.7bp (win 24%) | CAGR  -65.9% vs B&H  -72.9% | Sh -1.60 DD -1206% expo  53% | ctl  -180.6bp t=-0.83
+  4h trilha PERC                      141 tr ( 12.9/ano,   4.21d) | bruto    -5.3bp liq   -29.3bp (win 26%) | CAGR  -31.2% vs B&H  -72.9% | Sh -1.85 DD  -450% expo  15% | ctl   -81.5bp t=+0.49
+  4h trilha ATR                        76 tr (  7.0/ano,  25.75d) | bruto -1008.9bp liq -1104.3bp (win 14%) | CAGR  -62.2% vs B&H  -72.9% | Sh -1.66 DD -1078% expo  49% | ctl  -456.6bp t=-1.26
+  1D trilha PERC                       37 tr (  3.4/ano,  10.14d) | bruto  -797.5bp liq  -841.1bp (win 24%) | CAGR  -23.8% vs B&H  -72.9% | Sh -2.28 DD  -309% expo   9% | ctl  -407.8bp t=-1.65
+  1D trilha ATR                        18 tr (  1.6/ano, 136.39d) | bruto -4234.7bp liq -4696.9bp (win 0%) | CAGR  -66.1% vs B&H  -72.9% | Sh -1.61 DD -1181% expo  61% | ctl -3056.5bp t=-1.75
+
+-- grade RSI x pivot x nivel de alvo x TF
+
+  grade uvxy: 115 celulas | liq>0: 1 | liq>0 e t>1: 1 | CAGR>B&H: 110
+   TF  LEN   LBR  TPLEVEL SLTYPE  PYR         gat  trades  por_ano  bp_bruto  bp_liq   win   cagr     bh  sharpe  expo    ctl_bp      t
+   1D    9 5.000   70.000   NONE    1 bull+oculta      29    2.658   355.221 145.631 0.448 -0.162 -0.729  -0.382 0.433 -1428.122  1.403
+15min    9   NaN      NaN   NONE    2 bull+oculta    1154  105.729     6.545 -10.959 0.573 -0.961 -0.729  -2.335 0.626   -63.245  2.061
+15min    5 5.000   70.000   NONE    1 bull+oculta    2852  261.298    -7.598 -19.101 0.611 -0.498 -0.729  -1.317 0.290   -18.485 -0.081
+30min    5 5.000   70.000   NONE    1 bull+oculta    1507  138.070    -9.904 -22.681 0.604 -0.377 -0.729  -0.982 0.297   -27.128  0.371
+15min    9 5.000   70.000   NONE    1 bull+oculta    1944  178.108    -9.979 -23.180 0.611 -0.477 -0.729  -0.987 0.424   -25.212  0.157
+15min    9 8.000   70.000   NONE    1 bull+oculta    1943  178.016   -11.492 -24.632 0.603 -0.482 -0.729  -1.063 0.418   -29.115  0.359
+30min    5 3.000   70.000   NONE    1 bull+oculta    1267  116.082   -11.823 -24.732 0.627 -0.344 -0.729  -1.015 0.252   -28.326  0.203
+30min    5 8.000   70.000   NONE    1 bull+oculta    1509  138.254   -12.891 -25.521 0.614 -0.368 -0.729  -1.017 0.281   -24.562 -0.075
+15min    5 5.000   80.000   NONE    1 bull+oculta    2344  214.756   -12.935 -25.630 0.581 -0.533 -0.729  -1.131 0.436   -26.659  0.116
+30min    9 8.000   70.000   NONE    1 bull+oculta     998   91.436   -11.798 -27.139 0.607 -0.310 -0.729  -0.689 0.396   -44.185  0.623
+15min    5 8.000   70.000   NONE    1 bull+oculta    2858  261.848   -15.764 -27.298 0.603 -0.559 -0.729  -1.526 0.296   -19.047 -1.051
+15min    5 3.000   70.000   NONE    1 bull+oculta    2442  223.734   -16.851 -28.414 0.615 -0.517 -0.729  -1.477 0.260   -17.458 -1.690
