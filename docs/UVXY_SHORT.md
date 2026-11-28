@@ -15,7 +15,8 @@ Três ressalvas pesam na decisão:
 2. **É em boa parte beta de bolsa.** Com 25% vendido, o beta semanal contra o S&P é ~1 e a
    correlação é 0,6. O alfa sobre o S&P é de 10%/ano com t = 2,1 no período todo, e cai
    para 6,6%/ano com t = 1,1 em 2019–2026. O Sharpe (0,93) é parecido com o de comprar o
-   S&P (0,82).
+   S&P (0,82). Vender SPY junto (§11) tira esse beta e corta a cauda, mas não melhora o Sharpe
+   sem o funding do vendido.
 3. **Picos em contango não têm defesa.** O sinal é diário. Nos 45 dias em que o UVXY
    subiu mais de 20% estando vendido, a estratégia perdeu, somando os logs, mais do que
    ganhou no período inteiro. Junho/2020 (−20% num dia, com 0,3x) e novembro/2026 são
@@ -288,7 +289,7 @@ com hedge cheio). Mas na AlphaX o vendido de SPX500 recebe ~8,7%/ano de funding.
 o hedge cheio (beta 0,2) dá +20,8% a.a., queda de −27%, Sharpe 1,22 e alfa com t = 4,2 (OOS:
 Sharpe 0,84). É a melhor variante no papel, mas depende de um funding medido por só 5
 meses numa corretora nova. É o mesmo carry de funding já estudado em
-`vol_pumping/IDEIAS_CARRY_FUNDING_ALTCOINS.md`, não decaimento do UVXY.
+`vol_pumping/IDEIAS_CARRY_FUNDING_ALTCOINS.md`, não decaimento do UVXY. A §11 detalha essa combinação.
 
 ## 10. Tamanho pela volatilidade do próprio UVXY (`s11_tamanho_vol.txt`, `s12_vol_robustez.txt`)
 
@@ -345,6 +346,73 @@ sintético ao mesmo tempo, e nenhuma faz isso sem piorar a queda máxima em algu
 com vol alta (EWMA de 5 dias, w proporcional à vol, até 0,75) é uma variante a acompanhar em paper ao
 lado da regra, não a substituí-la: +0,1 de Sharpe com P ≈ 0,1 no real e zero no sintético.
 
+## 11. Vendido no UVXY e no SPY ao mesmo tempo (`s13_uvxy_spy.txt`, `s14_uvxy_spy_detalhe.txt`)
+
+A perna UVXY é a regra (25% vendido quando VIX/VIX3M < 1). A perna SPY é vendida com nocional
+`h × 4,4 × w_uvxy`, onde 4,4 é o beta diário do UVXY ao S&P. Com h = 0,5 o SPY vendido é ~0,55× o
+patrimônio, e com h = 1 é ~1,1×. O rebalanceio é diário, com 2 bp por perna. O funding recebido
+pelo vendido em SPY foi testado em três níveis: 0, 3,6%/ano (SPY na Lighter, spread ~0,3 bp) e
+8%/ano (SPY e SPX500 na AlphaX, medido em jun–nov/2026).
+
+**Sem funding, o hedge só tira retorno.** Com o funding da Lighter, h = 0,5 mantém o Sharpe e
+corta a cauda. Com o da AlphaX, melhora tudo, mas isso é carry de funding de 5 meses de dados.
+
+| Variante (UVXY 25%) | CAGR | Queda | Sharpe | Pior dia | Beta S&P | Sharpe OOS | Sharpe sint. | Queda sint. |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| **só UVXY** | **22,5%** | **−26,8%** | **0,93** | **−16,7%** | **0,95** | **0,77** | **0,97** | **−25,9%** |
+| h = 0,5, sem funding | 16,6% | −27,3% | 0,87 | −13,5% | 0,57 | 0,61 | 0,98 | −22,1% |
+| h = 1, sem funding | 10,5% | −36,5% | 0,68 | −10,4% | 0,19 | 0,25 | 0,79 | −27,1% |
+| h = 0,5, funding 3,6% (Lighter) | 18,8% | −24,4% | 0,96 | −13,5% | 0,57 | 0,71 | 1,10 | −20,0% |
+| h = 1, funding 3,6% (Lighter) | 14,6% | −30,6% | 0,90 | −10,4% | 0,19 | 0,50 | 1,06 | −20,9% |
+| h = 0,5, funding 8% (AlphaX) | 21,5% | −23,6% | 1,07 | −13,5% | 0,57 | 0,84 | 1,23 | −18,5% |
+| h = 1, funding 8% (AlphaX) | 19,9% | −28,0% | 1,17 | −10,3% | 0,19 | 0,80 | 1,39 | −16,9% |
+
+O que não funciona:
+
+- **Vender SPY também com o UVXY zerado** ("sempre") ou **só com o UVXY zerado** (aposta de crise
+  em backwardation) piora tudo: Sharpe 0,61 e 0,73 com h = 1 e funding 3,6%, quedas de −42% e
+  −34%. A backwardation dura pouco e o SPY costuma voltar logo depois.
+- **Beta móvel de 60 ou 120 pregões** em vez do 4,4 fixo: Sharpe 0,84–0,86 contra 0,90. O beta
+  estimado fica em ~6 e vende SPY demais.
+- **Tirar o filtro e só usar o hedge**: queda de −53% com h = 0,5. O hedge não substitui o filtro.
+- **Mesma vol da base** (subir as duas pernas até a vol de 25% sozinho): com funding 3,6% o Sharpe
+  fica em 0,92 (h = 0,5) e 0,87 (h = 1), e a queda piora para −32% e −43%. O hedge não cria
+  retorno por unidade de risco. Ele troca CAGR por cauda menor.
+
+**Onde o hedge (h = 0,5, funding 3,6%) ajuda e onde custa:**
+
+| Período | só UVXY | com hedge | SPY |
+| --- | ---: | ---: | ---: |
+| 2008 (sint.) | +3,5% | +20,0% | −38,3% |
+| 2022 (bear) | −4,5% | +13,3% | −19,5% |
+| T4 2018 | −20,5% | −13,5% | |
+| dez/15–fev/16 | −20,0% | −15,4% | |
+| nov/2026 | −10,0% | −6,9% | |
+| 2013 | +28,7% | +17,8% | +29,7% |
+| 2019 | +22,4% | +14,5% | +28,8% |
+| 2020 | +2,9% | −7,7% | +16,2% |
+| 2024 | +4,7% | −2,1% | +23,3% |
+| 2025 | +23,7% | +13,7% | +16,4% |
+
+Nos 8 piores dias da regra, o hedge corta ~20% da perda (jun/2020 −16,7% → −13,5%; 05/11/2026
+−9,4% → −7,0%). Não zera, porque o salto do UVXY nesses dias é maior que 4,4× a queda do S&P.
+
+Queda em janelas de 5 anos (bootstrap em blocos de 60 pregões, 4.000 trajetórias):
+
+| Variante | CAGR mediano | Queda mediana | Pior 10% | P(queda > 40%) real | P(queda > 40%) sint. |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| só UVXY | 23,4% | −27,5% | −39,1% | 8,5% | 3,4% |
+| h = 0,5, funding 3,6% | 19,9% | −22,6% | −32,8% | 2,9% | 0,3% |
+| h = 1, funding 3,6% | 15,4% | −21,2% | −31,4% | 1,9% | 0,2% |
+| h = 0,5, funding 8% | 22,3% | −22,2% | −31,3% | 1,5% | 0,2% |
+
+**Conclusão:** vender SPY junto com o UVXY é um seguro, não uma fonte de retorno. Com h = 0,5 na
+Lighter, o Sharpe fica igual (0,96 contra 0,93), a chance de uma queda acima de 40% em 5 anos cai
+de 8,5% para 2,9%, e 2008 e 2022 viram anos positivos. O custo é ~3,5 pontos de CAGR e anos de alta
+forte da bolsa bem piores (2020 e 2024 negativos). No OOS 2019–2026 o hedge perde um pouco (0,71
+contra 0,77). Vale como versão conservadora da regra. A versão com SPX500 na AlphaX a 8% é a melhor
+no papel, mas o ganho é o funding, que precisa ser confirmado ao vivo.
+
 ## Critério do projeto
 
 | Item | Resultado |
@@ -358,8 +426,8 @@ lado da regra, não a substituí-la: +0,1 de Sharpe com P ≈ 0,1 no real e zero
 ## Próximo passo sugerido
 
 Paper trading na VPS com a regra da seção "A regra", nocional pequeno, logando o funding real e o
-deslizamento às 16:20 ET. A variante com hedge em SPX500 pode rodar junto em sombra para
-medir o funding das duas pernas.
+deslizamento às 16:20 ET. A variante com SPY vendido junto (h = 0,5, §11) pode rodar em sombra,
+logando o funding do vendido em SPY na Lighter e em SPX500 na AlphaX.
 
 ## Arquivos
 
@@ -380,6 +448,8 @@ medir o funding das duas pernas.
 | `s10_beta.py` | beta/alfa contra o S&P e hedge | `s10_beta.txt` |
 | `s11_tamanho_vol.py` | 139 regras de tamanho pela vol do UVXY, com e sem filtro | `s11_tamanho_vol.*` |
 | `s12_vol_robustez.py` | bootstrap pareado, anos, picos e quedas das melhores | `s12_vol_robustez.txt` |
+| `s13_uvxy_spy.py` | UVXY + SPY vendidos: proporção, modo, beta, funding, mesma vol | `s13_uvxy_spy.*` |
+| `s14_uvxy_spy_detalhe.py` | anos, picos, piores dias e bootstrap do UVXY + SPY | `s14_uvxy_spy_detalhe.txt` |
 
 Os parquets do UVXY (`uvxy_1d`, `uvxy_1h`, `uvxy_1m`) e os scripts `fetch_uvxy*.py` são os
 mesmos do PR #26.
