@@ -1,0 +1,16 @@
+# Regressao semanal contra o S&P 500 (w=0,25)
+VIX/VIX3M<1  2011-2026      beta  0.96  alfa  10.3%/ano  t(alfa)  2.08  corr 0.62
+VIX/VIX3M<1  IS 2011-2018   beta  1.49  alfa  12.0%/ano  t(alfa)  1.68  corr 0.71
+VIX/VIX3M<1  OOS 2019-2026  beta  0.71  alfa   6.6%/ano  t(alfa)  1.08  corr 0.60
+short fixo   2011-2026      beta  1.32  alfa   5.6%/ano  t(alfa)  1.18  corr 0.76
+short fixo   IS 2011-2018   beta  1.84  alfa  10.3%/ano  t(alfa)  1.50  corr 0.79
+short fixo   OOS 2019-2026  beta  1.08  alfa  -0.8%/ano  t(alfa) -0.14  corr 0.77
+S&P 500 (preco) Sharpe 2011-2026: 0.82
+
+# Hedge: vendido no S&P = h x 4,4 x exposicao no UVXY (beta diario do UVXY ao S&P = -4,4), 2 bp por perna
+h=0.0 funding S&P 0.0%/a  CAGR  22.5%  MDD  -26.8%  Sh 0.93 | beta 0.96 alfa  10.3% t 2.08 | OOS Sh 0.77 MDD  -24.2%
+h=0.0 funding S&P 8.7%/a  CAGR  22.5%  MDD  -26.8%  Sh 0.93 | beta 0.96 alfa  10.3% t 2.08 | OOS Sh 0.77 MDD  -24.2%
+h=0.5 funding S&P 0.0%/a  CAGR  16.6%  MDD  -27.1%  Sh 0.87 | beta 0.57 alfa   9.5% t 2.13 | OOS Sh 0.61 MDD  -24.9%
+h=0.5 funding S&P 8.7%/a  CAGR  21.9%  MDD  -23.3%  Sh 1.09 | beta 0.58 alfa  13.9% t 3.12 | OOS Sh 0.86 MDD  -23.3%
+h=1.0 funding S&P 0.0%/a  CAGR  10.5%  MDD  -36.0%  Sh 0.68 | beta 0.19 alfa   8.7% t 2.09 | OOS Sh 0.25 MDD  -30.5%
+h=1.0 funding S&P 8.7%/a  CAGR  20.8%  MDD  -27.3%  Sh 1.22 | beta 0.20 alfa  17.6% t 4.19 | OOS Sh 0.84 MDD  -27.3%
