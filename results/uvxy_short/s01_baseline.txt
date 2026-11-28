@@ -1,0 +1,66 @@
+UVXY real 2011-10-04 2026-11-27 | sintetico 2006-07-18 2026-11-27
+sintetico vs real 2018-03+: corr 0.9868  CAGR real -66.9%  CAGR sint -66.4%
+
+== REAL 2011-2026
+w=0.5 banda 0.00 exec close sem funding    CAGR   29.3%  vol  59.1%  Sh  0.74  MDD  -84.8%  Calmar  0.35  pior dia  -33.2%  exposto 100%  lev 0.50  giro   9.8x/a  stops  0.0/a
+w=0.5 banda 0.00 exec close funding modelo CAGR   34.0%  vol  59.1%  Sh  0.80  MDD  -85.0%  Calmar  0.40  pior dia  -33.3%  exposto 100%  lev 0.50  giro   9.8x/a  stops  0.0/a
+w=0.5 banda 0.00 exec open  sem funding    CAGR   24.7%  vol  60.3%  Sh  0.68  MDD  -85.7%  Calmar  0.29  pior dia  -44.1%  exposto 100%  lev 0.50  giro   9.9x/a  stops  0.0/a
+w=0.5 banda 0.00 exec open  funding modelo CAGR   28.9%  vol  60.3%  Sh  0.74  MDD  -86.1%  Calmar  0.34  pior dia  -44.3%  exposto 100%  lev 0.50  giro   9.9x/a  stops  0.0/a
+w=0.5 banda 0.25 exec close sem funding    CAGR   31.1%  vol  58.7%  Sh  0.77  MDD  -84.9%  Calmar  0.37  pior dia  -40.9%  exposto 100%  lev 0.48  giro   4.6x/a  stops  0.0/a
+w=0.5 banda 0.25 exec close funding modelo CAGR   34.5%  vol  58.7%  Sh  0.81  MDD  -85.3%  Calmar  0.41  pior dia  -41.0%  exposto 100%  lev 0.48  giro   4.7x/a  stops  0.0/a
+w=0.5 banda 0.25 exec open  sem funding    CAGR   27.6%  vol  60.2%  Sh  0.72  MDD  -86.8%  Calmar  0.32  pior dia  -44.1%  exposto 100%  lev 0.48  giro   4.7x/a  stops  0.0/a
+w=0.5 banda 0.25 exec open  funding modelo CAGR   31.8%  vol  60.1%  Sh  0.78  MDD  -87.0%  Calmar  0.37  pior dia  -44.3%  exposto 100%  lev 0.48  giro   4.7x/a  stops  0.0/a
+w=0.5 banda 0.50 exec close sem funding    CAGR   27.4%  vol  58.8%  Sh  0.72  MDD  -83.8%  Calmar  0.33  pior dia  -40.9%  exposto 100%  lev 0.46  giro   3.3x/a  stops  0.0/a
+w=0.5 banda 0.50 exec close funding modelo CAGR   30.0%  vol  58.9%  Sh  0.76  MDD  -86.2%  Calmar  0.35  pior dia  -41.1%  exposto 100%  lev 0.46  giro   3.3x/a  stops  0.0/a
+w=0.5 banda 0.50 exec open  sem funding    CAGR   22.7%  vol  61.4%  Sh  0.66  MDD  -90.2%  Calmar  0.25  pior dia  -44.1%  exposto 100%  lev 0.46  giro   3.3x/a  stops  0.0/a
+w=0.5 banda 0.50 exec open  funding modelo CAGR   25.3%  vol  61.0%  Sh  0.70  MDD  -92.9%  Calmar  0.27  pior dia  -44.3%  exposto 100%  lev 0.46  giro   3.4x/a  stops  0.0/a
+w=0.5 banda 1.00 exec close sem funding    CAGR   24.3%  vol  58.5%  Sh  0.69  MDD  -88.6%  Calmar  0.27  pior dia  -47.3%  exposto 100%  lev 0.42  giro   2.2x/a  stops  0.0/a
+w=0.5 banda 1.00 exec close funding modelo CAGR   28.0%  vol  57.8%  Sh  0.74  MDD  -85.7%  Calmar  0.33  pior dia  -43.6%  exposto 100%  lev 0.41  giro   2.2x/a  stops  0.0/a
+w=0.5 banda 1.00 exec open  sem funding    CAGR   17.0%  vol  61.5%  Sh  0.62  MDD  -89.3%  Calmar  0.19  pior dia  -74.0%  exposto 100%  lev 0.41  giro   2.6x/a  stops  0.0/a
+w=0.5 banda 1.00 exec open  funding modelo CAGR   -2.7%  vol  67.6%  Sh  0.45  MDD  -98.6%  Calmar -0.03  pior dia  -84.5%  exposto 100%  lev 0.42  giro   4.9x/a  stops  0.0/a
+w=0.5 banda 3.00 exec close sem funding    CAGR   42.0%  vol  48.9%  Sh  0.97  MDD  -81.6%  Calmar  0.51  pior dia  -43.8%  exposto 100%  lev 0.31  giro   0.7x/a  stops  0.0/a
+w=0.5 banda 3.00 exec close funding modelo CAGR   42.9%  vol  47.3%  Sh  1.01  MDD  -85.2%  Calmar  0.50  pior dia  -50.5%  exposto 100%  lev 0.30  giro   0.8x/a  stops  0.0/a
+w=0.5 banda 3.00 exec open  sem funding    CAGR   24.2%  vol  52.1%  Sh  0.69  MDD  -87.4%  Calmar  0.28  pior dia  -50.6%  exposto 100%  lev 0.32  giro   1.2x/a  stops  0.0/a
+w=0.5 banda 3.00 exec open  funding modelo CAGR   -0.2%  vol  59.6%  Sh  0.45  MDD  -97.5%  Calmar -0.00  pior dia  -92.2%  exposto 100%  lev 0.34  giro   3.3x/a  stops  0.0/a
+w=1.0 banda 0.00 exec close sem funding    CAGR    9.9%  vol 118.2%  Sh  0.74  MDD  -99.4%  Calmar  0.10  pior dia  -66.4%  exposto 100%  lev 1.00  giro  27.0x/a  stops  0.0/a
+w=1.0 banda 0.00 exec close funding modelo CAGR   17.8%  vol 118.2%  Sh  0.80  MDD  -99.5%  Calmar  0.18  pior dia  -66.7%  exposto 100%  lev 1.00  giro  27.0x/a  stops  0.0/a
+w=1.0 banda 0.00 exec open  sem funding    CAGR -100.0%  vol  67.3%  Sh  0.51  MDD -100.0%  Calmar -1.00  pior dia -100.0%  exposto  26%  lev 1.00  giro   7.2x/a  stops  0.0/a  LIQUIDOU
+w=1.0 banda 0.00 exec open  funding modelo CAGR -100.0%  vol  67.3%  Sh  0.55  MDD -100.0%  Calmar -1.00  pior dia -100.0%  exposto  26%  lev 1.00  giro   7.3x/a  stops  0.0/a  LIQUIDOU
+w=1.0 banda 0.25 exec close sem funding    CAGR   15.4%  vol 117.2%  Sh  0.78  MDD  -99.3%  Calmar  0.15  pior dia  -66.4%  exposto 100%  lev 0.97  giro  15.7x/a  stops  0.0/a
+w=1.0 banda 0.25 exec close funding modelo CAGR   22.1%  vol 117.3%  Sh  0.82  MDD  -99.5%  Calmar  0.22  pior dia  -66.7%  exposto 100%  lev 0.97  giro  15.8x/a  stops  0.0/a
+w=1.0 banda 0.25 exec open  sem funding    CAGR -100.0%  vol  67.1%  Sh  0.54  MDD -100.0%  Calmar -1.00  pior dia -100.0%  exposto  26%  lev 0.98  giro   4.2x/a  stops  0.0/a  LIQUIDOU
+w=1.0 banda 0.25 exec open  funding modelo CAGR -100.0%  vol  67.0%  Sh  0.57  MDD -100.0%  Calmar -1.00  pior dia -100.0%  exposto  26%  lev 0.99  giro   4.2x/a  stops  0.0/a  LIQUIDOU
+w=1.0 banda 0.50 exec close sem funding    CAGR   13.3%  vol 116.7%  Sh  0.76  MDD  -99.5%  Calmar  0.13  pior dia  -66.4%  exposto 100%  lev 0.92  giro  11.0x/a  stops  0.0/a
+w=1.0 banda 0.50 exec close funding modelo CAGR   15.3%  vol 117.0%  Sh  0.78  MDD  -99.6%  Calmar  0.15  pior dia  -66.7%  exposto 100%  lev 0.91  giro  11.2x/a  stops  0.0/a
+w=1.0 banda 0.50 exec open  sem funding    CAGR -100.0%  vol  65.9%  Sh  0.61  MDD -100.0%  Calmar -1.00  pior dia -100.0%  exposto  26%  lev 0.93  giro   2.5x/a  stops  0.0/a  LIQUIDOU
+w=1.0 banda 0.50 exec open  funding modelo CAGR -100.0%  vol  65.6%  Sh  0.64  MDD -100.0%  Calmar -1.00  pior dia -100.0%  exposto  26%  lev 0.92  giro   2.4x/a  stops  0.0/a  LIQUIDOU
+w=1.0 banda 1.00 exec close sem funding    CAGR -100.0%  vol  83.9%  Sh  0.71  MDD -100.0%  Calmar -1.00  pior dia -100.0%  exposto  42%  lev 0.87  giro   3.3x/a  stops  0.0/a  LIQUIDOU
+w=1.0 banda 1.00 exec close funding modelo CAGR -100.0%  vol  83.0%  Sh  0.75  MDD -100.0%  Calmar -1.00  pior dia -100.0%  exposto  42%  lev 0.86  giro   3.3x/a  stops  0.0/a  LIQUIDOU
+w=1.0 banda 1.00 exec open  sem funding    CAGR -100.0%  vol  85.9%  Sh  0.77  MDD -100.0%  Calmar -1.00  pior dia -100.0%  exposto  42%  lev 0.84  giro   3.6x/a  stops  0.0/a  LIQUIDOU
+w=1.0 banda 1.00 exec open  funding modelo CAGR -100.0%  vol  64.3%  Sh  0.55  MDD -100.0%  Calmar -1.00  pior dia -100.0%  exposto  26%  lev 0.85  giro   1.9x/a  stops  0.0/a  LIQUIDOU
+w=1.0 banda 3.00 exec close sem funding    CAGR -100.0%  vol  55.6%  Sh  0.52  MDD -100.0%  Calmar -1.00  pior dia -100.0%  exposto  26%  lev 0.64  giro   0.8x/a  stops  0.0/a  LIQUIDOU
+w=1.0 banda 3.00 exec close funding modelo CAGR -100.0%  vol  46.5%  Sh  0.63  MDD -100.0%  Calmar -1.00  pior dia -100.0%  exposto  26%  lev 0.56  giro   0.6x/a  stops  0.0/a  LIQUIDOU
+w=1.0 banda 3.00 exec open  sem funding    CAGR -100.0%  vol  50.3%  Sh  0.57  MDD -100.0%  Calmar -1.00  pior dia -100.0%  exposto  26%  lev 0.60  giro   0.6x/a  stops  0.0/a  LIQUIDOU
+w=1.0 banda 3.00 exec open  funding modelo CAGR -100.0%  vol  46.1%  Sh  0.65  MDD -100.0%  Calmar -1.00  pior dia -100.0%  exposto  26%  lev 0.57  giro   0.6x/a  stops  0.0/a  LIQUIDOU
+
+== SINT 1,5x 2006-2026
+w=0.5 banda 0.00 exec close sem funding    CAGR   16.9%  vol  50.0%  Sh  0.57  MDD  -83.8%  Calmar  0.20  pior dia  -31.6%  exposto 100%  lev 0.50  giro   8.4x/a  stops  0.0/a
+w=0.5 banda 0.00 exec close funding modelo CAGR   18.7%  vol  50.1%  Sh  0.60  MDD  -87.1%  Calmar  0.22  pior dia  -31.8%  exposto 100%  lev 0.50  giro   8.4x/a  stops  0.0/a
+w=0.5 banda 0.25 exec close sem funding    CAGR   17.6%  vol  49.6%  Sh  0.58  MDD  -83.3%  Calmar  0.21  pior dia  -31.6%  exposto 100%  lev 0.48  giro   3.6x/a  stops  0.0/a
+w=0.5 banda 0.25 exec close funding modelo CAGR   19.1%  vol  49.6%  Sh  0.61  MDD  -86.9%  Calmar  0.22  pior dia  -31.8%  exposto 100%  lev 0.48  giro   3.6x/a  stops  0.0/a
+w=0.5 banda 0.50 exec close sem funding    CAGR   20.7%  vol  50.1%  Sh  0.63  MDD  -81.4%  Calmar  0.25  pior dia  -31.6%  exposto 100%  lev 0.46  giro   2.2x/a  stops  0.0/a
+w=0.5 banda 0.50 exec close funding modelo CAGR   20.6%  vol  50.2%  Sh  0.64  MDD  -87.2%  Calmar  0.24  pior dia  -33.6%  exposto 100%  lev 0.46  giro   2.2x/a  stops  0.0/a
+w=0.5 banda 1.00 exec close sem funding    CAGR   12.0%  vol  50.5%  Sh  0.49  MDD  -87.9%  Calmar  0.14  pior dia  -31.6%  exposto 100%  lev 0.43  giro   1.7x/a  stops  0.0/a
+w=0.5 banda 1.00 exec close funding modelo CAGR   10.6%  vol  52.4%  Sh  0.48  MDD  -88.4%  Calmar  0.12  pior dia  -52.7%  exposto 100%  lev 0.43  giro   1.8x/a  stops  0.0/a
+w=0.5 banda 3.00 exec close sem funding    CAGR   14.5%  vol  44.7%  Sh  0.54  MDD  -91.0%  Calmar  0.16  pior dia  -45.9%  exposto 100%  lev 0.33  giro   0.9x/a  stops  0.0/a
+w=0.5 banda 3.00 exec close funding modelo CAGR    1.8%  vol  46.1%  Sh  0.30  MDD  -97.4%  Calmar  0.02  pior dia  -62.0%  exposto 100%  lev 0.32  giro   1.4x/a  stops  0.0/a
+w=1.0 banda 0.00 exec close sem funding    CAGR    2.0%  vol 100.1%  Sh  0.57  MDD  -98.9%  Calmar  0.02  pior dia  -63.3%  exposto 100%  lev 1.00  giro  22.9x/a  stops  0.0/a
+w=1.0 banda 0.00 exec close funding modelo CAGR    5.1%  vol 100.2%  Sh  0.60  MDD  -99.1%  Calmar  0.05  pior dia  -63.6%  exposto 100%  lev 1.00  giro  22.9x/a  stops  0.0/a
+w=1.0 banda 0.25 exec close sem funding    CAGR    5.5%  vol  99.4%  Sh  0.60  MDD  -99.0%  Calmar  0.06  pior dia  -63.3%  exposto 100%  lev 0.97  giro  12.0x/a  stops  0.0/a
+w=1.0 banda 0.25 exec close funding modelo CAGR   10.1%  vol  99.2%  Sh  0.64  MDD  -99.0%  Calmar  0.10  pior dia  -63.7%  exposto 100%  lev 0.97  giro  11.9x/a  stops  0.0/a
+w=1.0 banda 0.50 exec close sem funding    CAGR    3.6%  vol  99.3%  Sh  0.58  MDD  -99.4%  Calmar  0.04  pior dia  -66.3%  exposto 100%  lev 0.93  giro   8.3x/a  stops  0.0/a
+w=1.0 banda 0.50 exec close funding modelo CAGR    8.0%  vol  98.5%  Sh  0.61  MDD  -99.0%  Calmar  0.08  pior dia  -63.6%  exposto 100%  lev 0.93  giro   8.2x/a  stops  0.0/a
+w=1.0 banda 1.00 exec close sem funding    CAGR    5.9%  vol  99.8%  Sh  0.61  MDD  -99.4%  Calmar  0.06  pior dia  -76.3%  exposto 100%  lev 0.87  giro   5.7x/a  stops  0.0/a
+w=1.0 banda 1.00 exec close funding modelo CAGR    9.6%  vol  99.7%  Sh  0.64  MDD  -99.1%  Calmar  0.10  pior dia  -63.8%  exposto 100%  lev 0.86  giro   5.4x/a  stops  0.0/a
+w=1.0 banda 3.00 exec close sem funding    CAGR   -7.6%  vol  95.5%  Sh  0.47  MDD  -99.8%  Calmar -0.08  pior dia  -89.4%  exposto 100%  lev 0.64  giro   4.9x/a  stops  0.0/a
+w=1.0 banda 3.00 exec close funding modelo CAGR -100.0%  vol  78.0%  Sh  0.01  MDD -100.0%  Calmar -1.00  pior dia -100.0%  exposto  67%  lev 0.64  giro   4.3x/a  stops  0.0/a  LIQUIDOU

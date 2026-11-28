@@ -1,0 +1,129 @@
+# 1. Fronteira de alavancagem (exec 16:20 ET, banda 25%, custo 10 bp/perna, funding modelo)
+short fixo   w=0.10 | 2011-26 CAGR    9.3%  MDD  -26.1%  Sh  0.81  pior dia   -9.3%  exposto 100%  giro  0.5x
+                    | IS      CAGR   12.6%  MDD  -16.7%  Sh  1.00  pior dia   -9.3%  exposto 100%  giro  0.6x
+                    | OOS     CAGR    6.3%  MDD  -24.8%  Sh  0.62  pior dia   -6.1%  exposto 100%  giro  0.5x
+                    | SINT06+ CAGR    5.9%  MDD  -30.9%  Sh  0.62  pior dia   -6.4%  exposto 100%  giro  0.4x
+short fixo   w=0.20 | 2011-26 CAGR   17.1%  MDD  -47.2%  Sh  0.79  pior dia  -15.1%  exposto 100%  giro  1.3x
+                    | IS      CAGR   25.0%  MDD  -31.7%  Sh  1.01  pior dia  -15.1%  exposto 100%  giro  1.5x
+                    | OOS     CAGR   10.3%  MDD  -46.0%  Sh  0.56  pior dia  -12.3%  exposto 100%  giro  1.1x
+                    | SINT06+ CAGR   11.1%  MDD  -51.1%  Sh  0.63  pior dia  -12.7%  exposto 100%  giro  0.9x
+short fixo   w=0.30 | 2011-26 CAGR   24.9%  MDD  -63.5%  Sh  0.81  pior dia  -22.8%  exposto 100%  giro  2.2x
+                    | IS      CAGR   38.2%  MDD  -42.7%  Sh  1.05  pior dia  -22.8%  exposto 100%  giro  2.5x
+                    | OOS     CAGR   13.9%  MDD  -61.4%  Sh  0.56  pior dia  -18.8%  exposto 100%  giro  2.0x
+                    | SINT06+ CAGR   14.7%  MDD  -66.6%  Sh  0.61  pior dia  -19.1%  exposto 100%  giro  1.7x
+short fixo   w=0.40 | 2011-26 CAGR   30.0%  MDD  -77.0%  Sh  0.80  pior dia  -37.7%  exposto 100%  giro  3.3x
+                    | IS      CAGR   45.7%  MDD  -59.5%  Sh  1.01  pior dia  -37.7%  exposto 100%  giro  3.9x
+                    | OOS     CAGR   17.2%  MDD  -69.7%  Sh  0.59  pior dia  -25.5%  exposto 100%  giro  2.9x
+                    | SINT06+ CAGR   16.7%  MDD  -78.7%  Sh  0.59  pior dia  -25.4%  exposto 100%  giro  2.6x
+short fixo   w=0.50 | 2011-26 CAGR   34.4%  MDD  -83.0%  Sh  0.81  pior dia  -38.7%  exposto 100%  giro  4.7x
+                    | IS      CAGR   54.3%  MDD  -65.4%  Sh  1.02  pior dia  -38.7%  exposto 100%  giro  5.4x
+                    | OOS     CAGR   18.5%  MDD  -78.4%  Sh  0.60  pior dia  -32.4%  exposto 100%  giro  4.1x
+                    | SINT06+ CAGR   19.1%  MDD  -86.9%  Sh  0.61  pior dia  -31.8%  exposto 100%  giro  3.6x
+short fixo   w=0.75 | 2011-26 CAGR   38.0%  MDD  -95.5%  Sh  0.84  pior dia  -59.4%  exposto 100%  giro  9.1x
+                    | IS      CAGR   69.3%  MDD  -84.1%  Sh  1.07  pior dia  -59.4%  exposto 100%  giro 10.4x
+                    | OOS     CAGR   14.8%  MDD  -90.6%  Sh  0.61  pior dia  -43.5%  exposto 100%  giro  8.0x
+                    | SINT06+ CAGR   17.8%  MDD  -95.9%  Sh  0.62  pior dia  -47.7%  exposto 100%  giro  7.1x
+VIX/VIX3M<1  w=0.10 | 2011-26 CAGR    9.1%  MDD  -11.4%  Sh  0.91  pior dia   -6.6%  exposto  93%  giro  1.7x
+                    | IS      CAGR   11.7%  MDD  -11.4%  Sh  1.06  pior dia   -5.0%  exposto  93%  giro  1.9x
+                    | OOS     CAGR    6.8%  MDD   -9.3%  Sh  0.76  pior dia   -6.6%  exposto  93%  giro  1.5x
+                    | SINT06+ CAGR    8.1%  MDD  -11.0%  Sh  1.00  pior dia   -3.7%  exposto  89%  giro  1.8x
+VIX/VIX3M<1  w=0.20 | 2011-26 CAGR   17.8%  MDD  -22.1%  Sh  0.91  pior dia  -13.3%  exposto  93%  giro  3.5x
+                    | IS      CAGR   24.2%  MDD  -22.1%  Sh  1.10  pior dia  -10.1%  exposto  93%  giro  4.0x
+                    | OOS     CAGR   12.3%  MDD  -19.3%  Sh  0.72  pior dia  -13.3%  exposto  93%  giro  3.1x
+                    | SINT06+ CAGR   16.2%  MDD  -21.8%  Sh  1.00  pior dia   -7.5%  exposto  89%  giro  3.8x
+VIX/VIX3M<1  w=0.30 | 2011-26 CAGR   25.6%  MDD  -31.2%  Sh  0.90  pior dia  -20.1%  exposto  93%  giro  5.6x
+                    | IS      CAGR   35.4%  MDD  -31.2%  Sh  1.08  pior dia  -15.3%  exposto  93%  giro  6.3x
+                    | OOS     CAGR   17.2%  MDD  -29.4%  Sh  0.71  pior dia  -20.1%  exposto  93%  giro  4.9x
+                    | SINT06+ CAGR   23.8%  MDD  -31.1%  Sh  0.99  pior dia  -12.7%  exposto  89%  giro  5.9x
+VIX/VIX3M<1  w=0.40 | 2011-26 CAGR   32.4%  MDD  -41.0%  Sh  0.90  pior dia  -27.1%  exposto  93%  giro  7.8x
+                    | IS      CAGR   46.7%  MDD  -40.2%  Sh  1.10  pior dia  -20.6%  exposto  93%  giro  8.7x
+                    | OOS     CAGR   20.6%  MDD  -40.5%  Sh  0.70  pior dia  -27.1%  exposto  93%  giro  6.9x
+                    | SINT06+ CAGR   30.5%  MDD  -40.8%  Sh  0.98  pior dia  -17.1%  exposto  89%  giro  8.1x
+VIX/VIX3M<1  w=0.50 | 2011-26 CAGR   37.8%  MDD  -52.4%  Sh  0.90  pior dia  -34.3%  exposto  93%  giro 10.1x
+                    | IS      CAGR   54.5%  MDD  -46.7%  Sh  1.07  pior dia  -25.9%  exposto  93%  giro 11.4x
+                    | OOS     CAGR   24.2%  MDD  -46.7%  Sh  0.71  pior dia  -34.3%  exposto  93%  giro  8.8x
+                    | SINT06+ CAGR   38.3%  MDD  -47.8%  Sh  1.00  pior dia  -18.8%  exposto  89%  giro 10.3x
+VIX/VIX3M<1  w=0.75 | 2011-26 CAGR   49.3%  MDD  -69.9%  Sh  0.93  pior dia  -44.0%  exposto  93%  giro 16.7x
+                    | IS      CAGR   75.8%  MDD  -65.9%  Sh  1.12  pior dia  -39.5%  exposto  93%  giro 18.9x
+                    | OOS     CAGR   28.6%  MDD  -62.9%  Sh  0.73  pior dia  -44.0%  exposto  93%  giro 14.7x
+                    | SINT06+ CAGR   49.5%  MDD  -67.4%  Sh  0.97  pior dia  -33.6%  exposto  89%  giro 16.8x
+
+# 2. Limiar de VIX/VIX3M (w=0,3)
+ts<0.85  2011-26 CAGR    1.6%  MDD  -46.8%  Sh  0.19  pior dia   -9.7%  exposto  31%  giro  9.7x | OOS CAGR   -5.5% MDD  -44.3% | SINT06+ CAGR    0.9% MDD  -47.6%
+ts<0.9   2011-26 CAGR   12.7%  MDD  -33.9%  Sh  0.69  pior dia  -13.9%  exposto  60%  giro  9.3x | OOS CAGR    1.0% MDD  -33.9% | SINT06+ CAGR    9.9% MDD  -35.4%
+ts<0.925 2011-26 CAGR   12.7%  MDD  -42.2%  Sh  0.63  pior dia  -13.9%  exposto  72%  giro  8.7x | OOS CAGR   -1.4% MDD  -42.2% | SINT06+ CAGR   12.2% MDD  -39.3%
+ts<0.95  2011-26 CAGR   16.0%  MDD  -33.5%  Sh  0.68  pior dia  -20.1%  exposto  81%  giro  7.8x | OOS CAGR    5.1% MDD  -31.8% | SINT06+ CAGR   17.6% MDD  -32.5%
+ts<0.975 2011-26 CAGR   18.3%  MDD  -45.7%  Sh  0.72  pior dia  -20.1%  exposto  89%  giro  6.7x | OOS CAGR    8.2% MDD  -38.9% | SINT06+ CAGR   17.7% MDD  -40.3%
+ts<1.0   2011-26 CAGR   25.6%  MDD  -31.2%  Sh  0.90  pior dia  -20.1%  exposto  93%  giro  5.6x | OOS CAGR   17.2% MDD  -29.4% | SINT06+ CAGR   23.8% MDD  -31.1%
+ts<1.025 2011-26 CAGR   26.4%  MDD  -50.1%  Sh  0.88  pior dia  -24.9%  exposto  96%  giro  3.9x | OOS CAGR   18.0% MDD  -38.5% | SINT06+ CAGR   20.0% MDD  -43.6%
+ts<1.05  2011-26 CAGR   29.6%  MDD  -43.5%  Sh  0.95  pior dia  -24.9%  exposto  97%  giro  3.2x | OOS CAGR   21.5% MDD  -41.1% | SINT06+ CAGR   23.5% MDD  -43.0%
+ts<1.1   2011-26 CAGR   31.2%  MDD  -45.0%  Sh  0.98  pior dia  -24.9%  exposto  98%  giro  2.6x | OOS CAGR   24.3% MDD  -45.0% | SINT06+ CAGR   23.3% MDD  -46.2%
+ts<9     2011-26 CAGR   24.9%  MDD  -63.5%  Sh  0.81  pior dia  -22.8%  exposto 100%  giro  2.2x | OOS CAGR   13.9% MDD  -61.4% | SINT06+ CAGR   14.7% MDD  -66.6%
+
+# 3. Momento de execucao (w=0,3)
+short fixo   exec close    CAGR   25.5%  MDD  -63.7%  Sh  0.83  pior dia  -20.0%  exposto 100%  giro  2.2x
+short fixo   exec pm       CAGR   24.9%  MDD  -63.5%  Sh  0.81  pior dia  -22.8%  exposto 100%  giro  2.2x
+short fixo   exec open     CAGR   22.7%  MDD  -65.7%  Sh  0.76  pior dia  -25.0%  exposto 100%  giro  2.2x
+short fixo   exec close+1  CAGR   25.5%  MDD  -63.7%  Sh  0.83  pior dia  -20.0%  exposto 100%  giro  2.2x
+VIX/VIX3M<1  exec close    CAGR   26.8%  MDD  -31.0%  Sh  0.94  pior dia  -17.1%  exposto  93%  giro  5.5x
+VIX/VIX3M<1  exec pm       CAGR   25.6%  MDD  -31.2%  Sh  0.90  pior dia  -20.1%  exposto  93%  giro  5.6x
+VIX/VIX3M<1  exec open     CAGR   28.1%  MDD  -44.2%  Sh  0.96  pior dia  -26.1%  exposto  93%  giro  5.4x
+VIX/VIX3M<1  exec close+1  CAGR   21.1%  MDD  -51.6%  Sh  0.77  pior dia  -20.0%  exposto  93%  giro  5.4x
+
+# 4. Custo por perna e banda de rebalanceio (VIX/VIX3M<1, w=0,3)
+custo    0 bp banda 0.00 CAGR   27.3%  MDD  -30.7%  Sh  0.94  pior dia  -17.4%  exposto  93%  giro  8.0x
+custo    0 bp banda 0.25 CAGR   26.3%  MDD  -30.9%  Sh  0.92  pior dia  -20.1%  exposto  93%  giro  5.6x
+custo    0 bp banda 0.50 CAGR   27.6%  MDD  -28.2%  Sh  0.98  pior dia  -15.6%  exposto  93%  giro  4.9x
+custo    0 bp banda 1.00 CAGR   29.0%  MDD  -25.6%  Sh  1.11  pior dia  -15.3%  exposto  93%  giro  4.3x
+custo   10 bp banda 0.00 CAGR   26.3%  MDD  -31.1%  Sh  0.92  pior dia  -17.5%  exposto  93%  giro  8.0x
+custo   10 bp banda 0.25 CAGR   25.6%  MDD  -31.2%  Sh  0.90  pior dia  -20.1%  exposto  93%  giro  5.6x
+custo   10 bp banda 0.50 CAGR   27.0%  MDD  -28.7%  Sh  0.97  pior dia  -15.7%  exposto  93%  giro  4.9x
+custo   10 bp banda 1.00 CAGR   28.4%  MDD  -25.7%  Sh  1.10  pior dia  -15.3%  exposto  93%  giro  4.3x
+custo   20 bp banda 0.00 CAGR   25.3%  MDD  -31.4%  Sh  0.89  pior dia  -17.5%  exposto  93%  giro  8.0x
+custo   20 bp banda 0.25 CAGR   24.9%  MDD  -32.0%  Sh  0.88  pior dia  -20.2%  exposto  93%  giro  5.6x
+custo   20 bp banda 0.50 CAGR   26.3%  MDD  -29.4%  Sh  0.95  pior dia  -15.7%  exposto  93%  giro  4.9x
+custo   20 bp banda 1.00 CAGR   27.9%  MDD  -26.0%  Sh  1.08  pior dia  -15.4%  exposto  93%  giro  4.3x
+custo   30 bp banda 0.00 CAGR   24.3%  MDD  -31.7%  Sh  0.86  pior dia  -17.6%  exposto  93%  giro  8.0x
+custo   30 bp banda 0.25 CAGR   24.3%  MDD  -32.6%  Sh  0.87  pior dia  -20.2%  exposto  93%  giro  5.5x
+custo   30 bp banda 0.50 CAGR   25.7%  MDD  -30.2%  Sh  0.93  pior dia  -15.8%  exposto  93%  giro  4.9x
+custo   30 bp banda 1.00 CAGR   27.3%  MDD  -26.2%  Sh  1.06  pior dia  -15.4%  exposto  93%  giro  4.3x
+
+# 5. Funding (w=0,3)
+short fixo   zero                             CAGR   22.3%  MDD  -63.5%  Sh  0.75  pior dia  -22.7%  exposto 100%  giro  2.2x
+short fixo   modelo (+5,5/-33 bp por pregao)  CAGR   24.9%  MDD  -63.5%  Sh  0.81  pior dia  -22.8%  exposto 100%  giro  2.2x
+short fixo   pessimista (0 / -50 bp)          CAGR   19.3%  MDD  -67.9%  Sh  0.68  pior dia  -22.8%  exposto 100%  giro  2.2x
+short fixo   vendido paga 10%/ano sempre      CAGR   19.3%  MDD  -64.5%  Sh  0.68  pior dia  -22.7%  exposto 100%  giro  2.2x
+short fixo   vendido recebe 14%/ano sempre    CAGR   27.3%  MDD  -59.7%  Sh  0.86  pior dia  -22.7%  exposto 100%  giro  2.2x
+VIX/VIX3M<1  zero                             CAGR   21.4%  MDD  -35.2%  Sh  0.79  pior dia  -20.2%  exposto  93%  giro  5.5x
+VIX/VIX3M<1  modelo (+5,5/-33 bp por pregao)  CAGR   25.6%  MDD  -31.2%  Sh  0.90  pior dia  -20.1%  exposto  93%  giro  5.6x
+VIX/VIX3M<1  pessimista (0 / -50 bp)          CAGR   21.4%  MDD  -35.2%  Sh  0.79  pior dia  -20.2%  exposto  93%  giro  5.5x
+VIX/VIX3M<1  vendido paga 10%/ano sempre      CAGR   18.4%  MDD  -38.6%  Sh  0.71  pior dia  -20.2%  exposto  93%  giro  5.5x
+VIX/VIX3M<1  vendido recebe 14%/ano sempre    CAGR   25.6%  MDD  -31.2%  Sh  0.90  pior dia  -20.1%  exposto  93%  giro  5.6x
+
+# 6. Placebo: mesmos periodos fora (numero e duracao) em ordem aleatoria, 1000 sorteios (w=0,3)
+real: CAGR   25.6%  MDD  -31.2%  Sh  0.90  pior dia  -20.1%  exposto  93%  giro  5.6x
+placebo mediano: CAGR 22.3%  MDD -63.4%  Sh 0.76
+p-valor (placebo >= real): CAGR 0.139  MDD 0.000  Sharpe 0.042
+
+# 7. Episodios de pico (retorno da estrategia na janela; w=0,3, exec 16:20)
+out-dez/2011 (fim da crise do euro)  UVXY pico      0% | short fixo   13.1% (dd  -20.8%) | VIX/VIX3M<1    6.3% (dd  -23.9%)
+out/2014                             UVXY pico     55% | short fixo   -0.2% (dd  -18.2%) | VIX/VIX3M<1    8.6% (dd   -4.3%)
+ago/2015 (desvalorizacao da China)   UVXY pico    239% | short fixo  -31.2% (dd  -37.4%) | VIX/VIX3M<1   -1.7% (dd  -10.1%)
+dez/15-fev/16                        UVXY pico    116% | short fixo  -21.8% (dd  -30.6%) | VIX/VIX3M<1  -23.5% (dd  -30.9%)
+Brexit                               UVXY pico      7% | short fixo    9.4% (dd  -14.8%) | VIX/VIX3M<1   -6.5% (dd  -20.0%)
+Volmageddon fev/2018                 UVXY pico    177% | short fixo  -29.6% (dd  -37.2%) | VIX/VIX3M<1   -9.4% (dd  -10.8%)
+T4 2018                              UVXY pico    139% | short fixo  -28.6% (dd  -30.5%) | VIX/VIX3M<1  -24.5% (dd  -25.2%)
+Covid                                UVXY pico    909% | short fixo  -51.1% (dd  -60.3%) | VIX/VIX3M<1   -9.7% (dd  -13.6%)
+jun/2020                             UVXY pico     65% | short fixo  -14.0% (dd  -21.2%) | VIX/VIX3M<1  -18.5% (dd  -23.2%)
+GameStop jan/2021                    UVXY pico     40% | short fixo   -1.3% (dd  -11.7%) | VIX/VIX3M<1   -4.0% (dd  -14.7%)
+bear 2022                            UVXY pico     80% | short fixo   -8.7% (dd  -22.4%) | VIX/VIX3M<1  -18.0% (dd  -29.3%)
+SVB mar/2023                         UVXY pico     41% | short fixo   -6.0% (dd  -11.4%) | VIX/VIX3M<1   -5.5% (dd  -10.8%)
+carry trade ago/2024                 UVXY pico    194% | short fixo  -12.8% (dd  -32.7%) | VIX/VIX3M<1   -5.8% (dd  -18.8%)
+tarifas abr/2025                     UVXY pico    142% | short fixo  -22.1% (dd  -27.8%) | VIX/VIX3M<1   -4.9% (dd   -6.2%)
+nov/2026                             UVXY pico     61% | short fixo  -12.2% (dd  -23.5%) | VIX/VIX3M<1  -13.3% (dd  -18.2%)
+
+# 8. Hedge: short no S&P 500 (preco, sem funding) = h x beta(-4,4) x exposicao no UVXY
+hedge h=0.00  CAGR   25.6%  MDD  -31.2%  Sh  0.90  pior dia  -20.1%  exposto  93%  giro  0.0x
+hedge h=0.10  CAGR   24.3%  MDD  -31.0%  Sh  0.89  pior dia  -19.4%  exposto  93%  giro  0.0x
+hedge h=0.25  CAGR   22.3%  MDD  -31.7%  Sh  0.88  pior dia  -18.2%  exposto  93%  giro  0.0x
+hedge h=0.50  CAGR   18.9%  MDD  -34.1%  Sh  0.83  pior dia  -16.2%  exposto  93%  giro  0.0x

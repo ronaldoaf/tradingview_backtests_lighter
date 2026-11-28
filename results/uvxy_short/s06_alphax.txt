@@ -1,0 +1,4 @@
+VIX/VIX3M<1  perp AlphaX 2026-06-24..2026-11-28: retorno   -4.8%  MDD  -19.5%  funding +1.70%  custos -0.18% | modelo diario: retorno   -3.5%  MDD  -17.0%
+   por mes (perp): Jun +2.2% Jul +1.7% Aug +7.7% Sep +2.0% Oct -2.7% Nov -14.3%
+short fixo   perp AlphaX 2026-06-24..2026-11-28: retorno   -2.5%  MDD  -23.5%  funding +0.77%  custos -0.10% | modelo diario: retorno   -2.3%  MDD  -22.4%
+   por mes (perp): Jun +2.2% Jul +1.7% Aug +7.7% Sep +2.0% Oct -2.7% Nov -12.2%

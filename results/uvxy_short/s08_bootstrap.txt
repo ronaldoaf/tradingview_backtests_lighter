@@ -1,0 +1,21 @@
+# bootstrap em blocos de 60 pregoes, horizonte de 5 anos, 4000 trajetorias
+UVXY real 2011-26      VIX/VIX3M<1 w=0.15  CAGR mediano  14.2%  P(CAGR<0)  1.1%  MDD mediano  -17.3%  MDD p90  -25.1%  P(MDD<-40%)  0.1%  P(MDD<-60%)  0.0%
+UVXY real 2011-26      VIX/VIX3M<1 w=0.20  CAGR mediano  18.9%  P(CAGR<0)  1.1%  MDD mediano  -22.7%  MDD p90  -32.1%  P(MDD<-40%)  2.0%  P(MDD<-60%)  0.0%
+UVXY real 2011-26      VIX/VIX3M<1 w=0.25  CAGR mediano  23.7%  P(CAGR<0)  1.2%  MDD mediano  -27.5%  MDD p90  -38.7%  P(MDD<-40%)  8.2%  P(MDD<-60%)  0.2%
+UVXY real 2011-26      VIX/VIX3M<1 w=0.30  CAGR mediano  27.6%  P(CAGR<0)  1.7%  MDD mediano  -33.5%  MDD p90  -46.3%  P(MDD<-40%) 23.9%  P(MDD<-60%)  0.9%
+UVXY real 2011-26      VIX/VIX3M<1 w=0.40  CAGR mediano  34.5%  P(CAGR<0)  2.5%  MDD mediano  -42.7%  MDD p90  -57.7%  P(MDD<-40%) 60.1%  P(MDD<-60%)  7.2%
+UVXY real 2011-26      short fixo  w=0.15  CAGR mediano  14.5%  P(CAGR<0)  4.9%  MDD mediano  -23.9%  MDD p90  -41.0%  P(MDD<-40%) 11.7%  P(MDD<-60%)  0.7%
+UVXY real 2011-26      short fixo  w=0.20  CAGR mediano  18.7%  P(CAGR<0)  6.4%  MDD mediano  -30.7%  MDD p90  -51.6%  P(MDD<-40%) 30.5%  P(MDD<-60%)  3.0%
+UVXY real 2011-26      short fixo  w=0.25  CAGR mediano  23.4%  P(CAGR<0)  6.3%  MDD mediano  -37.4%  MDD p90  -60.1%  P(MDD<-40%) 44.0%  P(MDD<-60%) 10.1%
+UVXY real 2011-26      short fixo  w=0.30  CAGR mediano  27.7%  P(CAGR<0)  7.6%  MDD mediano  -43.5%  MDD p90  -68.0%  P(MDD<-40%) 59.4%  P(MDD<-60%) 26.3%
+UVXY real 2011-26      short fixo  w=0.40  CAGR mediano  32.9%  P(CAGR<0)  9.5%  MDD mediano  -56.7%  MDD p90  -78.6%  P(MDD<-40%) 86.7%  P(MDD<-60%) 43.3%
+sintetico 1,5x 2006-26 VIX/VIX3M<1 w=0.15  CAGR mediano  12.5%  P(CAGR<0)  0.8%  MDD mediano  -14.7%  MDD p90  -21.8%  P(MDD<-40%)  0.1%  P(MDD<-60%)  0.0%
+sintetico 1,5x 2006-26 VIX/VIX3M<1 w=0.20  CAGR mediano  16.9%  P(CAGR<0)  0.9%  MDD mediano  -19.3%  MDD p90  -27.9%  P(MDD<-40%)  0.4%  P(MDD<-60%)  0.0%
+sintetico 1,5x 2006-26 VIX/VIX3M<1 w=0.25  CAGR mediano  20.7%  P(CAGR<0)  1.4%  MDD mediano  -24.2%  MDD p90  -35.0%  P(MDD<-40%)  3.7%  P(MDD<-60%)  0.0%
+sintetico 1,5x 2006-26 VIX/VIX3M<1 w=0.30  CAGR mediano  25.3%  P(CAGR<0)  1.7%  MDD mediano  -28.3%  MDD p90  -40.1%  P(MDD<-40%) 10.3%  P(MDD<-60%)  0.2%
+sintetico 1,5x 2006-26 VIX/VIX3M<1 w=0.40  CAGR mediano  31.5%  P(CAGR<0)  2.1%  MDD mediano  -36.6%  MDD p90  -51.4%  P(MDD<-40%) 36.6%  P(MDD<-60%)  2.8%
+sintetico 1,5x 2006-26 short fixo  w=0.15  CAGR mediano   9.5%  P(CAGR<0) 12.6%  MDD mediano  -26.1%  MDD p90  -43.5%  P(MDD<-40%) 14.8%  P(MDD<-60%)  1.2%
+sintetico 1,5x 2006-26 short fixo  w=0.20  CAGR mediano  12.3%  P(CAGR<0) 14.0%  MDD mediano  -33.5%  MDD p90  -55.0%  P(MDD<-40%) 37.1%  P(MDD<-60%)  5.5%
+sintetico 1,5x 2006-26 short fixo  w=0.25  CAGR mediano  14.8%  P(CAGR<0) 15.0%  MDD mediano  -40.4%  MDD p90  -63.2%  P(MDD<-40%) 50.9%  P(MDD<-60%) 14.0%
+sintetico 1,5x 2006-26 short fixo  w=0.30  CAGR mediano  16.5%  P(CAGR<0) 17.4%  MDD mediano  -47.1%  MDD p90  -71.4%  P(MDD<-40%) 65.4%  P(MDD<-60%) 28.3%
+sintetico 1,5x 2006-26 short fixo  w=0.40  CAGR mediano  19.3%  P(CAGR<0) 21.0%  MDD mediano  -59.2%  MDD p90  -81.2%  P(MDD<-40%) 88.8%  P(MDD<-60%) 48.5%
