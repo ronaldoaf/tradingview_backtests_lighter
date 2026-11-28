@@ -83,7 +83,7 @@ Cada variante foi escalada para a mesma volatilidade da regra base e comparada n
 | + VIX9D/VIX < 1 | 0,74 | −40% | 0,44 | — |
 | + VVIX < 100…130 (w=0,3) | 0,68–0,81 | −34 a −49% | 0,26–0,50 | 0,67–0,87 |
 | + stop intradiário de 15% / 25% | 0,94 / 0,88 | −41% | 0,78 / 0,64 | — |
-| + alvo de vol (20d / 60d) | 0,63 / 0,69 | −41 / −47% | 0,50 / 0,56 | 0,87 / 0,80 |
+| + alvo de vol (20d / 60d), menor com vol alta (ver §10) | 0,63 / 0,69 | −41 / −47% | 0,50 / 0,56 | 0,87 / 0,80 |
 | + tamanho linear na curva (cheio em 0,8, zero em 1) | 0,78 | −37% | 0,31 | 0,83 |
 | short fixo | 0,81 | −58% | 0,58 | 0,63 |
 | + hedge vendido no S&P, sem funding (§9) | 0,68–0,87 | −27 a −36% | 0,25–0,61 | — |
@@ -290,6 +290,61 @@ Sharpe 0,84). É a melhor variante no papel, mas depende de um funding medido po
 meses numa corretora nova. É o mesmo carry de funding já estudado em
 `vol_pumping/IDEIAS_CARRY_FUNDING_ALTCOINS.md`, não decaimento do UVXY.
 
+## 10. Tamanho pela volatilidade do próprio UVXY (`s11_tamanho_vol.txt`, `s12_vol_robustez.txt`)
+
+Testei 139 regras de tamanho, com e sem o filtro, sempre escaladas para a mesma vol anual da
+regra base (25% fixo). Os estimadores foram a vol de fechamentos em 5 a 120 pregões, a EWMA
+com meia-vida de 5, 10 e 20 pregões e a Parkinson (máxima/mínima) em 5, 10 e 20. Os
+formatos foram:
+
+- inverso: menor com vol alta, w ∝ (ref/vol)^a;
+- direto: maior com vol alta, w ∝ (vol/ref)^a;
+- razão vol longa/curta;
+- degrau: corta acima do percentil 70/80/90.
+
+A referência `ref` é a mediana expansiva do estimador, e o teto é w ≤ 1.
+
+**Reduzir com vol alta piora sempre.** Isso vale para todo estimador, janela e expoente,
+com ou sem filtro (média das famílias com filtro):
+
+| Família (com VIX/VIX3M<1) | Sharpe | Queda | Sharpe OOS | Sharpe sint. |
+| --- | ---: | ---: | ---: | ---: |
+| maior com vol alta, a = 1 | 0,98 | −31% | 0,86 | 0,96 |
+| maior com vol alta, a = 0,5 | 0,95 | −29% | 0,81 | 0,99 |
+| **base (25% fixo)** | **0,93** | **−27%** | **0,77** | **0,97** |
+| degrau, corta pela metade acima de p90 | 0,80 | −29% | 0,70 | 0,92 |
+| menor com vol alta, a = 0,5 | 0,78 | −30% | 0,63 | 0,87 |
+| degrau, zera acima de p80 | 0,67 | −36% | 0,61 | 0,72 |
+| menor com vol alta, a = 1 | 0,66 | −37% | 0,51 | 0,76 |
+| menor com vol alta, a = 2 | 0,41 | −49% | 0,29 | 0,50 |
+
+No bootstrap pareado, o inverso perde 0,28–0,31 de Sharpe no UVXY real (P = 1,00) e 0,16 no
+sintético (P ≈ 0,97). O motivo: a vol baixa antecede os saltos (2017 → fev/2018, jul/2024 → ago/2024),
+então o inverso fica no tamanho máximo antes do pico. Logo depois do pico, quando a curva volta
+ao contango e o decaimento é mais rápido, ele está no tamanho mínimo.
+
+**Aumentar com vol alta ajuda pouco, e só no UVXY real.**
+
+| Variante (mesma vol) | Sharpe | Queda | Pior dia | Sharpe OOS | Sharpe sint. | Dif. de Sharpe real (P ≤ 0) | Dif. sint. (P ≤ 0) |
+| --- | ---: | ---: | ---: | ---: | ---: | --- | --- |
+| base 25% fixo | 0,93 | −26,8% | −16,7% | 0,77 | 0,97 | | |
+| EWMA 5d, a = 1 (w de 0 a 0,75) | 1,04 | −25,7% | −17,4% | 0,95 | 0,98 | +0,11 (0,08) | +0,00 (0,35) |
+| EWMA 10d, a = 1 | 1,03 | −31,2% | −16,0% | 0,90 | 1,01 | +0,10 (0,10) | +0,04 (0,23) |
+| EWMA 10d, a = 0,5 | 0,95 | −29,1% | −15,0% | 0,77 | 0,99 | +0,02 (0,29) | +0,02 (0,24) |
+| fechamentos 10d, a = 1 | 1,06 | −27,2% | −21,2% | 0,99 | 0,92 | +0,13 (0,08) | −0,06 (0,55) |
+| fechamentos 20d, a = 1 | 1,03 | −31,9% | −18,6% | 0,88 | 0,95 | +0,10 (0,13) | −0,02 (0,52) |
+| menor c/ vol, fech. 20d, a = 1 | 0,63 | −33,4% | −19,1% | 0,53 | 0,81 | −0,30 (1,00) | −0,16 (0,97) |
+
+O ganho vem dos meses depois dos picos: mai–dez/2020 +26% contra +12%, ago/2024 +18% contra
+−5% e 2021 +77% contra +44%. Ele devolve parte quando vem uma segunda onda: nov/2026 −17%
+contra −10% e 2022 −8% contra −5%. No sintético 2006–2026, que tem 2008–2010, a diferença
+some, e o teto de 0,5 não muda nada. Das 278 variantes, só 5 batem a base no IS, no OOS e no
+sintético ao mesmo tempo, e nenhuma faz isso sem piorar a queda máxima em algum dos três.
+
+**Conclusão:** o tamanho fixo continua a regra. Reduzir com vol alta está descartado. Aumentar
+com vol alta (EWMA de 5 dias, w proporcional à vol, até 0,75) é uma variante a acompanhar em paper ao
+lado da regra, não a substituí-la: +0,1 de Sharpe com P ≈ 0,1 no real e zero no sintético.
+
 ## Critério do projeto
 
 | Item | Resultado |
@@ -323,6 +378,8 @@ medir o funding das duas pernas.
 | `s08_bootstrap.py` | distribuição de CAGR e queda em 5 anos | `s08_bootstrap.txt` |
 | `s09_final.py` | tabela final, anos e gráficos | `s09_*` |
 | `s10_beta.py` | beta/alfa contra o S&P e hedge | `s10_beta.txt` |
+| `s11_tamanho_vol.py` | 139 regras de tamanho pela vol do UVXY, com e sem filtro | `s11_tamanho_vol.*` |
+| `s12_vol_robustez.py` | bootstrap pareado, anos, picos e quedas das melhores | `s12_vol_robustez.txt` |
 
 Os parquets do UVXY (`uvxy_1d`, `uvxy_1h`, `uvxy_1m`) e os scripts `fetch_uvxy*.py` são os
 mesmos do PR #26.

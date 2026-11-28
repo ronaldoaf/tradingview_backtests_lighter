@@ -1,0 +1,84 @@
+# Mesma vol anual da base; IS 2011-2018, OOS 2019-2026; sintetico 2006-2026 com escala propria
+| Variante | teto w | w medio | w max | Sharpe | CAGR | Queda | Pior dia | Sharpe OOS | Queda OOS | Sharpe sint. | Queda sint. |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| base (w fixo 0,25) | 1 | 0.25 | 0.25 | 0.93 | 22.5% | -26.8% | -16.7% | 0.77 | -24.2% | 0.97 | -25.9% |
+| maior c/ vol: EWMA 5d, a=1 | 1 | 0.20 | 0.75 | 1.04 | 25.9% | -25.7% | -17.4% | 0.95 | -25.1% | 0.98 | -26.7% |
+| maior c/ vol: EWMA 5d, a=1 | 0.5 | 0.20 | 0.50 | 1.03 | 25.6% | -26.0% | -17.6% | 0.92 | -25.4% | 0.96 | -27.0% |
+| maior c/ vol: EWMA 10d, a=0,5 | 1 | 0.24 | 0.42 | 0.95 | 23.2% | -29.1% | -15.0% | 0.77 | -26.9% | 0.99 | -25.4% |
+| maior c/ vol: EWMA 10d, a=0,5 | 0.5 | 0.24 | 0.42 | 0.95 | 23.2% | -29.1% | -15.0% | 0.77 | -26.9% | 0.99 | -25.4% |
+| maior c/ vol: EWMA 10d, a=1 | 1 | 0.21 | 0.64 | 1.03 | 25.5% | -31.2% | -16.0% | 0.90 | -26.3% | 1.01 | -25.4% |
+| maior c/ vol: EWMA 10d, a=1 | 0.5 | 0.21 | 0.50 | 1.02 | 25.2% | -31.4% | -16.1% | 0.89 | -26.4% | 1.01 | -25.5% |
+| maior c/ vol: fech. 10d, a=1 | 1 | 0.19 | 0.97 | 1.06 | 26.4% | -27.2% | -21.2% | 0.99 | -23.9% | 0.92 | -31.3% |
+| maior c/ vol: fech. 10d, a=1 | 0.5 | 0.19 | 0.50 | 1.02 | 25.3% | -27.8% | -21.7% | 0.94 | -24.5% | 0.90 | -29.9% |
+| maior c/ vol: fech. 20d, a=1 | 1 | 0.21 | 0.69 | 1.03 | 25.5% | -31.9% | -18.6% | 0.88 | -24.2% | 0.95 | -25.4% |
+| maior c/ vol: fech. 20d, a=1 | 0.5 | 0.21 | 0.50 | 1.05 | 26.1% | -32.8% | -15.8% | 0.91 | -25.0% | 0.95 | -25.9% |
+| menor c/ vol: fech. 20d, a=1 | 1 | 0.27 | 0.68 | 0.63 | 13.4% | -33.4% | -19.1% | 0.53 | -28.4% | 0.81 | -34.4% |
+| menor c/ vol: fech. 20d, a=1 | 0.5 | 0.27 | 0.50 | 0.62 | 13.2% | -34.0% | -18.1% | 0.54 | -28.0% | 0.82 | -34.0% |
+| menor c/ vol: EWMA 10d, a=1 | 1 | 0.27 | 0.58 | 0.65 | 14.0% | -34.8% | -14.1% | 0.46 | -31.2% | 0.81 | -33.3% |
+| menor c/ vol: EWMA 10d, a=1 | 0.5 | 0.27 | 0.50 | 0.65 | 14.0% | -34.8% | -14.1% | 0.46 | -30.8% | 0.81 | -32.6% |
+
+# Bootstrap pareado da diferenca de Sharpe contra a base (blocos de 60 pregoes, 3.000 sorteios)
+maior c/ vol: EWMA 5d, a=1       teto 1 | real: dif +0.11, IC90% [-0.02, +0.28], P(dif<=0) 0.08 | sint: dif +0.00, IC90% [-0.11, +0.18], P(dif<=0) 0.35
+maior c/ vol: EWMA 5d, a=1       teto 0.5 | real: dif +0.10, IC90% [-0.03, +0.26], P(dif<=0) 0.09 | sint: dif -0.01, IC90% [-0.13, +0.16], P(dif<=0) 0.40
+maior c/ vol: EWMA 10d, a=0,5    teto 1 | real: dif +0.02, IC90% [-0.07, +0.12], P(dif<=0) 0.29 | sint: dif +0.02, IC90% [-0.05, +0.12], P(dif<=0) 0.24
+maior c/ vol: EWMA 10d, a=0,5    teto 0.5 | real: dif +0.02, IC90% [-0.06, +0.12], P(dif<=0) 0.26 | sint: dif +0.02, IC90% [-0.05, +0.12], P(dif<=0) 0.24
+maior c/ vol: EWMA 10d, a=1      teto 1 | real: dif +0.10, IC90% [-0.04, +0.25], P(dif<=0) 0.10 | sint: dif +0.04, IC90% [-0.08, +0.19], P(dif<=0) 0.23
+maior c/ vol: EWMA 10d, a=1      teto 0.5 | real: dif +0.09, IC90% [-0.04, +0.23], P(dif<=0) 0.11 | sint: dif +0.04, IC90% [-0.07, +0.18], P(dif<=0) 0.23
+maior c/ vol: fech. 10d, a=1     teto 1 | real: dif +0.13, IC90% [-0.03, +0.35], P(dif<=0) 0.08 | sint: dif -0.06, IC90% [-0.21, +0.17], P(dif<=0) 0.55
+maior c/ vol: fech. 10d, a=1     teto 0.5 | real: dif +0.09, IC90% [-0.06, +0.28], P(dif<=0) 0.14 | sint: dif -0.07, IC90% [-0.21, +0.13], P(dif<=0) 0.63
+maior c/ vol: fech. 20d, a=1     teto 1 | real: dif +0.10, IC90% [-0.06, +0.28], P(dif<=0) 0.13 | sint: dif -0.02, IC90% [-0.15, +0.14], P(dif<=0) 0.52
+maior c/ vol: fech. 20d, a=1     teto 0.5 | real: dif +0.12, IC90% [-0.02, +0.29], P(dif<=0) 0.07 | sint: dif -0.02, IC90% [-0.15, +0.15], P(dif<=0) 0.46
+menor c/ vol: fech. 20d, a=1     teto 1 | real: dif -0.30, IC90% [-0.51, -0.13], P(dif<=0) 1.00 | sint: dif -0.16, IC90% [-0.32, -0.02], P(dif<=0) 0.97
+menor c/ vol: fech. 20d, a=1     teto 0.5 | real: dif -0.31, IC90% [-0.51, -0.15], P(dif<=0) 1.00 | sint: dif -0.15, IC90% [-0.30, -0.01], P(dif<=0) 0.96
+menor c/ vol: EWMA 10d, a=1      teto 1 | real: dif -0.28, IC90% [-0.43, -0.15], P(dif<=0) 1.00 | sint: dif -0.16, IC90% [-0.30, -0.04], P(dif<=0) 0.98
+menor c/ vol: EWMA 10d, a=1      teto 0.5 | real: dif -0.28, IC90% [-0.44, -0.15], P(dif<=0) 1.00 | sint: dif -0.16, IC90% [-0.29, -0.03], P(dif<=0) 0.98
+
+# Ano a ano (real; 2007-2010 do sintetico), teto 1,0
+| Ano | base (w fixo 0,25) | maior c/ vol: EWMA 10d, a=0,5 | maior c/ vol: EWMA 5d, a=1 | menor c/ vol: fech. 20d, a=1 |
+| ---: | ---: | ---: | ---: | ---: |
+| 2007 | -10.3% | -9.9% | -10.8% | -12.1% |
+| 2008 | +3.5% | +3.9% | +1.7% | +2.3% |
+| 2009 | +36.8% | +28.0% | +21.8% | +37.1% |
+| 2010 | +49.8% | +43.9% | +30.5% | +63.6% |
+| 2012 | +74.7% | +71.2% | +59.4% | +38.3% |
+| 2013 | +28.7% | +38.0% | +38.2% | +11.1% |
+| 2014 | +7.0% | +5.1% | +9.1% | +9.2% |
+| 2015 | +36.1% | +39.9% | +46.1% | +25.8% |
+| 2016 | +28.5% | +36.6% | +34.3% | +18.0% |
+| 2017 | +75.9% | +70.7% | +65.8% | +66.1% |
+| 2018 | -18.2% | -13.3% | -12.4% | -24.4% |
+| 2019 | +22.4% | +18.9% | +13.7% | +18.6% |
+| 2020 | +2.9% | +11.6% | +22.0% | -2.3% |
+| 2021 | +43.5% | +53.2% | +76.9% | +11.8% |
+| 2022 | -4.5% | -10.3% | -7.9% | +12.0% |
+| 2023 | +58.0% | +49.0% | +44.0% | +49.5% |
+| 2024 | +4.7% | +7.5% | +32.4% | -7.3% |
+| 2025 | +23.7% | +30.4% | +29.7% | +11.4% |
+| 2026 | -6.7% | -11.6% | -14.1% | -4.2% |
+
+# Episodios de pico (retorno na janela e queda dentro dela), teto 1,0
+| Episodio | base (w fixo 0,25) | maior c/ vol: EWMA 10d, a=0,5 | maior c/ vol: EWMA 5d, a=1 | menor c/ vol: fech. 20d, a=1 |
+| --- | ---: | ---: | ---: | ---: |
+| ago/2015 | -1.4% (-8%) | +0.3% (-10%) | +2.2% (-11%) | -4.5% (-7%) |
+| dez/15-fev/16 | -20.0% (-27%) | -21.0% (-28%) | -18.8% (-26%) | -11.5% (-16%) |
+| fev/2018 | -8.0% (-9%) | -5.6% (-9%) | -3.7% (-12%) | -10.8% (-11%) |
+| T4 2018 | -20.5% (-21%) | -18.5% (-19%) | -15.6% (-16%) | -25.3% (-26%) |
+| Covid | -8.0% (-11%) | -6.5% (-11%) | -4.6% (-9%) | -5.1% (-7%) |
+| mai-dez/2020 (pos-Covid) | +12.0% (-19%) | +19.5% (-18%) | +26.2% (-16%) | +6.4% (-14%) |
+| bear 2022 | -12.3% (-23%) | -15.9% (-27%) | -12.1% (-25%) | -2.6% (-19%) |
+| ago/2024 | -4.9% (-16%) | +2.7% (-16%) | +17.6% (-15%) | -16.9% (-20%) |
+| abr/2025 | -4.1% (-5%) | -3.5% (-4%) | -4.6% (-5%) | -1.7% (-3%) |
+| mai-jul/2025 (pos-tarifas) | +16.5% (-5%) | +18.8% (-6%) | +17.2% (-5%) | +13.7% (-4%) |
+| nov/2026 | -10.0% (-14%) | -14.4% (-17%) | -17.4% (-21%) | -6.8% (-10%) |
+
+# Queda em janelas de 5 anos (bootstrap em blocos de 60 pregoes, 4.000 trajetorias)
+base (w fixo 0,25)               teto 1 real: CAGR mediano  23.7%  queda mediana  -27.4%  pior 10%  -38.7%  P(queda>40%)  7.5%
+base (w fixo 0,25)               teto 1 sint: CAGR mediano  20.7%  queda mediana  -24.0%  pior 10%  -35.0%  P(queda>40%)  4.0%
+maior c/ vol: EWMA 10d, a=0,5    teto 1 real: CAGR mediano  24.6%  queda mediana  -27.3%  pior 10%  -38.1%  P(queda>40%)  7.5%
+maior c/ vol: EWMA 10d, a=0,5    teto 1 sint: CAGR mediano  21.5%  queda mediana  -23.3%  pior 10%  -33.8%  P(queda>40%)  3.2%
+maior c/ vol: EWMA 5d, a=1       teto 1 real: CAGR mediano  28.3%  queda mediana  -24.9%  pior 10%  -33.8%  P(queda>40%)  2.4%
+maior c/ vol: EWMA 5d, a=1       teto 1 sint: CAGR mediano  21.4%  queda mediana  -23.7%  pior 10%  -32.5%  P(queda>40%)  2.1%
+menor c/ vol: fech. 20d, a=1     teto 1 real: CAGR mediano  13.8%  queda mediana  -32.9%  pior 10%  -47.2%  P(queda>40%) 24.3%
+menor c/ vol: fech. 20d, a=1     teto 1 sint: CAGR mediano  16.4%  queda mediana  -26.5%  pior 10%  -38.5%  P(queda>40%)  7.5%
+maior c/ vol: EWMA 10d, a=0,5    teto 0.5 real: CAGR mediano  25.2%  queda mediana  -27.2%  pior 10%  -37.7%  P(queda>40%)  6.8%
+maior c/ vol: EWMA 10d, a=0,5    teto 0.5 sint: CAGR mediano  21.2%  queda mediana  -23.3%  pior 10%  -33.4%  P(queda>40%)  3.1%
