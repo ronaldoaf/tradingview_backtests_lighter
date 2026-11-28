@@ -1,7 +1,7 @@
 """Dados diarios para o estudo do short estrutural no UVXY.
 
 Yahoo (OHLC diario, split-ajustado; indices sem ajuste) para:
-  UVXY SVXY VIXY VIXM VXX SPY QQQ TQQQ SQQQ e os indices ^VIX ^VIX3M ^VIX9D ^VVIX ^SHORTVOL ^GSPC
+  UVXY SVXY VIXY VIXM VXX SPY QQQ TQQQ SQQQ e os indices ^VIX ^VIX3M ^VIX9D ^VVIX ^SHORTVOL ^GSPC ^IRX (T-bill 13 semanas, para o TQQQ sintetico)
 Grava data/uvxy/daily_<sym>.parquet (indice = data, colunas open/high/low/close/volume).
 ^SHORTVOL (Cboe Short VIX Futures Index, desde 2005) serve para reconstruir o indice
 S&P VIX Short-Term Futures e um UVXY sintetico antes de 2011 (inclui 2008).
@@ -12,7 +12,7 @@ import pandas as pd
 D = os.environ.get('EDGE_ROOT') or os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 OUT = os.path.join(D, 'data', 'uvxy')
 SYMS = ['UVXY', 'SVXY', 'VIXY', 'VIXM', 'VXX', 'SPY', 'QQQ', 'TQQQ', 'SQQQ',
-        '^VIX', '^VIX3M', '^VIX9D', '^VVIX', '^SHORTVOL', '^GSPC']
+        '^VIX', '^VIX3M', '^VIX9D', '^VVIX', '^SHORTVOL', '^GSPC', '^IRX']
 
 
 def yahoo(sym):

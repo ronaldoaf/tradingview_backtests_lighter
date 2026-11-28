@@ -413,6 +413,47 @@ forte da bolsa bem piores (2020 e 2024 negativos). No OOS 2019–2026 o hedge pe
 contra 0,77). Vale como versão conservadora da regra. A versão com SPX500 na AlphaX a 8% é a melhor
 no papel, mas o ganho é o funding, que precisa ser confirmado ao vivo.
 
+## 12. TQQQ no lugar do SPY (`s15_uvxy_tqqq.txt`)
+
+Mesma montagem da §11, trocando o SPY pelo perp de TQQQ da AlphaX. O nocional é `h × 4,4 × w_uvxy / 3,4`
+(3,4 é o beta diário do TQQQ ao S&P), ou seja, o mesmo hedge de beta com ~1/3,4 do nocional: h = 0,5
+dá 0,16× o patrimônio em TQQQ. O funding recebido pelo vendido em TQQQ na AlphaX foi de 14,1%/ano em
+jul–nov/2026, com meses entre 2% e 27%. Antes de 2010 uso um TQQQ sintético (3 × QQQ menos o custo de
+financiamento, calibrado em 2010–2026 com correlação diária de 0,999). Para separar o efeito do índice do
+efeito da alavancagem, incluí o QQQ vendido (perp da AlphaX, funding de 13,2%/ano) com o mesmo hedge de beta.
+
+| Variante (UVXY 25%, hedge só quando vendido no UVXY) | Nocional do hedge | CAGR | Queda | Sharpe | Pior dia | Sharpe OOS | Sharpe sint. | Queda sint. |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| só UVXY | — | 22,5% | −26,8% | 0,93 | −16,7% | 0,77 | 0,97 | −25,9% |
+| **SPY h = 0,5, funding 3,6% (Lighter)** | **0,55** | **18,8%** | **−24,4%** | **0,96** | **−13,5%** | **0,71** | **1,10** | **−20,0%** |
+| TQQQ h = 0,5, sem funding | 0,16 | 15,3% | −32,3% | 0,81 | −13,8% | 0,60 | 0,85 | −22,8% |
+| TQQQ h = 0,5, funding 14,1% (AlphaX) | 0,16 | 18,0% | −28,6% | 0,92 | −13,7% | 0,72 | 0,99 | −21,1% |
+| TQQQ h = 1, funding 14,1% (AlphaX) | 0,32 | 12,8% | −40,4% | 0,75 | −11,6% | 0,47 | 0,75 | −31,1% |
+| QQQ h = 0,5, sem funding | 0,48 | 14,9% | −33,1% | 0,78 | −14,4% | 0,55 | 0,81 | −23,8% |
+| QQQ h = 0,5, funding 13,2% (AlphaX) | 0,48 | 21,9% | −26,5% | 1,07 | −14,3% | 0,87 | 1,16 | −21,4% |
+
+TQQQ com rebalanceio por banda de 25%. O rebalanceio diário dá o mesmo resultado (Sharpe 0,92, queda −28,1%).
+
+**O TQQQ hedgeia pior que o SPY.** Os motivos:
+
+- **O índice.** O Nasdaq subiu mais que o S&P em 2011–2026. Com o mesmo beta, vender Nasdaq custa mais nos
+  anos de alta: 2020 fica em −11,9% (SPY: −7,7%) e 2023 em +31,9% (SPY: +43,5%). O QQQ sem funding tem o
+  mesmo problema (Sharpe 0,78, queda −33%), então a culpa é do índice, não da alavancagem.
+- **O decaimento do TQQQ não ajuda.** Deixar o vendido encolher e crescer (banda) rende o mesmo que
+  rebalancear todo dia. Em tendência forte de alta, o 3x composto pesa contra o vendido.
+- **O funding rende menos por unidade de hedge.** Os 14,1% incidem sobre só 0,16 do patrimônio, cerca de
+  2,3%/ano, quase o mesmo que o SPY na Lighter (3,6% sobre 0,55 = 2,0%/ano). No QQQ, 13,2% sobre 0,48 dá
+  6,3%/ano. Por isso o QQQ com funding fica com Sharpe 1,07, mas pelo mesmo motivo do SPX500 a 8% (§11):
+  é carry de funding de poucos meses.
+
+**Onde o TQQQ ganha do SPY:** nas quedas puxadas pelo Nasdaq. 2022 vira +23% (SPY: +13%), o T4 2018 fica em
+−11,4% (SPY: −13,5%) e ago/2024 em −2,9% (SPY: −5,1%). Na cauda, o bootstrap de 5 anos (mesmo sorteio para
+as três) dá P(queda > 40%) de 2,8%, contra 2,2% com o SPY e 9,1% sem hedge. Com a mesma vol da base, o Sharpe fica em 0,88, contra 0,92 com o SPY.
+Vender TQQQ também com o UVXY zerado, ou só com ele zerado, piora, como no SPY.
+
+**Conclusão:** o TQQQ não melhora o hedge. O SPY na Lighter (h = 0,5) continua sendo a versão conservadora
+da regra. O TQQQ só faria sentido para quem quer apostar em queda do Nasdaq contra o S&P, o que é outra estratégia.
+
 ## Critério do projeto
 
 | Item | Resultado |
@@ -450,6 +491,7 @@ logando o funding do vendido em SPY na Lighter e em SPX500 na AlphaX.
 | `s12_vol_robustez.py` | bootstrap pareado, anos, picos e quedas das melhores | `s12_vol_robustez.txt` |
 | `s13_uvxy_spy.py` | UVXY + SPY vendidos: proporção, modo, beta, funding, mesma vol | `s13_uvxy_spy.*` |
 | `s14_uvxy_spy_detalhe.py` | anos, picos, piores dias e bootstrap do UVXY + SPY | `s14_uvxy_spy_detalhe.txt` |
+| `s15_uvxy_tqqq.py` | UVXY + TQQQ (e QQQ) vendidos, contra o SPY: grade, anos, picos e bootstrap | `s15_uvxy_tqqq.*` |
 
 Os parquets do UVXY (`uvxy_1d`, `uvxy_1h`, `uvxy_1m`) e os scripts `fetch_uvxy*.py` são os
 mesmos do PR #26.
